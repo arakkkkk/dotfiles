@@ -32,7 +32,7 @@ __remove_linklist_comment "$linklist" | while read target link; do
 done
 
 # for fish shell
-source ~/.config/fish/fish/config.fish
+source ~/.config/fish/config.fish
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 fisher install jethrokuan/z
 fisher install jethrokuan/fzf

@@ -34,6 +34,3 @@ done
 
 # for fish shell
 source ~/.config/fish/fish/config.fish
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
-fisher install jethrokuan/fzf
-fisher install jethrokuan/z

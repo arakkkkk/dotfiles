@@ -14,6 +14,7 @@ dotfiles/script/init.sh
 git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 ```
 
-### If can't install python in pyenv 
-sudo rm -rf /Library/Developer/CommandLineTools
-sudo xcode-select --install
+### Install python in pyenv on fish
+```
+LDFLAGS=-"L(brew --prefix zlib)/lib -L(brew --prefix bzip2)/lib" pyenv install 3.7.9
+```

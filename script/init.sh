@@ -32,5 +32,8 @@ __remove_linklist_comment "$linklist" | while read target link; do
     ln -fsn ${target} ${link}
 done
 
-
+# for fish shell
 source ~/.config/fish/fish/config.fish
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+fisher install jethrokuan/fzf
+jethrokuan/z

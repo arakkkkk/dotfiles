@@ -33,3 +33,7 @@ done
 
 # for fish shell
 source ~/.config/fish/fish/config.fish
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+fisher install jethrokuan/z
+fisher install jethrokuan/fzf
+fisher install oh-my-fish/theme-bobthefish

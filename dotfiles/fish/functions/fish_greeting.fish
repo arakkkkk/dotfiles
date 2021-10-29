@@ -2,8 +2,8 @@ function fish_greeting -d "What's up, fish?"
 
     # set_color $fish_color_autosuggestion
     # set_color normal
-    # set -g theme_color_scheme nord
-    set -g theme_color_scheme zenburn
+    set -g theme_color_scheme nord
+    # set -g theme_color_scheme zenburn
     uname -nmsr
 
     # TODO: `command -q -s` only works on fish 2.5+, so hold off on that for now

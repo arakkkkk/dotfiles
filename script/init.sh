@@ -31,11 +31,6 @@ brew update
 brew upgrade
 brew install direnv
 
-######## yarn
-yarn
-yarn install
-yarn build
-
 ######### for fish shell
 source ~/.config/fish/config.fish
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher

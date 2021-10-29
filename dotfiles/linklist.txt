@@ -1,5 +1,5 @@
 # home dir
-.vim                ${HOME}/.vim
+# .vim                ${HOME}/.vim
 .pyenv              ${HOME}/.pyenv
 # home file
 .prettierrc         ${HOME}/.prettierrc

@@ -29,8 +29,8 @@ filetype plugin indent on
 syntax enable
 
 
-let g:python_host_prog = '/Users/Kouiti/.pyenv/shims/python'
-let g:python3_host_prog = '/Users/Kouiti/.pyenv/shims/python'
+let g:python_host_prog = '~/.pyenv/shims/python'
+let g:python3_host_prog = '~/.pyenv/shims/python'
 let g:coc_node_path = '/usr/local/bin/node'
 
 

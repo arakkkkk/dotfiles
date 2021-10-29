@@ -15,6 +15,3 @@ set -x GOENV_ROOT $HOME/.goenv
 set -x PATH $GOENV_ROOT/bin $PATH
 eval (goenv init - | source)
 set -x PATH $GOPATH/bin $PATH
-
-# scheme
-set theme_color_scheme zenburn

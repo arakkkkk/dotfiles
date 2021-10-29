@@ -32,5 +32,5 @@ __remove_linklist_comment "$linklist" | while read target link; do
     ln -fsn ${target} ${link}
 done
 
-
+# for fish shell
 source ~/.config/fish/fish/config.fish

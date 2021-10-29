@@ -1,9 +1,4 @@
 #!/bin/sh
-####### homebrew
-brew update
-brew upgrade
-brew install direnv
-
 ####### install dein for nvim
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.cache/dein
@@ -31,7 +26,17 @@ __remove_linklist_comment "$linklist" | while read target link; do
     ln -fsn ${target} ${link}
 done
 
-# for fish shell
+####### homebrew
+brew update
+brew upgrade
+brew install direnv
+
+######## yarn
+yarn
+yarn install
+yarn build
+
+######### for fish shell
 source ~/.config/fish/config.fish
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 fisher install jethrokuan/z

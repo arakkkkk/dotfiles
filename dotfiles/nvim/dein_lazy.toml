@@ -1,0 +1,9 @@
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+on_event = ["NERDTreeToggle"]
+hook_add = '''
+  source ~/.config/nvim/plugins/nerdtree.vim
+'''
+
+

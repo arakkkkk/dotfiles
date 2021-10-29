@@ -1,0 +1,112 @@
+[[plugins]]
+repo = 'haishanh/night-owl.vim'
+
+[[plugins]]
+repo = 'ntpeters/vim-better-whitespace'
+hook_add = '''
+'''
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+'''
+
+[[plugins]]
+repo = 'pechorin/any-jump.vim'
+hook_add = '''
+  source ~/.config/nvim/plugins/any-jump.vim
+'''
+
+[[plugins]]
+repo = 'majutsushi/tagbar'
+
+[[plugins]]
+repo = 'tpope/vim-commentary'
+hook_add = '''
+'''
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+hook_add = '''
+'''
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+hook_add = '''
+'''
+
+[[plugins]]
+repo = 'kassio/neoterm'
+hook_add = '''
+  source ~/.config/nvim/plugins/neoterm.vim
+'''
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
+hook_add = '''
+'''
+
+[[plugins]]
+repo = 'honza/vim-snippets'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-snippets.vim
+'''
+
+[[plugins]]
+repo = 'dense-analysis/ale'
+hook_add = '''
+  source ~/.config/nvim/plugins/ale.vim
+'''
+
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = '''
+'''
+
+[[plugins]]
+repo = 'junegunn/fzf'
+merged = '0'
+build_on = '''
+./install -all
+'''
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+on_cmd = [
+    'Files',
+    'ProjectFiles',
+    'Buffers',
+    'BLines',
+    'History',
+    'Tags',
+    'BTags',
+    'GFiles',
+    'Ag',
+]
+depends = 'fzf'
+hook_add = '''
+  source ~/.config/nvim/plugins/fzf.vim
+'''
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+#repo = 'vim-airline/vim-airline'
+hook_add = '''
+  source ~/.config/nvim/plugins/line.vim
+'''
+
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+#rev = 'release'
+#on_i = 1
+#merged = '0'
+#hook_source = 'call coil398#init#coc#hook_source()'epo = "neoclide/coc.nvim"
+#hook_add = '''
+#  source ~/.config/nvim/plugins/coc.vim
+#'''
+
+
+[[plugins]]
+repo = 'Xuyuanp/scrollbar.nvim'

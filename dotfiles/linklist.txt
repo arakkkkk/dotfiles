@@ -1,0 +1,14 @@
+# home dir
+.vim                ${HOME}/.vim
+.pyenv              ${HOME}/.pyenv
+.goenv              ${HOME}/.goenv
+# home file
+.prettierrc         ${HOME}/.prettierrc
+.eslintrc.json      ${HOME}/.eslintrc.json
+
+# under .config
+nvim                ${HOME}/.config/nvim
+coc                 ${HOME}/.config/coc
+fish                ${HOME}/.config/fish
+karabiner           ${HOME}/.config/karabiner
+fzf                 ${HOME}/.config/fzf

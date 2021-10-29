@@ -18,7 +18,6 @@ __remove_linklist_comment() {(
         -e '/^\s*$/d' \
         $1
 )}
-j
 # シンボリックリンクを作成
 cd ${dotfiles_root}/dotfiles
 linklist="linklist.txt"

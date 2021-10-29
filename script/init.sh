@@ -1,5 +1,7 @@
 #!/bin/sh
 ####### homebrew
+brew update
+brew upgrade
 brew install direnv
 
 ####### install dein for nvim

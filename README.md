@@ -8,3 +8,5 @@ dotfiles/script/init.sh
 ```
 - edit init.vim python path
 - edit init.vim coc_node_path
+- (goenv)[- git clone https://github.com/syndbg/goenv.git $HOME/.goenv]  
+- 

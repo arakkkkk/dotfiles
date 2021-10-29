@@ -104,7 +104,7 @@ repo = 'neoclide/coc.nvim'
 #merged = '0'
 #hook_source = 'call coil398#init#coc#hook_source()'epo = "neoclide/coc.nvim"
 #hook_add = '''
-#  source ~/.config/nvim/plugins/coc.vim
+# source ~/.config/nvim/plugins/coc.vim
 #'''
 
 

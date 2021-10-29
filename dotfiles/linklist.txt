@@ -1,7 +1,7 @@
 # home dir
-# .vim                ${HOME}/.vim
+## .vim                ${HOME}/.vim
 .pyenv              ${HOME}/.pyenv
-# home file
+## home file
 .prettierrc         ${HOME}/.prettierrc
 .eslintrc.json      ${HOME}/.eslintrc.json
 
@@ -11,3 +11,6 @@ coc                 ${HOME}/.config/coc
 fish                ${HOME}/.config/fish
 karabiner           ${HOME}/.config/karabiner
 fzf                 ${HOME}/.config/fzf
+
+# dein/repos
+github.com          &{HOME}/.cache/dein/repos/github.com

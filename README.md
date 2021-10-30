@@ -1,5 +1,13 @@
 # dotfiles
-### get start
+## Content
+- neovim
+- pyenv             #3.7.0, 3.8.0, 3.9.0
+- fish
+- eslintrc
+- prettierrc
+- karabiner
+
+## Quick start
 ```
 cd ~/
 git clone https://github.com/arakkkkk/dotfiles.git

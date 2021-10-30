@@ -11,6 +11,3 @@ coc                 ${HOME}/.config/coc
 fish                ${HOME}/.config/fish
 karabiner           ${HOME}/.config/karabiner
 fzf                 ${HOME}/.config/fzf
-
-# dein/repos
-github.com          &{HOME}/.cache/dein/repos/github.com

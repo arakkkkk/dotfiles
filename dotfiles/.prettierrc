@@ -3,6 +3,6 @@
   "tabWidth": 4,
   "singleQuote": false,
   "trailingComma": "none",
-  "semi": false,
+  "semi": true,
   "parser": "typescript"
 }

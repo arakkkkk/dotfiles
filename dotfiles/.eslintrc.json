@@ -12,5 +12,44 @@
         "no-useless-escape": "off",
         "no-empty": "warn",
         "no-unused-vars": "off"
+    },
+    "globals": {
+        // For GlycoSim variable
+        "apiUrl": true,
+        "species_dic": true,
+        "parameter_dic": true,
+        "reaction_dic": true,
+        "compartment_dic": true,
+        "cyjson": true,
+        "model_dic": true,
+        "session": true,
+        "signalingcyjson": true,
+        "glycosylationcyjson": true,
+        "wholepathwaycyjson": true,
+        "global": true,
+        "cy": true,
+        "aa": true,
+        "aa": true,
+        "aa": true,
+        "aa": true,
+        "aa": true,
+        "aa": true,
+        "aa": true,
+        // For GlycoSim function
+        "open_errormodal": true,
+        "set_session_id": true,
+        "get_session_id": true,
+        "getUrlQueries": true,
+        "sbgnstylejs": true,
+        "setviewer": true,
+        "set_alert": true,
+        "aa": true,
+        "aa": true,
+        "aa": true,
+        // Others
+        "typeOf": true,
+        "aa": true,
+        "aa": true,
+        "aa": true
     }
 }

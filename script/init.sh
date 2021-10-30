@@ -31,6 +31,7 @@ brew update
 brew upgrade
 brew install direnv
 brew install pyenv
+brew install ag
 
 ######### for fish shell
 source ~/.config/fish/config.fish

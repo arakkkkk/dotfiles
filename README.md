@@ -36,4 +36,4 @@ or/and
 ```
 : call coc#util#install()
 ```
-(coc extensions)[https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions]  
+[coc extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions)  

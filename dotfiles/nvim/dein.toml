@@ -99,6 +99,9 @@ hook_add = '''
 
 [[plugins]]
 repo = 'neoclide/coc.nvim'
+rev = 'release'
+on_i = 1
+merged = '0'
 
 
 [[plugins]]

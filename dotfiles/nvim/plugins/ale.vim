@@ -3,7 +3,7 @@ let g:ale_linters = {
     \ 'json': ['jsonlint'],
     \ 'JavaScript': ['eslint'],
     \ 'html': ['HTMLint'],
-    \ 'css': ['csslint'],
+    \ 'css': [],
     \ 'Dockerfile': ['dockerfile_lint', 'hadolint'],
     \ }
 
@@ -14,7 +14,7 @@ let g:ale_fixers = {
     \ 'json': ['fixjson', 'jq'],
     \ 'JavaScript': ['prettier'],
     \ 'html': ['HTMLint'],
-    \ 'css': ['csslint'],
+    \ 'css': ['prettier'],
     \ 'Dockerfile': ['dockerfile_lint', 'hadolint'],
     \ }
 

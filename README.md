@@ -31,10 +31,11 @@ CPPFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix bzip2)/include -I
 
 ### If coc doesn't working
 ```
-cd ~/.cache/debin/repos/github.com/neoclide/coc.nvim
+cd ~/.cache/dein/repos/github.com/neoclide/coc.nvim
 yarn install
 ```
 or/and
 ```
 : call coc#util#install()
 ```
+https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions

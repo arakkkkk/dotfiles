@@ -38,3 +38,4 @@ or/and
 ```
 : call coc#util#install()
 ```
+https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions

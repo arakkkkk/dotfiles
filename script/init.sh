@@ -31,6 +31,9 @@ brew update
 brew upgrade
 brew install direnv
 brew install pyenv
+pyenv install 3.7.0
+pyenv install 3.9.0
+pyenv global 3.9.0
 brew install ag
 
 ######### for fish shell

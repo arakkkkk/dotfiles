@@ -1,7 +1,5 @@
 # home dir
-## .vim             ${HOME}/.vim
-.pyenv/version      ${HOME}/.pyenv/version
-.pyenv/versions     ${HOME}/.pyenv/versions
+# .vim             ${HOME}/.vim
 ## home file
 .prettierrc         ${HOME}/.prettierrc
 .eslintrc.json      ${HOME}/.eslintrc.json

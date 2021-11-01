@@ -494,26 +494,28 @@
     },
     "preferredGlobalPyInterpreter": {
       "architecture": 3,
-      "path": "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python",
+      "path": "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python",
       "version": {
         "options": {
           "loose": false,
           "includePrerelease": false
         },
         "loose": false,
-        "raw": "3.7.0-final",
+        "raw": "3.9.0-final",
         "major": 3,
-        "minor": 7,
+        "minor": 9,
         "patch": 0,
         "prerelease": [
           "final"
         ],
         "build": [],
-        "version": "3.7.0-final"
+        "version": "3.9.0-final"
       },
-      "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-      "fileHash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef",
-      "type": "Unknown"
+      "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
+      "fileHash": "006cee6ed037ef5e92c2b367f4c072a835e99d67f4405cceb483ad6323b9e1134796efafc393d2a92a18688366e0c1c1666e3a8bef5832a35a055e21317295c7",
+      "envName": "3.9.0",
+      "type": "Pyenv",
+      "displayName": "Python 3.9.0 64-bit ('3.9.0': pyenv)"
     },
     "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python.interpreter.Details.v7": {
       "data": {
@@ -541,18 +543,17 @@
           "fileHash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef",
           "envName": "3.7.0",
           "type": "Pyenv",
-          "displayName": "Python 3.7.0 64-bit ('3.7.0': pyenv)",
-          "__store": true
+          "displayName": "Python 3.7.0 64-bit ('3.7.0': pyenv)"
         }
       },
-      "expiry": 1635746800746
+      "expiry": 1635813749710
     },
     "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.0 64-bit ('3.7.0': pyenv)",
-        "hash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef-620351fe506172ea76753bfc9ee16d0f"
+        "hash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef-3cd533946a0d26ced3df3d6e5335ce42"
       },
-      "expiry": 1635746800745
+      "expiry": 1635813749681
     },
     "/Users/arakawakouichi/.pyenv/shims/python3.7.v3": {
       "data": {
@@ -1530,7 +1531,33 @@
         }
       },
       "expiry": 1635746800743
-    }
+    },
+    "InterpreterAutoSeletionRule-cachedInterpreters": {
+      "architecture": 3,
+      "path": "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.9.0-final",
+        "major": 3,
+        "minor": 9,
+        "patch": 0,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.9.0-final"
+      },
+      "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
+      "fileHash": "006cee6ed037ef5e92c2b367f4c072a835e99d67f4405cceb483ad6323b9e1134796efafc393d2a92a18688366e0c1c1666e3a8bef5832a35a055e21317295c7",
+      "envName": "3.9.0",
+      "type": "Pyenv",
+      "displayName": "Python 3.9.0 64-bit ('3.9.0': pyenv)"
+    },
+    "ProposeLSBanner": false
   },
   "coc-python|/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim": {
     "INTERPRETERS_CACHE_v3_PipEnvService:b6615bfbb41a1f6233cbd94c2f3b7660": [],

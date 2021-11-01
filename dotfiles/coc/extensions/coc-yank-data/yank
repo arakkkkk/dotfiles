@@ -1,0 +1,148 @@
+5f1982709aabc63ee18b0ab0bbedcb4e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|52|V|xml
+	        <celldesigner:speciesAlias id="a2" species="s2">
+1153fd527ea1df19137d1f7c2480e3e1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|52|V|xml
+	          <celldesigner:activity>inactive</celldesigner:activity>
+00c2f676ad385e89d7c43fa11e93cdc8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|52|V|xml
+	          <celldesigner:bounds h="54.0" w="90.0" x="246.0" y="39.0"/>
+cebdb3824ca1182ba79c718e6ea6d847|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|44|V|xml
+	          <celldesigner:view state="usual"/>
+8ad0d48572f0b56ad7ae3d67ad39ca62|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|34|V|xml
+	          <celldesigner:usualView>
+4542a3adbaa7215d108f61efc0025b0c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|34|V|xml
+	            <celldesigner:innerPosition x="0.0" y="0.0"/>
+c46bd092266cd2f4bac0c5f46fa04051|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|34|V|xml
+	            <celldesigner:boxSize height="54.0" width="90.0"/>
+99e0d42777b85278863599c3ac067088|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|34|V|xml
+	            <celldesigner:singleLine width="1.0"/>
+6f982f66cad0cecaf5e6974998eec87c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|34|V|xml
+	            <celldesigner:paint color="ffccffcc" scheme="Color"/>
+4ed2f917d7c43e217c15f451df26fcda|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|34|V|xml
+	          </celldesigner:usualView>
+d57a3db73033586a4be636b730ec82b4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|34|V|xml
+	          <celldesigner:briefView>
+515f364c06f8297fe9e66b9ae1627a02|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|34|V|xml
+	            <celldesigner:boxSize height="60.0" width="80.0"/>
+19f29f9a92f0b5bc328073da3e0a53bb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|34|V|xml
+	            <celldesigner:paint color="3fff0000" scheme="Color"/>
+fad619a6ebf57cdd25693aef935c54dc|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|34|V|xml
+	          </celldesigner:briefView>
+fa00d113f440fcceb3a107fe9c7207f2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|479|34|V|xml
+	        </celldesigner:speciesAlias>
+52f7fb13a361f4d935d410325730955e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|52|V|xml
+	      <species charge="0" compartment="default" id="s2" initialAmount="5" metaid="_142651" name="Fringe">
+65239fad36c3e171d08543ccbaf5661a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|15|V|xml
+	        <notes>
+b31afc16f0ca4c9e158ab700d5f7d57e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|15|V|xml
+	          <html xmlns="http://www.w3.org/1999/xhtml">
+76338a35a884b6355a58f0e96c7665fe|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|15|V|xml
+	            <body>Long Name:  Fringe
+752b2863a6fbeb75467761cd56d3c259|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|15|V|xml
+	Synonym:  Lunatic Fringe,Manic Fringe,Radical Fringe
+a8dbab8216b67c623c70400a92d2bd63|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|15|V|xml
+	Accession:  P01107</body>
+0e93a79609987ea6e2684a3e9d492cf3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|15|V|xml
+	          </html>
+aa612ec13a26976bba1e58f064d95c23|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	        </notes>
+8cf3a877d2f69cd3970f941cf02e6889|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	        <annotation>
+e31ed5845ff54ef1659ff44bb7438c7f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	          <celldesigner:positionToCompartment>inside</celldesigner:positionToCompartment>
+9716611b8837d93c8e894f45fe76a8e5|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	          <celldesigner:speciesIdentity>
+4d53ae8b7c102b2bfcbc80dc75dc4be3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	            <celldesigner:class>PROTEIN</celldesigner:class>
+1d2ca43646b99d320f680a50760fb7f8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	            <celldesigner:proteinReference>p2</celldesigner:proteinReference>
+3bcf4c68aefcf99046c68b0c31609b85|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	          </celldesigner:speciesIdentity>
+134a764d4f0c19ba158c6bbea7b1316f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	          <celldesigner:listOfCatalyzedReactions>
+675d9a8107de5b47186c9edc2c8850c0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	            <celldesigner:catalyzed reaction="r21"/>
+f80273f57eedc5f97b70308255ea999c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	            <celldesigner:catalyzed reaction="r28"/>
+36e128e5c5aac25be62d1e36cbf31414|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	          </celldesigner:listOfCatalyzedReactions>
+6bf177f1117f44f7ba0b3a79c513a89c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+9a92e287280848da42ba36c153f08e3e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	            xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+ba86e924f13f99164444e4b398adc855|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	            <rdf:Description rdf:about="#_142651">
+058d4c19d26f5006652f4bbeaae5cd69|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	              <bqbiol:isVersionOf>
+68d3cad211650e420d12a696cb831db9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	                <rdf:Bag>
+f2cbad6186710dac15ef4c4233310da1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	                  <rdf:li rdf:resource="http://identifiers.org/uniprot/Q8NES3"/>
+14214b7054308c971fe53365fb0a9062|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	                </rdf:Bag>
+391adbcf17713bf7520d3464b7b9945f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	              </bqbiol:isVersionOf>
+2fa57387634c8de626bf5f9b08e7c779|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	            </rdf:Description>
+b72e76dd194c6686be8cd400a51969d9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	          </rdf:RDF>
+cea6c07b577a7dda009d44c8b0ddb717|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	        </annotation>
+127b7d529e7adf8ac60044a700c6d64b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|1304|1|V|xml
+	      </species>
+0b0a16eaa0f8e8b10033669dded43ba4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3152|160|V|xml
+	            <celldesigner:modification aliases="a2" editPoints="0.32998770598462857,-0.002281627592822577 0.6649938529923141,-0.0011408137964110665" modifiers="s2" targetLineIndex="-1,2" type="INHIBITION">
+78a773fa4b1cc1b06f6a432e4710c940|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3152|65|V|xml
+	              <celldesigner:connectScheme connectPolicy="direct">
+a5f5247a33fdb628bef8149cfc85c0ee|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3152|50|V|xml
+	                <celldesigner:listOfLineDirection>
+cda5174271a5e846a5c356ebbf9eccc7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3152|50|V|xml
+	                  <celldesigner:lineDirection index="0" value="unknown"/>
+1c8ac8edb8cd02de0e21ace37d79b418|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3152|50|V|xml
+	                  <celldesigner:lineDirection index="1" value="unknown"/>
+ce5272ae00c169cc5f23c1544093eb20|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3152|50|V|xml
+	                  <celldesigner:lineDirection index="2" value="unknown"/>
+dbac7ae84756c379eb4f9de09a20ca28|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3152|50|V|xml
+	                </celldesigner:listOfLineDirection>
+831f567f4c4d505310fb714f3b9ac57c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3152|43|V|xml
+	              </celldesigner:connectScheme>
+0c2bbcbff7c6a9116ae4b346684b183d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3152|43|V|xml
+	              <celldesigner:line color="ff000000" width="1.0"/>
+af513b9ca4a9694e15688c5943f2f711|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3152|40|V|xml
+	            </celldesigner:modification>
+bb56bb3012fd78630e8aef345f7c2a4f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3174|62|V|xml
+	          <modifierSpeciesReference metaid="_680344" species="s2">
+7fc5c839dcb352a9633ac75e2144260e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3174|24|V|xml
+	            <annotation>
+ad17b134df160db28187b358a5970e34|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3174|24|V|xml
+	              <celldesigner:alias>a2</celldesigner:alias>
+9f1fe6ad5ae74c58cc271362f2aea9f2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3174|24|V|xml
+	            </annotation>
+96dd52fea451bd0e599e1ef2bd6d8b15|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3174|24|V|xml
+	          </modifierSpeciesReference>
+828f4dd0d69b25f8a2f25512720e7c76|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3480|156|V|xml
+	            <celldesigner:modification aliases="a2" editPoints="0.32589450914022844,0.001932451187914186 0.6629472545701142,9.66225593957315E-4" modifiers="s2" targetLineIndex="-1,2" type="CATALYSIS">
+34cb2bc56d5c0887278ed9c27c6b2bb9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3502|62|V|xml
+	          <modifierSpeciesReference metaid="_680512" species="s2">
+0f277edb779e94c3c3f8776c107b5adc|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3520|23|V|xml
+	                  <ci> s2 </ci>
+4078352e2edb150784555e7ff6329a8d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3185|23|V|xml
+	                </apply>
+2671c99c15a208b6218555834be9134b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway%20copy.xml|3182|22|V|xml
+	                <apply>
+8ce233362a807e76c457cb8a1f6f776f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_gpp.py|54|1|V|python
+	        gly_sbmltext = data['gly_sbmltext']
+9af742a0c59ab94af446b1efaf72cb4a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_gpp.py|55|9|v|python
+	gly_sbmltext
+5bebbcfa0bcc2960397239564458d0e0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_gpp.py|55|1|V|python
+	        session_id = data['gly_sbmltext']
+e34e38d3ef94857acc80bd70bb3f5e55|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_gpp.py|55|1|V|python
+	        session_id = data['session_id']
+c56f5648d4c0e137f9de3dfc7a54d55b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_gpp.py|86|54|v|python
+	user_name
+fbf410259c8cfb37855c00f6b0beb954|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_gpp.py|87|58|v|python
+	getSBMLText
+6317d56d6c8ef4c4dbc6ba0db0a4023c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_gpp.py|87|27|v|python
+	readSBMLFromString(gss_session.())
+151a6580db285fde0c6a33327e96f1e0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_main.py|66|1|V|python
+	    return json.dumps(dict(datalist=datalist_str, session_id=session_id))
+2decbc39dc27c6edc15300d68ba49f12|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_gpp.py|67|5|V|python
+	        return datalist_str

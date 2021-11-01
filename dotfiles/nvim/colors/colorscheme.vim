@@ -18,3 +18,6 @@ hi EndOfBuffer ctermbg=0
 hi Comment ctermfg=22
 hi jsComment ctermfg=22
 hi JavascriptLineComment ctermfg=22
+
+" coc
+hi CocInfoSign ctermbg=67 ctermfg=178

@@ -25,7 +25,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
       },
-      "expiry": 1635746797920
+      "expiry": 1636171098607
     },
     "/usr/bin/python2.v3": {
       "data": {
@@ -50,7 +50,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
       },
-      "expiry": 1635746797920
+      "expiry": 1636171098608
     },
     "/usr/bin/python.v3": {
       "data": {
@@ -75,7 +75,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
       },
-      "expiry": 1635746797921
+      "expiry": 1636171098584
     },
     "/usr/local/bin/python3.7.v3": {
       "data": {
@@ -100,7 +100,7 @@
         "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
         "fileHash": "c7b05fa9a34bd3360e1a95fa519c80dca1f6df5907ecc8a91fea8b872c931beb4dd88e64d07267ad3308ab79849975d0fd98b5db9b2da6d050704dbb0493193e"
       },
-      "expiry": 1635746797919
+      "expiry": 1636171098586
     },
     "/usr/local/bin/python3.v3": {
       "data": {
@@ -125,7 +125,7 @@
         "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
         "fileHash": "a54f25c31bcbed7a78232ecd678467d828e967d97a95544788bf79b7c4c9b174b2d36dfe51c51fdffd28b02ba3c391ba4ec0d13f3bbda3d34f3072fdf0d0e349"
       },
-      "expiry": 1635746797925
+      "expiry": 1636171098571
     },
     "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python3.7.v3": {
       "data": {
@@ -150,7 +150,7 @@
         "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
         "fileHash": "b9c19efc8ef542c04ecbc61cdc406972341c07ab4542876f841f590ba1560588bb437e1e2c4204257956820d7ee2cdbe59195ad66c952ed89a8cab2c0535e7e8"
       },
-      "expiry": 1635746797923
+      "expiry": 1636171098661
     },
     "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python.v3": {
       "data": {
@@ -175,7 +175,7 @@
         "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
         "fileHash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef"
       },
-      "expiry": 1635746797924
+      "expiry": 1636171098660
     },
     "/Users/arakawakouichi/.pyenv/shims/python.v3": {
       "data": {
@@ -200,7 +200,7 @@
         "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
         "fileHash": "4add0a1c835401c52e02c14b1bc38574d584f2b214910afdc23e812e060a103d6e59d57e72b6f71703eb770ca9c2b62893c9772e173588f674b3af804ec26226"
       },
-      "expiry": 1635746797925
+      "expiry": 1636171098606
     },
     "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python3.v3": {
       "data": {
@@ -225,7 +225,7 @@
         "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
         "fileHash": "b5da42cf89d47c52e54dcf56652480fc9ae19158b7de3e364fb0525dc60a648ac217c98309b9258a268f2eb5ccac1a20da67b732d9ec6a175a28c0edca5be450"
       },
-      "expiry": 1635746797926
+      "expiry": 1636171098661
     },
     "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python3.9.v3": {
       "data": {
@@ -250,7 +250,7 @@
         "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
         "fileHash": "ef997aac2bc5a8de927228f3a5cf6614bf76a1545005dcc4c6640012ec97f9e17a2f01cf7812759112631eddd1b8f78a136f3a41897da84acd9e7003247a5c72"
       },
-      "expiry": 1635746797972
+      "expiry": 1636171098646
     },
     "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python.v3": {
       "data": {
@@ -275,7 +275,7 @@
         "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
         "fileHash": "006cee6ed037ef5e92c2b367f4c072a835e99d67f4405cceb483ad6323b9e1134796efafc393d2a92a18688366e0c1c1666e3a8bef5832a35a055e21317295c7"
       },
-      "expiry": 1635746797973
+      "expiry": 1636171098646
     },
     "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python3.v3": {
       "data": {
@@ -300,7 +300,7 @@
         "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
         "fileHash": "47fd9344ed0f7cb118978482d55a685a2ada3637fecff4cdba215843dcd04317ef7691d550cee0583325cbb0319c0132d6029dfbd07372c0aabaf107e20fbbf3"
       },
-      "expiry": 1635746797974
+      "expiry": 1636171098645
     },
     "/Users/arakawakouichi/.pyenv/shims/python3.v3": {
       "data": {
@@ -325,7 +325,7 @@
         "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
         "fileHash": "a852c950b74b137dc6cdb938fba7a6d4f98a52f99cbd5dc173642f80f3a881403ab8f5dd493e09d4b33c03911f70b6557beb5df050ab6ea88a969b63143a1d59"
       },
-      "expiry": 1635746798068
+      "expiry": 1636171098605
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.v3": {
       "data": {
@@ -350,7 +350,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
       },
-      "expiry": 1635746798096
+      "expiry": 1636171098659
     },
     "INTERPRETERS_CACHE_v3_CurrentPathService": [
       {
@@ -447,49 +447,49 @@
       },
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python",
+        "path": "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.9.0-final",
           "major": 3,
-          "minor": 7,
+          "minor": 9,
           "patch": 0,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.9.0-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef",
+        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
+        "fileHash": "006cee6ed037ef5e92c2b367f4c072a835e99d67f4405cceb483ad6323b9e1134796efafc393d2a92a18688366e0c1c1666e3a8bef5832a35a055e21317295c7",
         "type": "Unknown"
       }
     ],
     "InterpreterAutoSeletionRule-currentPath": {
       "architecture": 3,
-      "path": "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python",
+      "path": "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python",
       "version": {
         "options": {
           "loose": false,
           "includePrerelease": false
         },
         "loose": false,
-        "raw": "3.7.0-final",
+        "raw": "3.9.0-final",
         "major": 3,
-        "minor": 7,
+        "minor": 9,
         "patch": 0,
         "prerelease": [
           "final"
         ],
         "build": [],
-        "version": "3.7.0-final"
+        "version": "3.9.0-final"
       },
-      "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-      "fileHash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef",
+      "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
+      "fileHash": "006cee6ed037ef5e92c2b367f4c072a835e99d67f4405cceb483ad6323b9e1134796efafc393d2a92a18688366e0c1c1666e3a8bef5832a35a055e21317295c7",
       "type": "Unknown"
     },
     "preferredGlobalPyInterpreter": {
@@ -515,6 +515,7 @@
       "fileHash": "006cee6ed037ef5e92c2b367f4c072a835e99d67f4405cceb483ad6323b9e1134796efafc393d2a92a18688366e0c1c1666e3a8bef5832a35a055e21317295c7",
       "envName": "3.9.0",
       "type": "Pyenv",
+      "cachedEntry": true,
       "displayName": "Python 3.9.0 64-bit ('3.9.0': pyenv)"
     },
     "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python.interpreter.Details.v7": {
@@ -546,14 +547,14 @@
           "displayName": "Python 3.7.0 64-bit ('3.7.0': pyenv)"
         }
       },
-      "expiry": 1635813749710
+      "expiry": 1636171098687
     },
     "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.0 64-bit ('3.7.0': pyenv)",
         "hash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef-3cd533946a0d26ced3df3d6e5335ce42"
       },
-      "expiry": 1635813749681
+      "expiry": 1636171098664
     },
     "/Users/arakawakouichi/.pyenv/shims/python3.7.v3": {
       "data": {
@@ -578,7 +579,7 @@
         "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
         "fileHash": "0a45c7f3424e6c089bfd01c16abb3bf71e1c40c7cd3d37be5f01548e217ec9db3344d1ac97a4a2a849e9a133250c8d10e04fb3d3574abe83d50b3ee234b1779a"
       },
-      "expiry": 1635746798233
+      "expiry": 1636171098603
     },
     "/usr/bin/python3.v3": {
       "data": {
@@ -603,7 +604,7 @@
         "sysPrefix": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8",
         "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
       },
-      "expiry": 1635746799259
+      "expiry": 1636171098604
     },
     "INTERPRETERS_CACHE_v3_KnownPathsService": [
       {
@@ -975,7 +976,7 @@
         "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.8.0",
         "fileHash": "c285b6b380e2ff6674eb449604910c0ba1bc7251f6dc6701846d1155d7460de2f0372f8afe9ec0f1e65bb04d431cf6b874f6696254843ae080381f6d8ae0fb63"
       },
-      "expiry": 1635746800625
+      "expiry": 1636171098599
     },
     "/Users/arakawakouichi/.pyenv/versions/3.8.0/bin/python3.8.v3": {
       "data": {
@@ -1000,7 +1001,7 @@
         "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.8.0",
         "fileHash": "43ae281c914c98144dedbb221f737cd9a2ea4057d0326bd6875880570e0498993d0a7d98bf662a152bd75b80fc7aa4761fe5faf0ab0aa06537bd91da84004155"
       },
-      "expiry": 1635746800626
+      "expiry": 1636171098647
     },
     "/Users/arakawakouichi/.pyenv/versions/3.8.0/bin/python3.v3": {
       "data": {
@@ -1025,7 +1026,7 @@
         "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.8.0",
         "fileHash": "408ce0e51faa95461f2e5c088b950ea03056f5c3758e6efee09da4cb187709d70ec98fc60a8f54d2711f3ca386cb1ef604c02d99ec5aa456e4eee018b8399544"
       },
-      "expiry": 1635746800626
+      "expiry": 1636171098598
     },
     "INTERPRETERS_CACHE_v3_VirtualEnvService": [
       {
@@ -1251,49 +1252,49 @@
         "displayName": "Python 3.8.0 64-bit ('3.8.0': pyenv)",
         "hash": "c285b6b380e2ff6674eb449604910c0ba1bc7251f6dc6701846d1155d7460de2f0372f8afe9ec0f1e65bb04d431cf6b874f6696254843ae080381f6d8ae0fb63-830d4b9f5b13a09d39985576964f66e5"
       },
-      "expiry": 1635746800675
+      "expiry": 1636171098665
     },
     "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.9.0 64-bit ('3.9.0': pyenv)",
         "hash": "006cee6ed037ef5e92c2b367f4c072a835e99d67f4405cceb483ad6323b9e1134796efafc393d2a92a18688366e0c1c1666e3a8bef5832a35a055e21317295c7-288c1f133b4dc9ba3a7002d6e942c81f"
       },
-      "expiry": 1635746800675
+      "expiry": 1636190390467
     },
     "/usr/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.16 64-bit",
         "hash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2-f5b651b9c4b75532b11ae83303c43d14"
       },
-      "expiry": 1635746800676
+      "expiry": 1636171098669
     },
     "/Users/arakawakouichi/.pyenv/shims/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.0 64-bit",
         "hash": "4add0a1c835401c52e02c14b1bc38574d584f2b214910afdc23e812e060a103d6e59d57e72b6f71703eb770ca9c2b62893c9772e173588f674b3af804ec26226-c18f2852777575b5df3ca0b592a929b4"
       },
-      "expiry": 1635746800677
+      "expiry": 1636171098668
     },
     "/usr/local/bin/python3.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.0 64-bit",
         "hash": "a54f25c31bcbed7a78232ecd678467d828e967d97a95544788bf79b7c4c9b174b2d36dfe51c51fdffd28b02ba3c391ba4ec0d13f3bbda3d34f3072fdf0d0e349-33f0e9c216c4f897ad86f633b8b42e4f"
       },
-      "expiry": 1635746800678
+      "expiry": 1636171098673
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.16 64-bit",
         "hash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2-a9fb100b1ab04c53a774363838d4885e"
       },
-      "expiry": 1635746800679
+      "expiry": 1636171098705
     },
     "/usr/bin/python3.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.8.2 64-bit",
         "hash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2-4bc3c9f5346452a4fe404c621ebcd443"
       },
-      "expiry": 1635746800682
+      "expiry": 1636171098670
     },
     "InterpreterAutoSeletionRule-system": {
       "architecture": 3,
@@ -1349,7 +1350,7 @@
           "displayName": "Python 3.8.0 64-bit ('3.8.0': pyenv)"
         }
       },
-      "expiry": 1635746800730
+      "expiry": 1636171098690
     },
     "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1380,7 +1381,7 @@
           "displayName": "Python 3.9.0 64-bit ('3.9.0': pyenv)"
         }
       },
-      "expiry": 1635746800732
+      "expiry": 1636190390487
     },
     "/usr/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1410,7 +1411,7 @@
           "displayName": "Python 2.7.16 64-bit"
         }
       },
-      "expiry": 1635746800734
+      "expiry": 1636171098697
     },
     "/Users/arakawakouichi/.pyenv/shims/python.interpreter.Details.v7": {
       "data": {
@@ -1440,7 +1441,7 @@
           "displayName": "Python 3.7.0 64-bit"
         }
       },
-      "expiry": 1635746800736
+      "expiry": 1636171098694
     },
     "/usr/local/bin/python3.interpreter.Details.v7": {
       "data": {
@@ -1470,7 +1471,7 @@
           "displayName": "Python 3.7.0 64-bit"
         }
       },
-      "expiry": 1635746800739
+      "expiry": 1636171098703
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.interpreter.Details.v7": {
       "data": {
@@ -1500,7 +1501,7 @@
           "displayName": "Python 2.7.16 64-bit"
         }
       },
-      "expiry": 1635746800740
+      "expiry": 1636171098714
     },
     "/usr/bin/python3.interpreter.Details.v7": {
       "data": {
@@ -1530,7 +1531,7 @@
           "displayName": "Python 3.8.2 64-bit"
         }
       },
-      "expiry": 1635746800743
+      "expiry": 1636171098700
     },
     "InterpreterAutoSeletionRule-cachedInterpreters": {
       "architecture": 3,
@@ -1584,6 +1585,37 @@
       "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
       "fileHash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef",
       "type": "Unknown"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/Users/arakawakouichi/local_file/lets/lets_proj": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:123f45823e8627dd6b90d2efdf41e9fb": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:123f45823e8627dd6b90d2efdf41e9fb": [],
+    "autoSelectedWorkspacePythonInterpreter-/Users/arakawakouichi/local_file/lets/lets_proj": {
+      "architecture": 3,
+      "path": "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.9.0-final",
+        "major": 3,
+        "minor": 9,
+        "patch": 0,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.9.0-final"
+      },
+      "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
+      "fileHash": "006cee6ed037ef5e92c2b367f4c072a835e99d67f4405cceb483ad6323b9e1134796efafc393d2a92a18688366e0c1c1666e3a8bef5832a35a055e21317295c7",
+      "envName": "3.9.0",
+      "type": "Pyenv",
+      "displayName": "Python 3.9.0 64-bit ('3.9.0': pyenv)"
     },
     "INTERPRETERS_CACHE_v3_PipEnvService": [],
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []

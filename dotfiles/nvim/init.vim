@@ -10,7 +10,10 @@ set clipboard=unnamed  "yank した文字列をクリップボードにコピー
 set hls                "検索した文字をハイライトする
 
 
-
+if has('persistent_undo')
+  set undodir=~/.config/nvim/undo
+  set undofile
+endif
 if &compatible
   set nocompatible
 endif

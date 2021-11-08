@@ -20,4 +20,7 @@ hi jsComment ctermfg=22
 hi JavascriptLineComment ctermfg=22
 
 " coc
-hi CocInfoSign ctermbg=67 ctermfg=178
+hi CocInfoSign ctermbg=67
+" hi CocWarningSign ctermbg=67
+" hi CocWarningFloot ctermbg=67
+" hi CocWarningVirtualText ctermbg=67

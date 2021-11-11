@@ -1,758 +1,3 @@
-23289b825745450e77c773898de214af|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|32|20|V|python
-	    print(task_data)
-ffe0fbd82bda4dd23ad96fcd4a64c3cc|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|33|5|V|python
-	    e
-866bd449ca1cec3968cc834fac9e5a25|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|178|1|V|python
-	        import traceback
-	        traceback.print_exc()
-c16bf2542cc34567d355784564d365d7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|40|9|V|python
-	        pass
-2514629f1be823e5fc252a5ae1c00f6f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|37|9|V|python
-	        print(task_level)
-478f3a4c51824ad23cb50c1c60670c0f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|37|22|v|python
-	task
-7bb0edd98f22430a03b67f853e83c2ca|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/models.py|105|8|V|python
-	        
-0cf31b2c283ce3431794586df7b0996d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/models.py|66|1|V|python
-	    
-12956c828f031b5676ec92a333898705|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|82|12|V|python
-	    print(qas)
-ede2e7b76dcd8e7c79b79b67a5deb689|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|38|44|V|python
-	        # content["task_level"] = task_level
-486ca3b6d3b67a09d1eb319ceff92536|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|35|9|V|python
-	        tam = TaskManager
-9f29db1bf4b8007648d5e389364f813d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|32|9|V|python
-	    content["task_data"] = task_data
-ab7680b53b82e4baafbea1f011441f7b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/models.py|102|9|V|python
-	        print(dir(self))
-1cb20e6980f511f9a97a0a963619abd1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|1|1|v|htmldjango
-	<!-- prettier-ignore -->
-49d18f898bc97a457610107c2e64d205|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|34|5|V|python
-	        task = Task
-ac68b62abfd6a9fe26e8ac4236c8ce0c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|1|38|v|python
-	forms
-d359c6df99b25183d81f7d728b71de0e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|88|19|v|python
-	Form
-ab3db0df6f17f74a2039db7e6329830e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|90|19|V|python
-	def form_qa(forms):
-dd6a2631cfd4972babc347f916cb69fa|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|90|15|V|python
-	    # answer = 
-fab7fcaec198ab1d8b28a836c18230ff|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|90|15|V|python
-	    title = forms.CharField(label="タイトル")
-a43c1b0aa53a0c908810c06ab1ff3967|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|109|4|v|htmldjango
-	input
-adbdc08afdd2d0c21623cda8f1c1aa80|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/urls.py|28|1|V|python
-	    path('<int:task_id>/qa', views.qa, name='qa'),
-3fcdb73d36d54f2cc22d0f68e6b6e182|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|86|9|v|python
-	form
-9a0364b9e99bb480dd25e1f0284c8555|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|83|11|v|python
-	content
-623b6ff2080f39c64d1b43d2765447da|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|89|17|V|python
-	    return render(request, 'app/q_and_a.html',content)
-7ada9aecb2e2987ef042747afc2e16ca|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|85|5|V|python
-	    # print(vars(content.qas))
-921bf20effef33e397095b360c1c0478|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|84|27|V|python
-	        print(dir(request))
-43cde9278fa12fbc3453fb29d0f88b48|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|84|29|V|python
-	        print(request.method)
-3ae71ff9e6c9f85cacbae773b03f6df4|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|76|9|V|python
-	    if request.method == "GET":
-738b10c449d3d7538c267ff53facb680|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|84|9|V|python
-	    elif request.method == "POST":
-266c445d1bd205d5c998d65433d9e766|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|44|1|V|htmldjango
-	<form action="qa_post" method=""POST">
-590f53e8699817c6fa498cc11a4cbe63|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|86|13|v|python
-	self
-c57dd75ef058682586430b0b93fdea99|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|87|5|V|python
-	    print(form)
-3eb030e2b227aec29543038b0acd52dc|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|83|55|v|python
-	.form_valid(form)
-d0a6bad780d691cd3b33c6a20ac9ef76|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|45|1|V|htmldjango
-	  {% csrf_token %}
-2498243ddf25e9e0f8b408599c5bcf51|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|89|17|V|python
-	    # print(form)
-d2e998d0296d63022120e2b5ea83619b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|89|24|V|python
-	    # title = form.title
-ff47bae886834be85fc00e6ce7b1ed46|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|89|18|V|python
-	    # print(title)
-2bb8ea0e11b1f7cdcbbe6e26a3a29e86|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|88|1|V|python
-	    print(request.scheme)
-57746cc8160496aefc9fb306b6ba24e3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|86|24|v|python
-	task_id
-7058d349169f3af108a3fac299be7299|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|44|15|v|htmldjango
-	qa_post
-3c77f8e839d8c5148fbfd6d432da4d18|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|89|26|V|python
-	class QAForms(forms.Form):
-66d2b8a989395faa7f561d99cc7faf3c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|89|20|V|python
-	    print("-------")
-4b84f598c3d26458580755b8be5cc266|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|89|20|V|python
-	    name = forms.CharField()
-efdba9d12f3433066bf3713391969d07|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|79|1|V|python
-	    else:
-524c4befd9983744741dd445bada98fd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|67|15|V|htmldjango
-	                  for="{{ form.title }}"
-d5d3db1765287eef77d7927cc956f50a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|67|30|v|htmldjango
-	title
-f7500cfbaef1013ad7d0bf0add4cb96c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|89|21|V|python
-	                qa=""
-ceeffe3ff59ab630d7106717a51c9b28|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reflection.html|15|13|V|htmldjango
-	        <form>
-4c7250ae91498af66ab88ffc57205525|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reflection.html|19|13|V|htmldjango
-	        </form>
-4f2f8a2f0d695d31b8b3a180058c52fd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|111|1|V|htmldjango
-	  <button type="submit" value="submit" />
-ea9f6aca279138c58f705c8d4cb4b8ce|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|76|16|v|python
-	method
-3827b1e2130cac59ce1f1062325978f4|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|32|8|V|python
-	    task_data = Task.objects.all()
-34b0059763b581972b61702d7213899d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|30|9|V|python
-	    # content = get_tasks()
-f7d1280096c16df8d61ab60c45dc3b16|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|32|1|V|python
-	        task_intrermediate = Task.objects.get_objs_from_level(level='intermediate')
-c553f4ff42e8edb1520b7e3f2adbd731|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|33|18|V|python
-	        task_basic = Task.objects.get_objs_from_level(level='intermediate')
-438fa616dea43dbb0a42b0ce2d393e7a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|32|62|v|python
-	intermediate
-206d53fd627d1780a212024bae2e9cf2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|34|15|v|python
-	task_level
-b26ac862c51c019f33a2ff70782092ed|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|34|1|V|python
-	        print(basic)
-f17aaabc20bfe045075927934fed52d2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|35|15|v|python
-	basic
-7e2c2398f9d31c33823a681aa89158b1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|62|18|v|htmldjango
-	<input
-	                  type="radio"
-	                  name="{{qa.number}}"
-	                  id="A"
-	                  autocomplete="off"
-	                  for="{{ answer }}"
-	                />
-14c0dfdd0568eaf03bec6fc236227431|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|60|1|V|htmldjango
-	            <div class="{{qa.number}}">
-a363b8d13575101a0226e8d0d054f2e7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|92|17|v|python
-	answer
-64caa6419320a0ae0b3d26fcabe509c4|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|91|16|V|python
-	                qas=qas,
-1964e576d633761c689273978ebd771e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|91|16|V|python
-	                ()
-adac72a5a2bf6077de00c47cee03b271|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|92|29|V|python
-	                form=QAForms()
-51dcd19ce7cf749860fcaee572432b17|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|82|1|V|python
-	def qa(request, task_id):
-	    if request.method == "POST":
-	        question_num = 6
-	        answer_list=[]
-	        print("------")
-	        print(request.POST)
-	        for i in range(question_num):
-	            answer_list.append(request.POST.get(str(i+1)))
-	        print(answer_list)
-	
-	        return redirect('/app/1/shadowing')
-	        
-	    elif request.method =="GET":
-	        results = Task.objects.all().filter(id=task_id)[0]
-	        QAM = QAndAManager
-	        qas = QAndA.objects.get_all_qas_by_task(results)
-	        content = get_user()
-	        content["task_id"] = task_id
-	        content["level"] = results.level
-	        content  = dict(qas=qas, answer="")
-	        return render(request, 'app/q_and_a.html',content)
-971e7b3bab62b6ad2545b5a7521265a8|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|107|35|v|python
-	='????',
-7bc1be694e088fb0bd327c16548c09ef|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|110|13|V|python
-	                    
-5cb8616c01af09d82ad151a3f79fca8e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|105|18|V|python
-	    selections = (
-1ec098a333812e941d1ff431bcb0b9f7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|105|18|V|python
-	                ('1', 'お仕事の依頼'),
-81aed9bd3fa6386ad9d485b1313f6cc0|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|105|18|V|python
-	                ('2', 'サイト内容に関する問い合わせ'),
-2477e9c701e631560fb6e71bde9369f1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|105|13|V|python
-	            )
-18b5dc581fcabe55bf30f3d48d39ff01|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|105|13|V|python
-	    form = forms.ChoiceField(choices=CATEGORIES)
-ab0bc076e2c6c1f3498e320e7e70748b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|117|36|V|python
-	                                    
-60964b40f025deb8ce0a235a971ed6e9|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|120|17|V|python
-	                            
-3912026c79e17d88a912e866100b5bd0|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|123|12|V|python
-	        """"
-2fbbb9f28bb6899f5f642b578b733a10|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|113|20|V|python
-	    """問い合わせ用フォーム"""""
-7b2dbd935d56c1a83503a52f17c28bc6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|120|18|V|python
-	    name = forms.CharField(
-e05e2d8f300965d1591532bd87c0c369|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|120|18|V|python
-	            label='お名前', max_length=50,
-35baa958fedde5a58ae9fc0cba2d2605|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|120|18|V|python
-	            required=False, help_text='※任意'
-415ece355bdeb6b5dc29971def54613c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|120|9|V|python
-	        )
-7be8280d1243c35d90057167e100fa19|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|120|9|V|python
-	    email = forms.EmailField(
-ee7436742ed80764d4ca7c11d185c875|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|120|9|V|python
-	            label='メールアドレス', required=False, help_text='※任意'
-0b5a796516e76ca063c721c43132551e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|18|V|python
-	    CATEGORIES = (
-237a61da7a4ddbb916cb9357dbe9f3e9|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|23|V|python
-	            ('1', 'お仕事の依頼'),
-abc35349bc16d725cd3930e5d52dbfdd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|23|V|python
-	            ('2', 'サイト内容に関する問い合わせ'),
-38400a5bf0426d951defe96cea155398|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|9|V|python
-	    text = forms.CharField(label='問い合わせ内容', widget=forms.Textarea)
-f28cefc5701b14e32003cdba90c067c9|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|9|V|python
-	    category = forms.ChoiceField(label='カテゴリ', choices=CATEGORIES)
-629aafe8ac4b5c2ce8db16368eb87d5b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|126|8|V|python
-	                                                                           })
-afdfd932f7eaebc868409bb71832859e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|69|7|V|htmldjango
-	  {{ qaform.as_p  }}
-bf4b6eb84325393785cb770be1671c71|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|79|V|python
-	    labels = ['チェック','複数チェック','ラジオボタン','動的選択肢１','動的選択肢２']
-9bac8aa861efd53d9a97231c3ee5e210|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|53|V|python
-	    SINGLE_CHOICE = [('1','OKなららチェック')]
-ed0003dbbc4b9b1c1cde537bf185234c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|36|V|python
-	    one = forms.MultipleChoiceField(
-eb890f0ff8fbe6123e85fa387410397b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|20|V|python
-	    label=labels[0],
-24b7ef13e1af953386bbbc8b0848c711|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|19|V|python
-	    required=False,
-31cb27a5cc38c7e5138366223a366aee|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|19|V|python
-	    disabled=False,
-cc3d56e155bf60f475df33ac029edc54|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|15|V|python
-	    initial=[],
-6ade43250827d8d9f5d2ed634bce216f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|15|V|python
-	    choices=SINGLE_CHOICE,
-35201019f63466483c3ca3cebc93889a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|15|V|python
-	    widget=forms.CheckboxSelectMultiple(attrs={
-3aa7ab56d78f9344fcd71f4e99c736af|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|15|V|python
-	       'id': 'one','class': 'form-check-input'
-11212b32cd843fd1fb55c3e88c2edd98|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|116|10|V|python
-	       }))
-7aed846f5b3de8a31c56e49a627f5f70|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|122|9|V|python
-	                   
-4fcd01d91120c3ebd2e07dfc4f8ba223|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|131|22|V|python
-	                      
-4d0ed18b1c06aedb661d5e43796ad15e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|131|1|V|python
-	                      )
-35d6d33467aae9a2e3dccb4b6b027878|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|123|5|v|python
-	three
-f32ecd06ffcb7c0ee82e857478775fe6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|69|24|V|htmldjango
-	  {{ qaform.text_body  }}
-26074ade7efee65b24ebbd9a67cc6201|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|103|16|V|python
-	                qaform = QAForm()
-f5d10a2611e2282fe73c10f9911c0c3c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reflection.html|18|16|V|htmldjango
-	            {{ form.text_body  }}
-8775a6b4f75b97ed5b8eb0f990f7519b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/kinetic_action.js|60|37|v|javascript
-	ecies_dic[species_id]["name"]) {
-7e80be3db21f9d613a5532c524da6aee|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/plugins/coc.vim|16|31|V|vim
-	set eslint.packageManager="yarn"
-14ccefbd975a58e6d5acbcb819d3cce1|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/coc-settings.json|5|20|V|json
-	   "tsserver.tsdk":  ".yarn / sdks / typescript / lib "
-0dec4769dfb38556999e7851b06c847c|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/coc-settings.json|2|29|V|json
-	   "eslint.packageManager": "yarn",
-324c6e36966cb93ae7ead61f97029bab|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/coc-settings.json|2|29|V|json
-	   "eslint.nodePath": " .yarn / sdks ",
-26435e6daaa0bf5b4a3683a123cabc29|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/coc-settings.json|2|29|V|json
-	   "workspace.workspaceFolderCheckCwd": falsetypescript.validate.enable
-988bfad55fe0f357a147ae67b495667f|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/coc-settings.json|2|29|V|json
-	   typescript.validate.enable
-8795581d8b30ad63b7611691fad01462|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/kinetic_action.js|158|5|V|javascript
-	    // fjiso
-b4aff59be7bdf26ef84cfab76c4e3070|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/kinetic_action.js|1|4|V|javascript
-	a = sofp;
-46bfe14c8accc70133436ebcdbde837d|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/coc-settings.json|2|5|V|json
-	    "typescript.validate.enable": false,
-de6d122c0bb03d970910be7a8b8f05d6|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/plugins/ale.vim|9|1|V|vim
-	    \ 'javascript': ['prettier'],
-bc4e6acc155b4c131ff6ade50257f87b|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/plugins/ale.vim|2|23|v|vim
-	prettier
-831c220c28da711b7fdec5d68231684f|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/coc-settings.json|2|35|V|json
-	    "typescript.format.enabled": false,
-00daaea215d9d26c1d2deedaeee1d7c4|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/coc-settings.json|2|35|V|json
-	    "typescript.showUnused": false.
-71054c33766d97c85184bc8f73909dd4|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/coc-settings.json|2|20|V|json
-	    "eslint.enable": false
-d900f436bbb990084f5e5e609efab6a4|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/coc-settings.json|6|5|V|json
-	    "eslint.enable: false"
-c8f02e76f21c9990bbd88867cb28c2f7|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/coc-settings.json|2|27|V|json
-	    "eslint.enable": false,
-48184b653a2e808a3b96832358885fbb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/kinetic_action.js|14|1|V|javascript
-	    concole.log(s);
-a1dd2d568a1bb52cb2fa76379070e71f|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|15|15|v|vim
-	                                                                                                                                   
-07899e9748e2bc7390d531974c546f9f|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/plugins/ale.vim|2|28|V|vim
-	    \ 'javascript': ['eslint'],
-03b931a7c0c503fd92484d70dc297983|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|118|1|V|python
-	class ReflectionForm(forms.Form):
-	    labels = ['チェック','複数チェック','ラジオボタン','動的選択肢１','動的選択肢２']
-	    CHOICE = [
-	        ('1','選択肢＜１＞'),
-	        ('2','選択肢＜２＞'),
-	        ('3','選択肢＜３＞')
-	          ]
-	    text_body = forms.CharField(widget=forms.Textarea)
-	    radio_tutton = forms.MultipleChoiceField(
-	        label=labels[2],
-	        required=False,
-	        disabled=False,
-	        initial=['2'],
-	        choices=CHOICE,
-	        widget=forms.RadioSelect(attrs={
-	             'id': 'three','class': 'form-radio'
-	              }))
-9bc71d9b8bff4789e759db0f312a4dd2|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|24|6|V|css
-	.row {
-0cf527f6cf91323f7b789234acafc4ae|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|24|19|V|css
-	    margin-top: 100px;
-ace6b66481b6c35f254cc678774c4e3c|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|24|5|V|css
-	.card {
-a0f120e1353a655731b804954edb1544|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|16|36|V|htmldjango
-	                      <!-- col-8だけにして常にscoreの部分と横並びになるように変更しました -->
-2d286e791c07ef2dbd43f7754b972868|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|18|53|V|htmldjango
-	                          {% for task in task_basic %}
-da82991e0988ea4f68f2565207949bff|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|23|27|V|htmldjango
-	                          {% endfor %}
-e397e56a897240cf94de714c89ec8eb0|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|28|27|V|htmldjango
-	                          <li class="list-group-item">Score2</li>
-3bd208c19cbb9050caf065d6bbe461ff|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|28|27|V|htmldjango
-	                          <li class="list-group-item">Score3</li>
-34ecb5159a28161e62ddbf2497ebc738|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|28|27|V|htmldjango
-	                          <li class="list-group-item">Score4</li>
-ddf1907645b3aaa0b22ae061dbf3529b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|28|27|V|htmldjango
-	                          <li class="list-group-item">Score5</li>
-7b8949c5136bb80fa1610fc16ce3c8a8|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|41|21|V|htmldjango
-	                          {% for task in task_intermediate %}
-6d1b6fa09fe9473d890011d63b444dad|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|52|27|V|htmldjango
-	                          <li class="list-group-item">Score7</li>
-62e0bf30936b91dd928ef4118edd0bcf|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|52|27|V|htmldjango
-	                          <li class="list-group-item">Score8</li>
-8b18d8d829f491b832e0f6ef6a980b9a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|52|27|V|htmldjango
-	                          <li class="list-group-item">Score9</li>
-c8f986a5b16e94244738bbb5dfc819c1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|52|27|V|htmldjango
-	                          <li class="list-group-item">Score10</li>
-56b832f0767cd8311c8b2218c6b1f81d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|64|57|V|htmldjango
-	                          {% for task in task_advanced %}
-7025d0003f823c9e1b0925cdef840dae|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|65|19|V|htmldjango
-	                          <li class="list-group-item"><svg class ="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
-9bd72f17caac2b36679c764511d5f1b6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|74|19|V|htmldjango
-	                          <li class="list-group-item">Score12</li>
-a35d069c0c9120088cf50858fd73a0ba|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|74|19|V|htmldjango
-	                          <li class="list-group-item">Score13</li>
-ce1842c3009923c6922208ee74e8180a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|74|19|V|htmldjango
-	                          <li class="list-group-item">Score14</li>
-e9b251b2d493c9ef64ab84a42864b9ca|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|74|19|V|htmldjango
-	                          <li class="list-group-item">Score15</li>
-3482a6e8d51a320d7b50a438f130e28f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|16|24|V|htmldjango
-	                        <hr>
-3e3c6977eaadfca576df0ae9c40ae4cd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|78|16|V|htmldjango
-	                {% endfor %}
-62fa5a75de4007e230e0e923c54204b6|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|23|5|V|css
-	.card > li {
-3f507364847d7aabcb3d2ec21b5159ff|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|31|25|V|htmldjango
-	                        <hr style="margin: 0; padding: 0;">
-b9b2373d1f496e687bdb1d94ffb4e104|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|1|1|V|htmldjango
-	{% extends "app/layouts/gen.html" %}
-	{% block title %} Live English Training (Shadowing) {% endblock title %}
-	
-	{% block content %}
-	
-	<div class="row">
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <div class="card">
-	      <div class="card-body">
-	        <h2>Live English Training (Shadowing)</h2>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <div class="card">
-	      <div class="card-body">
-	          <h4>Your name:{{user_name}}</h4>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="card mt-4">
-	  <div class="card-body">
-	    <div class="row">
-	      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	        <h4>Demonstaration video</h4>
-	      </div>
-	      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	        <a href="https://youtu.be/6Rd7sb1htNI" style="font-size: 20pt" target="_blank">https://youtu.be/6Rd7sb1htNI</a>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="row mt-4">
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <div class="card">
-	      <div class="card-body">
-	        <h4>Voice recording test</h4>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <div id="app">
-	    <button class="btn btn-danger" type="button" v-if="status=='ready'" @click="startRecording">Start recording</button>
-	    <button class="btn btn-primary" type="button" v-if="status=='recording'" @click="stopRecording">Stop recording</button>
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="row mt-4">
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <div class="card">
-	      <div class="card-body">
-	        <h4>Earphone label</h4>
-	        <audio src="../../../media/uploads/voice_records/2021/10/26/Oct_26_2021_9_41_47.mp3" controls="controls"></audio>
-	        <audio id="demo2" src="../../../media/uploads/voice_records/2021/10/26/Oct_26_2021_9_41_47.mp3"></audio>
-	        <div class="buttons">
-	        <span onclick="document.getElementById('demo2').play()">&#x1f535;</span>
-	        <span onclick="document.getElementById('demo2').pause()">&#9208;</span>
-	        <span onclick="document.getElementById('demo2').muted= true">&#128263;</span>
-	        <span onclick="document.getElementById('demo2').muted= false">&#128266;</span>
-	        <span onclick="document.getElementById('demo2').volume+=0.1">&#x2795;</span>
-	        <span onclick="document.getElementById('demo2').volume-=0.1">&#x2796;</span>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <img src="https://d3cmdai71kklhc.cloudfront.net/post_watermark/marketplace/7636/mp_20170610-181501600_gqs5y.jpg" alt="Earphone label" width="500px"/>
-	  </div>
-	</div>
-	
-	<div class="row mt-4">
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <div class="card">
-	      <div class="card-body">
-	        <h4>Mike label</h4>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <img src="https://d3cmdai71kklhc.cloudfront.net/post_watermark/marketplace/7636/mp_20170610-181501600_gqs5y.jpg" alt="Mike label" width="500px"/>
-	  </div>
-	</div>
-	
-	<div class="row row mt-4">
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <button type="button" class="btn btn-outline-dark">NEXT⇨</button>
-	    </div>
-	    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	      <div class="card">
-	        <div class="card-body">
-	          <h4>To Voice recording test</h4>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
-	<script>
-	          new Vue({
-	            el: '#app',
-	            data: {
-	                // 変数を宣言する部分
-	                status: 'init',     // 状況
-	                recorder: null,     // 音声にアクセスする "MediaRecorder" のインスタンス
-	                audioData: [],      // 入力された音声データ
-	                audioExtension: ''  // 音声ファイルの拡張子
-	            },
-	            methods: {
-	                startRecording() {
-	
-	                    this.status = 'recording';
-	                    this.audioData = [];
-	                    this.recorder.start(); //start()メソッドで録音開始
-	
-	                },
-	                stopRecording() {
-	
-	                    this.recorder.stop(); //stop()メソッドで録音停止
-	                    this.status = 'ready';
-	
-	                },
-	                //ブラウザで録音された音声データの拡張子を取得
-	                getExtension(audioType) {
-	
-	                    let extension = 'wav';
-	                    const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
-	
-	                    if(matches) {
-	
-	                        extension = matches[1]; //ブラウザのよって拡張子が異なる
-	                        //例）chrome：wavm, firefox：ogg
-	
-	                    }
-	
-	                    return '.'+ extension;
-	
-	                }
-	            },
-	            mounted() {
-	                // マイクアクセスの可否
-	                navigator.mediaDevices.getUserMedia({ audio: true })
-	                    //アクセスできたら
-	                    .then(stream => {
-	
-	                        this.recorder = new MediaRecorder(stream);
-	                        // 音声を保存する
-	                        this.recorder.addEventListener('dataavailable', e => {
-	
-	                            this.audioData.push(e.data); //audioDataに音声を格納
-	                            this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
-	
-	                        });
-	
-	                        // 録音した音声をダウンロードする
-	                        // （ここをデータベースに保存する処理にする）
-	                        this.recorder.addEventListener('stop', () => {
-	
-	                            const audioBlob = new Blob(this.audioData);//音声データをBlob化
-	                            const url = URL.createObjectURL(audioBlob);//音声データの保存場所（URL 絶対パス）
-	
-	                            //特にここ以下を変える？
-	                            //音声データのURLを使ってデータベースにデータを送信したい
-	                            let a = document.createElement('a'); //aタグオブジェクト
-	                            a.href = url; //href属性を指定
-	                            a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
-	                            document.body.appendChild(a); //htmlaタグをに追加
-	
-	                            a.click(); //クリックしたらaタグが関連する処理を行う
-	
-	                        });
-	                        this.status = 'ready';
-	
-	                    });
-	
-	            }
-	        });
-	</script>
-	{% endblock %}
-2d3cb75cbcca0d8ec67abe802dbee6fb|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/settings.html|1|1|V|htmldjango
-	{% extends "app/layouts/gen.html" %}
-	{% block title %} Live English Training (Shadowing) {% endblock title %}
-	
-	{% block content %}
-	      <div class="row">
-	        <div class="form-group col-md-12">
-	          <h3>Settings</h3>
-	          <br>
-	        </div>
-	        <div class="form-group col-md-12">
-	          content2
-	        </div>
-	        <div class="form-group col-md-12">
-	          content3
-	        </div>
-	      </div>
-	      <h5>More templates</h5>
-	      <hr>
-	      <div class="row">
-	        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	          content
-	        </div>
-	      </div>
-	
-	{% endblock %}
-	
-f1b6b875c474b7bf08320d93d4aadf95|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|4|1|V|python
-	from app.models import Task, MiniTask, QAndA, TaskManager, QAndAManager
-ac5552fd6a3c08ad22387efbe42d137d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|6|10|v|python
-	models
-65696f0daeebeef5913e19fe49b58875|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|6|17|v|python
-	Task, MiniTask, QAndA, TaskManager, QAndAManager
-e25c99db636626e2a8974bb5a8efe453|file:///Users/arakawakouichi/Desktop/test.html|14|1|V|html
-	<script>
-	    var wavesurfer = WaveSurfer.create({
-	            container: '#waveform'
-	        });
-	    var wavesurfer = WaveSurfer.create({
-	            container: '#waveform',
-	            scrollParent: true
-	        });
-	    wavesurfer.load('./Fish_1.wav');
-	    wavesurfer.on('ready', function () {
-	            wavesurfer.play();
-	        });
-	</script>
-413eb284dd2aa9b022e3254418caf774|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|184|1|V|htmldjango
-	<script charset="utf-8">
-bbb40a5e3423d9f813c22393b85d7519|file:///Users/arakawakouichi/Desktop/test.html|10|1|V|html
-	        <div id="waveform"></div>
-0d13a5120a1f82adfb3f0b5bed900d89|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|71|138|v|htmldjango
-	 width="500px"
-625b37fcc7429aefdbc49873b99609a1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|71|36|V|htmldjango
-	    <img src="https://d3cmdai71kklhc.cloudfront.net/post_watermark/marketplace/7636/mp_20170610-181501600_gqs5y.jpg" alt="Earphone label"/>
-6c7d5138a4fa1d990b1e8cac8e1a5ff8|file:///Users/arakawakouichi/Desktop/test.html|6|1|V|html
-	        <script src="https://unpkg.com/wavesurfer.js"></script>
-94ffb4f6c68cd4ed2a19ac7118193496|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|57|21|v|htmldjango
-	../../../media/uploads/voice_records/2021/10/26/
-3fb6f4b9c86f85533c740c1971e4cb0b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|193|1|V|htmldjango
-	    wavesurfer.on('ready', function () {
-d827e13f6703854aa11cc68c6779cb13|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|193|1|V|htmldjango
-	            wavesurfer.play();
-a32d961007c8e6b275c3dea8055066f5|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|193|1|V|htmldjango
-	        });
-2c74a586d995f625b330ba40958cf2c6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|192|5|v|htmldjango
-	wavesurfer
-2ba020407016e56b0a39e152a3430966|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|57|42|V|htmldjango
-	        <audio src="../../../media/uploads/voice_records/2021/10/26/Oct_26_2021_9_41_47.mp3" controls="controls"></audio>
-d885817d5a3ddc9ffd5881e96d7bdc7f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|57|42|V|htmldjango
-	        <audio id="demo2" src="../../../media/uploads/voice_records/2021/10/26/Oct_26_2021_9_41_47.mp3"></audio>
-3380843c90723deebca58be814d436e6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|57|29|V|htmldjango
-	        <div class="buttons">
-be7af778dfac76e80ce3d37ceb20a831|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|57|29|V|htmldjango
-	        <span onclick="document.getElementById('demo2').play()">&#x1f535;</span>
-4e6e176fa9fad4540cc05232be0c804c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|57|29|V|htmldjango
-	        <span onclick="document.getElementById('demo2').pause()">&#9208;</span>
-db0b3923d68841119a400355257392e5|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|57|29|V|htmldjango
-	        <span onclick="document.getElementById('demo2').muted= true">&#128263;</span>
-b81233b339fd38d2ff38fac0175ce755|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|57|29|V|htmldjango
-	        <span onclick="document.getElementById('demo2').muted= false">&#128266;</span>
-8187a76ecf87bc0c1b5bf20e77c7f00a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|57|29|V|htmldjango
-	        <span onclick="document.getElementById('demo2').volume+=0.1">&#x2795;</span>
-a271cf27e052c2f7ea2b06f40c334bf7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|57|29|V|htmldjango
-	        <span onclick="document.getElementById('demo2').volume-=0.1">&#x2796;</span>
-e65e3dea618c5a2021525233b6099721|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|57|1|V|htmldjango
-	        <button onclick="wavesurfer.play()">play</button>
-a3b34c0871dc2fd51eec5559b68f709d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|58|37|v|htmldjango
-	play
-5dcb60aeb56cace39a4ce277cfc9def9|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|54|22|V|htmldjango
-	    <div class="card">
-	      <div class="card-body">
-3068306f1230e042541c0c577e79ca1d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|56|14|V|htmldjango
-	        </div>
-fcc3c75380c124cbb812678e1c50900b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|56|12|V|htmldjango
-	      </div>
-b082895fab4c56c1aba17dcc672fca3a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|56|10|V|htmldjango
-	    </div>
-cefff2c26079d34368d3f557e2a6d608|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|172|8|V|htmldjango
-	    var wavesurfer = WaveSurfer.create({
-f1699e3c4896c2cf486bb15759fbc124|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|172|8|V|htmldjango
-	            container: '#waveform'
-228a838305c064a5a8eff9eef9bca99a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|55|1|V|htmldjango
-	        <button onclick="wavesurfer.playPause()">play/stop</button>
-c1416ab91cdf7053cb8380e4dea9fede|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|178|1|V|htmldjango
-	            waveColor: '#3786BC',
-2495e2a1d29788ddca7bbb0fc6d9b0fe|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|65|22|V|htmldjango
-	    <div class="card">
-6888db42b353def626166c044817f1a7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|65|29|V|htmldjango
-	      <div class="card-body">
-3e01ed1bfb385c3f0a261cbac12205cf|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|68|8|V|htmldjango
-	    <img src="https://d3cmdai71kklhc.cloudfront.net/post_watermark/marketplace/7636/mp_20170610-181501600_gqs5y.jpg" alt="Mike label" width="500px"/>
-2b327bdf83e60dc8950ab29bc5649e2b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|59|1|V|htmldjango
-	    <div id="waveform"></div>
-e35c14ca4c6e7db54f82a1687cbd5541|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|169|1|V|htmldjango
-	    var wavesurfer = WaveSurfer.create({
-	            container: '#waveform',
-	            scrollParent: true,
-	            backgroundColor: '#012C3D',
-	            cursorColor: '#FFFFFF',
-	            waveColor: '#B8B6B7',
-	            progressColor: '#3786BC',
-	            barHeight: 3,
-	
-	        });
-7432a2e8ff5fba743e73fb62ac86639f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|175|1|V|htmldjango
-	            progressColor: '#3786BC',
-ffed2ed16522a6ebe4ef7654a7a429c0|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|188|1|V|htmldjango
-	    wavesurfer.load('../../../media/uploads/quastion_voices/2021/10/26/Fish_1.wav');
-b90f7754f499bfc9a22af6f3bbde6396|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|174|1|V|htmldjango
-	            // waveColor: '#B8B6B7',
-fee71038e831e3e09812a36c06ad4cd3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|176|23|V|htmldjango
-	            progressColor: '#B8B6B7',
-d98b502e4d10030695bf3fb479be75d0|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|112|1|V|python
-	def qa_post(request):
-049482bc5093c7219a2f10dfd60d145d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|112|1|V|python
-	    results = Task.objects.all().filter(id=task_id)[0]
-58eef3c962a4fe50955aa56afb130049|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|112|1|V|python
-	    qas = QAndA.objects.get_all_qas_by_task(results)
-df0918b183b4ea12c1f762e61e4a41a4|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|112|1|V|python
-	    content  = dict(qas=qas)
-2f574935eb06b38a89ea432bb1b32b66|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|112|1|V|python
-	    answer = request.POST.getlist[content.number]
-45e56a7bf9193250b91620e48ca9bae3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|112|1|V|python
-	    print(request)
-6c7a3ae69c1b14ddd13f10a87bae1bc8|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|1|V|python
-	        content = {
-8a6f7e698d90109a1cd97b9e1117c613|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|1|V|python
-	            "basic": task_basic,
-7ddd5a90fd0f28f15e9b9a264dc394f8|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|1|V|python
-	            }
-b76447b6a828ef7e63d6f1aa97068952|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|37|1|V|python
-	        print(task_advanced)
-abce4aaa02fb66ac67a7a36e95eb0868|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|33|1|V|python
-	    try:
-	        task_basic = Task.objects.get_objs_from_level(level='basic')
-	        task_intermediate = Task.objects.get_objs_from_level(level='intermediate')
-	        task_advanced = Task.objects.get_objs_from_level(level='advanced')
-	        content["task_basic"] = task_basic
-	        content["task_intermediate"] = task_intermediate
-	        content["task_advanced"] = task_advanced
-	    except:
-	        import traceback
-	        traceback.print_exc()
-f8ef15b90aeb8e503fc5ec81da89b5cb|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|5|V|python
-	        task_basic = Task.objects.get_objs_from_level(level='basic')
-74b8523a5897cbf1c7fe898e88d72607|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|5|V|python
-	        task_intermediate = Task.objects.get_objs_from_level(level='intermediate')
-37c6b9e8ee122021bc45af30b7ec5b7e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|5|V|python
-	        task_advanced = Task.objects.get_objs_from_level(level='advanced')
-ac236d19159120b25b5d7bb7e1c9edc1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|5|V|python
-	        content["task_basic"] = task_basic
-d3fc111ead458c823dc595b74d313985|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|5|V|python
-	        content["task_intermediate"] = task_intermediate
-9a4d6d413c997e993062babcc2d73c4a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|5|V|python
-	        content["task_advanced"] = task_advanced
-07f168f54e3f9cc791352d498c6655c9|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|43|8|V|python
-	    try:
-b4ca43218b4dfbbdb6a6da4675b0a10e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|43|1|V|python
-	    except:
-c17403f9c187f623dec27f1900f837d7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|43|1|V|python
-	        import traceback
-8650de608122b5e1ea4b59a0c1a00bf7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|43|1|V|python
-	        traceback.print_exc()
-ccfebbb00ad0e7b5063158bf3bfe320e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|42|V|python
-	        content['task_advanced'].aaa = "ijoj"
-9698cbe6518d977daf5834962be6b855|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|42|V|python
-	        print(content["task_advanced"].aaa)
-140cb236dc6ad427518c14b764988e90|file:///Users/arakawakouichi/local_file/lets/lets_proj/account/models.py|208|9|v|python
-	get_historys_by_task_and_learner
-8de16c7db8233eb8e882ef4b15a84fab|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|43|V|python
-	        print(content["task_advanced"].hist)
-ac7a51efc51dabff274eb109c91f6b34|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|47|1|V|python
-	                task.is_achieved = history.is_Achieved
-b04589b4ea3573bed7f6e53159056901|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|47|44|v|python
-	is_Achieved
-b7648d58d85e054d1250c0cbaf879caa|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|44|9|V|python
-	        # それぞれのタスクデータに対して繰り返し
-	        for level in content:
-9b5118b3888472b86d46de1c15fbe00d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|49|22|v|python
-	is_achieved
-7d8083631a5d7018c407bbac13909081|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|18|30|V|htmldjango
-	                            <ul class="list-group list-group-flush">
-092669283b66bdd9d9c5f7ef55e2d08e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|18|30|V|htmldjango
-	                              <li class="list-group-item">
-a8796f5fd4728590ba5797f86bb1dd81|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|23|30|V|htmldjango
-	                              </li>
-2af808ef1f16f503b69c94d34b9df5ed|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|23|30|V|htmldjango
-	                            </ul>
-68112d8066fcae4f160ebf095c3900c8|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|23|1|V|htmldjango
-	                          </div>
-	                          <div class="col-4">
-4563d9b7033de07eb7a04b57c13a766a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|22|27|V|htmldjango
-	                              <a href="{{task.id}}/settings">{{ task.title }}</a>
-cb3d5ef297504235fb83be2b9bace6bb|file:///Users/arakawakouichi/local_file/lets/lets_proj/account/models.py|256|5|v|python
-	dtw_score
-1ad1356895d55f9a2c0c920ce5440742|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|48|21|V|python
-	                print
 3a94c220b30badda435c1b0a5b4b1636|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler.py|6|17|v|python
 	User.objects.first()
 	
@@ -903,3 +148,887 @@ f0455c3b3e1963d55b4e4e1ec7d1645d|file:///Users/arakawakouichi/local_file/lets/le
 	uploads
 b326b5062b2f0e69046810717534cb09|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|172|27|v|htmldjango
 	true
+2d796883c1860ee84e6955a08f18b9c2|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|126|1|V|python
+	def main2(dirname):
+	    services_list = gm.list_serveice()
+	    column_label = gm.list_column_label()
+	    pqdatalist = PQdataList()
+	
+	    for service in services_list:
+	        dir_name = dirname + service + "/" + service
+	        with open(dir_name + ".tsv") as f1:
+	            reader = csv.reader(f1, delimiter="\t")
+	            header = next(reader)
+	            for row in reader:
+	                if has_bar_in_row(row):
+	                    # |で区切られてるrow dataを展開
+	                    row_list = expansion_tsv_row([row])
+	                    for devided_row in row_list:
+	                        pqdatalist.add(devided_row)
+	        # ファイルへの出力
+	        for i in range(len(pqdatalist.data)):
+	            pqdata = pqdatalist.data[i]
+	            f = open(dir_name + "_s" + str(i) + ".tsv", "w")
+	            f.write(list2tsv(column_label))
+	            f.close()
+	            for row in pqdata.row_list:
+	                f = open(dir_name + "_s" + str(i) + ".tsv", "a")
+	                f.write("\n" + list2tsv(row))
+	                f.close()
+	            print(pqdata.id_set)
+	            print("created ", dir_name + "_s" + str(i) + ".tsv")
+	
+	
+	if __name__ == "__main__":
+	    dirname = "test_data/"
+	    # dirname = "data/"
+	    # main1(dirname)
+	    main2(dirname)
+b8b0d32d1ff876b927f89cd31d0a3dd2|file:///Users/Kouiti/dotfiles/dotfiles/nvim/colors/colorscheme.vim|10|34|v|vim
+	 guifg=#777777 guibg=#ecc48d
+7e1305be01eaa5f6c64530ea99388cbe|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|1|1|V|python
+	import os
+	import re
+	import csv
+	from log.log import init_log, log
+	from lib import general_method as gm
+	from lib.psiquic_class import PQdataList, PQdata
+	
+	from copy import copy
+2c1b39a6125d2deb0d6b1ee98c721831|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|8|1|V|python
+	from copy import copy
+ed9f4b8f879ddbb59fda1057ea3a2810|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|1|1|V|python
+	import os
+a7b84d6354b9ad7f50b580037fe70ae2|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|1|1|V|python
+	import re
+e59a2f44bb13a0b9a9861bdd86ace487|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|2|19|V|python
+	from log.log import init_log, log
+0e5d9ffcafe045f4555cf1450a1c6d90|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|38|23|V|python
+	    # dirname = "data/"
+af765e2b17e727c4d392823b2fbd2596|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|38|20|V|python
+	    # main1(dirname)
+526544ce113e350989be120751b1b3ec|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|38|5|v|python
+	list_interaction_typs
+d1d4e92183a8c4ca2a7b61c924882ddc|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|25|V|python
+	                if has_bar_in_row(row):
+431d08ae6a77c3b514ec0537a4617b59|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|24|V|python
+	                    # |で区切られてるrow dataを展開
+6ba0bfbcff1c32aeed6e5cce8aaeb597|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|24|V|python
+	                    row_list = expansion_tsv_row([row])
+5f6800749a6ea0b24c2c1c66769f2f55|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|24|V|python
+	                    for devided_row in row_list:
+0686d5d212a8327e7950c9bf593c3a78|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|24|V|python
+	                        pqdatalist.add(devided_row)
+55c51b9ac47c24c7abdeb6d3da5b62af|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|29|V|python
+	        # ファイルへの出力
+6389313af8dceb68d0a1a695b46f87c6|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|23|V|python
+	        for i in range(len(pqdatalist.data)):
+cc6732bcad64fc7173758602735bb052|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|23|V|python
+	            pqdata = pqdatalist.data[i]
+df86e596ad49096437a6b182fefc5c09|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|23|V|python
+	            f = open(dir_name + "_s" + str(i) + ".tsv", "w")
+95693ff3f05788202b8244144544ad70|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|23|V|python
+	            f.write(list2tsv(column_label))
+91b488b99ea620a856100168b4358f84|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
+	            f.close()
+0d1fae8fa4c07716e8c02462ad8704e3|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
+	            for row in pqdata.row_list:
+9c3725c0f98516eea4889c8bb3d9a377|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
+	                f = open(dir_name + "_s" + str(i) + ".tsv", "a")
+fab23d414ca42814cf5cc4375101aff4|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
+	                f.write("\n" + list2tsv(row))
+ad138f243d1f7fb73a2fcfbcef7376d1|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
+	                f.close()
+d23cda8c23802aeb9d2a9a21c5c2b603|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
+	            print(pqdata.id_set)
+83cc9bb7fb092fcdc4af4265ee739d9f|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
+	            print("created ", dir_name + "_s" + str(i) + ".tsv")
+76aba201dd1be88dd23ee5452432b4f7|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|19|20|V|python
+	                pass
+4460c47a46adb8900d89482903cb2619|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|21|11|v|python
+	interction_ids
+4d8133264ba6edfe2fc2cc42989740fc|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|23|26|V|python
+	    print(interaction_ids)
+40203abe6e81ed98cbc97cdd6ec4f144|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|156|24|v|python
+	mouse
+43c157d9a086905630aff17bcf7444ba|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|156|1|V|python
+	    queryes = ["taxidA:human"]
+99e9bae675b12967251c175696f00a70|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|157|24|v|python
+	human
+69501932413ee1eb6fec866c856b08ee|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|157|17|v|python
+	taxidA
+8c91584360d2415c1bfa2f6bfe198a5e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|105|1|V|python
+	        + "/species:human"
+aed2abfe355ec927a6fab9323000b17b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|106|40|V|python
+	        + '/type:"physical association"'
+70cdbdb020235ed929426296515aa044|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|106|29|V|python
+	        + '&type:"physical association"'
+eaf6c3f6e2b35cfebbfbe2bf258d7723|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|105|25|v|python
+	&type:"physical association"'
+9e76089025a1b7d7b169989b3386ea9a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|105|1|V|python
+	        + "species:human"
+ce45f0000d3b283f66956bff6ebf3a89|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|80|29|V|python
+	    print(readURL(psicquicUrl))
+4c2c12cae6e7f72a2641f4aece72c3d8|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|81|7|V|python
+	    if 
+0469e831fb470254458eab4679c8dc97|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_all.py|110|1|V|python
+	                + query
+0b1ed6b48a3fd18a366a8381d28c7a51|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_all.py|74|1|V|python
+	        + "?firstResult="
+97a4e3b581ea70dc86102502736955e7|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|136|9|V|python
+	        return
+b77cc52aec006682d33edb53b6a42b16|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|135|37|V|python
+	        print(type(line.split("\t")))
+d98615e8905f594ec522e470b762df1e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|135|18|V|python
+	        print(line)
+16e349329ea26ede1389d77289d85f34|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|113|1|V|python
+	    if max_count == "0":
+	        print("data not found")
+	        return
+3da728960c8e916d79351246b2923f64|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_all.py|147|5|V|python
+	                # content = arrangeData(line)
+3518bda1e4a5bddc51b08033693ef2e4|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_all.py|58|1|V|python
+	        'psi-mi:"MI:0217"(phosphorylation reaction)',
+	        'psi-mi:"MI:0203"(dephosphorylation reaction)',
+	        'psi-mi:"MI:1110"(predicted interaction)',
+7714683b21329a8b436f8fcc0d50ecad|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/lib/general_method.py|4|1|V|python
+	        "BioGrid",
+	        "bhf-ucl",
+	        "ChEMBL",
+	        # "DIP",
+	        "HPIDb",
+	        "IntAct",
+	        "IMEx",
+	        "mentha",
+	        "MPIDB",
+	        "iRefIndex",
+	        "MatrixDB",
+	        "MINT",
+	        "Reactome",
+	        "Reactome-FIs",
+	        "EBI-GOA-miRNA",
+	        "UniProt",
+	        "MBInfo",
+	        "BindingDB",
+	        "VirHostNet",
+	        "BAR",
+	        "EBI-GOA-nonIntAct",
+	        "tfact2gene",
+ef1f42c9cdae15bc4506e10f0ca6ba2c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|139|1|V|python
+	        # return
+884c9b4ae7b0c8c67d68d6fb5c4e5f6d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|163|1|V|python
+	    queryes = ["*"]
+6a784595cf6dbb9ecdefcd1b80cd83e5|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|106|27|V|python
+	        # + "species:human"
+d3aeea7ea7b9c78ae2e1c75605d2ac86|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|162|1|V|python
+	    queryes = ["taxidA:mouse"]
+37aa957e86a5dea1d0e2e944da81aedd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|164|14|v|python
+	species:human
+4b1d117c04a606fbd6c0b7a703ef7069|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|164|14|V|python
+	        # + ""
+044450a3a0e5d0cafdb13c8a31c30669|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|112|1|V|python
+	        print(service_name, "data not found")
+b17b53d171f7463e2004ecdd7f4fead1|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|167|1|V|python
+	from log.log import init_log, log
+	from datetime import datetime
+	import shutil
+	import os
+	import xml.etree.ElementTree as ET
+	from glob import glob
+	from urllib.request import urlopen
+	from lib import general_method as gm
+	
+	
+	# ------------------ FUNCTIONS ------------------
+	
+	
+	class PsicquicService:
+	    def __init__(self, name, restUrl):
+	        self.name = name
+	        self.restUrl = restUrl
+	
+	
+	def readURL(url):
+	    try:
+	        fileHandle = urlopen(url)
+	        content = fileHandle.read()
+	        fileHandle.close()
+	    except IOError as e:
+	        # print('Cannot open URL ' + url)
+	        import traceback
+	
+	        error_point = traceback.format_exc().split("\n")[1]
+	        error_message = traceback.format_exc().split("\n")[-2]
+	        content = ""
+	        print(error_message)
+	    return content
+	
+	
+	def readActiveServicesFromRegistry():
+	    registryActiveUrl = "http://www.ebi.ac.uk/Tools/webservices/psicquic/registry/registry?action=ACTIVE&format=xml"
+	
+	    content = readURL(registryActiveUrl)
+	
+	    # Create the XML reader
+	    root = ET.fromstring(content)
+	    xmlns = "{http://hupo.psi.org/psicquic/registry}"
+	
+	    services = []
+	
+	    for service in root.findall(xmlns + "service"):
+	        name = service.find(xmlns + "name")
+	        restUrl = service.find(xmlns + "restUrl")
+	
+	        service = PsicquicService(name.text, restUrl.text)
+	        services.append(service)
+	
+	    return services
+	
+	
+	def queryPsicquic(service_name, psicquicRestUrl, query, offset, maxResults, init):
+	    dirname = "test_data/" + service_name
+	    if init:
+	        try:
+	            shutil.rmtree(dirname)
+	        except:
+	            pass
+	    try:
+	        os.mkdir(dirname)
+	    except:
+	        pass
+	
+	    psicquicUrl = (
+	        psicquicRestUrl
+	        + "query/"
+	        + query
+	        + "?firstResult="
+	        + str(offset)
+	        + "&maxResults="
+	        + str(maxResults)
+	        + "&format=count"
+	    )
+	    max_count = str(readURL(psicquicUrl)).split("'")[1].split("'")[0]
+	    filename = dirname + "/" + service_name + ".tsv"
+	    f = open(filename, "w")
+	    f.write(
+	        "Unique identifier for interactor A"
+	        + "\tUnique identifier for interactor B"
+	        + "\tAlternative identifier for interactor A"
+	        + "\tAlternative identifier for interactor B"
+	        + "\tAliases for A"
+	        + "\tAliases for B"
+	        + "\tInteraction detection methods"
+	        + "\tFirst author"
+	        + "\tIdentifier of the publication"
+	        + "\tNCBI Taxonomy identifier for interactor A"
+	        + "\tNCBI Taxonomy identifier for interactor B"
+	        + "\tInteraction types"
+	        + "\tSource databases"
+	        + "\tInteraction identifier(s)"
+	        + "\tConfidence score"
+	    )
+	    f.close()
+	
+	    psicquicUrl = (
+	        psicquicRestUrl
+	        + "query/"
+	        + query
+	        + "?firstResult="
+	        + str(offset)
+	        + "&maxResults="
+	        + str(maxResults)
+	    )
+	    # print("URL: " + psicquicUrl)
+	    if max_count == "0":
+	        # print(service_name, "data not found")
+	        print(0)
+	        return
+	    print_text = (
+	        ""
+	        # + str(datetime.now())
+	        # + "\t>\tloading "
+	        # + service_name
+	        # + "...\t"
+	        # + str(offset)
+	        # + "~"
+	        # + str(maxResults)
+	        # + "\t/ "
+	        + str(max_count)
+	        # + "\t"
+	        # + str(int(int(maxResults) / int(max_count) * 100))
+	        # + "%"
+	    )
+	    print(print_text)
+	    psicquicResultLines = readURL(psicquicUrl).splitlines()
+	
+	    content = ""
+	    for line in psicquicResultLines:
+	        line = str(line, encoding="utf8")
+	        # content = arrangeData(line)
+	        # print(line.split("\t")[11])
+	        content += line + "\n"
+	    if len(psicquicResultLines) == 0:
+	        return
+	
+	    f = open(filename, "a")
+	    f.write(content)
+	    f.close()
+	
+	
+	def main(query):
+	    services = readActiveServicesFromRegistry()
+	    services_list = gm.list_serveice()
+	    import os
+	
+	    path = os.getcwd()
+	
+	    print(path)
+	
+	    for service in services:
+	        if service.name in services_list:
+	            queryPsicquic(service.name, service.restUrl, query, 1, 100, True)
+	
+	
+	if __name__ == "__main__":
+	    # queryes = ["*"]
+	    # queryes = ["species:human"]
+	    queryes = ["taxidA:9606"]
+	    print(queryes)
+	    for query in queryes:
+	        main(query)
+4187d34fb7b05fe737f83381cef3950e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|163|1|V|python
+	    queryes = ["species:human"]
+244905dfb5414fe1173f07764791b8bd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|137|17|v|python
+	line.split("\t")[11]
+9c0e04c5d3ccb9f00a3efe21b62deabf|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|137|17|V|python
+	        # print()
+764e6d40f5fe63735fc1055eaaf017d7|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|132|6|V|python
+	    ma
+0cf31b2c283ce3431794586df7b0996d|file:///Users/Kouiti/local_file/maman_hp/index.html|10|4|V|html
+	    
+0945359809dad1fbf3dea1c95a0da951|file:///Users/Kouiti/local_file/maman_hp/index.html|7|12|v|html
+	Document
+beac3732feae1947fa277f6fb9c2edc8|file:///Users/Kouiti/local_file/maman_hp/index.html|50|1|V|html
+	
+	    <body>
+fc5c3e211399e26afa3bf0b67901f2b4|file:///Users/Kouiti/local_file/maman_hp/index.html|31|44|V|html
+	                                    Dropdown
+004bf6c9a40003140292e97330236c53|file:///Users/Kouiti/local_file/maman_hp/index.html|34|75|v|html
+	Action
+f379594e2d5a6b95b1fbb5d2f6652d8b|file:///Users/Kouiti/local_file/maman_hp/index.html|35|84|v|html
+	ction
+2bea6a5629ec588b19e5c1bdf866da4f|file:///Users/Kouiti/local_file/maman_hp/index.html|40|37|V|html
+	                            <li class="nav-item">
+0341f54cdb7699d6a2d4e608ebf637ed|file:///Users/Kouiti/local_file/maman_hp/index.html|40|37|V|html
+	                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+1cedf91a0c33d8a50c9dd193b33f00f8|file:///Users/Kouiti/local_file/maman_hp/index.html|40|33|V|html
+	                            </li>
+6986881568cc26da87c6b92d53749026|file:///Users/Kouiti/local_file/maman_hp/index.html|41|29|V|html
+	                        <form class="d-flex">
+1371b6280da42be0124d8e769d598b19|file:///Users/Kouiti/local_file/maman_hp/index.html|41|29|V|html
+	                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+de13637203b3ce16694e8637b9e32038|file:///Users/Kouiti/local_file/maman_hp/index.html|41|29|V|html
+	                            <button class="btn btn-outline-success" type="submit">Search</button>
+942b119aed09e62aa18e5fb1a85cff56|file:///Users/Kouiti/local_file/maman_hp/index.html|41|29|V|html
+	                        </form>
+1cd9b731c51e090d7ecdc12ec304dcd2|file:///Users/Kouiti/local_file/maman_hp/index.html|14|17|V|html
+	        <div class="container">
+cec9732770b5ed11f53247c98d6de793|file:///Users/Kouiti/local_file/maman_hp/index.css|2|1|V|css
+	    background-color: #583F2A;
+6526f9e27f366cccbed4122f7ffe7614|file:///Users/Kouiti/local_file/maman_hp/index.css|5|24|v|css
+	583F2A
+47db4a3fa2b15f5d1091678e5e2fe847|file:///Users/Kouiti/local_file/maman_hp/index.html|10|39|v|html
+	ample
+a11a7b8c1ddf7de26c1b663683d34ae7|file:///Users/Kouiti/local_file/maman_hp/index.css|1|1|V|css
+	.navbar {
+	    background-color: #583F2A;
+	    color: white;
+	}
+2d0be6ca1940f30aff51f6a8f6968786|file:///Users/Kouiti/local_file/maman_hp/index.css|3|1|V|css
+	    color: white;
+545652108e739af5c92e480d2d294bae|file:///Users/Kouiti/local_file/maman_hp/index.html|43|9|V|html
+	        dov
+bc95dfc14146aa23e43f2ea7af04d310|file:///Users/Kouiti/local_file/maman_hp/index.html|44|12|V|html
+	            
+a9473ded85aa51851deb4859cdd53f98|file:///Users/Kouiti/local_file/maman_hp/index.html|45|16|V|html
+	                
+64887355e8f1f0bc0725989d8eadc658|file:///Users/Kouiti/local_file/maman_hp/index.html|44|1|V|html
+	            <div class="col-4"></div>
+4b3d9405e7a353469cfde13cdf14d6ac|file:///Users/Kouiti/local_file/maman_hp/index.html|44|1|V|html
+	            <div class="col-4" style="background-color: blue;"></div>
+48d6215903dff56238e52e8891380c8f|file:///Users/Kouiti/local_file/maman_hp/index.html|45|57|v|html
+	blue
+ede302d89ee65f8e725123f0b3e718a3|file:///Users/Kouiti/local_file/maman_hp/index.html|44|39|v|html
+	height: 30px; 
+a775790a1d00c02de26b766d71b2e0b7|file:///Users/Kouiti/local_file/maman_hp/index.html|43|1|V|html
+	        <div class="row">
+	            <div class="col-4" style="height: 10px; background-color: #4D7ECA;"></div>
+	            <div class="col-4" style="height: 10px; background-color: #FFFFFF;"></div>
+	            <div class="col-4" style="height: 10px; background-color: #D17A8B;"></div>
+	        </div>
+ebd6169b70d0fae35214449b6343ccf4|file:///Users/Kouiti/local_file/maman_hp/index.css|5|5|v|css
+	color: #FFFFFF;
+	
+505ccff7d88a952dd5c2dd7c81519a1a|file:///Users/Kouiti/local_file/maman_hp/index.html|23|84|v|html
+	 style="color: #FFFFFF;"
+d6f4b8652a19848129fa2977e2e6d749|file:///Users/Kouiti/local_file/maman_hp/index.html|34|1|V|html
+	                                <li><a class="dropdown-item" href="#" style="color: #FFFFFF;">ディナー</a></li>
+b81dca5dd3767a216a5c1ad26c5f3468|file:///Users/Kouiti/local_file/maman_hp/index.html|36|33|V|html
+	                                <li><hr class="dropdown-divider">お持ち帰り</li>
+244bcd3d56df470e68bb97fe87ec5ec3|file:///Users/Kouiti/local_file/maman_hp/index.html|36|76|V|html
+	                                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+8c000a5dbd5784fa67d20358346a3083|file:///Users/Kouiti/local_file/maman_hp/index.html|35|95|v|html
+	ディナー
+9ebcc3b9041f1454dfd58b76d74c6bf0|file:///Users/Kouiti/local_file/maman_hp/index.html|35|70|v|html
+	 style="color: #FFFFFF;
+24ac18a75d0b005cdca23fbfc668cf75|file:///Users/Kouiti/local_file/maman_hp/index.html|34|1|V|html
+	                                <li><a class="dropdown-item" href="#">ディナー</a></li>
+8d76006badbf2c0f4fa98806ab57af52|file:///Users/Kouiti/local_file/maman_hp/index.html|36|1|V|html
+	                                <li><a class="dropdown-item" href="#">お持ち帰り</a></li>
+6e15fa5209cb6d46956f8bdb40ca64ed|file:///Users/Kouiti/local_file/maman_hp/index.html|25|1|V|html
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="#" style="color: #FFFFFF;">オードブル</a>
+	                        </li>
+7122a212f1a612acb43d69667a34ea8e|file:///Users/Kouiti/local_file/maman_hp/index.html|29|82|v|html
+	オードブル
+d1dd9f62012cd3096aad239d4303d924|file:///Users/Kouiti/local_file/maman_hp/index.html|43|94|V|html
+	                                <li><a class="dropdown-item" href="#">クリスマス</a></li>
+8cc257d75da8b84fb619166d21085dc4|file:///Users/Kouiti/local_file/maman_hp/index.html|43|94|V|html
+	                                <li><a class="dropdown-item" href="#">おせち料理</a></li>
+fed850a73ea50b6cd22bc738850c1ae0|file:///Users/Kouiti/local_file/maman_hp/index.html|31|1|V|html
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="#" style="color: #FFFFFF;">おせち料理</a>
+	                        </li>
+4bfb06b325bcdcb84a3eb790b24e1565|file:///Users/Kouiti/local_file/maman_hp/index.html|51|1|V|html
+	        <img src="./top.png" class="img-fluid" alt="...">
+1543208d210d25b584d4c5843101a44c|file:///Users/Kouiti/local_file/maman_hp/index.html|52|1|V|html
+	        <div class="row">
+e3b6c7818808cf0b9022c774f39d91b5|file:///Users/Kouiti/local_file/maman_hp/index.html|61|1|V|html
+	            </div>
+b31f5dfba08ec450514710b8a9869b73|file:///Users/Kouiti/local_file/maman_hp/index.html|59|1|V|html
+	                <div class="col-sm">
+	                    <img src="./mamain1.png" class="img-fluid" alt="...">
+	                </div>
+32a0c9ad14c21c3cb71434a03ae6bbea|file:///Users/Kouiti/local_file/maman_hp/index.html|59|1|V|html
+	                <div class="col-sm">
+04a7d3d609129a9296bf7ac0608c2097|file:///Users/Kouiti/local_file/maman_hp/index.html|63|24|v|html
+	</p>
+4452b2e5b47be67f5a6b5f026f169424|file:///Users/Kouiti/local_file/maman_hp/index.html|58|1|V|html
+	            <div class="row mt-4 intro">
+ec03f91ae56e478455e3786e91559194|file:///Users/Kouiti/local_file/maman_hp/index.css|8|17|v|css
+	solid
+fcdfcd0a9d51cba61dc39af4c3d8e798|file:///Users/Kouiti/local_file/maman_hp/index.css|8|17|V|css
+	    border: 4px solid;
+098595a0e06d334778b68c37f3e5a56f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/footer.html|1|1|V|html
+	<div class="mt-4"></div>
+	<hr>
+	<footer class="text-center">
+	        <div class="mb-2">
+	          <small>
+	            Soka University
+	          </small>
+	        </div>
+da1939dd972edc8c9d5935b69aeab9c4|file:///Users/Kouiti/local_file/maman_hp/index.html|88|19|V|html
+	                    Soka University
+1ebfa3f4073c4b408bca7dc42e213b7b|file:///Users/Kouiti/local_file/maman_hp/index.html|88|1|V|html
+	                  </small>
+481e08d283d49644f5f9790308a6074a|file:///Users/Kouiti/local_file/maman_hp/index.html|81|1|V|html
+	                  <small>
+b681def47751c103248902fa2c015eb2|file:///Users/Kouiti/local_file/maman_hp/index.html|83|1|V|html
+	                  </small>
+	                  <small>
+8b0f0ea73162b7552dda3c149b6c045d|file:///Users/Kouiti/local_file/maman_hp/index.html|82|51|v|html
+	<br>
+c8f1365ed2338a315be370e72d51c460|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|158|68|v|python
+	10d0
+283f42764da6dba2522412916b031080|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|158|68|v|python
+	9999999
+b567a6bd1b4ddee25ac78a1aad1a5950|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|80|21|v|python
+	readURL(psicquicUrl)
+5aa815f3669b1a203c791bde690d030b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|137|9|V|python
+	        if "9606" in line.split("\t")[9]:
+12218835081741e3fd679371a74e4c5b|file:///Users/Kouiti/local_file/maman_hp/index.html|63|56|V|html
+	                    <h2>フレンチ食堂ママン</h2>
+3513a0b7810412840f1b60fcb16772e9|file:///Users/Kouiti/local_file/maman_hp/index.html|60|39|v|html
+	デザイン
+fbec6750a5dd432dd2c506a5404dec71|file:///Users/Kouiti/local_file/maman_hp/index.html|59|21|v|html
+	フレンチ食堂ママン
+2fbe0c90c769b0e0cc87ac6aabc1aa15|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|67|5|V|python
+	    print("session")
+7a546c4b385b12fe46f9aacb27b1a300|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|67|1|V|python
+	    print(request.session)
+8ab0a4d17b36ad7052c06b849f27311f|file:///Users/Kouiti/local_file/lets/lets_proj/account/views.py|49|21|v|python
+	request.session["instructor_id"]
+0ca865c593ec581fa452266cf62f85a4|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|68|1|V|python
+	    # print(request.session.items)
+14c870baccb30ed29f6b837b350d661b|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|68|16|V|python
+	    for i in request.session.items:
+994bf13fd87f5e77c3deff2f251013a5|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|68|16|V|python
+	        print(i)
+691324e4ffa16367931ab227549721c0|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|68|1|V|python
+	    print(dir(request.session))
+2bb638346bb30fed3036bcfc66c735af|file:///Users/Kouiti/local_file/lets/lets_proj/account/views.py|56|38|v|python
+	learner_id"]
+a8f7488d51e96f0a338f9b3a20cfd35e|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|67|16|V|python
+	    print("------------")
+38e1c7139cd9c90e1514e6197a733814|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|67|16|V|python
+	    for i in request.session:
+89a54d159e197964f8d3c0c589c651ac|file:///Users/Kouiti/local_file/lets/lets_proj/account/views.py|56|21|v|python
+	request.session["learner_id"] 
+bdde46b52b8366c96b85faa80ce90633|file:///Users/Kouiti/local_file/lets/lets_proj/account/views.py|56|1|V|python
+	                    request.session["learner_id"] = learner.id
+0f80a654f73598287e0189e873e264e5|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|67|34|v|python
+	 = learner.id
+58a449bdd4be65d9da4111199a507ccc|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|1|1|V|htmldjango
+	{% extends "app/layouts/gen.html" %}
+	{% block title %} Live English Training  (Shadowing) {% endblock title %}
+	
+	{% block content %}
+	<div class="row flex">
+	  <div class="form-group col-md-12">
+	    <h3>Self reflection</h3>
+	    <hr>
+	
+	    <!--1列目-->
+	    <div class="row">
+	
+	      <!--1-->
+	      <div class="col-md">
+	          <div class="form-group">
+	            <label for="FormControlTextarea1"><h5>Today’s shadowing is</h5></label>
+	            <textarea class="form-control" id="FormControlTextarea1" rows="5"></textarea>
+	          </div>
+	      </div><br>
+	
+	      <!--2-->
+	      <div class="col-md">
+	          <div class="form-group">
+	            <label for="FormControlTextarea2"><h5>Today’s Q ＆ A is</h5></label>
+	            <textarea class="form-control" id="FormControlTextarea2" rows="5"></textarea>
+	          </div>
+	      </div><br>
+	    </div>
+	
+	    <!--2列目-->
+	    <div class="row">
+	
+	      <!--3-->
+	      <div class="col-md">
+	        <form>
+	          <div class="form-group">
+	            <label for="FormControlTextarea3"><h5>Today’s script shadowing is</h5></label>
+	            <textarea class="form-control" id="FormControlTextarea3" rows="5"></textarea>
+	          </div>
+	        </form>
+	      </div><br>
+	
+	      <!--4-->
+	      <div class="col-md">
+	        <form>
+	          <div class="form-group">
+	            <label for="FormControlTextarea4"><h5>Today’s reading aloud is</h5></label>
+	            <textarea class="form-control" id="FormControlTextarea4" rows="5"></textarea>
+	          </div>
+	        </form>
+	      </div><br>
+	    </div>
+	
+	    <!--3列目-->
+	    <div class="row">
+	
+	      <!--5-->
+	      <div class="col-md">
+	        <form>
+	          <div class="form-group">
+	            <label for="form-check-label-1"><h5>My weak points are</h5></label>
+	
+	            <div class="form-check">
+	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-1">
+	              <label class="form-check-label-1" for="flexRadioDefault1-1">
+	                great 🙂
+	              </label>
+	            </div>
+	
+	            <div class="form-check">
+	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-2" checked>
+	              <label class="form-check-label-1" for="flexRadioDefault1-2">
+	                good 😐
+	              </label>
+	            </div>
+	
+	            <div class="form-check">
+	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-3" checked>
+	              <label class="form-check-label-1" for="flexRadioDefault1-3">
+	                bad 🙁
+	              </label>
+	            </div>
+	
+	            <div class="form-check">
+	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-4" checked>
+	              <label class="form-check-label-1" for="flexRadioDefault1-4">
+	                awful  😢
+	              </label>
+	            </div>
+	          </div>
+	        </form>
+	      </div><br>
+	
+	      <!--6-->
+	      <div class="col-md">
+	        <form>
+	          <div class="form-group">
+	            <label for="form-check-label-2"><h5>What to do next</h5></label>
+	
+	            <div class="form-check">
+	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2-1">
+	              <label class="form-check-label-2" for="flexRadioDefault2-1">
+	                great 🙂
+	              </label>
+	            </div>
+	
+	            <div class="form-check">
+	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2-2" checked>
+	              <label class="form-check-label-2" for="flexRadioDefault2-2">
+	                good 😐
+	              </label>
+	            </div>
+	
+	            <div class="form-check">
+	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2-3" checked>
+	              <label class="form-check-label-2" for="flexRadioDefault2-3">
+	                bad 🙁
+	              </label>
+	            </div>
+	
+	            <div class="form-check">
+	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2-4" checked>
+	              <label class="form-check-label-2" for="flexRadioDefault2-4">
+	                awful  😢
+	              </label>
+	            </div>
+	          </div>
+	        </form>
+	      </div><br>
+	    </div>
+	
+	    <div class="col-md btn-group" role="group" aria-label="Basic">
+	      <button type="button" class="btn btn-outline-success rounded-pill btn-lg"> Next ⇨ </button>
+	      <button type="button" class="btn btn-outline-success btn-lg"> To Next Tasks </button>
+	      <button type="button" class="btn btn-outline-success btn-lg"> To Main Menu </button>
+	      <button type="button" class="btn btn-outline-success btn-lg"> Quit </button>
+	    </div>
+	  </div>
+	</div>
+	
+	{% endblock %}
+	<!-- http://127.0.0.1:8000/app/1/reflection -->
+a2e3bb8276b746422b760781b1888d71|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|102|10|V|python
+	    print()
+541a09ba31fa44c388e0a2d3e78f2521|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|106|1|V|python
+	    if request.method == "POST":
+14a08e33ed72f83030d4d171e1502fda|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|118|1|V|python
+	    elif request.method == "GET":
+2650ad708cae3ae86aaa0880767431a7|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|102|1|V|python
+	        content = {"form": ReflectionForm()}
+	        return render(request, "app/reflection.html", content)
+6097fe4265d267cb6bed4cb71c773dea|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|102|9|V|python
+	        content = {"form": ReflectionForm()}
+de45aa3b3fdb3d23293f967508dc4de4|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|102|9|V|python
+	        return render(request, "app/reflection.html", content)
+d50d956b5943da20386dcd948df88024|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|118|1|V|python
+	        return redirect("/app/1/shadowing")
+3ad7ddf181f81e362944c50135ac3b24|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|103|33|v|python
+	shadowing
+fad58de7366495db4650cfefac2fcd61|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|103|31|v|python
+	main
+63b42f8ca89d854d9987868243412670|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|19|58|v|htmldjango
+	Today’s shadowing is
+75de05bffc21ebe0e93e234b33a401ee|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|22|1|V|htmldjango
+	              {{ form.reflect_sh }}
+aa2e62d759086cdac06dd6558db287e6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|129|15|v|htmldjango
+	reflect_sh
+b0c238241ba52fe09f8d1daaf8e5245f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|132|10|V|htmldjango
+	      {{ form.radio_tutton }}
+7e56cb7bfb19d88a61d6416d838cb113|file:///Users/Kouiti/local_file/lets/lets_proj/app/forms.py|60|51|v|python
+	, ("bad", "bad")
+bf845095fae98f9b88721837746a4c1c|file:///Users/Kouiti/local_file/lets/lets_proj/app/forms.py|59|29|V|python
+	    labels = ["チェック", "複数チェック", "ラジオボタン", "動的選択肢１", "動的選択肢２"]
+a2b883778e9ea8e289761d8c8eab93ef|file:///Users/Kouiti/local_file/lets/lets_proj/app/forms.py|70|20|V|python
+	        # initial=["2"],
+6cbe7bc3c3d063a6783d8127e89b7f42|file:///Users/Kouiti/local_file/lets/lets_proj/app/forms.py|65|20|V|python
+	    reflect_sh = forms.CharField(widget=forms.Textarea)
+3950159c12b0c4049a9bd317cf13fa06|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|130|33|V|htmldjango
+	          {{ form.weekpoint_radio }}
+e2516c203902230766cda7cf4adb3eed|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|129|11|V|htmldjango
+	      <div>
+f4e677bc6c2608e416ac71fb619f791e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|63|50|v|htmldjango
+	<h5>My weak points are</h5>
+2300a6ddc5b3d2b2b7e9efa329876b98|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|60|17|V|htmldjango
+	          <p></p>
+22302f461f033193f140236ed5cf688e|file:///Users/Kouiti/local_file/lets/lets_proj/app/forms.py|68|15|V|python
+	        label="label",
+8a926946d67e804f943a71d7388e74ef|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|22|15|V|htmldjango
+	              {{ form.shadow_text }}
+41b5906188282b6a795599cebc1a8b27|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|77|18|V|python
+	        print(requ)
+f67f9eccf0b0a28deeafc575ebddcb35|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|104|1|V|python
+	        print(request.POST)
+6894c7fb586177168f93b3310caeaee6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|26|V|htmldjango
+	<!-- <div class="card mt-4">
+c8c9d2885f6766805c660096dd3542c7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|21|V|htmldjango
+	    <div class="row">
+2fc8f2784331bf8560186233bb6bece5|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|18|V|htmldjango
+		  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+04256b39c28556e3c583b6102152c1b5|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|15|V|htmldjango
+			  <div class="card-header">Demonstration video</div>
+b1b96db033404784bdd024ddf0d9e974|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|9|V|htmldjango
+		  </div>
+5c09dfb66475f43882699af011cbf577|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|12|V|htmldjango
+	      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+05ba70150cc039d6057814825db929cf|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|6|V|htmldjango
+			  <div class="card-body">
+81ee53632d020314956480bae4087774|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|6|V|htmldjango
+			  </div>
+aadbf4416d6e4ab567bd5937e1932df9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|10|V|htmldjango
+		</div>
+6fd23560b59ab9b076d740a14bf16430|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|10|V|htmldjango
+	</div> -->
+98672e73efa04606596d2cac311c34c5|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+			  <div class="card-header">Voice recording test</div>
+3b4620692faabfb5cfd970e9cada2b74|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				<div id="app">
+d3472d477b898e935fb6e20d17e9b83c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				<button class="btn btn-danger" type="button" v-if="status=='ready'" @click="startRecording">Start recording</button>
+ac5fc7a11f66ac93fafaa0c8d900122e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				<button class="btn btn-primary" type="button" v-if="status=='recording'" @click="stopRecording">Stop recording</button>
+1e814360255b609cf703bd260d91bbae|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				</div>
+2ede1c462f203486b48479da739d97f7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+			  <div class="card-header">Your Recorded Voice</div>
+e031668ac9ca728d4d6256644bac18d7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				<a class="pointer" id="play_btn"
+4c4f60afa06fc3c27643be66dd11f3e9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				onclick="wavesurfer.playPause(); this.hidden=true; document.getElementById('pause_btn').hidden= false">
+fbbf4f872fcb246ded62a292a020b75e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+951ee006154744ff33e603de8a243041|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+					  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+3d005eada1acc157392231d960e8443f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+					  <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+f9ed05861a5eb795db712a35b5af36f4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+					</svg>
+9ebb2882736d6baea8cecb14efd71a1b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				</a>
+d89ae06d21a44da2cf411210aa1d2447|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				<a class="pointer" id="pause_btn"
+c14d776d32b4da02c6bfd72f5b008ca6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				onclick="wavesurfer.playPause(); this.hidden=true; document.getElementById('play_btn').hidden= false" hidden>
+384f1de63be1221f78d9237aa00423e0|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
+d93d488f77225a6e9d2d32eae2ed1189|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+					  <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"/>
+fd141cae218f9f7be068a6103c8bb25d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				<a class="pointer" onclick="wavesurfer.play(0)">
+a80cc49903ef50df0ba9e057ee1c2d29|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-skip-backward-circle" viewBox="0 0 16 16">
+7ac48101d9d268c3b1919975ce8c7144|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+					  <path d="M11.729 5.055a.5.5 0 0 0-.52.038L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.271-.445z"/>
+d74bc05be8fe157845c7111a2b2a307a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				<div id="waveform"></div>
+0a1aa595b84d3be645eeffb911be4b1c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|4|V|htmldjango
+			  <div class="card-header">Mike level</div>
+69add59353eee19ac5f0904e3abae00a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				  <div id="waveform_recorded"></div>
+4fb9c7f643e7da921666aabff4c52e91|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+	  <div class="row">
+30092b54b247f21f45e3108b35a348c8|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
+				<button type="button" class="btn btn-outline-dark">NEXT⇨</button>
+7184f254bffe4e174ddce2fead1b51d2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|4|V|htmldjango
+	            <h4>To Voice recording test</h4>
+eeb7edae15f5b63b333dcb01581d0c33|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	<!-- <div class="row">
+0e268b6690eefda21d551324865a627f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+eae863cda43b53ec17558e37cd772e93|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	    <h3>Basic</h3>
+153710e1f1712490815a9645bf8d4c4b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	  </div>
+7660437696d9e460d67d807c0bb5a599|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+fb61fcc5ad70499bd424f7fdbb1cafef|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	    <h5>Task No.{{ task_id }} [Reading aloud]</h5>
+d703d3208199302b8b0c5b2899fe7496|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+2bf0ed39adfb52397bfd94ed7c24939c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	    <h5>Your name : {{ user_name }}</h5>
+0a3a0b592b9c285e050805307cee87c2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	</div>
+b19eb87e753bdbff43365558c4ee5f70|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	<hr />
+ac9ed9bd4e6ef0f4592a7058314730c3|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	<div class="row">
+e109cbbdd665a7ad2012b9b34e98cc66|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+daf9e641b281cc77ecf74eee9363a6c6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	    <div class="form-group col-md-1">
+d78774662a94eec6a714250721905733|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	      <button type="button" class="btn btn-success">Start</button>
+b082895fab4c56c1aba17dcc672fca3a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	    </div>
+8cef697ba5e3764bf1dd81131517f90e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	      <button type="button" class="btn btn-danger">Stop</button>
+045cac40091d792b43b9589226074dd9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
+44e030ce87fb4b412fb1d32e096e424e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	    <div class="form-group col-md-12">
+7fcf3b2bef8c8a152a856bdd449b2158|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	      <h4>{ ~~ Model Voice ~~ }</h4>
+2f30eb9125f1c3e22039324a25115400|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	      <br />
+c76c57e29d5d065836cf47999b497a53|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	      <hr />
+4eb9802d88cd0868b1a65a473e6fe7d3|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	      <h4>{ ~~ Your Recorded Voice ~~ }</h4>
+9cfd143aabbf7e603afd036cb1c244f2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	  <div class="row">
+	    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+0e841533dcfd2211d4c536196e09fe27|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+63cd1215fbc33815ca5cf49042d27544|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	        <div class="form-group col-md-1">
+5104201792a3e59eb5dfd88489971396|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	          <button type="button" class="btn btn-secondary" onclick="location.href='URL'">NEXT</button>
+3068306f1230e042541c0c577e79ca1d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	        </div>
+3ca53ee27f7903d3b172e39b3ef25204|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+4e81d8119b4f6024c79e95e85ec45d68|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	      <div class="form-group col-md-12">
+58f9d0d4d8665a3a3e8255b0b47d60d2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	        <br>
+48359ada9df24f6f7b7cbde1c75778ca|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	        <h5>⇒To 2nd Shadowing recording</h5>
+fcc3c75380c124cbb812678e1c50900b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	      </div>
+d0a9c968548dac1272633aaeeb7db644|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	  <hr>
+76f80803af4e2de0bff6367af94146c2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	  <h5>More templates</h5>
+c2441e327ae91ec7c430d2c289e1ee6b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+	      content
+d8abf9d02d4cd54c52c9377b388e1c64|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|36|1|V|htmldjango
+	<div class="row mt-4">
+	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	    <div class="card">
+	      <div class="card-body">
+	        <h4>Voice recording test</h4>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	    <div id="app">
+	    <button class="btn btn-danger" type="button" v-if="status=='ready'" @click="startRecording">Start recording</button>
+	    <button class="btn btn-primary" type="button" v-if="status=='recording'" @click="stopRecording">Stop recording</button>
+	    </div>
+	  </div>
+	</div>

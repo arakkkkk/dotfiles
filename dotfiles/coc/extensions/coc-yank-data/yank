@@ -1,1034 +1,1113 @@
-3a94c220b30badda435c1b0a5b4b1636|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler.py|6|17|v|python
-	User.objects.first()
+535647157db22b3b98e4181aed67b7b2|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/models.go|1|1|V|go
+	package owners
 	
-f7531e2d0ea27233ce00b5f01c5bf335|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|49|17|v|python
-	print
-6d6950b957c636b411a108ba074cf2c6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|49|30|V|python
-	                if len(history) == 1:
-61fca0a071e15c20f3228371b2d9802f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|49|30|V|python
-	                    task.histp
-ba93bf4a5a9f96fcab022ed74727c3f3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|50|37|V|python
-	                    print(history.dtw_score)
-4f711d9b8d2abf6f7a2fe651e31319c1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|51|37|V|python
-	                task.history = history
-0b4d3f567e2732418929a643e43faa2c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|51|17|V|python
-	                # task.historyに履歴を保存しておく
-c3f288769912610b59f245beab403702|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|39|21|v|css
-	 !important;
-7a51744fc310c9b4220176d8502c4755|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|10|79|V|htmldjango
-	          <!-- 画面幅が小さいときは縦に並べる。広いときは2列に並べるように指定 -->
-5c1df1ce3c8b315f2838aece6047d307|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-26a828e5f573bd17358555d784661d6f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	              <div class="card mb-4">
-c4a906eb600fa9d5dd97cab9b85abf28|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                <div class="card-header">intermediate</div>
-b0be81a11060c8f57e4683627228de7b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                    {% for task in task_intermediate %}
-487c618803926b66a967fe17276719f0|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                        <div class="row mt-3">
-d09a35e84ef8779a4ad11d8f604d9cce|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                          <div class="col-8">
-c8bb685865b71e03d0c38a322dbf4116|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                              <li class="list-group-item"><svg class ="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-check-square" viewbox="0 0 16 16">
-dbd14744a0c8b4f93d2bd4db4de46750|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                                <path d="m14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h2a1 1 0 0 1-1-1v2a1 1 0 0 1 1-1h12zm2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v2a2 2 0 0 0-2-2h2z"/>
-1938a2e44a5ed3b29a7852bd563d3b43|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                                <path d="m10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02l4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z"/>
-cf849c2396deb0b8968b1407cea5aee6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                              </svg><a href="{{task.id}}/settings">{{ task.title }}</a></li>
-c454aedcfb4448cef9db3584b4e69528|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                          </div>
-8e0e7e0b6d2d66874431c8131906affd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                          <div class="col-4">
-213aabc457f8f9a5cc99c5a8a605c4f1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                              <li class="list-group-item">Score</li>
-05bb70ea0803527305d4b6acef5ecc7a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                        </div>
-8f6856c171eecd02a149431a65380185|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|24|V|htmldjango
-	                    {% endfor %}
-55263615d7fc382f11b9b6a4e55a3dd1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	          <!-- 3列目  -->
-de40f22de048322fdf081f8035c8bd6a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                <div class="card-header">Advanced</div>
-15e513953147a9f6b7b2c58d5e1df5c6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                    {% for task in task_advanced %}
-f4d4b47c29b30512a914258beca65875|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                    <div class="row mt-3">
-b20ca7ee383479e39f4bfb4006736517|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                      <div class="col-8">
-aa64f556513bb1218a8cfa7018651b52|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                        <ul class="list-group list-group-flush">
-ff03a2a3b434cd511812517ade995128|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-bd8cefc1a7ebaefe939398be4e672a03|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                            <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z"/>
-0ff7bb84e1205a9cbce909c81a02eb37|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                          </svg><a href="{{task.id}}/settings">{{ task.title }}</a></li>
-dd529bab12b30d9402123dc4fac61bfc|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                        </ul>
-8fa439211482e686e92428c0ae48f98f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                      </div>
-093f02dc9f1717cd3fb6bfc303efcacb|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                      <div class="col-4">
-6d241d0f9d4901b3bba3c35fd1ee9c6e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                          <li class="list-group-item">Score</li>
-6efe362b97f90a358613aaa247d914a6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                    </div>
-a89dd214a5f10e3a7c958532bc7c9b35|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                    <hr style="margin: 0; padding: 0;">
-9b0db20282c2dc8d23943c66e26f1139|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|34|16|V|htmldjango
-	                </div>
-4d9732ce943325cc4ed676721402c473|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|11|1|V|htmldjango
-	          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-	              <div class="card mb-4">
-	                <div class="card-header">Basic</div>
-	                    {% for task in task_basic %}
-	                        <div class="row mt-4">
-	                          <div class="col-1">
-	                              <svg class ="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
-	                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-	                                <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z"/>
-	                              </svg>
-	                          </div>
-	                          <div class="col-7">
-	                              <a href="{{task.id}}/settings">{{ task.title }}</a>
-	                          </div>
-	                          <div class="col-4">
-	                              <a>{{ task.history.dtw_score }}</a>
-	                          </div>
-	                        </div>
-	                        <hr style="margin: 0; padding: 0;">
-	                    {% endfor %}
-	              </div>
-	          </div>
-972e73b7a882d0802a4e3a16946a2f94|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|36|42|v|htmldjango
-	Basic
-338da4ae84213912802553e623056de6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|26|1|V|htmldjango
-	                              <a>{{ task.history.dtw_score }}</a>
-397eaa182ddfd6ad7ab8b49f6346764e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|17|1|V|htmldjango
-	                              {% if task.history.is_Achieved == true %}
-93a9781922cc73bd3956d320ed1b9ff5|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|23|65|V|htmldjango
-	                              <a>{{ task.history.is_Achieved }}</a>
-56b79c457199ef1977325e17d649822f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|22|31|V|htmldjango
-	                              elseの時のアイコン作成
-0e0c8b8488d1fd862895aa3d55680be3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|66|18|V|python
-	    print(task_id)
-8cdf432906d1c0263a4e3199bfd90138|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|67|36|V|python
-	    # results = User.objects.first()
-dd1fe51303a61efe1b64164452b3f222|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|67|24|V|python
-	    print(vars(results))
-56f3d1a5400a6b6a23893542910fdb1e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|67|24|V|python
-	    # print(results.title)
-5ccbda7afcf9f1a525d14e09d27c9de6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|67|25|V|python
-	    content["aaa"] = "aaa"
-e9407fb4bf494bb06582c47adb5c0f0b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|189|31|V|htmldjango
-	    console.log({{ aaa|safe }})
-8d777f385d3dfec8815d20f7496026dc|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|189|30|v|htmldjango
-	data
-a2f5a6284dfc627205e15df2e5b7822b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|67|26|V|python
-	    content["aaa"] = "aii"
-8a9337f18bece28931f986d591afdf70|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|67|8|V|python
-	    task
-53e61336bb49ec978968786b07dea50b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|66|5|v|python
-	results
-b2c97ae425dd751b0e48a3acae79cf4a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|66|31|v|python
-	filter
-10bfc84ccadfc6b7dab844a4294e8791|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/models.py|120|5|v|python
-	shadowing_voice
-2f7a6622f3b1d84c21c9843306719dd7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|66|11|V|python
-	    content
-5f7d67e4db655835a0f7f26cf76863d9|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/views.py|68|17|V|python
-	    print(task.shadowing_voice)
-f0455c3b3e1963d55b4e4e1ec7d1645d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|190|21|V|htmldjango
-	    console.log(data)
-724f4de61ad96b41d56e6e941f4f3b71|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|189|9|V|htmldjango
-	    var shadowing_vioce_path = "{{ task.shadowing_voice | safe }}";
-5128f35c9b4be13788ba41bdb6d1fc1f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|189|37|v|htmldjango
-	uploads
-b326b5062b2f0e69046810717534cb09|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|172|27|v|htmldjango
-	true
-2d796883c1860ee84e6955a08f18b9c2|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|126|1|V|python
-	def main2(dirname):
-	    services_list = gm.list_serveice()
-	    column_label = gm.list_column_label()
-	    pqdatalist = PQdataList()
-	
-	    for service in services_list:
-	        dir_name = dirname + service + "/" + service
-	        with open(dir_name + ".tsv") as f1:
-	            reader = csv.reader(f1, delimiter="\t")
-	            header = next(reader)
-	            for row in reader:
-	                if has_bar_in_row(row):
-	                    # |で区切られてるrow dataを展開
-	                    row_list = expansion_tsv_row([row])
-	                    for devided_row in row_list:
-	                        pqdatalist.add(devided_row)
-	        # ファイルへの出力
-	        for i in range(len(pqdatalist.data)):
-	            pqdata = pqdatalist.data[i]
-	            f = open(dir_name + "_s" + str(i) + ".tsv", "w")
-	            f.write(list2tsv(column_label))
-	            f.close()
-	            for row in pqdata.row_list:
-	                f = open(dir_name + "_s" + str(i) + ".tsv", "a")
-	                f.write("\n" + list2tsv(row))
-	                f.close()
-	            print(pqdata.id_set)
-	            print("created ", dir_name + "_s" + str(i) + ".tsv")
+	import (
+	    "go-app/db_conf"
+	    "github.com/jinzhu/gorm"
+	)
 	
 	
-	if __name__ == "__main__":
-	    dirname = "test_data/"
-	    # dirname = "data/"
-	    # main1(dirname)
-	    main2(dirname)
-b8b0d32d1ff876b927f89cd31d0a3dd2|file:///Users/Kouiti/dotfiles/dotfiles/nvim/colors/colorscheme.vim|10|34|v|vim
-	 guifg=#777777 guibg=#ecc48d
-7e1305be01eaa5f6c64530ea99388cbe|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|1|1|V|python
-	import os
-	import re
-	import csv
-	from log.log import init_log, log
-	from lib import general_method as gm
-	from lib.psiquic_class import PQdataList, PQdata
-	
-	from copy import copy
-2c1b39a6125d2deb0d6b1ee98c721831|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|8|1|V|python
-	from copy import copy
-ed9f4b8f879ddbb59fda1057ea3a2810|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|1|1|V|python
-	import os
-a7b84d6354b9ad7f50b580037fe70ae2|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|1|1|V|python
-	import re
-e59a2f44bb13a0b9a9861bdd86ace487|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|2|19|V|python
-	from log.log import init_log, log
-0e5d9ffcafe045f4555cf1450a1c6d90|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|38|23|V|python
-	    # dirname = "data/"
-af765e2b17e727c4d392823b2fbd2596|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|38|20|V|python
-	    # main1(dirname)
-526544ce113e350989be120751b1b3ec|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|38|5|v|python
-	list_interaction_typs
-d1d4e92183a8c4ca2a7b61c924882ddc|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|25|V|python
-	                if has_bar_in_row(row):
-431d08ae6a77c3b514ec0537a4617b59|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|24|V|python
-	                    # |で区切られてるrow dataを展開
-6ba0bfbcff1c32aeed6e5cce8aaeb597|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|24|V|python
-	                    row_list = expansion_tsv_row([row])
-5f6800749a6ea0b24c2c1c66769f2f55|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|24|V|python
-	                    for devided_row in row_list:
-0686d5d212a8327e7950c9bf593c3a78|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|24|V|python
-	                        pqdatalist.add(devided_row)
-55c51b9ac47c24c7abdeb6d3da5b62af|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|29|V|python
-	        # ファイルへの出力
-6389313af8dceb68d0a1a695b46f87c6|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|23|V|python
-	        for i in range(len(pqdatalist.data)):
-cc6732bcad64fc7173758602735bb052|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|23|V|python
-	            pqdata = pqdatalist.data[i]
-df86e596ad49096437a6b182fefc5c09|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|23|V|python
-	            f = open(dir_name + "_s" + str(i) + ".tsv", "w")
-95693ff3f05788202b8244144544ad70|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|23|V|python
-	            f.write(list2tsv(column_label))
-91b488b99ea620a856100168b4358f84|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
-	            f.close()
-0d1fae8fa4c07716e8c02462ad8704e3|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
-	            for row in pqdata.row_list:
-9c3725c0f98516eea4889c8bb3d9a377|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
-	                f = open(dir_name + "_s" + str(i) + ".tsv", "a")
-fab23d414ca42814cf5cc4375101aff4|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
-	                f.write("\n" + list2tsv(row))
-ad138f243d1f7fb73a2fcfbcef7376d1|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
-	                f.close()
-d23cda8c23802aeb9d2a9a21c5c2b603|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
-	            print(pqdata.id_set)
-83cc9bb7fb092fcdc4af4265ee739d9f|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|17|21|V|python
-	            print("created ", dir_name + "_s" + str(i) + ".tsv")
-76aba201dd1be88dd23ee5452432b4f7|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|19|20|V|python
-	                pass
-4460c47a46adb8900d89482903cb2619|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|21|11|v|python
-	interction_ids
-4d8133264ba6edfe2fc2cc42989740fc|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/analyse_data.py|23|26|V|python
-	    print(interaction_ids)
-40203abe6e81ed98cbc97cdd6ec4f144|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|156|24|v|python
-	mouse
-43c157d9a086905630aff17bcf7444ba|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|156|1|V|python
-	    queryes = ["taxidA:human"]
-99e9bae675b12967251c175696f00a70|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|157|24|v|python
-	human
-69501932413ee1eb6fec866c856b08ee|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|157|17|v|python
-	taxidA
-8c91584360d2415c1bfa2f6bfe198a5e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|105|1|V|python
-	        + "/species:human"
-aed2abfe355ec927a6fab9323000b17b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|106|40|V|python
-	        + '/type:"physical association"'
-70cdbdb020235ed929426296515aa044|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|106|29|V|python
-	        + '&type:"physical association"'
-eaf6c3f6e2b35cfebbfbe2bf258d7723|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|105|25|v|python
-	&type:"physical association"'
-9e76089025a1b7d7b169989b3386ea9a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|105|1|V|python
-	        + "species:human"
-ce45f0000d3b283f66956bff6ebf3a89|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|80|29|V|python
-	    print(readURL(psicquicUrl))
-4c2c12cae6e7f72a2641f4aece72c3d8|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|81|7|V|python
-	    if 
-0469e831fb470254458eab4679c8dc97|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_all.py|110|1|V|python
-	                + query
-0b1ed6b48a3fd18a366a8381d28c7a51|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_all.py|74|1|V|python
-	        + "?firstResult="
-97a4e3b581ea70dc86102502736955e7|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|136|9|V|python
-	        return
-b77cc52aec006682d33edb53b6a42b16|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|135|37|V|python
-	        print(type(line.split("\t")))
-d98615e8905f594ec522e470b762df1e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|135|18|V|python
-	        print(line)
-16e349329ea26ede1389d77289d85f34|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|113|1|V|python
-	    if max_count == "0":
-	        print("data not found")
-	        return
-3da728960c8e916d79351246b2923f64|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_all.py|147|5|V|python
-	                # content = arrangeData(line)
-3518bda1e4a5bddc51b08033693ef2e4|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_all.py|58|1|V|python
-	        'psi-mi:"MI:0217"(phosphorylation reaction)',
-	        'psi-mi:"MI:0203"(dephosphorylation reaction)',
-	        'psi-mi:"MI:1110"(predicted interaction)',
-7714683b21329a8b436f8fcc0d50ecad|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/lib/general_method.py|4|1|V|python
-	        "BioGrid",
-	        "bhf-ucl",
-	        "ChEMBL",
-	        # "DIP",
-	        "HPIDb",
-	        "IntAct",
-	        "IMEx",
-	        "mentha",
-	        "MPIDB",
-	        "iRefIndex",
-	        "MatrixDB",
-	        "MINT",
-	        "Reactome",
-	        "Reactome-FIs",
-	        "EBI-GOA-miRNA",
-	        "UniProt",
-	        "MBInfo",
-	        "BindingDB",
-	        "VirHostNet",
-	        "BAR",
-	        "EBI-GOA-nonIntAct",
-	        "tfact2gene",
-ef1f42c9cdae15bc4506e10f0ca6ba2c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|139|1|V|python
-	        # return
-884c9b4ae7b0c8c67d68d6fb5c4e5f6d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|163|1|V|python
-	    queryes = ["*"]
-6a784595cf6dbb9ecdefcd1b80cd83e5|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|106|27|V|python
-	        # + "species:human"
-d3aeea7ea7b9c78ae2e1c75605d2ac86|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|162|1|V|python
-	    queryes = ["taxidA:mouse"]
-37aa957e86a5dea1d0e2e944da81aedd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|164|14|v|python
-	species:human
-4b1d117c04a606fbd6c0b7a703ef7069|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|164|14|V|python
-	        # + ""
-044450a3a0e5d0cafdb13c8a31c30669|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|112|1|V|python
-	        print(service_name, "data not found")
-b17b53d171f7463e2004ecdd7f4fead1|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|167|1|V|python
-	from log.log import init_log, log
-	from datetime import datetime
-	import shutil
-	import os
-	import xml.etree.ElementTree as ET
-	from glob import glob
-	from urllib.request import urlopen
-	from lib import general_method as gm
-	
-	
-	# ------------------ FUNCTIONS ------------------
-	
-	
-	class PsicquicService:
-	    def __init__(self, name, restUrl):
-	        self.name = name
-	        self.restUrl = restUrl
-	
-	
-	def readURL(url):
-	    try:
-	        fileHandle = urlopen(url)
-	        content = fileHandle.read()
-	        fileHandle.close()
-	    except IOError as e:
-	        # print('Cannot open URL ' + url)
-	        import traceback
-	
-	        error_point = traceback.format_exc().split("\n")[1]
-	        error_message = traceback.format_exc().split("\n")[-2]
-	        content = ""
-	        print(error_message)
-	    return content
-	
-	
-	def readActiveServicesFromRegistry():
-	    registryActiveUrl = "http://www.ebi.ac.uk/Tools/webservices/psicquic/registry/registry?action=ACTIVE&format=xml"
-	
-	    content = readURL(registryActiveUrl)
-	
-	    # Create the XML reader
-	    root = ET.fromstring(content)
-	    xmlns = "{http://hupo.psi.org/psicquic/registry}"
-	
-	    services = []
-	
-	    for service in root.findall(xmlns + "service"):
-	        name = service.find(xmlns + "name")
-	        restUrl = service.find(xmlns + "restUrl")
-	
-	        service = PsicquicService(name.text, restUrl.text)
-	        services.append(service)
-	
-	    return services
-	
-	
-	def queryPsicquic(service_name, psicquicRestUrl, query, offset, maxResults, init):
-	    dirname = "test_data/" + service_name
-	    if init:
-	        try:
-	            shutil.rmtree(dirname)
-	        except:
-	            pass
-	    try:
-	        os.mkdir(dirname)
-	    except:
-	        pass
-	
-	    psicquicUrl = (
-	        psicquicRestUrl
-	        + "query/"
-	        + query
-	        + "?firstResult="
-	        + str(offset)
-	        + "&maxResults="
-	        + str(maxResults)
-	        + "&format=count"
-	    )
-	    max_count = str(readURL(psicquicUrl)).split("'")[1].split("'")[0]
-	    filename = dirname + "/" + service_name + ".tsv"
-	    f = open(filename, "w")
-	    f.write(
-	        "Unique identifier for interactor A"
-	        + "\tUnique identifier for interactor B"
-	        + "\tAlternative identifier for interactor A"
-	        + "\tAlternative identifier for interactor B"
-	        + "\tAliases for A"
-	        + "\tAliases for B"
-	        + "\tInteraction detection methods"
-	        + "\tFirst author"
-	        + "\tIdentifier of the publication"
-	        + "\tNCBI Taxonomy identifier for interactor A"
-	        + "\tNCBI Taxonomy identifier for interactor B"
-	        + "\tInteraction types"
-	        + "\tSource databases"
-	        + "\tInteraction identifier(s)"
-	        + "\tConfidence score"
-	    )
-	    f.close()
-	
-	    psicquicUrl = (
-	        psicquicRestUrl
-	        + "query/"
-	        + query
-	        + "?firstResult="
-	        + str(offset)
-	        + "&maxResults="
-	        + str(maxResults)
-	    )
-	    # print("URL: " + psicquicUrl)
-	    if max_count == "0":
-	        # print(service_name, "data not found")
-	        print(0)
-	        return
-	    print_text = (
-	        ""
-	        # + str(datetime.now())
-	        # + "\t>\tloading "
-	        # + service_name
-	        # + "...\t"
-	        # + str(offset)
-	        # + "~"
-	        # + str(maxResults)
-	        # + "\t/ "
-	        + str(max_count)
-	        # + "\t"
-	        # + str(int(int(maxResults) / int(max_count) * 100))
-	        # + "%"
-	    )
-	    print(print_text)
-	    psicquicResultLines = readURL(psicquicUrl).splitlines()
-	
-	    content = ""
-	    for line in psicquicResultLines:
-	        line = str(line, encoding="utf8")
-	        # content = arrangeData(line)
-	        # print(line.split("\t")[11])
-	        content += line + "\n"
-	    if len(psicquicResultLines) == 0:
-	        return
-	
-	    f = open(filename, "a")
-	    f.write(content)
-	    f.close()
-	
-	
-	def main(query):
-	    services = readActiveServicesFromRegistry()
-	    services_list = gm.list_serveice()
-	    import os
-	
-	    path = os.getcwd()
-	
-	    print(path)
-	
-	    for service in services:
-	        if service.name in services_list:
-	            queryPsicquic(service.name, service.restUrl, query, 1, 100, True)
-	
-	
-	if __name__ == "__main__":
-	    # queryes = ["*"]
-	    # queryes = ["species:human"]
-	    queryes = ["taxidA:9606"]
-	    print(queryes)
-	    for query in queryes:
-	        main(query)
-4187d34fb7b05fe737f83381cef3950e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|163|1|V|python
-	    queryes = ["species:human"]
-244905dfb5414fe1173f07764791b8bd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|137|17|v|python
-	line.split("\t")[11]
-9c0e04c5d3ccb9f00a3efe21b62deabf|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|137|17|V|python
-	        # print()
-764e6d40f5fe63735fc1055eaaf017d7|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|132|6|V|python
-	    ma
-0cf31b2c283ce3431794586df7b0996d|file:///Users/Kouiti/local_file/maman_hp/index.html|10|4|V|html
-	    
-0945359809dad1fbf3dea1c95a0da951|file:///Users/Kouiti/local_file/maman_hp/index.html|7|12|v|html
-	Document
-beac3732feae1947fa277f6fb9c2edc8|file:///Users/Kouiti/local_file/maman_hp/index.html|50|1|V|html
-	
-	    <body>
-fc5c3e211399e26afa3bf0b67901f2b4|file:///Users/Kouiti/local_file/maman_hp/index.html|31|44|V|html
-	                                    Dropdown
-004bf6c9a40003140292e97330236c53|file:///Users/Kouiti/local_file/maman_hp/index.html|34|75|v|html
-	Action
-f379594e2d5a6b95b1fbb5d2f6652d8b|file:///Users/Kouiti/local_file/maman_hp/index.html|35|84|v|html
-	ction
-2bea6a5629ec588b19e5c1bdf866da4f|file:///Users/Kouiti/local_file/maman_hp/index.html|40|37|V|html
-	                            <li class="nav-item">
-0341f54cdb7699d6a2d4e608ebf637ed|file:///Users/Kouiti/local_file/maman_hp/index.html|40|37|V|html
-	                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-1cedf91a0c33d8a50c9dd193b33f00f8|file:///Users/Kouiti/local_file/maman_hp/index.html|40|33|V|html
-	                            </li>
-6986881568cc26da87c6b92d53749026|file:///Users/Kouiti/local_file/maman_hp/index.html|41|29|V|html
-	                        <form class="d-flex">
-1371b6280da42be0124d8e769d598b19|file:///Users/Kouiti/local_file/maman_hp/index.html|41|29|V|html
-	                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-de13637203b3ce16694e8637b9e32038|file:///Users/Kouiti/local_file/maman_hp/index.html|41|29|V|html
-	                            <button class="btn btn-outline-success" type="submit">Search</button>
-942b119aed09e62aa18e5fb1a85cff56|file:///Users/Kouiti/local_file/maman_hp/index.html|41|29|V|html
-	                        </form>
-1cd9b731c51e090d7ecdc12ec304dcd2|file:///Users/Kouiti/local_file/maman_hp/index.html|14|17|V|html
-	        <div class="container">
-cec9732770b5ed11f53247c98d6de793|file:///Users/Kouiti/local_file/maman_hp/index.css|2|1|V|css
-	    background-color: #583F2A;
-6526f9e27f366cccbed4122f7ffe7614|file:///Users/Kouiti/local_file/maman_hp/index.css|5|24|v|css
-	583F2A
-47db4a3fa2b15f5d1091678e5e2fe847|file:///Users/Kouiti/local_file/maman_hp/index.html|10|39|v|html
-	ample
-a11a7b8c1ddf7de26c1b663683d34ae7|file:///Users/Kouiti/local_file/maman_hp/index.css|1|1|V|css
-	.navbar {
-	    background-color: #583F2A;
-	    color: white;
+	type owner struct {
+	    gorm.model
+	    name string
+	    password string
 	}
-2d0be6ca1940f30aff51f6a8f6968786|file:///Users/Kouiti/local_file/maman_hp/index.css|3|1|V|css
-	    color: white;
-545652108e739af5c92e480d2d294bae|file:///Users/Kouiti/local_file/maman_hp/index.html|43|9|V|html
-	        dov
-bc95dfc14146aa23e43f2ea7af04d310|file:///Users/Kouiti/local_file/maman_hp/index.html|44|12|V|html
-	            
-a9473ded85aa51851deb4859cdd53f98|file:///Users/Kouiti/local_file/maman_hp/index.html|45|16|V|html
-	                
-64887355e8f1f0bc0725989d8eadc658|file:///Users/Kouiti/local_file/maman_hp/index.html|44|1|V|html
-	            <div class="col-4"></div>
-4b3d9405e7a353469cfde13cdf14d6ac|file:///Users/Kouiti/local_file/maman_hp/index.html|44|1|V|html
-	            <div class="col-4" style="background-color: blue;"></div>
-48d6215903dff56238e52e8891380c8f|file:///Users/Kouiti/local_file/maman_hp/index.html|45|57|v|html
-	blue
-ede302d89ee65f8e725123f0b3e718a3|file:///Users/Kouiti/local_file/maman_hp/index.html|44|39|v|html
-	height: 30px; 
-a775790a1d00c02de26b766d71b2e0b7|file:///Users/Kouiti/local_file/maman_hp/index.html|43|1|V|html
-	        <div class="row">
-	            <div class="col-4" style="height: 10px; background-color: #4D7ECA;"></div>
-	            <div class="col-4" style="height: 10px; background-color: #FFFFFF;"></div>
-	            <div class="col-4" style="height: 10px; background-color: #D17A8B;"></div>
-	        </div>
-ebd6169b70d0fae35214449b6343ccf4|file:///Users/Kouiti/local_file/maman_hp/index.css|5|5|v|css
-	color: #FFFFFF;
+	type listowner []owner
 	
-505ccff7d88a952dd5c2dd7c81519a1a|file:///Users/Kouiti/local_file/maman_hp/index.html|23|84|v|html
-	 style="color: #FFFFFF;"
-d6f4b8652a19848129fa2977e2e6d749|file:///Users/Kouiti/local_file/maman_hp/index.html|34|1|V|html
-	                                <li><a class="dropdown-item" href="#" style="color: #FFFFFF;">ディナー</a></li>
-b81dca5dd3767a216a5c1ad26c5f3468|file:///Users/Kouiti/local_file/maman_hp/index.html|36|33|V|html
-	                                <li><hr class="dropdown-divider">お持ち帰り</li>
-244bcd3d56df470e68bb97fe87ec5ec3|file:///Users/Kouiti/local_file/maman_hp/index.html|36|76|V|html
-	                                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-8c000a5dbd5784fa67d20358346a3083|file:///Users/Kouiti/local_file/maman_hp/index.html|35|95|v|html
-	ディナー
-9ebcc3b9041f1454dfd58b76d74c6bf0|file:///Users/Kouiti/local_file/maman_hp/index.html|35|70|v|html
-	 style="color: #FFFFFF;
-24ac18a75d0b005cdca23fbfc668cf75|file:///Users/Kouiti/local_file/maman_hp/index.html|34|1|V|html
-	                                <li><a class="dropdown-item" href="#">ディナー</a></li>
-8d76006badbf2c0f4fa98806ab57af52|file:///Users/Kouiti/local_file/maman_hp/index.html|36|1|V|html
-	                                <li><a class="dropdown-item" href="#">お持ち帰り</a></li>
-6e15fa5209cb6d46956f8bdb40ca64ed|file:///Users/Kouiti/local_file/maman_hp/index.html|25|1|V|html
-	                        <li class="nav-item">
-	                            <a class="nav-link" href="#" style="color: #FFFFFF;">オードブル</a>
-	                        </li>
-7122a212f1a612acb43d69667a34ea8e|file:///Users/Kouiti/local_file/maman_hp/index.html|29|82|v|html
-	オードブル
-d1dd9f62012cd3096aad239d4303d924|file:///Users/Kouiti/local_file/maman_hp/index.html|43|94|V|html
-	                                <li><a class="dropdown-item" href="#">クリスマス</a></li>
-8cc257d75da8b84fb619166d21085dc4|file:///Users/Kouiti/local_file/maman_hp/index.html|43|94|V|html
-	                                <li><a class="dropdown-item" href="#">おせち料理</a></li>
-fed850a73ea50b6cd22bc738850c1ae0|file:///Users/Kouiti/local_file/maman_hp/index.html|31|1|V|html
-	                        <li class="nav-item">
-	                            <a class="nav-link" href="#" style="color: #FFFFFF;">おせち料理</a>
-	                        </li>
-4bfb06b325bcdcb84a3eb790b24e1565|file:///Users/Kouiti/local_file/maman_hp/index.html|51|1|V|html
-	        <img src="./top.png" class="img-fluid" alt="...">
-1543208d210d25b584d4c5843101a44c|file:///Users/Kouiti/local_file/maman_hp/index.html|52|1|V|html
-	        <div class="row">
-e3b6c7818808cf0b9022c774f39d91b5|file:///Users/Kouiti/local_file/maman_hp/index.html|61|1|V|html
-	            </div>
-b31f5dfba08ec450514710b8a9869b73|file:///Users/Kouiti/local_file/maman_hp/index.html|59|1|V|html
-	                <div class="col-sm">
-	                    <img src="./mamain1.png" class="img-fluid" alt="...">
-	                </div>
-32a0c9ad14c21c3cb71434a03ae6bbea|file:///Users/Kouiti/local_file/maman_hp/index.html|59|1|V|html
-	                <div class="col-sm">
-04a7d3d609129a9296bf7ac0608c2097|file:///Users/Kouiti/local_file/maman_hp/index.html|63|24|v|html
-	</p>
-4452b2e5b47be67f5a6b5f026f169424|file:///Users/Kouiti/local_file/maman_hp/index.html|58|1|V|html
-	            <div class="row mt-4 intro">
-ec03f91ae56e478455e3786e91559194|file:///Users/Kouiti/local_file/maman_hp/index.css|8|17|v|css
-	solid
-fcdfcd0a9d51cba61dc39af4c3d8e798|file:///Users/Kouiti/local_file/maman_hp/index.css|8|17|V|css
-	    border: 4px solid;
-098595a0e06d334778b68c37f3e5a56f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/footer.html|1|1|V|html
-	<div class="mt-4"></div>
-	<hr>
-	<footer class="text-center">
-	        <div class="mb-2">
-	          <small>
-	            Soka University
-	          </small>
-	        </div>
-da1939dd972edc8c9d5935b69aeab9c4|file:///Users/Kouiti/local_file/maman_hp/index.html|88|19|V|html
-	                    Soka University
-1ebfa3f4073c4b408bca7dc42e213b7b|file:///Users/Kouiti/local_file/maman_hp/index.html|88|1|V|html
-	                  </small>
-481e08d283d49644f5f9790308a6074a|file:///Users/Kouiti/local_file/maman_hp/index.html|81|1|V|html
-	                  <small>
-b681def47751c103248902fa2c015eb2|file:///Users/Kouiti/local_file/maman_hp/index.html|83|1|V|html
-	                  </small>
-	                  <small>
-8b0f0ea73162b7552dda3c149b6c045d|file:///Users/Kouiti/local_file/maman_hp/index.html|82|51|v|html
-	<br>
-c8f1365ed2338a315be370e72d51c460|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|158|68|v|python
-	10d0
-283f42764da6dba2522412916b031080|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|158|68|v|python
-	9999999
-b567a6bd1b4ddee25ac78a1aad1a5950|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|80|21|v|python
-	readURL(psicquicUrl)
-5aa815f3669b1a203c791bde690d030b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/query_test.py|137|9|V|python
-	        if "9606" in line.split("\t")[9]:
-12218835081741e3fd679371a74e4c5b|file:///Users/Kouiti/local_file/maman_hp/index.html|63|56|V|html
-	                    <h2>フレンチ食堂ママン</h2>
-3513a0b7810412840f1b60fcb16772e9|file:///Users/Kouiti/local_file/maman_hp/index.html|60|39|v|html
-	デザイン
-fbec6750a5dd432dd2c506a5404dec71|file:///Users/Kouiti/local_file/maman_hp/index.html|59|21|v|html
-	フレンチ食堂ママン
-2fbe0c90c769b0e0cc87ac6aabc1aa15|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|67|5|V|python
-	    print("session")
-7a546c4b385b12fe46f9aacb27b1a300|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|67|1|V|python
-	    print(request.session)
-8ab0a4d17b36ad7052c06b849f27311f|file:///Users/Kouiti/local_file/lets/lets_proj/account/views.py|49|21|v|python
-	request.session["instructor_id"]
-0ca865c593ec581fa452266cf62f85a4|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|68|1|V|python
-	    # print(request.session.items)
-14c870baccb30ed29f6b837b350d661b|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|68|16|V|python
-	    for i in request.session.items:
-994bf13fd87f5e77c3deff2f251013a5|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|68|16|V|python
-	        print(i)
-691324e4ffa16367931ab227549721c0|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|68|1|V|python
-	    print(dir(request.session))
-2bb638346bb30fed3036bcfc66c735af|file:///Users/Kouiti/local_file/lets/lets_proj/account/views.py|56|38|v|python
-	learner_id"]
-a8f7488d51e96f0a338f9b3a20cfd35e|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|67|16|V|python
-	    print("------------")
-38e1c7139cd9c90e1514e6197a733814|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|67|16|V|python
-	    for i in request.session:
-89a54d159e197964f8d3c0c589c651ac|file:///Users/Kouiti/local_file/lets/lets_proj/account/views.py|56|21|v|python
-	request.session["learner_id"] 
-bdde46b52b8366c96b85faa80ce90633|file:///Users/Kouiti/local_file/lets/lets_proj/account/views.py|56|1|V|python
-	                    request.session["learner_id"] = learner.id
-0f80a654f73598287e0189e873e264e5|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|67|34|v|python
-	 = learner.id
-58a449bdd4be65d9da4111199a507ccc|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|1|1|V|htmldjango
-	{% extends "app/layouts/gen.html" %}
-	{% block title %} Live English Training  (Shadowing) {% endblock title %}
+	func dbinit() {
+		db := db_conf.dbconnect()
+		// コネクション解放
+		defer db.close()
+		db.automigrate(owner{})
+	}
+b5d4fe554c8d679d10e8cfa86d71b98b|file:///Users/Kouiti/local_file/homepage/docker/golang/Dockerfile|3|1|V|dockerfile
+	RUN chmod +x ./wait-for-it.sh
+72b90bbe937d96cd45077e4f3f6eded0|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/models.go|1|1|V|go
+	package owners
 	
-	{% block content %}
-	<div class="row flex">
-	  <div class="form-group col-md-12">
-	    <h3>Self reflection</h3>
-	    <hr>
+	import (
+	    "go-app/db_conf"
+	    "github.com/jinzhu/gorm"
+	)
 	
-	    <!--1列目-->
-	    <div class="row">
 	
-	      <!--1-->
-	      <div class="col-md">
-	          <div class="form-group">
-	            <label for="FormControlTextarea1"><h5>Today’s shadowing is</h5></label>
-	            <textarea class="form-control" id="FormControlTextarea1" rows="5"></textarea>
-	          </div>
-	      </div><br>
+	type Owner struct {
+	    gorm.Model
+	    Name string
+	    Password string
+	}
+	type ListOwner []Owner
 	
-	      <!--2-->
-	      <div class="col-md">
-	          <div class="form-group">
-	            <label for="FormControlTextarea2"><h5>Today’s Q ＆ A is</h5></label>
-	            <textarea class="form-control" id="FormControlTextarea2" rows="5"></textarea>
-	          </div>
-	      </div><br>
-	    </div>
+	func DbInit() {
+	    db := db_conf.DBConnect()
+	    // コネクション解放
+	    defer db.Close()
+	    db.AutoMigrate(Owner{})
+	}
+7cb757a7c0d7fe1f83e961ae71abb9dc|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|15|1|V|go
+	}
+	type listowner []owner
 	
-	    <!--2列目-->
-	    <div class="row">
+	func dbinit() {
+		db := db_conf.dbconnect()
+		// コネクション解放
+		defer db.close()
+		db.automigrate(owner{})
+	}
+aa55b493ea8ffeff481ea6b31c1f2116|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|11|1|V|go
+	    title string
+	    comment string
+	    show bool
+	    grouped bool
+7c445fdf0e81627bdb8b02496e94834d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|1|5|V|go
+	package owners
 	
-	      <!--3-->
-	      <div class="col-md">
-	        <form>
-	          <div class="form-group">
-	            <label for="FormControlTextarea3"><h5>Today’s script shadowing is</h5></label>
-	            <textarea class="form-control" id="FormControlTextarea3" rows="5"></textarea>
-	          </div>
-	        </form>
-	      </div><br>
+	import (
+	    "go-app/db_conf"
+	    "github.com/jinzhu/gorm"
+	)
 	
-	      <!--4-->
-	      <div class="col-md">
-	        <form>
-	          <div class="form-group">
-	            <label for="FormControlTextarea4"><h5>Today’s reading aloud is</h5></label>
-	            <textarea class="form-control" id="FormControlTextarea4" rows="5"></textarea>
-	          </div>
-	        </form>
-	      </div><br>
-	    </div>
 	
-	    <!--3列目-->
-	    <div class="row">
+	type owner struct {
+	    gorm.model
+	package owners
 	
-	      <!--5-->
-	      <div class="col-md">
-	        <form>
-	          <div class="form-group">
-	            <label for="form-check-label-1"><h5>My weak points are</h5></label>
+b25e1e3bd5b09337f0c908d88556f1b2|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|2|1|V|go
 	
-	            <div class="form-check">
-	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-1">
-	              <label class="form-check-label-1" for="flexRadioDefault1-1">
-	                great 🙂
-	              </label>
-	            </div>
+	import (
+	    "go-app/db_conf"
+	    "github.com/jinzhu/gorm"
+	)
 	
-	            <div class="form-check">
-	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-2" checked>
-	              <label class="form-check-label-1" for="flexRadioDefault1-2">
-	                good 😐
-	              </label>
-	            </div>
 	
-	            <div class="form-check">
-	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-3" checked>
-	              <label class="form-check-label-1" for="flexRadioDefault1-3">
-	                bad 🙁
-	              </label>
-	            </div>
+	type owner struct {
+	    gorm.model
+	package owners
 	
-	            <div class="form-check">
-	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-4" checked>
-	              <label class="form-check-label-1" for="flexRadioDefault1-4">
-	                awful  😢
-	              </label>
-	            </div>
-	          </div>
-	        </form>
-	      </div><br>
+be98bdc4e0a292a750c0118128b62585|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|11|11|V|go
+	    Name string
+8a43bc8f73bbca5b8285bbfaf602ec1d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|11|11|V|go
+	    Password string
+b6f4a2ec6356bbd56d49f2096bf9d3d3|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|16|20|v|go
+	Owner
+1364f4a3f24776f35ccc52b6a397d8ef|file:///Users/Kouiti/local_file/homepage/docker/nginx/Dockerfile|3|1|V|dockerfile
+	COPY ./ ./
+f72464d9e1715de729bb00d81e509015|file:///Users/Kouiti/local_file/homepage/docker/golang/Dockerfile|3|1|V|dockerfile
+	WORKDIR /go/src/go-app
+7d51b44d9a8a583ac5fdaebd845933e6|file:///Users/Kouiti/local_file/homepage/docker/nginx/Dockerfile|4|10|v|dockerfile
+	go/src/go-app
+869630ea0f74625d71671759630b4bd8|file:///Users/Kouiti/local_file/homepage/docker-compose.yml|69|28|v|yaml
+	/etc/nginx/
+c2ba7e785c49050f48da9aacc45c2b85|file:///Users/Kouiti/local_file/homepage/go-app/svc/menus/models.go|9|6|v|go
+	Service
+b45cffe084dd3d20d928bee85e7b0f21|file:///Users/Kouiti/local_file/homepage/go-app/svc/menus/models.go|11|15|v|go
+	string
+543c0d24930e2e94ce9c05b41d30d523|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/repository.go|1|1|V|go
+	package owners
 	
-	      <!--6-->
-	      <div class="col-md">
-	        <form>
-	          <div class="form-group">
-	            <label for="form-check-label-2"><h5>What to do next</h5></label>
+	import (
+	    "go-app/db_conf"
+	)
 	
-	            <div class="form-check">
-	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2-1">
-	              <label class="form-check-label-2" for="flexRadioDefault2-1">
-	                great 🙂
-	              </label>
-	            </div>
 	
-	            <div class="form-check">
-	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2-2" checked>
-	              <label class="form-check-label-2" for="flexRadioDefault2-2">
-	                good 😐
-	              </label>
-	            </div>
+	// ユーザー登録処理
+	func create(owner *Owner) []error {
+	    db := db_conf.DBConnect()
+	    defer db.Close()
+	    // Insert処理
+	    if err := db.Create(&owner).GetErrors(); err != nil {
+	        return err
+	    }
+	    return nil
+	}
 	
-	            <div class="form-check">
-	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2-3" checked>
-	              <label class="form-check-label-2" for="flexRadioDefault2-3">
-	                bad 🙁
-	              </label>
-	            </div>
+	func get(username string) Owner {
+	    db := db_conf.DBConnect()
+	    var owner Owner
+	    db.First(&owner, "username = ?", username)
+	    db.Close()
+	    return owner
+	}
 	
-	            <div class="form-check">
-	              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2-4" checked>
-	              <label class="form-check-label-2" for="flexRadioDefault2-4">
-	                awful  😢
-	              </label>
-	            </div>
-	          </div>
-	        </form>
-	      </div><br>
-	    </div>
+	func list() *ListOwner {
+	    db := db_conf.DBConnect()
+	    var list_owner ListOwner
+	    db.Find(&list_owner)
+	    db.Close()
+	    return &list_owner
+	}
+b6fd7f5946a5f50167e27d6f83213ee4|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|1|1|V|go
+	package owners
 	
-	    <div class="col-md btn-group" role="group" aria-label="Basic">
-	      <button type="button" class="btn btn-outline-success rounded-pill btn-lg"> Next ⇨ </button>
-	      <button type="button" class="btn btn-outline-success btn-lg"> To Next Tasks </button>
-	      <button type="button" class="btn btn-outline-success btn-lg"> To Main Menu </button>
-	      <button type="button" class="btn btn-outline-success btn-lg"> Quit </button>
-	    </div>
-	  </div>
-	</div>
+	import (
+	    "net/http"
+	    "log"
 	
-	{% endblock %}
-	<!-- http://127.0.0.1:8000/app/1/reflection -->
-a2e3bb8276b746422b760781b1888d71|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|102|10|V|python
-	    print()
-541a09ba31fa44c388e0a2d3e78f2521|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|106|1|V|python
-	    if request.method == "POST":
-14a08e33ed72f83030d4d171e1502fda|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|118|1|V|python
-	    elif request.method == "GET":
-2650ad708cae3ae86aaa0880767431a7|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|102|1|V|python
-	        content = {"form": ReflectionForm()}
-	        return render(request, "app/reflection.html", content)
-6097fe4265d267cb6bed4cb71c773dea|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|102|9|V|python
-	        content = {"form": ReflectionForm()}
-de45aa3b3fdb3d23293f967508dc4de4|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|102|9|V|python
-	        return render(request, "app/reflection.html", content)
-d50d956b5943da20386dcd948df88024|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|118|1|V|python
-	        return redirect("/app/1/shadowing")
-3ad7ddf181f81e362944c50135ac3b24|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|103|33|v|python
-	shadowing
-fad58de7366495db4650cfefac2fcd61|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|103|31|v|python
-	main
-63b42f8ca89d854d9987868243412670|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|19|58|v|htmldjango
-	Today’s shadowing is
-75de05bffc21ebe0e93e234b33a401ee|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|22|1|V|htmldjango
-	              {{ form.reflect_sh }}
-aa2e62d759086cdac06dd6558db287e6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|129|15|v|htmldjango
-	reflect_sh
-b0c238241ba52fe09f8d1daaf8e5245f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|132|10|V|htmldjango
-	      {{ form.radio_tutton }}
-7e56cb7bfb19d88a61d6416d838cb113|file:///Users/Kouiti/local_file/lets/lets_proj/app/forms.py|60|51|v|python
-	, ("bad", "bad")
-bf845095fae98f9b88721837746a4c1c|file:///Users/Kouiti/local_file/lets/lets_proj/app/forms.py|59|29|V|python
-	    labels = ["チェック", "複数チェック", "ラジオボタン", "動的選択肢１", "動的選択肢２"]
-a2b883778e9ea8e289761d8c8eab93ef|file:///Users/Kouiti/local_file/lets/lets_proj/app/forms.py|70|20|V|python
-	        # initial=["2"],
-6cbe7bc3c3d063a6783d8127e89b7f42|file:///Users/Kouiti/local_file/lets/lets_proj/app/forms.py|65|20|V|python
-	    reflect_sh = forms.CharField(widget=forms.Textarea)
-3950159c12b0c4049a9bd317cf13fa06|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|130|33|V|htmldjango
-	          {{ form.weekpoint_radio }}
-e2516c203902230766cda7cf4adb3eed|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|129|11|V|htmldjango
+	    "go-app/crypto"
+	    // "go-app/owners.menu"
+	
+	    "github.com/gin-gonic/gin"
+	    _ "github.com/go-sql-driver/mysql"
+	)
+	
+	func Urls(router *gin.Engine) *gin.Engine{
+	
+	    router.GET("/signup", func(c *gin.Context) {
+	        c.HTML(200, "signup.html", gin.H{})
+	    })
+	
+	    // ユーザー登録
+	    router.POST("/signup", func(c *gin.Context) {
+	        println("post signup")
+	        var form Owner
+	        // バリデーション処理
+	        if err := c.Bind(&form); err != nil {
+	            c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
+	            c.Abort()
+	        } else {
+	            name := c.PostForm("username")
+	            password := c.PostForm("password")
+	            passwordEncrypt, _ := crypto.PasswordEncrypt(password)
+	            // 登録ユーザーが重複していた場合にはじく処理
+	            if err := create(&Owner{Name: name, Password: passwordEncrypt}); err != nil {
+	                c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
+	            }
+	            c.Redirect(302, "/")
+	        }
+	    })
+	
+	    router.GET("/login", func(c *gin.Context) {
+	        c.HTML(200, "login.html", gin.H{})
+	    })
+	
+	    // ユーザーログイン
+	    router.POST("/login", func(c *gin.Context) {
+	        // DBから取得したユーザーパスワード(Hash)
+	        dbPassword := get(c.PostForm("name")).Password
+	        log.Println(dbPassword)
+	        // フォームから取得したユーザーパスワード
+	        formPassword := c.PostForm("password")
+	        // ユーザーパスワードの比較
+	        if err := crypto.CompareHashAndPassword(dbPassword, formPassword); err != nil {
+	            log.Println("ログインできませんでした")
+	            c.HTML(http.StatusBadRequest, "login.html", gin.H{"err": err})
+	            c.Abort()
+	        } else {
+	            log.Println("ログインできました")
+	            c.Redirect(302, "/")
+	        }
+	    })
+	    return router
+	}
+30d98c8ae0efac63a15db66faf47d60f|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|21|1|V|go
+	
+	    // ユーザー登録
+	    router.POST("/signup", func(c *gin.Context) {
+	        println("post signup")
+	        var form Service
+	        // バリデーション処理
+	        if err := c.Bind(&form); err != nil {
+	            c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
+	            c.Abort()
+	        } else {
+	            name := c.PostForm("username")
+	            password := c.PostForm("password")
+	            passwordEncrypt, _ := crypto.PasswordEncrypt(password)
+	            // 登録ユーザーが重複していた場合にはじく処理
+	            if err := create(&Service{Name: name, Password: passwordEncrypt}); err != nil {
+	                c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
+	            }
+	            c.Redirect(302, "/")
+	        }
+	    })
+	
+	    router.GET("/login", func(c *gin.Context) {
+	        c.HTML(200, "login.html", gin.H{})
+	    })
+	
+	    // ユーザーログイン
+	    router.POST("/login", func(c *gin.Context) {
+	        // DBから取得したユーザーパスワード(Hash)
+	        dbPassword := get(c.PostForm("name")).Password
+	        log.Println(dbPassword)
+	        // フォームから取得したユーザーパスワード
+	        formPassword := c.PostForm("password")
+	        // ユーザーパスワードの比較
+	        if err := crypto.CompareHashAndPassword(dbPassword, formPassword); err != nil {
+	            log.Println("ログインできませんでした")
+	            c.HTML(http.StatusBadRequest, "login.html", gin.H{"err": err})
+	            c.Abort()
+	        } else {
+	            log.Println("ログインできました")
+	            c.Redirect(302, "/")
+	        }
+	    })
+	    return router
+3b6cedeeb976344d1f39898fbff2ee1a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|24|1|V|go
+	        println("post signup")
+cd1aaf776f211fa68def18393ae7abe1|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|1|V|go
+	        if err := c.Bind(&form); err != nil {
+cf7b11408a263b7ea72420e25666ff0a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|1|V|go
+	            c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
+702faa553e165dfc4263dc8252df3b05|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|1|V|go
+	            c.Abort()
+7dd039107c01f1329a9d5ac0372589c2|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|1|V|go
+	        } else {
+c9f74bb4ae44dcc9498cda4f08e55ffc|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|1|V|go
+	        // バリデーション処理
+7c34127b33ce0bcb9657f4869a9092af|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|24|1|V|go
+	        var form Service
+d9081a2f920b1c1d155c39c61d69bffa|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|1|V|go
+	            // 登録ユーザーが重複していた場合にはじく処理
+	            if err := create(&Service{Name: name, Password: passwordEncrypt}); err != nil {
+	                c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
+	            }
+	            c.Redirect(302, "/")
+	        }
+7668a48bc48fda6f9916145aeec46aa6|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|1|V|go
+	        passwordEncrypt, _ := crypto.PasswordEncrypt(password)
+ea2170dd63632f3be4d3567257d291a7|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|1|V|go
+	            // 登録ユーザーが重複していた場合にはじく処理
+e7e14e6e6d199037566bd26b85f56807|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|1|V|go
+	            if err := create(&Service{Name: name, Password: passwordEncrypt}); err != nil {
+7ddd5a90fd0f28f15e9b9a264dc394f8|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|28|1|V|go
+	            }
+fdbb3c23a65482c49c053796f1675d98|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|28|1|V|go
+	            c.Redirect(302, "/")
+00f671df8b38a04516a0832d6feaee1f|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|1|V|go
+	            password := c.PostForm("password")
+7e44cd02a11b747c18f9453fa51c2309|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|1|V|go
+	            passwordEncrypt, _ := crypto.PasswordEncrypt(password)
+4e1ddba1c31545ee09fb38ae1fd79346|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|24|9|V|go
+	        }
+7d2abf2d0fa7c3a0c13236910f30bc43|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|16|18|v|go
+	signup
+ebdf7608a2edb16b650e0603a482ff50|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|23|39|v|go
+	gin.H{"comment": name}
+fc9a6ef6a27919c377b870cb6785f34b|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|30|1|V|go
+	    // ユーザーログイン
+	    router.POST("/login", func(c *gin.Context) {
+	        // DBから取得したユーザーパスワード(Hash)
+	        dbPassword := get(c.PostForm("name")).Password
+	        log.Println(dbPassword)
+	        // フォームから取得したユーザーパスワード
+	        formPassword := c.PostForm("password")
+	        // ユーザーパスワードの比較
+	        if err := crypto.CompareHashAndPassword(dbPassword, formPassword); err != nil {
+	            log.Println("ログインできませんでした")
+	            c.HTML(http.StatusBadRequest, "login.html", gin.H{"err": err})
+	            c.Abort()
+	        } else {
+	            log.Println("ログインできました")
+	            c.Redirect(302, "/")
+	        }
+	    })
+	    return router
+	}
+b0180a5f8e0aa693c10ca04b2d38055f|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|1|V|go
+	        c.HTML(200, "login.html", gin.H{})
+33ec07233d0322770ae34b15395ffd7f|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|1|V|go
+	    router.GET("/login", func(c *gin.Context) {
+3775cfc91af729d5d22d57bc2e97b0b5|file:///Users/Kouiti/local_file/homepage/go-app/wait-for-it.sh|1|11|V|sh
+	#!/usr/bin/env bash
+f46e2d3f5f3ed2f93bae1ee4cdd4ea68|file:///Users/Kouiti/local_file/homepage/go-app/wait-for-it.sh|1|1|V|sh
+	#!/bin/bash
+552e6a97297c53e592208cf97fbb3b60|file:///Users/Kouiti/local_file/homepage/go-app/main.go|19|32|v|go
+	aaaaaaaaa
+8d6ab84ca2af9fccd4e4048694176ebf|file:///Users/Kouiti/local_file/homepage/go-app/main.go|5|23|v|go
+	menu
+cb2b8d66b31e89d507595e68b8b95c8d|file:///Users/Kouiti/local_file/homepage/go-app/main.go|5|1|V|go
+	    "go-app/svc/services"
+10cd395cf71c18328c863c08e78f3fd0|file:///Users/Kouiti/local_file/homepage/go-app/main.go|6|17|v|go
+	services
+f140e8353a9743eab3f422b867001975|file:///Users/Kouiti/local_file/homepage/go-app/main.go|4|1|V|go
+	    "go-app/svc/owners"
+	    "go-app/svc/services"
+	    // "go-app/svc/menus"
+	
+ae592ee26d205eba0ae82f4897f6c6e9|file:///Users/Kouiti/local_file/homepage/go-app/main.go|23|1|V|go
+		owners.DBInit()
+	    router = owners.Urls(router)
+e50d69ce4139c0818a431766d819f945|file:///Users/Kouiti/local_file/homepage/go-app/main.go|29|5|V|go
+	    router = owners.Urls(router)
+14c4b06b824ec593239362517f538b29|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|19|10|v|go
+	username
+e0aebe358dac3bcf42034935ea69bc97|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|22|28|v|go
+	rname 
+06d4cd63bde972fc66a0aed41d2f5c51|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|18|28|v|go
+	comment
+e905a704c5b529cdc40c683b36c14c19|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|6|1|V|go
+	    // "go-app/services.menu"
+6a51aa95051d99c28c2b08eb1cab9995|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|20|v|go
+	characterss, errors.New("xxx...")
+46144076ca51f700f5c65e589e5c8fc4|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|1|V|go
+	        c.HTML(http.StatusBadRequest, gin.H{"comment": name})
+eaa4e6e76f50120081cca9795bfc48ba|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|9|V|go
+	            return 
+4c4ad5fca2e7a3f74dbb1ced00381aa4|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|16|15|v|go
+	HTML
+47b75618de7b4bbcf6525bbccbc017ce|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|20|34|V|go
+	            "title": service.title
+9baa7df7f7d6ada007c7cfe3c3a4c751|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|33|1|V|go
+	            if err := create(&Owner{Name: name, Password: passwordEncrypt}); err != nil {
+	                c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
+	            }
+b45a4c20d72962c4aee91faf9a99a78c|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|14|21|V|go
+	        strconv.Atoi()
+4f918ddf127e030f693ea5238fe86ba4|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|13|43|v|go
+	; err != nil {
+c81dcff779ccfe7b5fa4ac4e7e598707|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|14|18|V|go
+	        return err
+b7ff60c6d14cdc71ef3ab30a9322245d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|19|1|V|go
+	            var service Service
+	            service = get(id)
+	            c.JSON(200, service)
+dc647eb65e6711e155375218212b3964|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|55|v|go
+	Password
+8e9a941c2ad3151cefab57b4a2e84df9|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|11|1|V|go
+	    Title string
+	    Comment string
+	    Show bool
+	    Grouped bool
+f242c0bab1f843d3524a5604f8a96f54|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|41|v|go
+	Title: title, comment, comment
+b24b870d6d68019ab3e6bfeac63d31e8|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|17|v|go
+	c.PostForm("name")
+	
+a7dd12b1dab17d25467b0b0a4c8d4a92|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|29|39|v|go
+	show
+9bef8a22e91538113a8a9b4aa8d0a8cb|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|30|44|v|go
+	ouped
+5c8c6bb21a9729c110273b724b97f5b2|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|40|v|go
+	c.PostForm("title")
+d5d3db1765287eef77d7927cc956f50a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|28|54|v|go
+	title
+7e283161d99391125cdda2833376e466|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|29|V|go
+	        name := c.PostForm("name")
+f9c11e98282f8d357a53d421b3ec7c4a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|14|1|V|go
+	        if err != nil {
+8bf9e56fbb3cd2279930041773e4e642|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|13|V|go
+	        c.JSON(http.StatusBadRequest, gin.H{"comment": name})
+80791b3ae7002cb88c246876d9faa8f8|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|35|20|v|go
+	http
+4b6c3d7c6eb8faabf7c0c1cf4beef295|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|35|24|v|go
+	StatusBadRequest
+aaabf0d39951f3e6c3e8a7911df524c2|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|19|25|v|go
+	service
+fa11b95a015d8e8daf80379f4cb9ea95|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|17|30|V|go
+	            var service Service
+3a2c82428abe89c0e9fad5c2bd77310c|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|17|29|V|go
+	            service = get(id)
+c11c93fa7458a105037ccd7e99e107f1|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|16|V|go
+	    Title string
+9da7ddfeebd66b39f1be1e6536717845|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|18|V|go
+	    Comment string
+97b5fa35b2fe0cc4c24ee9868cea6528|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|13|V|go
+	    Show bool
+d6781f776243c92d7219c465561ecd0c|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|13|V|go
+	    Grouped bool
+7dd63b34383951e14aabd12e584ea692|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|13|20|v|go
+	strconv
+d3d95dd1033be33093d2a9be9a3379ec|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|1|V|go
+	        name := c.PostForm("name")
+	        service := &Service{
+	                                Title: title,
+	                                Comment: comment,
+	                                Show: show,
+	                                Grouped: grouped,
+	                            }
+df6638357b354db7a0b711342711686c|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|23|20|V|go
+	        service := Service{
+	                                Title: c.PostForm("title"),
+	                                Comment: c.PostForm("comment"),
+	                                Show: strconv.ParseBool(c.PostForm("show"),
+	                                Grouped: c.PostForm("grouped"),
+	                            }
+3711516bfee637d467fcb8ab2e1a19e9|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|23|17|v|go
+	c.PostForm("name")
+b068931cc450442b63f5b3d276ea4297|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|24|50|v|go
+	name
+9acf00b8879fe328ba0db3e887e54bee|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|24|1|V|go
+	        show , _ = strconv.ParseBool(c.PostForm("show"))
+5c10635ba604532b3ba11d0d2272239e|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|23|1|V|go
+	        title := c.PostForm("title")
+d7f24c32c185393ff2a85805bf1b320c|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|13|42|v|go
+	c *gin.Context
+929b13e580c112e3f8a6e70bc92fa39a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|1|V|go
+	        title := c.PostForm("title")
+	        comment := c.PostForm("comment")
+	        show, _ := strconv.ParseBool(c.PostForm("show"))
+	        grouped, _ := strconv.ParseBool(c.PostForm("grouped"))
+38a5a1d17b4736f3c44960f6f5bc2032|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|31|1|V|go
+	        service := Service{
+	                                Title: title,
+	                                Comment: comment,
+	                                Show: show,
+	                                Grouped: grouped,
+	                            }
+600dd237809749a72a878d3fb3fc0e72|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|11|V|go
+	        ser
+f71fb30089dc7b4071176b79d02f05d7|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|38|1|V|go
+	        service := GetServiceByForm(c)
+9285b7c7e3e6c7bc89ea2f53ed08d221|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|29|1|V|go
+	        id, err := strconv.Atoi(c.Param("id"))
+	        if err != nil {
+	            c.JSON(http.StatusBadRequest, err)
+	        } else {
+9bef860c0c0a1cf62d4f5c0c65a8f8ac|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|18|v|go
+	/services/create
+dd5c473dd2a81adf60f079385ef0309e|file:///Users/Kouiti/local_file/homepage/Makefile|12|65|v|make
+	sensuikan1973
+51c4f20d2dc614b97e832c9a751578bf|file:///Users/Kouiti/local_file/homepage/Makefile|11|16|v|make
+	 $(title) $(comment)
+344d1820196f522c6c36010fb521665b|file:///Users/Kouiti/local_file/homepage/Makefile|10|1|V|make
+	create_service:
+		curl -X POST -H "Content-Type: application/json" -d '{"title": "title", "comment":"comment", "show":"true", "grouped":"false"}' localhost/api/services/create
+76ea0bebb3c22822b4f0dd9c9fd021c5|file:///Users/Kouiti/local_file/homepage/Makefile|14|31|v|make
+	create
+b1067698cb00a77e30d72908afb4fa34|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|36|23|V|go
+	    // ユーザー登録
+65303598b4d3dc10fc82575fe41e06c6|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|15|14|V|go
+	    db.Create()
+f3eda883df3e679c6d2fce097c535ad8|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|13|16|V|go
+	    err := db.Create(service).GetErrors()
+56f53db4e76a9ebbbaf9b84d541113ea|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|14|16|V|go
+	    println(service.Title)
+50845b0e3ec9b1fe40eb89965f03f9f6|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|4|5|V|go
+	    "fmt"
+df9ac4e040e8d7ea8ca2af6ffc22c08b|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|39|17|v|go
+	:= GetServiceByForm(c)
+466deec76ecdf5fca6d38571f6324d54|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|40|27|v|go
+	json
+95519be87a39f7b381b40a8abc2e7865|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|13|15|V|go
+	    println(3, service.Title)
+37332fdd19a31411d5a66cf39c08a0d3|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|29|1|V|go
+	    router.GET("/services/get/:id", func(c *gin.Context) {
+	        id, err := strconv.Atoi(c.Param("id"))
+	        if err != nil {
+	            c.JSON(http.StatusBadRequest, err)
+	        } else {
+	            c.JSON(200, get(id))
+	        }
+	    })
+e404fd7ec2ac17ce28eeb29922759984|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|39|30|V|go
+	        id, err := strconv.Atoi(c.Param("id"))
+9a9be6c95f58c95192745df25e5485b7|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|40|23|V|go
+	            c.JSON(200, get(id))
+f7f696224e3b224407b219d66250ff15|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|39|25|V|go
+	            c.JSON(http.StatusBadRequest, err)
+d6467d2df8081519ce6874e451fb220c|file:///Users/Kouiti/local_file/homepage/Makefile|14|1|V|make
+	get_service:
+		curl 'localhost/api/services/get/1'
+91eda0c6dea2e6c53834dd6132e98c09|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|29|1|V|go
+	    router.GET("/services/get/:id", func(c *gin.Context) {
+	        id, err := strconv.Atoi(c.Param("id"))
+	        if err != nil {
+	            c.JSON(http.StatusBadRequest, err)
+	        } else {
+	            c.JSON(200, get(id))
+	        }
+	    })
+	
+	    router.GET("/services/list", func(c *gin.Context) {
+	        c.JSON(200, list())
+	    })
+	
+	    router.POST("/services/create", func(c *gin.Context) {
+	        var service Service
+	        c.ShouldBindJSON(&service)
+	        service, err := create(service)
+	        if err != nil {
+	            c.JSON(http.StatusBadRequest, err)
+	        } else {
+	            c.JSON(200, service)
+	        }
+	    })
+	
+ecf4d9d2a34253ff5dfb14aab1b3046e|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|79|1|V|go
+	        var service Service
+	        c.ShouldBindJSON(&service)
+	        service, err := create(service)
+984b4bd8d9001608ab5262227aa6b328|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|22|9|V|go
+	        var form Owner
+152c2b81a179b50b7b748d1d763134e7|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|25|24|V|go
+	        owner.Password =
+1b746b19b09e22d668190c4dc5f9b3bb|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|29|16|V|go
+	            name := c.PostForm("name")
+7b57069b25724c17a3e08282ef6585a3|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|34|13|V|go
+	        c.Redirect(302, "/")
+cfaa215225d01450f9048e6e3fcb0cd9|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|15|1|V|go
+	
+	    router.GET("/signup", func(c *gin.Context) {
+	        c.HTML(200, "signup.html", gin.H{})
+	    })
+	
+8f8d2e997e0eccde6fee97c82776f1bd|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|30|1|V|go
+	    // ユーザーログイン
+4057f7af99f0900f3c964096305a6072|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|16|1|V|go
+	        var owner Owner
+	        c.ShouldBindJSON(&owner)
+71867bde4f28c29c69b4bcfa7810e07e|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|36|46|V|go
+	        formPassword := c.PostForm("password")
+d8e7e7fd28e7c12eef1ca160fe11f086|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|35|45|V|go
+	        // フォームから取得したユーザーパスワード
+e1623d30daab948c3c7606d9dcac7638|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|36|61|v|go
+	formPassword
+72122ce96bfec66e2396d2e25225d70a|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|32|13|v|go
+	owner
+77335f8b915242f3a464b3074689392b|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|50|1|V|go
+	        id, err := strconv.Atoi(c.Param("id"))
+	        if err != nil {
+	            c.JSON(http.StatusBadRequest, err)
+	        } else {
+	            c.JSON(200, get(id))
+	        }
+	    })
+	
+	    router.GET("/services/list", func(c *gin.Context) {
+	        c.JSON(200, list())
+	    })
+	
+	    router.POST("/services/create", func(c *gin.Context) {
+	        var service Service
+	        c.ShouldBindJSON(&service)
+	        service, err := create(service)
+	        if err != nil {
+	            c.JSON(http.StatusBadRequest, err)
+	        } else {
+	            c.JSON(200, service)
+	        }
+	    })
+a4584d730774ba6195fe2330256e9b12|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|49|58|V|go
+	    router.GET("/services/get/:id", func(c *gin.Context) {
+f04ff5f0e7ca95274cb4d6e5c409a9e7|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/repository.go|10|1|V|go
+	    db := db_conf.DBConnect()
+	    defer db.Close()
+	    // Insert処理
+	    if err := db.Create(&owner).GetErrors(); err != nil {
+	        return err
+	    }
+	    return nil
+7a43a984e7f4706eaa7228aace98aac8|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|19|1|V|go
+	    if err := db.Create(&owner).GetErrors(); err != nil {
+	        return err
+	    }
+	    return nil
+3f6a4943c5e22ca8896a70fb8f45bf2a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|18|5|V|go
+	    return service, err
+2f54e9de19dc3ed6df4a7985e6d64890|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|18|1|V|go
+	    db := db_conf.DBConnect()
+53259d679ccc508fd407883ed1c6a302|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|18|1|V|go
+	    defer db.Close()
+3b558cbb1fa1b6c72b64418ada6dfd10|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|18|1|V|go
+	    // Insert処理
+564cbfcd1e956abe5379e1d357fa53d0|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|13|32|V|go
+	    err := db.Create(&service).GetErrors()
+62a4b820a803bce0d93834019a0db0c2|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|46|1|V|go
+	        if err != nil {
+	            c.JSON(http.StatusBadRequest, err)
+	        } else {
+c60034a53fbf0f154dd42423d3910498|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|21|10|v|go
+	 else {
+7b49416d146cc9b9ae2a87e3e8a94fea|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|18|25|V|go
+	        err := create(owner)
+077371230ffa2183a4295af1bfa9d69c|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|22|1|V|go
+	        if err := create(owner); err != nil {
+	            c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
+	        } else {
+	            c.Redirect(302, owner)
+	        }
+2278e28569ba79c73aa7895f1c6371d1|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|45|9|V|go
+	        service, err := create(service)
+c4a4f238a4e22a59c2e65ea5c856267b|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|50|1|V|go
+	        if err != nil {
+	            c.JSON(http.StatusBadRequest, err)
+	        } else {
+	            c.JSON(200, service)
+	        }
+4202ef115ebede37eb22297113f5fb32|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|48|15|v|go
+	Redirect
+b78a3223503896721cca1303f776159b|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|48|30|v|go
+	Title
+11ba60e3738d427876760d04648dcddb|file:///Users/Kouiti/local_file/homepage/docker-compose.yml|47|1|V|yaml
+	    restart: always
+5c26e1c6dfee6a2dfc3ae59dc2bd721e|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|49|1|V|go
+	            println(2, form.Title)
+	            c.JSON(302, form)
+f443c25d3162634e62c9ae0b2acfcce3|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|49|1|V|go
+	            println(2, form.Title)
+1a07e5d925365778bef09570d50f74e2|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|1|V|go
+	    show, _ := strconv.ParseBool(c.PostForm("show"))
+	    grouped, _ := strconv.ParseBool(c.PostForm("grouped"))
+4f9583085280553a3c654aca77c8ccb9|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|47|29|V|go
+	            println("err", err)
+6c86cc8a646c2f4a585851685fba0776|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|44|31|V|go
+	        c.ShouldBindJSON(&form)
+1afc982290ff831ee5b3f59428c11fbc|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|45|33|V|go
+	        form = GetServiceByForm()
+1fcc42159eb8d57a3457b1f796bff7ca|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|1|V|go
+	    show, _ := strconv.ParseBool(c.PostForm("show"))
+465614ec4e521ea65133f9855a40e343|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|45|14|V|go
+	        form.Show = 
+0e615000917c58843cc3252695a59428|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|45|1|V|go
+	        form.Show, _ := strconv.ParseBool(form.Show)
+498f79c4c5bbde77f1bceb6c86fd0f6d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|46|14|v|go
+	Show
+34e1fee7af256face3fec709711a7353|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|47|30|V|go
+	        println(1, form.Title)
+367fd2432a82ae5aadaffec196514755|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|45|22|V|go
+	        form.Grouped, _ := strconv.ParseBool(form.Grouped)
+efd3187e21a08f6ff31e211db5be5426|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|43|1|V|go
+	        var form Service
+	        c.ShouldBindJSON(&form)
+97f71abcf8ea292fb75e5a83b6cb4e46|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|12|9|V|go
+	    title := c.PostForm("title")
+	    println(1, title)
+	    comment := c.PostForm("comment")
+	    show, _ := strconv.ParseBool(c.PostForm("show"))
+	    grouped, _ := strconv.ParseBool(c.PostForm("grouped"))
+	    service := Service{
+	                            Title: title,
+	                            Comment: comment,
+	                            Show: show,
+	                            Grouped: grouped,
+	                        }
+	    println(2, service.Title)
+	    return service
+fd6816be74de2804c6b2dfcfc70c14df|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|12|9|V|go
+	    c.ShouldBindJSON(&form)
+6e0a044505c3ba55af368f7a5823b16d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|43|V|go
+	    show, _ := strconv.ParseBool(form.Show)
+a6013dd3a0d0b3374a60dc2670670215|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|47|V|go
+	    grouped, _ := strconv.ParseBool(form.Grouped)
+3b57a93600fde69eb60e99d208a5a380|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|1|V|go
+	    println(1, form.Show)
+3fcdb73d36d54f2cc22d0f68e6b6e182|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|16|16|v|go
+	form
+7922cf5341fd8039b1965ad8785479af|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|25|V|go
+	    println(2, form.Title)
+1f6f70fda038439c1dd55c051697bd2d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|13|27|V|go
+	    println("repo err", err)
+cb5e100e5a9a3e7f6d1fd97512215282|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|9|30|v|go
+	error
+4c1669aabf17cff2d525dcac96a5cd3d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|13|24|v|go
+	.GetErrors(); err != nil {
+4adf0f5a13952e14fa787d2eda52ecf9|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|14|23|V|go
+	        println("repo err", err)
+955ed06bc6cd9460df5b21e023d64db4|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|36|31|V|go
+	            c.JSON(http.StatusBadRequest, gin.H{"err":err})
+2fc9045712254cf78043236e17abd19e|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|12|20|V|go
+	    var form Service
+df58e8468181e648f3369c36f691dc9a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|34|5|V|go
+	        form := GetServiceByForm(c)
+eb5e5b28730f71c9f3582a32471cf64e|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|11|1|V|go
+	func GetServiceByForm(c *gin.Context) Service{
+	    println(c.JSON)
+	    return form
+	}
+	
+958ba182f91524c46cc49df3b00b4e27|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|4|1|V|javascript
+	function Home() {
+e3468bc7d7ecacbce243e01164b130a5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|2|10|v|javascript
+	get_user
+d1a360a5850d77f5c8580ccbf155ec61|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|5|1|V|javascript
+	handleSubmit = event => {
+	    event.preventDefault();
+	
+	    const user = {
+	      name: this.state.name
+	    };
+	
+	    axios.post(`https://jsonplaceholder.typicode.com/users`, { user })
+	      .then(res => {
+	        console.log(res);
+	        console.log(res.data);
+	      })
+	  }
+bce34dd668db53319f509986af4f6b2e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|63|1|V|javascript
+	export default Home;
+8cf04a9734132302f96da8e113e80ce5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|15|16|v|javascript
+	Home
+687915314fb5242e1fb158b824cdca97|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|24|V|javascript
+	function ListService() {
+ec8dc09cae84a57bee74defa42ade241|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|27|V|javascript
+	    handleSubmit = (event) => {
+711a9207da66a8843c7be6eb460ba985|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|27|V|javascript
+	        event.preventDefault();
+7738f52dae7d29ff2bb6595ef73e2b08|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|1|V|javascript
+	        const user = {
+4f1f17ff5dc8d3463a8cc40259e09d9c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|1|V|javascript
+	            name: this.state.name
+3dfefe60cd3394d01587351caf03bd3f|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|1|V|javascript
+	        };
+ce1447f7f031ab64fafb17d12bb10ba7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|5|1|V|javascript
+	    handleSubmit = (event) => {
+	        event.preventDefault();
+	
+	        const user = {
+	            name: this.state.name
+	        };
+	
+a635f48c8a1543ade7ef09415c826999|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|9|6|V|javascript
+	    };
+42b90196b487c54069097a68fe98ab6f|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|5|11|v|javascript
+	post
+c4cf75d59583aa2130b15ef1aec28e1a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|1|V|javascript
+	function ListService() {
+	    axios.get(`https://jsonplaceholder.typicode.com/users`)
+	        .then((res) => {
+	            console.log(res);
+	            console.log(res.data);
+	        });
+	}
+87ef35f7a8e51812b28cbc88e5234ff4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|17|8|V|javascript
+	export ListService;
+0dd7b2cc481694752373b87c67a5ed66|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|17|15|V|javascript
+	export default ListService;
+bbf52292561748b6ca61205ae76dde1d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|18|16|v|javascript
+	ListService
+e692b189caaea08371d1f245f41b9825|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|18|29|V|javascript
+	export default CreateService;
+f4ed06d8b23898e2d99d249fcc85c671|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|11|1|V|javascript
+	export CreateService = () => {
+b73e68e1ce8ae7e4c6dd782e7059f8e5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|5|8|v|javascript
+	CreateService
+04db3b4ff365d61527e5f71c088f4dc4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|2|1|V|javascript
+	import Footer from "views/layouts/Footer";
+ded40f2a77c30efc6062db0cbd857746|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|3|8|v|javascript
+	Footer
+d98a07f84921b24ee30f86fd8cd85c3c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|3|9|v|javascript
+	from
+59a14a5786fe7a105d780bb1e1e2b21b|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|3|22|v|javascript
+	views
+34d59fdafc6c99c5973d5c76534a33fd|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|3|26|v|javascript
+	layouts
+a581bd7de3bbc0afa9088c4ce6175e6e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|3|35|V|javascript
+	import  ListService "../api/owners/ListService";
+9c8fe6e8db33fa6e151eaf3f5e4df80c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|7|19|V|javascript
+	    CreateService()
+7c8187586234f81144efbe8369d25118|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Services.js|6|11|V|javascript
+	        console.log(res);
+e7bb79755b61675e1689bc3cf2f7f0fe|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Services.js|6|11|V|javascript
+	        console.log(res.data);
+57fbe5d763062711fd4079fb44f225eb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Services.js|1|29|V|javascript
+	// import React from "react";
+269b0f5bd08fe3460beb3c9f234433d5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Services.js|1|1|V|javascript
+	import axios from "axios";
+	
+	export const ListService = () => {
+	    axios.get(`/api/services/list`).then((res) => {
+	        return res.data
+	    });
+	};
+	
+	export const CreateService = () => {
+	    const service = {
+	        title: "title_react",
+	        comment: "comment_react",
+	        show: true,
+	        grouped: false
+	    };
+	    axios.post(`/api/services/create`, service).then((res) => {
+	        console.log(res);
+	        console.log(res.data);
+	    });
+	};
+ee4540b2a6f250e78e5641840ae8e4d1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|1|1|V|javascript
+	// import React from "react";
+	import axios from "axios";
+	
+	export const ListService = () => {
+	    axios.get(`/api/services/list`).then((res) => {
+	        console.log(res);
+	        console.log(res.data);
+	    });
+	};
+	
+	export const CreateService = () => {
+	    const service = {
+	        title: "title_react",
+	        comment: "comment_react",
+	        show: true,
+	        grouped: false
+	    };
+	    axios.post(`/api/services/create`, service).then((res) => {
+	        console.log(res);
+	        console.log(res.data);
+	    });
+	};
+40c47649dc406afa49d8d0b51c032360|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|11|18|V|javascript
+	        title: "title_react",
+88f15cc3a5bc04acac666ea07cf1bf66|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|11|18|V|javascript
+	        comment: "comment_react",
+c7021aa1c83b1c9261536a122c17f5f7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|11|18|V|javascript
+	        show: true,
+3631ecaba3a3425e7caf3f78bcc84fe3|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|11|18|V|javascript
+	        grouped: false
+17e46a3602fb0072b4d5a84925a83c93|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|3|1|V|javascript
+	import {ListService, CreateService} from "api/Services";
+6f51e454cdff429c3ba0cdbe86713f2c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|17|1|V|javascript
+	                <Route exact path="/" element={<Top />} />
+e6e9445e0ade10398ba1653001eb4c73|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|10|1|V|javascript
+	import Menu from "./views/Menu";
+b61541208db7fa7dba42c85224405911|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|10|27|v|javascript
+	Menu
+9fe5241ce82d4072b20c4a193f29af48|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|10|31|V|javascript
+	import Menu from "./views/Login";
+8617a6c09eb76d9882db8ee31a420654|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Login.js|2|1|V|javascript
+	import 
+992a0f0542384f1ee5ef51b7cf4ae6c4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Login.js|2|47|v|javascript
+	Services
+d61c82959963ba552f979f7ec0b43623|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Login.js|10|31|v|javascript
+	handleSubmit
+fc3210bd5eb219f84189095ab3db2996|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|4|35|V|javascript
+	import Login from "api/owners/Login"
+c4f768a76b89298a900c4903f9ee4c88|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|12|1|V|javascript
+	import LoginForm from "./views/Login";
+b4e4aec9bd314714951bec2a9cb7c1d1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|1|1|V|javascript
+	import axios from "axios";
+	
+	// export const ListService = () => {
+	//     axios.get(`/api/services/list`).then((res) => {
+	//         return res.data
+	//     });
+	// };
+	
+	export const Login = (name, password) => {
+	    const owner = {
+	        name: name,
+	        password: password
+	    };
+	    axios.post(`/api/services/create`, owner).then((res) => {
+	        return res.data
+	    });
+	};
+72bc04716f22f7be6390002f09ef17c7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|24|11|V|javascript
+	  render() {
+59a8ce73201af31fb1a65ec9ae11f761|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|17|1|V|javascript
+	    axios.post(`https://jsonplaceholder.typicode.com/users`, { user })
+	      .then(res => {
+	        console.log(res);
+	        console.log(res.data);
+	      })
+f5b7cc16c58a8c4fae37af1bd655c41e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|1|22|v|javascript
+	PersonList
+8a565daf4f7e241db106be4d3e1fc1af|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|16|10|V|javascript
+	    const  = {
+2ea5bffd998da806b3ad2a160a654d75|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|16|6|V|javascript
+	      name: this.state.name
+5104354d3da7c263a3168c3006203e70|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|25|1|V|javascript
+	            <input type="text" name="name" onChange={this.handleChange} />
+b53d56fda680fda487e781a02a821a95|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/ale.vim|6|1|V|vim
+	let g:ale_fixers = {
+	    \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+	    \ 'python': ['autopep8', 'black', 'isort'],
+	    \ 'json': ['fixjson', 'jq'],
+	    \ 'javascript': ['prettier'],
+	    \ 'html': ['html-beautify'],
+	    \ 'htmldjango': ['html-beautify'],
+	    \ 'css': ['prettier', 'stylelint'],
+	    \ 'Dockerfile': ['dockerfile_lint', 'hadolint'],
+	    \ 'go': ['gofmt']
+	    \ }
+1cb251ec0d568de6a929b520c4aed8d1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|27|26|v|javascript
+	text
+0a9f8e62e0d3e574f48af9e665fc29b4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|36|1|V|javascript
+	export default App;
+8e2dcfd7e7e24b1ca76c1193f645902b|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|20|44|v|javascript
+	element
+24f1ef8727d2c48727a0b2fad9407fa1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|5|2|V|javascript
+	  console.log("--------------");
+700c216fb376666eaeda0c892e8bdc09|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|20|44|v|javascript
+	component
+1e2f3fd94c680592a2f1d4fde80a87fa|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|11|1|V|javascript
+	            <div class="container">
+e2516c203902230766cda7cf4adb3eed|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|21|11|V|javascript
 	      <div>
-f4e677bc6c2608e416ac71fb619f791e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|63|50|v|htmldjango
-	<h5>My weak points are</h5>
-2300a6ddc5b3d2b2b7e9efa329876b98|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|60|17|V|htmldjango
-	          <p></p>
-22302f461f033193f140236ed5cf688e|file:///Users/Kouiti/local_file/lets/lets_proj/app/forms.py|68|15|V|python
-	        label="label",
-8a926946d67e804f943a71d7388e74ef|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/reflection.html|22|15|V|htmldjango
-	              {{ form.shadow_text }}
-41b5906188282b6a795599cebc1a8b27|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|77|18|V|python
-	        print(requ)
-f67f9eccf0b0a28deeafc575ebddcb35|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|104|1|V|python
-	        print(request.POST)
-6894c7fb586177168f93b3310caeaee6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|26|V|htmldjango
-	<!-- <div class="card mt-4">
-c8c9d2885f6766805c660096dd3542c7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|21|V|htmldjango
-	    <div class="row">
-2fc8f2784331bf8560186233bb6bece5|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|18|V|htmldjango
-		  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-04256b39c28556e3c583b6102152c1b5|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|15|V|htmldjango
-			  <div class="card-header">Demonstration video</div>
-b1b96db033404784bdd024ddf0d9e974|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|9|V|htmldjango
-		  </div>
-5c09dfb66475f43882699af011cbf577|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|12|V|htmldjango
-	      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-05ba70150cc039d6057814825db929cf|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|6|V|htmldjango
-			  <div class="card-body">
-81ee53632d020314956480bae4087774|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|6|V|htmldjango
-			  </div>
-aadbf4416d6e4ab567bd5937e1932df9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|10|V|htmldjango
-		</div>
-6fd23560b59ab9b076d740a14bf16430|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|10|V|htmldjango
-	</div> -->
-98672e73efa04606596d2cac311c34c5|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-			  <div class="card-header">Voice recording test</div>
-3b4620692faabfb5cfd970e9cada2b74|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				<div id="app">
-d3472d477b898e935fb6e20d17e9b83c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				<button class="btn btn-danger" type="button" v-if="status=='ready'" @click="startRecording">Start recording</button>
-ac5fc7a11f66ac93fafaa0c8d900122e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				<button class="btn btn-primary" type="button" v-if="status=='recording'" @click="stopRecording">Stop recording</button>
-1e814360255b609cf703bd260d91bbae|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				</div>
-2ede1c462f203486b48479da739d97f7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-			  <div class="card-header">Your Recorded Voice</div>
-e031668ac9ca728d4d6256644bac18d7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				<a class="pointer" id="play_btn"
-4c4f60afa06fc3c27643be66dd11f3e9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				onclick="wavesurfer.playPause(); this.hidden=true; document.getElementById('pause_btn').hidden= false">
-fbbf4f872fcb246ded62a292a020b75e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-951ee006154744ff33e603de8a243041|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-					  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-3d005eada1acc157392231d960e8443f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-					  <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-f9ed05861a5eb795db712a35b5af36f4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-					</svg>
-9ebb2882736d6baea8cecb14efd71a1b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				</a>
-d89ae06d21a44da2cf411210aa1d2447|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				<a class="pointer" id="pause_btn"
-c14d776d32b4da02c6bfd72f5b008ca6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				onclick="wavesurfer.playPause(); this.hidden=true; document.getElementById('play_btn').hidden= false" hidden>
-384f1de63be1221f78d9237aa00423e0|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
-d93d488f77225a6e9d2d32eae2ed1189|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-					  <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"/>
-fd141cae218f9f7be068a6103c8bb25d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				<a class="pointer" onclick="wavesurfer.play(0)">
-a80cc49903ef50df0ba9e057ee1c2d29|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-skip-backward-circle" viewBox="0 0 16 16">
-7ac48101d9d268c3b1919975ce8c7144|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-					  <path d="M11.729 5.055a.5.5 0 0 0-.52.038L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.271-.445z"/>
-d74bc05be8fe157845c7111a2b2a307a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				<div id="waveform"></div>
-0a1aa595b84d3be645eeffb911be4b1c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|4|V|htmldjango
-			  <div class="card-header">Mike level</div>
-69add59353eee19ac5f0904e3abae00a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				  <div id="waveform_recorded"></div>
-4fb9c7f643e7da921666aabff4c52e91|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-	  <div class="row">
-30092b54b247f21f45e3108b35a348c8|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|1|V|htmldjango
-				<button type="button" class="btn btn-outline-dark">NEXT⇨</button>
-7184f254bffe4e174ddce2fead1b51d2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|113|4|V|htmldjango
-	            <h4>To Voice recording test</h4>
-eeb7edae15f5b63b333dcb01581d0c33|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	<!-- <div class="row">
-0e268b6690eefda21d551324865a627f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
-eae863cda43b53ec17558e37cd772e93|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	    <h3>Basic</h3>
-153710e1f1712490815a9645bf8d4c4b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	  </div>
-7660437696d9e460d67d807c0bb5a599|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-fb61fcc5ad70499bd424f7fdbb1cafef|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	    <h5>Task No.{{ task_id }} [Reading aloud]</h5>
-d703d3208199302b8b0c5b2899fe7496|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-2bf0ed39adfb52397bfd94ed7c24939c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	    <h5>Your name : {{ user_name }}</h5>
-0a3a0b592b9c285e050805307cee87c2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	</div>
-b19eb87e753bdbff43365558c4ee5f70|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	<hr />
-ac9ed9bd4e6ef0f4592a7058314730c3|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	<div class="row">
-e109cbbdd665a7ad2012b9b34e98cc66|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-daf9e641b281cc77ecf74eee9363a6c6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	    <div class="form-group col-md-1">
-d78774662a94eec6a714250721905733|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	      <button type="button" class="btn btn-success">Start</button>
-b082895fab4c56c1aba17dcc672fca3a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	    </div>
-8cef697ba5e3764bf1dd81131517f90e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	      <button type="button" class="btn btn-danger">Stop</button>
-045cac40091d792b43b9589226074dd9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
-44e030ce87fb4b412fb1d32e096e424e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	    <div class="form-group col-md-12">
-7fcf3b2bef8c8a152a856bdd449b2158|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	      <h4>{ ~~ Model Voice ~~ }</h4>
-2f30eb9125f1c3e22039324a25115400|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	      <br />
-c76c57e29d5d065836cf47999b497a53|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	      <hr />
-4eb9802d88cd0868b1a65a473e6fe7d3|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	      <h4>{ ~~ Your Recorded Voice ~~ }</h4>
-9cfd143aabbf7e603afd036cb1c244f2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	  <div class="row">
-	    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-0e841533dcfd2211d4c536196e09fe27|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
-63cd1215fbc33815ca5cf49042d27544|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	        <div class="form-group col-md-1">
-5104201792a3e59eb5dfd88489971396|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	          <button type="button" class="btn btn-secondary" onclick="location.href='URL'">NEXT</button>
-3068306f1230e042541c0c577e79ca1d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	        </div>
-3ca53ee27f7903d3b172e39b3ef25204|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-4e81d8119b4f6024c79e95e85ec45d68|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	      <div class="form-group col-md-12">
-58f9d0d4d8665a3a3e8255b0b47d60d2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	        <br>
-48359ada9df24f6f7b7cbde1c75778ca|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	        <h5>⇒To 2nd Shadowing recording</h5>
-fcc3c75380c124cbb812678e1c50900b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
+00a593f86734251117eb99d060a76252|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|4|46|v|javascript
+	Component 
+4114486d72af729acf3b347efaba70f4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|20|24|V|javascript
+	                <Route exact path="/login">
+	                    <LoginForm />
+	                </Route>
+a2f2ed4f8ebc2cbb4c21a29dc40ab61d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|4|8|v|javascript
+	class
+3ea2807fe8a93a97a45b55cff554ee44|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|5|1|V|javascript
+	export const LoginForm = () => {
+9cf1b3e0f1161e2acdaadb7ae04d62c7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|5|1|V|javascript
+	    ListService()
+70563f75eb43ad3756272072bf4dd38a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|7|8|V|javascript
+	    fojd
+744eaf92c4298884f32c3a529b3f7b36|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|26|1|V|javascript
+	        <form onSubmit={LoginFormSubmit}>
+4c7250ae91498af66ab88ffc57205525|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|33|1|V|javascript
+	        </form>
+d7b7380ec3c57e38cfb9b5288533f76b|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|33|6|v|javascript
+	 </div>
+cc6422da30d87fdb2224fabe18e4fc75|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|26|6|V|javascript
+	          <label>
+	            id:
+	            <input type="text" name="name" />
+	            password:
+	            <input type="password" name="password" />
+	          </label>
+	          <button type="submit">ログイン</button>
+a1b77ecb444bfb63d29ffbc3eab2d09b|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|27|6|v|javascript
+	       id:
+ca6107641ee036586471c0f58a4b4686|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|6|18|V|javascript
+	    console.log(a)
+04e5defbc8dfc52aa83b7f9a54462627|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|6|1|V|javascript
+	    const name = document.getElementByName("id")
+9ed39e2ea931586b6a985a6942ef573e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|9|23|v|javascript
+	state
+21bd0f4eca811212f1feaa1b22d4a7df|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|35|1|V|javascript
+	          <button type="submit">ログイン</button>
 	      </div>
-d0a9c968548dac1272633aaeeb7db644|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	  <hr>
-76f80803af4e2de0bff6367af94146c2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	  <h5>More templates</h5>
-c2441e327ae91ec7c430d2c289e1ee6b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|5|5|V|htmldjango
-	      content
-d8abf9d02d4cd54c52c9377b388e1c64|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|36|1|V|htmldjango
-	<div class="row mt-4">
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <div class="card">
-	      <div class="card-body">
-	        <h4>Voice recording test</h4>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <div id="app">
-	    <button class="btn btn-danger" type="button" v-if="status=='ready'" @click="startRecording">Start recording</button>
-	    <button class="btn btn-primary" type="button" v-if="status=='recording'" @click="stopRecording">Stop recording</button>
-	    </div>
-	  </div>
-	</div>
+c0bb2196426022e8adf9a5b6d34fd45e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|35|19|v|javascript
+	onclick
+c1c425268e68385d1ab5074c17a94f14|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|10|1|v|javascript
+	function
+cd7359007d21ddc3c18b247fdac3c1b8|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|4|1|V|javascript
+	const LoginFormSubmit = () => {
+	    const name = document.getElementByName("name")
+	    const password = document.getElementByName("password")
+	    const session = Login(name, password)
+	    console.log(session)
+	}
+7f6b330f25a8d82878013a4f07884c17|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|34|1|V|javascript
+	          <button onclick={console.log("jio")}>ログイン</button>
+6e3eb8ee639ca3b20255e8c7e89f1d67|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|20|1|V|javascript
+	    const LoginFormSubmit = () => {
+	        const name = document.getElementByName("name")
+	        const password = document.getElementByName("password")
+	        const session = Login(name, password)
+	        console.log(session)
+	    }
+bf68db230f6e9ccca13b0a2153e49ff5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|34|40|V|javascript
+	          <button onClick="console.log(H'io')">ログイン</button>
+9e925e9341b490bfd3b4c4ca3b0c1ef2|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|35|28|v|javascript
+	this
+9c711e1179cb34fb21495bde6dc9cfd7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|35|66|V|javascript
+	          <button onClick="console.log('io')">ログイン</button>
+7db342d467df8891b3c40ae5b6dc176e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|14|V|javascript
+	  // state = {
+2f7d69b65ed27d79bcdad18f373eee21|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|14|V|javascript
+	  //   id: '',
+d19ba0d2c71e342929236e7c81cdd08e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|14|V|javascript
+	  //   password: ''
+cb2ce32bec2229def40e6440a1cfdfd0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|6|V|javascript
+	  // }
+fb94b6cbc12bacfebecb886675e78ab5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|1|V|javascript
+	  // handleChange = event => {
+9653ec8b4d26a534c246170d97740c07|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|1|V|javascript
+	  //   this.setState({[event.target.name]: event.target.value});
+ad1e098bab171f618c5630aec7ae26ad|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|1|V|javascript
+	  // handleSubmit = event => {
+4cdc628eb2e315a775a0ac65db06ceef|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|1|V|javascript
+	  //   event.preventDefault();
+a1250f54bb25bb005c4eea86f4288ac3|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|1|V|javascript
+	  //   Login(this.state)
+64d275ee397342b326ad1ef5dc7527a9|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|1|V|javascript
+	  // render() {
+c0db867cd8c0093668fd6bedf0b2378d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|14|21|V|javascript
+	    console.log(owner)
+5f4dcc3b5aa765d61d8327deb882cf99|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|12|19|v|javascript
+	password
+0d5f7c408834ab913bee215358fccbf0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|2|16|v|javascript
+	, encycle } = require('json-cyclic');
+e5737b2349ddaf193d8dc8385f3c37f6|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|2|34|V|javascript
+	import decycle from "json-cyclic";
+a9b8010c52eb5c079520c221733b9e6c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|2|52|V|javascript
+	const { decycle, encycle } = require('json-cyclic');
+acbd731790f1b49243d078152b48748e|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|28|25|V|go
+	        println("get post")
+8bdba40af3b2be1debceccc9ae7885d9|file:///Users/Kouiti/local_file/homepage/Makefile|20|1|V|make
+	create_user:
+		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/signup
+dad98c61254b505f6f52625b81c1197a|file:///Users/Kouiti/local_file/homepage/Makefile|20|1|v|make
+	create_user
+db057ab32657ab6c5297ce7a99b60a72|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|15|1|V|javascript
+	        console.log(res)
+cb41d086d03aa5f07fe93356fc308ab8|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|4|1|V|javascript
+	const LoginFormSubmit = () => {
+	    const name = document.getElementsByName("name")[0].value
+	    const password = document.getElementsByName("password")[0].value
+	    const session = Login(name, password)
+	    console.log(session)
+	}
+32ec27d34ba8b7de57b54bfdae6987e8|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|18|1|V|javascript
+	        return res.data
+9994fd130af64409d03eecc5e1896b17|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|17|1|V|javascript
+	        console.log(res.data)
+39250f6668ddd4a66fdd7a7376d72d49|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|9|1|V|javascript
+	export const Login = (name, password) => {
+	    const owner = {
+	        name: name,
+	        password: password
+	    };
+	    console.log(owner)
+	    axios.post(`/api/login`, owner).then((res) => {
+	        return res.data
+	    }).catch(function (error) {
+	        console.log(error.response.data);
+	        console.log(error.response.status);
+	        console.log(error.response.headers);
+	    });
+	};
+b39f776eaf387c2d8f83bfdce0731c4f|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|26|19|V|javascript
+	    const owner = {
+ea1fae81269ec900ed1bec91d110269d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|26|19|V|javascript
+	        name: name,
+a8fdb22f5e43c3fce8171f87eba52d28|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|26|19|V|javascript
+	        password: password
+5f4f952f9d9188ec910db5dddad3338d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|29|21|V|javascript
+	        console.log(error.response.data);
+b48a62d53d62042d2b42696f3efbfca6|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|29|21|V|javascript
+	        console.log(error.response.status);
+51c4ebd9e86d0138888384105b560ea4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|29|21|V|javascript
+	        console.log(error.response.headers);
+21d6f40cfb511982e4424e0e250a9557|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|26|22|v|javascript
+	session
+6b7e91c68a0dcde5b541e3f826dec611|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|26|1|V|go
+	    router.POST("/login", func(c *gin.Context) {
+	        var form Owner
+	        println("login")
+	        c.ShouldBindJSON(&form)
+	        dbPassword := get(form.Name).Password
+	        // ユーザーパスワードの比較
+	        if err := crypto.CompareHashAndPassword(dbPassword, form.Password); err != nil {
+	            log.Println("Failed log in.")
+	            c.JSON(http.StatusBadRequest, err)
+	        } else {
+	            log.Println("You loged in.")
+	            c.JSON(200, get(form.Name))
+	        }
+	    })
+df460a449f5ce7c1ca97ec87bbd11430|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/models.go|9|1|V|go
+	type Owner struct {
+	    gorm.Model
+	    Name string
+	    Password string
+	}
+271262ee7bebca9fd9d0260c99788965|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|42|1|V|go
+	        gorm.Model
+49ee3087348e8d44e1feda1917443987|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|42|9|v|go
+	Name
+9434d7c221b091c7f4981151de4bff1d|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|43|13|V|go
+	        Password string
+94a08da1fecbb6e8b46990538c7b50b2|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|42|15|v|go
+	token
+855109397a248e55cecf0ed296c7428d|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|41|1|V|go
+	    type session struct {
+	        token string
+	    }
+80ecdfb0a573fdea13bfc3584c813db8|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|45|32|V|go
+	        dbPassword := get(form.).Password
+a15ea5a1a2eb43e80f77a60c58b201e7|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|46|30|V|go
+	        if err := crypto.CompareHashAndPassword(dbPassword, form.Password); err != nil {
+7973b9d84734fcc19aa7a5fb810795a7|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|46|30|V|go
+	            log.Println("Failed log in.")
+6c97e018d8199e0e3b204d0ee60626de|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|46|16|V|go
+	            log.Println("You loged in.")
+938e4a7c7cc1e3df8ea3425480b4f2ac|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|46|16|V|go
+	            c.JSON(200, get(form.Name))

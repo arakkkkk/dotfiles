@@ -1,5 +1,8 @@
 {
-    "typescript.validate.enable": false,
-    "typescript.format.enabled": false,
-    "typescript.showUnused": false
+    "coc.preferences.formatOnSaveFiletypes": [
+        "json",
+        "css",
+        "markdown"
+    ],
+    "tsserver.enableJavascript": false
 }

@@ -7,6 +7,7 @@ let g:coc_global_extensions = [
       \, 'coc-html'
       \, 'coc-json'
       \, 'coc-css'
+      \, 'coc-go'
       \, ]
 set nocompatible
 set runtimepath^=/path/to/coc.nvim

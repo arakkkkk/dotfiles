@@ -8,6 +8,7 @@ set expandtab          "タブ入力を空白に変換
 set splitright         "画面を縦分割する際に右に開く
 set clipboard=unnamed  "yank した文字列をクリップボードにコピー
 set hls                "検索した文字をハイライトする
+lang en_US.UTF-8
 
 
 if has('persistent_undo')

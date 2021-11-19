@@ -8,10 +8,11 @@ let g:ale_fixers = {
     \ 'python': ['autopep8', 'black', 'isort'],
     \ 'json': ['fixjson', 'jq'],
     \ 'javascript': ['prettier'],
-    \ 'html': ['HTMLint'],
+    \ 'html': ['html-beautify'],
     \ 'htmldjango': ['html-beautify'],
-    \ 'css': ['prettier'],
+    \ 'css': ['prettier', 'stylelint'],
     \ 'Dockerfile': ['dockerfile_lint', 'hadolint'],
+    \ 'go': ['gofmt']
     \ }
 
 map :fix<CR> :ALEFix<CR>

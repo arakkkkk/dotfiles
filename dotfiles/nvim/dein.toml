@@ -28,6 +28,7 @@ hook_add = '''
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
 hook_add = '''
+  source ~/.config/nvim/plugins/easymotion.vim
 '''
 
 [[plugins]]

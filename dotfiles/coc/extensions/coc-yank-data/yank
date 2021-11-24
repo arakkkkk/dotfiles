@@ -1,1113 +1,1777 @@
-535647157db22b3b98e4181aed67b7b2|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/models.go|1|1|V|go
-	package owners
+28444c0d7c9a981a6a414f9fd5a7ea35|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|47|38|v|javascript
+	mpeg
+f1c710690c377cbf98abde7a978411d7|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|48|1|V|javascript
+	                        type: "audio/wav"
+e35a4ad96e7d65867e8ce78b21a93f26|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|48|1|V|javascript
+	                    //const audioBlob = new Blob(this.audioData);
+	                    // GetAudio(audioBlob);
+b5c6d6d7c6a2e1fa79b628ed5c43d0b2|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|80|1|V|javascript
+	new Vue({
 	
-	import (
-	    "go-app/db_conf"
-	    "github.com/jinzhu/gorm"
-	)
+	    el: "#app",
+	    data: {
+	        // 変数を宣言する部分
+	        status: "init", // 状況
+	        recorder: null, // 音声にアクセスする "MediaRecorder" のインスタンス
+	        audioData: [], // 入力された音声データ
+	        audioExtension: "" // 音声ファイルの拡張子
+	    },
+	    methods: {
+	        startRecording() {
+	            this.status = "recording";
+	            this.audioData = [];
+	            this.recorder.start(); //start()メソッドで録音開始
+	        },
+	        stopRecording() {
+	            this.recorder.stop(); //stop()メソッドで録音停止
+	            this.status = "ready";
+	        },
+	        //ブラウザで録音された音声データの拡張子を取得
+	        getExtension(audioType) {
+	            let extension = "wav";
+	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
+	            if (matches) {
+	                extension = matches[1]; //ブラウザのよって拡張子が異なる
+	                //例）chrome：wavm, firefox：ogg
+	            }
+	            return "." + extension;
+	        }
+	    },
+	    mounted() {
+	        // マイクアクセスの可否
+	        navigator.mediaDevices
+	            .getUserMedia({ audio: true })
+	            //アクセスできたら
+	            .then((stream) => {
+	                this.recorder = new MediaRecorder(stream);
+	                // 音声を保存する
+	                this.recorder.addEventListener("dataavailable", (e) => {
+	                    this.audioData.push(e.data); //audioDataに音声を格納
+	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
+	                });
 	
+	                // 録音した音声をダウンロードする
+	                // （ここをデータベースに保存する処理にする）
+	                this.recorder.addEventListener("stop", () => {
+	                    const audioBlob = new Blob(this.audioData, {
+	                        type: "audio/wav"
+	                    }); //音声データをBlob化
+	                    //const audioBlob = new Blob(this.audioData);
+	                    GetAudio(audioBlob);
 	
-	type owner struct {
-	    gorm.model
-	    name string
-	    password string
-	}
-	type listowner []owner
+	                    const url = URL.createObjectURL(audioBlob);
+	                    //音声データのURLを使ってデータベースにデータを送信したい
+	                            let a = document.createElement('a'); //aタグオブジェクト
+	                            a.href = url; //href属性を指定
+	                            a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
+	                            document.body.appendChild(a); //htmlaタグをに追加
 	
-	func dbinit() {
-		db := db_conf.dbconnect()
-		// コネクション解放
-		defer db.close()
-		db.automigrate(owner{})
-	}
-b5d4fe554c8d679d10e8cfa86d71b98b|file:///Users/Kouiti/local_file/homepage/docker/golang/Dockerfile|3|1|V|dockerfile
-	RUN chmod +x ./wait-for-it.sh
-72b90bbe937d96cd45077e4f3f6eded0|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/models.go|1|1|V|go
-	package owners
+	                            a.click(); //クリックしたらaタグが関連する処理を行う
 	
-	import (
-	    "go-app/db_conf"
-	    "github.com/jinzhu/gorm"
-	)
-	
-	
-	type Owner struct {
-	    gorm.Model
-	    Name string
-	    Password string
-	}
-	type ListOwner []Owner
-	
-	func DbInit() {
-	    db := db_conf.DBConnect()
-	    // コネクション解放
-	    defer db.Close()
-	    db.AutoMigrate(Owner{})
-	}
-7cb757a7c0d7fe1f83e961ae71abb9dc|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|15|1|V|go
-	}
-	type listowner []owner
-	
-	func dbinit() {
-		db := db_conf.dbconnect()
-		// コネクション解放
-		defer db.close()
-		db.automigrate(owner{})
-	}
-aa55b493ea8ffeff481ea6b31c1f2116|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|11|1|V|go
-	    title string
-	    comment string
-	    show bool
-	    grouped bool
-7c445fdf0e81627bdb8b02496e94834d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|1|5|V|go
-	package owners
-	
-	import (
-	    "go-app/db_conf"
-	    "github.com/jinzhu/gorm"
-	)
-	
-	
-	type owner struct {
-	    gorm.model
-	package owners
-	
-b25e1e3bd5b09337f0c908d88556f1b2|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|2|1|V|go
-	
-	import (
-	    "go-app/db_conf"
-	    "github.com/jinzhu/gorm"
-	)
-	
-	
-	type owner struct {
-	    gorm.model
-	package owners
-	
-be98bdc4e0a292a750c0118128b62585|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|11|11|V|go
-	    Name string
-8a43bc8f73bbca5b8285bbfaf602ec1d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|11|11|V|go
-	    Password string
-b6f4a2ec6356bbd56d49f2096bf9d3d3|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|16|20|v|go
-	Owner
-1364f4a3f24776f35ccc52b6a397d8ef|file:///Users/Kouiti/local_file/homepage/docker/nginx/Dockerfile|3|1|V|dockerfile
-	COPY ./ ./
-f72464d9e1715de729bb00d81e509015|file:///Users/Kouiti/local_file/homepage/docker/golang/Dockerfile|3|1|V|dockerfile
-	WORKDIR /go/src/go-app
-7d51b44d9a8a583ac5fdaebd845933e6|file:///Users/Kouiti/local_file/homepage/docker/nginx/Dockerfile|4|10|v|dockerfile
-	go/src/go-app
-869630ea0f74625d71671759630b4bd8|file:///Users/Kouiti/local_file/homepage/docker-compose.yml|69|28|v|yaml
-	/etc/nginx/
-c2ba7e785c49050f48da9aacc45c2b85|file:///Users/Kouiti/local_file/homepage/go-app/svc/menus/models.go|9|6|v|go
-	Service
-b45cffe084dd3d20d928bee85e7b0f21|file:///Users/Kouiti/local_file/homepage/go-app/svc/menus/models.go|11|15|v|go
-	string
-543c0d24930e2e94ce9c05b41d30d523|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/repository.go|1|1|V|go
-	package owners
-	
-	import (
-	    "go-app/db_conf"
-	)
-	
-	
-	// ユーザー登録処理
-	func create(owner *Owner) []error {
-	    db := db_conf.DBConnect()
-	    defer db.Close()
-	    // Insert処理
-	    if err := db.Create(&owner).GetErrors(); err != nil {
-	        return err
+	                });
+	                this.status = "ready";
+	            });
 	    }
-	    return nil
-	}
+	});
+ddfcc8f6d920e579ee1d3520abdfc261|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|111|40|v|javascript
+	audioData
+7c51fa346d7b08e062bef02d1103c2ea|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|121|11|V|javascript
+	// export WAV from audio float data
+fcf8f6980dc229c9239cb3b5ec5a83df|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|106|1|V|javascript
+	                    const url = URL.createObjectURL(audioBlob); //音声データの保存場所（URL 絶対パス）
 	
-	func get(username string) Owner {
-	    db := db_conf.DBConnect()
-	    var owner Owner
-	    db.First(&owner, "username = ?", username)
-	    db.Close()
-	    return owner
-	}
+	                    //特にここ以下を変える？
+	                    //音声データのURLを使ってデータベースにデータを送信したい
+	                    let a = document.createElement("a"); //aタグオブジェクト
+	                    a.href = exportWAV(url);
+	                    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
+	                    document.body.appendChild(a); //htmlaタグをに追加
 	
-	func list() *ListOwner {
-	    db := db_conf.DBConnect()
-	    var list_owner ListOwner
-	    db.Find(&list_owner)
-	    db.Close()
-	    return &list_owner
-	}
-b6fd7f5946a5f50167e27d6f83213ee4|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|1|1|V|go
-	package owners
+	                    a.click(); //クリックしたらaタグが関連する処理を行う
+d77e08e91e4567788ac8fd47a03dae30|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|57|1|V|javascript
+	new Vue({
+	    el: "#app",
+	    data: {
+	        // 変数を宣言する部分
+	        status: "init", // 状況
+	        recorder: null, // 音声にアクセスする "MediaRecorder" のインスタンス
+	        audioData: [], // 入力された音声データ
+	        audioExtension: "" // 音声ファイルの拡張子
+	    },
+	    methods: {
+	        startRecording() {
+	            this.status = "recording";
+	            this.audioData = [];
+	            this.recorder.start(); //start()メソッドで録音開始
+	        },
+	        stopRecording() {
+	            this.recorder.stop(); //stop()メソッドで録音停止
+	            this.status = "ready";
+	        },
+	        //ブラウザで録音された音声データの拡張子を取得
+	        getExtension(audioType) {
+	            let extension = "wav";
+	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
 	
-	import (
-	    "net/http"
-	    "log"
-	
-	    "go-app/crypto"
-	    // "go-app/owners.menu"
-	
-	    "github.com/gin-gonic/gin"
-	    _ "github.com/go-sql-driver/mysql"
-	)
-	
-	func Urls(router *gin.Engine) *gin.Engine{
-	
-	    router.GET("/signup", func(c *gin.Context) {
-	        c.HTML(200, "signup.html", gin.H{})
-	    })
-	
-	    // ユーザー登録
-	    router.POST("/signup", func(c *gin.Context) {
-	        println("post signup")
-	        var form Owner
-	        // バリデーション処理
-	        if err := c.Bind(&form); err != nil {
-	            c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
-	            c.Abort()
-	        } else {
-	            name := c.PostForm("username")
-	            password := c.PostForm("password")
-	            passwordEncrypt, _ := crypto.PasswordEncrypt(password)
-	            // 登録ユーザーが重複していた場合にはじく処理
-	            if err := create(&Owner{Name: name, Password: passwordEncrypt}); err != nil {
-	                c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
+	            if (matches) {
+	                extension = matches[1]; //ブラウザのよって拡張子が異なる
+	                //例）chrome：wavm, firefox：ogg
 	            }
-	            c.Redirect(302, "/")
+	
+	            return "." + extension;
 	        }
-	    })
+	    },
+	    mounted() {
+	        // マイクアクセスの可否
+	        navigator.mediaDevices
+	            .getUserMedia({ audio: true })
+	            //アクセスできたら
+	            .then((stream) => {
+	                this.recorder = new MediaRecorder(stream);
+	                // 音声を保存する
+	                this.recorder.addEventListener("dataavailable", (e) => {
+	                    this.audioData.push(e.data); //audioDataに音声を格納
+	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
+	                });
 	
-	    router.GET("/login", func(c *gin.Context) {
-	        c.HTML(200, "login.html", gin.H{})
-	    })
+	                // 録音した音声をダウンロードする
+	                // （ここをデータベースに保存する処理にする）
+	                this.recorder.addEventListener("stop", () => {
+	                    const audioBlob = new Blob(exportWAV(this.audioData))); //音声データをBlob化
+	                    const url = URL.createObjectURL(audioBlob); //音声データの保存場所（URL 絶対パス）
 	
-	    // ユーザーログイン
-	    router.POST("/login", func(c *gin.Context) {
-	        // DBから取得したユーザーパスワード(Hash)
-	        dbPassword := get(c.PostForm("name")).Password
-	        log.Println(dbPassword)
-	        // フォームから取得したユーザーパスワード
-	        formPassword := c.PostForm("password")
-	        // ユーザーパスワードの比較
-	        if err := crypto.CompareHashAndPassword(dbPassword, formPassword); err != nil {
-	            log.Println("ログインできませんでした")
-	            c.HTML(http.StatusBadRequest, "login.html", gin.H{"err": err})
-	            c.Abort()
-	        } else {
-	            log.Println("ログインできました")
-	            c.Redirect(302, "/")
-	        }
-	    })
-	    return router
-	}
-30d98c8ae0efac63a15db66faf47d60f|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|21|1|V|go
+	                    //特にここ以下を変える？
+	                    //音声データのURLを使ってデータベースにデータを送信したい
+	                    let a = document.createElement("a"); //aタグオブジェクト
+	                    a.href = exportWAV(url);
+	                    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
+	                    document.body.appendChild(a); //htmlaタグをに追加
 	
-	    // ユーザー登録
-	    router.POST("/signup", func(c *gin.Context) {
-	        println("post signup")
-	        var form Service
-	        // バリデーション処理
-	        if err := c.Bind(&form); err != nil {
-	            c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
-	            c.Abort()
-	        } else {
-	            name := c.PostForm("username")
-	            password := c.PostForm("password")
-	            passwordEncrypt, _ := crypto.PasswordEncrypt(password)
-	            // 登録ユーザーが重複していた場合にはじく処理
-	            if err := create(&Service{Name: name, Password: passwordEncrypt}); err != nil {
-	                c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
-	            }
-	            c.Redirect(302, "/")
-	        }
-	    })
-	
-	    router.GET("/login", func(c *gin.Context) {
-	        c.HTML(200, "login.html", gin.H{})
-	    })
-	
-	    // ユーザーログイン
-	    router.POST("/login", func(c *gin.Context) {
-	        // DBから取得したユーザーパスワード(Hash)
-	        dbPassword := get(c.PostForm("name")).Password
-	        log.Println(dbPassword)
-	        // フォームから取得したユーザーパスワード
-	        formPassword := c.PostForm("password")
-	        // ユーザーパスワードの比較
-	        if err := crypto.CompareHashAndPassword(dbPassword, formPassword); err != nil {
-	            log.Println("ログインできませんでした")
-	            c.HTML(http.StatusBadRequest, "login.html", gin.H{"err": err})
-	            c.Abort()
-	        } else {
-	            log.Println("ログインできました")
-	            c.Redirect(302, "/")
-	        }
-	    })
-	    return router
-3b6cedeeb976344d1f39898fbff2ee1a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|24|1|V|go
-	        println("post signup")
-cd1aaf776f211fa68def18393ae7abe1|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|1|V|go
-	        if err := c.Bind(&form); err != nil {
-cf7b11408a263b7ea72420e25666ff0a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|1|V|go
-	            c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
-702faa553e165dfc4263dc8252df3b05|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|1|V|go
-	            c.Abort()
-7dd039107c01f1329a9d5ac0372589c2|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|1|V|go
-	        } else {
-c9f74bb4ae44dcc9498cda4f08e55ffc|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|1|V|go
-	        // バリデーション処理
-7c34127b33ce0bcb9657f4869a9092af|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|24|1|V|go
-	        var form Service
-d9081a2f920b1c1d155c39c61d69bffa|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|1|V|go
-	            // 登録ユーザーが重複していた場合にはじく処理
-	            if err := create(&Service{Name: name, Password: passwordEncrypt}); err != nil {
-	                c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
-	            }
-	            c.Redirect(302, "/")
-	        }
-7668a48bc48fda6f9916145aeec46aa6|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|1|V|go
-	        passwordEncrypt, _ := crypto.PasswordEncrypt(password)
-ea2170dd63632f3be4d3567257d291a7|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|1|V|go
-	            // 登録ユーザーが重複していた場合にはじく処理
-e7e14e6e6d199037566bd26b85f56807|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|1|V|go
-	            if err := create(&Service{Name: name, Password: passwordEncrypt}); err != nil {
-7ddd5a90fd0f28f15e9b9a264dc394f8|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|28|1|V|go
-	            }
-fdbb3c23a65482c49c053796f1675d98|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|28|1|V|go
-	            c.Redirect(302, "/")
-00f671df8b38a04516a0832d6feaee1f|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|1|V|go
-	            password := c.PostForm("password")
-7e44cd02a11b747c18f9453fa51c2309|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|1|V|go
-	            passwordEncrypt, _ := crypto.PasswordEncrypt(password)
-4e1ddba1c31545ee09fb38ae1fd79346|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|24|9|V|go
-	        }
-7d2abf2d0fa7c3a0c13236910f30bc43|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|16|18|v|go
-	signup
-ebdf7608a2edb16b650e0603a482ff50|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|23|39|v|go
-	gin.H{"comment": name}
-fc9a6ef6a27919c377b870cb6785f34b|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|30|1|V|go
-	    // ユーザーログイン
-	    router.POST("/login", func(c *gin.Context) {
-	        // DBから取得したユーザーパスワード(Hash)
-	        dbPassword := get(c.PostForm("name")).Password
-	        log.Println(dbPassword)
-	        // フォームから取得したユーザーパスワード
-	        formPassword := c.PostForm("password")
-	        // ユーザーパスワードの比較
-	        if err := crypto.CompareHashAndPassword(dbPassword, formPassword); err != nil {
-	            log.Println("ログインできませんでした")
-	            c.HTML(http.StatusBadRequest, "login.html", gin.H{"err": err})
-	            c.Abort()
-	        } else {
-	            log.Println("ログインできました")
-	            c.Redirect(302, "/")
-	        }
-	    })
-	    return router
-	}
-b0180a5f8e0aa693c10ca04b2d38055f|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|1|V|go
-	        c.HTML(200, "login.html", gin.H{})
-33ec07233d0322770ae34b15395ffd7f|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|1|V|go
-	    router.GET("/login", func(c *gin.Context) {
-3775cfc91af729d5d22d57bc2e97b0b5|file:///Users/Kouiti/local_file/homepage/go-app/wait-for-it.sh|1|11|V|sh
-	#!/usr/bin/env bash
-f46e2d3f5f3ed2f93bae1ee4cdd4ea68|file:///Users/Kouiti/local_file/homepage/go-app/wait-for-it.sh|1|1|V|sh
-	#!/bin/bash
-552e6a97297c53e592208cf97fbb3b60|file:///Users/Kouiti/local_file/homepage/go-app/main.go|19|32|v|go
-	aaaaaaaaa
-8d6ab84ca2af9fccd4e4048694176ebf|file:///Users/Kouiti/local_file/homepage/go-app/main.go|5|23|v|go
-	menu
-cb2b8d66b31e89d507595e68b8b95c8d|file:///Users/Kouiti/local_file/homepage/go-app/main.go|5|1|V|go
-	    "go-app/svc/services"
-10cd395cf71c18328c863c08e78f3fd0|file:///Users/Kouiti/local_file/homepage/go-app/main.go|6|17|v|go
-	services
-f140e8353a9743eab3f422b867001975|file:///Users/Kouiti/local_file/homepage/go-app/main.go|4|1|V|go
-	    "go-app/svc/owners"
-	    "go-app/svc/services"
-	    // "go-app/svc/menus"
-	
-ae592ee26d205eba0ae82f4897f6c6e9|file:///Users/Kouiti/local_file/homepage/go-app/main.go|23|1|V|go
-		owners.DBInit()
-	    router = owners.Urls(router)
-e50d69ce4139c0818a431766d819f945|file:///Users/Kouiti/local_file/homepage/go-app/main.go|29|5|V|go
-	    router = owners.Urls(router)
-14c4b06b824ec593239362517f538b29|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|19|10|v|go
-	username
-e0aebe358dac3bcf42034935ea69bc97|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|22|28|v|go
-	rname 
-06d4cd63bde972fc66a0aed41d2f5c51|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|18|28|v|go
-	comment
-e905a704c5b529cdc40c683b36c14c19|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|6|1|V|go
-	    // "go-app/services.menu"
-6a51aa95051d99c28c2b08eb1cab9995|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|20|v|go
-	characterss, errors.New("xxx...")
-46144076ca51f700f5c65e589e5c8fc4|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|1|V|go
-	        c.HTML(http.StatusBadRequest, gin.H{"comment": name})
-eaa4e6e76f50120081cca9795bfc48ba|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|9|V|go
-	            return 
-4c4ad5fca2e7a3f74dbb1ced00381aa4|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|16|15|v|go
-	HTML
-47b75618de7b4bbcf6525bbccbc017ce|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|20|34|V|go
-	            "title": service.title
-9baa7df7f7d6ada007c7cfe3c3a4c751|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|33|1|V|go
-	            if err := create(&Owner{Name: name, Password: passwordEncrypt}); err != nil {
-	                c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
-	            }
-b45a4c20d72962c4aee91faf9a99a78c|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|14|21|V|go
-	        strconv.Atoi()
-4f918ddf127e030f693ea5238fe86ba4|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|13|43|v|go
-	; err != nil {
-c81dcff779ccfe7b5fa4ac4e7e598707|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|14|18|V|go
-	        return err
-b7ff60c6d14cdc71ef3ab30a9322245d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|19|1|V|go
-	            var service Service
-	            service = get(id)
-	            c.JSON(200, service)
-dc647eb65e6711e155375218212b3964|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|26|55|v|go
-	Password
-8e9a941c2ad3151cefab57b4a2e84df9|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/models.go|11|1|V|go
-	    Title string
-	    Comment string
-	    Show bool
-	    Grouped bool
-f242c0bab1f843d3524a5604f8a96f54|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|41|v|go
-	Title: title, comment, comment
-b24b870d6d68019ab3e6bfeac63d31e8|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|17|v|go
-	c.PostForm("name")
-	
-a7dd12b1dab17d25467b0b0a4c8d4a92|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|29|39|v|go
-	show
-9bef8a22e91538113a8a9b4aa8d0a8cb|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|30|44|v|go
-	ouped
-5c8c6bb21a9729c110273b724b97f5b2|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|40|v|go
-	c.PostForm("title")
-d5d3db1765287eef77d7927cc956f50a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|28|54|v|go
-	title
-7e283161d99391125cdda2833376e466|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|29|V|go
-	        name := c.PostForm("name")
-f9c11e98282f8d357a53d421b3ec7c4a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|14|1|V|go
-	        if err != nil {
-8bf9e56fbb3cd2279930041773e4e642|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|13|V|go
-	        c.JSON(http.StatusBadRequest, gin.H{"comment": name})
-80791b3ae7002cb88c246876d9faa8f8|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|35|20|v|go
-	http
-4b6c3d7c6eb8faabf7c0c1cf4beef295|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|35|24|v|go
-	StatusBadRequest
-aaabf0d39951f3e6c3e8a7911df524c2|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|19|25|v|go
-	service
-fa11b95a015d8e8daf80379f4cb9ea95|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|17|30|V|go
-	            var service Service
-3a2c82428abe89c0e9fad5c2bd77310c|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|17|29|V|go
-	            service = get(id)
-c11c93fa7458a105037ccd7e99e107f1|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|16|V|go
-	    Title string
-9da7ddfeebd66b39f1be1e6536717845|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|18|V|go
-	    Comment string
-97b5fa35b2fe0cc4c24ee9868cea6528|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|13|V|go
-	    Show bool
-d6781f776243c92d7219c465561ecd0c|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|13|V|go
-	    Grouped bool
-7dd63b34383951e14aabd12e584ea692|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|13|20|v|go
-	strconv
-d3d95dd1033be33093d2a9be9a3379ec|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|25|1|V|go
-	        name := c.PostForm("name")
-	        service := &Service{
-	                                Title: title,
-	                                Comment: comment,
-	                                Show: show,
-	                                Grouped: grouped,
-	                            }
-df6638357b354db7a0b711342711686c|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|23|20|V|go
-	        service := Service{
-	                                Title: c.PostForm("title"),
-	                                Comment: c.PostForm("comment"),
-	                                Show: strconv.ParseBool(c.PostForm("show"),
-	                                Grouped: c.PostForm("grouped"),
-	                            }
-3711516bfee637d467fcb8ab2e1a19e9|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|23|17|v|go
-	c.PostForm("name")
-b068931cc450442b63f5b3d276ea4297|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|24|50|v|go
-	name
-9acf00b8879fe328ba0db3e887e54bee|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|24|1|V|go
-	        show , _ = strconv.ParseBool(c.PostForm("show"))
-5c10635ba604532b3ba11d0d2272239e|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|23|1|V|go
-	        title := c.PostForm("title")
-d7f24c32c185393ff2a85805bf1b320c|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|13|42|v|go
-	c *gin.Context
-929b13e580c112e3f8a6e70bc92fa39a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|27|1|V|go
-	        title := c.PostForm("title")
-	        comment := c.PostForm("comment")
-	        show, _ := strconv.ParseBool(c.PostForm("show"))
-	        grouped, _ := strconv.ParseBool(c.PostForm("grouped"))
-38a5a1d17b4736f3c44960f6f5bc2032|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|31|1|V|go
-	        service := Service{
-	                                Title: title,
-	                                Comment: comment,
-	                                Show: show,
-	                                Grouped: grouped,
-	                            }
-600dd237809749a72a878d3fb3fc0e72|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|11|V|go
-	        ser
-f71fb30089dc7b4071176b79d02f05d7|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|38|1|V|go
-	        service := GetServiceByForm(c)
-9285b7c7e3e6c7bc89ea2f53ed08d221|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|29|1|V|go
-	        id, err := strconv.Atoi(c.Param("id"))
-	        if err != nil {
-	            c.JSON(http.StatusBadRequest, err)
-	        } else {
-9bef860c0c0a1cf62d4f5c0c65a8f8ac|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|37|18|v|go
-	/services/create
-dd5c473dd2a81adf60f079385ef0309e|file:///Users/Kouiti/local_file/homepage/Makefile|12|65|v|make
-	sensuikan1973
-51c4f20d2dc614b97e832c9a751578bf|file:///Users/Kouiti/local_file/homepage/Makefile|11|16|v|make
-	 $(title) $(comment)
-344d1820196f522c6c36010fb521665b|file:///Users/Kouiti/local_file/homepage/Makefile|10|1|V|make
-	create_service:
-		curl -X POST -H "Content-Type: application/json" -d '{"title": "title", "comment":"comment", "show":"true", "grouped":"false"}' localhost/api/services/create
-76ea0bebb3c22822b4f0dd9c9fd021c5|file:///Users/Kouiti/local_file/homepage/Makefile|14|31|v|make
-	create
-b1067698cb00a77e30d72908afb4fa34|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|36|23|V|go
-	    // ユーザー登録
-65303598b4d3dc10fc82575fe41e06c6|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|15|14|V|go
-	    db.Create()
-f3eda883df3e679c6d2fce097c535ad8|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|13|16|V|go
-	    err := db.Create(service).GetErrors()
-56f53db4e76a9ebbbaf9b84d541113ea|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|14|16|V|go
-	    println(service.Title)
-50845b0e3ec9b1fe40eb89965f03f9f6|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|4|5|V|go
-	    "fmt"
-df9ac4e040e8d7ea8ca2af6ffc22c08b|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|39|17|v|go
-	:= GetServiceByForm(c)
-466deec76ecdf5fca6d38571f6324d54|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|40|27|v|go
-	json
-95519be87a39f7b381b40a8abc2e7865|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|13|15|V|go
-	    println(3, service.Title)
-37332fdd19a31411d5a66cf39c08a0d3|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|29|1|V|go
-	    router.GET("/services/get/:id", func(c *gin.Context) {
-	        id, err := strconv.Atoi(c.Param("id"))
-	        if err != nil {
-	            c.JSON(http.StatusBadRequest, err)
-	        } else {
-	            c.JSON(200, get(id))
-	        }
-	    })
-e404fd7ec2ac17ce28eeb29922759984|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|39|30|V|go
-	        id, err := strconv.Atoi(c.Param("id"))
-9a9be6c95f58c95192745df25e5485b7|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|40|23|V|go
-	            c.JSON(200, get(id))
-f7f696224e3b224407b219d66250ff15|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|39|25|V|go
-	            c.JSON(http.StatusBadRequest, err)
-d6467d2df8081519ce6874e451fb220c|file:///Users/Kouiti/local_file/homepage/Makefile|14|1|V|make
-	get_service:
-		curl 'localhost/api/services/get/1'
-91eda0c6dea2e6c53834dd6132e98c09|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|29|1|V|go
-	    router.GET("/services/get/:id", func(c *gin.Context) {
-	        id, err := strconv.Atoi(c.Param("id"))
-	        if err != nil {
-	            c.JSON(http.StatusBadRequest, err)
-	        } else {
-	            c.JSON(200, get(id))
-	        }
-	    })
-	
-	    router.GET("/services/list", func(c *gin.Context) {
-	        c.JSON(200, list())
-	    })
-	
-	    router.POST("/services/create", func(c *gin.Context) {
-	        var service Service
-	        c.ShouldBindJSON(&service)
-	        service, err := create(service)
-	        if err != nil {
-	            c.JSON(http.StatusBadRequest, err)
-	        } else {
-	            c.JSON(200, service)
-	        }
-	    })
-	
-ecf4d9d2a34253ff5dfb14aab1b3046e|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|79|1|V|go
-	        var service Service
-	        c.ShouldBindJSON(&service)
-	        service, err := create(service)
-984b4bd8d9001608ab5262227aa6b328|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|22|9|V|go
-	        var form Owner
-152c2b81a179b50b7b748d1d763134e7|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|25|24|V|go
-	        owner.Password =
-1b746b19b09e22d668190c4dc5f9b3bb|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|29|16|V|go
-	            name := c.PostForm("name")
-7b57069b25724c17a3e08282ef6585a3|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|34|13|V|go
-	        c.Redirect(302, "/")
-cfaa215225d01450f9048e6e3fcb0cd9|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|15|1|V|go
-	
-	    router.GET("/signup", func(c *gin.Context) {
-	        c.HTML(200, "signup.html", gin.H{})
-	    })
-	
-8f8d2e997e0eccde6fee97c82776f1bd|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|30|1|V|go
-	    // ユーザーログイン
-4057f7af99f0900f3c964096305a6072|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|16|1|V|go
-	        var owner Owner
-	        c.ShouldBindJSON(&owner)
-71867bde4f28c29c69b4bcfa7810e07e|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|36|46|V|go
-	        formPassword := c.PostForm("password")
-d8e7e7fd28e7c12eef1ca160fe11f086|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|35|45|V|go
-	        // フォームから取得したユーザーパスワード
-e1623d30daab948c3c7606d9dcac7638|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|36|61|v|go
-	formPassword
-72122ce96bfec66e2396d2e25225d70a|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|32|13|v|go
-	owner
-77335f8b915242f3a464b3074689392b|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|50|1|V|go
-	        id, err := strconv.Atoi(c.Param("id"))
-	        if err != nil {
-	            c.JSON(http.StatusBadRequest, err)
-	        } else {
-	            c.JSON(200, get(id))
-	        }
-	    })
-	
-	    router.GET("/services/list", func(c *gin.Context) {
-	        c.JSON(200, list())
-	    })
-	
-	    router.POST("/services/create", func(c *gin.Context) {
-	        var service Service
-	        c.ShouldBindJSON(&service)
-	        service, err := create(service)
-	        if err != nil {
-	            c.JSON(http.StatusBadRequest, err)
-	        } else {
-	            c.JSON(200, service)
-	        }
-	    })
-a4584d730774ba6195fe2330256e9b12|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|49|58|V|go
-	    router.GET("/services/get/:id", func(c *gin.Context) {
-f04ff5f0e7ca95274cb4d6e5c409a9e7|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/repository.go|10|1|V|go
-	    db := db_conf.DBConnect()
-	    defer db.Close()
-	    // Insert処理
-	    if err := db.Create(&owner).GetErrors(); err != nil {
-	        return err
+	                    a.click(); //クリックしたらaタグが関連する処理を行う
+	                });
+	                this.status = "ready";
+	            });
 	    }
-	    return nil
-7a43a984e7f4706eaa7228aace98aac8|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|19|1|V|go
-	    if err := db.Create(&owner).GetErrors(); err != nil {
-	        return err
-	    }
-	    return nil
-3f6a4943c5e22ca8896a70fb8f45bf2a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|18|5|V|go
-	    return service, err
-2f54e9de19dc3ed6df4a7985e6d64890|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|18|1|V|go
-	    db := db_conf.DBConnect()
-53259d679ccc508fd407883ed1c6a302|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|18|1|V|go
-	    defer db.Close()
-3b558cbb1fa1b6c72b64418ada6dfd10|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|18|1|V|go
-	    // Insert処理
-564cbfcd1e956abe5379e1d357fa53d0|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|13|32|V|go
-	    err := db.Create(&service).GetErrors()
-62a4b820a803bce0d93834019a0db0c2|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|46|1|V|go
-	        if err != nil {
-	            c.JSON(http.StatusBadRequest, err)
-	        } else {
-c60034a53fbf0f154dd42423d3910498|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|21|10|v|go
-	 else {
-7b49416d146cc9b9ae2a87e3e8a94fea|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|18|25|V|go
-	        err := create(owner)
-077371230ffa2183a4295af1bfa9d69c|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|22|1|V|go
-	        if err := create(owner); err != nil {
-	            c.HTML(http.StatusBadRequest, "signup.html", gin.H{"err": err})
-	        } else {
-	            c.Redirect(302, owner)
-	        }
-2278e28569ba79c73aa7895f1c6371d1|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|45|9|V|go
-	        service, err := create(service)
-c4a4f238a4e22a59c2e65ea5c856267b|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|50|1|V|go
-	        if err != nil {
-	            c.JSON(http.StatusBadRequest, err)
-	        } else {
-	            c.JSON(200, service)
-	        }
-4202ef115ebede37eb22297113f5fb32|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|48|15|v|go
-	Redirect
-b78a3223503896721cca1303f776159b|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|48|30|v|go
-	Title
-11ba60e3738d427876760d04648dcddb|file:///Users/Kouiti/local_file/homepage/docker-compose.yml|47|1|V|yaml
-	    restart: always
-5c26e1c6dfee6a2dfc3ae59dc2bd721e|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|49|1|V|go
-	            println(2, form.Title)
-	            c.JSON(302, form)
-f443c25d3162634e62c9ae0b2acfcce3|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|49|1|V|go
-	            println(2, form.Title)
-1a07e5d925365778bef09570d50f74e2|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|1|V|go
-	    show, _ := strconv.ParseBool(c.PostForm("show"))
-	    grouped, _ := strconv.ParseBool(c.PostForm("grouped"))
-4f9583085280553a3c654aca77c8ccb9|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|47|29|V|go
-	            println("err", err)
-6c86cc8a646c2f4a585851685fba0776|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|44|31|V|go
-	        c.ShouldBindJSON(&form)
-1afc982290ff831ee5b3f59428c11fbc|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|45|33|V|go
-	        form = GetServiceByForm()
-1fcc42159eb8d57a3457b1f796bff7ca|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|1|V|go
-	    show, _ := strconv.ParseBool(c.PostForm("show"))
-465614ec4e521ea65133f9855a40e343|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|45|14|V|go
-	        form.Show = 
-0e615000917c58843cc3252695a59428|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|45|1|V|go
-	        form.Show, _ := strconv.ParseBool(form.Show)
-498f79c4c5bbde77f1bceb6c86fd0f6d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|46|14|v|go
-	Show
-34e1fee7af256face3fec709711a7353|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|47|30|V|go
-	        println(1, form.Title)
-367fd2432a82ae5aadaffec196514755|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|45|22|V|go
-	        form.Grouped, _ := strconv.ParseBool(form.Grouped)
-efd3187e21a08f6ff31e211db5be5426|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|43|1|V|go
-	        var form Service
-	        c.ShouldBindJSON(&form)
-97f71abcf8ea292fb75e5a83b6cb4e46|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|12|9|V|go
-	    title := c.PostForm("title")
-	    println(1, title)
-	    comment := c.PostForm("comment")
-	    show, _ := strconv.ParseBool(c.PostForm("show"))
-	    grouped, _ := strconv.ParseBool(c.PostForm("grouped"))
-	    service := Service{
-	                            Title: title,
-	                            Comment: comment,
-	                            Show: show,
-	                            Grouped: grouped,
-	                        }
-	    println(2, service.Title)
-	    return service
-fd6816be74de2804c6b2dfcfc70c14df|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|12|9|V|go
-	    c.ShouldBindJSON(&form)
-6e0a044505c3ba55af368f7a5823b16d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|43|V|go
-	    show, _ := strconv.ParseBool(form.Show)
-a6013dd3a0d0b3374a60dc2670670215|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|47|V|go
-	    grouped, _ := strconv.ParseBool(form.Grouped)
-3b57a93600fde69eb60e99d208a5a380|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|1|V|go
-	    println(1, form.Show)
-3fcdb73d36d54f2cc22d0f68e6b6e182|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|16|16|v|go
-	form
-7922cf5341fd8039b1965ad8785479af|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|15|25|V|go
-	    println(2, form.Title)
-1f6f70fda038439c1dd55c051697bd2d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|13|27|V|go
-	    println("repo err", err)
-cb5e100e5a9a3e7f6d1fd97512215282|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|9|30|v|go
-	error
-4c1669aabf17cff2d525dcac96a5cd3d|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|13|24|v|go
-	.GetErrors(); err != nil {
-4adf0f5a13952e14fa787d2eda52ecf9|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/repository.go|14|23|V|go
-	        println("repo err", err)
-955ed06bc6cd9460df5b21e023d64db4|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|36|31|V|go
-	            c.JSON(http.StatusBadRequest, gin.H{"err":err})
-2fc9045712254cf78043236e17abd19e|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|12|20|V|go
-	    var form Service
-df58e8468181e648f3369c36f691dc9a|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|34|5|V|go
-	        form := GetServiceByForm(c)
-eb5e5b28730f71c9f3582a32471cf64e|file:///Users/Kouiti/local_file/homepage/go-app/svc/services/urls.go|11|1|V|go
-	func GetServiceByForm(c *gin.Context) Service{
-	    println(c.JSON)
-	    return form
-	}
+	});
+d0d974e0c83708bf802a44541589a080|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|51|19|V|javascript
+	                });
+cfb55c5935c61c001d651171696acbb2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|34|42|V|htmldjango
+	    <button id="download">Download</button>
+	    <button id="stop">Stop</button>
+cf8a36b9ab8bea505c8f26c4b187ced5|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|23|1|V|javascript
+	// export WAV from audio float data
+	let exportWAV = function (audioData) {
+	    let encodeWAV = function (samples, sampleRate) {
+	        let buffer = new ArrayBuffer(44 + samples.length * 2);
+	        let view = new DataView(buffer);
 	
-958ba182f91524c46cc49df3b00b4e27|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|4|1|V|javascript
-	function Home() {
-e3468bc7d7ecacbce243e01164b130a5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|2|10|v|javascript
-	get_user
-d1a360a5850d77f5c8580ccbf155ec61|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|5|1|V|javascript
-	handleSubmit = event => {
-	    event.preventDefault();
-	
-	    const user = {
-	      name: this.state.name
-	    };
-	
-	    axios.post(`https://jsonplaceholder.typicode.com/users`, { user })
-	      .then(res => {
-	        console.log(res);
-	        console.log(res.data);
-	      })
-	  }
-bce34dd668db53319f509986af4f6b2e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|63|1|V|javascript
-	export default Home;
-8cf04a9734132302f96da8e113e80ce5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|15|16|v|javascript
-	Home
-687915314fb5242e1fb158b824cdca97|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|24|V|javascript
-	function ListService() {
-ec8dc09cae84a57bee74defa42ade241|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|27|V|javascript
-	    handleSubmit = (event) => {
-711a9207da66a8843c7be6eb460ba985|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|27|V|javascript
-	        event.preventDefault();
-7738f52dae7d29ff2bb6595ef73e2b08|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|1|V|javascript
-	        const user = {
-4f1f17ff5dc8d3463a8cc40259e09d9c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|1|V|javascript
-	            name: this.state.name
-3dfefe60cd3394d01587351caf03bd3f|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|1|V|javascript
-	        };
-ce1447f7f031ab64fafb17d12bb10ba7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|5|1|V|javascript
-	    handleSubmit = (event) => {
-	        event.preventDefault();
-	
-	        const user = {
-	            name: this.state.name
+	        let writeString = function (view, offset, string) {
+	            for (let i = 0; i < string.length; i++) {
+	                view.setUint8(offset + i, string.charCodeAt(i));
+	            }
 	        };
 	
-a635f48c8a1543ade7ef09415c826999|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|9|6|V|javascript
+	        let floatTo16BitPCM = function (output, offset, input) {
+	            for (let i = 0; i < input.length; i++, offset += 2) {
+	                let s = Math.max(-1, Math.min(1, input[i]));
+	                output.setInt16(offset, s < 0 ? s * 0x8000 : s * 0x7fff, true);
+	            }
+	        };
+	
+	        writeString(view, 0, "RIFF"); // RIFFヘッダ
+	        view.setUint32(4, 32 + samples.length * 2, true); // これ以降のファイルサイズ
+	        writeString(view, 8, "WAVE"); // WAVEヘッダ
+	        writeString(view, 12, "fmt "); // fmtチャンク
+	        view.setUint32(16, 16, true); // fmtチャンクのバイト数
+	        view.setUint16(20, 1, true); // フォーマットID
+	        view.setUint16(22, 1, true); // チャンネル数
+	        view.setUint32(24, sampleRate, true); // サンプリングレート
+	        view.setUint32(28, sampleRate * 2, true); // データ速度
+	        view.setUint16(32, 2, true); // ブロックサイズ
+	        view.setUint16(34, 16, true); // サンプルあたりのビット数
+	        writeString(view, 36, "data"); // dataチャンク
+	        view.setUint32(40, samples.length * 2, true); // 波形データのバイト数
+	        floatTo16BitPCM(view, 44, samples); // 波形データ
+	
+	        return view;
 	    };
-42b90196b487c54069097a68fe98ab6f|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|5|11|v|javascript
-	post
-c4cf75d59583aa2130b15ef1aec28e1a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|4|1|V|javascript
-	function ListService() {
-	    axios.get(`https://jsonplaceholder.typicode.com/users`)
-	        .then((res) => {
-	            console.log(res);
-	            console.log(res.data);
-	        });
+	
+	    let mergeBuffers = function (audioData) {
+	        let sampleLength = 0;
+	        for (let i = 0; i < audioData.length; i++) {
+	            sampleLength += audioData[i].length;
+	        }
+	        let samples = new Float32Array(sampleLength);
+	        let sampleIdx = 0;
+	        for (let i = 0; i < audioData.length; i++) {
+	            for (let j = 0; j < audioData[i].length; j++) {
+	                samples[sampleIdx] = audioData[i][j];
+	                sampleIdx++;
+	            }
+	        }
+	        return samples;
+	    };
+	
+	    let dataview = encodeWAV(mergeBuffers(audioData), audio_sample_rate);
+	    let audioBlob = new Blob([dataview], { type: "audio/wav" });
+	    console.log(dataview);
+	
+	    let myURL = window.URL || window.webkitURL;
+	    let url = myURL.createObjectURL(audioBlob);
+	    return url;
+	};
+678842cc0fc318625b506290ae83c102|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|44|25|V|javascript
+	    console.log(audio_sample_rate);
+9a7984b4a1692d6d6f7703f878b15c2a|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|50|25|V|javascript
+	    console.log("record start?");
+7a14f545bca9e2755ae142184cc64aed|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|121|1|V|javascript
+	                    document.body.appendChild(a); //htmlaタグをに追加
+4cf103df455058b070263be63f14f8fb|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|14|1|V|javascript
+	    const url = URL.createObjectURL(audioBlob); //音声データの保存場所（URL 絶対パス）
+	
+	    //特にここ以下を変える？
+	    //音声データのURLを使ってデータベースにデータを送信したい
+	    let a = document.createElement("a"); //aタグオブジェクト
+8436f21e9c3c40fcb037f44337ddd7a6|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|15|21|V|javascript
+	    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
+1bac9d05151525c85d786a3b1ec355a9|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|15|1|V|javascript
+	    document.body.appendChild(a); //htmlaタグをに追加
+	
+	    a.click(); //クリックしたらaタグが関連する処理を行う
+bcb1e7eba02c9908f73cea97b329aa5d|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|17|5|V|javascript
+	    downloadLink.click();
+4ac0871938eaf4c59456924baca03f0a|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|21|1|V|javascript
+	    document.body.appendChild(a); //htmlaタグをに追加
+c2889fcaea05c6621a31b0f6412cb673|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|15|5|v|javascript
+	downloadLink
+7b17e43860417dbc2c13b387cec0cace|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|14|5|V|javascript
+	    a.href = exportWAV(url);
+ba6172f1e5599126970ff0d4d5112bb8|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|121|1|V|javascript
+	                    let a = document.createElement("a"); //aタグオブジェクト
+18dfbd764f70f2374c10d9dccc66bba9|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|115|1|V|javascript
+	                    GetAudio(audioBlob);
+d3c01944a40d9dd4cd808d7569070985|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|16|1|V|javascript
+	    let a = document.createElement("a"); //aタグオブジェクト
+	    a.href = exportWAV(audioData);
+	    a.download = "test.wav";
+	    document.body.appendChild(a); //htmlaタグをに追加
+	
+	    a.click(); //クリックしたらaタグが関連する処理を行う
+	
+	    audioContext.close().then(function () {
+	        stopButton.setAttribute("disabled", "disabled");
+	    });
+6bdbe732b50f873bbe3411b3aa2d0281|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|14|1|V|javascript
+	    var audioBlob = exportWAV(audioData);
+	    GetAudio(audioBlob);
+3f3dc41f1601b66959b492f1aebe1079|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|19|5|V|javascript
+	    console.log("saved wav");
+1281b90e9ba4a1017e06f9a14e1c039d|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|13|1|V|javascript
+	let saveAudio = function () {};
+	
+1485025a40d24c764becbd082609b2e0|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|52|1|V|javascript
+	// getUserMedia
+	navigator.mediaDevices.getUserMedia({ audio: true, video: false }).then(handleSuccess);
+	new Vue({
+	    el: "#app",
+	    data: {
+	        // 変数を宣言する部分
+	        status: "init", // 状況
+	        recorder: null, // 音声にアクセスする "MediaRecorder" のインスタンス
+	        audioData: [], // 入力された音声データ
+	        audioExtension: "" // 音声ファイルの拡張子
+	    },
+	    methods: {
+	        startRecording() {
+	            this.status = "recording";
+	            this.audioData = [];
+	            this.recorder.start(); //start()メソッドで録音開始
+	        },
+	        stopRecording() {
+	            this.recorder.stop(); //stop()メソッドで録音停止
+	            this.status = "ready";
+	        },
+	        //ブラウザで録音された音声データの拡張子を取得
+	        getExtension(audioType) {
+	            let extension = "wav";
+	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
+	            if (matches) {
+	                extension = matches[1]; //ブラウザのよって拡張子が異なる
+	                //例）chrome：wavm, firefox：ogg
+	            }
+	            return "." + extension;
+	        }
+	    },
+	    mounted() {
+	        // マイクアクセスの可否
+	        navigator.mediaDevices
+	            .getUserMedia({ audio: true })
+	            //アクセスできたら
+	            .then((stream) => {
+	                this.recorder = new MediaRecorder(stream);
+	                // 音声を保存する
+	                this.recorder.addEventListener("dataavailable", (e) => {
+	                    this.audioData.push(e.data); //audioDataに音声を格納
+	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
+	                });
+	
+	                // 録音した音声をダウンロードする
+	                // （ここをデータベースに保存する処理にする）
+	                this.recorder.addEventListener("stop", () => {
+	                    this.audioData = exportWAV(this.audioData);
+	                    const audioBlob = new Blob(this.audioData, {
+	                        type: "audio/mpeg"
+	                    }); //音声データをBlob化
+	                    GetAudio(audioBlob);
+	
+	                    const url = URL.createObjectURL(audioBlob); //音声データの保存場所（URL 絶対パス）
+	
+	                    //特にここ以下を変える？
+	                    //音声データのURLを使ってデータベースにデータを送信したい
+	                    let a = document.createElement("a"); //aタグオブジェクト
+	                    a.href = exportWAV(url);
+	                    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
+	                    document.body.appendChild(a); //htmlaタグをに追加
+	
+	                    a.click(); //クリックしたらaタグが関連する処理を行う
+	                });
+	
+	                this.status = "ready";
+	            });
+	    }
+	});
+85a8ae14c62ea6e3da050e0a459f5550|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|15|1|V|javascript
+	    saveAudio();
+f7f82d6cd001effbf5bc475b922f3a80|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|42|1|V|javascript
+	    setTimeout(function () {
+	        console.log("10 sec");
+	        if (stopButton.disabled == false) {
+	            saveAudio();
+	            console.log("saved audio");
+	        }
+	    }, 10000);
+0e3173a8d6d115d9aa8efb8dd361e65d|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|41|1|V|javascript
+	    // when time passed without pushing the stop button
+2d488207380ee91492ee4505a46c87d1|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|45|1|V|javascript
+	    // when time passed without pushing the stop button
+	    setTimeout(function () {
+	        console.log("10 sec");
+	        if (stopButton.disabled == false) {
+	            saveAudio();
+	            console.log("saved audio");
+	        }
+	    }, 10000);
+b05fd37139f3363553b9c8a1269bfed8|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|48|1|V|javascript
+	new Vue({
+	    el: "#app",
+	    data: {
+	        // 変数を宣言する部分
+	        status: "init", // 状況
+	        recorder: null, // 音声にアクセスする "MediaRecorder" のインスタンス
+	        audioData: [], // 入力された音声データ
+	        audioExtension: "" // 音声ファイルの拡張子
+	    },
+	    methods: {
+	        startRecording() {
+	            this.status = "recording";
+	            this.audioData = [];
+	            this.recorder.start(); //start()メソッドで録音開始
+	        },
+	        stopRecording() {
+	            this.recorder.stop(); //stop()メソッドで録音停止
+	            this.status = "ready";
+	        },
+	        //ブラウザで録音された音声データの拡張子を取得
+	        getExtension(audioType) {
+	            let extension = "wav";
+	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
+	            if (matches) {
+	                extension = matches[1]; //ブラウザのよって拡張子が異なる
+	                //例）chrome：wavm, firefox：ogg
+	            }
+	            return "." + extension;
+	        }
+	    },
+	    mounted() {
+	        // マイクアクセスの可否
+	        navigator.mediaDevices
+	            .getUserMedia({ audio: true })
+	            //アクセスできたら
+	            .then((stream) => {
+	                this.recorder = new MediaRecorder(stream);
+	                // 音声を保存する
+	                this.recorder.addEventListener("dataavailable", (e) => {
+	                    this.audioData.push(e.data); //audioDataに音声を格納
+	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
+	                });
+	
+	                // 録音した音声をダウンロードする
+	                // （ここをデータベースに保存する処理にする）
+	                this.recorder.addEventListener("stop", () => {
+	                    this.audioData = exportWAV(this.audioData);
+	                    const audioBlob = new Blob(this.audioData, {
+	                        type: "audio/mpeg"
+	                    }); //音声データをBlob化
+	                    GetAudio(audioBlob);
+	
+	                    const url = URL.createObjectURL(audioBlob); //音声データの保存場所（URL 絶対パス）
+	
+	                    //特にここ以下を変える？
+	                    //音声データのURLを使ってデータベースにデータを送信したい
+	                    let a = document.createElement("a"); //aタグオブジェクト
+	                    a.href = exportWAV(url);
+	                    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
+	                    document.body.appendChild(a); //htmlaタグをに追加
+	
+	                    a.click(); //クリックしたらaタグが関連する処理を行う
+	                });
+	
+	                this.status = "ready";
+	            });
+	    }
+	});
+	
+	var exportWAV = function (audioData) {
+	    var encodeWAV = function (samples, sampleRate) {
+	        var buffer = new ArrayBuffer(44 + samples.length * 2);
+	        var view = new DataView(buffer);
+	
+	        var writeString = function (view, offset, string) {
+	            for (var i = 0; i < string.length; i++) {
+	                view.setUint8(offset + i, string.charCodeAt(i));
+	            }
+	        };
+	
+	        var floatTo16BitPCM = function (output, offset, input) {
+	            for (var i = 0; i < input.length; i++, offset += 2) {
+	                var s = Math.max(-1, Math.min(1, input[i]));
+	                output.setInt16(offset, s < 0 ? s * 0x8000 : s * 0x7fff, true);
+	            }
+	        };
+	
+	        writeString(view, 0, "RIFF"); // RIFFヘッダ
+	        view.setUint32(4, 32 + samples.length * 2, true); // これ以降のファイルサイズ
+	        writeString(view, 8, "WAVE"); // WAVEヘッダ
+	        writeString(view, 12, "fmt "); // fmtチャンク
+	        view.setUint32(16, 16, true); // fmtチャンクのバイト数
+	        view.setUint16(20, 1, true); // フォーマットID
+	        view.setUint16(22, 1, true); // チャンネル数
+	        view.setUint32(24, sampleRate, true); // サンプリングレート
+	        view.setUint32(28, sampleRate * 2, true); // データ速度
+	        view.setUint16(32, 2, true); // ブロックサイズ
+	        view.setUint16(34, 16, true); // サンプルあたりのビット数
+	        writeString(view, 36, "data"); // dataチャンク
+	        view.setUint32(40, samples.length * 2, true); // 波形データのバイト数
+	        floatTo16BitPCM(view, 44, samples); // 波形データ
+	
+	        return view;
+	    };
+	
+	    var mergeBuffers = function (audioData) {
+	        var sampleLength = 0;
+	        for (var i = 0; i < audioData.length; i++) {
+	            sampleLength += audioData[i].length;
+	        }
+	        var samples = new Float32Array(sampleLength);
+	        var sampleIdx = 0;
+	        for (var i = 0; i < audioData.length; i++) {
+	            for (var j = 0; j < audioData[i].length; j++) {
+	                samples[sampleIdx] = audioData[i][j];
+	                sampleIdx++;
+	            }
+	        }
+	        return samples;
+	    };
+	
+	    var dataview = encodeWAV(mergeBuffers(audioData), audioContext.sampleRate);
+	    var audioBlob = new Blob([dataview], { type: "audio/wav" });
+	
+	    var myURL = window.URL || window.webkitURL;
+	    var url = myURL.createObjectURL(audioBlob);
+	    return audioBlob;
+	};
+904c55c915e831bbf5653a1974df0206|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|48|1|V|javascript
+	new Vue({
+	    el: "#app",
+	    data: {
+	        // 変数を宣言する部分
+	        status: "init", // 状況
+	        recorder: null, // 音声にアクセスする "MediaRecorder" のインスタンス
+	        audioData: [], // 入力された音声データ
+	        audioExtension: "" // 音声ファイルの拡張子
+	    },
+	    methods: {
+	        startRecording() {
+	            this.status = "recording";
+	            this.audioData = [];
+	            this.recorder.start(); //start()メソッドで録音開始
+	        },
+	        stopRecording() {
+	            this.recorder.stop(); //stop()メソッドで録音停止
+	            this.status = "ready";
+	        },
+	        //ブラウザで録音された音声データの拡張子を取得
+	        getExtension(audioType) {
+	            let extension = "wav";
+	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
+	            if (matches) {
+	                extension = matches[1]; //ブラウザのよって拡張子が異なる
+	                //例）chrome：wavm, firefox：ogg
+	            }
+	            return "." + extension;
+	        }
+	    },
+	    mounted() {
+	        // マイクアクセスの可否
+	        navigator.mediaDevices
+	            .getUserMedia({ audio: true })
+	            //アクセスできたら
+	            .then((stream) => {
+	                this.recorder = new MediaRecorder(stream);
+	                // 音声を保存する
+	                this.recorder.addEventListener("dataavailable", (e) => {
+	                    this.audioData.push(e.data); //audioDataに音声を格納
+	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
+	                });
+	
+	                // 録音した音声をダウンロードする
+	                // （ここをデータベースに保存する処理にする）
+	                this.recorder.addEventListener("stop", () => {
+	                    this.audioData = exportWAV(this.audioData);
+	                    const audioBlob = new Blob(this.audioData, {
+	                        type: "audio/mpeg"
+	                    }); //音声データをBlob化
+	                    GetAudio(audioBlob);
+	
+	                    const url = URL.createObjectURL(audioBlob); //音声データの保存場所（URL 絶対パス）
+	
+	                    //特にここ以下を変える？
+	                    //音声データのURLを使ってデータベースにデータを送信したい
+	                    let a = document.createElement("a"); //aタグオブジェクト
+	                    a.href = exportWAV(url);
+	                    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
+	                    document.body.appendChild(a); //htmlaタグをに追加
+	
+	                    a.click(); //クリックしたらaタグが関連する処理を行う
+	                });
+	
+	                this.status = "ready";
+	            });
+	    }
+	});
+	
+389415e3ccc729b5c19c0995652f85b0|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|13|5|V|javascript
+	let saveAudio = function () {
+fd456406745d816a45cae554c788e754|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|1|47|v|javascript
+	download
+a938787685d5d363c8e6e14d9b49bc09|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|33|35|V|htmldjango
+	    <button id="download">Download</button>
+fe5d26db8ed6ebb7fff14f79aa7f242e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|33|35|V|htmldjango
+	    <button id="stop">Stop</button>
+3f9d6d5406d40b7a60a300d3fa9f6f68|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|7|1|V|javascript
+	import "static/css/top.css";
+d226cbde553b77dfcb75f26753801c6e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|3|1|V|javascript
+	import React from "react";
+	import { useInView } from "react-intersection-observer";
+	
+	export const Test = () => {
+	    const { ref, inView, entry } = useInView({
+	        /* Optional options */
+	        threshold: 0
+	    });
+	
+	    return (
+	        <div ref={ref}>
+	            <div style={{ marginTop: "1900px" }}></div>
+	            <h2>{`Header inside viewport ${inView}.`}</h2>
+	        </div>
+	    );
+	};
+a003bb979af67297b326db60359447f5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/test.css|1|1|V|css
+	.sa {
+	    opacity: 0;
+	    transition: all .5s ease;
 	}
-87ef35f7a8e51812b28cbc88e5234ff4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|17|8|V|javascript
-	export ListService;
-0dd7b2cc481694752373b87c67a5ed66|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|17|15|V|javascript
-	export default ListService;
-bbf52292561748b6ca61205ae76dde1d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|18|16|v|javascript
-	ListService
-e692b189caaea08371d1f245f41b9825|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|18|29|V|javascript
-	export default CreateService;
-f4ed06d8b23898e2d99d249fcc85c671|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|11|1|V|javascript
-	export CreateService = () => {
-b73e68e1ce8ae7e4c6dd782e7059f8e5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/owners.js|5|8|v|javascript
-	CreateService
-04db3b4ff365d61527e5f71c088f4dc4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|2|1|V|javascript
-	import Footer from "views/layouts/Footer";
-ded40f2a77c30efc6062db0cbd857746|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|3|8|v|javascript
-	Footer
-d98a07f84921b24ee30f86fd8cd85c3c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|3|9|v|javascript
-	from
-59a14a5786fe7a105d780bb1e1e2b21b|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|3|22|v|javascript
-	views
-34d59fdafc6c99c5973d5c76534a33fd|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|3|26|v|javascript
-	layouts
-a581bd7de3bbc0afa9088c4ce6175e6e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|3|35|V|javascript
-	import  ListService "../api/owners/ListService";
-9c8fe6e8db33fa6e151eaf3f5e4df80c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|7|19|V|javascript
-	    CreateService()
-7c8187586234f81144efbe8369d25118|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Services.js|6|11|V|javascript
-	        console.log(res);
-e7bb79755b61675e1689bc3cf2f7f0fe|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Services.js|6|11|V|javascript
-	        console.log(res.data);
-57fbe5d763062711fd4079fb44f225eb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Services.js|1|29|V|javascript
-	// import React from "react";
-269b0f5bd08fe3460beb3c9f234433d5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Services.js|1|1|V|javascript
-	import axios from "axios";
 	
-	export const ListService = () => {
-	    axios.get(`/api/services/list`).then((res) => {
-	        return res.data
+	.sa.show {
+	    opacity: 1;
+	    transform: none;
+	}
+	
+	.sa--lr {
+	    transform: translate(-100px, 0);
+	}
+	
+	.sa--rl {
+	    transform: translate(100px, 0);
+	}
+	
+	.sa--up {
+	    transform: translate(0, 100px);
+	}
+	
+	.sa--down {
+	    transform: translate(0, -100px);
+	}
+	
+	.sa--scaleUp {
+	    transform: scale(.5);
+	}
+	
+	.sa--scaleDown {
+	    transform: scale(1.5);
+	}
+	
+	.sa--rotateL {
+	    transform: rotate(180deg);
+	}
+	
+	.sa--rotateR {
+	    transform: rotate(-180deg);
+	}
+0eaa5dedff192b1085c7e4a209176fbd|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|44|1|V|javascript
+	import React from "react";
+	import { useInView } from "react-intersection-observer";
+	
+	export const Test = () => {
+	    const { ref, inView, entry } = useInView({
+	        /* Optional options */
+	        threshold: 0
 	    });
+	
+	    return (
+	        <div ref={ref}>
+	            <div style={{ marginTop: "1900px" }}></div>
+	            <h2>{`Header inside viewport ${inView}.`}</h2>
+	        </div>
+	    );
+	};
+	body {
+	  font-family: arial, helvetica;
+	}
+	
+	h3 {
+	  font-size: 5em;
+	  text-align: center;
+	  color: #fff;
+	  font-weight: 700;
+	}
+	
+	#section1 {
+	  color: #fff;
+	}
+	
+	.fp-section {
+	  text-align: center;
+	}
+	button {
+	  position: fixed;
+	  top: 20px;
+	  left: 20px;
+	  z-index: 8;
+	}
+ba029e2319a6b481e389d076c7d7c547|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|10|7|v|javascript
+	MySection
+6729299db9be9b6706460c8ac8d0022a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|22|7|v|javascript
+	FullpageWrapper
+22178bafb4be69dd9c94f1ccb1e23818|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|4|7|V|javascript
+	import ReactDOM from "react-dom";
+5c14c38d6edd846b55ed9be506696a0a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|4|45|v|javascript
+	 // Optional. When using scrollOverflow:true
+a97f37104377382f4921bae2816fb0c3|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|7|22|V|javascript
+	import "./styles.css";
+544dd66430a08ec0c1cfce6da9a084fb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|4|1|V|javascript
+	import "fullpage.js/vendors/scrolloverflow";
+	import ReactFullpage from "@fullpage/react-fullpage";
+1d75b7b91cd80ab78fdcff7930086f5a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/index.js|8|6|V|javascript
+	import "fullpage.js/vendors/scrolloverflow";
+	import ReactFullpage from "@fullpage/react-fullpage";
+	new fullpage({
+93b3e3eec9ed643b613d21ebe95df9ca|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/index.js|8|1|V|javascript
+	    licenseKey: "YOUR_KEY_HERE"
+e5c11c689821047badbcd2de4c066e53|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|30|55|V|javascript
+	            console.log("render prop change", state, fullpageApi); // eslint-disable-line no-console
+a8077bac2cc2042f4e0beaf0bc1f45da|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|27|6|V|javascript
+	            console.log("onLeave event", { origin, destination, direction });
+d5de31ba9e31f61d249c12783726aea4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|27|6|V|javascript
+	        render={({ state, fullpageApi }) => {
+360b258346a272e44816864df25b9df9|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|26|6|V|javascript
+	        onLeave={(origin, destination, direction) => {}}
+503323edf0de814da0cebfe06d7b7814|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|6|1|V|javascript
+	            <div class="toppage">
+e9534509a82eb848b638eab83e61a587|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|25|13|V|javascript
+	            navigationTooltips={anchors}
+b0724e5a66deef5c6eb6bba7ea3c1567|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|23|13|V|javascript
+	            anchors={anchors}
+272ccdd1a6f1e48f57fd8ee547cf5057|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|17|13|V|javascript
+	const anchors = ["firstPage", "secondPage", "thirdPage"];
+6b4cb30cf78f2b55aa176f6cfe9c4d70|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|21|1|V|javascript
+	            navigation
+1b64dc666745eafd0cf8e6199c03efac|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|21|1|V|javascript
+	            sectionsColor={["#282c34", "#ff5f45", "#0798ec"]}
+4f45586cbff5432309c435259237c7ef|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|7|1|V|javascript
+	                <div class="content">
+	                    <img src="images/maman1.jpeg" class="img-fluid blur" alt="Responsive image" />
+	                    <span>
+	                        <h1>
+	                            <img src="images/title0.png" alt="フレンチ食堂ママン" id="maman_title" />
+	                        </h1>
+	                        <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
+	                        <p>フランスの家庭料理の美味しさをベースに</p>
+	                        <p>親しみやすい料理を</p>
+	                        <p>お出しする事を心がけています</p>
+	                    </span>
+	                </div>
+4273f39bf509f82f738997e1a763d213|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|37|17|V|javascript
+	                        <MySection content={"Slide down!"} />
+07d2585a2de1eb054dbdf04a4403c29e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|23|13|V|javascript
+	                    <div>
+c2921eb9ed2cd025ebcd2e3ecd9dd15b|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|20|1|V|javascript
+	        )
+	    }
+1ae3241a663104db4414a92a4e0102ad|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|10|1|V|javascript
+	            <div className="section">
+f9f7449153c3f7b3ce6e452f75c8ea2c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/public/index.html|22|1|V|html
+	        <!-- swiper -->
+	        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+	        <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+	        <!-- <script src="../src/static/js/swiper.js"></script> -->
+	        <!-- <link rel="stylesheet" href="../src/static/css/swiper.css" /> -->
+	
+9a0364b9e99bb480dd25e1f0284c8555|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|19|29|v|javascript
+	content
+2b40b75d8b08f1ea4a720f1dc8dc083a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|1|2|v|css
+	toppage
+abb7cfecc660d21516034ba74fd2e513|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|33|1|V|css
+	.toppage span {
+aefcd320422617869da103b5eed7041c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|56|15|v|css
+	blur
+6d191ab11fdadbc0ee61d99502cf9f77|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|56|1|V|css
+	    .toppage img {
+	        height: 500px;
+	    }
+b7328635d179d1561808fc3ef4f3a4f6|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|34|17|v|css
+	500px
+1daa6293c6d87297727132d05090624c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|50|11|V|css
+	    width: 100%;
+5ee7a81ae6bd0cdd245c46f4c626408c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|16|1|V|javascript
+	class FirstSlide extends React.Component {
+	    render() {
+	        return (
+	            <div className="section">
+	                <img src="images/maman1.jpeg" className="img-fluid bg-img" alt="Responsive image" />
+	                <span>
+	                    <h1>
+	                        <img src="images/title0.png" alt="フレンチ食堂ママン" id="maman_title" />
+	                    </h1>
+	                    <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
+	                    <p>フランスの家庭料理の美味しさをベースに</p>
+	                    <p>親しみやすい料理を</p>
+	                    <p>お出しする事を心がけています</p>
+	                </span>
+	            </div>
+	        );
+	    }
+	}
+d33b499a79ed584009a6cf748e9aae05|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|39|1|V|javascript
+	                <img src="images/maman1.jpeg" className="img-fluid bg-img" alt="Responsive image" />
+	                <span>
+	                    <h1>
+	                        <img src="images/title0.png" alt="フレンチ食堂ママン" id="maman_title" />
+	                    </h1>
+	                    <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
+	                    <p>フランスの家庭料理の美味しさをベースに</p>
+	                    <p>親しみやすい料理を</p>
+	                    <p>お出しする事を心がけています</p>
+	                </span>
+3ad317798b55c32c878fd507a6665388|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|21|1|V|javascript
+	                    <img src="images/foods/foods.jpg" class="img-fluid blur" alt="Responsive image" />
+	                    <span>
+	                        <h1>メニュー Menu</h1>
+	                        <p>
+	                            <a href="lunch.html">コース</a>
+	                        </p>
+	                        <p>
+	                            <a href="lunch.html">料理</a>
+	                        </p>
+	                        <p>
+	                            <a href="lunch.html">ドリンク</a>
+	                        </p>
+	                        <p>
+	                            <a href="lunch.html">ランチ</a>
+	                        </p>
+	                        <p>
+	                            <a href="lunch.html">テイクアウト</a>
+	                        </p>
+	                    </span>
+2fdfbd92714ed00bfe3e5bf173a8c75e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|42|1|V|javascript
+	                    <img src="images/layout.jpg" class="img-fluid blur" alt="Responsive image" />
+	                    <span>
+	                        <h1>店舗情報 Infomation</h1>
+	                        <div class="row">
+	                            <div class="col-sm">
+	                                <iframe
+	                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6669929889135!2d134.6325210152366!3d34.86459388039269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1fb4a6aab83%3A0x29aed1cf46efdcf8!2z44Oe44Oe44Oz!5e0!3m2!1sja!2sjp!4v1636499221264!5m2!1sja!2sjp"
+	                                    width="100%"
+	                                    height="100%"
+	                                    style={{ border: 0 }}
+	                                    allowfullscreen=""
+	                                    loading="lazy"
+	                                ></iframe>
+	                            </div>
+	                            <div class="col-sm">
+	                                <p>【ランチ】11:00〜14:00</p>
+	                                <p>【ディナー】17:30〜20:00</p>
+	                                <p>月曜定休(祝祭日は営業)</p>
+	                                <p>兵庫県姫路市飾西41-1</p>
+	                                <p>079-268-7070</p>
+	                            </div>
+	                        </div>
+	                    </span>
+cdf4e2bb9b5e08c3e1906725f8cbde0d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|103|21|V|javascript
+	                        <MySection content={"Keep going!"} />
+867f1fd69f2518643709483690e37315|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|103|21|V|javascript
+	                        <MySection content={"Slide up!"} />
+94fd341df5dd333152469e0c6e377c86|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|102|1|V|javascript
+	                        <FirstSlide />
+5b17e5a985ad595e26f1624be783e83c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|102|1|V|javascript
+	                        <FirstSlide />
+	                        <SecondSlide />
+	                        <ThirdSlide />
+831395401c28a87ab549980e5a8bba03|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|49|32|V|css
+	    background-position: 0px 0px;
+ee21e2d652368d756254598d30407f67|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|54|1|V|css
+		position: absolute;
+120e88337251433f0ee081c06f8f7c1f|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|49|1|V|css
+	left: 50%;
+8c7493e6c11385bcc5a3e7c15728ab7f|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|49|1|V|css
+		top: 50%;
+54f8f98960560456e9ecd5e163ba212d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|69|1|V|css
+	.navbar-toggler .navbar-toggler-icon {
+	    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	}
+ffd690d1fb2b2b205766ea302d146566|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/test.css|19|1|V|css
+	button {
+	  position: fixed;
+	  top: 20px;
+	  left: 20px;
+	  z-index: 8;
+	}
+31bc96e782c81a6c6f9bccd88e22439e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/test.css|19|1|v|css
+	.section 
+47562c292e0513113b0e224d850fef29|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/test.css|1|1|V|css
+	.section body {
+	  font-family: arial, helvetica;
+	}
+	
+	.section h3 {
+	  font-size: 5em;
+	  text-align: center;
+	  color: #fff;
+	  font-weight: 700;
+	}
+	
+	.section #section1 {
+	  color: #fff;
+	}
+	
+	.section .fp-section {
+	  text-align: center;
+	}
+	.section button {
+	  position: fixed;
+	  top: 20px;
+	  left: 20px;
+	  z-index: 8;
+	}
+2414fcd1d5ef64704936c86f100ea80d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|70|13|V|css
+	    right:  0;
+29f8c6c174ca45c0318e59418b6f4efa|file:///Users/Kouiti/local_file/glycovid/glycovid_PubChem/rdf.py|385|1|V|python
+	    file_list = glob.glob("./data/" + d_today + "/dir/*_s.csv", recursive=True)
+	    print(file_list)
+	    # /Users/Kouiti/local_file/glycovid/glycovid_PubChem/data/2021-07-28/dir/bioassay_s.csv
+	    for i in range(len(file_list)):
+72acadb2f0310bb238d395d2d5f46642|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|135|5|V|python
+	        # /Users/Kouiti/local_file/glycovid/glycovid_PubChem/data/2021-07-28/dir/bioassay_s.csv
+b90a25ea2494dc85c8459fd53dd41310|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|134|13|V|python
+	        print(file_list)
+a95fb9e4721cd9043db5156bc05186e8|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|134|43|v|python
+	d_today
+15be93306e12cc22d03b15f927677d13|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|133|46|V|python
+	        dir_name = dirname + service + "/" + service
+1f145598e15efc8dcde39ae2a56161d0|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|133|31|v|python
+	dirname + "/" + service "/
+44b6f77d77f2ab4ddb8606c3a02c1e5b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|134|31|v|python
+	dirname + "/" + service
+cde188ec500a60811d31e8cca996c9b4|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|77|1|V|python
+	def has_bar_in_row(row):
+	    for column in row:
+	        if "|" in column:
+	            return True
+	    return False
+	
+	
+	def has_bar_in_row_list(row_list: list):
+	    for row in row_list:
+	        if has_bar_in_row(row):
+	            return True
+	    return False
+	
+	
+	def expansion_tsv_row(row_list: list):
+	    result_list = []
+	    for row in row_list:
+	        if has_bar_in_row(row):
+	            for i in range(len(row)):
+	                if "|" in row[i]:
+	                    row_a = copy(row)
+	                    row_a[i] = re.split("|", row[i])[0]
+	                    row_b = copy(row)
+	                    row_b[i] = re.split("[|\t$]", row[i])[1]
+	                    result_list.append(row_a)
+	                    result_list.append(row_b)
+	                    break
+	        else:
+	            result_list.append(row)
+	
+	    if has_bar_in_row_list(result_list):
+	        result_list = expansion_tsv_row(result_list)
+	    return result_list
+	
+	
+	def list2tsv(data: list):
+	    result = ""
+	    for i in range(len(data)):
+	        if i != 0:
+	            result += "\t"
+	
+	        if "psi-mi" in data[i]:
+	            result += data[i].split('"')[1].split(":")[1]
+	        elif ":" in data[i]:
+	            result += data[i].split(":")[1].split("(")[0]
+	        else:
+	            result += data[i]
+	    return result
+4608e6de7c063d77bd4703a8617caebd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|142|1|V|python
+	                    if has_bar_in_row(row):
+	                        # |で区切られてるrow dataを展開
+	                        row_list = expansion_tsv_row([row])
+	                        for devided_row in row_list:
+	                            pqdatalist.add(devided_row)
+4d17be758ec235ce99b49c8730884adc|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|123|16|V|python
+	                    pqdatalist.add(devided_row)
+42a7d9ac916144bedcfd2933ea920672|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|128|42|V|python
+	                for devided_row in row_list:
+2c1b39a6125d2deb0d6b1ee98c721831|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|9|1|V|python
+	from copy import copy
+073e54513495f35201b9f900bf66c13e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|134|1|V|python
+	        file_list = glob.glob(dir_name + "/*.tsv", recursive=True)
+	        for i in range(len(file_list)):
+	            os.mkdir(dirname + "/" + service + "/" + service + str(i))
+dae598ae305cdde829f3129ee28dfe68|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|51|1|V|python
+	        # file_list = glob.glob(dir_name + "/*.tsv", recursive=True)
+1445118813c3efccbe97c63d8bd61695|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|55|11|v|python
+	file_list
+e63ea88c41b7a8faf6b9d9146bb163e9|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|54|9|v|python
+	source_dir_name_list
+ae74c237beb2bfbae43ec70283e6e886|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|54|32|v|python
+	dirname + service + "/" + service + "*.tsv"
+	
+f0e9980c3e223bf19d079bc951935b27|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|54|74|V|python
+	        source_dir_name_list = dirname + service + "/" + service + "*.tsv"
+896970914e101b1d539e50333aeaaaef|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|51|1|V|python
+	        # for i in range(len(file_list)):
+cf2d03891354d12c7c52f5d56d078d87|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|51|1|V|python
+	        # for i in range(len(file_list)):
+	        #     os.mkdir(dirname + "/" + service + "/" + service + str(i))
+421622db3749055d0026623a0e5619ad|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|64|20|V|python
+	                    write_id_list(id_list, out_dir_name)
+d8a5ab0005c01527fdb6e8c4f7976013|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|58|28|v|python
+	dirname + service + "/" + service
+3248d60d1b5bf25201dcb527575befae|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|65|1|V|python
+	                    whole_id_list = join_id_list(whole_id_list, id_list)
+a8752617156423dedf91ad4ccfe7d399|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|65|21|v|python
+	whole_id_list
+6f80fb69672459a1d4d835b0cefe255e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|59|18|V|python
+	            out_dir_name = dirname + "/" + service + "/info/" + service + "_list_id.tsv"
+ae35136aa70fa76e8c2a2465b6d75f07|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|59|13|V|python
+	            os.mkdir(dirname + "/" + service + "/info")
+099fb995346f31c749f6e40db0f395e3|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|63|21|v|python
+	header
+fe78c6259bf3ce10e8cd93f68c159a06|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|69|35|v|python
+	id_l
+0fff969b0815b55ff3c7eb5e96610dfc|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|153|1|V|python
+	                        row_list = expansion_tsv_row([row])
+	                        for devided_row in row_list:
+	                            pqdatalist.add(devided_row)
+fad58de7366495db4650cfefac2fcd61|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|75|5|v|python
+	main
+4eb02bd47be1ce6d9cef98eaf783c146|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|195|10|V|python
+	    create_ttl(dir_name, file_name)
+38f6c2b50217d4b7fb92f6d8b278b474|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|141|1|V|python
+	    services_list = gm.list_serveice()
+c5ad66d843808aab6661ab00fcc6037a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|147|1|V|python
+	        file_list = glob.glob(dir_name + "/*.tsv", recursive=True)
+5fb356e07cdc5085d6bf043675a38352|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|5|1|V|python
+	from lib import general_method as gm
+a8c191a5342614e35771ce234f8dce6a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|194|22|V|python
+	    dir_name = "data/"
+1a4e4006d5bce4a8b75b4bc93fc84460|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|195|20|v|python
+	service_list
+564d2b9af333438eae1e54afd64dfd91|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|195|31|v|python
+	dir_name
+cedb1870117d548ae9692b21cd81ee74|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|195|31|v|python
+	"data/" + service
+3521c09c05228fcead2792c24e607c93|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|197|32|V|python
+	            dir_name = file_name
+b4f23097c5b8a39bac0964e32e588a49|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|202|1|V|python
+	    dir_name = "data/IntAct/IntAct0.tsv"
+	    file_name = "IntAct0"
+	    init_log("filed_list")
+3090ad88ff7c9ca191579b709069fe64|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|196|13|v|python
+	file_name
+526d3e6a442cf1188c3738920c96c155|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|197|28|V|python
+	            print(file_name)
+e51ee4f9eba3f04085ef75885d0a9066|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|197|26|v|python
+	r_name
+21337ff0b19488561063e12d256e93fa|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|79|5|v|python
+	retturn
+f387b501ce7d8ed283a5173ca223d049|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|79|10|V|python
+	    return
+b2544902eedd5a359ff039833c5c38fa|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|196|10|V|python
+	        gg
+179fb6708e36ad31beec8e0486325a49|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|201|26|v|python
+	("turtle/"+service)
+f18ddeadb981fb28cc734c422b0b8979|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|136|1|V|python
+	                Dinteractor_a = get_target_id(row[0], "uniprotkb")
+	                Dinteractor_b = get_target_id(row[1], "uniprotkb")
+	                Ddetection_method = get_target_id(row[6], "psi-mi")
+	                Dpub_id = get_target_id(row[8], "pubmed")
+	                Dinteraction_type = get_target_id(row[11], "psi-mi")
+	                Dsource_database = get_target_id(row[12], "psi-mi")
+	                Dinteraction_id = get_target_id(row[13], "intact")
+	                Dtaxon_id = get_target_id(row[9], "taxid")
+f76e89a383227a4d7fcabcebb9ed605c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|70|1|V|python
+	            # column_data.split(db_name + ":")[1]
+9dde360102c103867bd2f45872f1129c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|75|14|v|python
+	replace
+3ffba3ae0aa5f1e77d96c2f8aea55efb|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|140|56|v|python
+	uniprotkb
+4d88c4756cfc221c8a578ad950a5bb86|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|143|50|v|python
+	pubmed
+4d15bacb8e34481ce1aecee42687c111|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|146|59|v|python
+	intact
+b0b7b698c8bbde154b237e9a08ab6114|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|147|52|v|python
+	taxid
+4ab028deeb252e1b288d530b7bb236a0|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|67|46|v|python
+	stisi
+abac93d6c52272caea0c738de230a901|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|68|12|V|python
+	    if db_name in column_data:
+0760f96c16f26fb3601145a7de88422d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|79|1|V|python
+	    else:
+	        False
+effd17f80442a31733b5b47dc26b30e5|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|70|1|V|python
+	        # column_data.split(db_name + ":")[1]
+9a358cee5e522f5a1bddf65535f7f606|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|70|1|V|python
+	        column_data.split(":")[1]
+8109360e9434128ffa99998d2ce7a417|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|70|1|V|python
+	        column_data.split('"')[1]
+	        .split(":")[1]
+	        .split("(")[0]
+	        .split("|")[0]
+	        .replace('"', "")
+	        .split("/")[0]
+	        .replace(" ", "-")
+	        .replace("_", "-")
+37a6259cc0c1dae299a7866489dff0bd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|68|21|v|python
+	null
+4e605f7f86c80af1943d8e8fe66f77bd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|70|1|V|python
+	    result["db"] = column_data.split(":")[0]
+6adf97f83acf6453d4a6a4b1070f3754|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|68|21|v|python
+	None
+fe25b2e8cbaa15b65c643811c5f33260|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|73|18|V|python
+	    .split("|")[0]
+feac6aaffbef48b6fe5fbd39c486e6ee|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|73|22|V|python
+	    .replace('"', "")\
+116ac60b2dac5feadf2e395922ccf428|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|73|18|V|python
+	    .split("/")[0]
+cf2488b95c97e0378c9bf49de3b50f28|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|99|49|v|python
+	idid
+dd992dd777825360e15ba36115fad113|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|99|22|V|python
+	        print(history)
+2e5d8aa3dfa8ef34ca5131d20f9dad51|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|44|23|v|html
+	settings
+3ad7ddf181f81e362944c50135ac3b24|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|44|27|v|html
+	shadowing
+ea2b2676c28c0db26d39331a336c6b92|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|32|v|htmldjango
+	start
+2d3d540335c64f225bb6379c3d5512da|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|36|33|V|htmldjango
+	           onclick="wavesurfer.play(); disable(this)"
+662f707d5491e9bce8238a6c0be92190|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|43|38|v|htmldjango
+	hidden
+cc490323133125e28aea4ce76037f788|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|14|1|V|javascript
+	stopButton.addEventListener("click", function () {
+ad2f247cb631be4f6c39ccc71beef58e|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|41|1|v|javascript
+	stopButton
+f51bff18e54c85d5de1235c8793bdfee|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|4|1|V|javascript
+	// for audio
+	let audio_sample_rate = null;
+	let scriptProcessor = null;
+	let audioContext = null;
+	
+	// audio data
+	let audioData = [];
+	let bufferSize = 1024;
+b7b530e169f45c731ed327198d8b690b|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|37|5|v|javascript
+	let 
+56e29b5abaa8d3d1d417bc2b4c51e7bd|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|134|1|V|htmldjango
+	  new Vue({
+	    el: '#audio',
+	    data: {
+	        // 変数を宣言する部分
+	        status: 'init',     // 状況
+	        recorder: null,     // 音声にアクセスする "MediaRecorder" のインスタンス
+	        audioData: [],      // 入力された音声データ
+	        audioExtension: ''  // 音声ファイルの拡張子
+	    },
+	    methods: {
+	        startRecording() {
+	
+	            this.status = 'recording';
+	            this.audioData = [];
+	            this.recorder.start(); //start()メソッドで録音開始
+	
+	        },
+	        stopRecording() {
+	
+	            this.recorder.stop(); //stop()メソッドで録音停止
+	            this.status = 'ready';
+	
+	        },
+	        //ブラウザで録音された音声データの拡張子を取得
+	        getExtension(audioType) {
+	
+	            let extension = 'wav';
+	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
+	
+	            if(matches) {
+	
+	                extension = matches[1]; //ブラウザのよって拡張子が異なる
+	                //例）chrome：wavm, firefox：ogg
+	
+	            }
+	
+	            return '.'+ extension;
+	
+	        }
+	    },
+	    mounted() {
+	        // マイクアクセスの可否
+	        navigator.mediaDevices.getUserMedia({ audio: true })
+	            //アクセスできたら
+	            .then(stream => {
+	
+	                this.recorder = new MediaRecorder(stream);
+	                // 音声を保存する
+	                this.recorder.addEventListener('dataavailable', e => {
+	
+	                    this.audioData.push(e.data); //audioDataに音声を格納
+	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
+	
+	                });
+	                this.recorder.addEventListener('stop', () => {
+	                    const audioBlob = new Blob(this.audioData);//音声データをBlob化
+	                    recorded_wavesurfer.loadBlob(audioBlob);
+	                });
+	                this.status = 'ready';
+	            });
+	      }
+08cc2357920866905ccfa75efe63acd3|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|134|1|V|htmldjango
+	  new Vue({
+	    el: '#audio',
+	    data: {
+	        // 変数を宣言する部分
+	        status: 'init',     // 状況
+	        recorder: null,     // 音声にアクセスする "MediaRecorder" のインスタンス
+	        audioData: [],      // 入力された音声データ
+	        audioExtension: ''  // 音声ファイルの拡張子
+	    },
+	    methods: {
+	        startRecording() {
+	
+	            this.status = 'recording';
+	            this.audioData = [];
+	            this.recorder.start(); //start()メソッドで録音開始
+	
+	        },
+	        stopRecording() {
+	
+	            this.recorder.stop(); //stop()メソッドで録音停止
+	            this.status = 'ready';
+	
+	        },
+	        //ブラウザで録音された音声データの拡張子を取得
+	        getExtension(audioType) {
+	
+	            let extension = 'wav';
+	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
+	
+	            if(matches) {
+	
+	                extension = matches[1]; //ブラウザのよって拡張子が異なる
+	                //例）chrome：wavm, firefox：ogg
+	
+	            }
+	
+	            return '.'+ extension;
+	
+	        }
+	    },
+	    mounted() {
+	        // マイクアクセスの可否
+	        navigator.mediaDevices.getUserMedia({ audio: true })
+	            //アクセスできたら
+	            .then(stream => {
+	
+	                this.recorder = new MediaRecorder(stream);
+	                // 音声を保存する
+	                this.recorder.addEventListener('dataavailable', e => {
+	
+	                    this.audioData.push(e.data); //audioDataに音声を格納
+	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
+	
+	                });
+	                this.recorder.addEventListener('stop', () => {
+	                    const audioBlob = new Blob(this.audioData);//音声データをBlob化
+	                    recorded_wavesurfer.loadBlob(audioBlob);
+	                });
+	                this.status = 'ready';
+	            });
+	      }
+	  });
+672a2723e31800df2b7d738ae1187a21|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|1|3|V|javascript
+	const startButton = document.getElementById("start");
+	const stopButton = document.getElementById("stop");
+	
+	// for audio
+	let audio_sample_rate = null;
+	let scriptProcessor = null;
+	let audioContext = null;
+	
+	// audio data
+	let audioData = [];
+	let bufferSize = 1024;
+	
+	// stop button
+	stopButton.addEventListener("click", function () {
+	    var audioBlob = exportWAV(audioData);
+	    GetAudio(audioBlob);
+	});
+	
+	// save audio data
+	var onAudioProcess = function (e) {
+	    var input = e.inputBuffer.getChannelData(0);
+	    var bufferData = new Float32Array(bufferSize);
+	    for (var i = 0; i < bufferSize; i++) {
+	        bufferData[i] = input[i];
+	    }
+	    audioData.push(bufferData);
 	};
 	
-	export const CreateService = () => {
-	    const service = {
-	        title: "title_react",
-	        comment: "comment_react",
-	        show: true,
-	        grouped: false
-	    };
-	    axios.post(`/api/services/create`, service).then((res) => {
-	        console.log(res);
-	        console.log(res.data);
-	    });
-	};
-ee4540b2a6f250e78e5641840ae8e4d1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|1|1|V|javascript
-	// import React from "react";
-	import axios from "axios";
-	
-	export const ListService = () => {
-	    axios.get(`/api/services/list`).then((res) => {
-	        console.log(res);
-	        console.log(res.data);
-	    });
+	// getusermedia
+	let handleSuccess = function (stream) {
+	    audioContext = new AudioContext();
+	    audio_sample_rate = audioContext.sampleRate;
+	    scriptProcessor = audioContext.createScriptProcessor(bufferSize, 1, 1);
+	    var mediastreamsource = audioContext.createMediaStreamSource(stream);
+	    mediastreamsource.connect(scriptProcessor);
+	    scriptProcessor.onaudioprocess = onAudioProcess;
+	    scriptProcessor.connect(audioContext.destination);
 	};
 	
-	export const CreateService = () => {
-	    const service = {
-	        title: "title_react",
-	        comment: "comment_react",
-	        show: true,
-	        grouped: false
-	    };
-	    axios.post(`/api/services/create`, service).then((res) => {
-	        console.log(res);
-	        console.log(res.data);
-	    });
-	};
-40c47649dc406afa49d8d0b51c032360|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|11|18|V|javascript
-	        title: "title_react",
-88f15cc3a5bc04acac666ea07cf1bf66|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|11|18|V|javascript
-	        comment: "comment_react",
-c7021aa1c83b1c9261536a122c17f5f7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|11|18|V|javascript
-	        show: true,
-3631ecaba3a3425e7caf3f78bcc84fe3|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|11|18|V|javascript
-	        grouped: false
-17e46a3602fb0072b4d5a84925a83c93|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|3|1|V|javascript
-	import {ListService, CreateService} from "api/Services";
-6f51e454cdff429c3ba0cdbe86713f2c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|17|1|V|javascript
-	                <Route exact path="/" element={<Top />} />
-e6e9445e0ade10398ba1653001eb4c73|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|10|1|V|javascript
-	import Menu from "./views/Menu";
-b61541208db7fa7dba42c85224405911|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|10|27|v|javascript
-	Menu
-9fe5241ce82d4072b20c4a193f29af48|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|10|31|V|javascript
-	import Menu from "./views/Login";
-8617a6c09eb76d9882db8ee31a420654|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Login.js|2|1|V|javascript
-	import 
-992a0f0542384f1ee5ef51b7cf4ae6c4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Login.js|2|47|v|javascript
-	Services
-d61c82959963ba552f979f7ec0b43623|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Login.js|10|31|v|javascript
-	handleSubmit
-fc3210bd5eb219f84189095ab3db2996|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|4|35|V|javascript
-	import Login from "api/owners/Login"
-c4f768a76b89298a900c4903f9ee4c88|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|12|1|V|javascript
-	import LoginForm from "./views/Login";
-b4e4aec9bd314714951bec2a9cb7c1d1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|1|1|V|javascript
-	import axios from "axios";
+	// getUserMedia
+	startButton.addEventListener("click", function () {
+	    console.log("start recorgind")
+	    navigator.mediaDevices.getUserMedia({ audio: true, video: false }).then(handleSuccess);
+	})
 	
-	// export const ListService = () => {
-	//     axios.get(`/api/services/list`).then((res) => {
-	//         return res.data
-	//     });
-	// };
+e4386dc0a56409f25000764c38cbd22a|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|1|1|V|javascript
+	import Vue
+35d2de98d65518b5e9f8a0067d9b4206|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|74|1|V|htmldjango
+	        <a class="pointer" @click="startRecording"
+04b0aa25793eb10f57a163c517c0ede0|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|9|V|htmldjango
+	        <a class="pointer" id="start"
+743763423e27cfefe40bd641b4e4624c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|81|1|V|htmldjango
+	        <a class="pointer" @click="stopRecording" hidden>
+641a1aff9504342bfefdbfcd2d45299d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|43|9|V|htmldjango
+	        <a class="pointer" id="stop" >
+27b3da609c4a00f8f62e7149305184b4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|58|1|V|htmldjango
+	      <div id="audio">
+2fdb34d6da5317d4ca418b0fac31d353|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|14|17|V|javascript
+	            console.log("start recoding")
+d3a36acb0df30944ca3afeb85f3be258|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|27|10|V|javascript
+	                //例）chrome：wavm, firefox：ogg
+af9a90002d4e84e5887251ec5b102782|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|43|39|V|javascript
+	                    const audioBlob = new Blob(this.audioData);//音声データをBlob化
+ffa0f4fc9f244942d380b25f18ea30cd|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|91|22|v|htmldjango
+	querySelectorAll
+91b4c7281876ed68aa4ead1569ecff70|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|42|34|V|javascript
+	    console.log("start recorgind")
+646135ee4499480ff386b08fbe151353|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|26|1|V|htmldjango
+	            <div class="card-body">
+bbf2a50f43b3294596db9927cc4bcdb5|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|26|1|V|htmldjango
+	            <div class="card-body">
+	                <div id="waveform_recorded"></div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
 	
-	export const Login = (name, password) => {
-	    const owner = {
-	        name: name,
-	        password: password
-	    };
-	    axios.post(`/api/services/create`, owner).then((res) => {
-	        return res.data
-	    });
-	};
-72bc04716f22f7be6390002f09ef17c7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|24|11|V|javascript
-	  render() {
-59a8ce73201af31fb1a65ec9ae11f761|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|17|1|V|javascript
-	    axios.post(`https://jsonplaceholder.typicode.com/users`, { user })
-	      .then(res => {
-	        console.log(res);
-	        console.log(res.data);
-	      })
-f5b7cc16c58a8c4fae37af1bd655c41e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|1|22|v|javascript
-	PersonList
-8a565daf4f7e241db106be4d3e1fc1af|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|16|10|V|javascript
-	    const  = {
-2ea5bffd998da806b3ad2a160a654d75|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|16|6|V|javascript
-	      name: this.state.name
-5104354d3da7c263a3168c3006203e70|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|25|1|V|javascript
-	            <input type="text" name="name" onChange={this.handleChange} />
-b53d56fda680fda487e781a02a821a95|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/ale.vim|6|1|V|vim
-	let g:ale_fixers = {
-	    \ '*': ['remove_trailing_lines', 'trim_whitespace'],
-	    \ 'python': ['autopep8', 'black', 'isort'],
-	    \ 'json': ['fixjson', 'jq'],
-	    \ 'javascript': ['prettier'],
-	    \ 'html': ['html-beautify'],
-	    \ 'htmldjango': ['html-beautify'],
-	    \ 'css': ['prettier', 'stylelint'],
-	    \ 'Dockerfile': ['dockerfile_lint', 'hadolint'],
-	    \ 'go': ['gofmt']
-	    \ }
-1cb251ec0d568de6a929b520c4aed8d1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|27|26|v|javascript
-	text
-0a9f8e62e0d3e574f48af9e665fc29b4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|36|1|V|javascript
-	export default App;
-8e2dcfd7e7e24b1ca76c1193f645902b|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|20|44|v|javascript
-	element
-24f1ef8727d2c48727a0b2fad9407fa1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|5|2|V|javascript
-	  console.log("--------------");
-700c216fb376666eaeda0c892e8bdc09|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|20|44|v|javascript
-	component
-1e2f3fd94c680592a2f1d4fde80a87fa|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|11|1|V|javascript
-	            <div class="container">
-e2516c203902230766cda7cf4adb3eed|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|21|11|V|javascript
-	      <div>
-00a593f86734251117eb99d060a76252|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|4|46|v|javascript
-	Component 
-4114486d72af729acf3b347efaba70f4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|20|24|V|javascript
-	                <Route exact path="/login">
-	                    <LoginForm />
-	                </Route>
-a2f2ed4f8ebc2cbb4c21a29dc40ab61d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|4|8|v|javascript
-	class
-3ea2807fe8a93a97a45b55cff554ee44|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|5|1|V|javascript
-	export const LoginForm = () => {
-9cf1b3e0f1161e2acdaadb7ae04d62c7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|5|1|V|javascript
-	    ListService()
-70563f75eb43ad3756272072bf4dd38a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|7|8|V|javascript
-	    fojd
-744eaf92c4298884f32c3a529b3f7b36|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|26|1|V|javascript
-	        <form onSubmit={LoginFormSubmit}>
-4c7250ae91498af66ab88ffc57205525|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|33|1|V|javascript
-	        </form>
-d7b7380ec3c57e38cfb9b5288533f76b|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|33|6|v|javascript
-	 </div>
-cc6422da30d87fdb2224fabe18e4fc75|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|26|6|V|javascript
-	          <label>
-	            id:
-	            <input type="text" name="name" />
-	            password:
-	            <input type="password" name="password" />
-	          </label>
-	          <button type="submit">ログイン</button>
-a1b77ecb444bfb63d29ffbc3eab2d09b|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|27|6|v|javascript
-	       id:
-ca6107641ee036586471c0f58a4b4686|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|6|18|V|javascript
-	    console.log(a)
-04e5defbc8dfc52aa83b7f9a54462627|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|6|1|V|javascript
-	    const name = document.getElementByName("id")
-9ed39e2ea931586b6a985a6942ef573e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|9|23|v|javascript
-	state
-21bd0f4eca811212f1feaa1b22d4a7df|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|35|1|V|javascript
-	          <button type="submit">ログイン</button>
+	<div class="row">
+	    <div id="app">
+	        <a class="pointer" id="start"
+	           onclick="wavesurfer.play(); disable(this)"
+	           >
+	           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+	               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+	               <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+	           </svg>
+	        </a>
+	        <a class="pointer" id="stop" hidden>
+	            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
+	                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+	                <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"/>
+	            </svg>
+	        </a>
+	        <!-- <a class="pointer" onclick="wavesurfer.play(0)"> -->
+	        <!--   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-skip-backward-circle" viewBox="0 0 16 16"> -->
+	        <!--     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> -->
+	        <!--     <path d="M11.729 5.055a.5.5 0 0 0-.52.038L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.271-.445z"/> -->
+	        <!--   </svg> -->
+	        <!-- </a> -->
+	    </div>
+	</div>
+	<button><a href="../{{task.id}}/{{next_turn}}">next</a></button>
+	
+93100489fcd70243e04b82b34acd6671|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|26|1|V|htmldjango
+	            <div class="card-body">
+	                <div id="waveform_recorded"></div>
+	            </div>
+26fe5642161934f6284dfa18a4356a37|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|25|13|V|htmldjango
+	                <div id="waveform_recorded"></div>
+1424678ae71e678b3c762ac1a22c2b96|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|25|21|V|htmldjango
+	                start
+5c79f7f25505950950253e9445f87ef4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|36|1|V|htmldjango
+	<div class="row">
+	    <div id="app">
+	        <a class="pointer" id="start"
+	           onclick="wavesurfer.play(); disable(this)"
+	           >
+	           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+	               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+	               <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+	           </svg>
+	        </a>
+	        <a class="pointer" id="stop" hidden>
+	            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
+	                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+	                <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"/>
+	            </svg>
+	        </a>
+	        <!-- <a class="pointer" onclick="wavesurfer.play(0)"> -->
+	        <!--   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-skip-backward-circle" viewBox="0 0 16 16"> -->
+	        <!--     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> -->
+	        <!--     <path d="M11.729 5.055a.5.5 0 0 0-.52.038L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.271-.445z"/> -->
+	        <!--   </svg> -->
+	        <!-- </a> -->
+	    </div>
+	</div>
+c927c0bd900c44f4b204b024be5791e5|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|25|1|V|htmldjango
+	        <div class="row">
+	          <div id="app">
+	            <a class="pointer" id="start" onclick="wavesurfer.play(); disable(this)">
+	              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+	                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+	                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+	              </svg>
+	            </a>
+	            <a class="pointer" id="stop" hidden>
+	              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
+	                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+	                <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"/>
+	              </svg>
+	            </a>
+	            <!-- <a class="pointer" onclick="wavesurfer.play(0)"> -->
+	            <!--   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-skip-backward-circle" viewBox="0 0 16 16"> -->
+	            <!--     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> -->
+	            <!--     <path d="M11.729 5.055a.5.5 0 0 0-.52.038L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.271-.445z"/> -->
+	            <!--   </svg> -->
+	            <!-- </a> -->
+	          </div>
+	        </div>
+961326bbb3df950c83439faba30541f1|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|38|1|V|css
+	.card-header {
+a73488ee318d3be64ca131f96490b927|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|24|1|V|htmldjango
+	      <div class="card-body">
 	      </div>
-c0bb2196426022e8adf9a5b6d34fd45e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|35|19|v|javascript
-	onclick
-c1c425268e68385d1ab5074c17a94f14|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|10|1|v|javascript
-	function
-cd7359007d21ddc3c18b247fdac3c1b8|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|4|1|V|javascript
-	const LoginFormSubmit = () => {
-	    const name = document.getElementByName("name")
-	    const password = document.getElementByName("password")
-	    const session = Login(name, password)
-	    console.log(session)
+fdac58dd572fb905fd89a68b8102017a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|16|1|V|html
+	  <script type="text/javascript" src="{% static 'js/index.js' %}" defer></script>
+6b360a3d26dbf5504c4f3f024b4e80cd|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|13|1|V|html
+	  {% load static %}
+b42305cdc6a6d3afabfa8651f254e545|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|1|V|htmldjango
+	      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+	        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+	        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+	      </svg>
+022c1f3ff39005a86d647b04aa5106c8|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|1|V|htmldjango
+	      <img src="{% static '/images/mic_blue.svg' %}" width="100px" height="100px" />
+797c23a207dcdc20fedf1aabeb96c9c0|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|208|3|V|css
+	transform:scale(1.2,1.2);
+5bbd5f670632a1480d9fdfeb74d6a8c0|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|206|1|V|css
+	  transform:scale(1.2,1.2);
+4761440854120f38cfcb4a760f9eb7b4|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|206|7|V|css
+	.button_class {
+e509337f540ed5346b6bdbd5b22e0a99|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|205|1|V|css
+	.scale {
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all  0.3s ease;
 	}
-7f6b330f25a8d82878013a4f07884c17|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|34|1|V|javascript
-	          <button onclick={console.log("jio")}>ログイン</button>
-6e3eb8ee639ca3b20255e8c7e89f1d67|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|20|1|V|javascript
-	    const LoginFormSubmit = () => {
-	        const name = document.getElementByName("name")
-	        const password = document.getElementByName("password")
-	        const session = Login(name, password)
-	        console.log(session)
-	    }
-bf68db230f6e9ccca13b0a2153e49ff5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|34|40|V|javascript
-	          <button onClick="console.log(H'io')">ログイン</button>
-9e925e9341b490bfd3b4c4ca3b0c1ef2|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|35|28|v|javascript
-	this
-9c711e1179cb34fb21495bde6dc9cfd7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|35|66|V|javascript
-	          <button onClick="console.log('io')">ログイン</button>
-7db342d467df8891b3c40ae5b6dc176e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|14|V|javascript
-	  // state = {
-2f7d69b65ed27d79bcdad18f373eee21|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|14|V|javascript
-	  //   id: '',
-d19ba0d2c71e342929236e7c81cdd08e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|14|V|javascript
-	  //   password: ''
-cb2ce32bec2229def40e6440a1cfdfd0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|6|V|javascript
-	  // }
-fb94b6cbc12bacfebecb886675e78ab5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|1|V|javascript
-	  // handleChange = event => {
-9653ec8b4d26a534c246170d97740c07|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|1|V|javascript
-	  //   this.setState({[event.target.name]: event.target.value});
-ad1e098bab171f618c5630aec7ae26ad|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|1|V|javascript
-	  // handleSubmit = event => {
-4cdc628eb2e315a775a0ac65db06ceef|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|1|V|javascript
-	  //   event.preventDefault();
-a1250f54bb25bb005c4eea86f4288ac3|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|1|V|javascript
-	  //   Login(this.state)
-64d275ee397342b326ad1ef5dc7527a9|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|12|1|V|javascript
-	  // render() {
-c0db867cd8c0093668fd6bedf0b2378d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|14|21|V|javascript
-	    console.log(owner)
-5f4dcc3b5aa765d61d8327deb882cf99|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|12|19|v|javascript
-	password
-0d5f7c408834ab913bee215358fccbf0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|2|16|v|javascript
-	, encycle } = require('json-cyclic');
-e5737b2349ddaf193d8dc8385f3c37f6|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|2|34|V|javascript
-	import decycle from "json-cyclic";
-a9b8010c52eb5c079520c221733b9e6c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|2|52|V|javascript
-	const { decycle, encycle } = require('json-cyclic');
-acbd731790f1b49243d078152b48748e|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|28|25|V|go
-	        println("get post")
-8bdba40af3b2be1debceccc9ae7885d9|file:///Users/Kouiti/local_file/homepage/Makefile|20|1|V|make
-	create_user:
-		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/signup
-dad98c61254b505f6f52625b81c1197a|file:///Users/Kouiti/local_file/homepage/Makefile|20|1|v|make
-	create_user
-db057ab32657ab6c5297ce7a99b60a72|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|15|1|V|javascript
-	        console.log(res)
-cb41d086d03aa5f07fe93356fc308ab8|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/LoginForm.js|4|1|V|javascript
-	const LoginFormSubmit = () => {
-	    const name = document.getElementsByName("name")[0].value
-	    const password = document.getElementsByName("password")[0].value
-	    const session = Login(name, password)
-	    console.log(session)
+d654f573075e8c91eabf1c389ba7f6c0|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|205|1|V|css
+	.scale:hover{
+	-webkit-transform: scale(1.1,1.1);
+		-moz-transform: scale(1.15,1.15);
+		-o-transform: scale(1.15,1.15);
+		-ms-transform: scale(1.15,1.15);
+		transform: scale(1.15,1.15);
 	}
-32ec27d34ba8b7de57b54bfdae6987e8|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|18|1|V|javascript
-	        return res.data
-9994fd130af64409d03eecc5e1896b17|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|17|1|V|javascript
-	        console.log(res.data)
-39250f6668ddd4a66fdd7a7376d72d49|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|9|1|V|javascript
-	export const Login = (name, password) => {
-	    const owner = {
-	        name: name,
-	        password: password
-	    };
-	    console.log(owner)
-	    axios.post(`/api/login`, owner).then((res) => {
-	        return res.data
-	    }).catch(function (error) {
-	        console.log(error.response.data);
-	        console.log(error.response.status);
-	        console.log(error.response.headers);
-	    });
-	};
-b39f776eaf387c2d8f83bfdce0731c4f|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|26|19|V|javascript
-	    const owner = {
-ea1fae81269ec900ed1bec91d110269d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|26|19|V|javascript
-	        name: name,
-a8fdb22f5e43c3fce8171f87eba52d28|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|26|19|V|javascript
-	        password: password
-5f4f952f9d9188ec910db5dddad3338d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|29|21|V|javascript
-	        console.log(error.response.data);
-b48a62d53d62042d2b42696f3efbfca6|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|29|21|V|javascript
-	        console.log(error.response.status);
-51c4ebd9e86d0138888384105b560ea4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|29|21|V|javascript
-	        console.log(error.response.headers);
-21d6f40cfb511982e4424e0e250a9557|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/api/Owners.js|26|22|v|javascript
-	session
-6b7e91c68a0dcde5b541e3f826dec611|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|26|1|V|go
-	    router.POST("/login", func(c *gin.Context) {
-	        var form Owner
-	        println("login")
-	        c.ShouldBindJSON(&form)
-	        dbPassword := get(form.Name).Password
-	        // ユーザーパスワードの比較
-	        if err := crypto.CompareHashAndPassword(dbPassword, form.Password); err != nil {
-	            log.Println("Failed log in.")
-	            c.JSON(http.StatusBadRequest, err)
-	        } else {
-	            log.Println("You loged in.")
-	            c.JSON(200, get(form.Name))
+cd3a114b0f2f75b8738123358a068be9|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|135|27|V|javascript
+	    target.style.color = "gray";
+25b4a1e702f498d32991f5117330fce5|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|135|1|V|javascript
+	    document.getElementById("mic-blue")
+34337bec3eaa1863b62201bc56008f5a|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|135|1|V|javascript
+	    document.getElementById("mic-blue").hidden = true;
+	    document.getElementById("mic-red").hidden = false;
+bf01717e3b86948b79066230df75a7bd|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|86|1|V|htmldjango
+	      document.getElementById("stop").click()
+d0cab90d8d20d57e2f2b9be52f7dd25d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|52|46|v|htmldjango
+	next
+ef399b2d446bb37b7c32ad2cc1b6045b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|89|32|v|htmldjango
+	stop
+ce50a09343724eb82df11390e2c1de18|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|52|2|v|htmldjango
+	button
+193cd536bf317055599d7fc3c09c4b56|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|53|6|v|htmldjango
+	href="/app/{{task.id}}/{{next_turn}}"
+d131138d861595c4868c47ac463a5740|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|54|9|V|htmldjango
+	</button>
+a7698d86276f3273fc06f3613728eda3|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|13|1|V|htmldjango
+	    <div align="right"><font size="3"><u>Your name : {{ user }}</u></font></div> 
+	    <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	      <h5><b>Task No.{{ task_id }} <font size="5" color="FF0000">[2nd Reading aloud]</font></b></h5>
+	      </div> -->
+	      <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+	        <div align="right"><b>Your name : {{ user_name }}</b></div>
+	        </div> -->
+d6672c475624781a7335fe7394cd5e91|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|22|1|V|htmldjango
+	<div class="card mt-4">
+fd7b5b10ad8bed9201f5161fe146787a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|97|1|V|htmldjango
+	    </div> 
+b19eb87e753bdbff43365558c4ee5f70|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|20|1|V|htmldjango
+	<hr />
+3adb9088b84f370a83f529543110bef2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|35|1|V|htmldjango
+	  <hr/>
+153710e1f1712490815a9645bf8d4c4b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|34|1|V|htmldjango
+	  </div>
+d8d101d2a7142783695e3c2af7a59db9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|97|1|V|htmldjango
+	</div> 
+314ebf2370ca324f361236aa5e1b1229|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|52|1|V|htmldjango
+	<a type="button" class="btn btn-success" id="next-btn" href="/app/{{task.id}}/{{next_turn}}" hidden>Next</a>
+a2e5c46bf371c6a0591e3d3420e809ec|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|86|1|V|htmldjango
+	      <button><a href="../{{task_id}}/{{next_turn}}">next</a></button>
+23948e51cdddd0e7dad64c14aae841cf|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/q_and_a.html|76|1|V|htmldjango
+	    <button><a href="../{{task_id}}/{{next_turn}}">next</a></button>
+6a241b67895abec701cdf80ed8faae4b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/q_and_a.html|75|1|V|htmldjango
+	    <!--<button type="submit" class="btn btn-outline-dark" onclick=location.href="../{{task_id}}/{{next_turn}}">NEXT⇨</button>-->
+58423249648a817557e8f403295d0b33|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|85|102|V|htmldjango
+	      <!--<button type="button" class="btn btn-secondary" onclick="location.href='../{{task.id}}/{{next_turn}}'">NEXT⇨</button>-->
+4001958a322cdace0ef70e2a698533b7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|81|1|V|htmldjango
+	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+	  </div>
+daf9e641b281cc77ecf74eee9363a6c6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|82|20|V|htmldjango
+	    <div class="form-group col-md-1">
+b082895fab4c56c1aba17dcc672fca3a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|83|10|V|htmldjango
+	    </div>
+44e030ce87fb4b412fb1d32e096e424e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|85|8|V|htmldjango
+	    <div class="form-group col-md-12">
+2da4e56c44308d93fb1f52c7c7c24e39|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|85|8|V|htmldjango
+	      <br>
+a76737032ef7c6d09a8a0aa7cbfc4d22|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|81|1|V|htmldjango
+	  <div class="col-sm">
+	    <a type="button" class="btn btn-success" id="next-btn" href="/app/{{task.id}}/{{next_turn}}" >Next</a>
+	  </div>
+0a9a91c76505bb9e9547b66d02cd212c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|89|1|V|htmldjango
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+	<script>
+	  new Vue({
+	      el: '#app',
+	      data: {
+	          // 変数を宣言する部分
+	          status: 'init',     // 状況
+	          recorder: null,     // 音声にアクセスする "MediaRecorder" のインスタンス
+	          audioData: [],      // 入力された音声データ
+	          audioExtension: ''  // 音声ファイルの拡張子
+	        },
+	      methods: {
+	          startRecording() {
+	
+	              this.status = 'recording';
+	              this.audioData = [];
+	              this.recorder.start(); //start()メソッドで録音開始
+	
+	            },
+	          stopRecording() {
+	
+	              this.recorder.stop(); //stop()メソッドで録音停止
+	              this.status = 'ready';
+	
+	            },
+	          //ブラウザで録音された音声データの拡張子を取得
+	          getExtension(audioType) {
+	
+	              let extension = 'wav';
+	              const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
+	
+	              if(matches) {
+	
+	                  extension = matches[1]; //ブラウザのよって拡張子が異なる
+	                  //例）chrome：wavm, firefox：ogg
+	
+	                }
+	
+	              return '.'+ extension;
+	
+	            }
+	        },
+	      mounted() {
+	          // マイクアクセスの可否
+	          navigator.mediaDevices.getUserMedia({ audio: true })
+	          //アクセスできたら
+	            .then(stream => {
+	
+	                this.recorder = new MediaRecorder(stream);
+	                // 音声を保存する
+	                this.recorder.addEventListener('dataavailable', e => {
+	
+	                    this.audioData.push(e.data); //audioDataに音声を格納
+	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
+	
+	                  });
+	
+	                // 録音した音声をダウンロードする
+	                // （ここをデータベースに保存する処理にする）
+	                this.recorder.addEventListener('stop', () => {
+	
+	                    const audioBlob = new Blob(this.audioData);//音声データをBlob化
+	                    const url = URL.createObjectURL(audioBlob);//音声データの保存場所（URL 絶対パス）
+	
+	                    //特にここ以下を変える？
+	                    //タグを変えてアップロードする機能を持つタグを入れればよいのでは?
+	                    let a = document.createElement('a'); //aタグオブジェクト
+	                    a.href = url; //href属性を指定
+	                    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
+	                    document.body.appendChild(a); //htmlaタグをに追加
+	
+	                    a.click(); //クリックしたらaタグが関連する処理を行う
+	
+	                  });
+	                this.status = 'ready';
+	
+	              });
+	
 	        }
+	    });
+	</script>
+10e0c359c8ffed06d8aa96d42a0be059|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|90|1|V|htmldjango
+	  var recorded_wavesurfer = WaveSurfer.create({
+	      container: '#waveform_recorded',
+	      scrollParent: false,
+	      backgroundColor: '#012C3D',
+	      cursorColor: '#FFFFFF',
+	      waveColor: '#3786BC',
+	      progressColor: '#3786BC',
+	      barHeight: 5,
+	      height: 70
+	    });
+	  var shadowing_vioce_path = "{{ task.shadowing_voice | safe }}";
+b6a46b77c06e4f5006d87fc8ec386d11|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|100|11|V|htmldjango
+	  recorded_wavesurfer.load('../../../media/' + shadowing_vioce_path);
+1a97de8c6a3d66165aef070a8d528c93|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|81|1|V|htmldjango
+	  var shadowing_vioce_path = "{{ task.shadowing_voice | safe }}";
+badeba60b42d6278bd85928a67a050c9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|48|60|v|htmldjango
+	 this.hidden=true; document.getElementById('play_btn').hidden= false" hidden
+7bdcb697e7f335b1f8db6eb358efaa7f|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|49|20|V|python
+	    4bannmewosyutoku
+75f8f574f0a96330dc93e861fdf64060|file:///Users/Kouiti/local_file/lets/lets_proj/app/models.py|282|1|V|python
+	    def get_all_minitask_by_task(self, task):
+d5240003a4ab5d2132d7ccd296b28355|file:///Users/Kouiti/local_file/lets/lets_proj/app/models.py|289|57|v|python
+	created_date
+bae8afdaea189a8f31bff88294a1c4d0|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|48|25|V|python
+	    minitask 4banme(task)
+796609dc90f559a84f4ab73fc87af84c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|27|22|v|python
+	history = History.objects.get(id=request.session["history_id"])
+160d80d9b422b6477843ab27df0f0b6c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|48|11|V|python
+	    history
+c1924ee6547dc0c3fc57f12a331bfab1|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|49|50|v|python
+	minitask
+aef9c8a7a1cf64cda8bac88423f7d1f1|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|52|26|V|python
+	    fourth_sh_voice_path =
+0b53bc8eca387761be641dab33936235|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|30|1|V|python
+	        voice_record.dnn_gop_score = 100
+7aac8c68bd19a24d37fd0728f2a685a7|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|31|24|v|python
+	n_gop_score 
+e9e3ddd5812d2018f555eb5f5ce6d867|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|82|1|V|htmldjango
+	  wavesurfer.load('../../../media/' + shadowing_vioce_path);
+478f3a4c51824ad23cb50c1c60670c0f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|98|34|v|htmldjango
+	task
+1f9faab30b3f51c894b7af12a2900163|file:///Users/Kouiti/local_file/lets/lets_proj/app/models.py|458|5|v|python
+	voice_record
+94cbb404527909c9a9ad591924170aee|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|72|10|V|python
+	        turn = 3
+be41880d18e6192dbcc924134d0aa57d|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|72|10|V|python
+	        task_type = "qa"
+a2d045ea44d1c4a63f6c24f0e1cfba2a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|53|1|V|htmldjango
+	        <a class="pointer" onclick="wavesurfer.play(0)">
+0a7c690c27e525826285beb16a36a844|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|58|1|V|htmldjango
+	        </a> 
+f977c175913c481b3ca909f4353ff8db|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|50|1|V|python
+	    print(fourth_minitask)
+0d7dcad9cfe9407d0c71935a5ccee712|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|51|11|v|python
+	fourth_minitask
+9903a648879bdaf46886af9a138c966c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|65|71|V|htmldjango
+	          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-forward-circle" viewBox="0 0 16 16">
+416c980bd1549a559861bd0f346fc6f9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|60|57|V|htmldjango
+	        <a class="pointer" onclick="wavesurfer.play(0)">
+	          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-skip-start-circle" viewBox="0 0 16 16">
+	            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+	            <path d="M10.229 5.055a.5.5 0 0 0-.52.038L7 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407v-5a.5.5 0 0 0-.271-.445z"/>
+	          </svg>
+	        </a> 
+51d860d6f981e5abbd62e4aad1f61ceb|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|48|1|V|python
+	    fourth_minitask = MiniTask.objects.get(task=task, task_type="SH", turn=4)
+7febf52f410154d037cf9b6619a14471|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|50|38|V|python
+	    print(MiniTask.objects.get(id=21))
+8b04d5e3775d298e78455efc5ca404d5|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|28|50|v|python
+	first
+ada9ec27f845f1d54419cac1a6a6f7e9|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|48|1|V|python
+	    task = Task.objects.get(id=task_id)
+a66568394a5c0091468290ebc0b771ad|file:///Users/Kouiti/local_file/lets/lets_proj/app/models.py|398|1|V|python
+	        voice_record = self.model(
+	            history=history,
+	            minitask=minitask,
+	            task_type=task_type,
+	            voice_record=voice_record,
+	            dnn_gop_score=dnn_gop_score,
+	        )
+30512cbbe3459f9aea6a2f07f179a566|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|28|34|v|python
+	History.objects.get(id=request.session["history_id"])
+93f45687755020dddc572f9ce82ef86c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|29|35|v|python
+	MiniTask.objects.get(task=task, turn=task_turn)
+5361aa344bef2eb544d96d420dc7e3f0|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|37|23|v|python
+	task_type
+114d53ad730ff9226650291c314b6f3f|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|39|27|v|python
+	dnn_gop_score
+9cdbe9809e66d8ddabe6f0ca8bbb6c82|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|27|27|V|python
+	        # voice_record = VoiceRecord()
+	        # voice_record.history = History.objects.get(id=request.session["history_id"])
+	        # voice_record.minitask = MiniTask.objects.get(task=task, turn=task_turn)
+	        # voice_record.voice_record = audio_file
+	        # voice_record.dnn_gop_score = 100
+	        # voice_record.task_type = "SH"
+	        # voice_record.save()
+36058b2cd97b94e78cf2781dfc14dd7b|file:///Users/Kouiti/local_file/lets/lets_proj/app/models.py|412|39|V|python
+	            print("message:" + e.message)
+95beefc1e7df81fcb4347e9b33f63849|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|52|12|V|python
+	        print(fourth_minitask)
+81644b16a5f0aa22da8a0014817d747c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|50|26|V|python
+	        fourth_minitask = MiniTask.objects.get(task=task, task_type="SH", turn=4)
+fe5e1618e1e912704f9e4dab5fa032b4|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|51|1|V|python
+	        fourth_minitask = MiniTask.objects.filter(task=task, task_type="SH")
+d941159b753d417a71da64977c2b090a|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|53|9|V|python
+	        r
+f78068903010ee7a27513523c79fb1dd|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|54|1|V|python
+	        print(sc_minitask)
+883894d2f1c06691ab8fe7da0201fc8c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|54|15|v|python
+	sc_minitask
+b059680ae70292dc392f9cffd00c0661|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|54|9|V|python
+	        print("----------------")
+5ce80fccc665abda0e1595f8515739c4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|111|34|V|htmldjango
+	  console.log(shadowing_vioce_path)
+07c73021a68b1918f4240d11157092cb|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|34|14|V|python
+	        print()
+413884f787b7ff74fcd8d5cadda70f5a|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|36|21|V|python
+	        return JsonResponse(content)
+d0abe4dc74564f410b0202e53c93ae90|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|36|9|V|python
+	        # return JsonResponse(content)
+bc2ee41ec7d8d86747fddeaccaf1875c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|35|1|V|python
+	        print(content)
+2c64e87965fa52ef89eac4d2e2bfcc75|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|52|73|v|python
+	task_turn
+3cd15f8f2940aff879df34df4e5c2cd1|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|58|15|v|python
+	history
+07f168f54e3f9cc791352d498c6655c9|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|48|8|V|python
+	    try:
+fa9a5b4609b2d454978a34a36e9af41d|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|63|25|V|python
+	    print(sc_voicerecord)
+60bb8523e21e27dc791d258ef1f4ad91|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|57|13|V|python
+	    print(history)
+	    print(sc_minitask)
+b326b5062b2f0e69046810717534cb09|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|41|115|v|htmldjango
+	true
+b9fb8891a16bb467c4db25a62cdf1318|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|41|96|v|htmldjango
+	pause_btn
+a288deccee38f3d60e812e5ad36c94f7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|41|74|v|htmldjango
+	 this.hidden=true; document.getElementById('pause_btn').hidden=false"
+917fe3f264fbe3fc527d17b4da8d74d3|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|84|1|V|htmldjango
+	  wavesurfer.on('finish', function () {
+	      wavesurfer.pause();
+	      document.getElementById("stop").click()
+	      document.getElementById("next-btn").hidden = false
 	    })
-df460a449f5ce7c1ca97ec87bbd11430|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/models.go|9|1|V|go
-	type Owner struct {
-	    gorm.Model
-	    Name string
-	    Password string
-	}
-271262ee7bebca9fd9d0260c99788965|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|42|1|V|go
-	        gorm.Model
-49ee3087348e8d44e1feda1917443987|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|42|9|v|go
-	Name
-9434d7c221b091c7f4981151de4bff1d|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|43|13|V|go
-	        Password string
-94a08da1fecbb6e8b46990538c7b50b2|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|42|15|v|go
-	token
-855109397a248e55cecf0ed296c7428d|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|41|1|V|go
-	    type session struct {
-	        token string
-	    }
-80ecdfb0a573fdea13bfc3584c813db8|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|45|32|V|go
-	        dbPassword := get(form.).Password
-a15ea5a1a2eb43e80f77a60c58b201e7|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|46|30|V|go
-	        if err := crypto.CompareHashAndPassword(dbPassword, form.Password); err != nil {
-7973b9d84734fcc19aa7a5fb810795a7|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|46|30|V|go
-	            log.Println("Failed log in.")
-6c97e018d8199e0e3b204d0ee60626de|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|46|16|V|go
-	            log.Println("You loged in.")
-938e4a7c7cc1e3df8ea3425480b4f2ac|file:///Users/Kouiti/local_file/homepage/go-app/svc/owners/urls.go|46|16|V|go
-	            c.JSON(200, get(form.Name))
+72ff762408c8e26b90947b1893604b27|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|114|3|V|htmldjango
+	      wavesurfer.pause();
+b4fe5e58a46fc4056443eaa9b272dbe1|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|114|1|V|htmldjango
+	      document.getElementById("play_btn").hidden = false
+68934a3e9455fa72420237eb05902327|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|115|53|v|htmldjango
+	false
+7a86c157ee9713c34fbd7a1ee40f0c5a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|114|23|v|htmldjango
+	offset
+bb790937d174b228a4600493b9c24c06|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|114|23|V|htmldjango
+	      wavesurfer.skip(0)
+a3b34c0871dc2fd51eec5559b68f709d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|53|48|v|htmldjango
+	play
+13d3a222e00434d8399e835c4bba966e|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|40|20|V|python
+	    content["task"] = task
+0a319ca6d183afd4165658e26229b568|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|37|1|V|python
+	    task = Task.objects.all().get(id=task_id)
+e2ee78d76a8159deadc5bcc8c5d3931a|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|21|1|V|svg
+	<path d="M262.719 487.906C283.447 487.906 300.25 504.71 300.25 525.438L300.25 600.5C300.25 766.324 434.677 900.75 600.5 900.75 766.324 900.75 900.75 766.324 900.75 600.5L900.75 525.438C900.75 504.71 917.553 487.906 938.281 487.906 959.009 487.906 975.813 504.71 975.813 525.438L975.813 600.5C975.815 793.248 829.813 954.661 638.031 973.936L638.031 1125.94 863.219 1125.94C883.947 1125.94 900.75 1142.74 900.75 1163.47 900.75 1184.2 883.947 1201 863.219 1201L337.781 1201C317.053 1201 300.25 1184.2 300.25 1163.47 300.25 1142.74 317.053 1125.94 337.781 1125.94L562.969 1125.94 562.969 973.936C371.187 954.661 225.185 793.248 225.188 600.5L225.188 525.438C225.188 504.71 241.991 487.906 262.719 487.906Z" fill="#000000" fill-rule="nonzero" fill-opacity="1" transform="matrix(1.02415 0 0 1 1555 569)"/>
+ad2e5f3a9bfa27e82faf50f942a455db|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|12|1|V|svg
+	<rect x="1555" y="568" width="1231" height="1202"/>
+d735e6c868b28f22712c267c13684aaf|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|20|1|V|svg
+	<path d="M375.313 225.188C375.313 100.82 476.132 0 600.5 0 724.868-3.33344e-14 825.688 100.82 825.688 225.188L825.688 600.5C825.688 724.868 724.868 825.688 600.5 825.688 476.132 825.688 375.313 724.868 375.313 600.5L375.313 225.188Z" fill="#000000" fill-rule="nonzero" fill-opacity="1" transform="matrix(1.02415 0 0 1 1555 569)"/>
+d40386cba198c36076cb51f6995ac36d|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|19|1|V|svg
+	<g clip-path="url(#clip3)">
+e3b7174c4bf99fc5b92291d1592ef887|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|16|1|V|svg
+	<path d="M1196.5 1170C1196.5 631.799 1632.57 195.5 2170.5 195.5 2708.43 195.5 3144.5 631.799 3144.5 1170 3144.5 1708.2 2708.43 2144.5 2170.5 2144.5 1632.57 2144.5 1196.5 1708.2 1196.5 1170Z" stroke="#0070C0" stroke-width="114.583" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8" stroke-opacity="1" fill="#FFFFFF" fill-rule="evenodd" fill-opacity="1"/>
+70d512ad88ce42d8800bdfa6ac490f66|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|15|17|V|svg
+	<g clip-path="url(#clip0)" transform="translate(-1136 -137)">
+6aef3b7ad93290b5dcec82df498e8d94|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|24|4|V|svg
+	</g>
+cf272aa5b220fe22fa1d6dc8285265bb|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|44|1|V|htmldjango
+	    <!-- <a class="pointer" onclick="wavesurfer.play(0)"> -->
+	    <!--   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-skip-backward-circle" viewBox="0 0 16 16"> -->
+	    <!--     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> -->
+	    <!--     <path d="M11.729 5.055a.5.5 0 0 0-.52.038L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.271-.445z"/> -->
+	    <!--   </svg> -->
+	    <!-- </a> -->

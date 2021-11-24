@@ -1,3 +1,3 @@
 
 nmap <C-b> :NERDTreeToggle<CR>
-noremap <silent>:find :NERDTreeFind<CR>
+noremap <silent>:find<CR> :NERDTreeFind<CR>

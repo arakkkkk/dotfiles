@@ -1,0 +1,111 @@
+{
+    //// General settings
+    // Editor
+    "workbench.statusBar.visible": true,
+    "editor.renderWhitespace": "all",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "emmet.variables": {},
+    "editor.minimap.enabled": false,
+    "editor.renderControlCharacters": true,
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "files.associations": {
+        "*.erb": "erb"
+    },
+    "emmet.includeLanguages": {
+        "erb": "erb"
+    },
+    // Shell
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "terminal.integrated.fontSize": 12,
+
+
+    // Vim key mappings
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["<C-e>"],
+            "after": ["<Esc>", "$", "a"]
+        },
+        {
+            "before": ["<C-a>"],
+            "after": ["<Esc>", "^", "i"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<C-h>"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+        {
+            "before": ["<C-l>"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<C-j>"],
+            "after": ["5", "j"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["5", "k"]
+        }
+    ],
+
+
+    // Formatter
+    "[python]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.rulers": [120],
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.rulers": [120],
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "npm.packageManager": "yarn",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "prettier.tabWidth": 4,
+    "tabnine.experimentalAutoImports": true,
+    // Linter
+    "eslint.packageManager": "yarn",
+    "eslint.format.enable": false,
+    "python.autoComplete.extraPaths": [
+        "~/.pyenv/versions/3.7.0/lib/python3.7/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "~/.pyenv/versions/3.7.0/lib/python3.7/site-packages"
+    ],
+
+
+
+
+
+
+    //// Extensions
+    // vim
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    // vscode workspace
+    "vscodeWorkspaceSwitcher.paths": [
+        "~/dotfiles/dotfiles/vscode/vscode-workspace"
+    ],
+    "vscodeWorkspaceSwitcher.showTreeView": false,
+}

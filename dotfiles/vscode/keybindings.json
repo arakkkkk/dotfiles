@@ -1,0 +1,28 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+q",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.terminal.newInActiveWorkspace"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "workbench.action.terminal.kill"
+    },
+
+    {
+        "key": "cmd+ctrl+f",
+        "command": "vscodeWorkspaceSwitcher.openWorkspace"
+    },
+]

@@ -3,6 +3,7 @@
     // Editor
     "workbench.statusBar.visible": true,
     "editor.renderWhitespace": "all",
+    "editor.fontSize": 13,
     "diffEditor.ignoreTrimWhitespace": false,
     "emmet.variables": {},
     "editor.minimap.enabled": false,
@@ -29,7 +30,7 @@
     },
     // Shell
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontSize": 13,
 
 
     // Vim key mappings
@@ -103,6 +104,10 @@
     // vim
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
+    "vim.highlightedyank.enable": true,                      //yankした箇所をハイライト表示にする
+    "vim.highlightedyank.duration":700,                      //yankした時の色の表示時間
+    "vim.visualstar"            : true,                      //カーソル上にあるワードを"*"で検索
+
     // vscode workspace
     "vscodeWorkspaceSwitcher.paths": [
         "~/dotfiles/dotfiles/vscode/vscode-workspace"

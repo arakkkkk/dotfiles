@@ -112,20 +112,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.9.7-final",
+          "raw": "3.9.9-final",
           "major": 3,
           "minor": 9,
-          "patch": 7,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.9.7-final"
+          "version": "3.9.9-final"
         },
         "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
-        "fileHash": "d479989f8aac2a30ba48d1992c267fb907f887b94ee8258021a92e65ef746b9adc26dc56aaab08c405f635af14ec59cb1a5d235b0bd257bfacf30c3c2ecf8692"
+        "fileHash": "b9cb52302f29f6368dc618b027a63d7cd35a89daaad075384f266f378ad9d74b180bcc81f6d38175e2f530cb85d4a5545db3886ca9b7d2001e6b155bc74ed098"
       },
-      "expiry": 1637845733383
+      "expiry": 1637853567986
     },
     "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python3.7.v3": {
       "data": {
@@ -1156,10 +1156,10 @@
     },
     "/usr/local/bin/python3.interpreter.displayName.v7": {
       "data": {
-        "displayName": "Python 3.9.7 64-bit",
-        "hash": "d479989f8aac2a30ba48d1992c267fb907f887b94ee8258021a92e65ef746b9adc26dc56aaab08c405f635af14ec59cb1a5d235b0bd257bfacf30c3c2ecf8692-9ff5868cffde75b06d3474211cffeabd"
+        "displayName": "Python 3.9.9 64-bit",
+        "hash": "b9cb52302f29f6368dc618b027a63d7cd35a89daaad075384f266f378ad9d74b180bcc81f6d38175e2f530cb85d4a5545db3886ca9b7d2001e6b155bc74ed098-4920f8525f5d0700eae6efd15fb5a923"
       },
-      "expiry": 1637845733388
+      "expiry": 1637896860732
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.interpreter.displayName.v7": {
       "data": {
@@ -1299,7 +1299,7 @@
     },
     "/usr/local/bin/python3.interpreter.Details.v7": {
       "data": {
-        "fileHash": "d479989f8aac2a30ba48d1992c267fb907f887b94ee8258021a92e65ef746b9adc26dc56aaab08c405f635af14ec59cb1a5d235b0bd257bfacf30c3c2ecf8692",
+        "fileHash": "b9cb52302f29f6368dc618b027a63d7cd35a89daaad075384f266f378ad9d74b180bcc81f6d38175e2f530cb85d4a5545db3886ca9b7d2001e6b155bc74ed098",
         "info": {
           "architecture": 3,
           "path": "/usr/local/bin/python3",
@@ -1326,7 +1326,7 @@
           "__store": true
         }
       },
-      "expiry": 1637845733266
+      "expiry": 1637896860638
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.interpreter.Details.v7": {
       "data": {

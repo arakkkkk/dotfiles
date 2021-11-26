@@ -1,1127 +1,3 @@
-28444c0d7c9a981a6a414f9fd5a7ea35|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|47|38|v|javascript
-	mpeg
-f1c710690c377cbf98abde7a978411d7|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|48|1|V|javascript
-	                        type: "audio/wav"
-e35a4ad96e7d65867e8ce78b21a93f26|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|48|1|V|javascript
-	                    //const audioBlob = new Blob(this.audioData);
-	                    // GetAudio(audioBlob);
-b5c6d6d7c6a2e1fa79b628ed5c43d0b2|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|80|1|V|javascript
-	new Vue({
-	
-	    el: "#app",
-	    data: {
-	        // 変数を宣言する部分
-	        status: "init", // 状況
-	        recorder: null, // 音声にアクセスする "MediaRecorder" のインスタンス
-	        audioData: [], // 入力された音声データ
-	        audioExtension: "" // 音声ファイルの拡張子
-	    },
-	    methods: {
-	        startRecording() {
-	            this.status = "recording";
-	            this.audioData = [];
-	            this.recorder.start(); //start()メソッドで録音開始
-	        },
-	        stopRecording() {
-	            this.recorder.stop(); //stop()メソッドで録音停止
-	            this.status = "ready";
-	        },
-	        //ブラウザで録音された音声データの拡張子を取得
-	        getExtension(audioType) {
-	            let extension = "wav";
-	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
-	            if (matches) {
-	                extension = matches[1]; //ブラウザのよって拡張子が異なる
-	                //例）chrome：wavm, firefox：ogg
-	            }
-	            return "." + extension;
-	        }
-	    },
-	    mounted() {
-	        // マイクアクセスの可否
-	        navigator.mediaDevices
-	            .getUserMedia({ audio: true })
-	            //アクセスできたら
-	            .then((stream) => {
-	                this.recorder = new MediaRecorder(stream);
-	                // 音声を保存する
-	                this.recorder.addEventListener("dataavailable", (e) => {
-	                    this.audioData.push(e.data); //audioDataに音声を格納
-	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
-	                });
-	
-	                // 録音した音声をダウンロードする
-	                // （ここをデータベースに保存する処理にする）
-	                this.recorder.addEventListener("stop", () => {
-	                    const audioBlob = new Blob(this.audioData, {
-	                        type: "audio/wav"
-	                    }); //音声データをBlob化
-	                    //const audioBlob = new Blob(this.audioData);
-	                    GetAudio(audioBlob);
-	
-	                    const url = URL.createObjectURL(audioBlob);
-	                    //音声データのURLを使ってデータベースにデータを送信したい
-	                            let a = document.createElement('a'); //aタグオブジェクト
-	                            a.href = url; //href属性を指定
-	                            a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
-	                            document.body.appendChild(a); //htmlaタグをに追加
-	
-	                            a.click(); //クリックしたらaタグが関連する処理を行う
-	
-	                });
-	                this.status = "ready";
-	            });
-	    }
-	});
-ddfcc8f6d920e579ee1d3520abdfc261|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|111|40|v|javascript
-	audioData
-7c51fa346d7b08e062bef02d1103c2ea|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|121|11|V|javascript
-	// export WAV from audio float data
-fcf8f6980dc229c9239cb3b5ec5a83df|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|106|1|V|javascript
-	                    const url = URL.createObjectURL(audioBlob); //音声データの保存場所（URL 絶対パス）
-	
-	                    //特にここ以下を変える？
-	                    //音声データのURLを使ってデータベースにデータを送信したい
-	                    let a = document.createElement("a"); //aタグオブジェクト
-	                    a.href = exportWAV(url);
-	                    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
-	                    document.body.appendChild(a); //htmlaタグをに追加
-	
-	                    a.click(); //クリックしたらaタグが関連する処理を行う
-d77e08e91e4567788ac8fd47a03dae30|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|57|1|V|javascript
-	new Vue({
-	    el: "#app",
-	    data: {
-	        // 変数を宣言する部分
-	        status: "init", // 状況
-	        recorder: null, // 音声にアクセスする "MediaRecorder" のインスタンス
-	        audioData: [], // 入力された音声データ
-	        audioExtension: "" // 音声ファイルの拡張子
-	    },
-	    methods: {
-	        startRecording() {
-	            this.status = "recording";
-	            this.audioData = [];
-	            this.recorder.start(); //start()メソッドで録音開始
-	        },
-	        stopRecording() {
-	            this.recorder.stop(); //stop()メソッドで録音停止
-	            this.status = "ready";
-	        },
-	        //ブラウザで録音された音声データの拡張子を取得
-	        getExtension(audioType) {
-	            let extension = "wav";
-	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
-	
-	            if (matches) {
-	                extension = matches[1]; //ブラウザのよって拡張子が異なる
-	                //例）chrome：wavm, firefox：ogg
-	            }
-	
-	            return "." + extension;
-	        }
-	    },
-	    mounted() {
-	        // マイクアクセスの可否
-	        navigator.mediaDevices
-	            .getUserMedia({ audio: true })
-	            //アクセスできたら
-	            .then((stream) => {
-	                this.recorder = new MediaRecorder(stream);
-	                // 音声を保存する
-	                this.recorder.addEventListener("dataavailable", (e) => {
-	                    this.audioData.push(e.data); //audioDataに音声を格納
-	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
-	                });
-	
-	                // 録音した音声をダウンロードする
-	                // （ここをデータベースに保存する処理にする）
-	                this.recorder.addEventListener("stop", () => {
-	                    const audioBlob = new Blob(exportWAV(this.audioData))); //音声データをBlob化
-	                    const url = URL.createObjectURL(audioBlob); //音声データの保存場所（URL 絶対パス）
-	
-	                    //特にここ以下を変える？
-	                    //音声データのURLを使ってデータベースにデータを送信したい
-	                    let a = document.createElement("a"); //aタグオブジェクト
-	                    a.href = exportWAV(url);
-	                    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
-	                    document.body.appendChild(a); //htmlaタグをに追加
-	
-	                    a.click(); //クリックしたらaタグが関連する処理を行う
-	                });
-	                this.status = "ready";
-	            });
-	    }
-	});
-d0d974e0c83708bf802a44541589a080|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|51|19|V|javascript
-	                });
-cfb55c5935c61c001d651171696acbb2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|34|42|V|htmldjango
-	    <button id="download">Download</button>
-	    <button id="stop">Stop</button>
-cf8a36b9ab8bea505c8f26c4b187ced5|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|23|1|V|javascript
-	// export WAV from audio float data
-	let exportWAV = function (audioData) {
-	    let encodeWAV = function (samples, sampleRate) {
-	        let buffer = new ArrayBuffer(44 + samples.length * 2);
-	        let view = new DataView(buffer);
-	
-	        let writeString = function (view, offset, string) {
-	            for (let i = 0; i < string.length; i++) {
-	                view.setUint8(offset + i, string.charCodeAt(i));
-	            }
-	        };
-	
-	        let floatTo16BitPCM = function (output, offset, input) {
-	            for (let i = 0; i < input.length; i++, offset += 2) {
-	                let s = Math.max(-1, Math.min(1, input[i]));
-	                output.setInt16(offset, s < 0 ? s * 0x8000 : s * 0x7fff, true);
-	            }
-	        };
-	
-	        writeString(view, 0, "RIFF"); // RIFFヘッダ
-	        view.setUint32(4, 32 + samples.length * 2, true); // これ以降のファイルサイズ
-	        writeString(view, 8, "WAVE"); // WAVEヘッダ
-	        writeString(view, 12, "fmt "); // fmtチャンク
-	        view.setUint32(16, 16, true); // fmtチャンクのバイト数
-	        view.setUint16(20, 1, true); // フォーマットID
-	        view.setUint16(22, 1, true); // チャンネル数
-	        view.setUint32(24, sampleRate, true); // サンプリングレート
-	        view.setUint32(28, sampleRate * 2, true); // データ速度
-	        view.setUint16(32, 2, true); // ブロックサイズ
-	        view.setUint16(34, 16, true); // サンプルあたりのビット数
-	        writeString(view, 36, "data"); // dataチャンク
-	        view.setUint32(40, samples.length * 2, true); // 波形データのバイト数
-	        floatTo16BitPCM(view, 44, samples); // 波形データ
-	
-	        return view;
-	    };
-	
-	    let mergeBuffers = function (audioData) {
-	        let sampleLength = 0;
-	        for (let i = 0; i < audioData.length; i++) {
-	            sampleLength += audioData[i].length;
-	        }
-	        let samples = new Float32Array(sampleLength);
-	        let sampleIdx = 0;
-	        for (let i = 0; i < audioData.length; i++) {
-	            for (let j = 0; j < audioData[i].length; j++) {
-	                samples[sampleIdx] = audioData[i][j];
-	                sampleIdx++;
-	            }
-	        }
-	        return samples;
-	    };
-	
-	    let dataview = encodeWAV(mergeBuffers(audioData), audio_sample_rate);
-	    let audioBlob = new Blob([dataview], { type: "audio/wav" });
-	    console.log(dataview);
-	
-	    let myURL = window.URL || window.webkitURL;
-	    let url = myURL.createObjectURL(audioBlob);
-	    return url;
-	};
-678842cc0fc318625b506290ae83c102|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|44|25|V|javascript
-	    console.log(audio_sample_rate);
-9a7984b4a1692d6d6f7703f878b15c2a|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|50|25|V|javascript
-	    console.log("record start?");
-7a14f545bca9e2755ae142184cc64aed|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|121|1|V|javascript
-	                    document.body.appendChild(a); //htmlaタグをに追加
-4cf103df455058b070263be63f14f8fb|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|14|1|V|javascript
-	    const url = URL.createObjectURL(audioBlob); //音声データの保存場所（URL 絶対パス）
-	
-	    //特にここ以下を変える？
-	    //音声データのURLを使ってデータベースにデータを送信したい
-	    let a = document.createElement("a"); //aタグオブジェクト
-8436f21e9c3c40fcb037f44337ddd7a6|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|15|21|V|javascript
-	    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
-1bac9d05151525c85d786a3b1ec355a9|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|15|1|V|javascript
-	    document.body.appendChild(a); //htmlaタグをに追加
-	
-	    a.click(); //クリックしたらaタグが関連する処理を行う
-bcb1e7eba02c9908f73cea97b329aa5d|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|17|5|V|javascript
-	    downloadLink.click();
-4ac0871938eaf4c59456924baca03f0a|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|21|1|V|javascript
-	    document.body.appendChild(a); //htmlaタグをに追加
-c2889fcaea05c6621a31b0f6412cb673|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|15|5|v|javascript
-	downloadLink
-7b17e43860417dbc2c13b387cec0cace|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|14|5|V|javascript
-	    a.href = exportWAV(url);
-ba6172f1e5599126970ff0d4d5112bb8|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|121|1|V|javascript
-	                    let a = document.createElement("a"); //aタグオブジェクト
-18dfbd764f70f2374c10d9dccc66bba9|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|115|1|V|javascript
-	                    GetAudio(audioBlob);
-d3c01944a40d9dd4cd808d7569070985|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|16|1|V|javascript
-	    let a = document.createElement("a"); //aタグオブジェクト
-	    a.href = exportWAV(audioData);
-	    a.download = "test.wav";
-	    document.body.appendChild(a); //htmlaタグをに追加
-	
-	    a.click(); //クリックしたらaタグが関連する処理を行う
-	
-	    audioContext.close().then(function () {
-	        stopButton.setAttribute("disabled", "disabled");
-	    });
-6bdbe732b50f873bbe3411b3aa2d0281|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|14|1|V|javascript
-	    var audioBlob = exportWAV(audioData);
-	    GetAudio(audioBlob);
-3f3dc41f1601b66959b492f1aebe1079|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|19|5|V|javascript
-	    console.log("saved wav");
-1281b90e9ba4a1017e06f9a14e1c039d|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|13|1|V|javascript
-	let saveAudio = function () {};
-	
-1485025a40d24c764becbd082609b2e0|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|52|1|V|javascript
-	// getUserMedia
-	navigator.mediaDevices.getUserMedia({ audio: true, video: false }).then(handleSuccess);
-	new Vue({
-	    el: "#app",
-	    data: {
-	        // 変数を宣言する部分
-	        status: "init", // 状況
-	        recorder: null, // 音声にアクセスする "MediaRecorder" のインスタンス
-	        audioData: [], // 入力された音声データ
-	        audioExtension: "" // 音声ファイルの拡張子
-	    },
-	    methods: {
-	        startRecording() {
-	            this.status = "recording";
-	            this.audioData = [];
-	            this.recorder.start(); //start()メソッドで録音開始
-	        },
-	        stopRecording() {
-	            this.recorder.stop(); //stop()メソッドで録音停止
-	            this.status = "ready";
-	        },
-	        //ブラウザで録音された音声データの拡張子を取得
-	        getExtension(audioType) {
-	            let extension = "wav";
-	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
-	            if (matches) {
-	                extension = matches[1]; //ブラウザのよって拡張子が異なる
-	                //例）chrome：wavm, firefox：ogg
-	            }
-	            return "." + extension;
-	        }
-	    },
-	    mounted() {
-	        // マイクアクセスの可否
-	        navigator.mediaDevices
-	            .getUserMedia({ audio: true })
-	            //アクセスできたら
-	            .then((stream) => {
-	                this.recorder = new MediaRecorder(stream);
-	                // 音声を保存する
-	                this.recorder.addEventListener("dataavailable", (e) => {
-	                    this.audioData.push(e.data); //audioDataに音声を格納
-	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
-	                });
-	
-	                // 録音した音声をダウンロードする
-	                // （ここをデータベースに保存する処理にする）
-	                this.recorder.addEventListener("stop", () => {
-	                    this.audioData = exportWAV(this.audioData);
-	                    const audioBlob = new Blob(this.audioData, {
-	                        type: "audio/mpeg"
-	                    }); //音声データをBlob化
-	                    GetAudio(audioBlob);
-	
-	                    const url = URL.createObjectURL(audioBlob); //音声データの保存場所（URL 絶対パス）
-	
-	                    //特にここ以下を変える？
-	                    //音声データのURLを使ってデータベースにデータを送信したい
-	                    let a = document.createElement("a"); //aタグオブジェクト
-	                    a.href = exportWAV(url);
-	                    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
-	                    document.body.appendChild(a); //htmlaタグをに追加
-	
-	                    a.click(); //クリックしたらaタグが関連する処理を行う
-	                });
-	
-	                this.status = "ready";
-	            });
-	    }
-	});
-85a8ae14c62ea6e3da050e0a459f5550|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|15|1|V|javascript
-	    saveAudio();
-f7f82d6cd001effbf5bc475b922f3a80|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|42|1|V|javascript
-	    setTimeout(function () {
-	        console.log("10 sec");
-	        if (stopButton.disabled == false) {
-	            saveAudio();
-	            console.log("saved audio");
-	        }
-	    }, 10000);
-0e3173a8d6d115d9aa8efb8dd361e65d|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|41|1|V|javascript
-	    // when time passed without pushing the stop button
-2d488207380ee91492ee4505a46c87d1|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|45|1|V|javascript
-	    // when time passed without pushing the stop button
-	    setTimeout(function () {
-	        console.log("10 sec");
-	        if (stopButton.disabled == false) {
-	            saveAudio();
-	            console.log("saved audio");
-	        }
-	    }, 10000);
-b05fd37139f3363553b9c8a1269bfed8|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|48|1|V|javascript
-	new Vue({
-	    el: "#app",
-	    data: {
-	        // 変数を宣言する部分
-	        status: "init", // 状況
-	        recorder: null, // 音声にアクセスする "MediaRecorder" のインスタンス
-	        audioData: [], // 入力された音声データ
-	        audioExtension: "" // 音声ファイルの拡張子
-	    },
-	    methods: {
-	        startRecording() {
-	            this.status = "recording";
-	            this.audioData = [];
-	            this.recorder.start(); //start()メソッドで録音開始
-	        },
-	        stopRecording() {
-	            this.recorder.stop(); //stop()メソッドで録音停止
-	            this.status = "ready";
-	        },
-	        //ブラウザで録音された音声データの拡張子を取得
-	        getExtension(audioType) {
-	            let extension = "wav";
-	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
-	            if (matches) {
-	                extension = matches[1]; //ブラウザのよって拡張子が異なる
-	                //例）chrome：wavm, firefox：ogg
-	            }
-	            return "." + extension;
-	        }
-	    },
-	    mounted() {
-	        // マイクアクセスの可否
-	        navigator.mediaDevices
-	            .getUserMedia({ audio: true })
-	            //アクセスできたら
-	            .then((stream) => {
-	                this.recorder = new MediaRecorder(stream);
-	                // 音声を保存する
-	                this.recorder.addEventListener("dataavailable", (e) => {
-	                    this.audioData.push(e.data); //audioDataに音声を格納
-	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
-	                });
-	
-	                // 録音した音声をダウンロードする
-	                // （ここをデータベースに保存する処理にする）
-	                this.recorder.addEventListener("stop", () => {
-	                    this.audioData = exportWAV(this.audioData);
-	                    const audioBlob = new Blob(this.audioData, {
-	                        type: "audio/mpeg"
-	                    }); //音声データをBlob化
-	                    GetAudio(audioBlob);
-	
-	                    const url = URL.createObjectURL(audioBlob); //音声データの保存場所（URL 絶対パス）
-	
-	                    //特にここ以下を変える？
-	                    //音声データのURLを使ってデータベースにデータを送信したい
-	                    let a = document.createElement("a"); //aタグオブジェクト
-	                    a.href = exportWAV(url);
-	                    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
-	                    document.body.appendChild(a); //htmlaタグをに追加
-	
-	                    a.click(); //クリックしたらaタグが関連する処理を行う
-	                });
-	
-	                this.status = "ready";
-	            });
-	    }
-	});
-	
-	var exportWAV = function (audioData) {
-	    var encodeWAV = function (samples, sampleRate) {
-	        var buffer = new ArrayBuffer(44 + samples.length * 2);
-	        var view = new DataView(buffer);
-	
-	        var writeString = function (view, offset, string) {
-	            for (var i = 0; i < string.length; i++) {
-	                view.setUint8(offset + i, string.charCodeAt(i));
-	            }
-	        };
-	
-	        var floatTo16BitPCM = function (output, offset, input) {
-	            for (var i = 0; i < input.length; i++, offset += 2) {
-	                var s = Math.max(-1, Math.min(1, input[i]));
-	                output.setInt16(offset, s < 0 ? s * 0x8000 : s * 0x7fff, true);
-	            }
-	        };
-	
-	        writeString(view, 0, "RIFF"); // RIFFヘッダ
-	        view.setUint32(4, 32 + samples.length * 2, true); // これ以降のファイルサイズ
-	        writeString(view, 8, "WAVE"); // WAVEヘッダ
-	        writeString(view, 12, "fmt "); // fmtチャンク
-	        view.setUint32(16, 16, true); // fmtチャンクのバイト数
-	        view.setUint16(20, 1, true); // フォーマットID
-	        view.setUint16(22, 1, true); // チャンネル数
-	        view.setUint32(24, sampleRate, true); // サンプリングレート
-	        view.setUint32(28, sampleRate * 2, true); // データ速度
-	        view.setUint16(32, 2, true); // ブロックサイズ
-	        view.setUint16(34, 16, true); // サンプルあたりのビット数
-	        writeString(view, 36, "data"); // dataチャンク
-	        view.setUint32(40, samples.length * 2, true); // 波形データのバイト数
-	        floatTo16BitPCM(view, 44, samples); // 波形データ
-	
-	        return view;
-	    };
-	
-	    var mergeBuffers = function (audioData) {
-	        var sampleLength = 0;
-	        for (var i = 0; i < audioData.length; i++) {
-	            sampleLength += audioData[i].length;
-	        }
-	        var samples = new Float32Array(sampleLength);
-	        var sampleIdx = 0;
-	        for (var i = 0; i < audioData.length; i++) {
-	            for (var j = 0; j < audioData[i].length; j++) {
-	                samples[sampleIdx] = audioData[i][j];
-	                sampleIdx++;
-	            }
-	        }
-	        return samples;
-	    };
-	
-	    var dataview = encodeWAV(mergeBuffers(audioData), audioContext.sampleRate);
-	    var audioBlob = new Blob([dataview], { type: "audio/wav" });
-	
-	    var myURL = window.URL || window.webkitURL;
-	    var url = myURL.createObjectURL(audioBlob);
-	    return audioBlob;
-	};
-904c55c915e831bbf5653a1974df0206|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|48|1|V|javascript
-	new Vue({
-	    el: "#app",
-	    data: {
-	        // 変数を宣言する部分
-	        status: "init", // 状況
-	        recorder: null, // 音声にアクセスする "MediaRecorder" のインスタンス
-	        audioData: [], // 入力された音声データ
-	        audioExtension: "" // 音声ファイルの拡張子
-	    },
-	    methods: {
-	        startRecording() {
-	            this.status = "recording";
-	            this.audioData = [];
-	            this.recorder.start(); //start()メソッドで録音開始
-	        },
-	        stopRecording() {
-	            this.recorder.stop(); //stop()メソッドで録音停止
-	            this.status = "ready";
-	        },
-	        //ブラウザで録音された音声データの拡張子を取得
-	        getExtension(audioType) {
-	            let extension = "wav";
-	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
-	            if (matches) {
-	                extension = matches[1]; //ブラウザのよって拡張子が異なる
-	                //例）chrome：wavm, firefox：ogg
-	            }
-	            return "." + extension;
-	        }
-	    },
-	    mounted() {
-	        // マイクアクセスの可否
-	        navigator.mediaDevices
-	            .getUserMedia({ audio: true })
-	            //アクセスできたら
-	            .then((stream) => {
-	                this.recorder = new MediaRecorder(stream);
-	                // 音声を保存する
-	                this.recorder.addEventListener("dataavailable", (e) => {
-	                    this.audioData.push(e.data); //audioDataに音声を格納
-	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
-	                });
-	
-	                // 録音した音声をダウンロードする
-	                // （ここをデータベースに保存する処理にする）
-	                this.recorder.addEventListener("stop", () => {
-	                    this.audioData = exportWAV(this.audioData);
-	                    const audioBlob = new Blob(this.audioData, {
-	                        type: "audio/mpeg"
-	                    }); //音声データをBlob化
-	                    GetAudio(audioBlob);
-	
-	                    const url = URL.createObjectURL(audioBlob); //音声データの保存場所（URL 絶対パス）
-	
-	                    //特にここ以下を変える？
-	                    //音声データのURLを使ってデータベースにデータを送信したい
-	                    let a = document.createElement("a"); //aタグオブジェクト
-	                    a.href = exportWAV(url);
-	                    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
-	                    document.body.appendChild(a); //htmlaタグをに追加
-	
-	                    a.click(); //クリックしたらaタグが関連する処理を行う
-	                });
-	
-	                this.status = "ready";
-	            });
-	    }
-	});
-	
-389415e3ccc729b5c19c0995652f85b0|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|13|5|V|javascript
-	let saveAudio = function () {
-fd456406745d816a45cae554c788e754|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|1|47|v|javascript
-	download
-a938787685d5d363c8e6e14d9b49bc09|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|33|35|V|htmldjango
-	    <button id="download">Download</button>
-fe5d26db8ed6ebb7fff14f79aa7f242e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|33|35|V|htmldjango
-	    <button id="stop">Stop</button>
-3f9d6d5406d40b7a60a300d3fa9f6f68|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/App.js|7|1|V|javascript
-	import "static/css/top.css";
-d226cbde553b77dfcb75f26753801c6e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|3|1|V|javascript
-	import React from "react";
-	import { useInView } from "react-intersection-observer";
-	
-	export const Test = () => {
-	    const { ref, inView, entry } = useInView({
-	        /* Optional options */
-	        threshold: 0
-	    });
-	
-	    return (
-	        <div ref={ref}>
-	            <div style={{ marginTop: "1900px" }}></div>
-	            <h2>{`Header inside viewport ${inView}.`}</h2>
-	        </div>
-	    );
-	};
-a003bb979af67297b326db60359447f5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/test.css|1|1|V|css
-	.sa {
-	    opacity: 0;
-	    transition: all .5s ease;
-	}
-	
-	.sa.show {
-	    opacity: 1;
-	    transform: none;
-	}
-	
-	.sa--lr {
-	    transform: translate(-100px, 0);
-	}
-	
-	.sa--rl {
-	    transform: translate(100px, 0);
-	}
-	
-	.sa--up {
-	    transform: translate(0, 100px);
-	}
-	
-	.sa--down {
-	    transform: translate(0, -100px);
-	}
-	
-	.sa--scaleUp {
-	    transform: scale(.5);
-	}
-	
-	.sa--scaleDown {
-	    transform: scale(1.5);
-	}
-	
-	.sa--rotateL {
-	    transform: rotate(180deg);
-	}
-	
-	.sa--rotateR {
-	    transform: rotate(-180deg);
-	}
-0eaa5dedff192b1085c7e4a209176fbd|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|44|1|V|javascript
-	import React from "react";
-	import { useInView } from "react-intersection-observer";
-	
-	export const Test = () => {
-	    const { ref, inView, entry } = useInView({
-	        /* Optional options */
-	        threshold: 0
-	    });
-	
-	    return (
-	        <div ref={ref}>
-	            <div style={{ marginTop: "1900px" }}></div>
-	            <h2>{`Header inside viewport ${inView}.`}</h2>
-	        </div>
-	    );
-	};
-	body {
-	  font-family: arial, helvetica;
-	}
-	
-	h3 {
-	  font-size: 5em;
-	  text-align: center;
-	  color: #fff;
-	  font-weight: 700;
-	}
-	
-	#section1 {
-	  color: #fff;
-	}
-	
-	.fp-section {
-	  text-align: center;
-	}
-	button {
-	  position: fixed;
-	  top: 20px;
-	  left: 20px;
-	  z-index: 8;
-	}
-ba029e2319a6b481e389d076c7d7c547|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|10|7|v|javascript
-	MySection
-6729299db9be9b6706460c8ac8d0022a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|22|7|v|javascript
-	FullpageWrapper
-22178bafb4be69dd9c94f1ccb1e23818|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|4|7|V|javascript
-	import ReactDOM from "react-dom";
-5c14c38d6edd846b55ed9be506696a0a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|4|45|v|javascript
-	 // Optional. When using scrollOverflow:true
-a97f37104377382f4921bae2816fb0c3|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|7|22|V|javascript
-	import "./styles.css";
-544dd66430a08ec0c1cfce6da9a084fb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|4|1|V|javascript
-	import "fullpage.js/vendors/scrolloverflow";
-	import ReactFullpage from "@fullpage/react-fullpage";
-1d75b7b91cd80ab78fdcff7930086f5a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/index.js|8|6|V|javascript
-	import "fullpage.js/vendors/scrolloverflow";
-	import ReactFullpage from "@fullpage/react-fullpage";
-	new fullpage({
-93b3e3eec9ed643b613d21ebe95df9ca|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/index.js|8|1|V|javascript
-	    licenseKey: "YOUR_KEY_HERE"
-e5c11c689821047badbcd2de4c066e53|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|30|55|V|javascript
-	            console.log("render prop change", state, fullpageApi); // eslint-disable-line no-console
-a8077bac2cc2042f4e0beaf0bc1f45da|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|27|6|V|javascript
-	            console.log("onLeave event", { origin, destination, direction });
-d5de31ba9e31f61d249c12783726aea4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|27|6|V|javascript
-	        render={({ state, fullpageApi }) => {
-360b258346a272e44816864df25b9df9|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|26|6|V|javascript
-	        onLeave={(origin, destination, direction) => {}}
-503323edf0de814da0cebfe06d7b7814|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|6|1|V|javascript
-	            <div class="toppage">
-e9534509a82eb848b638eab83e61a587|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|25|13|V|javascript
-	            navigationTooltips={anchors}
-b0724e5a66deef5c6eb6bba7ea3c1567|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|23|13|V|javascript
-	            anchors={anchors}
-272ccdd1a6f1e48f57fd8ee547cf5057|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|17|13|V|javascript
-	const anchors = ["firstPage", "secondPage", "thirdPage"];
-6b4cb30cf78f2b55aa176f6cfe9c4d70|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|21|1|V|javascript
-	            navigation
-1b64dc666745eafd0cf8e6199c03efac|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|21|1|V|javascript
-	            sectionsColor={["#282c34", "#ff5f45", "#0798ec"]}
-4f45586cbff5432309c435259237c7ef|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|7|1|V|javascript
-	                <div class="content">
-	                    <img src="images/maman1.jpeg" class="img-fluid blur" alt="Responsive image" />
-	                    <span>
-	                        <h1>
-	                            <img src="images/title0.png" alt="フレンチ食堂ママン" id="maman_title" />
-	                        </h1>
-	                        <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
-	                        <p>フランスの家庭料理の美味しさをベースに</p>
-	                        <p>親しみやすい料理を</p>
-	                        <p>お出しする事を心がけています</p>
-	                    </span>
-	                </div>
-4273f39bf509f82f738997e1a763d213|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|37|17|V|javascript
-	                        <MySection content={"Slide down!"} />
-07d2585a2de1eb054dbdf04a4403c29e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|23|13|V|javascript
-	                    <div>
-c2921eb9ed2cd025ebcd2e3ecd9dd15b|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|20|1|V|javascript
-	        )
-	    }
-1ae3241a663104db4414a92a4e0102ad|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|10|1|V|javascript
-	            <div className="section">
-f9f7449153c3f7b3ce6e452f75c8ea2c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/public/index.html|22|1|V|html
-	        <!-- swiper -->
-	        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
-	        <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-	        <!-- <script src="../src/static/js/swiper.js"></script> -->
-	        <!-- <link rel="stylesheet" href="../src/static/css/swiper.css" /> -->
-	
-9a0364b9e99bb480dd25e1f0284c8555|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|19|29|v|javascript
-	content
-2b40b75d8b08f1ea4a720f1dc8dc083a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|1|2|v|css
-	toppage
-abb7cfecc660d21516034ba74fd2e513|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|33|1|V|css
-	.toppage span {
-aefcd320422617869da103b5eed7041c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|56|15|v|css
-	blur
-6d191ab11fdadbc0ee61d99502cf9f77|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|56|1|V|css
-	    .toppage img {
-	        height: 500px;
-	    }
-b7328635d179d1561808fc3ef4f3a4f6|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|34|17|v|css
-	500px
-1daa6293c6d87297727132d05090624c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|50|11|V|css
-	    width: 100%;
-5ee7a81ae6bd0cdd245c46f4c626408c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|16|1|V|javascript
-	class FirstSlide extends React.Component {
-	    render() {
-	        return (
-	            <div className="section">
-	                <img src="images/maman1.jpeg" className="img-fluid bg-img" alt="Responsive image" />
-	                <span>
-	                    <h1>
-	                        <img src="images/title0.png" alt="フレンチ食堂ママン" id="maman_title" />
-	                    </h1>
-	                    <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
-	                    <p>フランスの家庭料理の美味しさをベースに</p>
-	                    <p>親しみやすい料理を</p>
-	                    <p>お出しする事を心がけています</p>
-	                </span>
-	            </div>
-	        );
-	    }
-	}
-d33b499a79ed584009a6cf748e9aae05|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|39|1|V|javascript
-	                <img src="images/maman1.jpeg" className="img-fluid bg-img" alt="Responsive image" />
-	                <span>
-	                    <h1>
-	                        <img src="images/title0.png" alt="フレンチ食堂ママン" id="maman_title" />
-	                    </h1>
-	                    <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
-	                    <p>フランスの家庭料理の美味しさをベースに</p>
-	                    <p>親しみやすい料理を</p>
-	                    <p>お出しする事を心がけています</p>
-	                </span>
-3ad317798b55c32c878fd507a6665388|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|21|1|V|javascript
-	                    <img src="images/foods/foods.jpg" class="img-fluid blur" alt="Responsive image" />
-	                    <span>
-	                        <h1>メニュー Menu</h1>
-	                        <p>
-	                            <a href="lunch.html">コース</a>
-	                        </p>
-	                        <p>
-	                            <a href="lunch.html">料理</a>
-	                        </p>
-	                        <p>
-	                            <a href="lunch.html">ドリンク</a>
-	                        </p>
-	                        <p>
-	                            <a href="lunch.html">ランチ</a>
-	                        </p>
-	                        <p>
-	                            <a href="lunch.html">テイクアウト</a>
-	                        </p>
-	                    </span>
-2fdfbd92714ed00bfe3e5bf173a8c75e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|42|1|V|javascript
-	                    <img src="images/layout.jpg" class="img-fluid blur" alt="Responsive image" />
-	                    <span>
-	                        <h1>店舗情報 Infomation</h1>
-	                        <div class="row">
-	                            <div class="col-sm">
-	                                <iframe
-	                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6669929889135!2d134.6325210152366!3d34.86459388039269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1fb4a6aab83%3A0x29aed1cf46efdcf8!2z44Oe44Oe44Oz!5e0!3m2!1sja!2sjp!4v1636499221264!5m2!1sja!2sjp"
-	                                    width="100%"
-	                                    height="100%"
-	                                    style={{ border: 0 }}
-	                                    allowfullscreen=""
-	                                    loading="lazy"
-	                                ></iframe>
-	                            </div>
-	                            <div class="col-sm">
-	                                <p>【ランチ】11:00〜14:00</p>
-	                                <p>【ディナー】17:30〜20:00</p>
-	                                <p>月曜定休(祝祭日は営業)</p>
-	                                <p>兵庫県姫路市飾西41-1</p>
-	                                <p>079-268-7070</p>
-	                            </div>
-	                        </div>
-	                    </span>
-cdf4e2bb9b5e08c3e1906725f8cbde0d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|103|21|V|javascript
-	                        <MySection content={"Keep going!"} />
-867f1fd69f2518643709483690e37315|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|103|21|V|javascript
-	                        <MySection content={"Slide up!"} />
-94fd341df5dd333152469e0c6e377c86|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|102|1|V|javascript
-	                        <FirstSlide />
-5b17e5a985ad595e26f1624be783e83c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|102|1|V|javascript
-	                        <FirstSlide />
-	                        <SecondSlide />
-	                        <ThirdSlide />
-831395401c28a87ab549980e5a8bba03|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|49|32|V|css
-	    background-position: 0px 0px;
-ee21e2d652368d756254598d30407f67|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|54|1|V|css
-		position: absolute;
-120e88337251433f0ee081c06f8f7c1f|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|49|1|V|css
-	left: 50%;
-8c7493e6c11385bcc5a3e7c15728ab7f|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|49|1|V|css
-		top: 50%;
-54f8f98960560456e9ecd5e163ba212d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|69|1|V|css
-	.navbar-toggler .navbar-toggler-icon {
-	    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-	}
-ffd690d1fb2b2b205766ea302d146566|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/test.css|19|1|V|css
-	button {
-	  position: fixed;
-	  top: 20px;
-	  left: 20px;
-	  z-index: 8;
-	}
-31bc96e782c81a6c6f9bccd88e22439e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/test.css|19|1|v|css
-	.section 
-47562c292e0513113b0e224d850fef29|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/test.css|1|1|V|css
-	.section body {
-	  font-family: arial, helvetica;
-	}
-	
-	.section h3 {
-	  font-size: 5em;
-	  text-align: center;
-	  color: #fff;
-	  font-weight: 700;
-	}
-	
-	.section #section1 {
-	  color: #fff;
-	}
-	
-	.section .fp-section {
-	  text-align: center;
-	}
-	.section button {
-	  position: fixed;
-	  top: 20px;
-	  left: 20px;
-	  z-index: 8;
-	}
-2414fcd1d5ef64704936c86f100ea80d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|70|13|V|css
-	    right:  0;
-29f8c6c174ca45c0318e59418b6f4efa|file:///Users/Kouiti/local_file/glycovid/glycovid_PubChem/rdf.py|385|1|V|python
-	    file_list = glob.glob("./data/" + d_today + "/dir/*_s.csv", recursive=True)
-	    print(file_list)
-	    # /Users/Kouiti/local_file/glycovid/glycovid_PubChem/data/2021-07-28/dir/bioassay_s.csv
-	    for i in range(len(file_list)):
-72acadb2f0310bb238d395d2d5f46642|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|135|5|V|python
-	        # /Users/Kouiti/local_file/glycovid/glycovid_PubChem/data/2021-07-28/dir/bioassay_s.csv
-b90a25ea2494dc85c8459fd53dd41310|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|134|13|V|python
-	        print(file_list)
-a95fb9e4721cd9043db5156bc05186e8|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|134|43|v|python
-	d_today
-15be93306e12cc22d03b15f927677d13|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|133|46|V|python
-	        dir_name = dirname + service + "/" + service
-1f145598e15efc8dcde39ae2a56161d0|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|133|31|v|python
-	dirname + "/" + service "/
-44b6f77d77f2ab4ddb8606c3a02c1e5b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|134|31|v|python
-	dirname + "/" + service
-cde188ec500a60811d31e8cca996c9b4|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|77|1|V|python
-	def has_bar_in_row(row):
-	    for column in row:
-	        if "|" in column:
-	            return True
-	    return False
-	
-	
-	def has_bar_in_row_list(row_list: list):
-	    for row in row_list:
-	        if has_bar_in_row(row):
-	            return True
-	    return False
-	
-	
-	def expansion_tsv_row(row_list: list):
-	    result_list = []
-	    for row in row_list:
-	        if has_bar_in_row(row):
-	            for i in range(len(row)):
-	                if "|" in row[i]:
-	                    row_a = copy(row)
-	                    row_a[i] = re.split("|", row[i])[0]
-	                    row_b = copy(row)
-	                    row_b[i] = re.split("[|\t$]", row[i])[1]
-	                    result_list.append(row_a)
-	                    result_list.append(row_b)
-	                    break
-	        else:
-	            result_list.append(row)
-	
-	    if has_bar_in_row_list(result_list):
-	        result_list = expansion_tsv_row(result_list)
-	    return result_list
-	
-	
-	def list2tsv(data: list):
-	    result = ""
-	    for i in range(len(data)):
-	        if i != 0:
-	            result += "\t"
-	
-	        if "psi-mi" in data[i]:
-	            result += data[i].split('"')[1].split(":")[1]
-	        elif ":" in data[i]:
-	            result += data[i].split(":")[1].split("(")[0]
-	        else:
-	            result += data[i]
-	    return result
-4608e6de7c063d77bd4703a8617caebd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|142|1|V|python
-	                    if has_bar_in_row(row):
-	                        # |で区切られてるrow dataを展開
-	                        row_list = expansion_tsv_row([row])
-	                        for devided_row in row_list:
-	                            pqdatalist.add(devided_row)
-4d17be758ec235ce99b49c8730884adc|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|123|16|V|python
-	                    pqdatalist.add(devided_row)
-42a7d9ac916144bedcfd2933ea920672|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|128|42|V|python
-	                for devided_row in row_list:
-2c1b39a6125d2deb0d6b1ee98c721831|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|9|1|V|python
-	from copy import copy
-073e54513495f35201b9f900bf66c13e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|134|1|V|python
-	        file_list = glob.glob(dir_name + "/*.tsv", recursive=True)
-	        for i in range(len(file_list)):
-	            os.mkdir(dirname + "/" + service + "/" + service + str(i))
-dae598ae305cdde829f3129ee28dfe68|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|51|1|V|python
-	        # file_list = glob.glob(dir_name + "/*.tsv", recursive=True)
-1445118813c3efccbe97c63d8bd61695|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|55|11|v|python
-	file_list
-e63ea88c41b7a8faf6b9d9146bb163e9|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|54|9|v|python
-	source_dir_name_list
-ae74c237beb2bfbae43ec70283e6e886|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|54|32|v|python
-	dirname + service + "/" + service + "*.tsv"
-	
-f0e9980c3e223bf19d079bc951935b27|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|54|74|V|python
-	        source_dir_name_list = dirname + service + "/" + service + "*.tsv"
-896970914e101b1d539e50333aeaaaef|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|51|1|V|python
-	        # for i in range(len(file_list)):
-cf2d03891354d12c7c52f5d56d078d87|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|51|1|V|python
-	        # for i in range(len(file_list)):
-	        #     os.mkdir(dirname + "/" + service + "/" + service + str(i))
-421622db3749055d0026623a0e5619ad|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|64|20|V|python
-	                    write_id_list(id_list, out_dir_name)
-d8a5ab0005c01527fdb6e8c4f7976013|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|58|28|v|python
-	dirname + service + "/" + service
-3248d60d1b5bf25201dcb527575befae|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|65|1|V|python
-	                    whole_id_list = join_id_list(whole_id_list, id_list)
-a8752617156423dedf91ad4ccfe7d399|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|65|21|v|python
-	whole_id_list
-6f80fb69672459a1d4d835b0cefe255e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|59|18|V|python
-	            out_dir_name = dirname + "/" + service + "/info/" + service + "_list_id.tsv"
-ae35136aa70fa76e8c2a2465b6d75f07|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|59|13|V|python
-	            os.mkdir(dirname + "/" + service + "/info")
-099fb995346f31c749f6e40db0f395e3|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|63|21|v|python
-	header
-fe78c6259bf3ce10e8cd93f68c159a06|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|69|35|v|python
-	id_l
-0fff969b0815b55ff3c7eb5e96610dfc|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|153|1|V|python
-	                        row_list = expansion_tsv_row([row])
-	                        for devided_row in row_list:
-	                            pqdatalist.add(devided_row)
-fad58de7366495db4650cfefac2fcd61|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|75|5|v|python
-	main
-4eb02bd47be1ce6d9cef98eaf783c146|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|195|10|V|python
-	    create_ttl(dir_name, file_name)
-38f6c2b50217d4b7fb92f6d8b278b474|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|141|1|V|python
-	    services_list = gm.list_serveice()
-c5ad66d843808aab6661ab00fcc6037a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|147|1|V|python
-	        file_list = glob.glob(dir_name + "/*.tsv", recursive=True)
-5fb356e07cdc5085d6bf043675a38352|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/treat_data.py|5|1|V|python
-	from lib import general_method as gm
-a8c191a5342614e35771ce234f8dce6a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|194|22|V|python
-	    dir_name = "data/"
-1a4e4006d5bce4a8b75b4bc93fc84460|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|195|20|v|python
-	service_list
-564d2b9af333438eae1e54afd64dfd91|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|195|31|v|python
-	dir_name
-cedb1870117d548ae9692b21cd81ee74|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|195|31|v|python
-	"data/" + service
-3521c09c05228fcead2792c24e607c93|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|197|32|V|python
-	            dir_name = file_name
-b4f23097c5b8a39bac0964e32e588a49|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|202|1|V|python
-	    dir_name = "data/IntAct/IntAct0.tsv"
-	    file_name = "IntAct0"
-	    init_log("filed_list")
-3090ad88ff7c9ca191579b709069fe64|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|196|13|v|python
-	file_name
-526d3e6a442cf1188c3738920c96c155|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|197|28|V|python
-	            print(file_name)
-e51ee4f9eba3f04085ef75885d0a9066|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|197|26|v|python
-	r_name
-21337ff0b19488561063e12d256e93fa|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|79|5|v|python
-	retturn
-f387b501ce7d8ed283a5173ca223d049|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|79|10|V|python
-	    return
-b2544902eedd5a359ff039833c5c38fa|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|196|10|V|python
-	        gg
-179fb6708e36ad31beec8e0486325a49|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|201|26|v|python
-	("turtle/"+service)
-f18ddeadb981fb28cc734c422b0b8979|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|136|1|V|python
-	                Dinteractor_a = get_target_id(row[0], "uniprotkb")
-	                Dinteractor_b = get_target_id(row[1], "uniprotkb")
-	                Ddetection_method = get_target_id(row[6], "psi-mi")
-	                Dpub_id = get_target_id(row[8], "pubmed")
-	                Dinteraction_type = get_target_id(row[11], "psi-mi")
-	                Dsource_database = get_target_id(row[12], "psi-mi")
-	                Dinteraction_id = get_target_id(row[13], "intact")
-	                Dtaxon_id = get_target_id(row[9], "taxid")
-f76e89a383227a4d7fcabcebb9ed605c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|70|1|V|python
-	            # column_data.split(db_name + ":")[1]
-9dde360102c103867bd2f45872f1129c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|75|14|v|python
-	replace
-3ffba3ae0aa5f1e77d96c2f8aea55efb|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|140|56|v|python
-	uniprotkb
-4d88c4756cfc221c8a578ad950a5bb86|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|143|50|v|python
-	pubmed
-4d15bacb8e34481ce1aecee42687c111|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|146|59|v|python
-	intact
-b0b7b698c8bbde154b237e9a08ab6114|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|147|52|v|python
-	taxid
-4ab028deeb252e1b288d530b7bb236a0|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|67|46|v|python
-	stisi
-abac93d6c52272caea0c738de230a901|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|68|12|V|python
-	    if db_name in column_data:
-0760f96c16f26fb3601145a7de88422d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|79|1|V|python
-	    else:
-	        False
-effd17f80442a31733b5b47dc26b30e5|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|70|1|V|python
-	        # column_data.split(db_name + ":")[1]
-9a358cee5e522f5a1bddf65535f7f606|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|70|1|V|python
-	        column_data.split(":")[1]
-8109360e9434128ffa99998d2ce7a417|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|70|1|V|python
-	        column_data.split('"')[1]
-	        .split(":")[1]
-	        .split("(")[0]
-	        .split("|")[0]
-	        .replace('"', "")
-	        .split("/")[0]
-	        .replace(" ", "-")
-	        .replace("_", "-")
-37a6259cc0c1dae299a7866489dff0bd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|68|21|v|python
-	null
-4e605f7f86c80af1943d8e8fe66f77bd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|70|1|V|python
-	    result["db"] = column_data.split(":")[0]
-6adf97f83acf6453d4a6a4b1070f3754|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|68|21|v|python
-	None
-fe25b2e8cbaa15b65c643811c5f33260|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|73|18|V|python
-	    .split("|")[0]
-feac6aaffbef48b6fe5fbd39c486e6ee|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|73|22|V|python
-	    .replace('"', "")\
-116ac60b2dac5feadf2e395922ccf428|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|73|18|V|python
-	    .split("/")[0]
-cf2488b95c97e0378c9bf49de3b50f28|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|99|49|v|python
-	idid
-dd992dd777825360e15ba36115fad113|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|99|22|V|python
-	        print(history)
-2e5d8aa3dfa8ef34ca5131d20f9dad51|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|44|23|v|html
-	settings
-3ad7ddf181f81e362944c50135ac3b24|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|44|27|v|html
-	shadowing
-ea2b2676c28c0db26d39331a336c6b92|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|32|v|htmldjango
-	start
-2d3d540335c64f225bb6379c3d5512da|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|36|33|V|htmldjango
-	           onclick="wavesurfer.play(); disable(this)"
-662f707d5491e9bce8238a6c0be92190|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|43|38|v|htmldjango
-	hidden
-cc490323133125e28aea4ce76037f788|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|14|1|V|javascript
-	stopButton.addEventListener("click", function () {
-ad2f247cb631be4f6c39ccc71beef58e|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|41|1|v|javascript
-	stopButton
-f51bff18e54c85d5de1235c8793bdfee|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|4|1|V|javascript
-	// for audio
-	let audio_sample_rate = null;
-	let scriptProcessor = null;
-	let audioContext = null;
-	
-	// audio data
-	let audioData = [];
-	let bufferSize = 1024;
 b7b530e169f45c731ed327198d8b690b|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|37|5|v|javascript
 	let 
 56e29b5abaa8d3d1d417bc2b4c51e7bd|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|134|1|V|htmldjango
@@ -1775,3 +651,797 @@ cf272aa5b220fe22fa1d6dc8285265bb|file:///Users/Kouiti/local_file/lets/lets_proj/
 	    <!--     <path d="M11.729 5.055a.5.5 0 0 0-.52.038L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.271-.445z"/> -->
 	    <!--   </svg> -->
 	    <!-- </a> -->
+e0acd2d9f4cb927472a5b18dde1f7381|file:///Users/Kouiti/dotfiles/dotfiles/linklist.txt|8|1|V|text
+	vscode/keybindings.json     ${HOME}/Library/Application Support/Code/User/keybindings.json
+b8dd3ffb943228461a79037d80ec9cc5|file:///Users/Kouiti/dotfiles/dotfiles/linklist.txt|3|52|V|text
+	Fonts/Source Code Pro for Powerline.otf             ${HOME}/Library/Fonts/Source Code Pro for Powerline.otf
+c80ee0930ecfa261a3bbaf543f0fa4b2|file:///Users/Kouiti/dotfiles/dotfiles/linklist.txt|6|1|V|text
+	Fonts/Source Code Pro for Powerline.otf             ${HOME}/Library/Fonts/Source Code Pro for Powerline.otf
+	vscode/settings.json        ${HOME}/Library/Application\ Support/Code/User/settings.json
+	vscode/keybindings.json     ${HOME}/Library/Application\ Support/Code/User/keybindings.json
+a05b12e2cd2c13f95fc3999cee89a44a|file:///Users/Kouiti/dotfiles/script/init.sh|31|1|v|sh
+	${HOME}/dotfiles/
+18790608eff214e45758dbe5584c274a|file:///Users/Kouiti/dotfiles/script/init.sh|29|1|v|sh
+	ln -s 
+6118a413576dff18792549ebbce0c652|file:///Users/Kouiti/dotfiles/script/init.sh|29|6|V|sh
+	ln -s .zshrc ~/.zshrc
+63d8d316db0fe4e5d8188dba57fb0694|file:///Users/Kouiti/dotfiles/dotfiles/vscode/vscode-workspace/dotfiles.code-workspace|1|29|v|
+	arakawakouichi
+c3ae06f70363066574dc6f52338df7f5|file:///Users/Kouiti/dotfiles/dotfiles/vscode/vscode-workspace/dotfiles.code-workspace|1|29|v|
+	dotfiles
+57746cc8160496aefc9fb306b6ba24e3|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|122|28|v|python
+	task_id
+e557b14e646f9f99bc621fc2f874ddf0|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|121|13|V|python
+	        elif task[0].task_type == "RF":
+00abef0855da94d66abe7c4fa4387a10|file:///Users/Kouiti/local_file/lets/lets_proj/app/add_dbdata.py|124|1|V|python
+	    MiniTask.objects.create_record(task=task, task_type="RA")
+	    MiniTask.objects.create_record(task=task, task_type="SH")
+b9c979594ab3d8e21d4ee1a47780ee33|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|39|1|V|htmldjango
+	      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
+	        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+	        <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"/>
+	      </svg>
+fa74ce479f2fa93459663ff08efb670e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|43|1|V|htmldjango
+	<div class="svg-front">
+0a3a0b592b9c285e050805307cee87c2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|47|1|V|htmldjango
+	</div>
+f056928c5d30b8230e7cecdb3f731a25|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|48|1|V|htmldjango
+	<div class="svg-back">
+13d02e359ebf522c81b85339c4a1e5ae|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|50|1|V|htmldjango
+	    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+057c3f06f940c49f1d38fd72fb7c0191|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|55|5|V|htmldjango
+	    <circle cx="8" cy="8" r="8"/>
+d86fbb8845f5895c90dadb8bc4ee49ec|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|50|1|V|htmldjango
+	<div class="svg-back">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+	  </svg>
+	</div>
+	<div class="svg-back">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+	  </svg>
+	</div>
+3e3b1ac95d9fc7196d0ac39a291bc032|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|44|66|v|htmldjango
+	fill="currentColor"
+1c4edd9e9f08ef52a147abf604e580bd|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|49|42|V|htmldjango
+	    <!-- <circle cx="8" cy="8" r="8"/> -->
+a4f18a2dac547ac13e2f0ac46569e26a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|45|5|V|htmldjango
+	    <path fill="red" d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0V4z"/>
+8a3232a858293df73bfee6cbd24966fb|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|44|1|V|htmldjango
+	  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 16 16">
+8f1ac089cb37dff736402ce33af2df4f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|50|1|V|htmldjango
+	  </svg>
+de45918e3216b791446c7a009064b6f7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|48|30|V|htmldjango
+	  <svg width="50" height="50">
+708c31871916e566d7f7f5ff815197c9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|48|1|V|htmldjango
+	    <g>
+67b28d5ff01f2aa0d5295bf2b148d3b1|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|50|6|V|htmldjango
+	    <path width="50" height="50" d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+72a13b958547a43282a7f1674dd9ab21|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|49|12|v|htmldjango
+	 width="50" height="50"
+fddeabdb16069e026171b504d972d119|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|47|34|V|htmldjango
+	    <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+b8a8790a8f6f25d4cd71476a44ffe286|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|47|7|v|htmldjango
+	 style='width:50; height:50;'
+fdbfef50b664d4a12c3843ba6be77938|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|47|46|V|htmldjango
+	    <g style='width:50; height:50;' width="1">
+26af3aa79f9f06c9ecc445ddefeb0a1a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|46|48|V|htmldjango
+	    <g fill="white" stroke="green" stroke-width="5">
+f5038a50ab6788e95b92c18a355cedfb|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|49|5|V|htmldjango
+	    </g>
+8eb5be04d0e187bf351bc38aacf7e5c2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|43|1|V|htmldjango
+	<div>
+	  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="-5 -5 26 26">
+	    <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	    <g>
+	      <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	      <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	    </g>
+	  </svg>
+	</div>
+1d5e4f4c0256036865fa476e74e367b7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|52|1|V|htmldjango
+	<div>
+	  <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="-7 -7 30 30">
+	    <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	    <g>
+	      <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	      <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	    </g>
+	  </svg>
+	</div>
+e90583092e72aa727151bca3611de222|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|11|v|htmldjango
+	 class="scale" id="mic-blue"
+041b47ed17aae463345bf2a1b88bdbf6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|43|1|V|htmldjango
+	<div class="scale" id="mic-blue">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
+	    <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	    <g>
+	      <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	      <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	    </g>
+	  </svg>
+	</div>
+48d6215903dff56238e52e8891380c8f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|52|28|v|htmldjango
+	blue
+81b9da9186b206dac61b0ddf737850e4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|30|V|htmldjango
+	      <img src="{% static '/images/mic_blue.svg' %}" width="90px" height="90px" />
+e36e05e65b1304418c1bc31ce038f20d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|30|V|htmldjango
+	      <img class="scale" id="mic-red" src="{% static '/images/mic_red.svg' %}" width="90px" height="90px" hidden/>
+4d1439d4c9685ca98057359c635b0372|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|41|1|V|htmldjango
+	<div class="scale" id="mic-blue">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
+	    <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	    <g>
+	      <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	      <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	    </g>
+	  </svg>
+	</div>
+	<div class="scale" id="mic-red">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
+	    <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	    <g>
+	      <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	      <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	    </g>
+	  </svg>
+	</div>
+20caa1e57b1f9348350a749d18f2026a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|37|40|v|htmldjango
+	#2770C0
+cdd8f3284462bcaf155b0116fbb495e4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|36|1|V|htmldjango
+	        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
+4286bc4f18945854d95d21f04c3280aa|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|43|9|V|htmldjango
+	            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+1d4016f8e5b3acd078e7454f9a6ec119|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|37|1|V|htmldjango
+	          <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
+97495438b53b5750ea7c3819c4319cd1|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|45|11|V|htmldjango
+	              <path fill="#2770C0" d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+e4df52d6fe666dbf48c297e6871ab64b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|45|135|V|htmldjango
+	              <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+9ac0cf07c54fb4df56999c4842955653|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|76|1|V|htmldjango
+	    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	      <div class="card-body">
+	        <div id="waveform"></div>
+	        <div id="waveform_recorded"></div> 
+	      </div>
+	    </div>
+e82fe3b1d9e1bffba54538c740343fe1|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|44|20|v|htmldjango
+	 fill="#2770C0" 
+ccac8a66d468e2522611be86933cc0d9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|48|21|v|htmldjango
+	pointer
+ff8c706dd8c82f7aa79b21caa9852d92|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|18|1|V|html
+	  <script type="text/javascript" src="{% static 'js/recording.js' %}" defer></script>
+12661759c2343cb1fa6cab2477bbbefe|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|3|1|V|htmldjango
+	{% load static %}
+	<script type="text/javascript" src="{% static 'js/recording.js' %}" defer></script>
+fb89b9c2b78261ef2ab506e30d9c84f7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|4|51|v|htmldjango
+	recording
+6b71de86bd87a004eda1d9c84ea29366|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/mousecheck.js|105|1|V|javascript
+	// document.querySelector("audio-form").hidden = true
+	function GetAudio(audioBlob) {
+	    console.log(">>>>>>>>get audioblob", audioBlob);
+	    const audioUrl = URL.createObjectURL(audioBlob);
+	    var form = new FormData();
+	    form.append("audio", audioBlob);
+	    //console.log(wavfromblob)
+	    var csrf = $('input[name="csrfmiddlewaretoken"]').val();
+	    var data = new FormData();
+	    data.append("recorded_audio", audioBlob);
+	    data.append("csrfmiddlewaretoken", csrf);
+	    $.ajax({
+	        url: location.href,
+	        type: "POST",
+	        processData: false,
+	        contentType: false,
+	        // contentType:'application/json; charset=UTF-8',
+	        // data:form,
+	        data: data,
+	        error: function (request, status, error) {
+	            alert(error);
+	        }
+	    }).done(function (response) {
+	        recorded_wavesurfer.load("../../../media/" + response.voice_record);
+	    });
+	}
+9f8983739a593943e9687d2b8c5eaa81|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|192|1|V|htmldjango
+	                    recorded_wavesurfer.loadBlob(audioBlob);
+57a9b485ba91a92bb23b9690d0cd6b2b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|191|1|V|htmldjango
+	                    const audioBlob = new Blob(this.audioData);//音声データをBlob化
+	                    recorded_wavesurfer.loadBlob(audioBlob);
+6bdbe732b50f873bbe3411b3aa2d0281|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/mousecheck.js|17|1|V|javascript
+	    var audioBlob = exportWAV(audioData);
+	    GetAudio(audioBlob);
+f69d2abc2b1528db1df31d98e9c88798|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|105|26|v|javascript
+	FirstSlide
+bae22dbe51c06ea80e6599ceb09c64a4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|7|1|V|javascript
+	class MySection extends React.Component {
+	    render() {
+	        return (
+	            <div className="section">
+	                <h3>{this.props.content}</h3>
+	            </div>
+	        );
+	    }
+	}
+d72dc67b322f82eb0945a90086dee08a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|26|7|v|javascript
+	SecondSlide
+2ef781f58ed105d714de3b2aaf0f8b46|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|54|7|v|javascript
+	ThirdSlide
+9f17a76973cb5962859798989b212e3c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|27|1|V|javascript
+	class ThirdSlide extends React.Component {
+	    render() {
+	        return (
+	            <div className="section">
+	                <img src="images/foods/foods.jpg" className="img-fluid bg-img" alt="Responsive image" />
+	                <span>
+	                    <h1>メニュー Menu</h1>
+	                    <p>
+	                        <a href="lunch.html">コース</a>
+	                    </p>
+	                    <p>
+	                        <a href="lunch.html">料理</a>
+	                    </p>
+	                    <p>
+	                        <a href="lunch.html">ドリンク</a>
+	                    </p>
+	                    <p>
+	                        <a href="lunch.html">ランチ</a>
+	                    </p>
+	                    <p>
+	                        <a href="lunch.html">テイクアウト</a>
+	                    </p>
+	                </span>
+	            </div>
+	        );
+	    }
+	}
+6f1d817172442b611ea0757a70105416|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|30|16|V|javascript
+	                <img src="images/foods/foods.jpg" className="img-fluid bg-img" alt="Responsive image" />
+6352d9f737edb9dd2b644d9fa6fc4812|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|31|1|V|javascript
+	                    <h1>メニュー Menu</h1>
+	                    <p>
+	                        <a href="lunch.html">コース</a>
+	                    </p>
+	                    <p>
+	                        <a href="lunch.html">料理</a>
+	                    </p>
+	                    <p>
+	                        <a href="lunch.html">ドリンク</a>
+	                    </p>
+	                    <p>
+	                        <a href="lunch.html">ランチ</a>
+	                    </p>
+	                    <p>
+	                        <a href="lunch.html">テイクアウト</a>
+	                    </p>
+7cb63d0ec642848aa8d483ac1b5aa4e0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|16|1|V|javascript
+	                    <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
+	                    <p>フランスの家庭料理の美味しさをベースに</p>
+	                    <p>親しみやすい料理を</p>
+	                    <p>お出しする事を心がけています</p>
+84039615d97e078a6f6f2d695441fbea|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|16|21|V|javascript
+	                    <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
+2cc80610f7be852b26f10fee7c278dd1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|18|21|V|javascript
+	                    <p>お出しする事を心がけています</p>
+aeabeccc255b4de3512086ca6632b9ba|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|64|5|V|css
+	        /* border-bottom: solid; */
+a161d7a0a4f132525e4ebf8588b17324|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|54|1|V|css
+	.toppage #maman_title {
+1b28e8e49a2629b60b24c6c580ec40de|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|13|1|V|javascript
+	                        </h1>
+96ac1bfc401ae8a657157dd65644dc55|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|11|1|V|javascript
+	                        <h1>
+6fe3c0251104ed35a93c56882ee3cedd|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|13|24|V|javascript
+	                    <h1>
+0d7df99d2c3c1a2679cb728644bd0eac|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|14|25|V|javascript
+	                    </h1>
+ef3be0d7133eee96319d44f309c2b27c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|64|25|V|css
+	        border-width: 1.5px;/*5ピクセルの太さにする*/
+b867ad086587424e25eec94b990b6881|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|62|25|V|css
+	        font-weight: bold;
+4174dc35f10c6b7b1732478f19bb13eb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|55|1|V|css
+	    width:60vw;
+7ac62d2ab89e3ba593ff27b14b423d67|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|57|1|V|css
+	    margin:0;
+4064d033c8f8ed98ab8ac950f31710da|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|11|1|V|javascript
+	                <img src="images/maman1.jpeg" className="img-fluid bg-img" alt="Responsive image" />
+ab4f3ccba74857c5f2ba0d5b7dbf65e1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|31|45|v|javascript
+	jpeg
+7e7acd0117eeb58b8f1fc7c2e95ebd27|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|26|30|v|javascript
+	</div>
+	
+14a08c4c1a91fbb4df46721828f66cd0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|26|1|V|javascript
+	            <div class="row">
+e3b6c7818808cf0b9022c774f39d91b5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|34|1|V|javascript
+	            </div>
+38accae1b36c7f7a23e36a1204fd2c20|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|34|1|V|javascript
+	            <div class="com-sm">
+6f9d5f093f87da0a8d4335cf954c3256|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|26|1|V|javascript
+	                    <div class="row">
+b6632bd8255877292f4b977d03fe78ae|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|34|1|V|javascript
+	                        <div class="com-sm">
+05bb70ea0803527305d4b6acef5ecc7a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|38|1|V|javascript
+	                        </div>
+ba391c1ccdffcb90fb4c46b28ad92655|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|36|1|V|javascript
+	                                <div class="col-6">
+3999039cc9b4d69a327e522916c0d484|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|42|1|V|javascript
+	                                </div>
+1788e126e9fa62248d22bb80557d616e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/Footer.js|8|1|V|javascript
+	                        <a href="https://www.instagram.com/maman2030toward/" target="_blank">
+	                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+	                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+	                            </svg>
+	                        </a>
+04a7d3d609129a9296bf7ac0608c2097|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|44|40|v|javascript
+	</p>
+9f7bd84c47aa75b96b48cae17f150af7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|45|1|V|javascript
+	                                        <a href="https://www.instagram.com/maman2030toward/" target="_blank">
+dec507aa0e479a930c13bf9de786b6d0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|56|1|V|javascript
+	                                        </a>
+3b6039d8e0f973d65420faaca7aac385|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|61|41|V|javascript
+	                                        <a href="https://www.instagram.com/maman2030toward/" target="_blank">
+	                                        </a>
+3892fbc312512a316c8e97b8f6c2f7d8|file:///Users/Kouiti/local_file/homepage/react-app/react-app/public/index.html|6|62|v|html
+	　⇒png画像の場合
+1d6cccc91eb3d063d043327aefa9fde0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/public/index.html|6|65|V|html
+	        <link rel="icon" type="image/png" href="images/maman4.png">
+0c0577431e417423d9a3a23d4934e8d5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/public/index.html|21|1|V|html
+	
+	        <link rel="icon" type="image/png" href="images/maman4.png">
+ae81a3fb0f7445aa835458de3f8089fc|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|43|1|V|javascript
+	                                <div class="col-2">
+568170e0ec601ceaa1e98baae47a81fd|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|57|1|V|javascript
+	                                </div>
+	                                <div class="col-2">
+f48c303a940be85deed83f81aad3ab10|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|89|33|V|javascript
+	                                    </p>
+0eba8e74b62f316c51d05397ed637718|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|44|33|V|javascript
+	                                    <p>
+168864bc1ad110c7816bf9efbf80eead|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|77|18|V|javascript
+	                                            top="10px"
+9356ed3889b3835b9bd26f4d2d6ddffe|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|72|79|v|javascript
+	 style={{ marginTop: "10px" }}
+f0478ef2e960b05e2bba6b2bb2679002|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|71|1|V|javascript
+	                                <div class="col-2" style={{ marginTop: "50px" }}>
+194397394f65f7506bc1d4a1f2c5cf84|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|71|1|V|javascript
+	                                <div class="col-2" style={{ marginTop: "30px" }}>
+769722d8a8c7f10e7da34cf8be3dfe7d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|40|49|V|javascript
+	                                        style={{ borderRadius: "50%" }}
+50cbaa144b538ed45a776ae875c291ea|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|39|61|v|javascript
+	marginTop
+8aceb58c85d8223cf8d84e603e40baec|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|26|41|V|javascript
+	                        <div class="col-sm">
+1ab8a038103f843aaecbbb84ca3a4a80|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|82|34|V|javascript
+	                            </div>
+6efe362b97f90a358613aaa247d914a6|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|83|26|V|javascript
+	                    </div>
+f50c8927c563a04431c1a758e9267491|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|33|1|V|javascript
+	                        <div class="ml-4" style={{ width: "120px" }}>
+adb115059e28d960fa8badfac5516667|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|81|23|v|javascript
+	center
+04db2349b87bc1dd7808f1694afe4ccc|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|33|1|V|javascript
+	                        <div class="col-6" style={{ width: "120px" }}>
+deb7832688f8a3aacd67319f53e9b217|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|32|25|V|javascript
+	                    <center>
+d5696090fb3ccc0f1072977fb0e8ef6e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|83|21|V|javascript
+	                    </center>
+f3cd56212d6ed148f5954780ba9d2230|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|33|32|V|javascript
+	                        <center>
+ba51b92bf433c4bd0dbad68ecb7e0cf6|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|81|33|V|javascript
+	                        </center>
+bd9299002eaff38538718e53a8cbbf0e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|32|1|V|javascript
+	                                    <center>
+cadab35124e3886c4f82dead5dd7a08c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|33|1|V|javascript
+	                        <div class="col-4" style={{ width: "120px" }}>
+17b49f9285b23538298044af8a3f3673|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|33|43|v|javascript
+	 style={{ width: "120px" }}>
+45fb66a7f7a26fc187381409593180a8|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|33|1|V|javascript
+	                        <div class="col-3"></div>
+8f7a0bed93ae423756a551c82a1b7817|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|67|1|V|javascript
+	                                <svg
+	                                    xmlns="http://www.w3.org/2000/svg"
+	                                    width="25"
+	                                    height="25"
+	                                    fill="currentColor"
+	                                    class="bi bi-telephone-fill"
+	                                    viewBox="0 0 16 16"
+	                                >
+	                                    <path
+	                                        fill-rule="evenodd"
+	                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+	                                    />
+	                                </svg>
+cee0caf13edd248efd58eb56fa02cf00|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|66|1|V|javascript
+	                            <a href="tel:079-268-7070" target="_blank">
+7b26f74896948c9d41afcd8810eee02c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|1|1|V|javascript
+	import "static/css/test.css";
+	
+	import React from "react";
+	import "fullpage.js/vendors/scrolloverflow";
+	import ReactFullpage from "@fullpage/react-fullpage";
+	
+	class FirstSlide extends React.Component {
+	    render() {
+	        return (
+	            <div className="section">
+	                <img src="images/maman1.jpeg" className="img-fluid bg-img" />
+	                <span>
+	                    <img src="images/title0.png" alt="フレンチ食堂ママン" id="maman_title" />
+	                    <p>フランスの家庭料理の美味しさをベースに 親しみやすい料理を</p>
+	                </span>
+	            </div>
+	        );
+	    }
+	}
+	
+	class SecondSlide extends React.Component {
+	    render() {
+	        return (
+	            <div className="section" style={{ backgroundColor: "#583F2A" }}>
+	                <span>
+	                    <h1>フレンチ食堂ママン</h1>
+	                    <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
+	                    <p>フランスの家庭料理の美味しさをベースに</p>
+	                    <p>親しみやすい料理を</p>
+	                    <p>お出しする事を心がけています</p>
+	                    <div class="mt-4"></div>
+	                    <div class="row">
+	                        <div class="col-3"></div>
+	                        <div class="col-4" style={{ width: "120px" }}>
+	                            <img src="images/maman4.png" className="img-fluid" />
+	                        </div>
+	                        <div class="col-1" style={{ marginTop: "30px" }}>
+	                            <a href="https://www.instagram.com/maman2030toward/" target="_blank">
+	                                <svg
+	                                    xmlns="http://www.w3.org/2000/svg"
+	                                    width="25"
+	                                    height="25"
+	                                    fill="currentColor"
+	                                    class="bi bi-instagram"
+	                                    viewBox="0 0 16 16"
+	                                >
+	                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+	                                </svg>
+	                            </a>
+	                        </div>
+	                        <div class="col-1" style={{ marginTop: "30px" }}>
+	                            <a href="https://www.hotpepper.jp/strJ001042933/" target="_blank">
+	                                <svg
+	                                    xmlns="http://www.w3.org/2000/svg"
+	                                    width="25"
+	                                    height="25"
+	                                    fill="currentColor"
+	                                    class="bi bi-info-circle-fill"
+	                                    viewBox="0 0 16 16"
+	                                >
+	                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+	                                </svg>
+	                            </a>
+	                        </div>
+	                        <div class="col-1" style={{ marginTop: "30px" }}>
+	                            <a href="tel:079-268-7070" target="_blank">
+	                                <svg
+	                                    xmlns="http://www.w3.org/2000/svg"
+	                                    width="25"
+	                                    height="25"
+	                                    fill="currentColor"
+	                                    class="bi bi-telephone-fill"
+	                                    viewBox="0 0 16 16"
+	                                >
+	                                    <path
+	                                        fill-rule="evenodd"
+	                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+	                                    />
+	                                </svg>
+	                            </a>
+	                        </div>
+	                        <div class="col-2"></div>
+	                    </div>
+	                </span>
+	            </div>
+	        );
+	    }
+	}
+	
+	class ThirdSlide extends React.Component {
+	    render() {
+	        return (
+	            <div className="section">
+	                <img src="images/foods/foods.jpg" className="img-fluid bg-img" />
+	                <span>
+	                    <h1>メニュー Menu</h1>
+	                    <p>
+	                        <a href="lunch.html">コース</a>
+	                    </p>
+	                    <p>
+	                        <a href="lunch.html">料理</a>
+	                    </p>
+	                    <p>
+	                        <a href="lunch.html">ドリンク</a>
+	                    </p>
+	                    <p>
+	                        <a href="lunch.html">ランチ</a>
+	                    </p>
+	                    <p>
+	                        <a href="lunch.html">テイクアウト</a>
+	                    </p>
+	                </span>
+	            </div>
+	        );
+	    }
+	}
+	
+	class FourthSlide extends React.Component {
+	    render() {
+	        return (
+	            <div className="section">
+	                <img src="images/layout.jpg" className="img-fluid bg-img" />
+	                <span>
+	                    <h1>店舗情報 Infomation</h1>
+	                    <div class="row">
+	                        <div class="col-sm">
+	                            <iframe
+	                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6669929889135!2d134.6325210152366!3d34.86459388039269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1fb4a6aab83%3A0x29aed1cf46efdcf8!2z44Oe44Oe44Oz!5e0!3m2!1sja!2sjp!4v1636499221264!5m2!1sja!2sjp"
+	                                width="100%"
+	                                height="100%"
+	                                style={{ border: 0 }}
+	                                allowfullscreen=""
+	                                loading="lazy"
+	                            ></iframe>
+	                        </div>
+	                        <div class="col-sm">
+	                            <p>【ランチ】11:00〜14:00</p>
+	                            <p>【ディナー】17:30〜20:00</p>
+	                            <p>月曜定休(祝祭日は営業)</p>
+	                            <p>兵庫県姫路市飾西41-1</p>
+	                            <p>
+	                                <a href="tel:079-268-7070" target="_blank">
+	                                    <svg
+	                                        xmlns="http://www.w3.org/2000/svg"
+	                                        width="25"
+	                                        height="25"
+	                                        fill="currentColor"
+	                                        class="bi bi-telephone-fill"
+	                                        viewBox="0 0 16 16"
+	                                    >
+	                                        <path
+	                                            fill-rule="evenodd"
+	                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+	                                        />
+	                                    </svg>
+	                                    079-268-7070
+	                                </a>
+	                            </p>
+	                        </div>
+	                    </div>
+	                </span>
+	            </div>
+	        );
+	    }
+	}
+	
+	export const Test = () => (
+	    <div class="toppage">
+	        <ReactFullpage
+	            licenseKey={"C5C881D6-81D74A73-AB857381-6D757637"}
+	            render={({ state, fullpageApi }) => {
+	                return (
+	                    <div>
+	                        <FirstSlide />
+	                        <SecondSlide />
+	                        <ThirdSlide />
+	                        <FourthSlide />
+	                    </div>
+	                );
+	            }}
+	        />
+	    </div>
+	);
+7d1cfd1457c844241bee36dd8371c6b4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|1|1|V|javascript
+	import React from "react";
+	import "static/css/top.css";
+	
+	class Top extends React.Component {
+	    render() {
+	        return (
+	            <div class="toppage">
+	                <div class="content">
+	                    <img src="images/maman1.jpeg" class="img-fluid blur" alt="Responsive image" />
+	                    <span>
+	                        <img src="images/title0.png" alt="フレンチ食堂ママン" id="maman_title" />
+	                        <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
+	                        <p>フランスの家庭料理の美味しさをベースに</p>
+	                        <p>親しみやすい料理を</p>
+	                        <p>お出しする事を心がけています</p>
+	                    </span>
+	                </div>
+	                <div class="content">
+	                    <img src="images/foods/foods.jpg" class="img-fluid blur" alt="Responsive image" />
+	                    <span>
+	                        <h1>メニュー Menu</h1>
+	                        <p>
+	                            <a href="lunch.html">コース</a>
+	                        </p>
+	                        <p>
+	                            <a href="lunch.html">料理</a>
+	                        </p>
+	                        <p>
+	                            <a href="lunch.html">ドリンク</a>
+	                        </p>
+	                        <p>
+	                            <a href="lunch.html">ランチ</a>
+	                        </p>
+	                        <p>
+	                            <a href="lunch.html">テイクアウト</a>
+	                        </p>
+	                    </span>
+	                </div>
+	                <div class="content">
+	                    <img src="images/layout.jpg" class="img-fluid blur" alt="Responsive image" />
+	                    <span>
+	                        <h1>店舗情報 Infomation</h1>
+	                        <div class="row">
+	                            <div class="col-sm">
+	                                <iframe
+	                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6669929889135!2d134.6325210152366!3d34.86459388039269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1fb4a6aab83%3A0x29aed1cf46efdcf8!2z44Oe44Oe44Oz!5e0!3m2!1sja!2sjp!4v1636499221264!5m2!1sja!2sjp"
+	                                    width="100%"
+	                                    height="100%"
+	                                    style={{ border: 0 }}
+	                                    allowfullscreen=""
+	                                    loading="lazy"
+	                                ></iframe>
+	                            </div>
+	                            <div class="col-sm">
+	                                <p>【ランチ】11:00〜14:00</p>
+	                                <p>【ディナー】17:30〜20:00</p>
+	                                <p>月曜定休(祝祭日は営業)</p>
+	                                <p>兵庫県姫路市飾西41-1</p>
+	                                <p>079-268-7070</p>
+	                            </div>
+	                        </div>
+	                    </span>
+	                </div>
+	            </div>
+	        );
+	    }
+	}
+	export default Top;
+0cbc6611f5540bd0809a388dc95a615b|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|167|14|v|javascript
+	Test
+720abfa24731e7c2a0b077517d7d9a89|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|49|1|V|javascript
+	export default Top;
+b5c30e011d4bab3104140118c8816346|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|185|1|V|javascript
+	default ex
+3f9d6d5406d40b7a60a300d3fa9f6f68|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|2|1|V|javascript
+	import "static/css/top.css";
+2171d3c14bce67fe8b264676b0962a50|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|1|1|V|javascript
+	import "static/css/test.css";
+6905019448118ef53e1d2c0b34eeee9f|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|19|12|V|javascript
+	            <img src="/images/maman1_1.jpeg" class="img-fluid" alt="Responsive image" style={styles.content_blur} />
+2b87543c9c26f373c9e2c71a00b640fb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|19|14|V|javascript
+	            /*
+fa770b8dbca3b9c771a75dfa632369a9|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|20|14|V|javascript
+	            */
+f6708374e5e68615660ea99ede82a433|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|35|1|V|javascript
+	    content_span: {
+	        color: "white",
+	        position: "absolute",
+	        top: "50%",
+	        left: "50%",
+	        MsTransform: "translate(-50%,-100%)",
+	        WebkitTransform: "translate(-50%,-100%)",
+	        transform: "translate(-50%,-100%)",
+	        width: "90vw",
+	        margin: "0",
+	        padding: "0"
+	    },
+	    content_slide: {
+	        color: "white",
+	        position: "absolute",
+	        top: "50%",
+	        left: "50%",
+	        MsTransform: "translate(-50%,90%)",
+	        WebkitTransform: "translate(-50%, 90%)",
+	        transform: "translate(-50%,90%)",
+	        width: "93vw",
+	        margin: "0",
+	        padding: "0"
+	    },
+8d98aeede19e7b10ce5d965ffd38a2bf|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|42|1|V|javascript
+	        margin: "0"
+dcdfe917484762f0b3f72dc16763682c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|3|1|V|css
+	body {
+8551342cbe1b6dfdf43746069d7818a7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|49|1|V|css
+	    filter: blur(2px) contrast(120%) brightness(40%);
+2c04f98759d784b2d79bd72e8df2457c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|6|29|v|css
+	       
+486d7f2dd12ebea768b51180b42c6128|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|1|1|V|css
+	body {
+	    /* background-color: #E8D6AE; */
+	    background-image: url("maman.jpg");
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-size:  cover;
+	    height: 100vh;
+	}
+10ed55a251fdc9a0b6f4c3369aa3aa81|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|18|38|v|javascript
+	 style={styles.content}>
+bc5296a7f8186d23a07c8f1ab00c1597|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|30|1|V|javascript
+	    content: {
+	        marginTop: "50px",
+	        position: "relative",
+	        height: "400px"
+b0db47ba22f746c63f39759de9e40e90|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|30|1|V|javascript
+	    content: {
+	        marginTop: "50px",
+	        position: "relative",
+	        height: "400px"
+	    },
+e650bbaf9734d637d48827f94aca71a1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|13|5|V|css
+	    content: {
+4f94b621d1743e8056e8c54b9d4bbf1d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|16|5|V|css
+	    },
+2079ec3f596492468482b6be6aaa467d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|12|1|V|css
+	.hedd-area{
+	        margin-top: 50px;
+	        position: relative;
+	        height: 600px;
+	}
+f196ded4f0088f11ff9be0f510a3f3e6|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|38|21|V|javascript
+	        marginTop: "200px"
+bbdb9e9229dde00708179e9481effddf|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|64|1|V|css
+	.head-area {
+	    margin: 150px 0px
+	}
+280c719ec16569c703b61c02184338ca|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|64|1|V|css
+	@media (max-width: 500px) {
+	    h4 {
+	        font-size: 20px;
+	    }
+	}
+c04ae2393e1a1a2e913eaca463e69e87|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|65|1|V|css
+	    h4 {
+	        font-size: 20px;
+	    }
+d1b57bb9124ee4e392daee9e54430fcb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|64|1|V|css
+	@media (max-width: 500px) {
+	}
+ac2323e76887c4162dd4bf009e7ce1cb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|64|1|V|css
+	.head-area {
+	    margin: 150px 0px
+	}
+	
+c3e92def4e3bfbc14dc1a7417153bec4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|156|26|v|css
+	 0px
+f35d69eab953dba7b6240850a6f876a0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|156|1|V|css
+	        margin-top: 150px;
+3858ac5e7a9f93ee3119398ce0346a90|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|157|9|v|css
+	margin-top
+cebb062a650f0782ff514dd821cde6f1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|41|1|V|javascript
+	                            <div class="card mb-3">
+0e24a49a3858e4ec44969b634d174f04|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|37|44|v|javascript
+	 style={{backgroundColor:}}
+31dedb1e28f9ffd82ab4053dd585e089|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|69|23|v|css
+	#583F2A
+992c6c8208321e340caa2e5edff34d90|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/Footer.js|3|28|v|javascript
+	 style={{ backgroundColor: "#583F2A" }
+cec9732770b5ed11f53247c98d6de793|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|76|1|V|css
+	    background-color: #583F2A;
+2decfebf9c76e7fdac7cbca0ca1648dc|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|2|5|V|css
+	    background-color: #E8D6AE;
+c1728fe207f4b13e75d346a58d7fa1ba|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|142|9|V|css
+	    background-color: ;
+91c5a29b2108369e0a05cd4a5ac3f9de|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|142|23|v|css
+	#E8D6AE
+dae18d04d11374c35fd518d74a15abbb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|37|44|v|javascript
+	 style={{ backgroundColor: "#E8D6AE" }}
+5b9d386b4ee056dd9bfd5a28f455c1e4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|37|1|V|javascript
+	                <div class="card px-2 pt-3" style={{ backgroundColor: "#E8D6AE" }}>
+9b0db20282c2dc8d23943c66e26f1139|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Menu.js|57|1|V|javascript
+	                </div>
+aaabf0d39951f3e6c3e8a7911df524c2|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|30|34|v|javascript
+	service
+499a9971a3ea2ad036ae524971fe1f4a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|162|1|V|css
+	        margin-top: 120px;
+	        margin-bottom: 70px;
+09429335004bd27bafbc65a907c57faa|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|65|9|V|css
+	    margin: 150px 0px

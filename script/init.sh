@@ -25,6 +25,10 @@ __remove_linklist_comment "$linklist" | while read target link; do
     mkdir -p $(dirname ${link})
     ln -fsn ${target} ${link}
 done
+### スペースが入ってるものを個別でシンボリック作成
+ln -fsn ${HOME}/dotfiles/dotfiles/Fonts/Source\ Code\ Pro for Powerline.otf ${HOME}/Library/Fonts/Source\ Code\ Pro\ for\ Powerline.otf
+ln -fsn ${HOME}/dotfiles/dotfiles/vscode/settings.json ${HOME}/Library/Application\ Support/Code/User/settings.json
+ln -fsn ${HOME}/dotfiles/dotfiles/vscode/keybindings.json ${HOME}/Library/Application\ Support/Code/User/keybindings.json
 
 ####### homebrew
 brew update

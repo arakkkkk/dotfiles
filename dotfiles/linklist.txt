@@ -1,11 +1,8 @@
 # home dir
 # .vim             ${HOME}/.vim
-Fonts/Source Code Pro for Powerline.otf            ${HOME}/Library/Fonts/Source Code Pro for Powerline.otf
 ## home file
 .prettierrc         ${HOME}/.prettierrc
 .eslintrc.json      ${HOME}/.eslintrc.json
-vscode/settings.json        ${HOME}/Library/Application Support/Code/User/settings.json
-vscode/keybindings.json     ${HOME}/Library/Application Support/Code/User/keybindings.json
 
 # under .config
 nvim                ${HOME}/.config/nvim

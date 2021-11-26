@@ -20,9 +20,26 @@
         "key": "ctrl+shift+w",
         "command": "workbench.action.terminal.kill"
     },
-
     {
         "key": "cmd+ctrl+f",
         "command": "vscodeWorkspaceSwitcher.openWorkspace"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-cursorLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-extension.vim_ctrl+b",
+        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.togglePanel"
     },
 ]

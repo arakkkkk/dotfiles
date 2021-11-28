@@ -1,14 +1,3 @@
-486d7f2dd12ebea768b51180b42c6128|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|1|1|V|css
-	body {
-	    /* background-color: #E8D6AE; */
-	    background-image: url("maman.jpg");
-	    background-repeat: no-repeat;
-	    background-attachment: fixed;
-	    background-size:  cover;
-	    height: 100vh;
-	}
-10ed55a251fdc9a0b6f4c3369aa3aa81|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|18|38|v|javascript
-	 style={styles.content}>
 bc5296a7f8186d23a07c8f1ab00c1597|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|30|1|V|javascript
 	    content: {
 	        marginTop: "50px",
@@ -1827,3 +1816,7 @@ d864be9a146d2c186a75949887576d08|file:///Users/Kouiti/dotfiles/dotfiles/fish/con
 	alias gp="git pull origin HEAD"
 b33388391ecd6307fa948d054f535fa6|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|26|1|V|
 	alias gl="git log"
+519dd6df60ce6b8241ca8e17cdd28e0a|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|28|1|V|
+	alias gitreset="git reset --hard HEAD"
+0490e15b15c5a18138759fd774761640|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|31|7|v|
+	gitreset

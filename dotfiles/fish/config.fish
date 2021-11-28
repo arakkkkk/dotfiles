@@ -24,3 +24,5 @@ alias gh="git push origin HEAD"
 alias gd="git diff"
 alias gb="git branch"
 alias gl="git log"
+
+alias gitreset="git reset --hard HEAD"

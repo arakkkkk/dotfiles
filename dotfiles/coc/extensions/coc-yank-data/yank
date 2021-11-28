@@ -1,5 +1,3 @@
-2c04f98759d784b2d79bd72e8df2457c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|6|29|v|css
-	       
 486d7f2dd12ebea768b51180b42c6128|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|1|1|V|css
 	body {
 	    /* background-color: #E8D6AE; */
@@ -1827,3 +1825,5 @@ f65105e36bb763759194b8c9cb768b8e|file:///Users/Kouiti/local_file/reverse-proxy/d
 		watch -n 3 "curl 'localhost/api/services/list/all' | jq"
 d864be9a146d2c186a75949887576d08|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|22|1|V|
 	alias gp="git pull origin HEAD"
+b33388391ecd6307fa948d054f535fa6|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|26|1|V|
+	alias gl="git log"

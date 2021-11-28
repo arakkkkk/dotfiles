@@ -19,7 +19,8 @@ set -x PATH $GOPATH/bin $PATH
 # shortcut
 alias ga="git add ."
 alias gs="git status"
-alias gp="git pull"
+alias gp="git pull origin HEAD"
+alias gh="git push origin HEAD"
 alias gd="git diff"
 alias gb="git branch"
 alias gl="git log"

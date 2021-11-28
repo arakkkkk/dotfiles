@@ -1,1355 +1,3 @@
-b7b530e169f45c731ed327198d8b690b|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|37|5|v|javascript
-	let 
-56e29b5abaa8d3d1d417bc2b4c51e7bd|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|134|1|V|htmldjango
-	  new Vue({
-	    el: '#audio',
-	    data: {
-	        // 変数を宣言する部分
-	        status: 'init',     // 状況
-	        recorder: null,     // 音声にアクセスする "MediaRecorder" のインスタンス
-	        audioData: [],      // 入力された音声データ
-	        audioExtension: ''  // 音声ファイルの拡張子
-	    },
-	    methods: {
-	        startRecording() {
-	
-	            this.status = 'recording';
-	            this.audioData = [];
-	            this.recorder.start(); //start()メソッドで録音開始
-	
-	        },
-	        stopRecording() {
-	
-	            this.recorder.stop(); //stop()メソッドで録音停止
-	            this.status = 'ready';
-	
-	        },
-	        //ブラウザで録音された音声データの拡張子を取得
-	        getExtension(audioType) {
-	
-	            let extension = 'wav';
-	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
-	
-	            if(matches) {
-	
-	                extension = matches[1]; //ブラウザのよって拡張子が異なる
-	                //例）chrome：wavm, firefox：ogg
-	
-	            }
-	
-	            return '.'+ extension;
-	
-	        }
-	    },
-	    mounted() {
-	        // マイクアクセスの可否
-	        navigator.mediaDevices.getUserMedia({ audio: true })
-	            //アクセスできたら
-	            .then(stream => {
-	
-	                this.recorder = new MediaRecorder(stream);
-	                // 音声を保存する
-	                this.recorder.addEventListener('dataavailable', e => {
-	
-	                    this.audioData.push(e.data); //audioDataに音声を格納
-	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
-	
-	                });
-	                this.recorder.addEventListener('stop', () => {
-	                    const audioBlob = new Blob(this.audioData);//音声データをBlob化
-	                    recorded_wavesurfer.loadBlob(audioBlob);
-	                });
-	                this.status = 'ready';
-	            });
-	      }
-08cc2357920866905ccfa75efe63acd3|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|134|1|V|htmldjango
-	  new Vue({
-	    el: '#audio',
-	    data: {
-	        // 変数を宣言する部分
-	        status: 'init',     // 状況
-	        recorder: null,     // 音声にアクセスする "MediaRecorder" のインスタンス
-	        audioData: [],      // 入力された音声データ
-	        audioExtension: ''  // 音声ファイルの拡張子
-	    },
-	    methods: {
-	        startRecording() {
-	
-	            this.status = 'recording';
-	            this.audioData = [];
-	            this.recorder.start(); //start()メソッドで録音開始
-	
-	        },
-	        stopRecording() {
-	
-	            this.recorder.stop(); //stop()メソッドで録音停止
-	            this.status = 'ready';
-	
-	        },
-	        //ブラウザで録音された音声データの拡張子を取得
-	        getExtension(audioType) {
-	
-	            let extension = 'wav';
-	            const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
-	
-	            if(matches) {
-	
-	                extension = matches[1]; //ブラウザのよって拡張子が異なる
-	                //例）chrome：wavm, firefox：ogg
-	
-	            }
-	
-	            return '.'+ extension;
-	
-	        }
-	    },
-	    mounted() {
-	        // マイクアクセスの可否
-	        navigator.mediaDevices.getUserMedia({ audio: true })
-	            //アクセスできたら
-	            .then(stream => {
-	
-	                this.recorder = new MediaRecorder(stream);
-	                // 音声を保存する
-	                this.recorder.addEventListener('dataavailable', e => {
-	
-	                    this.audioData.push(e.data); //audioDataに音声を格納
-	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
-	
-	                });
-	                this.recorder.addEventListener('stop', () => {
-	                    const audioBlob = new Blob(this.audioData);//音声データをBlob化
-	                    recorded_wavesurfer.loadBlob(audioBlob);
-	                });
-	                this.status = 'ready';
-	            });
-	      }
-	  });
-672a2723e31800df2b7d738ae1187a21|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|1|3|V|javascript
-	const startButton = document.getElementById("start");
-	const stopButton = document.getElementById("stop");
-	
-	// for audio
-	let audio_sample_rate = null;
-	let scriptProcessor = null;
-	let audioContext = null;
-	
-	// audio data
-	let audioData = [];
-	let bufferSize = 1024;
-	
-	// stop button
-	stopButton.addEventListener("click", function () {
-	    var audioBlob = exportWAV(audioData);
-	    GetAudio(audioBlob);
-	});
-	
-	// save audio data
-	var onAudioProcess = function (e) {
-	    var input = e.inputBuffer.getChannelData(0);
-	    var bufferData = new Float32Array(bufferSize);
-	    for (var i = 0; i < bufferSize; i++) {
-	        bufferData[i] = input[i];
-	    }
-	    audioData.push(bufferData);
-	};
-	
-	// getusermedia
-	let handleSuccess = function (stream) {
-	    audioContext = new AudioContext();
-	    audio_sample_rate = audioContext.sampleRate;
-	    scriptProcessor = audioContext.createScriptProcessor(bufferSize, 1, 1);
-	    var mediastreamsource = audioContext.createMediaStreamSource(stream);
-	    mediastreamsource.connect(scriptProcessor);
-	    scriptProcessor.onaudioprocess = onAudioProcess;
-	    scriptProcessor.connect(audioContext.destination);
-	};
-	
-	// getUserMedia
-	startButton.addEventListener("click", function () {
-	    console.log("start recorgind")
-	    navigator.mediaDevices.getUserMedia({ audio: true, video: false }).then(handleSuccess);
-	})
-	
-e4386dc0a56409f25000764c38cbd22a|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|1|1|V|javascript
-	import Vue
-35d2de98d65518b5e9f8a0067d9b4206|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|74|1|V|htmldjango
-	        <a class="pointer" @click="startRecording"
-04b0aa25793eb10f57a163c517c0ede0|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|9|V|htmldjango
-	        <a class="pointer" id="start"
-743763423e27cfefe40bd641b4e4624c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|81|1|V|htmldjango
-	        <a class="pointer" @click="stopRecording" hidden>
-641a1aff9504342bfefdbfcd2d45299d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|43|9|V|htmldjango
-	        <a class="pointer" id="stop" >
-27b3da609c4a00f8f62e7149305184b4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|58|1|V|htmldjango
-	      <div id="audio">
-2fdb34d6da5317d4ca418b0fac31d353|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|14|17|V|javascript
-	            console.log("start recoding")
-d3a36acb0df30944ca3afeb85f3be258|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|27|10|V|javascript
-	                //例）chrome：wavm, firefox：ogg
-af9a90002d4e84e5887251ec5b102782|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|43|39|V|javascript
-	                    const audioBlob = new Blob(this.audioData);//音声データをBlob化
-ffa0f4fc9f244942d380b25f18ea30cd|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|91|22|v|htmldjango
-	querySelectorAll
-91b4c7281876ed68aa4ead1569ecff70|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|42|34|V|javascript
-	    console.log("start recorgind")
-646135ee4499480ff386b08fbe151353|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|26|1|V|htmldjango
-	            <div class="card-body">
-bbf2a50f43b3294596db9927cc4bcdb5|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|26|1|V|htmldjango
-	            <div class="card-body">
-	                <div id="waveform_recorded"></div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	
-	<div class="row">
-	    <div id="app">
-	        <a class="pointer" id="start"
-	           onclick="wavesurfer.play(); disable(this)"
-	           >
-	           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-	               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-	               <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-	           </svg>
-	        </a>
-	        <a class="pointer" id="stop" hidden>
-	            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
-	                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-	                <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"/>
-	            </svg>
-	        </a>
-	        <!-- <a class="pointer" onclick="wavesurfer.play(0)"> -->
-	        <!--   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-skip-backward-circle" viewBox="0 0 16 16"> -->
-	        <!--     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> -->
-	        <!--     <path d="M11.729 5.055a.5.5 0 0 0-.52.038L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.271-.445z"/> -->
-	        <!--   </svg> -->
-	        <!-- </a> -->
-	    </div>
-	</div>
-	<button><a href="../{{task.id}}/{{next_turn}}">next</a></button>
-	
-93100489fcd70243e04b82b34acd6671|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|26|1|V|htmldjango
-	            <div class="card-body">
-	                <div id="waveform_recorded"></div>
-	            </div>
-26fe5642161934f6284dfa18a4356a37|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|25|13|V|htmldjango
-	                <div id="waveform_recorded"></div>
-1424678ae71e678b3c762ac1a22c2b96|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|25|21|V|htmldjango
-	                start
-5c79f7f25505950950253e9445f87ef4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|36|1|V|htmldjango
-	<div class="row">
-	    <div id="app">
-	        <a class="pointer" id="start"
-	           onclick="wavesurfer.play(); disable(this)"
-	           >
-	           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-	               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-	               <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-	           </svg>
-	        </a>
-	        <a class="pointer" id="stop" hidden>
-	            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
-	                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-	                <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"/>
-	            </svg>
-	        </a>
-	        <!-- <a class="pointer" onclick="wavesurfer.play(0)"> -->
-	        <!--   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-skip-backward-circle" viewBox="0 0 16 16"> -->
-	        <!--     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> -->
-	        <!--     <path d="M11.729 5.055a.5.5 0 0 0-.52.038L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.271-.445z"/> -->
-	        <!--   </svg> -->
-	        <!-- </a> -->
-	    </div>
-	</div>
-c927c0bd900c44f4b204b024be5791e5|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|25|1|V|htmldjango
-	        <div class="row">
-	          <div id="app">
-	            <a class="pointer" id="start" onclick="wavesurfer.play(); disable(this)">
-	              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-	                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-	                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-	              </svg>
-	            </a>
-	            <a class="pointer" id="stop" hidden>
-	              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
-	                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-	                <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"/>
-	              </svg>
-	            </a>
-	            <!-- <a class="pointer" onclick="wavesurfer.play(0)"> -->
-	            <!--   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-skip-backward-circle" viewBox="0 0 16 16"> -->
-	            <!--     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> -->
-	            <!--     <path d="M11.729 5.055a.5.5 0 0 0-.52.038L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.271-.445z"/> -->
-	            <!--   </svg> -->
-	            <!-- </a> -->
-	          </div>
-	        </div>
-961326bbb3df950c83439faba30541f1|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|38|1|V|css
-	.card-header {
-a73488ee318d3be64ca131f96490b927|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|24|1|V|htmldjango
-	      <div class="card-body">
-	      </div>
-fdac58dd572fb905fd89a68b8102017a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|16|1|V|html
-	  <script type="text/javascript" src="{% static 'js/index.js' %}" defer></script>
-6b360a3d26dbf5504c4f3f024b4e80cd|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|13|1|V|html
-	  {% load static %}
-b42305cdc6a6d3afabfa8651f254e545|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|1|V|htmldjango
-	      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-	        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-	        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-	      </svg>
-022c1f3ff39005a86d647b04aa5106c8|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|1|V|htmldjango
-	      <img src="{% static '/images/mic_blue.svg' %}" width="100px" height="100px" />
-797c23a207dcdc20fedf1aabeb96c9c0|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|208|3|V|css
-	transform:scale(1.2,1.2);
-5bbd5f670632a1480d9fdfeb74d6a8c0|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|206|1|V|css
-	  transform:scale(1.2,1.2);
-4761440854120f38cfcb4a760f9eb7b4|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|206|7|V|css
-	.button_class {
-e509337f540ed5346b6bdbd5b22e0a99|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|205|1|V|css
-	.scale {
-		-webkit-transition: all 0.3s ease;
-		-moz-transition: all 0.3s ease;
-		-o-transition: all 0.3s ease;
-		transition: all  0.3s ease;
-	}
-d654f573075e8c91eabf1c389ba7f6c0|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|205|1|V|css
-	.scale:hover{
-	-webkit-transform: scale(1.1,1.1);
-		-moz-transform: scale(1.15,1.15);
-		-o-transform: scale(1.15,1.15);
-		-ms-transform: scale(1.15,1.15);
-		transform: scale(1.15,1.15);
-	}
-cd3a114b0f2f75b8738123358a068be9|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|135|27|V|javascript
-	    target.style.color = "gray";
-25b4a1e702f498d32991f5117330fce5|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|135|1|V|javascript
-	    document.getElementById("mic-blue")
-34337bec3eaa1863b62201bc56008f5a|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|135|1|V|javascript
-	    document.getElementById("mic-blue").hidden = true;
-	    document.getElementById("mic-red").hidden = false;
-bf01717e3b86948b79066230df75a7bd|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|86|1|V|htmldjango
-	      document.getElementById("stop").click()
-d0cab90d8d20d57e2f2b9be52f7dd25d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|52|46|v|htmldjango
-	next
-ef399b2d446bb37b7c32ad2cc1b6045b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|89|32|v|htmldjango
-	stop
-ce50a09343724eb82df11390e2c1de18|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|52|2|v|htmldjango
-	button
-193cd536bf317055599d7fc3c09c4b56|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|53|6|v|htmldjango
-	href="/app/{{task.id}}/{{next_turn}}"
-d131138d861595c4868c47ac463a5740|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|54|9|V|htmldjango
-	</button>
-a7698d86276f3273fc06f3613728eda3|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|13|1|V|htmldjango
-	    <div align="right"><font size="3"><u>Your name : {{ user }}</u></font></div> 
-	    <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	      <h5><b>Task No.{{ task_id }} <font size="5" color="FF0000">[2nd Reading aloud]</font></b></h5>
-	      </div> -->
-	      <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-	        <div align="right"><b>Your name : {{ user_name }}</b></div>
-	        </div> -->
-d6672c475624781a7335fe7394cd5e91|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|22|1|V|htmldjango
-	<div class="card mt-4">
-fd7b5b10ad8bed9201f5161fe146787a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|97|1|V|htmldjango
-	    </div> 
-b19eb87e753bdbff43365558c4ee5f70|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|20|1|V|htmldjango
-	<hr />
-3adb9088b84f370a83f529543110bef2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|35|1|V|htmldjango
-	  <hr/>
-153710e1f1712490815a9645bf8d4c4b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|34|1|V|htmldjango
-	  </div>
-d8d101d2a7142783695e3c2af7a59db9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|97|1|V|htmldjango
-	</div> 
-314ebf2370ca324f361236aa5e1b1229|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|52|1|V|htmldjango
-	<a type="button" class="btn btn-success" id="next-btn" href="/app/{{task.id}}/{{next_turn}}" hidden>Next</a>
-a2e5c46bf371c6a0591e3d3420e809ec|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|86|1|V|htmldjango
-	      <button><a href="../{{task_id}}/{{next_turn}}">next</a></button>
-23948e51cdddd0e7dad64c14aae841cf|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/q_and_a.html|76|1|V|htmldjango
-	    <button><a href="../{{task_id}}/{{next_turn}}">next</a></button>
-6a241b67895abec701cdf80ed8faae4b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/q_and_a.html|75|1|V|htmldjango
-	    <!--<button type="submit" class="btn btn-outline-dark" onclick=location.href="../{{task_id}}/{{next_turn}}">NEXT⇨</button>-->
-58423249648a817557e8f403295d0b33|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|85|102|V|htmldjango
-	      <!--<button type="button" class="btn btn-secondary" onclick="location.href='../{{task.id}}/{{next_turn}}'">NEXT⇨</button>-->
-4001958a322cdace0ef70e2a698533b7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|81|1|V|htmldjango
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-	  </div>
-daf9e641b281cc77ecf74eee9363a6c6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|82|20|V|htmldjango
-	    <div class="form-group col-md-1">
-b082895fab4c56c1aba17dcc672fca3a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|83|10|V|htmldjango
-	    </div>
-44e030ce87fb4b412fb1d32e096e424e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|85|8|V|htmldjango
-	    <div class="form-group col-md-12">
-2da4e56c44308d93fb1f52c7c7c24e39|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|85|8|V|htmldjango
-	      <br>
-a76737032ef7c6d09a8a0aa7cbfc4d22|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|81|1|V|htmldjango
-	  <div class="col-sm">
-	    <a type="button" class="btn btn-success" id="next-btn" href="/app/{{task.id}}/{{next_turn}}" >Next</a>
-	  </div>
-0a9a91c76505bb9e9547b66d02cd212c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|89|1|V|htmldjango
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
-	<script>
-	  new Vue({
-	      el: '#app',
-	      data: {
-	          // 変数を宣言する部分
-	          status: 'init',     // 状況
-	          recorder: null,     // 音声にアクセスする "MediaRecorder" のインスタンス
-	          audioData: [],      // 入力された音声データ
-	          audioExtension: ''  // 音声ファイルの拡張子
-	        },
-	      methods: {
-	          startRecording() {
-	
-	              this.status = 'recording';
-	              this.audioData = [];
-	              this.recorder.start(); //start()メソッドで録音開始
-	
-	            },
-	          stopRecording() {
-	
-	              this.recorder.stop(); //stop()メソッドで録音停止
-	              this.status = 'ready';
-	
-	            },
-	          //ブラウザで録音された音声データの拡張子を取得
-	          getExtension(audioType) {
-	
-	              let extension = 'wav';
-	              const matches = audioType.match(/audio\/([^;]+)/); //正規表現で拡張子を取得
-	
-	              if(matches) {
-	
-	                  extension = matches[1]; //ブラウザのよって拡張子が異なる
-	                  //例）chrome：wavm, firefox：ogg
-	
-	                }
-	
-	              return '.'+ extension;
-	
-	            }
-	        },
-	      mounted() {
-	          // マイクアクセスの可否
-	          navigator.mediaDevices.getUserMedia({ audio: true })
-	          //アクセスできたら
-	            .then(stream => {
-	
-	                this.recorder = new MediaRecorder(stream);
-	                // 音声を保存する
-	                this.recorder.addEventListener('dataavailable', e => {
-	
-	                    this.audioData.push(e.data); //audioDataに音声を格納
-	                    this.audioExtension = this.getExtension(e.data.type); //拡張子を取得
-	
-	                  });
-	
-	                // 録音した音声をダウンロードする
-	                // （ここをデータベースに保存する処理にする）
-	                this.recorder.addEventListener('stop', () => {
-	
-	                    const audioBlob = new Blob(this.audioData);//音声データをBlob化
-	                    const url = URL.createObjectURL(audioBlob);//音声データの保存場所（URL 絶対パス）
-	
-	                    //特にここ以下を変える？
-	                    //タグを変えてアップロードする機能を持つタグを入れればよいのでは?
-	                    let a = document.createElement('a'); //aタグオブジェクト
-	                    a.href = url; //href属性を指定
-	                    a.download = Math.floor(Date.now() / 1000) + this.audioExtension; //download属性を指定
-	                    document.body.appendChild(a); //htmlaタグをに追加
-	
-	                    a.click(); //クリックしたらaタグが関連する処理を行う
-	
-	                  });
-	                this.status = 'ready';
-	
-	              });
-	
-	        }
-	    });
-	</script>
-10e0c359c8ffed06d8aa96d42a0be059|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|90|1|V|htmldjango
-	  var recorded_wavesurfer = WaveSurfer.create({
-	      container: '#waveform_recorded',
-	      scrollParent: false,
-	      backgroundColor: '#012C3D',
-	      cursorColor: '#FFFFFF',
-	      waveColor: '#3786BC',
-	      progressColor: '#3786BC',
-	      barHeight: 5,
-	      height: 70
-	    });
-	  var shadowing_vioce_path = "{{ task.shadowing_voice | safe }}";
-b6a46b77c06e4f5006d87fc8ec386d11|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|100|11|V|htmldjango
-	  recorded_wavesurfer.load('../../../media/' + shadowing_vioce_path);
-1a97de8c6a3d66165aef070a8d528c93|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|81|1|V|htmldjango
-	  var shadowing_vioce_path = "{{ task.shadowing_voice | safe }}";
-badeba60b42d6278bd85928a67a050c9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|48|60|v|htmldjango
-	 this.hidden=true; document.getElementById('play_btn').hidden= false" hidden
-7bdcb697e7f335b1f8db6eb358efaa7f|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|49|20|V|python
-	    4bannmewosyutoku
-75f8f574f0a96330dc93e861fdf64060|file:///Users/Kouiti/local_file/lets/lets_proj/app/models.py|282|1|V|python
-	    def get_all_minitask_by_task(self, task):
-d5240003a4ab5d2132d7ccd296b28355|file:///Users/Kouiti/local_file/lets/lets_proj/app/models.py|289|57|v|python
-	created_date
-bae8afdaea189a8f31bff88294a1c4d0|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|48|25|V|python
-	    minitask 4banme(task)
-796609dc90f559a84f4ab73fc87af84c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|27|22|v|python
-	history = History.objects.get(id=request.session["history_id"])
-160d80d9b422b6477843ab27df0f0b6c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|48|11|V|python
-	    history
-c1924ee6547dc0c3fc57f12a331bfab1|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|49|50|v|python
-	minitask
-aef9c8a7a1cf64cda8bac88423f7d1f1|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|52|26|V|python
-	    fourth_sh_voice_path =
-0b53bc8eca387761be641dab33936235|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|30|1|V|python
-	        voice_record.dnn_gop_score = 100
-7aac8c68bd19a24d37fd0728f2a685a7|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|31|24|v|python
-	n_gop_score 
-e9e3ddd5812d2018f555eb5f5ce6d867|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|82|1|V|htmldjango
-	  wavesurfer.load('../../../media/' + shadowing_vioce_path);
-478f3a4c51824ad23cb50c1c60670c0f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|98|34|v|htmldjango
-	task
-1f9faab30b3f51c894b7af12a2900163|file:///Users/Kouiti/local_file/lets/lets_proj/app/models.py|458|5|v|python
-	voice_record
-94cbb404527909c9a9ad591924170aee|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|72|10|V|python
-	        turn = 3
-be41880d18e6192dbcc924134d0aa57d|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|72|10|V|python
-	        task_type = "qa"
-a2d045ea44d1c4a63f6c24f0e1cfba2a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|53|1|V|htmldjango
-	        <a class="pointer" onclick="wavesurfer.play(0)">
-0a7c690c27e525826285beb16a36a844|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|58|1|V|htmldjango
-	        </a> 
-f977c175913c481b3ca909f4353ff8db|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|50|1|V|python
-	    print(fourth_minitask)
-0d7dcad9cfe9407d0c71935a5ccee712|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|51|11|v|python
-	fourth_minitask
-9903a648879bdaf46886af9a138c966c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|65|71|V|htmldjango
-	          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-forward-circle" viewBox="0 0 16 16">
-416c980bd1549a559861bd0f346fc6f9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|60|57|V|htmldjango
-	        <a class="pointer" onclick="wavesurfer.play(0)">
-	          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-skip-start-circle" viewBox="0 0 16 16">
-	            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-	            <path d="M10.229 5.055a.5.5 0 0 0-.52.038L7 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407v-5a.5.5 0 0 0-.271-.445z"/>
-	          </svg>
-	        </a> 
-51d860d6f981e5abbd62e4aad1f61ceb|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|48|1|V|python
-	    fourth_minitask = MiniTask.objects.get(task=task, task_type="SH", turn=4)
-7febf52f410154d037cf9b6619a14471|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|50|38|V|python
-	    print(MiniTask.objects.get(id=21))
-8b04d5e3775d298e78455efc5ca404d5|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|28|50|v|python
-	first
-ada9ec27f845f1d54419cac1a6a6f7e9|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|48|1|V|python
-	    task = Task.objects.get(id=task_id)
-a66568394a5c0091468290ebc0b771ad|file:///Users/Kouiti/local_file/lets/lets_proj/app/models.py|398|1|V|python
-	        voice_record = self.model(
-	            history=history,
-	            minitask=minitask,
-	            task_type=task_type,
-	            voice_record=voice_record,
-	            dnn_gop_score=dnn_gop_score,
-	        )
-30512cbbe3459f9aea6a2f07f179a566|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|28|34|v|python
-	History.objects.get(id=request.session["history_id"])
-93f45687755020dddc572f9ce82ef86c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|29|35|v|python
-	MiniTask.objects.get(task=task, turn=task_turn)
-5361aa344bef2eb544d96d420dc7e3f0|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|37|23|v|python
-	task_type
-114d53ad730ff9226650291c314b6f3f|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|39|27|v|python
-	dnn_gop_score
-9cdbe9809e66d8ddabe6f0ca8bbb6c82|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|27|27|V|python
-	        # voice_record = VoiceRecord()
-	        # voice_record.history = History.objects.get(id=request.session["history_id"])
-	        # voice_record.minitask = MiniTask.objects.get(task=task, turn=task_turn)
-	        # voice_record.voice_record = audio_file
-	        # voice_record.dnn_gop_score = 100
-	        # voice_record.task_type = "SH"
-	        # voice_record.save()
-36058b2cd97b94e78cf2781dfc14dd7b|file:///Users/Kouiti/local_file/lets/lets_proj/app/models.py|412|39|V|python
-	            print("message:" + e.message)
-95beefc1e7df81fcb4347e9b33f63849|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|52|12|V|python
-	        print(fourth_minitask)
-81644b16a5f0aa22da8a0014817d747c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|50|26|V|python
-	        fourth_minitask = MiniTask.objects.get(task=task, task_type="SH", turn=4)
-fe5e1618e1e912704f9e4dab5fa032b4|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|51|1|V|python
-	        fourth_minitask = MiniTask.objects.filter(task=task, task_type="SH")
-d941159b753d417a71da64977c2b090a|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|53|9|V|python
-	        r
-f78068903010ee7a27513523c79fb1dd|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|54|1|V|python
-	        print(sc_minitask)
-883894d2f1c06691ab8fe7da0201fc8c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|54|15|v|python
-	sc_minitask
-b059680ae70292dc392f9cffd00c0661|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|54|9|V|python
-	        print("----------------")
-5ce80fccc665abda0e1595f8515739c4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|111|34|V|htmldjango
-	  console.log(shadowing_vioce_path)
-07c73021a68b1918f4240d11157092cb|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|34|14|V|python
-	        print()
-413884f787b7ff74fcd8d5cadda70f5a|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|36|21|V|python
-	        return JsonResponse(content)
-d0abe4dc74564f410b0202e53c93ae90|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|36|9|V|python
-	        # return JsonResponse(content)
-bc2ee41ec7d8d86747fddeaccaf1875c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|35|1|V|python
-	        print(content)
-2c64e87965fa52ef89eac4d2e2bfcc75|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|52|73|v|python
-	task_turn
-3cd15f8f2940aff879df34df4e5c2cd1|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|58|15|v|python
-	history
-07f168f54e3f9cc791352d498c6655c9|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|48|8|V|python
-	    try:
-fa9a5b4609b2d454978a34a36e9af41d|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|63|25|V|python
-	    print(sc_voicerecord)
-60bb8523e21e27dc791d258ef1f4ad91|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|57|13|V|python
-	    print(history)
-	    print(sc_minitask)
-b326b5062b2f0e69046810717534cb09|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|41|115|v|htmldjango
-	true
-b9fb8891a16bb467c4db25a62cdf1318|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|41|96|v|htmldjango
-	pause_btn
-a288deccee38f3d60e812e5ad36c94f7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|41|74|v|htmldjango
-	 this.hidden=true; document.getElementById('pause_btn').hidden=false"
-917fe3f264fbe3fc527d17b4da8d74d3|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|84|1|V|htmldjango
-	  wavesurfer.on('finish', function () {
-	      wavesurfer.pause();
-	      document.getElementById("stop").click()
-	      document.getElementById("next-btn").hidden = false
-	    })
-72ff762408c8e26b90947b1893604b27|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|114|3|V|htmldjango
-	      wavesurfer.pause();
-b4fe5e58a46fc4056443eaa9b272dbe1|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|114|1|V|htmldjango
-	      document.getElementById("play_btn").hidden = false
-68934a3e9455fa72420237eb05902327|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|115|53|v|htmldjango
-	false
-7a86c157ee9713c34fbd7a1ee40f0c5a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|114|23|v|htmldjango
-	offset
-bb790937d174b228a4600493b9c24c06|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|114|23|V|htmldjango
-	      wavesurfer.skip(0)
-a3b34c0871dc2fd51eec5559b68f709d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|53|48|v|htmldjango
-	play
-13d3a222e00434d8399e835c4bba966e|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|40|20|V|python
-	    content["task"] = task
-0a319ca6d183afd4165658e26229b568|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|37|1|V|python
-	    task = Task.objects.all().get(id=task_id)
-e2ee78d76a8159deadc5bcc8c5d3931a|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|21|1|V|svg
-	<path d="M262.719 487.906C283.447 487.906 300.25 504.71 300.25 525.438L300.25 600.5C300.25 766.324 434.677 900.75 600.5 900.75 766.324 900.75 900.75 766.324 900.75 600.5L900.75 525.438C900.75 504.71 917.553 487.906 938.281 487.906 959.009 487.906 975.813 504.71 975.813 525.438L975.813 600.5C975.815 793.248 829.813 954.661 638.031 973.936L638.031 1125.94 863.219 1125.94C883.947 1125.94 900.75 1142.74 900.75 1163.47 900.75 1184.2 883.947 1201 863.219 1201L337.781 1201C317.053 1201 300.25 1184.2 300.25 1163.47 300.25 1142.74 317.053 1125.94 337.781 1125.94L562.969 1125.94 562.969 973.936C371.187 954.661 225.185 793.248 225.188 600.5L225.188 525.438C225.188 504.71 241.991 487.906 262.719 487.906Z" fill="#000000" fill-rule="nonzero" fill-opacity="1" transform="matrix(1.02415 0 0 1 1555 569)"/>
-ad2e5f3a9bfa27e82faf50f942a455db|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|12|1|V|svg
-	<rect x="1555" y="568" width="1231" height="1202"/>
-d735e6c868b28f22712c267c13684aaf|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|20|1|V|svg
-	<path d="M375.313 225.188C375.313 100.82 476.132 0 600.5 0 724.868-3.33344e-14 825.688 100.82 825.688 225.188L825.688 600.5C825.688 724.868 724.868 825.688 600.5 825.688 476.132 825.688 375.313 724.868 375.313 600.5L375.313 225.188Z" fill="#000000" fill-rule="nonzero" fill-opacity="1" transform="matrix(1.02415 0 0 1 1555 569)"/>
-d40386cba198c36076cb51f6995ac36d|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|19|1|V|svg
-	<g clip-path="url(#clip3)">
-e3b7174c4bf99fc5b92291d1592ef887|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|16|1|V|svg
-	<path d="M1196.5 1170C1196.5 631.799 1632.57 195.5 2170.5 195.5 2708.43 195.5 3144.5 631.799 3144.5 1170 3144.5 1708.2 2708.43 2144.5 2170.5 2144.5 1632.57 2144.5 1196.5 1708.2 1196.5 1170Z" stroke="#0070C0" stroke-width="114.583" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8" stroke-opacity="1" fill="#FFFFFF" fill-rule="evenodd" fill-opacity="1"/>
-70d512ad88ce42d8800bdfa6ac490f66|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|15|17|V|svg
-	<g clip-path="url(#clip0)" transform="translate(-1136 -137)">
-6aef3b7ad93290b5dcec82df498e8d94|file:///Users/Kouiti/local_file/lets/lets_proj/static/images/mic_blue.svg|24|4|V|svg
-	</g>
-cf272aa5b220fe22fa1d6dc8285265bb|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|44|1|V|htmldjango
-	    <!-- <a class="pointer" onclick="wavesurfer.play(0)"> -->
-	    <!--   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-skip-backward-circle" viewBox="0 0 16 16"> -->
-	    <!--     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> -->
-	    <!--     <path d="M11.729 5.055a.5.5 0 0 0-.52.038L8.5 7.028V5.5a.5.5 0 0 0-.79-.407L5 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407V8.972l2.71 1.935A.5.5 0 0 0 12 10.5v-5a.5.5 0 0 0-.271-.445z"/> -->
-	    <!--   </svg> -->
-	    <!-- </a> -->
-e0acd2d9f4cb927472a5b18dde1f7381|file:///Users/Kouiti/dotfiles/dotfiles/linklist.txt|8|1|V|text
-	vscode/keybindings.json     ${HOME}/Library/Application Support/Code/User/keybindings.json
-b8dd3ffb943228461a79037d80ec9cc5|file:///Users/Kouiti/dotfiles/dotfiles/linklist.txt|3|52|V|text
-	Fonts/Source Code Pro for Powerline.otf             ${HOME}/Library/Fonts/Source Code Pro for Powerline.otf
-c80ee0930ecfa261a3bbaf543f0fa4b2|file:///Users/Kouiti/dotfiles/dotfiles/linklist.txt|6|1|V|text
-	Fonts/Source Code Pro for Powerline.otf             ${HOME}/Library/Fonts/Source Code Pro for Powerline.otf
-	vscode/settings.json        ${HOME}/Library/Application\ Support/Code/User/settings.json
-	vscode/keybindings.json     ${HOME}/Library/Application\ Support/Code/User/keybindings.json
-a05b12e2cd2c13f95fc3999cee89a44a|file:///Users/Kouiti/dotfiles/script/init.sh|31|1|v|sh
-	${HOME}/dotfiles/
-18790608eff214e45758dbe5584c274a|file:///Users/Kouiti/dotfiles/script/init.sh|29|1|v|sh
-	ln -s 
-6118a413576dff18792549ebbce0c652|file:///Users/Kouiti/dotfiles/script/init.sh|29|6|V|sh
-	ln -s .zshrc ~/.zshrc
-63d8d316db0fe4e5d8188dba57fb0694|file:///Users/Kouiti/dotfiles/dotfiles/vscode/vscode-workspace/dotfiles.code-workspace|1|29|v|
-	arakawakouichi
-c3ae06f70363066574dc6f52338df7f5|file:///Users/Kouiti/dotfiles/dotfiles/vscode/vscode-workspace/dotfiles.code-workspace|1|29|v|
-	dotfiles
-57746cc8160496aefc9fb306b6ba24e3|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|122|28|v|python
-	task_id
-e557b14e646f9f99bc621fc2f874ddf0|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|121|13|V|python
-	        elif task[0].task_type == "RF":
-00abef0855da94d66abe7c4fa4387a10|file:///Users/Kouiti/local_file/lets/lets_proj/app/add_dbdata.py|124|1|V|python
-	    MiniTask.objects.create_record(task=task, task_type="RA")
-	    MiniTask.objects.create_record(task=task, task_type="SH")
-b9c979594ab3d8e21d4ee1a47780ee33|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|39|1|V|htmldjango
-	      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
-	        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-	        <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"/>
-	      </svg>
-fa74ce479f2fa93459663ff08efb670e|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|43|1|V|htmldjango
-	<div class="svg-front">
-0a3a0b592b9c285e050805307cee87c2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|47|1|V|htmldjango
-	</div>
-f056928c5d30b8230e7cecdb3f731a25|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|48|1|V|htmldjango
-	<div class="svg-back">
-13d02e359ebf522c81b85339c4a1e5ae|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|50|1|V|htmldjango
-	    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-057c3f06f940c49f1d38fd72fb7c0191|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|55|5|V|htmldjango
-	    <circle cx="8" cy="8" r="8"/>
-d86fbb8845f5895c90dadb8bc4ee49ec|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|50|1|V|htmldjango
-	<div class="svg-back">
-	  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
-	  </svg>
-	</div>
-	<div class="svg-back">
-	  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
-	  </svg>
-	</div>
-3e3b1ac95d9fc7196d0ac39a291bc032|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|44|66|v|htmldjango
-	fill="currentColor"
-1c4edd9e9f08ef52a147abf604e580bd|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|49|42|V|htmldjango
-	    <!-- <circle cx="8" cy="8" r="8"/> -->
-a4f18a2dac547ac13e2f0ac46569e26a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|45|5|V|htmldjango
-	    <path fill="red" d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0V4z"/>
-8a3232a858293df73bfee6cbd24966fb|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|44|1|V|htmldjango
-	  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 16 16">
-8f1ac089cb37dff736402ce33af2df4f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|50|1|V|htmldjango
-	  </svg>
-de45918e3216b791446c7a009064b6f7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|48|30|V|htmldjango
-	  <svg width="50" height="50">
-708c31871916e566d7f7f5ff815197c9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|48|1|V|htmldjango
-	    <g>
-67b28d5ff01f2aa0d5295bf2b148d3b1|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|50|6|V|htmldjango
-	    <path width="50" height="50" d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-72a13b958547a43282a7f1674dd9ab21|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|49|12|v|htmldjango
-	 width="50" height="50"
-fddeabdb16069e026171b504d972d119|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|47|34|V|htmldjango
-	    <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-b8a8790a8f6f25d4cd71476a44ffe286|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|47|7|v|htmldjango
-	 style='width:50; height:50;'
-fdbfef50b664d4a12c3843ba6be77938|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|47|46|V|htmldjango
-	    <g style='width:50; height:50;' width="1">
-26af3aa79f9f06c9ecc445ddefeb0a1a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|46|48|V|htmldjango
-	    <g fill="white" stroke="green" stroke-width="5">
-f5038a50ab6788e95b92c18a355cedfb|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|49|5|V|htmldjango
-	    </g>
-8eb5be04d0e187bf351bc38aacf7e5c2|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|43|1|V|htmldjango
-	<div>
-	  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="-5 -5 26 26">
-	    <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
-	    <g>
-	      <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-	      <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-	    </g>
-	  </svg>
-	</div>
-1d5e4f4c0256036865fa476e74e367b7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|52|1|V|htmldjango
-	<div>
-	  <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="-7 -7 30 30">
-	    <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
-	    <g>
-	      <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-	      <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-	    </g>
-	  </svg>
-	</div>
-e90583092e72aa727151bca3611de222|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|11|v|htmldjango
-	 class="scale" id="mic-blue"
-041b47ed17aae463345bf2a1b88bdbf6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|43|1|V|htmldjango
-	<div class="scale" id="mic-blue">
-	  <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
-	    <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
-	    <g>
-	      <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-	      <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-	    </g>
-	  </svg>
-	</div>
-48d6215903dff56238e52e8891380c8f|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|52|28|v|htmldjango
-	blue
-81b9da9186b206dac61b0ddf737850e4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|30|V|htmldjango
-	      <img src="{% static '/images/mic_blue.svg' %}" width="90px" height="90px" />
-e36e05e65b1304418c1bc31ce038f20d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|35|30|V|htmldjango
-	      <img class="scale" id="mic-red" src="{% static '/images/mic_red.svg' %}" width="90px" height="90px" hidden/>
-4d1439d4c9685ca98057359c635b0372|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|41|1|V|htmldjango
-	<div class="scale" id="mic-blue">
-	  <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
-	    <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
-	    <g>
-	      <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-	      <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-	    </g>
-	  </svg>
-	</div>
-	<div class="scale" id="mic-red">
-	  <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
-	    <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
-	    <g>
-	      <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-	      <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-	    </g>
-	  </svg>
-	</div>
-20caa1e57b1f9348350a749d18f2026a|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|37|40|v|htmldjango
-	#2770C0
-cdd8f3284462bcaf155b0116fbb495e4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|36|1|V|htmldjango
-	        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
-4286bc4f18945854d95d21f04c3280aa|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|43|9|V|htmldjango
-	            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-1d4016f8e5b3acd078e7454f9a6ec119|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|37|1|V|htmldjango
-	          <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
-97495438b53b5750ea7c3819c4319cd1|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|45|11|V|htmldjango
-	              <path fill="#2770C0" d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-e4df52d6fe666dbf48c297e6871ab64b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|45|135|V|htmldjango
-	              <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-9ac0cf07c54fb4df56999c4842955653|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|76|1|V|htmldjango
-	    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	      <div class="card-body">
-	        <div id="waveform"></div>
-	        <div id="waveform_recorded"></div> 
-	      </div>
-	    </div>
-e82fe3b1d9e1bffba54538c740343fe1|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|44|20|v|htmldjango
-	 fill="#2770C0" 
-ccac8a66d468e2522611be86933cc0d9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/script.html|48|21|v|htmldjango
-	pointer
-ff8c706dd8c82f7aa79b21caa9852d92|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|18|1|V|html
-	  <script type="text/javascript" src="{% static 'js/recording.js' %}" defer></script>
-12661759c2343cb1fa6cab2477bbbefe|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|3|1|V|htmldjango
-	{% load static %}
-	<script type="text/javascript" src="{% static 'js/recording.js' %}" defer></script>
-fb89b9c2b78261ef2ab506e30d9c84f7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|4|51|v|htmldjango
-	recording
-6b71de86bd87a004eda1d9c84ea29366|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/mousecheck.js|105|1|V|javascript
-	// document.querySelector("audio-form").hidden = true
-	function GetAudio(audioBlob) {
-	    console.log(">>>>>>>>get audioblob", audioBlob);
-	    const audioUrl = URL.createObjectURL(audioBlob);
-	    var form = new FormData();
-	    form.append("audio", audioBlob);
-	    //console.log(wavfromblob)
-	    var csrf = $('input[name="csrfmiddlewaretoken"]').val();
-	    var data = new FormData();
-	    data.append("recorded_audio", audioBlob);
-	    data.append("csrfmiddlewaretoken", csrf);
-	    $.ajax({
-	        url: location.href,
-	        type: "POST",
-	        processData: false,
-	        contentType: false,
-	        // contentType:'application/json; charset=UTF-8',
-	        // data:form,
-	        data: data,
-	        error: function (request, status, error) {
-	            alert(error);
-	        }
-	    }).done(function (response) {
-	        recorded_wavesurfer.load("../../../media/" + response.voice_record);
-	    });
-	}
-9f8983739a593943e9687d2b8c5eaa81|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|192|1|V|htmldjango
-	                    recorded_wavesurfer.loadBlob(audioBlob);
-57a9b485ba91a92bb23b9690d0cd6b2b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|191|1|V|htmldjango
-	                    const audioBlob = new Blob(this.audioData);//音声データをBlob化
-	                    recorded_wavesurfer.loadBlob(audioBlob);
-6bdbe732b50f873bbe3411b3aa2d0281|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/mousecheck.js|17|1|V|javascript
-	    var audioBlob = exportWAV(audioData);
-	    GetAudio(audioBlob);
-f69d2abc2b1528db1df31d98e9c88798|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|105|26|v|javascript
-	FirstSlide
-bae22dbe51c06ea80e6599ceb09c64a4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|7|1|V|javascript
-	class MySection extends React.Component {
-	    render() {
-	        return (
-	            <div className="section">
-	                <h3>{this.props.content}</h3>
-	            </div>
-	        );
-	    }
-	}
-d72dc67b322f82eb0945a90086dee08a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|26|7|v|javascript
-	SecondSlide
-2ef781f58ed105d714de3b2aaf0f8b46|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|54|7|v|javascript
-	ThirdSlide
-9f17a76973cb5962859798989b212e3c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|27|1|V|javascript
-	class ThirdSlide extends React.Component {
-	    render() {
-	        return (
-	            <div className="section">
-	                <img src="images/foods/foods.jpg" className="img-fluid bg-img" alt="Responsive image" />
-	                <span>
-	                    <h1>メニュー Menu</h1>
-	                    <p>
-	                        <a href="lunch.html">コース</a>
-	                    </p>
-	                    <p>
-	                        <a href="lunch.html">料理</a>
-	                    </p>
-	                    <p>
-	                        <a href="lunch.html">ドリンク</a>
-	                    </p>
-	                    <p>
-	                        <a href="lunch.html">ランチ</a>
-	                    </p>
-	                    <p>
-	                        <a href="lunch.html">テイクアウト</a>
-	                    </p>
-	                </span>
-	            </div>
-	        );
-	    }
-	}
-6f1d817172442b611ea0757a70105416|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|30|16|V|javascript
-	                <img src="images/foods/foods.jpg" className="img-fluid bg-img" alt="Responsive image" />
-6352d9f737edb9dd2b644d9fa6fc4812|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|31|1|V|javascript
-	                    <h1>メニュー Menu</h1>
-	                    <p>
-	                        <a href="lunch.html">コース</a>
-	                    </p>
-	                    <p>
-	                        <a href="lunch.html">料理</a>
-	                    </p>
-	                    <p>
-	                        <a href="lunch.html">ドリンク</a>
-	                    </p>
-	                    <p>
-	                        <a href="lunch.html">ランチ</a>
-	                    </p>
-	                    <p>
-	                        <a href="lunch.html">テイクアウト</a>
-	                    </p>
-7cb63d0ec642848aa8d483ac1b5aa4e0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|16|1|V|javascript
-	                    <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
-	                    <p>フランスの家庭料理の美味しさをベースに</p>
-	                    <p>親しみやすい料理を</p>
-	                    <p>お出しする事を心がけています</p>
-84039615d97e078a6f6f2d695441fbea|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|16|21|V|javascript
-	                    <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
-2cc80610f7be852b26f10fee7c278dd1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|18|21|V|javascript
-	                    <p>お出しする事を心がけています</p>
-aeabeccc255b4de3512086ca6632b9ba|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|64|5|V|css
-	        /* border-bottom: solid; */
-a161d7a0a4f132525e4ebf8588b17324|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|54|1|V|css
-	.toppage #maman_title {
-1b28e8e49a2629b60b24c6c580ec40de|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|13|1|V|javascript
-	                        </h1>
-96ac1bfc401ae8a657157dd65644dc55|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|11|1|V|javascript
-	                        <h1>
-6fe3c0251104ed35a93c56882ee3cedd|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|13|24|V|javascript
-	                    <h1>
-0d7df99d2c3c1a2679cb728644bd0eac|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|14|25|V|javascript
-	                    </h1>
-ef3be0d7133eee96319d44f309c2b27c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|64|25|V|css
-	        border-width: 1.5px;/*5ピクセルの太さにする*/
-b867ad086587424e25eec94b990b6881|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|62|25|V|css
-	        font-weight: bold;
-4174dc35f10c6b7b1732478f19bb13eb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|55|1|V|css
-	    width:60vw;
-7ac62d2ab89e3ba593ff27b14b423d67|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|57|1|V|css
-	    margin:0;
-4064d033c8f8ed98ab8ac950f31710da|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|11|1|V|javascript
-	                <img src="images/maman1.jpeg" className="img-fluid bg-img" alt="Responsive image" />
-ab4f3ccba74857c5f2ba0d5b7dbf65e1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|31|45|v|javascript
-	jpeg
-7e7acd0117eeb58b8f1fc7c2e95ebd27|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|26|30|v|javascript
-	</div>
-	
-14a08c4c1a91fbb4df46721828f66cd0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|26|1|V|javascript
-	            <div class="row">
-e3b6c7818808cf0b9022c774f39d91b5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|34|1|V|javascript
-	            </div>
-38accae1b36c7f7a23e36a1204fd2c20|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|34|1|V|javascript
-	            <div class="com-sm">
-6f9d5f093f87da0a8d4335cf954c3256|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|26|1|V|javascript
-	                    <div class="row">
-b6632bd8255877292f4b977d03fe78ae|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|34|1|V|javascript
-	                        <div class="com-sm">
-05bb70ea0803527305d4b6acef5ecc7a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|38|1|V|javascript
-	                        </div>
-ba391c1ccdffcb90fb4c46b28ad92655|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|36|1|V|javascript
-	                                <div class="col-6">
-3999039cc9b4d69a327e522916c0d484|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|42|1|V|javascript
-	                                </div>
-1788e126e9fa62248d22bb80557d616e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/Footer.js|8|1|V|javascript
-	                        <a href="https://www.instagram.com/maman2030toward/" target="_blank">
-	                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-	                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-	                            </svg>
-	                        </a>
-04a7d3d609129a9296bf7ac0608c2097|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|44|40|v|javascript
-	</p>
-9f7bd84c47aa75b96b48cae17f150af7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|45|1|V|javascript
-	                                        <a href="https://www.instagram.com/maman2030toward/" target="_blank">
-dec507aa0e479a930c13bf9de786b6d0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|56|1|V|javascript
-	                                        </a>
-3b6039d8e0f973d65420faaca7aac385|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|61|41|V|javascript
-	                                        <a href="https://www.instagram.com/maman2030toward/" target="_blank">
-	                                        </a>
-3892fbc312512a316c8e97b8f6c2f7d8|file:///Users/Kouiti/local_file/homepage/react-app/react-app/public/index.html|6|62|v|html
-	　⇒png画像の場合
-1d6cccc91eb3d063d043327aefa9fde0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/public/index.html|6|65|V|html
-	        <link rel="icon" type="image/png" href="images/maman4.png">
-0c0577431e417423d9a3a23d4934e8d5|file:///Users/Kouiti/local_file/homepage/react-app/react-app/public/index.html|21|1|V|html
-	
-	        <link rel="icon" type="image/png" href="images/maman4.png">
-ae81a3fb0f7445aa835458de3f8089fc|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|43|1|V|javascript
-	                                <div class="col-2">
-568170e0ec601ceaa1e98baae47a81fd|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|57|1|V|javascript
-	                                </div>
-	                                <div class="col-2">
-f48c303a940be85deed83f81aad3ab10|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|89|33|V|javascript
-	                                    </p>
-0eba8e74b62f316c51d05397ed637718|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|44|33|V|javascript
-	                                    <p>
-168864bc1ad110c7816bf9efbf80eead|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|77|18|V|javascript
-	                                            top="10px"
-9356ed3889b3835b9bd26f4d2d6ddffe|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|72|79|v|javascript
-	 style={{ marginTop: "10px" }}
-f0478ef2e960b05e2bba6b2bb2679002|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|71|1|V|javascript
-	                                <div class="col-2" style={{ marginTop: "50px" }}>
-194397394f65f7506bc1d4a1f2c5cf84|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|71|1|V|javascript
-	                                <div class="col-2" style={{ marginTop: "30px" }}>
-769722d8a8c7f10e7da34cf8be3dfe7d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|40|49|V|javascript
-	                                        style={{ borderRadius: "50%" }}
-50cbaa144b538ed45a776ae875c291ea|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|39|61|v|javascript
-	marginTop
-8aceb58c85d8223cf8d84e603e40baec|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|26|41|V|javascript
-	                        <div class="col-sm">
-1ab8a038103f843aaecbbb84ca3a4a80|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|82|34|V|javascript
-	                            </div>
-6efe362b97f90a358613aaa247d914a6|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|83|26|V|javascript
-	                    </div>
-f50c8927c563a04431c1a758e9267491|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|33|1|V|javascript
-	                        <div class="ml-4" style={{ width: "120px" }}>
-adb115059e28d960fa8badfac5516667|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|81|23|v|javascript
-	center
-04db2349b87bc1dd7808f1694afe4ccc|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|33|1|V|javascript
-	                        <div class="col-6" style={{ width: "120px" }}>
-deb7832688f8a3aacd67319f53e9b217|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|32|25|V|javascript
-	                    <center>
-d5696090fb3ccc0f1072977fb0e8ef6e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|83|21|V|javascript
-	                    </center>
-f3cd56212d6ed148f5954780ba9d2230|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|33|32|V|javascript
-	                        <center>
-ba51b92bf433c4bd0dbad68ecb7e0cf6|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|81|33|V|javascript
-	                        </center>
-bd9299002eaff38538718e53a8cbbf0e|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|32|1|V|javascript
-	                                    <center>
-cadab35124e3886c4f82dead5dd7a08c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|33|1|V|javascript
-	                        <div class="col-4" style={{ width: "120px" }}>
-17b49f9285b23538298044af8a3f3673|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|33|43|v|javascript
-	 style={{ width: "120px" }}>
-45fb66a7f7a26fc187381409593180a8|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|33|1|V|javascript
-	                        <div class="col-3"></div>
-8f7a0bed93ae423756a551c82a1b7817|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|67|1|V|javascript
-	                                <svg
-	                                    xmlns="http://www.w3.org/2000/svg"
-	                                    width="25"
-	                                    height="25"
-	                                    fill="currentColor"
-	                                    class="bi bi-telephone-fill"
-	                                    viewBox="0 0 16 16"
-	                                >
-	                                    <path
-	                                        fill-rule="evenodd"
-	                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-	                                    />
-	                                </svg>
-cee0caf13edd248efd58eb56fa02cf00|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|66|1|V|javascript
-	                            <a href="tel:079-268-7070" target="_blank">
-7b26f74896948c9d41afcd8810eee02c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Test.js|1|1|V|javascript
-	import "static/css/test.css";
-	
-	import React from "react";
-	import "fullpage.js/vendors/scrolloverflow";
-	import ReactFullpage from "@fullpage/react-fullpage";
-	
-	class FirstSlide extends React.Component {
-	    render() {
-	        return (
-	            <div className="section">
-	                <img src="images/maman1.jpeg" className="img-fluid bg-img" />
-	                <span>
-	                    <img src="images/title0.png" alt="フレンチ食堂ママン" id="maman_title" />
-	                    <p>フランスの家庭料理の美味しさをベースに 親しみやすい料理を</p>
-	                </span>
-	            </div>
-	        );
-	    }
-	}
-	
-	class SecondSlide extends React.Component {
-	    render() {
-	        return (
-	            <div className="section" style={{ backgroundColor: "#583F2A" }}>
-	                <span>
-	                    <h1>フレンチ食堂ママン</h1>
-	                    <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
-	                    <p>フランスの家庭料理の美味しさをベースに</p>
-	                    <p>親しみやすい料理を</p>
-	                    <p>お出しする事を心がけています</p>
-	                    <div class="mt-4"></div>
-	                    <div class="row">
-	                        <div class="col-3"></div>
-	                        <div class="col-4" style={{ width: "120px" }}>
-	                            <img src="images/maman4.png" className="img-fluid" />
-	                        </div>
-	                        <div class="col-1" style={{ marginTop: "30px" }}>
-	                            <a href="https://www.instagram.com/maman2030toward/" target="_blank">
-	                                <svg
-	                                    xmlns="http://www.w3.org/2000/svg"
-	                                    width="25"
-	                                    height="25"
-	                                    fill="currentColor"
-	                                    class="bi bi-instagram"
-	                                    viewBox="0 0 16 16"
-	                                >
-	                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-	                                </svg>
-	                            </a>
-	                        </div>
-	                        <div class="col-1" style={{ marginTop: "30px" }}>
-	                            <a href="https://www.hotpepper.jp/strJ001042933/" target="_blank">
-	                                <svg
-	                                    xmlns="http://www.w3.org/2000/svg"
-	                                    width="25"
-	                                    height="25"
-	                                    fill="currentColor"
-	                                    class="bi bi-info-circle-fill"
-	                                    viewBox="0 0 16 16"
-	                                >
-	                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
-	                                </svg>
-	                            </a>
-	                        </div>
-	                        <div class="col-1" style={{ marginTop: "30px" }}>
-	                            <a href="tel:079-268-7070" target="_blank">
-	                                <svg
-	                                    xmlns="http://www.w3.org/2000/svg"
-	                                    width="25"
-	                                    height="25"
-	                                    fill="currentColor"
-	                                    class="bi bi-telephone-fill"
-	                                    viewBox="0 0 16 16"
-	                                >
-	                                    <path
-	                                        fill-rule="evenodd"
-	                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-	                                    />
-	                                </svg>
-	                            </a>
-	                        </div>
-	                        <div class="col-2"></div>
-	                    </div>
-	                </span>
-	            </div>
-	        );
-	    }
-	}
-	
-	class ThirdSlide extends React.Component {
-	    render() {
-	        return (
-	            <div className="section">
-	                <img src="images/foods/foods.jpg" className="img-fluid bg-img" />
-	                <span>
-	                    <h1>メニュー Menu</h1>
-	                    <p>
-	                        <a href="lunch.html">コース</a>
-	                    </p>
-	                    <p>
-	                        <a href="lunch.html">料理</a>
-	                    </p>
-	                    <p>
-	                        <a href="lunch.html">ドリンク</a>
-	                    </p>
-	                    <p>
-	                        <a href="lunch.html">ランチ</a>
-	                    </p>
-	                    <p>
-	                        <a href="lunch.html">テイクアウト</a>
-	                    </p>
-	                </span>
-	            </div>
-	        );
-	    }
-	}
-	
-	class FourthSlide extends React.Component {
-	    render() {
-	        return (
-	            <div className="section">
-	                <img src="images/layout.jpg" className="img-fluid bg-img" />
-	                <span>
-	                    <h1>店舗情報 Infomation</h1>
-	                    <div class="row">
-	                        <div class="col-sm">
-	                            <iframe
-	                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6669929889135!2d134.6325210152366!3d34.86459388039269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1fb4a6aab83%3A0x29aed1cf46efdcf8!2z44Oe44Oe44Oz!5e0!3m2!1sja!2sjp!4v1636499221264!5m2!1sja!2sjp"
-	                                width="100%"
-	                                height="100%"
-	                                style={{ border: 0 }}
-	                                allowfullscreen=""
-	                                loading="lazy"
-	                            ></iframe>
-	                        </div>
-	                        <div class="col-sm">
-	                            <p>【ランチ】11:00〜14:00</p>
-	                            <p>【ディナー】17:30〜20:00</p>
-	                            <p>月曜定休(祝祭日は営業)</p>
-	                            <p>兵庫県姫路市飾西41-1</p>
-	                            <p>
-	                                <a href="tel:079-268-7070" target="_blank">
-	                                    <svg
-	                                        xmlns="http://www.w3.org/2000/svg"
-	                                        width="25"
-	                                        height="25"
-	                                        fill="currentColor"
-	                                        class="bi bi-telephone-fill"
-	                                        viewBox="0 0 16 16"
-	                                    >
-	                                        <path
-	                                            fill-rule="evenodd"
-	                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-	                                        />
-	                                    </svg>
-	                                    079-268-7070
-	                                </a>
-	                            </p>
-	                        </div>
-	                    </div>
-	                </span>
-	            </div>
-	        );
-	    }
-	}
-	
-	export const Test = () => (
-	    <div class="toppage">
-	        <ReactFullpage
-	            licenseKey={"C5C881D6-81D74A73-AB857381-6D757637"}
-	            render={({ state, fullpageApi }) => {
-	                return (
-	                    <div>
-	                        <FirstSlide />
-	                        <SecondSlide />
-	                        <ThirdSlide />
-	                        <FourthSlide />
-	                    </div>
-	                );
-	            }}
-	        />
-	    </div>
-	);
-7d1cfd1457c844241bee36dd8371c6b4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|1|1|V|javascript
-	import React from "react";
-	import "static/css/top.css";
-	
-	class Top extends React.Component {
-	    render() {
-	        return (
-	            <div class="toppage">
-	                <div class="content">
-	                    <img src="images/maman1.jpeg" class="img-fluid blur" alt="Responsive image" />
-	                    <span>
-	                        <img src="images/title0.png" alt="フレンチ食堂ママン" id="maman_title" />
-	                        <p>"ママン"は、フランス語で"お母さん"という意味です。</p>
-	                        <p>フランスの家庭料理の美味しさをベースに</p>
-	                        <p>親しみやすい料理を</p>
-	                        <p>お出しする事を心がけています</p>
-	                    </span>
-	                </div>
-	                <div class="content">
-	                    <img src="images/foods/foods.jpg" class="img-fluid blur" alt="Responsive image" />
-	                    <span>
-	                        <h1>メニュー Menu</h1>
-	                        <p>
-	                            <a href="lunch.html">コース</a>
-	                        </p>
-	                        <p>
-	                            <a href="lunch.html">料理</a>
-	                        </p>
-	                        <p>
-	                            <a href="lunch.html">ドリンク</a>
-	                        </p>
-	                        <p>
-	                            <a href="lunch.html">ランチ</a>
-	                        </p>
-	                        <p>
-	                            <a href="lunch.html">テイクアウト</a>
-	                        </p>
-	                    </span>
-	                </div>
-	                <div class="content">
-	                    <img src="images/layout.jpg" class="img-fluid blur" alt="Responsive image" />
-	                    <span>
-	                        <h1>店舗情報 Infomation</h1>
-	                        <div class="row">
-	                            <div class="col-sm">
-	                                <iframe
-	                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6669929889135!2d134.6325210152366!3d34.86459388039269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1fb4a6aab83%3A0x29aed1cf46efdcf8!2z44Oe44Oe44Oz!5e0!3m2!1sja!2sjp!4v1636499221264!5m2!1sja!2sjp"
-	                                    width="100%"
-	                                    height="100%"
-	                                    style={{ border: 0 }}
-	                                    allowfullscreen=""
-	                                    loading="lazy"
-	                                ></iframe>
-	                            </div>
-	                            <div class="col-sm">
-	                                <p>【ランチ】11:00〜14:00</p>
-	                                <p>【ディナー】17:30〜20:00</p>
-	                                <p>月曜定休(祝祭日は営業)</p>
-	                                <p>兵庫県姫路市飾西41-1</p>
-	                                <p>079-268-7070</p>
-	                            </div>
-	                        </div>
-	                    </span>
-	                </div>
-	            </div>
-	        );
-	    }
-	}
-	export default Top;
-0cbc6611f5540bd0809a388dc95a615b|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|167|14|v|javascript
-	Test
-720abfa24731e7c2a0b077517d7d9a89|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|49|1|V|javascript
-	export default Top;
-b5c30e011d4bab3104140118c8816346|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|185|1|V|javascript
-	default ex
-3f9d6d5406d40b7a60a300d3fa9f6f68|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|2|1|V|javascript
-	import "static/css/top.css";
-2171d3c14bce67fe8b264676b0962a50|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Top.js|1|1|V|javascript
-	import "static/css/test.css";
-6905019448118ef53e1d2c0b34eeee9f|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|19|12|V|javascript
-	            <img src="/images/maman1_1.jpeg" class="img-fluid" alt="Responsive image" style={styles.content_blur} />
-2b87543c9c26f373c9e2c71a00b640fb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|19|14|V|javascript
-	            /*
-fa770b8dbca3b9c771a75dfa632369a9|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|20|14|V|javascript
-	            */
-f6708374e5e68615660ea99ede82a433|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|35|1|V|javascript
-	    content_span: {
-	        color: "white",
-	        position: "absolute",
-	        top: "50%",
-	        left: "50%",
-	        MsTransform: "translate(-50%,-100%)",
-	        WebkitTransform: "translate(-50%,-100%)",
-	        transform: "translate(-50%,-100%)",
-	        width: "90vw",
-	        margin: "0",
-	        padding: "0"
-	    },
-	    content_slide: {
-	        color: "white",
-	        position: "absolute",
-	        top: "50%",
-	        left: "50%",
-	        MsTransform: "translate(-50%,90%)",
-	        WebkitTransform: "translate(-50%, 90%)",
-	        transform: "translate(-50%,90%)",
-	        width: "93vw",
-	        margin: "0",
-	        padding: "0"
-	    },
-8d98aeede19e7b10ce5d965ffd38a2bf|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|42|1|V|javascript
-	        margin: "0"
-dcdfe917484762f0b3f72dc16763682c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|3|1|V|css
-	body {
 8551342cbe1b6dfdf43746069d7818a7|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/top.css|49|1|V|css
 	    filter: blur(2px) contrast(120%) brightness(40%);
 2c04f98759d784b2d79bd72e8df2457c|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|6|29|v|css
@@ -1445,3 +93,1737 @@ aaabf0d39951f3e6c3e8a7911df524c2|file:///Users/Kouiti/local_file/homepage/react-
 	        margin-bottom: 70px;
 09429335004bd27bafbc65a907c57faa|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|65|9|V|css
 	    margin: 150px 0px
+949235d342a640ae6030cdc578028ac7|file:///Users/Kouiti/local_file/maman-homepage/.gitignore|1|13|V|
+	go-app/crypto/
+9381a7bbd03577d6d8720c7f35c94ffa|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/.gitignore|3|1|V|
+	log/
+97aefd0d527b934f1d99a682da8fe6a9|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/.gitignore|23|1|V|
+	lib/
+08974c4db825d8b8f21e95b448933eec|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|5|1|V|vim
+	set tabstop=2          "タブを何文字の空白に変換するか
+	set shiftwidth=2       "自動インデント時に入力する空白の数
+66001a5c422458c62930c519cd0ffd95|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|17|1|V|html
+	  <script type="text/javascript" src="{% static 'js/sidebar.js' %}" defer></script>
+d48fd9109edf6c454151a56200eb6c43|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|17|1|V|html
+	  <link rel="stylesheet" href="{% static 'css/sidebar.css' %}">
+0838fecfbd2ae7e09c7871ecf6313a4b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|20|47|v|html
+	sidebar
+0a4e5103a5c4beeced7bb33bbd457737|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/progress.js|4|1|V|javascript
+	setInterval(function () {
+	    $(".progress .circle:nth-of-type(" + i + ")").addClass("active");
+	
+	    $(".progress .circle:nth-of-type(" + (i - 1) + ")")
+	        .removeClass("active")
+	        .addClass("done");
+	
+	    $(".progress .circle:nth-of-type(" + (i - 1) + ") .label").html("&#10003;");
+	
+	    $(".progress .bar:nth-of-type(" + (i - 1) + ")").addClass("active");
+	
+	    $(".progress .bar:nth-of-type(" + (i - 2) + ")")
+	        .removeClass("active")
+	        .addClass("done");
+	
+	    i++;
+	
+	    if (i == 0) {
+	        $(".progress .bar").removeClass().addClass("bar");
+	        $(".progress div.circle").removeClass().addClass("circle");
+	        i = 1;
+	    }
+	}, 1000);
+23cb13972720688592255200ebadda04|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|31|16|V|css
+	  margin-left: -3px;
+3bfe50659ce8276c175dcead97f4b5ad|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|31|16|V|css
+	  margin-right: -3px;
+54816dcd7fdf8dec0937781b253a198a|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|108|12|v|python
+	MiniTask.objects.filter(task_id=task_id, turn=task_turn)
+6dad038fd83fc82a391931898cf71486|file:///Users/Kouiti/local_file/lets/lets_proj/app/models.py|282|9|v|python
+	get_all_minitask_by_task
+46550481035d5c37169ea460eb81a05e|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|95|14|v|python
+	Task.objects.all().get(id=task_id),
+23d0435bc532b01282c06501d3591b77|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|96|1|V|python
+	        task=Task.objects.all().get(id=task_id),
+6327063e5d76b1442bf9f52c1037b3c9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|36|1|V|html
+	        <div class="progress">
+3486592f946726a2b0f14413b53a6f57|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|35|1|V|html
+	        {% if next_turn -1 == mt.turn %}
+d2461a2fe10aefa1408135da7f45ba42|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|36|1|V|html
+	        {% if next_turn -1 < mt.turn %}
+a5f80fdcfacbff49112547401ec25358|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|36|1|V|html
+	        {% endif %}
+7d3b881b05b6c1b0b3a6bda122271c49|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|45|1|V|html
+	          <div class="circle done">
+	            <span class="label">1</span>
+	            <span class="title">Personal</span>
+	          </div>
+4611d2035de33ed74d84cbda575ac6d3|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|35|1|V|html
+	          {% if next_turn -1 == mt.turn %}
+	            
+	          {% endif %}
+045c98885894278d8343d802830287a6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|58|1|V|html
+	          <span class="bar half"></span>
+	          <div class="circle active">
+	            <span class="label">3</span>
+	            <span class="title">Payment</span>
+	          </div>
+bc95dfc14146aa23e43f2ea7af04d310|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|42|11|V|html
+	            
+b39001359a2c8eec7ce2af10f98de192|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|57|1|V|html
+	          <span class="bar done"></span>
+11e4e89e9156ef0722183d4caff0f05b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|68|1|V|html
+	          <span class="bar"></span>
+	          <div class="circle">
+	            <span class="label">4</span>
+	            <span class="title">Review</span>
+	          </div>
+2ab65ff156333f2058f8a6b0cefdbdbf|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|67|1|V|html
+	          </div>
+	          <span class="bar"></span>
+4f5ca3211687916f7e63aa30ae505196|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|56|11|v|html
+	{{ mt.task_type }}
+41b394758330c83757856aa482c79977|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|56|10|V|html
+	          
+fdce2937f7a078f59937671a69940853|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|49|1|V|html
+	          {% if turn > mt.turn %}
+	            <span class="bar"></span>
+	            <div class="circle">
+	              <span class="label">4</span>
+	              <span class="title">{{ mt.task_type }}</span>
+	            </div>
+	          {% endif %}
+b5457aeffcb08733f418ee594d580a3d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|49|1|V|html
+	          {% if turn == mt.turn %}
+	            <span class="bar half"></span>
+	            <div class="circle active">
+	              <span class="label">3</span>
+	              <span class="title">{{ mt.task_type }}</span>
+	            </div>
+	          {% endif %}
+8b200db7b7746994463d7e193d0020e7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|36|1|V|html
+	            <span class="bar"></span>
+	            <div class="circle">
+	              <span class="label">4</span>
+	              <span class="title">{{ mt.task_type }}</span>
+	            </div>
+b64b34d3f786fd2eb2c029c8bd78ef92|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|46|13|V|html
+	            <div class="circle done">
+	              <span class="label">1</span>
+	              <span class="title">{{ mt.task_type }}</span>
+	            </div>
+f81c4d9a95d8b25df0489b23b118e204|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|49|15|V|html
+	            <span class="bar done"></span>
+d98d8d714004cbeb35cec01bd0f47d45|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|42|1|V|html
+	          {% endif %}
+ee9cd82c8de0fe805bc07342d477bf7a|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|26|1|V|css
+	.progress .bar {
+485af76882955d93b1834d7f469b9085|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|22|1|V|css
+	  width: 36px; height: 36px;
+0d3166b290eb13614120a1c8aca97b7a|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|25|1|V|css
+	.progress .lavel {
+	}
+d043f65d01680fcdd5358c47095a4f10|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|18|1|V|css
+	.progress .circle,
+4a7c9d70d7328f85f41446a60615260a|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|25|12|v|css
+	lavel
+c3f288769912610b59f245beab403702|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|26|14|v|css
+	 !important;
+ba683caa59097048a5a4b2175f2b6992|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/static/css/top.css|61|1|V|css
+	@media (max-width: 500px) {
+49afd3a0b2fc9d3357a9848a9d5486c0|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|25|1|V|css
+	.progress .circle {
+	  width: 36px !important;
+	  height: 36px !important;
+	}
+00d1c67373efb27e30c329f7cbcc9f12|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|11|10|v|css
+	100vw
+c7c6a7b0e9e4b4100ce07117bd8524dd|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|84|12|v|css
+	28px
+5377679896a0b80075db667f95a70988|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|39|1|V|css
+	.progress .circle .label {
+	  display: inline-block;
+	  width: 28px;
+	  height: 28px;
+	  line-height: 28px;
+	  border-radius: 28px;
+	  margin-top: 3px;
+	  color: #b5b5ba;
+	  font-size: 16px;
+	  z-index: 0;
+	}
+3754f93a9c510a72fd07b93e67d4090d|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|88|1|V|css
+	    display: inline-block;
+8bd3e8e787399219202c4154ed0b4781|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|90|1|V|css
+	    line-height: 28px;
+	    border-radius: 28px;
+	    margin-top: 3px;
+	    color: #b5b5ba;
+	    font-size: 16px;
+	    z-index: 0;
+59128345709e19b9930266bbdd2f6d8f|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|93|1|V|css
+	    color: #b5b5ba;
+d90801951ee29590a1d15ecd45ded023|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|94|1|V|css
+	    z-index: 0;
+e8e27f47c91246e019bddc22ded91189|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|37|13|V|css
+	  z-index: 1;
+c9652401c592069db645e5d8c3ef3f7e|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|47|1|V|css
+	  z-index: 0;
+6b8caac094249e15c175c9b607856f97|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|48|46|V|html
+	              <span class="title">{{ mt.task_type }}</span>
+a850c17cba5eb16b0d3d40a106333bd5|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|40|40|v|html
+	turn
+092eb1414c318aa57f8ed81b19e0fd49|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|27|1|V|css
+	  /* height: 36px; */
+7e3ea77c292e2a6e1e547ad8682b7cf9|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|28|11|v|css
+	36px
+776898b26a3f39cb10bfa717d41383c3|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|28|1|V|css
+	  height: auto;
+ec9f5599dfe3af63878cd015df936198|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|12|11|v|css
+	70px
+3d6fc8aae8c4ece5862448bb04bd49a6|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|1|3|V|css
+	*, *:after, *:before {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	  font-family: "Open Sans";
+	}
+	
+	
+	/* Form Progress */
+	.progress {
+	  width: 100%;
+	  height: auto;
+	  /* padding: 0 10px; */
+	  /* margin: 0px auto; */
+	  text-align: center;
+	  background: rgba(255,0,0,0);
+	}
+	.progress .circle,
+	.progress .bar {
+	  display: inline-block;
+	  background: #fff;
+	  border-radius: 40px;
+	  border: 1px solid #d5d5da;
+	}
+	.progress .circle {
+	  /* width: 36px; */
+	  /* height: 36px; */
+	  height: auto;
+	}
+	.progress .bar {
+	  position: relative;
+	  width: 40px;
+cf5e775ab9cf9f6598558b51ee4fccad|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|36|1|V|html
+	            {% if mt.turn != 1 %}
+	              <span class="bar done"></span>
+	            {% endif %}
+	            <div class="circle done">
+	              <span class="label">{{mt.task_type}}</span>
+	            </div>
+a5f501ca440d093222467630ee0e55f4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|37|1|V|html
+	          {% if turn == mt.turn %}
+	            <span class="bar half"></span>
+	            <div class="circle active">
+	              <span class="label">{{mt.task_type}}</span>
+	            </div>
+	          {% endif %}
+0a04a9796010df9b1152a9aef9e98c9d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|38|1|V|html
+	            <span class="bar"></span>
+	            <div class="circle">
+	              <span class="label">{{mt.task_type}}</span>
+	            </div>
+3c709b10a5d47ba33d85337dd9110917|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|33|21|v|html
+	progress
+0bf222a5ef631d187950c4e5ab722e6d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|36|1|V|html
+	          <div class="col">
+	          </div>
+726a8b173d0bef2da85f7796ef0b44ad|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|37|1|V|html
+	            {{turn}}
+3be8dcad90e945ee08ad0c693c5556ac|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|1|1|V|css
+	*, *:after, *:before {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	  font-family: "Open Sans";
+	}
+	
+	
+	/* Form Progress */
+	.progress {
+	  width: 100%;
+	  height: auto;
+	  /* padding: 0 10px; */
+	  /* margin: 0px auto; */
+	  text-align: center;
+	  background: rgba(255,0,0,0);
+	}
+	.progress .circle,
+	.progress .bar {
+	  display: inline-block;
+	  background: #fff;
+	  border-radius: 40px;
+	  border: 1px solid #d5d5da;
+	}
+	.progress .circle {
+	  /* width: 36px; */
+	  /* height: 36px; */
+	  height: auto;
+	}
+	.progress .bar {
+	  position: relative;
+	  width: 40px;
+	  height: 6px;
+	  top: 15px;
+	  border-left: none;
+	  border-right: none;
+	  border-radius: 0;
+	}
+	.progress .circle .label {
+	  display: inline-block;
+	  /* width: 28px; */
+	  /* height: 28px; */
+	  /* line-height: 28px; */
+	  padding: 2px;
+	  border-radius: 28px;
+	  margin: 3px;
+	  color: #b5b5ba;
+	  font-size: 12px;
+	}
+	/* .progress .circle .title { */
+	/*   color: #b5b5ba; */
+	/*   font-size: 11px; */
+	/*   line-height: 30px; */
+	/*   margin-left: -5px; */
+	/* } */
+	
+	/* Done / Active */
+	.progress .bar.done,
+	.progress .circle.done {
+	  background: #eee;
+	}
+	.progress .bar.active {
+	  background: linear-gradient(to right, #EEE 40%, #FFF 60%);
+	}
+	.progress .circle.done .label {
+	  color: #FFF;
+	  background: #8bc435;
+	  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+	}
+	/* .progress .circle.done .title { */
+	/*   color: #444; */
+	/* } */
+	.progress .circle.active .label {
+	  color: #FFF;
+	  background: #0c95be;
+	  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+	}
+	/* .progress .circle.active .title { */
+	/*   color: #0c95be; */
+	/* } */
+	
+	/* @media (max-width: 1250px) { */
+	/*   .progress .circle { */
+	/*     width: 30px !important; */
+	/*     height: 30px !important; */
+	/*   } */
+	/*   .progress .circle .label { */
+	/*     width: 23px; */
+	/*     height: 23px; */
+	/*     line-height: 28px; */
+	/*     border-radius: 28px; */
+	/*     margin-top: 3px; */
+	/*     font-size: 16px; */
+	/*   } */
+	/* } */
+153710e1f1712490815a9645bf8d4c4b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|39|1|V|html
+	  </div>
+4d7b11358dc7c1ae556b79d988706192|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|1|1|V|css
+	*, *:after, *:before {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	  font-family: "Open Sans";
+	}
+	
+	
+	/* Form Progress */
+	.progress {
+	  width: 100%;
+	  height: auto;
+	  /* padding: 0 10px; */
+	  /* margin: 0px auto; */
+	  text-align: center;
+	  background: rgba(255,0,0,0);
+	}
+	.progress .circle,
+	.progress .bar {
+	  display: inline-block;
+	  background: #fff;
+	  border-radius: 40px;
+	  border: 1px solid #d5d5da;
+	}
+	.progress .circle {
+	  /* width: 36px; */
+	  /* height: 36px; */
+	  height: auto;
+	}
+	.progress .bar {
+	  position: relative;
+	  width: 40px;
+	  height: 6px;
+	  top: 15px;
+	  border-left: none;
+	  border-right: none;
+	  border-radius: 0;
+	}
+	.progress .circle .label {
+	  display: inline-block;
+	  /* width: 28px; */
+	  /* height: 28px; */
+	  /* line-height: 28px; */
+	  padding: 2px;
+	  border-radius: 28px;
+	  margin: 3px;
+	  color: #b5b5ba;
+	  font-size: 12px;
+	}
+	/* .progress .circle .title { */
+	/*   color: #b5b5ba; */
+	/*   font-size: 11px; */
+	/*   line-height: 30px; */
+	/*   margin-left: -5px; */
+	/* } */
+	
+	/* Done / Active */
+	.progress .bar.done,
+	.progress .circle.done {
+	  background: #eee;
+	}
+	.progress .bar.active {
+	  background: linear-gradient(to right, #EEE 40%, #FFF 60%);
+	}
+	.progress .circle.done .label {
+	  color: #FFF;
+	  background: #8bc435;
+	  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+	}
+	/* .progress .circle.done .title { */
+	/*   color: #444; */
+	/* } */
+	.progress .circle.active .label {
+	  color: #FFF;
+	  background: #0c95be;
+	  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+	}
+	/* .progress .circle.active .title { */
+	/*   color: #0c95be; */
+	/* } */
+	
+	/* @media (max-width: 1250px) { */
+	/*   .progress .circle { */
+	/*     width: 30px !important; */
+	/*     height: 30px !important; */
+	/*   } */
+	/*   .progress .circle .label { */
+	/*     width: 23px; */
+	/*     height: 23px; */
+	/*     line-height: 28px; */
+	/*     border-radius: 28px; */
+	/*     margin-top: 3px; */
+	/*     font-size: 16px; */
+	/*   } */
+	/* } */
+	*, *:before, *:after {
+	  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	 }
+	
+	body {
+	  background: #999;
+	}
+	
+	h2 {
+	  margin: 0 0 20px 0;
+	  padding: 0 0 5px 0;
+	  border-bottom: 1px solid #999;
+	  font-family: sans-serif;
+	  font-weight: normal;
+	  color: #333;
+	}
+	
+	.container {
+	  width: 500px;
+	  margin: 20px;
+	  background: #fff;
+	  padding: 20px;
+	  overflow: hidden;
+	  float: left;
+	}
+	
+	.horizontal .progress-bar {
+	  float: left;
+	  height: 45px;
+	  width: 100%;
+	  padding: 12px 0;
+	}
+	
+	.horizontal .progress-track {
+	  position: relative;
+	  width: 100%;
+	  height: 20px;
+	  background: #ebebeb;
+	}
+	
+	.horizontal .progress-fill {
+	  position: relative;
+	  background: #666;
+	  height: 20px;
+	  width: 50%;
+	  color: #fff;
+	  text-align: center;
+	  font-family: "Lato","Verdana",sans-serif;
+	  font-size: 12px;
+	  line-height: 20px;
+	}
+	
+	.rounded .progress-track,
+	.rounded .progress-fill {
+	  border-radius: 3px;
+	  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+	}
+	
+	
+	
+	/* Vertical */
+	
+	.vertical .progress-bar {
+	  float: left;
+	  height: 300px;
+	  width: 40px;
+	  margin-right: 25px;
+	}
+	
+	.vertical .progress-track {
+	  position: relative;
+	  width: 40px;
+	  height: 100%;
+	  background: #ebebeb;
+	}
+	
+	.vertical .progress-fill {
+	  position: relative;
+	  background: #825;
+	  height: 50%;
+	  width: 40px;
+	  color: #fff;
+	  text-align: center;
+	  font-family: "Lato","Verdana",sans-serif;
+	  font-size: 12px;
+	  line-height: 20px;
+	}
+	
+	.rounded .progress-track,
+	.rounded .progress-fill {
+	  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+	  border-radius: 3px;
+	}
+8b335a5221c01a58b500804ef0f7fb8f|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|5|1|V|css
+	body {
+	  background: #999;
+	}
+3068306f1230e042541c0c577e79ca1d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|33|13|V|html
+	        </div>
+89c56bc72351a9f41d93145a0afae98e|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|6|1|v|css
+	.progress-bar 
+21c2a476dda6c891e4ba4a787125ab73|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|1|1|V|css
+	*, *:before, *:after {
+	  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	 }
+	
+	
+	.progress-bar h2 {
+	  margin: 0 0 20px 0;
+	  padding: 0 0 5px 0;
+	  border-bottom: 1px solid #999;
+	  font-family: sans-serif;
+	  font-weight: normal;
+	  color: #333;
+	}
+	
+	.progress-bar .container {
+	  width: 500px;
+	  margin: 20px;
+	  background: #fff;
+	  padding: 20px;
+	  overflow: hidden;
+	  float: left;
+	}
+	
+	.progress-bar .horizontal .progress-bar {
+	  float: left;
+	  height: 45px;
+	  width: 100%;
+	  padding: 12px 0;
+	}
+	
+	.progress-bar .horizontal .progress-track {
+	  position: relative;
+	  width: 100%;
+	  height: 20px;
+	  background: #ebebeb;
+	}
+	
+	.progress-bar .horizontal .progress-fill {
+	  position: relative;
+	  background: #666;
+	  height: 20px;
+	  width: 50%;
+	  color: #fff;
+	  text-align: center;
+	  font-family: "Lato","Verdana",sans-serif;
+	  font-size: 12px;
+	  line-height: 20px;
+	}
+	
+	.progress-bar .rounded .progress-track,
+	.progress-bar .rounded .progress-fill {
+	  border-radius: 3px;
+	  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+	}
+	
+	
+	
+	/* Vertical */
+	
+	.progress-bar .vertical .progress-bar {
+	  float: left;
+	  height: 300px;
+	  width: 40px;
+	  margin-right: 25px;
+	}
+	
+	.progress-bar .vertical .progress-track {
+	  position: relative;
+	  width: 40px;
+	  height: 100%;
+	  background: #ebebeb;
+	}
+	
+	.progress-bar .vertical .progress-fill {
+	  position: relative;
+	  background: #825;
+	  height: 50%;
+	  width: 40px;
+	  color: #fff;
+	  text-align: center;
+	  font-family: "Lato","Verdana",sans-serif;
+	  font-size: 12px;
+	  line-height: 20px;
+	}
+	
+	.progress-bar .rounded .progress-track,
+	.progress-bar .rounded .progress-fill {
+	  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+	  border-radius: 3px;
+	}
+be4a4d5caf86c37fa4506ac25c951912|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|32|13|V|html
+	        <div class="progress-bar">
+	          <div class="container horizontal rounded">
+	            <div class="progress-bar horizontal">
+	              <div class="progress-track">
+	                <div class="progress-fill">
+	                  <span>75%</span>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+6d62b20530feefa547174c18f94bf046|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|31|1|V|html
+	        {% with val = turn / list_minitask|length  %}
+	        {{val}}
+	        {% endwith %}
+	        <div class="progress">
+	          <div class="progress-bar" role="progressbar" style="width: {{turn}}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{list_minitask|length}}</div>
+	        </div>
+	        <!-- <hr> -->
+	        <div class="row">
+	          {% for mt in list_minitask %}
+	          {% if turn > mt.turn %}
+	          <div class="col px-0">
+	            <!-- {{turn}} -->
+	          </div>
+	
+	          {% endif %}
+	          {% if turn < mt.turn %}
+	          <div class="col px-0">
+	            <!-- {{turn}} -->
+	          </div>
+	
+	          {% endif %}
+	          {% endfor %}
+	        </div>
+	
+	        <!-- <div class="progress"> -->
+	        <!--   <div class="circle done"> -->
+	        <!--     <span class="label">1</span> -->
+	        <!--     <span class="title">Personal</span> -->
+	        <!--   </div> -->
+	        <!--   <span class="bar done"></span> -->
+	        <!--   <div class="circle done"> -->
+	        <!--     <span class="label">2</span> -->
+	        <!--     <span class="title">Address</span> -->
+	        <!--   </div> -->
+	        <!--   <span class="bar half"></span> -->
+	        <!--   <div class="circle active"> -->
+	        <!--     <span class="label">3</span> -->
+	        <!--     <span class="title">Payment</span> -->
+	        <!--   </div> -->
+	        <!--   <span class="bar"></span> -->
+	        <!--   <div class="circle"> -->
+	        <!--     <span class="label">4</span> -->
+	        <!--     <span class="title">Review</span> -->
+	        <!--   </div> -->
+	        <!--   <span class="bar"></span> -->
+	        <!--   <div class="circle"> -->
+	        <!--     <span class="label">5</span> -->
+	        <!--     <span class="title">Finish</span> -->
+	        <!--   </div> -->
+	        <!-- </div> -->
+412031f4df6b23daa6541d870f154ff1|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|20|1|V|
+	alias ga="git add ."
+5b26c93cb5d08e4f9464f6064773766d|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|21|1|V|
+	alias gs="git status"
+1226d070ace30e016bb5fa1ba43830a9|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|22|1|V|
+	alias gp="git pull"
+f43dff9a0dc54f0643d0c6d7971635f0|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|23|15|v|
+	pull
+88b1b1cbd273553d7e2308beeb25504d|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|23|1|V|
+	alias gd="git diff"
+939dc1c418b3c3a3a8ab1d702b3b0911|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|24|1|V|
+	alias gb="git branch"
+9603a224b40d7b67210b78f2e390d00f|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|25|15|v|
+	branch
+95b6859cc7cf27e5a1970a8e303f17aa|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|10|11|V|python
+	import glob
+eb7c6a7de909f62ab8e42ab678ff23c2|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|10|43|V|python
+	from expantion_tsv import expantion_tsv_row
+5eafb2b0c66bc5533ded7f468712b0a5|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|11|11|V|python
+	from copy import copy
+	import glob
+25acfc76fb8a3282f30ababa09bc624f|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|202|1|V|python
+	        try:
+	            shutil.rmtree("turtle/" + service)
+	        except:
+	            pass
+	        try:
+	            os.mkdir("turtle/" + service)
+	        except:
+	            pass
+32a6256dd360bad895ab9426b5c3af11|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|60|18|v|python
+	dirname + "/" + service + "/info")
+5183944c52a8ce698201073e273f85f4|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|62|27|v|python
+	"turtle/" + service)
+0fac01a588f2f01f8a01286b44393b1e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|60|17|V|python
+	        os.mkdir(
+7cb0cbcf21219e705de467d6e06abb65|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|86|23|V|python
+	    print("run python")
+3e57d7a834ee010856a922adc698c136|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|78|25|V|python
+	                    print
+1de9b0a30075ae8c303eb420c103c320|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|16|13|v|python
+	reader
+b6cd46ad5c8f61fba37fb24d3563539c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|58|21|V|python
+	        print(service)
+4adecbdfd8853753edaa8122cabaead9|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|60|23|v|python
+	service + "/" + service + ".*.tsv", recursive=True
+e2f4b0f724890614cabf53213ed5c56b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|60|42|v|python
+	dirname + service + "/*.tsv", recursive=True)
+32d17c20ad979a6cd83246916f739693|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|59|44|v|python
+	, recursive=True)
+45be12759f10a035e783566e66362661|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|59|16|v|python
+	"mylib/*"
+97a4e3b581ea70dc86102502736955e7|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|65|14|V|python
+	        return
+ad14110cc5eb0fcacdff4e4ea12521fe|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|16|20|V|python
+	    print("jiojoij")
+a6054545f654d8b8d06ad8d5265ef5d8|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|19|18|V|python
+	        print(row)
+b54b57c45d73814ffd5038fee2ee475d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|64|17|V|python
+	        print(source_dir_name_list)
+73936848771bc46e1c40a6a1e373399e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|80|1|V|python
+	                    service_id_list = join_id_list(service_id_list, id_list)
+c41aec72cbf6707cc004625d5f4e2465|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|83|21|V|python
+	        service_id_list = join_id_list(service_id_list, id_list)
+2dd45592d8cb72306b995142b9264c46|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|84|9|v|python
+	service_id_list
+473196a79578d0198f276a5138e07277|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|55|21|v|python
+	[[] for _ in range(len(column_label))]
+24e5013e145b34bb908729d3d01af1eb|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|18|17|V|python
+	    print(id_list)
+bf15578389259a60cecd0d0898f87a7c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|24|17|V|python
+	    print("id_list >", id_list)
+8371a4387630a3cc9ac9365d83148b94|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|55|15|V|python
+	        print("start", service)
+caeb7b01297619635e6effe79650c234|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|71|31|v|python
+	source_dir_name_list[i]
+cde188ec500a60811d31e8cca996c9b4|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|18|1|V|python
+	def has_bar_in_row(row):
+	    for column in row:
+	        if "|" in column:
+	            return True
+	    return False
+	
+	
+	def has_bar_in_row_list(row_list: list):
+	    for row in row_list:
+	        if has_bar_in_row(row):
+	            return True
+	    return False
+	
+	
+	def expansion_tsv_row(row_list: list):
+	    result_list = []
+	    for row in row_list:
+	        if has_bar_in_row(row):
+	            for i in range(len(row)):
+	                if "|" in row[i]:
+	                    row_a = copy(row)
+	                    row_a[i] = re.split("|", row[i])[0]
+	                    row_b = copy(row)
+	                    row_b[i] = re.split("[|\t$]", row[i])[1]
+	                    result_list.append(row_a)
+	                    result_list.append(row_b)
+	                    break
+	        else:
+	            result_list.append(row)
+	
+	    if has_bar_in_row_list(result_list):
+	        result_list = expansion_tsv_row(result_list)
+	    return result_list
+	
+	
+	def list2tsv(data: list):
+	    result = ""
+	    for i in range(len(data)):
+	        if i != 0:
+	            result += "\t"
+	
+	        if "psi-mi" in data[i]:
+	            result += data[i].split('"')[1].split(":")[1]
+	        elif ":" in data[i]:
+	            result += data[i].split(":")[1].split("(")[0]
+	        else:
+	            result += data[i]
+	    return result
+b962a136196178955fe37322ec420445|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|80|1|V|python
+	            if has_bar_in_row(row_bef):
+	                # |で区切られてるrow dataを展開
+f8729bffd5baa46b39bfeffb0d284d2d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|81|1|V|python
+	            else:
+	                row_list = [row_bef]
+f27503e37d29ea37efd8daf070663441|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|86|33|v|python
+	get_target_id
+7def0e7994fc0a1d029e834d039fe37b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|86|33|v|python
+	treat_data
+7aafdcb4f4de45045af948e79bc0acb8|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|50|5|V|python
+	    ##########################################
+be750d53ff77a3d87882df6745e99b0a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|35|1|V|python
+	    #############################
+2dd6e873530fc0e9a01ab98f030ebc1d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|35|1|V|python
+	    #############################
+	    ###### predicate
+	    #############################
+f670ef68565f21a50d96fb2b8746a338|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|30|12|v|python
+	predicate
+e05ae6eca078a84c09d83cc86fb7b738|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|55|1|V|python
+	    data_xref_obo = URIRef("obolnOwl:hasDbXref")
+	
+	    data_xref_bp = URIRef("http://www.biopax.org/release/biopax-level3.owl#xref")
+	    interaction_annotate = URIRef("http://www.w3.org/2004/02/skos/core#note")
+	    organizm = URIRef("http://www.biopax.org/release/biopax-level3.owl#organism")
+	    interaction_param_pos = URIRef(
+	        "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#hasParameters"
+	    )
+	    # interaction_param_bm = URIRef(
+	    # "http://www.biomodels.net/kisao/KISAO#KISAO_0000259 (has parameter) "
+	    # )
+	
+	    # subject
+	    interactor_ab = rdflib.Namespace("https://identifiers.org/matrixdb.association:")
+	
+	    # object
+	    obo = rdflib.Namespace("http://purl.obolibrary.org/obo/")
+	    publication_id = rdflib.Namespace("https://identifiers.org/pubmed:")
+	    intact = rdflib.Namespace("https://identifiers.org/intact:")
+	    taxon_id = rdflib.Namespace("http://identifiers.org/taxonomy/")
+	    taxon_obo = rdflib.Namespace("http://purl.obolibrary.org/obo/NCBITaxon_")
+	    interaction_xref = rdflib.Namespace("https://identifiers.org/pdb:")
+0a40ba0f178ee56cabcc81e720140a02|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|40|1|V|python
+	    # interaction_param_bm = URIRef(
+	    # "http://www.biomodels.net/kisao/KISAO#KISAO_0000259 (has parameter) "
+	    # )
+d0519781041e57e2606e8d2f1dec9841|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|32|1|V|python
+	    data_xref_obo = URIRef("obolnOwl:hasDbXref")
+	
+	    data_xref_bp = URIRef("http://www.biopax.org/release/biopax-level3.owl#xref")
+	    interaction_annotate = URIRef("http://www.w3.org/2004/02/skos/core#note")
+	    organizm = URIRef("http://www.biopax.org/release/biopax-level3.owl#organism")
+	    interaction_param_pos = URIRef(
+	        "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#hasParameters"
+	    )
+f3de8eb620887c41654a7b314ae22a05|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|126|28|V|python
+	                # Taxon_obo = URIRef(obo + row[])
+	                # Interaction_parameters = URIRef(obo + row[])
+	                # Creation_date = URIRef(obo + row[])
+	                # Updata_date = URIRef(obo + row[])
+	                # INteraction_checksum = URIRef(obo + row[])
+	                # Negative = URIRef(obo + row[])
+ed8df1ba6227c6c41976468d1339b8b8|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|121|1|V|python
+	                # Confidence value
+	                # Expansion_method = URIRef(obo + row[])
+	                # Interaction_xref = URIRef(obo + row[])
+	                # Interaction_annotation = URIRef(obo + row[]) MatrixDBにはなにが入ってる？？
+33c4075a935a18f5d19265845fe2f8da|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|115|23|V|python
+	                URLRef()
+68d50255810e3baf8bb4904aa56a8b1d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|115|23|V|python
+	                URIRef()
+a21051a52d7dfa82bf435fee240a3520|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|28|1|V|python
+	def create_object_uri(column: str):
+01558ffb14d6a9a30e4c16673ad3acf2|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|90|35|v|python
+	create_object_uri
+42ff2702507d0aaed0f428c6ca78f19b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|91|24|V|python
+	                # Dinteractor_b = create_object_uri(row[1])
+4790bc08df171f8e6d77d7f8e068dffc|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|43|1|V|python
+	    column_dasta = treat_data(column)
+4cec6566c438a73f969883bd89517a66|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|28|1|V|python
+	    column_data1 = treat_data(column)
+1d071cf94cb221e621d0dad3bfed4dab|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|35|1|V|python
+	    # subject
+	    interactor_ab = rdflib.Namespace("https://identifiers.org/matrixdb.association:")
+685982ed32e5c214b28b2e8a42b7c03d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|114|1|V|python
+	                Interactor_ab = URIRef(
+	                    interactor_ab + Dinteractor_a.lower() + "__" + Dinteractor_b.lower()
+	                )
+9c6c3943bdbc6f74085f961eee31e842|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|33|25|v|python
+	Dinteractor_a
+d1a8002b8c1f5cc0effc2dedf58b5eb3|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|32|5|V|python
+	    # uriの正当性の確認
+	    Interactor_ab = URIRef(
+070e49ab2165d072e4dd381d39856b03|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|71|1|V|vim
+	などとして
+521e550278aeae4426d3353903a79c13|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|69|1|V|vim
+	:hi link foo Type
+329435e5e66be809a656af105f42401e|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|70|21|v|vim
+	hogehoge
+0cf31b2c283ce3431794586df7b0996d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|34|4|V|python
+	    
+0acd960efb53a0a27371dfaed875dbb4|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|70|1|V|vim
+	:syntax keyword bar \!\!\!
+99909568fafc2b1bc537b2f4d828b6cb|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|36|1|V|python
+	    hogehoge
+84868bd0e1df2e0f99952a3e17a264fd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|37|8|V|python
+	    !!!!
+ac5e5f28627b4b1f4e7788ea28aee2ca|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|69|1|V|vim
+	:hi bar ctermfg=black ctermbg=red
+4ebb272f1e218ed1e8068fcdd0993690|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|70|1|V|vim
+	:syntax keyword bar issue
+0aae4c8f3cc35693d0cbbe631f2e8b52|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|71|21|v|vim
+	issue
+2d35e2ff3c2a8566b14bc97ddd08a9c0|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|71|1|V|vim
+	:syntax keyword bar hoge
+ea703e7aa1efda0064eaa507d9e8ab7e|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|72|21|v|vim
+	hoge
+0191b933c5fc8577f30f1935496597dd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|41|1|V|python
+	    \!
+feddb35873c07a50d2fced1523b2e59f|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|36|1|V|python
+	    hogehoge
+	    !issue
+	    issue
+	    hoge
+	    hoge
+	     ! 
+59d870dd059bc0d1c0c64f77669deb5f|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|71|1|V|vim
+	:syntax keyword bar hoge
+	:syntax keyword bar \!
+bdd20c675708c20706cbd0a2c79b0cd2|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|69|1|V|vim
+	:hi bar ctermfg=black ctermbg=red
+	:syntax keyword bar issue
+983aedcac7ce738018d0aa67aa5022eb|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|34|11|V|python
+	    # issue
+92124845e786d539c1d1fefa74fb151a|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|2|1|V|vim
+	:hi bar ctermfg=black ctermbg=red
+	:syntax keyword bar # issue
+035f4d6c04c9d03a558457199370bbf5|file:///Users/Kouiti/local_file/PLANE3T_SITE/about.html|51|1|V|html
+	                                微生物を用いた「メタン発酵法」により、野菜くずや水草などの未利用バイオマスからエネルギーとなるメタンガスと栄養分を豊富に含んだ排液(消化液)を回収します。
+81439cd2876a4517787b3b5029050ccb|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|35|50|v|python
+	Dinteractor_b
+b096132351f7d582ca5909e6a4100565|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|168|13|V|javascript
+	    return ()
+0be0191a1a7b6778034a7e6461660b81|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|118|1|V|javascript
+	class FourthSlide extends React.Component {
+	    render() {
+	        return (
+	            <div className="section">
+	                <img src="images/layout.jpg" className="img-fluid bg-img" />
+	                <span>
+	                    <h1>店舗情報 Infomation</h1>
+	                    <div class="row">
+	                        <div class="col-sm">
+	                            <iframe
+	                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6669929889135!2d134.6325210152366!3d34.86459388039269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1fb4a6aab83%3A0x29aed1cf46efdcf8!2z44Oe44Oe44Oz!5e0!3m2!1sja!2sjp!4v1636499221264!5m2!1sja!2sjp"
+	                                width="100%"
+	                                height="100%"
+	                                style={{ border: 0 }}
+	                                allowfullscreen=""
+	                                loading="lazy"
+	                            ></iframe>
+	                        </div>
+	                        <div class="col-sm">
+	                            <p>【ランチ】11:00〜14:00</p>
+	                            <p>【ディナー】17:30〜20:00</p>
+	                            <p>月曜定休(祝祭日は営業)</p>
+	                            <p>兵庫県姫路市飾西41-1</p>
+	                            <p>
+	                                <a href="tel:079-268-7070" target="_blank">
+	                                    <svg
+	                                        xmlns="http://www.w3.org/2000/svg"
+	                                        width="25"
+	                                        height="25"
+	                                        fill="currentColor"
+	                                        class="bi bi-telephone-fill"
+	                                        viewBox="0 0 16 16"
+	                                    >
+	                                        <path
+	                                            fill-rule="evenodd"
+	                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+	                                        />
+	                                    </svg>
+	                                    079-268-7070
+	                                </a>
+	                            </p>
+	                        </div>
+	                    </div>
+	                </span>
+	            </div>
+	        );
+	    }
+	}
+a2a29f690576803595cd5a078017c867|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|167|7|v|javascript
+	FourthSlide
+ebb129405d5c76a5fbf01e61b61aef1c|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|172|1|V|javascript
+	                <span>
+	                    <h1>店舗情報 Infomation</h1>
+	                    <div class="row">
+	                        <div class="col-sm">
+	                            <iframe
+	                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6669929889135!2d134.6325210152366!3d34.86459388039269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1fb4a6aab83%3A0x29aed1cf46efdcf8!2z44Oe44Oe44Oz!5e0!3m2!1sja!2sjp!4v1636499221264!5m2!1sja!2sjp"
+	                                width="100%"
+	                                height="100%"
+	                                style={{ border: 0 }}
+	                                allowfullscreen=""
+	                                loading="lazy"
+	                            ></iframe>
+	                        </div>
+	                        <div class="col-sm">
+	                            <p>【ランチ】11:00〜14:00</p>
+	                            <p>【ディナー】17:30〜20:00</p>
+	                            <p>月曜定休(祝祭日は営業)</p>
+	                            <p>兵庫県姫路市飾西41-1</p>
+	                            <p>
+	                                <a href="tel:079-268-7070" target="_blank">
+	                                    <svg
+	                                        xmlns="http://www.w3.org/2000/svg"
+	                                        width="25"
+	                                        height="25"
+	                                        fill="currentColor"
+	                                        class="bi bi-telephone-fill"
+	                                        viewBox="0 0 16 16"
+	                                    >
+	                                        <path
+	                                            fill-rule="evenodd"
+	                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+	                                        />
+	                                    </svg>
+	                                    079-268-7070
+	                                </a>
+	                            </p>
+	                        </div>
+	                    </div>
+	                </span>
+ae1ca6470e05828e6e804e59c85be8aa|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|183|1|V|javascript
+	                        <FirstSlide />
+	                        <SecondSlide />
+	                        <ThirdSlide />
+	                        <FourthSlide />
+523663c8b7d38655eb9ea4924bc403b8|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|24|1|V|javascript
+	            <div className="section" style={{ backgroundColor: "#583F2A" }}>
+1ae3241a663104db4414a92a4e0102ad|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|170|13|V|javascript
+	            <div className="section">
+83990865f36a521e5a13ceeda94622f9|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|126|1|V|javascript
+	class FourthSlide extends React.Component {
+3a81fbb40f2c69f98fbee70edd0de3ae|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|117|13|V|javascript
+	const Content = ()=>{
+0b4c61d7b5ef567d2a8629610c2a302b|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|117|1|V|javascript
+	class Content extends React.Component {
+	    render() {
+	    return(
+	        <FirstSlide />
+	        <SecondSlide />
+	        <ThirdSlide />
+	        <FourthSlide />
+	    )
+	        
+	}}
+d07de95b6db9d9c7168a6e61ed8c9cc2|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|183|1|V|javascript
+	                        <Content />
+fb83c8b049796c043aec652cddf42595|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Home.js|9|1|V|javascript
+	    const [ServicesGrouped, setServicesGrouped] = useState([]);
+0d5647929ad303363e843f6a335757cb|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|183|12|v|javascript
+	ServicesGrouped
+f36cf4a0c23b62e3bd39c1e376a95c6c|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|183|21|v|javascript
+	setServicesGrouped
+26d96e0c2f68609e67f98cfd35d2b781|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|177|1|V|javascript
+	    constructor(props) {
+	    super(props);
+	    this.state = {
+	      loading: false
+	    }
+	  }
+a678cc21baff1140e08e101dbe0d03e2|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|178|1|V|javascript
+	    () => {
+	
+	    }
+ad00fb9635813a97ac98659699851380|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|177|1|V|javascript
+	    const [Loading, serLoading] = useState([]);
+	
+f9b5d7462228012f97055b649cc35604|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Home.js|1|1|V|javascript
+	import React, { useState, useEffect, useContext } from "react";
+b594e46c607eef1df3ca672992bfc0d3|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|3|1|V|javascript
+	import React from "react";
+f15c1cae7882448b3fb0404682e17e61|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|202|22|v|javascript
+	Content
+9b2c85dd7af17d4528bd7489e72c59c5|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|202|37|v|javascript
+	Spinner
+c4950b7cc7fee66f206bffe2f02f0396|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|201|6|V|javascript
+	    kk
+87e9af06d2b64541b1549cefc426f7b6|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|199|5|V|javascript
+	    ()=>{
+ea5a1cbe764918679997181a3ea281d3|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|200|5|V|javascript
+	    }
+214f1a88510c5e203a03250a9ad7c91d|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|201|1|V|javascript
+	        return(<LoadingPage />)
+d35839f37e141901aa7d48f44036df52|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|203|17|v|javascript
+	LoadingPage
+f894c2ff308f33507ea20f7dcce2f70e|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|205|1|V|javascript
+	    return(
+	        {Loading ? (<TopPage/>) : (<LoadingPage/>) }
+	    )
+f0be5ae1cbcf930b1e8b864291cf2376|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|200|9|v|javascript
+	setTineout
+4716649e73a38f8bb442987683ad937b|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|187|1|V|javascript
+	
+	                        <LoadingPage />
+7646a6baf46c9194d397176ddb4e2c05|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|176|1|V|javascript
+	const TopPage = () => (
+	    <div class="toppage">
+	        <ReactFullpage
+	            licenseKey={"C5C881D6-81D74A73-AB857381-6D757637"}
+	            render={({ state, fullpageApi }) => {
+e791a4b392cc62f81a15d8366b3722fd|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|167|1|V|javascript
+	class LoadingPage extends React.Component {
+	    render() {
+	        return (
+ae49e782cade8b578fece6d550f67497|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|167|7|v|javascript
+	TopPage
+f9723785e5b67194f4354a160300a30e|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|190|1|V|javascript
+	                );
+	            }}
+	        />
+	    </div>
+	);
+5085251a1dccb0a9d7792c12f5f5e68f|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|180|1|V|javascript
+	        );
+	    }
+	}
+41f1da6862f4b11be2d8305f26e1d92e|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|175|1|V|javascript
+	                );
+2ea26910f865adb22376bbc961dca773|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|185|1|V|javascript
+	                return (
+cacbf8bd572c0a99d08b90e355ae31b0|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|206|1|v|javascript
+	    } else {
+91466359296625741e6367163a1bf9cf|file:///Users/Kouiti/.ssh/config|28|1|V|sshconfig
+	    HostName athena.gavo.t.u-tokyo.ac.jp
+	    IdentityFile ~/.ssh/id_rsa
+	    User soka01
+	    Port 22
+248f4d0a2a0f2d7c8f24f28d237f55ec|file:///Users/Kouiti/.ssh/config|37|5|V|sshconfig
+	    Port 22
+195f821a01461092c400afaa00f444ff|file:///Users/Kouiti/.ssh/config|35|30|V|sshconfig
+	    IdentityFile ~/.ssh/id_rsa
+df6a17187975fcd62d3197b24d9639a2|file:///Users/Kouiti/.ssh/config|23|1|V|sshconfig
+	  User kinoshita
+1465bac1da2e5615d06ace0c0197d46f|file:///Users/Kouiti/.ssh/id_rsa.pub|1|1|V|
+	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFDcLjJw4gGbgpBUigdFdg0E+FVaF65rt/Dtnwi9R9XSevG/Aa0YaoMz80AX/5ZAWdehukUsQmYbgw9jGYrGhHpsVJ9XJRdoW7p1/c/Vm/bBMlskT7IhRtrZvtyeBqP4iNVSwDqeIX0jFUaxMHxCQQG2X3Y4MqobedDNEB3mfr+do6ivhzvrQAU2jO0olCjmuywBY1QVPFzaEjNqTNmvMw3cbr2KKsczOBDzR+QgdyZ7imXu/kyMi+GTwfogHxBnZxbFo8YK+xfxCSUSEZJMYavGez0FRgtkqlp2+uxrFxMQQgXud+gJFrENpuJOv2L8Ta5ONAt8/eyFFetQ95gEViGfNTFWPDk843bN7fPBGiixxyYFCyQYzfl2nD0LeiCXYCkLGK3dHd9N0n0ykCRHTzNzXmPrWNxNNj1vfpx9VEzDn80HXr5CiLjUNwIOwzfo1Sez90u67RPYy54WASoabhLrtiIPQGVIm4967iz0DxDSCyTQtuvPFDG1OT7dFLK7E= Kouiti@KinoshitaLabnoMacBook-Pro.local
+e770fe788c810380adff42ea4bf59d1e|file:///Users/Kouiti/local_file/maman-homepage/.gitignore|1|1|V|
+	go-app/crypto/*
+eb5752cc1191bf1bcfd4297e4a388dd9|file:///Users/Kouiti/local_file/maman-homepage/.gitignore|1|1|V|
+	docker/mysql/mysql_data/*
+ad93bca7807ac5d0f20048ec8210ca81|file:///Users/Kouiti/.ssh/config|36|10|v|sshconfig
+	ik1-409-36910.vs.sakura.ne.jp
+fc35fdc70d5fc69d269883a822c7a53e|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|91|16|v|yaml
+	html
+e194b7ce0a02484867a0d19d80312ae7|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|86|1|V|yaml
+	
+	  certbot:
+	    image: certbot/certbot:v1.7.0
+	    volumes:
+	      - /etc/letsencrypt:/etc/letsencrypt
+	      - /var/www/html:/var/www/html
+	    command: ["--version"]
+4f64fa95320c218269a844696214b851|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|3|1|V|dockerfile
+	COPY ./nginx/wait-for-it.sh /etc/nginx/wait-for-it.sh
+b5d4fe554c8d679d10e8cfa86d71b98b|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|5|1|V|dockerfile
+	RUN chmod +x ./wait-for-it.sh
+a1736c9bb02220825c5a5db34e52e5d2|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|5|23|v|dockerfile
+	【ドメイン名 スペース区切りで複数指定可】
+28cab5ae56697823b5f996d13e97d155|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|6|22|v|dockerfile
+	【窓口メールアドレス】
+693221b078776685272bd3ce8916b325|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|7|64|v|dockerfile
+	【←仮証明書用の記載内容】
+d2bb58e146db593d31793f2ca555cd40|file:///Users/Kouiti/local_file/maman-homepage/docker/golang/Dockerfile|2|1|V|dockerfile
+	COPY ./go-app /go/src/go-app
+03defe8411526ff1661c568b81f9d258|file:///Users/Kouiti/local_file/maman-homepage/nginx/nginx.conf|28|33|V|
+	    ssl_certificate /etc/letsencrypt/live/【ドメイン名】/fullchain.pem;
+	    ssl_certificate_key /etc/letsencrypt/live/【ドメイン名】/privkey.pem;
+	    ssl_session_timeout 5m;
+	    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+	    ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv3:+EXP;
+	    ssl_prefer_server_ciphers on;
+b538ec001a39cb521a5c0ee013b50261|file:///Users/Kouiti/local_file/maman-homepage/nginx/nginx.conf|10|7|V|
+	    listen 443 ssl;
+2a2239a74a33cf4e062ef8187b2b8c62|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|1|1|V|dockerfile
+	FROM nginx
+	
+	WORKDIR /etc/nginx
+	
+a9e651c4532fc7bd63f2806ad6aee3ec|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|4|1|V|dockerfile
+	FROM nginx
+c21f969b5f03d33d43e04f8f136e7682|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|2|12|v|dockerfile
+	default
+f543f38d55dcea448e640847d74e052f|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|1|1|V|dockerfile
+	WORKDIR /etc/nginx
+	COPY nginx/nginx.conf /etc/nginx/conf.d/nginx.conf
+0e44e216bc7e970883f9e6466be8496b|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|4|12|V|dockerfile
+	COPY nginx /etc/nginx
+634dcaa3490cd4f8905fc647f5d5de71|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|4|1|V|dockerfile
+	COPY nginx/nginx.conf /etc/nginx/conf.d/nginx.conf
+0f196679c7101001b8a026f62fd0ed2c|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|4|1|V|dockerfile
+	WORKDIR /etc/nginx
+ee434023cf89d7dfb21f63d64f0f9d74|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|3|41|v|dockerfile
+	nginx
+ebe7e9e32f4baea8fe4610e44151c9d9|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|3|1|V|dockerfile
+	COPY default.conf /etc/nginx/conf.d/default.conf
+797fb86543b671bbcc62fa46d19af93a|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|5|1|V|dockerfile
+	RUN apt-get update && \
+		apt-get install snap && \
+	    sudo snap install --classic certbot && \
+	    sudo ln -s / snap / bin / certbot / usr / bin / certbot && \
+		sudo certbot --nginx
+5344a9076678e684a2d0f9aef320a23e|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|3|1|V|dockerfile
+	COPY ./nginx/wait-for-it.sh /etc/nginx/wait-for-it.sh
+	RUN chmod +x ./wait-for-it.sh
+1475c5f0419916587ccb7a2ff8ebd5aa|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|8|1|v|dockerfile
+	RUN 
+e23b76b30e0b2b506d9c588b8e8d589d|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|11|60|v|dockerfile
+	 && \
+d338b3f0f405eb5e51c8cc1e5ca66f02|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|10|5|v|dockerfile
+	sudo
+75dca49116194d2a505e4da01abe2925|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|11|5|v|dockerfile
+	wudo
+df0ad5749a760c1c7647bd1709022426|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|12|26|V|dockerfile
+	RUN systemctl restartsnapd
+57d3b2bcb23077d0d0e64e365dc079d8|file:///Users/Kouiti/local_file/maman-homepage/nginx/create_cert_ssl.sh|3|8|v|sh
+	`hostname`.japaneast.cloudapp.azure.com
+8b05ef29c8ba98e5b88e81a118629f99|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|8|1|V|dockerfile
+	COPY nginx.conf /etc/nginx/
+a840a029a9e43c576fe299f8dfac12a7|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|17|1|V|dockerfile
+	RUN set -x ; \
+	    addgroup -g 82 -S www-data ; \
+	    adduser -u 82 -D -S -G www-data www-data && exit 0 ; exit 1
+1a79a4d60de6718e8e5b326e338ae533|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|17|65|v|dockerfile
+	example
+cfb70ad1d80189bc501bcb0a598742b4|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|68|1|V|yaml
+	      - ./certbot/www:/var/www/certbot/:ro
+	      - ./certbot/conf/:/etc/nginx/ssl/:ro
+	
+	  certbot:
+	    image: certbot/cerbot:latest
+	    volumes:
+	      - ./certbot/www/:/var/www/certbot/:rw
+	      - ./certbot/conf/:/etc/letsencrypt/:rw
+d7c77d1d273e65f383818b98effdea57|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|71|1|V|yaml
+	    volumes:
+	      - ./certbot/www/:/var/www/certbot/:rw
+	      - ./certbot/conf/:/etc/letsencrypt/:rw
+cf5f329e5032f3ed7676b71ab6df0a66|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|70|26|v|yaml
+	:latest
+377e79098eff2928e66ac42a91910508|file:///Users/Kouiti/local_file/maman-homepage/Makefile|1|1|V|make
+	b:
+		docker-compose -f ./docker-compose.yml build
+	s:
+		docker-compose -f ./docker-compose.yml up
+	r:
+		docker-compose -f ./docker-compose.yml restart
+	c:
+		docker volume rm (docker volume ls -qf dangling=true)
+	
+	
+	create_service:
+		curl -X POST -H "Content-Type: application/json" -d '{"title": "title", "comment":"comment", "show":"true", "grouped":"false"}' localhost/api/services/create
+	
+	get_service:
+		curl 'localhost/api/services/get/1'
+	
+	list_service:
+		curl 'localhost/api/services/list'
+	
+	signup:
+		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/signup
+	
+	login:
+		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/login
+	
+	test:
+		watch -n 3 "curl 'localhost/api/services/list/all' | jq"
+1bc8e0de6fae2cb7d883c662317dacf1|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|10|27|v|yaml
+	${PROXY_DEFAULT_HOST}
+13c83e0eb4fbaa3e04b075d10534a851|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|32|30|v|yaml
+	LETSENCRYPT_EMAIL
+84730331a123482d4d8f466141a49b88|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|69|1|V|yaml
+	  certbot:
+	    image: certbot
+	    # volumes:
+	    #   - ./certbot/www/:/var/www/certbot/:rw
+	    #   - ./certbot/conf/:/etc/letsencrypt/:rw
+1870a829d9bc69abf500eca6f00241fe|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|95|15|v|yaml
+	wordpress
+ba3988db0a3167093b1f74e8ae4a8e83|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|95|21|v|yaml
+	homepage
+ba792ce6bcd5ef954ad6fca69bd535a5|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|66|1|V|yaml
+	    networks:
+	      - proxy-link
+	      - homepage-link
+0e5f3f19ee303530a0f29046f9888c74|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|89|5|V|yaml
+	      - proxy-link
+682cf00153093483aec192c16f78947e|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|88|1|V|yaml
+	    networks:
+	      - homepage-link
+545ab86a563934146be9ada58bb507ba|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|1|1|V|yaml
+	version: "3.7"
+	
+	services:
+	
+	    proxy:
+	        image: jwilder/nginx-proxy
+	        container_name: proxy
+	        environment:
+	            TZ: Asia/Tokyo
+	            DEFAULT_HOST: "maman2030-himeji.com"
+	            DHPARAM_GENERATION: "false"
+	        ports:
+	            - 80:80
+	            - 443:443
+	        networks:
+	            - proxy-link
+	        volumes:
+	            - /var/run/docker.sock:/tmp/docker.sock:ro
+	            - ./nginx/certs:/etc/nginx/certs:ro
+	            - ./nginx/vhost.d:/etc/nginx/vhost.d
+	            - ./nginx/log:/var/log/nginx
+	            - proxy-dhparam:/etc/nginx/dhparam
+	            - proxy-html:/usr/share/nginx/html
+	        restart: always
+	
+	    letsencrypt:
+	        image: jrcs/letsencrypt-nginx-proxy-companion
+	        container_name: letsencrypt
+	        environment:
+	            TZ: Asia/Tokyo
+	            NGINX_PROXY_CONTAINER: proxy
+	            DEFAULT_EMAIL: "bdkouiti5013@gmail.com"
+	        networks:
+	            - proxy-link
+	        volumes:
+	            - /var/run/docker.sock:/var/run/docker.sock:ro
+	            - ./nginx/certs:/etc/nginx/certs
+	            - ./nginx/vhost.d:/etc/nginx/vhost.d
+	            - proxy-acme:/etc/acme.sh
+	            - proxy-html:/usr/share/nginx/html
+	        depends_on:
+	            - proxy
+	        restart: always
+	
+	networks:
+	    default:
+	        external:
+	            name: bridge
+	    proxy-link:
+	        name: proxy.internal
+	
+	volumes:
+	    proxy-dhparam:
+	    proxy-html:
+	    proxy-acme:
+6b4a0174615136d5ed1601ac6593c7f6|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|101|1|V|yaml
+	networks:
+	    default:
+	        external:
+	            name: bridge
+	    proxy-link:
+	        external:
+	            name: proxy.internal
+	    homepage-link:
+	        name: nginx.internal
+209b0e97274ab974c36685baf179ce84|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|15|1|V|yaml
+	    networks:
+bd20bc16f2954b4f80b1e80c5e0768a3|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|15|1|V|yaml
+	      - homepage-link
+67ff32d40fb51f1a2fd2c4f1b1019785|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|44|9|v|yaml
+	8000
+f487a86d84b3c03e7206834dc5cc7c5d|file:///Users/Kouiti/local_file/maman-homepage/nginx/nginx.conf|1|1|V|
+	worker_processes auto;
+	
+	events {
+	  worker_connections 1024;
+	}
+	
+	http {
+	  server {
+	    listen 80;
+	
+	    location /api/ {
+	      proxy_http_version 1.1;
+	      proxy_set_header Upgrade $http_upgrade;
+	      proxy_set_header Connection "upgrade";
+	      proxy_set_header Host $host;
+	      proxy_pass http://go:8000/;
+	    }
+	
+	    location / {
+	      proxy_http_version 1.1;
+	      proxy_set_header Upgrade $http_upgrade;
+	      proxy_set_header Connection "upgrade";
+	      proxy_set_header Host $host;
+	      proxy_pass http://react:3000/;
+	    }
+	  }
+	}
+79b645b83fa40f1c05e197dbb3282e86|file:///Users/Kouiti/local_file/reverse-proxy/nginx/vhost.d/nginx.conf|20|23|V|
+	      proxy_http_version 1.1;
+	      proxy_set_header Upgrade $http_upgrade;
+	      proxy_set_header Connection "upgrade";
+	      proxy_set_header Host $host;
+	      proxy_pass http://react:3000/;
+f6ffd63e096d9e71b050e6ca0095d798|file:///Users/Kouiti/local_file/reverse-proxy/nginx/vhost.d/nginx.conf|11|21|V|
+	    location /api/ {
+	      proxy_http_version 1.1;
+	      proxy_set_header Upgrade $http_upgrade;
+	      proxy_set_header Connection "upgrade";
+	      proxy_set_header Host $host;
+	      proxy_pass http://go:8000/;
+ade7f3bcb1cc675093e5aa15b4884e2d|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|20|23|v|yaml
+	vhost
+73f38e964c8ffb79f23a739e92e1efc2|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|98|1|V|yaml
+	# networks:
+	#     default:
+	#         external:
+	#             name: bridge
+	#     proxy-link:
+	#         external:
+	#             name: proxy.internal
+	#     homepage-link:
+	#         name: nginx.internal
+	
+4247ee3694cdcc2c82281e3e5ded2643|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|96|1|V|yaml
+	      - container-link
+b33bd184bfdd9f17891cbbdbc399e8e3|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|112|1|V|yaml
+	volumes:
+	  cert:
+	  html:
+	　vhost:
+66f996363ecea3f00346a236c2434a03|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|5|12|v|yaml
+	jwilder/nginx-proxy
+d3c22d3e71a309d632cba0159c6aa932|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|115|4|V|yaml
+	　vhost:
+5ddbb1b7ddf4b1d047efaf6438e7fc1b|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|113|3|V|yaml
+	  cert:
+ffd0e7c0dadccaf23b48d22613ff7113|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|3|1|V|yaml
+	services:
+	  nginx-proxy:
+	    image: jwilder/nginx-proxy
+	    container_name: nginx-proxy-test
+	    privileged: true
+	    environment:
+	      - "DHPARAM_GENERATION=false"
+	    ports:
+	      - 80:80
+	      - 443:443
+	    networks:
+	      - container-link
+	    volumes:
+	      - /var/run/docker.sock:/tmp/docker.sock:ro
+	      - proxy:/usr/share/nginx/html
+	      - proxy:/etc/nginx/vhost.d
+	      - ./docker/encrypt/certs:/etc/nginx/certs:ro
+	      # - ./conf.d/proxy.conf:/etc/nginx/conf.d/proxy.conf:ro # 設定を上書きするときはconf.d内に「.conf」拡張子で追加する
+	    restart: always
+	    labels:
+	      com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy: "true"
+	
+	  letsencrypt-nginx:
+	    image: jrcs/letsencrypt-nginx-proxy-companion
+	    container_name: letsencrypt-nginx-test
+	    privileged: true
+	    environment:
+	      - NGINX_PROXY_CONTAINER=nginx-proxy-test # volume_fromを使わない時はコンテナを指定する必要がある
+	    networks:
+	      - container-link
+	    volumes:
+	      - /var/run/docker.sock:/var/run/docker.sock:ro
+	      - proxy:/etc/nginx/vhost.d
+	      - proxy:/usr/share/nginx/html
+	      - ./docker/encrypt/certs:/etc/nginx/certs:rw
+	    restart: always
+	    depends_on:
+	      - nginx-proxy
+	
+	networks:
+	  default:
+	    external:
+	      name: bridge
+	  container-link:
+	    name: container_network
+795faab7c8f1fb7416204f61c2b16ae7|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|3|1|V|yaml
+	  react:
+	    build:
+	      context: .
+	      dockerfile: ./docker/react/Dockerfile
+	    container_name: react_container
+	    restart: always
+	    tty: true
+	    volumes:
+	      - ./react-app:/app/react
+	    command: sh -c "cd /app/react/react-app && yarn start"
+	    ports:
+	      - 3000:3000
+	    networks:
+	      # - homepage-link
+	      - container-link
+	
+	
+	  mysql:
+	    build:
+	      context: .
+	      dockerfile: ./docker/mysql/Dockerfile
+	    container_name: mysql_container
+	    restart: always
+	    environment:
+	      MYSQL_ROOT_PASSWORD: paswd
+	      MYSQL_DATABASE: go_database
+	      MYSQL_USER: user
+	      MYSQL_PASSWORD: paswd
+	    volumes:
+	      - ./docker/mysql/initdb.d:/docker-entrypoint-initdb.d
+	      - ./docker/mysql/conf.d:/etc/mysql/conf.d
+	      - ./docker/mysql/mysql_data:/var/lib/mysql
+	    ports:
+	      - 3306:3306
+	    links:
+	      - go
+	    networks:
+	      # - homepage-link
+	      - container-link
+	
+	
+	  go:
+	    build:
+	      context: .
+	      dockerfile: ./docker/golang/Dockerfile
+	    container_name: go_container
+	    ports:
+	      - 8000:8000
+	    tty: true
+	    stdin_open: true
+	    restart: always
+	    environment:
+	      MYSQL_DATABASE: go_database
+	      MYSQL_HOST: mysql_container
+	      MYSQL_USER: user
+	      MYSQL_PASSWORD: paswd
+	    volumes:
+	      - ./go-app/images:/go/src/go-app/images
+	    networks:
+	      # - homepage-link
+	      - container-link
+	
+	  nginx:
+	    build:
+	      context: .
+	      dockerfile: ./docker/nginx/Dockerfile
+	    container_name: nginx_container
+	    # ports:
+	    #   - 80:80
+	    restart: always
+	    environment:
+	      - TZ=Asia/Tokyo
+	    volumes:
+	      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+	      - html:/usr/share/nginx/challenge
+	      - ./web/html:/usr/share/nginx/html
+	    networks:
+	      # - proxy-link
+	      # - homepage-link
+	      - container-link
+	
+	  phpmyadmin:
+	    build:
+	      context: .
+	      dockerfile: ./docker/phpadmin/Dockerfile
+	    container_name: phpmyadmin
+	    environment:
+	      - PMA_ARBITRARY=1
+	      - PMA_HOST=mysql
+	      - PMA_USER=user
+	      - PMA_PASSWORD=paswd
+	    links:
+	      - mysql
+	    ports:
+	      - 1234:80
+	    volumes:
+	      - /sessions
+	    networks:
+	      # - homepage-link
+	      - container-link
+ad6238a439457ce1c2c97c2aaf9c41fa|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|78|1|V|yaml
+	      - html:/usr/share/nginx/challenge
+	      - ./web/html:/usr/share/nginx/html
+ec6b26e7917edbaf9acd8a500f2f12c5|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|10|1|V|yaml
+	    environment:
+7ff3aca904eef3a2c55365fb3de7b04d|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|10|35|V|yaml
+	      - WORDPRESS_DB_NAME=wordpress_db #WordPressの設定
+4cb8f978f3784aeb910dbb2f369e32d8|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|10|35|V|yaml
+	      - WORDPRESS_DB_PASSWORD=mysql_password #WordPressの設定
+f60631664fbf46ecb7f80c5387f1f798|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|75|24|V|yaml
+	            environment:
+8ca78b1a6adfead6867b881c89189086|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|75|12|V|yaml
+	environment:
+15420c28257bc415d0488bb380137353|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|84|1|V|yaml
+	      # - proxy-link
+	      # - homepage-link
+37fa779015d126bbcdc0e414f0e0b496|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|62|22|V|yaml
+	      # - homepage-link
+03f1cb9d924a60c2cc43623507706991|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|112|1|V|yaml
+	
+	# networks:
+	#     default:
+	#         external:
+	#             name: bridge
+	#     proxy-link:
+	#         external:
+	#             name: proxy.internal
+	#     homepage-link:
+	#         name: nginx.internal
+8fea5dc68a7f828bdda1b1c5e60502e5|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|51|1|V|yaml
+	# version: "3.7"
+	
+	# services:
+	
+	#     proxy:
+	#         image: jwilder/nginx-proxy
+	#         container_name: proxy
+	#         environment:
+	#             TZ: Asia/Tokyo
+	#             DEFAULT_HOST: "maman2030-himeji.com"
+	#             DHPARAM_GENERATION: "false"
+	#         ports:
+	#             - 80:80
+	#             - 443:443
+	#         networks:
+	#             - proxy-link
+	#         volumes:
+	#             - /var/run/docker.sock:/tmp/docker.sock:ro
+	#             - ./nginx/certs:/etc/nginx/certs:ro
+	#             - ./nginx/vhost.d:/etc/nginx/vhost.d
+	#             - ./nginx/log:/var/log/nginx
+	#             - proxy-dhparam:/etc/nginx/dhparam
+	#             - proxy-html:/usr/share/nginx/html
+	#             - ./test/html:/etc/test/html
+	#         restart: always
+	
+	#     letsencrypt:
+	#         image: jrcs/letsencrypt-nginx-proxy-companion
+	#         container_name: letsencrypt
+	#         environment:
+	#             TZ: Asia/Tokyo
+	#             NGINX_PROXY_CONTAINER: proxy
+	#             DEFAULT_EMAIL: "bdkouiti5013@gmail.com"
+	#         networks:
+	#             - proxy-link
+	#         volumes:
+	#             - /var/run/docker.sock:/var/run/docker.sock:ro
+	#             - ./nginx/certs:/etc/nginx/certs
+	#             - ./nginx/vhost.d:/etc/nginx/vhost.d
+	#             - proxy-acme:/etc/acme.sh
+	#             - proxy-html:/usr/share/nginx/html
+	#         depends_on:
+	#             - proxy
+	#         restart: always
+	
+	# networks:
+	#     default:
+	#         external:
+	#             name: bridge
+	#     proxy-link:
+	#         name: proxy.internal
+	
+	# volumes:
+	#     proxy-dhparam:
+	#     proxy-html:
+	#     proxy-acme:
+f65105e36bb763759194b8c9cb768b8e|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|20|1|V|yaml
+	      # - ./conf.d/proxy.conf:/etc/nginx/conf.d/proxy.conf:ro # 設定を上書きするときはconf.d内に「.conf」拡張子で追加する
+3a040853c4a2b274fd3db2fd27260c74|file:///Users/Kouiti/local_file/maman-homepage/Makefile|11|1|V|make
+	create_service:
+		curl -X POST -H "Content-Type: application/json" -d '{"title": "title", "comment":"comment", "show":"true", "grouped":"false"}' localhost/api/services/create
+	
+	get_service:
+		curl 'localhost/api/services/get/1'
+	
+	list_service:
+		curl 'localhost/api/services/list'
+	
+	signup:
+		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/signup
+	
+	login:
+		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/login
+	
+	test:
+		watch -n 3 "curl 'localhost/api/services/list/all' | jq"
+85da28a3f9b4af58df98a0a12f3ede8b|file:///Users/Kouiti/local_file/maman-homepage/Makefile|10|1|V|make
+	
+	create_service:
+		curl -X POST -H "Content-Type: application/json" -d '{"title": "title", "comment":"comment", "show":"true", "grouped":"false"}' localhost/api/services/create
+	
+	get_service:
+		curl 'localhost/api/services/get/1'
+	
+	list_service:
+		curl 'localhost/api/services/list'
+	
+	signup:
+		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/signup
+	
+	login:
+		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/login
+	
+	test:
+		watch -n 3 "curl 'localhost/api/services/list/all' | jq"

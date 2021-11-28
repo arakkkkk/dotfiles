@@ -15,3 +15,11 @@ set -x GOENV_ROOT $HOME/.goenv
 set -x PATH $GOENV_ROOT/bin $PATH
 eval (goenv init - | source)
 set -x PATH $GOPATH/bin $PATH
+
+# shortcut
+alias ga="git add ."
+alias gs="git status"
+alias gp="git pull"
+alias gd="git diff"
+alias gb="git branch"
+alias gl="git log"

@@ -26,6 +26,3 @@ alias gb="git branch"
 alias gl="git log"
 
 alias gitreset="git reset --hard HEAD"
-
-
-alias source="source ~/.config/fish/config.fish"

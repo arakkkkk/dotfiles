@@ -1,1019 +1,3 @@
-bc5296a7f8186d23a07c8f1ab00c1597|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|30|1|V|javascript
-	    content: {
-	        marginTop: "50px",
-	        position: "relative",
-	        height: "400px"
-b0db47ba22f746c63f39759de9e40e90|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|30|1|V|javascript
-	    content: {
-	        marginTop: "50px",
-	        position: "relative",
-	        height: "400px"
-	    },
-e650bbaf9734d637d48827f94aca71a1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|13|5|V|css
-	    content: {
-4f94b621d1743e8056e8c54b9d4bbf1d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|16|5|V|css
-	    },
-2079ec3f596492468482b6be6aaa467d|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|12|1|V|css
-	.hedd-area{
-	        margin-top: 50px;
-	        position: relative;
-	        height: 600px;
-	}
-f196ded4f0088f11ff9be0f510a3f3e6|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/HeadImage.js|38|21|V|javascript
-	        marginTop: "200px"
-bbdb9e9229dde00708179e9481effddf|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|64|1|V|css
-	.head-area {
-	    margin: 150px 0px
-	}
-280c719ec16569c703b61c02184338ca|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|64|1|V|css
-	@media (max-width: 500px) {
-	    h4 {
-	        font-size: 20px;
-	    }
-	}
-c04ae2393e1a1a2e913eaca463e69e87|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|65|1|V|css
-	    h4 {
-	        font-size: 20px;
-	    }
-d1b57bb9124ee4e392daee9e54430fcb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|64|1|V|css
-	@media (max-width: 500px) {
-	}
-ac2323e76887c4162dd4bf009e7ce1cb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|64|1|V|css
-	.head-area {
-	    margin: 150px 0px
-	}
-	
-c3e92def4e3bfbc14dc1a7417153bec4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|156|26|v|css
-	 0px
-f35d69eab953dba7b6240850a6f876a0|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|156|1|V|css
-	        margin-top: 150px;
-3858ac5e7a9f93ee3119398ce0346a90|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|157|9|v|css
-	margin-top
-cebb062a650f0782ff514dd821cde6f1|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|41|1|V|javascript
-	                            <div class="card mb-3">
-0e24a49a3858e4ec44969b634d174f04|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|37|44|v|javascript
-	 style={{backgroundColor:}}
-31dedb1e28f9ffd82ab4053dd585e089|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|69|23|v|css
-	#583F2A
-992c6c8208321e340caa2e5edff34d90|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/layouts/Footer.js|3|28|v|javascript
-	 style={{ backgroundColor: "#583F2A" }
-cec9732770b5ed11f53247c98d6de793|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|76|1|V|css
-	    background-color: #583F2A;
-2decfebf9c76e7fdac7cbca0ca1648dc|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|2|5|V|css
-	    background-color: #E8D6AE;
-c1728fe207f4b13e75d346a58d7fa1ba|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|142|9|V|css
-	    background-color: ;
-91c5a29b2108369e0a05cd4a5ac3f9de|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|142|23|v|css
-	#E8D6AE
-dae18d04d11374c35fd518d74a15abbb|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|37|44|v|javascript
-	 style={{ backgroundColor: "#E8D6AE" }}
-5b9d386b4ee056dd9bfd5a28f455c1e4|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|37|1|V|javascript
-	                <div class="card px-2 pt-3" style={{ backgroundColor: "#E8D6AE" }}>
-9b0db20282c2dc8d23943c66e26f1139|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Menu.js|57|1|V|javascript
-	                </div>
-aaabf0d39951f3e6c3e8a7911df524c2|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/views/Home.js|30|34|v|javascript
-	service
-499a9971a3ea2ad036ae524971fe1f4a|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|162|1|V|css
-	        margin-top: 120px;
-	        margin-bottom: 70px;
-09429335004bd27bafbc65a907c57faa|file:///Users/Kouiti/local_file/homepage/react-app/react-app/src/static/css/index.css|65|9|V|css
-	    margin: 150px 0px
-949235d342a640ae6030cdc578028ac7|file:///Users/Kouiti/local_file/maman-homepage/.gitignore|1|13|V|
-	go-app/crypto/
-9381a7bbd03577d6d8720c7f35c94ffa|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/.gitignore|3|1|V|
-	log/
-97aefd0d527b934f1d99a682da8fe6a9|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/.gitignore|23|1|V|
-	lib/
-08974c4db825d8b8f21e95b448933eec|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|5|1|V|vim
-	set tabstop=2          "タブを何文字の空白に変換するか
-	set shiftwidth=2       "自動インデント時に入力する空白の数
-66001a5c422458c62930c519cd0ffd95|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|17|1|V|html
-	  <script type="text/javascript" src="{% static 'js/sidebar.js' %}" defer></script>
-d48fd9109edf6c454151a56200eb6c43|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|17|1|V|html
-	  <link rel="stylesheet" href="{% static 'css/sidebar.css' %}">
-0838fecfbd2ae7e09c7871ecf6313a4b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|20|47|v|html
-	sidebar
-0a4e5103a5c4beeced7bb33bbd457737|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/progress.js|4|1|V|javascript
-	setInterval(function () {
-	    $(".progress .circle:nth-of-type(" + i + ")").addClass("active");
-	
-	    $(".progress .circle:nth-of-type(" + (i - 1) + ")")
-	        .removeClass("active")
-	        .addClass("done");
-	
-	    $(".progress .circle:nth-of-type(" + (i - 1) + ") .label").html("&#10003;");
-	
-	    $(".progress .bar:nth-of-type(" + (i - 1) + ")").addClass("active");
-	
-	    $(".progress .bar:nth-of-type(" + (i - 2) + ")")
-	        .removeClass("active")
-	        .addClass("done");
-	
-	    i++;
-	
-	    if (i == 0) {
-	        $(".progress .bar").removeClass().addClass("bar");
-	        $(".progress div.circle").removeClass().addClass("circle");
-	        i = 1;
-	    }
-	}, 1000);
-23cb13972720688592255200ebadda04|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|31|16|V|css
-	  margin-left: -3px;
-3bfe50659ce8276c175dcead97f4b5ad|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|31|16|V|css
-	  margin-right: -3px;
-54816dcd7fdf8dec0937781b253a198a|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|108|12|v|python
-	MiniTask.objects.filter(task_id=task_id, turn=task_turn)
-6dad038fd83fc82a391931898cf71486|file:///Users/Kouiti/local_file/lets/lets_proj/app/models.py|282|9|v|python
-	get_all_minitask_by_task
-46550481035d5c37169ea460eb81a05e|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|95|14|v|python
-	Task.objects.all().get(id=task_id),
-23d0435bc532b01282c06501d3591b77|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|96|1|V|python
-	        task=Task.objects.all().get(id=task_id),
-6327063e5d76b1442bf9f52c1037b3c9|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|36|1|V|html
-	        <div class="progress">
-3486592f946726a2b0f14413b53a6f57|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|35|1|V|html
-	        {% if next_turn -1 == mt.turn %}
-d2461a2fe10aefa1408135da7f45ba42|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|36|1|V|html
-	        {% if next_turn -1 < mt.turn %}
-a5f80fdcfacbff49112547401ec25358|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|36|1|V|html
-	        {% endif %}
-7d3b881b05b6c1b0b3a6bda122271c49|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|45|1|V|html
-	          <div class="circle done">
-	            <span class="label">1</span>
-	            <span class="title">Personal</span>
-	          </div>
-4611d2035de33ed74d84cbda575ac6d3|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|35|1|V|html
-	          {% if next_turn -1 == mt.turn %}
-	            
-	          {% endif %}
-045c98885894278d8343d802830287a6|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|58|1|V|html
-	          <span class="bar half"></span>
-	          <div class="circle active">
-	            <span class="label">3</span>
-	            <span class="title">Payment</span>
-	          </div>
-bc95dfc14146aa23e43f2ea7af04d310|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|42|11|V|html
-	            
-b39001359a2c8eec7ce2af10f98de192|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|57|1|V|html
-	          <span class="bar done"></span>
-11e4e89e9156ef0722183d4caff0f05b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|68|1|V|html
-	          <span class="bar"></span>
-	          <div class="circle">
-	            <span class="label">4</span>
-	            <span class="title">Review</span>
-	          </div>
-2ab65ff156333f2058f8a6b0cefdbdbf|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|67|1|V|html
-	          </div>
-	          <span class="bar"></span>
-4f5ca3211687916f7e63aa30ae505196|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|56|11|v|html
-	{{ mt.task_type }}
-41b394758330c83757856aa482c79977|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|56|10|V|html
-	          
-fdce2937f7a078f59937671a69940853|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|49|1|V|html
-	          {% if turn > mt.turn %}
-	            <span class="bar"></span>
-	            <div class="circle">
-	              <span class="label">4</span>
-	              <span class="title">{{ mt.task_type }}</span>
-	            </div>
-	          {% endif %}
-b5457aeffcb08733f418ee594d580a3d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|49|1|V|html
-	          {% if turn == mt.turn %}
-	            <span class="bar half"></span>
-	            <div class="circle active">
-	              <span class="label">3</span>
-	              <span class="title">{{ mt.task_type }}</span>
-	            </div>
-	          {% endif %}
-8b200db7b7746994463d7e193d0020e7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|36|1|V|html
-	            <span class="bar"></span>
-	            <div class="circle">
-	              <span class="label">4</span>
-	              <span class="title">{{ mt.task_type }}</span>
-	            </div>
-b64b34d3f786fd2eb2c029c8bd78ef92|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|46|13|V|html
-	            <div class="circle done">
-	              <span class="label">1</span>
-	              <span class="title">{{ mt.task_type }}</span>
-	            </div>
-f81c4d9a95d8b25df0489b23b118e204|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|49|15|V|html
-	            <span class="bar done"></span>
-d98d8d714004cbeb35cec01bd0f47d45|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|42|1|V|html
-	          {% endif %}
-ee9cd82c8de0fe805bc07342d477bf7a|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|26|1|V|css
-	.progress .bar {
-485af76882955d93b1834d7f469b9085|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|22|1|V|css
-	  width: 36px; height: 36px;
-0d3166b290eb13614120a1c8aca97b7a|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|25|1|V|css
-	.progress .lavel {
-	}
-d043f65d01680fcdd5358c47095a4f10|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|18|1|V|css
-	.progress .circle,
-4a7c9d70d7328f85f41446a60615260a|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|25|12|v|css
-	lavel
-c3f288769912610b59f245beab403702|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|26|14|v|css
-	 !important;
-ba683caa59097048a5a4b2175f2b6992|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/static/css/top.css|61|1|V|css
-	@media (max-width: 500px) {
-49afd3a0b2fc9d3357a9848a9d5486c0|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|25|1|V|css
-	.progress .circle {
-	  width: 36px !important;
-	  height: 36px !important;
-	}
-00d1c67373efb27e30c329f7cbcc9f12|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|11|10|v|css
-	100vw
-c7c6a7b0e9e4b4100ce07117bd8524dd|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|84|12|v|css
-	28px
-5377679896a0b80075db667f95a70988|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|39|1|V|css
-	.progress .circle .label {
-	  display: inline-block;
-	  width: 28px;
-	  height: 28px;
-	  line-height: 28px;
-	  border-radius: 28px;
-	  margin-top: 3px;
-	  color: #b5b5ba;
-	  font-size: 16px;
-	  z-index: 0;
-	}
-3754f93a9c510a72fd07b93e67d4090d|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|88|1|V|css
-	    display: inline-block;
-8bd3e8e787399219202c4154ed0b4781|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|90|1|V|css
-	    line-height: 28px;
-	    border-radius: 28px;
-	    margin-top: 3px;
-	    color: #b5b5ba;
-	    font-size: 16px;
-	    z-index: 0;
-59128345709e19b9930266bbdd2f6d8f|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|93|1|V|css
-	    color: #b5b5ba;
-d90801951ee29590a1d15ecd45ded023|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|94|1|V|css
-	    z-index: 0;
-e8e27f47c91246e019bddc22ded91189|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|37|13|V|css
-	  z-index: 1;
-c9652401c592069db645e5d8c3ef3f7e|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|47|1|V|css
-	  z-index: 0;
-6b8caac094249e15c175c9b607856f97|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|48|46|V|html
-	              <span class="title">{{ mt.task_type }}</span>
-a850c17cba5eb16b0d3d40a106333bd5|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|40|40|v|html
-	turn
-092eb1414c318aa57f8ed81b19e0fd49|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|27|1|V|css
-	  /* height: 36px; */
-7e3ea77c292e2a6e1e547ad8682b7cf9|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|28|11|v|css
-	36px
-776898b26a3f39cb10bfa717d41383c3|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|28|1|V|css
-	  height: auto;
-ec9f5599dfe3af63878cd015df936198|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|12|11|v|css
-	70px
-3d6fc8aae8c4ece5862448bb04bd49a6|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|1|3|V|css
-	*, *:after, *:before {
-	  margin: 0;
-	  padding: 0;
-	  box-sizing: border-box;
-	  font-family: "Open Sans";
-	}
-	
-	
-	/* Form Progress */
-	.progress {
-	  width: 100%;
-	  height: auto;
-	  /* padding: 0 10px; */
-	  /* margin: 0px auto; */
-	  text-align: center;
-	  background: rgba(255,0,0,0);
-	}
-	.progress .circle,
-	.progress .bar {
-	  display: inline-block;
-	  background: #fff;
-	  border-radius: 40px;
-	  border: 1px solid #d5d5da;
-	}
-	.progress .circle {
-	  /* width: 36px; */
-	  /* height: 36px; */
-	  height: auto;
-	}
-	.progress .bar {
-	  position: relative;
-	  width: 40px;
-cf5e775ab9cf9f6598558b51ee4fccad|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|36|1|V|html
-	            {% if mt.turn != 1 %}
-	              <span class="bar done"></span>
-	            {% endif %}
-	            <div class="circle done">
-	              <span class="label">{{mt.task_type}}</span>
-	            </div>
-a5f501ca440d093222467630ee0e55f4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|37|1|V|html
-	          {% if turn == mt.turn %}
-	            <span class="bar half"></span>
-	            <div class="circle active">
-	              <span class="label">{{mt.task_type}}</span>
-	            </div>
-	          {% endif %}
-0a04a9796010df9b1152a9aef9e98c9d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|38|1|V|html
-	            <span class="bar"></span>
-	            <div class="circle">
-	              <span class="label">{{mt.task_type}}</span>
-	            </div>
-3c709b10a5d47ba33d85337dd9110917|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|33|21|v|html
-	progress
-0bf222a5ef631d187950c4e5ab722e6d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|36|1|V|html
-	          <div class="col">
-	          </div>
-726a8b173d0bef2da85f7796ef0b44ad|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|37|1|V|html
-	            {{turn}}
-3be8dcad90e945ee08ad0c693c5556ac|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|1|1|V|css
-	*, *:after, *:before {
-	  margin: 0;
-	  padding: 0;
-	  box-sizing: border-box;
-	  font-family: "Open Sans";
-	}
-	
-	
-	/* Form Progress */
-	.progress {
-	  width: 100%;
-	  height: auto;
-	  /* padding: 0 10px; */
-	  /* margin: 0px auto; */
-	  text-align: center;
-	  background: rgba(255,0,0,0);
-	}
-	.progress .circle,
-	.progress .bar {
-	  display: inline-block;
-	  background: #fff;
-	  border-radius: 40px;
-	  border: 1px solid #d5d5da;
-	}
-	.progress .circle {
-	  /* width: 36px; */
-	  /* height: 36px; */
-	  height: auto;
-	}
-	.progress .bar {
-	  position: relative;
-	  width: 40px;
-	  height: 6px;
-	  top: 15px;
-	  border-left: none;
-	  border-right: none;
-	  border-radius: 0;
-	}
-	.progress .circle .label {
-	  display: inline-block;
-	  /* width: 28px; */
-	  /* height: 28px; */
-	  /* line-height: 28px; */
-	  padding: 2px;
-	  border-radius: 28px;
-	  margin: 3px;
-	  color: #b5b5ba;
-	  font-size: 12px;
-	}
-	/* .progress .circle .title { */
-	/*   color: #b5b5ba; */
-	/*   font-size: 11px; */
-	/*   line-height: 30px; */
-	/*   margin-left: -5px; */
-	/* } */
-	
-	/* Done / Active */
-	.progress .bar.done,
-	.progress .circle.done {
-	  background: #eee;
-	}
-	.progress .bar.active {
-	  background: linear-gradient(to right, #EEE 40%, #FFF 60%);
-	}
-	.progress .circle.done .label {
-	  color: #FFF;
-	  background: #8bc435;
-	  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
-	}
-	/* .progress .circle.done .title { */
-	/*   color: #444; */
-	/* } */
-	.progress .circle.active .label {
-	  color: #FFF;
-	  background: #0c95be;
-	  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
-	}
-	/* .progress .circle.active .title { */
-	/*   color: #0c95be; */
-	/* } */
-	
-	/* @media (max-width: 1250px) { */
-	/*   .progress .circle { */
-	/*     width: 30px !important; */
-	/*     height: 30px !important; */
-	/*   } */
-	/*   .progress .circle .label { */
-	/*     width: 23px; */
-	/*     height: 23px; */
-	/*     line-height: 28px; */
-	/*     border-radius: 28px; */
-	/*     margin-top: 3px; */
-	/*     font-size: 16px; */
-	/*   } */
-	/* } */
-153710e1f1712490815a9645bf8d4c4b|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|39|1|V|html
-	  </div>
-4d7b11358dc7c1ae556b79d988706192|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|1|1|V|css
-	*, *:after, *:before {
-	  margin: 0;
-	  padding: 0;
-	  box-sizing: border-box;
-	  font-family: "Open Sans";
-	}
-	
-	
-	/* Form Progress */
-	.progress {
-	  width: 100%;
-	  height: auto;
-	  /* padding: 0 10px; */
-	  /* margin: 0px auto; */
-	  text-align: center;
-	  background: rgba(255,0,0,0);
-	}
-	.progress .circle,
-	.progress .bar {
-	  display: inline-block;
-	  background: #fff;
-	  border-radius: 40px;
-	  border: 1px solid #d5d5da;
-	}
-	.progress .circle {
-	  /* width: 36px; */
-	  /* height: 36px; */
-	  height: auto;
-	}
-	.progress .bar {
-	  position: relative;
-	  width: 40px;
-	  height: 6px;
-	  top: 15px;
-	  border-left: none;
-	  border-right: none;
-	  border-radius: 0;
-	}
-	.progress .circle .label {
-	  display: inline-block;
-	  /* width: 28px; */
-	  /* height: 28px; */
-	  /* line-height: 28px; */
-	  padding: 2px;
-	  border-radius: 28px;
-	  margin: 3px;
-	  color: #b5b5ba;
-	  font-size: 12px;
-	}
-	/* .progress .circle .title { */
-	/*   color: #b5b5ba; */
-	/*   font-size: 11px; */
-	/*   line-height: 30px; */
-	/*   margin-left: -5px; */
-	/* } */
-	
-	/* Done / Active */
-	.progress .bar.done,
-	.progress .circle.done {
-	  background: #eee;
-	}
-	.progress .bar.active {
-	  background: linear-gradient(to right, #EEE 40%, #FFF 60%);
-	}
-	.progress .circle.done .label {
-	  color: #FFF;
-	  background: #8bc435;
-	  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
-	}
-	/* .progress .circle.done .title { */
-	/*   color: #444; */
-	/* } */
-	.progress .circle.active .label {
-	  color: #FFF;
-	  background: #0c95be;
-	  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
-	}
-	/* .progress .circle.active .title { */
-	/*   color: #0c95be; */
-	/* } */
-	
-	/* @media (max-width: 1250px) { */
-	/*   .progress .circle { */
-	/*     width: 30px !important; */
-	/*     height: 30px !important; */
-	/*   } */
-	/*   .progress .circle .label { */
-	/*     width: 23px; */
-	/*     height: 23px; */
-	/*     line-height: 28px; */
-	/*     border-radius: 28px; */
-	/*     margin-top: 3px; */
-	/*     font-size: 16px; */
-	/*   } */
-	/* } */
-	*, *:before, *:after {
-	  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-	 }
-	
-	body {
-	  background: #999;
-	}
-	
-	h2 {
-	  margin: 0 0 20px 0;
-	  padding: 0 0 5px 0;
-	  border-bottom: 1px solid #999;
-	  font-family: sans-serif;
-	  font-weight: normal;
-	  color: #333;
-	}
-	
-	.container {
-	  width: 500px;
-	  margin: 20px;
-	  background: #fff;
-	  padding: 20px;
-	  overflow: hidden;
-	  float: left;
-	}
-	
-	.horizontal .progress-bar {
-	  float: left;
-	  height: 45px;
-	  width: 100%;
-	  padding: 12px 0;
-	}
-	
-	.horizontal .progress-track {
-	  position: relative;
-	  width: 100%;
-	  height: 20px;
-	  background: #ebebeb;
-	}
-	
-	.horizontal .progress-fill {
-	  position: relative;
-	  background: #666;
-	  height: 20px;
-	  width: 50%;
-	  color: #fff;
-	  text-align: center;
-	  font-family: "Lato","Verdana",sans-serif;
-	  font-size: 12px;
-	  line-height: 20px;
-	}
-	
-	.rounded .progress-track,
-	.rounded .progress-fill {
-	  border-radius: 3px;
-	  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
-	}
-	
-	
-	
-	/* Vertical */
-	
-	.vertical .progress-bar {
-	  float: left;
-	  height: 300px;
-	  width: 40px;
-	  margin-right: 25px;
-	}
-	
-	.vertical .progress-track {
-	  position: relative;
-	  width: 40px;
-	  height: 100%;
-	  background: #ebebeb;
-	}
-	
-	.vertical .progress-fill {
-	  position: relative;
-	  background: #825;
-	  height: 50%;
-	  width: 40px;
-	  color: #fff;
-	  text-align: center;
-	  font-family: "Lato","Verdana",sans-serif;
-	  font-size: 12px;
-	  line-height: 20px;
-	}
-	
-	.rounded .progress-track,
-	.rounded .progress-fill {
-	  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
-	  border-radius: 3px;
-	}
-8b335a5221c01a58b500804ef0f7fb8f|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|5|1|V|css
-	body {
-	  background: #999;
-	}
-3068306f1230e042541c0c577e79ca1d|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|33|13|V|html
-	        </div>
-89c56bc72351a9f41d93145a0afae98e|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|6|1|v|css
-	.progress-bar 
-21c2a476dda6c891e4ba4a787125ab73|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/progress.css|1|1|V|css
-	*, *:before, *:after {
-	  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-	 }
-	
-	
-	.progress-bar h2 {
-	  margin: 0 0 20px 0;
-	  padding: 0 0 5px 0;
-	  border-bottom: 1px solid #999;
-	  font-family: sans-serif;
-	  font-weight: normal;
-	  color: #333;
-	}
-	
-	.progress-bar .container {
-	  width: 500px;
-	  margin: 20px;
-	  background: #fff;
-	  padding: 20px;
-	  overflow: hidden;
-	  float: left;
-	}
-	
-	.progress-bar .horizontal .progress-bar {
-	  float: left;
-	  height: 45px;
-	  width: 100%;
-	  padding: 12px 0;
-	}
-	
-	.progress-bar .horizontal .progress-track {
-	  position: relative;
-	  width: 100%;
-	  height: 20px;
-	  background: #ebebeb;
-	}
-	
-	.progress-bar .horizontal .progress-fill {
-	  position: relative;
-	  background: #666;
-	  height: 20px;
-	  width: 50%;
-	  color: #fff;
-	  text-align: center;
-	  font-family: "Lato","Verdana",sans-serif;
-	  font-size: 12px;
-	  line-height: 20px;
-	}
-	
-	.progress-bar .rounded .progress-track,
-	.progress-bar .rounded .progress-fill {
-	  border-radius: 3px;
-	  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
-	}
-	
-	
-	
-	/* Vertical */
-	
-	.progress-bar .vertical .progress-bar {
-	  float: left;
-	  height: 300px;
-	  width: 40px;
-	  margin-right: 25px;
-	}
-	
-	.progress-bar .vertical .progress-track {
-	  position: relative;
-	  width: 40px;
-	  height: 100%;
-	  background: #ebebeb;
-	}
-	
-	.progress-bar .vertical .progress-fill {
-	  position: relative;
-	  background: #825;
-	  height: 50%;
-	  width: 40px;
-	  color: #fff;
-	  text-align: center;
-	  font-family: "Lato","Verdana",sans-serif;
-	  font-size: 12px;
-	  line-height: 20px;
-	}
-	
-	.progress-bar .rounded .progress-track,
-	.progress-bar .rounded .progress-fill {
-	  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
-	  border-radius: 3px;
-	}
-be4a4d5caf86c37fa4506ac25c951912|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|32|13|V|html
-	        <div class="progress-bar">
-	          <div class="container horizontal rounded">
-	            <div class="progress-bar horizontal">
-	              <div class="progress-track">
-	                <div class="progress-fill">
-	                  <span>75%</span>
-	                </div>
-	              </div>
-	            </div>
-	          </div>
-	        </div>
-6d62b20530feefa547174c18f94bf046|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/layouts/gen.html|31|1|V|html
-	        {% with val = turn / list_minitask|length  %}
-	        {{val}}
-	        {% endwith %}
-	        <div class="progress">
-	          <div class="progress-bar" role="progressbar" style="width: {{turn}}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{list_minitask|length}}</div>
-	        </div>
-	        <!-- <hr> -->
-	        <div class="row">
-	          {% for mt in list_minitask %}
-	          {% if turn > mt.turn %}
-	          <div class="col px-0">
-	            <!-- {{turn}} -->
-	          </div>
-	
-	          {% endif %}
-	          {% if turn < mt.turn %}
-	          <div class="col px-0">
-	            <!-- {{turn}} -->
-	          </div>
-	
-	          {% endif %}
-	          {% endfor %}
-	        </div>
-	
-	        <!-- <div class="progress"> -->
-	        <!--   <div class="circle done"> -->
-	        <!--     <span class="label">1</span> -->
-	        <!--     <span class="title">Personal</span> -->
-	        <!--   </div> -->
-	        <!--   <span class="bar done"></span> -->
-	        <!--   <div class="circle done"> -->
-	        <!--     <span class="label">2</span> -->
-	        <!--     <span class="title">Address</span> -->
-	        <!--   </div> -->
-	        <!--   <span class="bar half"></span> -->
-	        <!--   <div class="circle active"> -->
-	        <!--     <span class="label">3</span> -->
-	        <!--     <span class="title">Payment</span> -->
-	        <!--   </div> -->
-	        <!--   <span class="bar"></span> -->
-	        <!--   <div class="circle"> -->
-	        <!--     <span class="label">4</span> -->
-	        <!--     <span class="title">Review</span> -->
-	        <!--   </div> -->
-	        <!--   <span class="bar"></span> -->
-	        <!--   <div class="circle"> -->
-	        <!--     <span class="label">5</span> -->
-	        <!--     <span class="title">Finish</span> -->
-	        <!--   </div> -->
-	        <!-- </div> -->
-412031f4df6b23daa6541d870f154ff1|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|20|1|V|
-	alias ga="git add ."
-5b26c93cb5d08e4f9464f6064773766d|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|21|1|V|
-	alias gs="git status"
-1226d070ace30e016bb5fa1ba43830a9|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|22|1|V|
-	alias gp="git pull"
-f43dff9a0dc54f0643d0c6d7971635f0|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|23|15|v|
-	pull
-88b1b1cbd273553d7e2308beeb25504d|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|23|1|V|
-	alias gd="git diff"
-939dc1c418b3c3a3a8ab1d702b3b0911|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|24|1|V|
-	alias gb="git branch"
-9603a224b40d7b67210b78f2e390d00f|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|25|15|v|
-	branch
-95b6859cc7cf27e5a1970a8e303f17aa|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|10|11|V|python
-	import glob
-eb7c6a7de909f62ab8e42ab678ff23c2|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|10|43|V|python
-	from expantion_tsv import expantion_tsv_row
-5eafb2b0c66bc5533ded7f468712b0a5|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|11|11|V|python
-	from copy import copy
-	import glob
-25acfc76fb8a3282f30ababa09bc624f|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|202|1|V|python
-	        try:
-	            shutil.rmtree("turtle/" + service)
-	        except:
-	            pass
-	        try:
-	            os.mkdir("turtle/" + service)
-	        except:
-	            pass
-32a6256dd360bad895ab9426b5c3af11|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|60|18|v|python
-	dirname + "/" + service + "/info")
-5183944c52a8ce698201073e273f85f4|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|62|27|v|python
-	"turtle/" + service)
-0fac01a588f2f01f8a01286b44393b1e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|60|17|V|python
-	        os.mkdir(
-7cb0cbcf21219e705de467d6e06abb65|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|86|23|V|python
-	    print("run python")
-3e57d7a834ee010856a922adc698c136|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|78|25|V|python
-	                    print
-1de9b0a30075ae8c303eb420c103c320|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|16|13|v|python
-	reader
-b6cd46ad5c8f61fba37fb24d3563539c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|58|21|V|python
-	        print(service)
-4adecbdfd8853753edaa8122cabaead9|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|60|23|v|python
-	service + "/" + service + ".*.tsv", recursive=True
-e2f4b0f724890614cabf53213ed5c56b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|60|42|v|python
-	dirname + service + "/*.tsv", recursive=True)
-32d17c20ad979a6cd83246916f739693|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|59|44|v|python
-	, recursive=True)
-45be12759f10a035e783566e66362661|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|59|16|v|python
-	"mylib/*"
-97a4e3b581ea70dc86102502736955e7|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|65|14|V|python
-	        return
-ad14110cc5eb0fcacdff4e4ea12521fe|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|16|20|V|python
-	    print("jiojoij")
-a6054545f654d8b8d06ad8d5265ef5d8|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|19|18|V|python
-	        print(row)
-b54b57c45d73814ffd5038fee2ee475d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|64|17|V|python
-	        print(source_dir_name_list)
-73936848771bc46e1c40a6a1e373399e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|80|1|V|python
-	                    service_id_list = join_id_list(service_id_list, id_list)
-c41aec72cbf6707cc004625d5f4e2465|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|83|21|V|python
-	        service_id_list = join_id_list(service_id_list, id_list)
-2dd45592d8cb72306b995142b9264c46|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|84|9|v|python
-	service_id_list
-473196a79578d0198f276a5138e07277|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|55|21|v|python
-	[[] for _ in range(len(column_label))]
-24e5013e145b34bb908729d3d01af1eb|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|18|17|V|python
-	    print(id_list)
-bf15578389259a60cecd0d0898f87a7c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|24|17|V|python
-	    print("id_list >", id_list)
-8371a4387630a3cc9ac9365d83148b94|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|55|15|V|python
-	        print("start", service)
-caeb7b01297619635e6effe79650c234|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|71|31|v|python
-	source_dir_name_list[i]
-cde188ec500a60811d31e8cca996c9b4|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|18|1|V|python
-	def has_bar_in_row(row):
-	    for column in row:
-	        if "|" in column:
-	            return True
-	    return False
-	
-	
-	def has_bar_in_row_list(row_list: list):
-	    for row in row_list:
-	        if has_bar_in_row(row):
-	            return True
-	    return False
-	
-	
-	def expansion_tsv_row(row_list: list):
-	    result_list = []
-	    for row in row_list:
-	        if has_bar_in_row(row):
-	            for i in range(len(row)):
-	                if "|" in row[i]:
-	                    row_a = copy(row)
-	                    row_a[i] = re.split("|", row[i])[0]
-	                    row_b = copy(row)
-	                    row_b[i] = re.split("[|\t$]", row[i])[1]
-	                    result_list.append(row_a)
-	                    result_list.append(row_b)
-	                    break
-	        else:
-	            result_list.append(row)
-	
-	    if has_bar_in_row_list(result_list):
-	        result_list = expansion_tsv_row(result_list)
-	    return result_list
-	
-	
-	def list2tsv(data: list):
-	    result = ""
-	    for i in range(len(data)):
-	        if i != 0:
-	            result += "\t"
-	
-	        if "psi-mi" in data[i]:
-	            result += data[i].split('"')[1].split(":")[1]
-	        elif ":" in data[i]:
-	            result += data[i].split(":")[1].split("(")[0]
-	        else:
-	            result += data[i]
-	    return result
-b962a136196178955fe37322ec420445|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|80|1|V|python
-	            if has_bar_in_row(row_bef):
-	                # |で区切られてるrow dataを展開
-f8729bffd5baa46b39bfeffb0d284d2d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|81|1|V|python
-	            else:
-	                row_list = [row_bef]
-f27503e37d29ea37efd8daf070663441|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|86|33|v|python
-	get_target_id
-7def0e7994fc0a1d029e834d039fe37b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|86|33|v|python
-	treat_data
-7aafdcb4f4de45045af948e79bc0acb8|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|50|5|V|python
-	    ##########################################
-be750d53ff77a3d87882df6745e99b0a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|35|1|V|python
-	    #############################
-2dd6e873530fc0e9a01ab98f030ebc1d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|35|1|V|python
-	    #############################
-	    ###### predicate
-	    #############################
-f670ef68565f21a50d96fb2b8746a338|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|30|12|v|python
-	predicate
-e05ae6eca078a84c09d83cc86fb7b738|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|55|1|V|python
-	    data_xref_obo = URIRef("obolnOwl:hasDbXref")
-	
-	    data_xref_bp = URIRef("http://www.biopax.org/release/biopax-level3.owl#xref")
-	    interaction_annotate = URIRef("http://www.w3.org/2004/02/skos/core#note")
-	    organizm = URIRef("http://www.biopax.org/release/biopax-level3.owl#organism")
-	    interaction_param_pos = URIRef(
-	        "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#hasParameters"
-	    )
-	    # interaction_param_bm = URIRef(
-	    # "http://www.biomodels.net/kisao/KISAO#KISAO_0000259 (has parameter) "
-	    # )
-	
-	    # subject
-	    interactor_ab = rdflib.Namespace("https://identifiers.org/matrixdb.association:")
-	
-	    # object
-	    obo = rdflib.Namespace("http://purl.obolibrary.org/obo/")
-	    publication_id = rdflib.Namespace("https://identifiers.org/pubmed:")
-	    intact = rdflib.Namespace("https://identifiers.org/intact:")
-	    taxon_id = rdflib.Namespace("http://identifiers.org/taxonomy/")
-	    taxon_obo = rdflib.Namespace("http://purl.obolibrary.org/obo/NCBITaxon_")
-	    interaction_xref = rdflib.Namespace("https://identifiers.org/pdb:")
-0a40ba0f178ee56cabcc81e720140a02|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|40|1|V|python
-	    # interaction_param_bm = URIRef(
-	    # "http://www.biomodels.net/kisao/KISAO#KISAO_0000259 (has parameter) "
-	    # )
-d0519781041e57e2606e8d2f1dec9841|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|32|1|V|python
-	    data_xref_obo = URIRef("obolnOwl:hasDbXref")
-	
-	    data_xref_bp = URIRef("http://www.biopax.org/release/biopax-level3.owl#xref")
-	    interaction_annotate = URIRef("http://www.w3.org/2004/02/skos/core#note")
-	    organizm = URIRef("http://www.biopax.org/release/biopax-level3.owl#organism")
-	    interaction_param_pos = URIRef(
-	        "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#hasParameters"
-	    )
-f3de8eb620887c41654a7b314ae22a05|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|126|28|V|python
-	                # Taxon_obo = URIRef(obo + row[])
-	                # Interaction_parameters = URIRef(obo + row[])
-	                # Creation_date = URIRef(obo + row[])
-	                # Updata_date = URIRef(obo + row[])
-	                # INteraction_checksum = URIRef(obo + row[])
-	                # Negative = URIRef(obo + row[])
-ed8df1ba6227c6c41976468d1339b8b8|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|121|1|V|python
-	                # Confidence value
-	                # Expansion_method = URIRef(obo + row[])
-	                # Interaction_xref = URIRef(obo + row[])
-	                # Interaction_annotation = URIRef(obo + row[]) MatrixDBにはなにが入ってる？？
-33c4075a935a18f5d19265845fe2f8da|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|115|23|V|python
-	                URLRef()
-68d50255810e3baf8bb4904aa56a8b1d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|115|23|V|python
-	                URIRef()
-a21051a52d7dfa82bf435fee240a3520|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|28|1|V|python
-	def create_object_uri(column: str):
-01558ffb14d6a9a30e4c16673ad3acf2|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|90|35|v|python
-	create_object_uri
-42ff2702507d0aaed0f428c6ca78f19b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|91|24|V|python
-	                # Dinteractor_b = create_object_uri(row[1])
-4790bc08df171f8e6d77d7f8e068dffc|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|43|1|V|python
-	    column_dasta = treat_data(column)
-4cec6566c438a73f969883bd89517a66|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|28|1|V|python
-	    column_data1 = treat_data(column)
-1d071cf94cb221e621d0dad3bfed4dab|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|35|1|V|python
-	    # subject
-	    interactor_ab = rdflib.Namespace("https://identifiers.org/matrixdb.association:")
-685982ed32e5c214b28b2e8a42b7c03d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|114|1|V|python
-	                Interactor_ab = URIRef(
-	                    interactor_ab + Dinteractor_a.lower() + "__" + Dinteractor_b.lower()
-	                )
-9c6c3943bdbc6f74085f961eee31e842|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|33|25|v|python
-	Dinteractor_a
-d1a8002b8c1f5cc0effc2dedf58b5eb3|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|32|5|V|python
-	    # uriの正当性の確認
-	    Interactor_ab = URIRef(
-070e49ab2165d072e4dd381d39856b03|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|71|1|V|vim
-	などとして
-521e550278aeae4426d3353903a79c13|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|69|1|V|vim
-	:hi link foo Type
-329435e5e66be809a656af105f42401e|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|70|21|v|vim
-	hogehoge
-0cf31b2c283ce3431794586df7b0996d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|34|4|V|python
-	    
-0acd960efb53a0a27371dfaed875dbb4|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|70|1|V|vim
-	:syntax keyword bar \!\!\!
-99909568fafc2b1bc537b2f4d828b6cb|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|36|1|V|python
-	    hogehoge
-84868bd0e1df2e0f99952a3e17a264fd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|37|8|V|python
-	    !!!!
-ac5e5f28627b4b1f4e7788ea28aee2ca|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|69|1|V|vim
-	:hi bar ctermfg=black ctermbg=red
-4ebb272f1e218ed1e8068fcdd0993690|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|70|1|V|vim
-	:syntax keyword bar issue
-0aae4c8f3cc35693d0cbbe631f2e8b52|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|71|21|v|vim
-	issue
-2d35e2ff3c2a8566b14bc97ddd08a9c0|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|71|1|V|vim
-	:syntax keyword bar hoge
 ea703e7aa1efda0064eaa507d9e8ab7e|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|72|21|v|vim
 	hoge
 0191b933c5fc8577f30f1935496597dd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|41|1|V|python
@@ -1820,3 +804,533 @@ b33388391ecd6307fa948d054f535fa6|file:///Users/Kouiti/dotfiles/dotfiles/fish/con
 	alias gitreset="git reset --hard HEAD"
 0490e15b15c5a18138759fd774761640|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|31|7|v|
 	gitreset
+67d468e18a9fd982ad7e6bfdb3811288|file:///Users/Kouiti/.ssh/config|33|1|V|sshconfig
+	Host maman
+	    HostName 153.127.23.164
+	    IdentityFile ~/.ssh/id_rsa
+	    User ubuntu
+	    port 22
+c4e952faad46d44c6290ced8eae9dc5c|file:///Users/Kouiti/.ssh/config|34|1|V|sshconfig
+	    # HostName 153.127.23.164
+4e6f5e3271c76e9d7b5fb22af7057f37|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|14|22|v|yaml
+	maman2030-himeji.com,www.maman2030-himeji.com # nginx-proxyのホスト設定 ※本番ではlocalhost部分を「example.com,www.example.com」等にする
+50327590658e465501f9230055df29de|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|15|26|v|yaml
+	maman2030-himeji.com,www.maman2030-himeji.com # Let's Encryptのホスト設定 ※本番ではlocalhost部分を「example.com,www.example.com」等にする
+68934a3e9455fa72420237eb05902327|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|17|26|v|yaml
+	false
+81dc9bdb52d04dc20036dbd8313ed055|file:///Users/Kouiti/local_file/maman-homepage/webapp/nginx/nginx.conf|32|36|v|
+	1234
+3680a8506fdeaa6dc3078a9151ad6cbc|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|36|1|V|javascript
+	            <div class="container">
+	                <div class="card px-4 pt-2" style={{ backgroundColor: "#E8D6AE" }}>
+1e2f3fd94c680592a2f1d4fde80a87fa|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/OwnerHome.js|7|13|V|javascript
+	            <div class="container">
+e3b6c7818808cf0b9022c774f39d91b5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/OwnerHome.js|14|1|V|javascript
+	            </div>
+c4745f438b9ea7ced980cf7f3e0b0c06|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/OwnerHome.js|7|1|V|javascript
+	                <div class="card px-4 pt-2" style={{ backgroundColor: "#E8D6AE" }}>
+abe1b2e8a9bf5788064708612025490b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|30|1|V|javascript
+	                <div class="card px-4 py-2" style={{ backgroundColor: "#E8D6AE" }}>
+5b9e159e304f2f1063af79628c269fec|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|12|32|v|javascript
+	 = useState([]);
+5c55fb848995deb6dde7267421bf6c46|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|17|1|V|javascript
+	            <div>
+d0cab90d8d20d57e2f2b9be52f7dd25d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|72|42|v|javascript
+	next
+23e1f0e9167d25b23897b503247c16e6|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|13|1|V|javascript
+	    const [Content, setContent] = useState(top);
+5f7a84cdf5e2a6b065e3186788864c0a|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|15|1|v|javascript
+	    const top = () => {
+	        return (
+	            <div>
+	                contentcontent
+	            </div>
+	
+	        )
+	    }
+	
+	
+57540ed2df2d6a6e01e4c36fe333e656|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|26|14|V|javascript
+	                contentcontent
+8d6ab84ca2af9fccd4e4048694176ebf|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|81|42|v|javascript
+	menu
+0cdd0003d6cff0bb4356de5fcf5f9935|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|13|9|V|javascript
+	    const [Content, setContent] = useState();
+d8b422ec6968382f6d4fd1c271bb77d3|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|21|46|V|javascript
+	    const [Content, setContent] = useState(tpo);
+5cd8c7768dfa89257ba22146a435ce1f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|22|20|V|javascript
+	    const setcontent
+944c8c73d638d7ec64efeb44e1802b78|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|81|31|v|javascript
+	setcontent
+2a27e9f7e7d4972b4788bb601d85edbb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|23|16|V|javascript
+	        return (
+7ba1d628943672ff86856108dae898b2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|83|1|V|javascript
+	            {Content}
+	            <a onClick={() => setContent(menu)}>aaaaaaa</a>
+0735b06928ee9dd22bd093275f14a528|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|35|1|V|javascript
+	        setContent(top)
+16a3389fb5a9d107758f1126908c9736|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|13|1|V|javascript
+	
+	    const top = () => {
+	        return (
+	            <div>
+	                contentcontent
+	            </div>
+	        )
+	    }
+	    const setcontent =()=>{
+	        setContent(menu)
+	    }
+	    const menu = () => {
+	        return (
+	            <div>
+	                menumenumenu
+	            </div>
+	
+	        )
+	    }
+8434e90a193064183f02d566da9cc7e1|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|27|1|V|javascript
+	    const { ApiUrl, setApiUrl } = useContext(GlobalContext);
+0b4728a55c4b7943ea632acd40d6aa8b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|1|1|V|javascript
+	import React, { useEffect, useContext } from "react";
+098f6bcd4621d373cade4e832627b4f6|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|39|37|v|javascript
+	test
+0cbc6611f5540bd0809a388dc95a615b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|39|52|v|javascript
+	Test
+7edb10972d233d13f1812c21156bb361|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|37|V|javascript
+	    const [Content, setContent] = useState()
+0dcb6499542995c5872e584a48cc64fe|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|36|1|V|javascript
+	        //     <Navbar />
+62b227fee579badf62b29c02bcd993d8|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|10|V|javascript
+	    const 
+cfe0aff787cb5e6d1bc54c99ae65c3cd|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|6|1|V|javascript
+	    const [ApiUrl, setApiUrl] = useState(null);
+fbee1b9b54065abce92d8de117a33dfb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|7|12|v|javascript
+	ApiUrl
+a36711983c351a2931d1b5a3feed6fc9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|7|21|v|javascript
+	setApiUrl
+036932c36386e797feeb3b3f3c478adf|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|29|14|v|javascript
+	setContent
+7d3b93d486b8bee6e2fc3ed20776c778|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|29|27|V|javascript
+	    const [, ] = useState()
+7282ae667b6631e8ab1dbbc76002ef75|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|1|V|javascript
+	    const {Content , setContent} = useContext(GlobalContext);
+165587361961d24dbf6e3f5d4c33c756|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|11|1|V|javascript
+	import { Home } from "views/Home";
+	import Menu from "views/Menu";
+	
+	import LoginForm from "views/LoginForm";
+	import OwnerHome from "views/OwnerHome";
+	
+	import { ServiceOwner } from "api/services/ServiceOwner";
+	import { ServiceCreate } from "api/services/ServiceCreate";
+	import { ServiceUpdate } from "api/services/ServiceUpdate";
+	
+	import { MenuOwner } from "api/menus/MenuOwner";
+	import { MenuCreate } from "api/menus/MenuCreate";
+	import { MenuUpdate } from "api/menus/MenuUpdate";
+c292646d1a49724d9198565a55ae758c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|4|1|V|javascript
+	import { LoginCheck } from "api/Owners";
+bce34dd668db53319f509986af4f6b2e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|98|1|V|javascript
+	export default Home;
+8cf04a9734132302f96da8e113e80ce5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|75|68|v|javascript
+	Home
+b61541208db7fa7dba42c85224405911|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|75|68|v|javascript
+	Menu
+639253ba2773c0ed977fbf72cfcb52bf|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|15|1|V|javascript
+	    useEffect(() => {
+8862e904f5ad88a663a2e2f8d690783f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|36|v|javascript
+	useContext
+d406666763942a9c062d3e624c43f1ed|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|45|v|javascript
+	GlobalContext
+7200ab0df622d908d19580786303d307|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|54|17|V|javascript
+	            <Navbar />
+e25a8bc532f0410393b560b470d9fb0c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|55|12|V|javascript
+	            {Content}
+2efeb7483f58109f75ab42c8313a50b4|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|8|1|V|javascript
+	import Navbar from "views/layouts/Navbar";
+d1f0611f34e404bd6b1dc8da0c1b2a20|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|31|12|V|javascript
+	        setContent(Top)
+f798b589f6dd70da4301d8ae2cbf5046|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|1|V|javascript
+	        // <BrowserRouter>
+	        //     <Navbar />
+	        //     <Routes>
+	        //         <Route exact path="/" element={<Top />} />
+	        //         <Route exact path="/test" element={<Test />} />
+	        //         <Route exact path="/login" element={<LoginForm />} />
+	        //         <Route exact path="/owner" element={<OwnerHome />} />
+	        //         <Route exact path="/owner/service" element={<ServiceOwner />} />
+	        //         <Route exact path="/owner/service/create" element={<ServiceCreate />} />
+	        //         <Route exact path="/owner/service/edit/:service_id" element={<ServiceUpdate />} />
+	        //         <Route exact path="/owner/menu" element={<MenuOwner />} />
+	        //         <Route exact path="/owner/:service_id/menu/create" element={<MenuCreate />} />
+	        //         <Route exact path="/owner/menu/edit/:menu_id" element={<MenuUpdate />} />
+	        //         <Route exact path="/home" element={<Home />} />
+	        //         <Route exact path="/home/menu/:service_id" element={<Menu />} />
+	        //     </Routes>
+	        // </BrowserRouter>
+21b232177c67597c392f688b7b6ddd93|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|12|V|javascript
+	    const [  , url ] = useState();
+9fc7aa6e52d2d2b5f9dea88ed6cbec14|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|14|24|V|javascript
+	                Content,
+cd65646b60c5525aa3ee032274238922|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|14|26|V|javascript
+	                setContent
+9f47d0c0679b31cd187603bef1178b2f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|12|1|V|javascript
+	                ApiUrl,
+fd514ae13e534656814976c5e9984010|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|13|1|V|javascript
+	                setApiUrl,
+a223df44c01fbf340f74061e1ebff914|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|37|1|V|javascript
+	        <div>
+	
+	        </div>
+189b8453be34854dd5bddb0399ce7d3c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|37|1|V|javascript
+	        case 'top':
+	            return ()
+c4d81394801c414fa97c4c7da69f4871|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|48|1|V|javascript
+	    return (
+	    );
+8463381a956150fea928c3b2295f1cf6|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|40|1|V|javascript
+	            return (< />)
+4dd6fe45b3edc15fbafa5ff5a7804cdb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|42|13|V|javascript
+	            return ()
+71e7c41e9bec049bc404551d5760dc78|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|43|1|V|javascript
+	        case 'top':
+	            return ()
+	        case 'top':
+	            return ()
+86494f9ec2e331a36ac4fc4610456bff|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|41|1|V|javascript
+	        case '':
+	            return (< />)
+b9ad63eff17bb447727cde240b1b8d25|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|43|15|v|javascript
+	lwnerhome
+00350bc3b22eb2dcc15e31c081792bf9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|1|V|javascript
+	    const { Url, setUrl } = useContext(GlobalContext);
+106a6c241b8797f52e1e77317b96a201|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|61|62|v|javascript
+	home
+09fd1dbbc78fb38887180eb80008e9dd|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|61|41|v|javascript
+	onClick={() => setUrl('top')}
+38a40e9ff7c72c6089aa250bb72c3de2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|12|19|V|javascript
+	    console.log(Url)
+0e16fef1247c9ec36dbe0b2259655b1e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|8|1|V|javascript
+	  BrouserRouter as Router,
+35751c0c007ebcd5c05c214fc3713684|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|8|1|V|javascript
+	  Route、
+e2397ec83b020595516c1e075d757f3f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|61|41|v|javascript
+	onclick={()=>history.push("/")}
+66697846fa37e2a83b7c7f8e6d002b5c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|1|50|v|javascript
+	useHistory
+9e1db236f7806ac6f5a0d48c366776d6|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|3|26|V|javascript
+	  BrowserRouter as Router,
+e0b2b0f9a1576655b34cf078d5f29355|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|3|8|V|javascript
+	  Route,
+c65bb19a9f87991673758bf9f7061ff9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|3|8|V|javascript
+	  Switch,
+cf6cfabd0b61e986d3de1c07603dcdbb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|3|8|V|javascript
+	  useParams,
+d13ef46745a269c81af33127833b232f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|4|8|V|javascript
+	  useLocation,
+59449f2cb48dee4ff5f72f419a7c44e2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|2|31|V|javascript
+	import { useHistory } from 'react-router-dom';
+3cd15f8f2940aff879df34df4e5c2cd1|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|57|11|v|javascript
+	history
+d9ac60708910dbdf29f1fef2d60e275d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|34|1|V|javascript
+	            <Routes>
+d348bfbed984b3a7f7f320206bfc96df|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|1|V|javascript
+	            <Router>
+9405c3aff9112c3c60d03b94792877dc|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|18|v|javascript
+	Route
+6f51e454cdff429c3ba0cdbe86713f2c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|1|V|javascript
+	                <Route exact path="/" element={<Top />} />
+687793d69317d08dbd634bf767a3414d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|34|26|V|javascript
+	                <Navbar />
+3b7efa09444a31c5d58596e5bbf87d47|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|34|24|v|javascript
+	exact
+76c70109e34b6a764acad20f8ee303f9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|62|1|V|javascript
+	                <a class="navbar-brand" onclick={()=>navigate('/top', { replace: true })} style={{ color: "#FFFFFF" }}>
+21a361d96e3e13f5f109748c2a9d2434|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|79|98|v|javascript
+	push
+52520e71d92cd1400cd70727c9f9e342|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|34|27|v|javascript
+	} />
+766a6d4b681bff281512d6891c6ef3f8|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|34|1|V|javascript
+	<React.Fragment>
+cce0134cd71bd505f2a3da6949c20103|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|36|2|V|javascript
+	</React.Fragment>
+2ac4e0a2a9e22b05f2da36436b8b9ea8|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|1|V|javascript
+	                <Route exact path="/top" element={<Top />} />
+85a4c5141d28cc3bf03ed2422d76f782|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|33|17|V|javascript
+	            <Routes>
+	                <Route path="" element={<Navbar />} />
+d6f208def0e5488c74017806cc64389d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|34|17|V|javascript
+	                <Route path="" element={<Navbar />} />
+13b2ad1dba86c3b94c472614d72734b4|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|97|81|v|javascript
+	menu_page
+c75503a2e93ba68c46673ab353066761|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|29|1|V|javascript
+	    const change_page = (index) => {
+	        window.location.href = "/home/menu/" + String(index);
+	    };
+d327531efbb53a6ec0bbbaa96552af8b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|54|1|V|javascript
+	    const menu_page = (service_id) => {
+	        window.location.href = "/home/menu/" + String(service_id);
+	    };
+05fe51d96fbb3fe7dd04f6b90fd426af|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|54|1|V|javascript
+	    const navigate = useNavigate();
+ebc597fb1fc35d5807a665c580ea4191|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|2|1|V|javascript
+	import { useNavigate } from 'react-router';
+7f16e83c58d0a591d6ff3d838452a0bb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|40|74|v|javascript
+	change_page
+e8fab833730f3a939d0b3812fe043b5d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|38|58|v|javascript
+	href
+985ce670af26e84838e741bdbe16ea33|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|38|69|v|javascript
+	"/owner/service"
+6598092f8b6196970d1f32775a450cec|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|38|1|V|javascript
+	                                <a class="dropdown-item" navigate("/owner/service")>
+aaabf0d39951f3e6c3e8a7911df524c2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|44|75|v|javascript
+	service
+302187561277648308b68747e90886a2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|43|76|V|javascript
+	                                <a class="dropdown-item" href="/owner/menu">
+deafb40592c8091ce650b14211a5d324|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|39|87|v|javascript
+	navigate("/owner/service")
+243b71aad9309804d8781947830cc90d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|39|1|V|javascript
+	                                <a class="dropdown-item" onClick={() => navigate("/owner/service")}>
+6e567317793b96efa779c72efc7802e1|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|44|33|V|javascript
+	                                <a class="dropdown-item" navigate("/owner/menu")>
+f8894903630ede1982898088512651c1|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|83|1|V|python
+	    write_id_list(whole_id_list, dirname + "/whole_id_list.tsv")
+80f50a65093ac8a001a403e3d17ee19b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|87|5|v|python
+	write_id_list
+eb32e01729d173e95d17cd9ddccda732|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|18|1|V|python
+	    for row in reader:
+48a8a8f2d393a61c1180ccf0b048f14a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|18|1|V|python
+	    for row in reader:
+	        for i in range(num_column):
+620fb72a2a4578ff8befb2ca4a17db29|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|75|1|V|python
+	                    reader = csv.reader(f1, delimiter="\t")
+b0aa4e61de057281bd84880fe821f28a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|90|24|v|python
+	num_column
+bc95dfc14146aa23e43f2ea7af04d310|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|91|12|V|python
+	            
+769b7f87f1976526e213f6db90757e03|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|101|1|V|python
+	    list_dbid(dirname)
+dd1a3bc8923ee1f3919cc702f5f0f8e1|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|102|5|v|python
+	list_dbid
+65f36108e21cdc40cf8ba929204baa58|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/expansion_tsv.py|6|1|V|python
+	sys.path.append(os.path.join(os.path.dirname(__file__), '../'))
+fd12df0d2c43518abc5fefd912d4cbc7|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|11|1|V|python
+	sys.path.append(os.path.join(os.path.dirname(__file__), "../"))
+617f8fdd2131ce77607eb0e8664b48df|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|1|1|V|python
+	from mylib.psiquic_class import PQdataList, PQdata
+	from mylib import general_method as gm
+73bbbc9c52bc06ffceb2c9c452e60add|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|90|22|V|python
+	            print(rrow)
+5b95d048654d1c8b82eadcb46595fc5e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|71|1|V|python
+	                with open(source_dir_name) as f1:
+47d22b7ccd9ed3bae59c07b62a66815c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|85|15|v|python
+	source_dir_name
+232f2d7a559c59ccaea390bfba0c218f|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|86|15|V|python
+	        f1 = dirname + "/whole_id_list.tsv"
+9c8e2134349094d3bbac6d7401e1384a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|90|22|V|python
+	            print(row)
+34cc2e405ace92003a88c9b05e66bcfc|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|91|23|V|python
+	                print(r)
+7af2f36184e9a38681cbf6572c6d2f3b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|92|24|V|python
+	                print(i)
+b28b3d3c69d725631fae8e0b502e255b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|93|26|V|python
+	                    print(r)
+b335a6ec44990b1f503009e66053c49e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|92|21|V|python
+	                if i != 1:
+62b034c2e84699fbcc64a26bd188c8a3|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|94|35|V|python
+	                    print(dbid_list)
+50aac18aca704e6ac55b82b622e1195d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|94|12|V|python
+	    print(r)
+8fffa4a05d9ae7f5defb9c79835344c7|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|95|20|V|python
+	    print(dbid_list)
+fc64f01130d04d897070d71bf590f024|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|25|15|V|python
+	    re.sub("\_\")
+4cd4a49f25984e26fe708c1fbd896653|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|54|35|v|python
+	dbname
+393c6f55976f7e56412dc171d6365ec7|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|32|1|V|python
+	            for i in range(5):
+	                driver.find_element_by_tag_name("body").send_keys(Keys.PAGE_DOWN)
+a14fa12e574b9bcdd5b5958b3ee52142|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|33|1|V|python
+	            # JavaScrptの実行
+	            # # downloadのdropdownをクリックして開く
+	            # elements = driver.find_elements_by_xpath(
+	            #     '//*[@id="Download"]/div/div[2]')
+	            # elements[0].click()
+dfd7f79c75e300b3c3186ec9b2060206|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|29|1|V|python
+	            driver.find_element_by_tag_name(
+	                '//*[@id="app"]/div[2]/div/div[2]/div/div/form/div/div/input'
+	            ).send_keys("")
+0dbf6c922513da69268cc15a2fdf73f1|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|33|1|V|python
+	            driver.find_element_by_tag_name(
+e2b44d64516827831a8405bc442b0d79|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|33|1|V|python
+	            driver.find_element_by_tag_name(
+	                '//*[@id="app"]/div[2]/div/div[2]/div/div/form/div/div/div[2]/div[2]/ul/li[1]/div/div[2]/button'
+	            )
+3f354bee57276309dfc7aa9a7a5321ec|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|59|20|V|python
+	    result_list = []
+8a83778e2c125ecc9e21959cf036661e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/expansion_tsv.py|99|1|V|python
+	                f = open(dir_name + "_s" + str(i) + ".tsv", "w")
+	                f.write(list2tsv(column_label))
+5ab03a60f7ffc2878e328c21706d6f7a|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|61|22|v|python
+	column_label
+5ec4d6337469f96df9838f472363f792|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|60|1|^v|python
+	i
+	p
+	t
+	b
+	t
+	g
+	c
+	c
+	w
+	p
+	r
+	e
+	e
+	p
+	p
+	o
+	i
+	i
+	p
+	b
+	d
+	e
+	m
+	m
+	r
+	e
+	h
+	b
+	i
+	C
+	W
+	W
+	'
+e507130634df9754b8459fbd328d9ee7|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|60|1|^v|python
+	i
+	p
+	t
+	b
+	t
+	g
+	c
+	c
+	w
+	p
+	r
+	e
+	e
+	p
+	p
+	o
+	i
+	i
+	p
+	b
+	d
+	e
+	m
+	m
+	r
+	e
+	h
+	b
+	i
+	C
+e9ac21a0166dc6a255c314acfe285285|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|59|19|v|python
+	list(
+47c4b9d63d77aea27c900024972fb61b|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|105|1|V|python
+	    f = open("result.csv", "w")
+	    f.write("")
+27d78e7a49311368f025ee7eb69a65e2|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|109|33|V|python
+	        f = open("result.csv", "a")
+	        f.write("")
+25b754c9c9bed56cf6cdd31d5f4943ed|file:///Users/Kouiti/local_file/glycovid/glycovid_PACDB/scrape_pacdb/scrape_pacdb.py|25|1|V|python
+	        # ヘッドレスモードの設定
+	        options.add_argument('--headless')
+	        driver = webdriver.Chrome("./chromedriver", chrome_options=options)
+49a2f37f309d1435fb7448924eca87d4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/q_and_a.html|77|1|V|htmldjango
+	<<<<<<< HEAD
+	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	    <a type="button" class="btn btn-success" id="next-btn" href="/app/{{task.id}}/{{next_turn}}">Next</a>
+	=======
+b02e7d30c02ec2c7637a62f9a8938f80|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/q_and_a.html|81|8|V|htmldjango
+	>>>>>>> 8bc2e1370d53cffc263b79f6eafe748f7a3f3c7f
+306a822799a5f70e27a2254060df4f3f|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|86|1|V|python
+	<<<<<<< HEAD
+	            answer_list.append(request.POST.get(str(i + 1)))
+	            QAndARecord.objects.create_record(
+	                history=history,
+	                minitask=MiniTask.objects.get(task_id=task_id, turn=task_turn),
+	                question_number=i + 1,
+	                question_answer=request.POST.get(str(i + 1)),
+	=======
+b8b22deb1f424d77dea898a825d1f483|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|177|1|V|python
+	=======
+697dfb9b235783676b63d2f1ed07cad5|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|156|1|V|python
+	<<<<<<< HEAD
+35e34e0ced8bb19e6763b5d07bae2033|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|28|1|V|python
+	<< << << < HEAD
+	
+	== == == =
+	>>>>>> > 8bc2e1370d53cffc263b79f6eafe748f7a3f3c7f
+c9df09b4610bb43e290507a37c658ae8|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|4|69|v|htmldjango
+	defer
+ade610f1224bdfa9454813bdeee2c19f|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|132|1|V|javascript
+	
+	function disable(target) {
+	    document.getElementById("mic-blue").hidden = true;
+	    document.getElementById("mic-red").hidden = false;
+	    target.removeAttribute("onclick");
+	    target.style.pointerEvents = "none";
+	}
+12661759c2343cb1fa6cab2477bbbefe|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|3|1|V|htmldjango
+	{% load static %}
+	<script type="text/javascript" src="{% static 'js/recording.js' %}" defer></script>
+b90f1febcc047d11822a06262540bfd4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/q_and_a.html|75|1|V|htmldjango
+	<!-- 最終行　ボタン・次へ -->
+	<div class="row row mt-4">
+	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" {{popup_next}}>
+	    <button type="submit" class="btn btn-outline-dark" onclick=location.href="../{{task_id}}/{{next_turn}}">NEXT⇨</button>
+	    <button><a href="../{{task_id}}/{{next_turn}}">NEXT</a></button>
+	    <button type="submit" value="submit">NEXT</button>
+	  </div>
+	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	    <div class="card">
+	      <div class="card-body">
+	        <h4>To 3rd shadowing recording</h4>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+a79b4755524502fcb8c2c335dd83789c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|100|1|V|python
+	        # content["b_checked"] = button_checked
+	        content["disabled"] = "disabled"
+	        content["popup_next"] = "visibility"
+	        content["popup_save"] = "hidden"
+	        # print(content)
+	        # return render(request, "app/q_and_a.html", content)
+0086b4caee9d0ecc5bb462885fc7ea95|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|94|12|V|python
+	            # qas[i][checkpoint] = {user_answer:"checked"}
+6ea5f607c11e6d73ccdfffcdbdfa2d40|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|94|1|V|python
+	        # print(button_checked)
+321ba80330d3d2295cf7da6300f50788|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|94|1|V|python
+	        print(vars(qas[0]))
+4fbf79a304d4036be9bbc1fc97a35b77|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|94|1|V|python
+	        content["qas"] = qas
+97066034ad55786c2ff0e875b72e3c67|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|81|1|V|python
+	        button_checked = []
+620a26617c29a8f859b90a5b4e4969f4|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|86|9|V|python
+	            answer_list.append(user_answer)
+26cfdb37ba8a5c48057c8c52f86d2059|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|80|9|V|python
+	        answer_list = []
+5741ab9a473f6623c5c8d4cb474cb4f4|file:///Users/Kouiti/local_file/lets/lets_proj/account/models.py|180|68|v|python
+	currnet
+ae06f594a9b7c7a5cfcb21b391332671|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|79|17|V|python
+	        question_num = 6
+c78369470d6a71d608afcde5d348c832|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|82|24|v|python
+	question_num
+a4e270b867446deec62db31cc9277540|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|85|21|V|python
+	                break

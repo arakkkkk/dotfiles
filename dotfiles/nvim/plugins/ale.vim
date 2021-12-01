@@ -20,6 +20,7 @@ map :ale<CR> :source ~/.config/nvim/plugins/ale.vim<CR>
 
 let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
+" let g:ale_fix_on_save = 0
 let g:ale_linters_explicit = 1
 
 " npm install jsonlint -g

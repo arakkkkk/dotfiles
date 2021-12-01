@@ -107,6 +107,11 @@ hook_add = '''
   source ~/.config/nvim/plugins/coc.vim
 '''
 
+[[plugins]]
+repo = 'tpope/vim-surround'
+hook_add = '''
+  source ~/.config/nvim/plugins/surround.vim
+'''
 
 [[plugins]]
 repo = 'Xuyuanp/scrollbar.nvim'

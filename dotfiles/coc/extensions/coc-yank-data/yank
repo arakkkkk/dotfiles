@@ -1,9 +1,3 @@
-bc03d5e8fcbba09e8e98b0cf2348c755|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/js/recording.js|15|1|V|javascript
-	    var audioBlob = exportWAV(audioData);
-e9903d74c403af0053ce396d3ce2058e|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/js/miccheck.js|16|5|V|javascript
-	    const audioBlob = new Blob(audioData); //音声データをBlob化
-79e24c2cd007609c7c37593d4920eb09|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/js/miccheck.js|15|5|V|javascript
-	    console.log("stop");
 75da423128a93ea71c192921873ede1a|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|63|1|V|css
 	a {
 	  font-size: 16px;
@@ -1968,3 +1962,9 @@ f9714d5993576c3d51b4315416d806df|file:///Users/arakawakouichi/dotfiles/dotfiles/
 	hook_add = '''
 	  source ~/.config/nvim/plugins/surround.vim
 	'''
+26a29e85fd1222d69af60d6998e9d76e|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/plugins/surround.vim|1|1|V|vim
+	" ??????????????????????
+b42f4bf105502d65a7ae57a620dd8161|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/plugins/ale.vim|20|8|V|vim
+	jiosdjwc
+e0a335cc086db70cd94fa0139d945f00|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/plugins/ale.vim|21|7|v|vim
+	ale_lint_on_save

@@ -1,664 +1,3 @@
-c105b25fe6456c6d7476d1e79c059867|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/Contents.js|33|1|V|javascript
-	    turn: 2
-a850c17cba5eb16b0d3d40a106333bd5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/Contents.js|34|5|v|javascript
-	turn
-1e2f3fd94c680592a2f1d4fde80a87fa|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/Contents.js|58|1|V|javascript
-	            <div class="container">
-5f0b6ebc4bea10285ba2b8a6ce78b863|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/Contents.js|60|33|v|javascript
-	container
-eecaad988170619645b7eaa1ec4e5c76|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/Contents.js|60|34|V|javascript
-	                    <div className="row">
-6efe362b97f90a358613aaa247d914a6|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/Contents.js|66|26|V|javascript
-	                    </div>
-48fa9c0e7f79f24452e7ed3d1730db09|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Title.js|43|18|v|javascript
-	"0.4em 0.5em",
-2ea7bdf9673e75655559f71def858fa1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Title.js|43|24|V|javascript
-	    paddingLeft: "10px",
-60de80182435d5ec97e7c46007e9079b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/Contents.js|63|15|V|javascript
-	                            <div>
-06a705bfbe26d5f1cf2180fc9cabb7eb|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Text.js|5|1|V|javascript
-	                <div className={"col-sm-" + props.component.grid} style={a}>
-b6a02d71175e260e329e95292d2f1352|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Card.js|7|17|V|javascript
-	                        <div class="col-4">
-16d7812d6420506d71bc5fa85ce374ec|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|17|17|V|javascript
-	                <Title component={props.component} />;
-89b1dc8b573885b1eee3e12dfdfbf893|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|16|13|V|javascript
-	            )
-	            break;
-110290851b69306e8eb07117f92dd2a9|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|15|66|V|javascript
-	                <div className={"col-sm-" + props.component.grid}>
-5007714cc065943a1ea854f51124ae6b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|15|1|V|javascript
-	                <div className={"col-sm-" + props.component.grid}>
-	                    <Title component={props.component} />;
-	                </div>
-69e823fc77091e70823ffcbb7c8d7adf|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|29|17|V|javascript
-	            return <Text component={props.component} />;
-3dc9ae319e6128956b4edeb964ed8517|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|14|1|V|javascript
-	            return (
-	                <div className={"col-sm-" + props.component.grid}>
-	                    <Title component={props.component} />;
-	                </div>
-	            );
-5cecae93545fc37e73589efb5df60225|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|22|13|V|javascript
-	            return <Card component={props.component} />;
-10e8a473bdd9fbc06a84eecd542ca3b5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Title.js|19|1|V|javascript
-	        case "C":
-	            return (
-	                <div style={{ ...c, ...global }}>
-	                    {props.component.titles[0]}
-	                    <span style={c_a}></span>
-	                </div>
-	            );
-	            break;
-85219be1f1127f2b127619825d4ef128|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Text.js|15|1|V|javascript
-	        // case "D":
-	        //     return (
-	        //         <div style={d}>
-	        //             {props.component.comments[0]}
-	        //         </div>
-	        //     );
-	        //     break;
-8c802bc64e051705584dd0c3d2686b1f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Card.js|66|1|V|javascript
-	        case "E":
-	            return (
-	                <div class="row my-2" style={{ color: "#583F2A", textAlign: "center" }}>
-	                    <div class="card mb-4">
-	                        <h4 class="card-title" style={b}>
-	                            {props.component.titles[0]}
-	                            <span style={b_a}></span>
-	                        </h4>
-	                        <p class="card-text">{props.component.comments[0]}</p>
-	                    </div>
-	                </div>
-	            );
-	            break;
-55b785aa21049196fa58a8024e305784|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Card.js|82|1|V|javascript
-	                <div class="row my-2" style={{ color: "#583F2A", textAlign: "center" }}>
-	                    <div class="card mb-4">
-	                        <h4 class="card-title" style={b}>
-	                            {props.component.titles[0]}
-	                            <span style={b_a}></span>
-	                        </h4>
-	                        <p class="card-text">{props.component.comments[0]}</p>
-	                    </div>
-	                </div>
-56bb018ebf98fc5dc71e162de6e8a71f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CardList.js|7|1|V|javascript
-	                        <div class="col-sm-4 mt-4" key={index}>
-	                            <div class="card">
-	                                <div class="card-body">
-	                                    <img
-	                                        src={props.component.images[index]}
-	                                        class="img-fluid"
-	                                        alt="image"
-	                                        style={{ width: "100%", padding: 0, margin: 0 }}
-	                                    />
-	                                    <h3>{props.component.titles[index]}</h3>
-	                                    <p>{props.component.comments[index]}</p>
-	                                    <p class="price">
-	                                        <i class="bi bi-currency-yen" style={{ fontSize: "22px" }}></i>
-	                                        {props.component.comment[index]}（税抜）
-	                                    </p>
-	                                </div>
-	                            </div>
-	                        </div>
-7842b1da36f5c8b909584a338cad2c77|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CardList.js|8|1|V|javascript
-	                            <div class="card">
-	                                <div class="card-body">
-	                                    <img
-	                                        src={props.component.images[index]}
-	                                        class="img-fluid"
-	                                        alt="image"
-	                                        style={{ width: "100%", padding: 0, margin: 0 }}
-	                                    />
-	                                    <h3>{props.component.titles[index]}</h3>
-	                                    <p>{props.component.comments[index]}</p>
-	                                    <p class="price">
-	                                        <i class="bi bi-currency-yen" style={{ fontSize: "22px" }}></i>
-	                                        {props.component.comment[index]}（税抜）
-	                                    </p>
-	                                </div>
-	                            </div>
-6a992d5529f459a44fee58c733255e86|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Card.js|85|57|v|javascript
-	index
-edab12f4d3bfa0edf64db1718352eceb|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|8|53|V|javascript
-	import { CardList } from "views/components/CardList";
-330f3b0eed5e34a4607319a0979d1afd|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|8|1|V|javascript
-	import { Text } from "views/components/Text";
-9dffbf69ffba8bc38bc4e01abf4b1675|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|9|10|v|javascript
-	Text
-5150386fe08a1a13660f8565398f9f85|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|9|1|V|javascript
-	import { RowSpace } from "views/components/RowSpace";
-43c412c00d6463913bd26651071e6746|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|10|10|v|javascript
-	RowSpace
-f2181bd5432806c525e9faa61047c315|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|30|1|V|javascript
-	        case "text":
-	            return (
-	                <div className={"col-sm-" + props.component.grid}>
-	                    <Text component={props.component} />
-	                </div>
-	            );
-	            break;
-	
-a500dffabe1f5dc0de8c5067a2a1a2c2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|48|1|V|javascript
-	                <div className={"col-sm-" + props.component.grid}>
-	                    <Text component={props.component} />
-	                </div>
-865b4c0b4bb95dd7c033ecc1a654dc9a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|47|56|v|javascript
-	20px
-5227f2b77fd493ce1c348f10381ac681|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Card.js|84|1|V|javascript
-	                        <img
-	                            src={props.component.images[0]}
-	                            class="img-fluid"
-	                            alt="image"
-	                            style={{ width: "100%", padding: 0, margin: 0 }}
-	                        />
-f1bbe23c073870f690c09dd9291a9029|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Image.js|13|1|V|javascript
-	        case "B":
-	            return <div style={b}>{props.component.comments[0]}</div>;
-	            break;
-	
-	        case "C":
-	            return <div style={c}>{props.component.comments[0]}</div>;
-	            break;
-	
-	        // case "D":
-	        //     return (
-	        //         <div style={d}>
-	        //             {props.component.comments[0]}
-	        //         </div>
-	        //     );
-	        //     break;
-c23d693dc85c92b3d38ed6f254c00500|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Image.js|18|1|V|javascript
-	const a = {
-	    textAlign: "center",
-	    color: "#583F2A",
-	    fontSize: "32px"
-	};
-	const b = {
-	    textAlign: "center",
-	    color: "#583F2A",
-	    fontSize: "24px"
-	};
-	const c = {
-	    textAlign: "center",
-	    color: "#583F2A",
-	    fontSize: "20px"
-	};
-7b6d693041ec8ad67b5cef44b8b3fe99|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|50|1|V|javascript
-	                <Route exact path="/home/service/:service_id" element={<Contents />} />
-c1df1da7a1ce305a3b60af9d5733ac1d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|13|29|v|javascript
-	Contents
-59a14a5786fe7a105d780bb1e1e2b21b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|13|23|v|javascript
-	views
-2e648d0c1adee06b75e331c7b654b834|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|13|1|V|javascript
-	import Contents from "api/contents/Contents";
-419aff4613d1b947b300fead2a6a78d6|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|1|1|V|javascript
-	import React, { useState, useEffect, useContext } from "react";
-	import { useParams } from "react-router-dom";
-	import { GlobalContext } from "Global";
-	import axios from "axios";
-	import HeadImage from "views/layouts/HeadImage";
-	import Footer from "views/layouts/Footer";
-	
-	// import * as Card from "views/components/Card";
-	import { CompRouting } from "views/components/CompRouting";
-	
-	const componentA = {
-	    titles: ["aaa", "bbb", "ccc"],
-	    comments: ["ddd", "eee", "fff"],
-	    images: [
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
-	    ],
-	    type: "card",
-	    type_id: "F",
-	    grid: 6
-	};
-	const componentB = {
-	    titles: ["aaa", "bbb", "ccc"],
-	    comments: ["ddd", "eee", "fff"],
-	    images: [
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
-	    ],
-	    type: "card",
-	    type_id: "F",
-	    turn: 2,
-	    grid: 6
-	};
-	const content = {
-	    service: "unit",
-	    components: [componentA, componentB]
-	};
-	
-	export const Contents = () => {
-	    const { service_id } = useParams();
-	    const { ApiUrl, setApiUrl } = useContext(GlobalContext);
-	    const [Components, setComponents] = useState([]);
-	    const [Service, setService] = useState({});
-	
-	    useEffect(() => {
-	        axios.get("/api/services/get/" + service_id).then((results) => {
-	            const data = results.data;
-	            setService(data);
-	        });
-	        setComponents(content.components);
-	    }, [ApiUrl]);
-	
-	    return (
-	        <div>
-	            <HeadImage />
-	            <div className="container">
-	                <div className="card px-4 py-2" style={{ backgroundColor: "#E8D6AE" }}>
-	                    <div className="row">
-	                        <h2>{Service.Title}</h2>
-	                        {Components.map((component, index) => (
-	                            <CompRouting component={component} />
-	                        ))}
-	                    </div>
-	                </div>
-	            </div>
-	            <Footer />
-	        </div>
-	    );
-	};
-	export default Contents;
-074de7e7c226d5c60f8af14c20725352|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|64|79|v|javascript
-	Primary
-f7462fd96d69a2966cecb5c9f41064c0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|64|56|V|javascript
-	                            <button type="button" class="btn btn-primary">Primary</button>
-8ce1268c79fd287d7bafa72dd40bdd7e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|63|1|V|javascript
-	                            <span>
-eac828e40705bfafd82ef1a82e3f5ab8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|63|30|v|javascript
-	span
-005480c8a6a0357d17cff2e8eb7e060d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|63|30|v|javascript
-	comp
-531c5bb4db50e727f33e8b53f2ff8ba8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|64|63|V|javascript
-	                            <button type="button" class="btn btn-primary" conclick={()=>console.log(component)}>Primary</button>
-700c216fb376666eaeda0c892e8bdc09|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|18|93|v|javascript
-	component
-f4373c0b55925c61b3851bd291ef4467|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|54|1|V|javascript
-	=======
-	                <Route exact path="/home/service/:service_id" element={<Menu />} />
-	>>>>>>> 884c30e2ce0a4f382a99e1dfe6a409c473b0abd4
-697dfb9b235783676b63d2f1ed07cad5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|50|1|V|javascript
-	<<<<<<< HEAD
-15572ef424ea5aaec6c7b83154cfaf54|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|39|1|V|javascript
-	<<<<<<< HEAD
-	                                <a className="dropdown-item" href="/owner/service">
-	=======
-912f68dcba3cf4d1d8d093e7dfa417bb|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|40|1|V|javascript
-	>>>>>>> 884c30e2ce0a4f382a99e1dfe6a409c473b0abd4
-92a869030efa11217940b78cb8c7f27b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|44|1|V|javascript
-	<<<<<<< HEAD
-	                                <a className="dropdown-item" href="/owner/menu">
-	=======
-151a4ca29703fdd1164debee539cd742|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|57|1|V|javascript
-	<<<<<<< HEAD
-	        <nav className="navbar navbar-expand-sm fixed-top">
-	            <div className="container-fluid">
-	                <a className="navbar-brand " href="/" style={{ color: "#FFFFFF" }}>
-	=======
-2d1b4e09a210f439d35802a743a3da38|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|73|1|V|javascript
-	<<<<<<< HEAD
-	                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-	                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-	                        <li className="nav-item">
-	                            <a className="nav-link active" aria-current="page" href="/home" style={{ color: "#FFFFFF" }}>
-	=======
-fee2bd619d69a82fd89f544ae5f3a31b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|93|1|V|javascript
-	<<<<<<< HEAD
-	                                    <li key={service.id} className="pointer">
-	                                        <a className="dropdown-item" onClick={() => menu_page(service.ID)}>
-	=======
-e8ecbdcfbe951a060f1ad4594aab6c35|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|102|1|V|javascript
-	<<<<<<< HEAD
-	                            <li className="nav-item" key={service.ID}>
-	                                <a className="nav-link" onClick={() => menu_page(service.ID)} style={{ color: "#FFFFFF" }}>
-	=======
-8679f95d26cbfe4448df509833a2c488|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|39|1|V|javascript
-	                                <a class="dropdown-item pointer" onClick={() => navigate("/owner/service")}>
-1ef93ac8559a096ae1947c7c356aa860|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|15|66|v|javascript
-	onClick={() => navigate("/owner/service")}
-606aa02e08513e4d891b4cab9b40c003|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|13|1|V|javascript
-	    const createComponent = ()=>{
-	
-	                                <a class="dropdown-item pointer" >
-	    }
-72122ce96bfec66e2396d2e25225d70a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|18|93|v|javascript
-	owner
-aaabf0d39951f3e6c3e8a7911df524c2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|18|98|v|javascript
-	service
-0fb28f6eaafa11069612dad36cd17fad|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|52|1|V|javascript
-	                <Route exact path="/home/service/:service_id/contents/update" element={<ContentsUpdate />} />
-41d51d2a6da5fa2813ec11253bff6817|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|9|1|V|javascript
-	    const { service_id } = useParams();
-05fe51d96fbb3fe7dd04f6b90fd426af|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|12|1|V|javascript
-	    const navigate = useNavigate();
-cc70dd840666b60abec51268b02c64b4|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|2|1|V|javascript
-	import { useNavigate } from "react-router";
-a0802e8e8887603b04a7b9db51ef1f5b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|27|36|V|javascript
-	                        <Route exact path="/home/service/:service_id/contents/update" element={<ContentsUpdate />} />
-67b522b4a5a85fe8d8a82293adeb6202|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|43|1|V|javascript
-	                            <li>
-	                                <a class="dropdown-item pointer" onClick={() => navigate("/owner/menu")}>
-	                                    メニューの追加
-	                                </a>
-	                            </li>
-5f2482cf8cc1f9668a361b2710abe928|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|22|1|V|javascript
-	                    <button
-	                        type="button"
-	                        class="btn btn-primary"
-	                        onClick={() => navigate("/home/service/" + service_id + "contents/update")}
-	                    >
-	                        Primary
-	                    </button>
-	                </div>
-50fe03ab7bf37089a7e88da9b31ffb3b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|63|57|v|javascript
-	props
-f7eb58584c30a56aa2261afa48ecc668|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|1|1|V|javascript
-	import React, { useState, useEffect, useContext } from "react";
-	import { useParams } from "react-router-dom";
-	import { useNavigate } from "react-router";
-	import { GlobalContext } from "Global";
-	import axios from "axios";
-	import HeadImage from "views/layouts/HeadImage";
-	import Footer from "views/layouts/Footer";
-	
-	// import * as Card from "views/components/Card";
-	import { CompRouting } from "views/components/CompRouting";
-	
-	const componentA = {
-	    titles: ["aaa", "bbb", "ccc"],
-	    comments: ["ddd", "eee", "fff"],
-	    images: [
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
-	    ],
-	    type: "card",
-	    type_id: "F",
-	    grid: 6
-	};
-	const componentB = {
-	    titles: ["aaa", "bbb", "ccc"],
-	    comments: ["ddd", "eee", "fff"],
-	    images: [
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
-	    ],
-	    type: "card",
-	    type_id: "F",
-	    turn: 2,
-	    grid: 6
-	};
-	const content = {
-	    service: "unit",
-	    components: [componentA, componentB]
-	};
-	
-	export const Contents = () => {
-	    const { service_id } = useParams();
-	    const { ApiUrl, setApiUrl } = useContext(GlobalContext);
-	    const [Components, setComponents] = useState([]);
-	    const [Service, setService] = useState({});
-	    const navigate = useNavigate();
-	
-	    useEffect(() => {
-	        axios.get("/api/services/get/" + service_id).then((results) => {
-	            const data = results.data;
-	            setService(data);
-	        });
-	        setComponents(content.components);
-	    }, [ApiUrl]);
-	
-	    return (
-	        <div>
-	            <HeadImage />
-	            <div className="container">
-	                <div className="card px-4 py-2" style={{ backgroundColor: "#E8D6AE" }}>
-	                    <div className="row">
-	                        <h2>{Service.Title}</h2>
-	                        {Components.map((component, index) => (
-	                            <div className={"col-sm-" + component.grid}>
-	                                <CompRouting component={component} />
-	                                <button
-	                                    type="button"
-	                                    class="btn btn-primary"
-	                                    onClick={() => navigate("/home/service/" + service_id + "contents/update")}
-	                                >
-	                                    Primary
-	                                </button>
-	                            </div>
-	                        ))}
-	                    </div>
-	                </div>
-	            </div>
-	            <Footer />
-	        </div>
-	    );
-	};
-	export default Contents;
-c3f6a87dc6c9d616490bc2743e159b29|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|1|1|V|javascript
-	import React, { useState, useEffect, useContext } from "react";
-	import { useParams } from "react-router-dom";
-	import { GlobalContext } from "Global";
-	import axios from "axios";
-	import HeadImage from "views/layouts/HeadImage";
-	import Footer from "views/layouts/Footer";
-	
-	// import * as Card from "views/components/Card";
-	import { CompRouting } from "views/components/CompRouting";
-	
-	const componentA = {
-	    titles: ["aaa", "bbb", "ccc"],
-	    comments: ["ddd", "eee", "fff"],
-	    images: [
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
-	    ],
-	    type: "card",
-	    type_id: "F",
-	    grid: 6
-	};
-	const componentB = {
-	    titles: ["aaa", "bbb", "ccc"],
-	    comments: ["ddd", "eee", "fff"],
-	    images: [
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
-	    ],
-	    type: "card",
-	    type_id: "F",
-	    turn: 2,
-	    grid: 6
-	};
-	const content = {
-	    service: "unit",
-	    components: [componentA, componentB]
-	};
-	
-	export const Contents = () => {
-	    const { service_id } = useParams();
-	    const { ApiUrl, setApiUrl } = useContext(GlobalContext);
-	    const [Components, setComponents] = useState([]);
-	    const [Service, setService] = useState({});
-	
-	    useEffect(() => {
-	        axios.get("/api/services/get/" + service_id).then((results) => {
-	            const data = results.data;
-	            setService(data);
-	        });
-	        setComponents(content.components);
-	    }, [ApiUrl]);
-	
-	    return (
-	        <div>
-	            <HeadImage />
-	            <div className="container">
-	                <div className="card px-4 py-2" style={{ backgroundColor: "#E8D6AE" }}>
-	                    <div className="row">
-	                        <h2>{Service.Title}</h2>
-	                        {Components.map((component, index) => (
-	                            <CompRouting component={component} update={true} />
-	                        ))}
-	                    </div>
-	                </div>
-	            </div>
-	            <Footer />
-	        </div>
-	    );
-	};
-	export default Contents;
-26309f993b4357563e23f173381dc62b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|67|1|V|javascript
-	                                <button
-	                                    type="button"
-	                                    class="btn btn-primary"
-	                                    onClick={() => navigate("/home/service/" + service_id + "contents/update")}
-	                                >
-	                                    Primary
-	                                </button>
-61b533905a944f57eee08940e0790df2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|67|41|V|javascript
-	                                <div className="text-right">
-f9b2fbac243fb343dea9a296979537a6|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|68|1|V|javascript
-	                            <right>
-9a467cb4a43660cdeb8879bcb483abd7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|67|30|V|javascript
-	                                <div style={{ width: "100%" }}>
-0d7b1074538bbd2a62144f90b4754d13|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|67|30|V|javascript
-	                                    <right>
-47459e1c4a5f4192b86b8f7b2b748a29|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|74|30|V|javascript
-	                                    </right>
-eee34d82519193f1dac3b1130329d8e5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|59|1|V|javascript
-	    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-	      <div class="modal-dialog modal-sm">
-	        <div class="modal-content">
-	          ...
-	        </div>
-	      </div>
-	    </div>
-6b0a9ef993d4e4dac70eed377916c0a8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|70|52|v|javascript
-	navigate("/home/service/" + service_id + "contents/update")
-103f5e03b39e71f495c60f67fa14d8b2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|57|6|V|javascript
-	    co
-bc5e5391bd66c751d143d30e379498bc|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|8|1|V|javascript
-	    jQuery(document).ready(function () {
-	        jQuery("#modal_saveInnerModel").modal("show");
-	    });
-e663f07c8aaf23fb10d2db4860ae15a7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|60|5|V|javascript
-	        p
-bea6ad9d066f05c93d6560da8b9b1ca4|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|60|5|V|javascript
-	        jQuery(document).ready(function () {
-a32d961007c8e6b275c3dea8055066f5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|61|5|V|javascript
-	        });
-b326b5062b2f0e69046810717534cb09|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|90|30|v|javascript
-	true
-2e303e3ddac3b4ba724681db86265cb6|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|60|1|V|javascript
-	        jQuery("#modal_saveInnerModel").modal("show");
-	
-68934a3e9455fa72420237eb05902327|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|88|30|v|javascript
-	false
-cc3216b3c60fd8ea5c7a8abcd3de6f82|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|84|30|v|javascript
-	fade
-37617658a9336969d8f7789e89d53b5c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|89|38|V|javascript
-	                style={{ display: "block" }}
-bc26555d97fef229954980306bfa6183|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|88|1|V|javascript
-	            <div
-	                className="modal fade bd-example-modal-sm"
-	                tabindex="-1"
-	                role="dialog"
-	                aria-labelledby="mySmallModalLabel"
-	                aria-hidden="true"
-	            >
-	                <div className="modal-dialog modal-sm">
-	                    <div className="modal-content">...</div>
-	                </div>
-	            </div>
-87b7760f14fbff78d8819291f36ab9a0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|8|10|v|javascript
-	Button
-734f042356a14f66c2b0634eeea17a66|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|52|13|V|javascript
-	    const handleClose = () => setShow(false);
-2321baac40784aec63f27020c6f9eadf|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|52|30|V|javascript
-	    const handleShow = () => setShow(true);
-1da25395c3a3a109570a6eae37ec6ed4|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|62|5|V|javascript
-	        handl
-09fe662dbd03b07cf9d20dcc1d2edb9d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|64|1|V|javascript
-	        setShow(true);
-4442950281f7857e801b2280ce95622b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|81|72|V|javascript
-	                                    onClick={() => openModal(component.ID)}
-5837bf1e21903de7da73fc91756d26a5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|80|1|V|javascript
-	                                <button
-	                                    type="button"
-	                                    className="btn btn-primary"
-	                                >
-	                                    Primary
-	                                </button>
-c793bf37faf590caf6bafea0f5c92680|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|50|1|V|javascript
-	    const [Service, setService] = useState({});
-c2ba7e785c49050f48da9aacc45c2b85|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|51|12|v|javascript
-	Service
-99c8946f8503915df6b4ba528e731dc4|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|51|26|v|javascript
-	setService
-08530b971d4775af22d1bfa1d8f4714c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|65|25|V|javascript
-	        setModalContent("")
-331509aa9ffbb224c524f8338b008a4d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|65|21|V|javascript
-	        handleShow();
-0e269e9733ee442abbb0dd180809c78c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|67|16|V|javascript
-	                () => navigate("/owner/service")
-af0e2e69d38ca524f5d2667e9b2e96a7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|71|13|V|javascript
-	        // navigate("/home/service/" + service_id + "contents/update");
-c2d283963aae46ac74c6453e6ba444b8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|86|1|V|javascript
-	            <Modal show={show} onHide={handleClose}>
-	                <Modal.Header closeButton>
-	                    <Modal.Title>メニュー</Modal.Title>
-	                </Modal.Header>
-	                <Modal.Body>{ModalContent}</Modal.Body>
-	                <Modal.Footer>
-	                    <Button variant="secondary" onClick={handleClose}>
-	                        Close
-	                    </Button>
-	                    <Button variant="primary" onClick={handleClose}>
-	                        Save Changes
-	                    </Button>
-	                </Modal.Footer>
-	            </Modal>
-2eae5b536dd4309b84bd8dc9a0e33127|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|67|24|V|javascript
-	        console.log(8798);
-c72e056e34df3933ba7c3e3ede4bd98b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|66|9|V|javascript
-	        /
-9cb731fe30e8a1aec71983d6828a576d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|66|17|V|javascript
-	        console.l
-93bf64a001cbca6cc56563e957f155e8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|65|24|V|javascript
-	        console.log("Jio");
-86c26d44d4d5cad8df6c29048112113f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|66|26|v|javascript
-	a onClick={navigate("/home/service/" + service_id + "contents/update")}>右側に新しく追加</a>
-082aa94268b72c6cc8b32837186c6f79|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|66|27|V|javascript
-	        setModalContent(<);
-006af892a1ce7d25d59dccdb153216dd|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|78|1|V|javascript
-	                                <Modal show={show} onHide={handleClose}>
-	                                    <Modal.Header closeButton>
-	                                        <Modal.Title>メニュー</Modal.Title>
-	                                    </Modal.Header>
-	                                    <Modal.Body>
-	                                        <a onClick={navigate("/home/service/" + service_id + "contents/update")}>
-	                                            右側に新しく追加
-	                                        </a>
-	                                    </Modal.Body>
-	                                    <Modal.Footer>
-	                                        <Button variant="secondary" onClick={handleClose}>
-	                                            Close
-	                                        </Button>
-	                                        <Button variant="primary" onClick={handleClose}>
-	                                            Save Changes
-	                                        </Button>
-	                                    </Modal.Footer>
-	                                </Modal>
-a7dd12b1dab17d25467b0b0a4c8d4a92|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|78|46|v|javascript
-	show
 707b5f87cfdc4081cf4541fef0170e7a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|65|24|V|javascript
 	        console.log("Jio")
 98bf7d8c15784f0a3d63204441e1e2aa|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|67|94|v|javascript
@@ -1484,3 +823,340 @@ ee434023cf89d7dfb21f63d64f0f9d74|file:///Users/arakawakouichi/local_file/maman-h
 	unit
 0be8406951cdfda82f00f79328cf4efc|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|27|21|v|go
 	Comment
+531ca928337d6a47ddd2e88b59f0dfe4|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/plugins/ale.vim|19|1|V|vim
+	map :ale<CR> :source ~/.config/nvim/plugins/ale.vim<CR>
+63dc9087c660611bdf3fcb1a1257247a|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|68|38|v|vim
+	plugins
+090676cd4bf7145f0bf437403a5015b7|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|10|1|V|make
+	rg:
+		sudo docker-compose -f ./webapp/docker-compose.yml restart go
+df307c0bad0e9482e3bac234846686fe|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|4|1|V|make
+		sudo docker-compose -f ./webapp/docker-compose.yml up -d
+56dbc0af45d27178746058733234ed9f|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|11|2|V|make
+		sudo docker-compose -f ./webapp/docker-compose.yml restart go
+5682e7555e5134bd59a791e6f0694bc0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|26|18|v|go
+	 `gorm:"foreignKey:ComponentID"`
+f1b56cc738203250e96f8f2dcddb418b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|62|1|V|go
+		router.POST("/services/update", func(c *gin.Context) {
+			service_id, _ := strconv.Atoi(c.PostForm("service_id"))
+			service := get(service_id)
+			file, err := c.FormFile("file")
+			if err != nil {
+				log.Println(err)
+			} else {
+				filename := time.Now().Format("2006-0102-150405") + "_" + file.Filename
+				err = c.SaveUploadedFile(file, "images/"+filename)
+				if err != nil {
+					log.Println(err)
+				} else {
+					service.Img = filename
+				}
+			}
+			log.Println(service_id)
+			log.Println(service.ID)
+	
+			service.Title = c.PostForm("title")
+			service.Comment = c.PostForm("comment")
+			service.Show, _ = strconv.ParseBool(c.PostForm("show"))
+			service.Grouped, _ = strconv.ParseBool(c.PostForm("grouped"))
+			service.Turn, _ = strconv.Atoi(c.PostForm("turn"))
+	
+			response := update(service)
+			c.JSON(202, response)
+		})
+9a0364b9e99bb480dd25e1f0284c8555|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|90|32|v|go
+	content
+e20953d7426e13e8ea9e5bc3d346a005|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|91|1|V|go
+			service_id, _ := strconv.Atoi(c.PostForm("service_id"))
+			service := get(service_id)
+			file, err := c.FormFile("file")
+			if err != nil {
+				log.Println(err)
+			} else {
+				filename := time.Now().Format("2006-0102-150405") + "_" + file.Filename
+				err = c.SaveUploadedFile(file, "images/"+filename)
+				if err != nil {
+					log.Println(err)
+				} else {
+					service.Img = filename
+				}
+			}
+			log.Println(service_id)
+			log.Println(service.ID)
+	
+0a21cab77e41223b6475c423f4b869a1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|35|1|V|go
+	type ListComponent []Component
+e379d4d9b0445353030175d8fccc1368|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|36|1|V|go
+	type ListTitle []Title
+3a9c6464993f64cb81d0e4a5e32342a5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|37|1|V|go
+	type ListComment []Comment
+466c39317ef9d55b03179427e57af889|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|37|1|V|go
+			// var form Component
+259a571b0a7d1b5f6ef304d8a2b870b0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|50|13|V|go
+	        list_
+2fe852bb390cae38d3bd21ad54bed8a3|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|51|17|v|go
+	c.PostForm("titles")
+1cf7880af56637898017db8fc1ed8d79|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|23|1|V|make
+	login:
+		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/login
+344d1820196f522c6c36010fb521665b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|11|1|V|make
+	create_service:
+		curl -X POST -H "Content-Type: application/json" -d '{"title": "title", "comment":"comment", "show":"true", "grouped":"false"}' localhost/api/services/create
+65c1ec717a8e2fb0a40d6ac7c0a98748|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|45|1|V|go
+			// 		log.Println(err)
+a0c71c5fd97fbdc5bc17035a3325ebd6|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|37|16|V|go
+					log.Println()
+6fc1883113432ab247083cb46d36d618|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|11|1|V|make
+		curl -X POST -H "Content-Type: application/json" -d '{"titles": ["title1", "title2", "title3"]}' localhost/api/components/create
+932ef3c6af376154eecb8d444b94bf31|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|11|2|V|make
+		# curl -X POST -H "Content-Type: application/json" -d '{"titles": ["title1", "title2", "title3"]}' localhost/api/components/create
+3870f6c796c119c99550c322556de8f2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|37|1|V|go
+			log.Println(c.PostForm("titles"))
+fad7ce53de84086a43218642a8bdf028|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/menus/MenuCreate.js|33|1|V|javascript
+	        axios
+	            .post("/api/menus/create", data)
+	            .then(function (response) {
+	                window.location.href = "/owner/menu";
+	            })
+	            .catch(function (error) {
+	                alert(error);
+	            });
+0a4a34fc92768cc2be003212aa667b18|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|57|1|V|javascript
+	        data.append("service_id", service_id);
+	        data.append("titles", titles);
+	        data.append("comments", comments);
+	        data.append("images", document.getElementById("form_grid").files);
+	        data.append("grid", document.getElementById("form_grid").value);
+151bef00012561d5b1fa51ab10913718|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|64|31|v|javascript
+	titles
+a5d491060952aa8ad5fdee071be752de|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|65|33|v|javascript
+	comments
+6c86cc8a646c2f4a585851685fba0776|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/owners/urls.go|57|1|V|go
+	        c.ShouldBindJSON(&form)
+8ed5cd5e28a866ee6527a641abdaeec8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|39|3|V|go
+			log.Println(reflect.TypeOf(c.PostForm("titles")))
+0d211312749fb4b1a025db88b19b1992|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|9|1|V|make
+		sudo docker-compose -f ./webapp/docker-compose.yml build go
+a6be1e5e8814527fd6e813cf959d0200|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|12|74|V|make
+		curl -X POST -H "Content-Type: application/json" -d '{"titles": "title1"e3"]}' localhost/api/components/create
+b0e7a39d7ea8e21b9892055a75168dbc|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|66|1|V|javascript
+	        data.append("images", []);
+cdccf941e51a13992020d014cd550da8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|64|31|v|javascript
+	["title1", "title2", "title3"]);
+c33b1def052a0c042097864fd5f56f8a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|66|33|v|javascript
+	["comment1", "comment2", "comment3"]);
+e97f505a2110f52de92badd50b387d39|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|65|1|V|javascript
+	        data.append("service_id", service_id);
+	        data.append("titles", 
+	        data.append("comments", 
+	        data.append("images", []);
+8fa94e8e1a36ea4298673929b777b960|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|65|1|V|javascript
+	        data.append("type", SelectedComponentType);
+7829ec7e816e8e6148a85c48fd2a598a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|65|1|V|javascript
+	        data.append("type", SelectedComponentType);
+	        data.append("type_id", SelectedComponentTypeID);
+dd1ad49983b3afd2e07e7c071a757a4f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|47|9|V|javascript
+	        var data = new FormData();
+9516dfb15f51c7ee19a4d46b8c0dbe1d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|68|14|v|javascript
+	append
+f368ee2d4fb60b281a3a705fa5daaf97|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|72|13|V|javascript
+	                // window.location.href = "/owner/menu";
+f0ac572844e7a133c90cb96a3f3363b1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|62|1|V|javascript
+	            Images: document.getElementById("form_grid").files,
+68037c5a11874f098da2278f8c080701|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|69|22|V|javascript
+	        data["grid"] = 2;
+3fcdb73d36d54f2cc22d0f68e6b6e182|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|61|15|v|go
+	form
+43cd4ae9a20febba541d5c27a050a2e8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|55|1|V|javascript
+	        var titles = ["title1", "title2", "title3"];
+	        var comments = ["comment1", "comment2", "comment3"];
+	
+68b69414f8de7653d916017b485c117f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|59|22|V|javascript
+	            // Images: document.getElementById("form_grid").files,
+0c6f3247767c85f048fe1e3baa2a5c86|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|62|22|V|javascript
+	            // Grid: document.getElementById("form_grid").value,
+c18d708be3ecf686c35fe4b7c2e0e220|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|30|1|V|go
+		router = components.Urls(router)
+59795abcd2f6f43d85d4a1ed3a4ce7cb|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|30|1|V|go
+		router = components.Urls(router)
+	
+4725dcf446a342f1473a8228e42dfa48|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|35|11|v|go
+	components
+cc7689d0d3d15df984504ed33eddde57|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|62|1|V|javascript
+	            Images: document.getElementById("form_grid").files,
+	            Images: [],
+	            Type: SelectedComponentType,
+	            TypeID: SelectedComponentTypeID,
+	            Grid: document.getElementById("form_grid").value
+88cf0fe73e01f64a1871954a1e4d080a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|61|1|V|javascript
+	            Images: [],
+	            Type: SelectedComponentType,
+	            TypeID: SelectedComponentTypeID,
+2a6b690b8d8373d53649e80424088108|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|61|13|V|javascript
+	            Grid: document.getElementById("form_grid").value
+e6108535731dac1b88989f841eb9226d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|64|13|V|javascript
+	            Grid: 2
+8aa70a03845eb4843809a2493e6739cf|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|56|10|V|javascript
+	            ServiceID: service_id,
+cfc382074811e7e1fa468a8fd7cbb652|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|39|1|V|go
+			var form Component
+			c.ShouldBindJSON(&form)
+989288a4933c2c4eeffa9c5feb0ba202|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|91|3|V|go
+			service.Title = c.PostForm("title")
+			service.Comment = c.PostForm("comment")
+			service.Show, _ = strconv.ParseBool(c.PostForm("show"))
+			service.Grouped, _ = strconv.ParseBool(c.PostForm("grouped"))
+			service.Turn, _ = strconv.Atoi(c.PostForm("turn"))
+e127952b2c2b5f577ce3116e142930a2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|4|1|V|go
+		"go-app/svc/components"
+b53194dc3e8c84865ec0bf5236126caa|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|15|v|go
+	append_component
+aee69811e73ef9ba2e7ed90ec733c4c7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|52|1|V|go
+		db := db_conf.DBConnect()
+		var list_service ListService
+		db.Where("Grouped = ?", false).Find(&list_service).Order("turn DESC")
+		db.Close()
+		return list_service
+4a2e86bf0842343231f622f59174bcc4|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|18|1|V|go
+		db := db_conf.DBConnect()
+		defer db.Close()
+		log.Print(service.ID)
+		if err := db.Save(&service).Error; err != nil {
+			log.Println(err)
+		}
+		return service
+f99b7fdf44d1103abf3b93f7faea515b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|62|14|V|go
+		log.Print(com.ID)
+fec17b9194ea9229e1575ebc58e040c7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|59|1|V|go
+	func append_component() Service {
+		db := db_conf.DBConnect()
+		defer db.Close()
+		if err := db.Save(&service).Error; err != nil {
+			log.Println(err)
+		}
+		return service
+	}
+b4638aaa68153988e3a952293dd0dd64|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|64|1|V|go
+			service_id, _ := strconv.Atoi(c.PostForm("service_id"))
+			service := get(service_id)
+ff61922635c5a8d42f159f0849e60090|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|92|1|V|go
+			service_id, _ := strconv.Atoi(c.PostForm("service_id"))
+			service := get(service_id)
+	
+dbf2fd732b7dfbcf1f098c7acbf91de8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|87|1|V|go
+			response := update(service)
+a41797ad2c6f359ee39db500380dd54e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|3|V|go
+			response := append_component(form)
+1df03c177f285f53495211b4a8cc86b0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|18|1|V|go
+			id, err := strconv.Atoi(c.Param("id"))
+8034f6152b16c4c905fd8407ebf2f033|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|10|V|go
+			service_id, _ := strconv.Atoi(c.PostForm("service_id"))
+76ea0bebb3c22822b4f0dd9c9fd021c5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|66|36|v|javascript
+	create
+282f97f3c266ff98709a4df72ab5c278|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|10|1|V|make
+	create_comp:
+		curl -X POST -H "Content-Type: application/json" -d '{"titles": ["title1", "title2", "title3"]}' localhost/api/components/create
+d6467d2df8081519ce6874e451fb220c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|18|1|V|make
+	get_service:
+		curl 'localhost/api/services/get/1'
+fc61aa4c5cf934fe4336106b78ee1eea|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|19|1|V|make
+		curl 'localhost/api/services/get/1'
+f0a1e5fa0baa497c8d228fefa4a7440f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|30|1|V|go
+		db.First(&service, "id= ?", id)
+7fb55ed0b7a30342ba6da306428cae04|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|31|5|v|go
+	First
+4ae73040bc5072a8693be9bad4e9d0b8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|31|19|v|go
+	, "id= ?", id)
+f3e334d42863e8250c7d03efefbfd387|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|52|v|go
+	languages
+3a08e2e340ab29fd9263af48193cbf8e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|34|v|go
+	Languages
+2ba7b73b071b7299315b56cab7388f3c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|2|V|go
+		log.Println(comp)
+898aa4546192df609de3a76e2baa6734|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|31|1|V|make
+		watch -n 3 "curl 'localhost/api/services/list/all' | jq"
+10ae9fc7d453b0dd525d0edf2ede7961|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|19|43|v|make
+	list
+46077bc561e1d3157d2fded42e38ed1b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+		db.Model(&service).Association("Components").Find(&components)
+24f21de04dada5d10e4c71f07ab6f31b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+		db.Model(&service).Association("Components").Find(&components)
+		service.Components = components
+6c23f6c2ef240b189bd0d6ac23c95ff5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|38|v|go
+	onents
+aaabf0d39951f3e6c3e8a7911df524c2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|12|v|go
+	service
+a30aec84fe90be900f71d275d147848a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|40|1|V|go
+		var titles components.ListTitle
+		db.Model(&).Association("Title").Find(&components)
+39b02774e2e26c93ea469e1420d7ad1a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|40|1|V|go
+		service.Components = components
+fd9f49cf0f60dc5c93399c0ee6cb7cea|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|1|V|go
+	        var titles components.ListTitle
+	        db.Model(&component).Association("Title").Find(&titles)
+		    component.Titles = titles
+8612579044efe457f11398b5a2377226|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|41|16|v|go
+	Titles
+700c216fb376666eaeda0c892e8bdc09|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|3|v|go
+	component
+38bf1687016cfc7c333c67d146998448|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
+		log.Println("com", list_component)
+c5373bd132839f160a196595bb269f36|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
+		log.Println("com", list_component)
+		for _, component := range list_component {
+38423dad81aa344cc350d2374c042be2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|2|V|go
+		for _, component := range list_component {
+929ead8cd22e6fec59f04ff58f9b8d10|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
+	    log.Println("list_component:", list_component)
+1fb17105e49824658c77b885c6bc03d2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|37|1|V|go
+			log.Println("component:", component)
+4ce020f49d399f19195927ab9df3654c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|1|V|go
+			log.Println("component:", &component)
+cfb3ca95235d22ca82564e1797019ade|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|39|18|v|go
+	mponent
+c93e95d8a6ff9d9868a219feca0aa72a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|39|32|V|go
+			log.Println("titles:", &titles)
+54bb1029a2231350315e4372331fc50a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
+		log.Println("list_component:", list_component)
+75aa22689cd3b1993841344506deb90d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|8|V|go
+	    jjjj
+c64e9a100d68612f275e90b2b1993644|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
+		log.Println("list_component:", &list_component)
+f383045ff93ad81bf45b82ee428ebfe7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|15|v|go
+	list_component
+7bf9570d7a4e9f57d219d7e316b7d5a2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+		log.Println("service:", &service)
+		log.Println("list_component:", &list_component)
+e21dee31807119a9f5be35cb1b9ab08c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|1|V|go
+			log.Println("component:", component)
+			log.Println("component:", &component)
+c5e0eb70d11eb1c2250f396cee6e447a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|45|29|V|go
+	        log.Println(component)
+47f5c407849eac1fc332a94de9365a93|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|32|1|V|go
+		next      *Component
+d0cab90d8d20d57e2f2b9be52f7dd25d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|32|2|v|go
+	next
+686af9af59fede89232e1ff8a1f5c0e7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|33|2|V|go
+		      *Component
+e2e45476a6a771959b7af53fa664d42e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|32|1|V|go
+		Next      *Component
+97335d24af995833e016d9c14ac0d40e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|33|16|V|go
+		NextID    *uint
+3b11af408a7a2c2fef9db6d4e77af9ee|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|32|12|v|go
+	  *Component
+69f4b7e5c6ca1ddbe7f0319b1945b16a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|67|1|V|javascript
+	            <a
+	                className="pointer"
+	                onClick={() => navigate("/home/service/" + service_id + "/components/" + component_id + "/create")}
+	            >
+	                右側に新しく追加
+	            </a>
+ef5a1f553ca1ccdd80d480520810e6cb|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|87|92|v|javascript
+	component_id
+9116ca6d7a928df5765a99fdb2a4b291|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|1|V|go
+			service_id, _ := strconv.Atoi(c.Param("id"))
+086fd796af3fd231fbc4108ed2a4dace|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|1|V|go
+			service_id, _ := strconv.Atoi(c.Param("service_id"))
+a272fe32cb1562b96566551ab1a3d221|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|98|1|V|go
+			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
+			service.Components.NextID = comp_id + 1

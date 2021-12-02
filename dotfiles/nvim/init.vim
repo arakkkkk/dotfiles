@@ -63,3 +63,6 @@ syntax enable
 " colorscheme solarized
 colorscheme night-owl
 source ~/.config/nvim/colors/colorscheme.vim
+
+
+map :init<CR> :source ~/.config/nvim/init.vim<CR>

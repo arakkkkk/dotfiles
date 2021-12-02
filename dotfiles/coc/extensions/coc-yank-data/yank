@@ -1,1112 +1,3 @@
-ea703e7aa1efda0064eaa507d9e8ab7e|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|72|21|v|vim
-	hoge
-0191b933c5fc8577f30f1935496597dd|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|41|1|V|python
-	    \!
-feddb35873c07a50d2fced1523b2e59f|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|36|1|V|python
-	    hogehoge
-	    !issue
-	    issue
-	    hoge
-	    hoge
-	     ! 
-59d870dd059bc0d1c0c64f77669deb5f|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|71|1|V|vim
-	:syntax keyword bar hoge
-	:syntax keyword bar \!
-bdd20c675708c20706cbd0a2c79b0cd2|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|69|1|V|vim
-	:hi bar ctermfg=black ctermbg=red
-	:syntax keyword bar issue
-983aedcac7ce738018d0aa67aa5022eb|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|34|11|V|python
-	    # issue
-92124845e786d539c1d1fefa74fb151a|file:///Users/Kouiti/dotfiles/dotfiles/nvim/init.vim|2|1|V|vim
-	:hi bar ctermfg=black ctermbg=red
-	:syntax keyword bar # issue
-035f4d6c04c9d03a558457199370bbf5|file:///Users/Kouiti/local_file/PLANE3T_SITE/about.html|51|1|V|html
-	                                微生物を用いた「メタン発酵法」により、野菜くずや水草などの未利用バイオマスからエネルギーとなるメタンガスと栄養分を豊富に含んだ排液(消化液)を回収します。
-81439cd2876a4517787b3b5029050ccb|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|35|50|v|python
-	Dinteractor_b
-b096132351f7d582ca5909e6a4100565|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|168|13|V|javascript
-	    return ()
-0be0191a1a7b6778034a7e6461660b81|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|118|1|V|javascript
-	class FourthSlide extends React.Component {
-	    render() {
-	        return (
-	            <div className="section">
-	                <img src="images/layout.jpg" className="img-fluid bg-img" />
-	                <span>
-	                    <h1>店舗情報 Infomation</h1>
-	                    <div class="row">
-	                        <div class="col-sm">
-	                            <iframe
-	                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6669929889135!2d134.6325210152366!3d34.86459388039269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1fb4a6aab83%3A0x29aed1cf46efdcf8!2z44Oe44Oe44Oz!5e0!3m2!1sja!2sjp!4v1636499221264!5m2!1sja!2sjp"
-	                                width="100%"
-	                                height="100%"
-	                                style={{ border: 0 }}
-	                                allowfullscreen=""
-	                                loading="lazy"
-	                            ></iframe>
-	                        </div>
-	                        <div class="col-sm">
-	                            <p>【ランチ】11:00〜14:00</p>
-	                            <p>【ディナー】17:30〜20:00</p>
-	                            <p>月曜定休(祝祭日は営業)</p>
-	                            <p>兵庫県姫路市飾西41-1</p>
-	                            <p>
-	                                <a href="tel:079-268-7070" target="_blank">
-	                                    <svg
-	                                        xmlns="http://www.w3.org/2000/svg"
-	                                        width="25"
-	                                        height="25"
-	                                        fill="currentColor"
-	                                        class="bi bi-telephone-fill"
-	                                        viewBox="0 0 16 16"
-	                                    >
-	                                        <path
-	                                            fill-rule="evenodd"
-	                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-	                                        />
-	                                    </svg>
-	                                    079-268-7070
-	                                </a>
-	                            </p>
-	                        </div>
-	                    </div>
-	                </span>
-	            </div>
-	        );
-	    }
-	}
-a2a29f690576803595cd5a078017c867|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|167|7|v|javascript
-	FourthSlide
-ebb129405d5c76a5fbf01e61b61aef1c|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|172|1|V|javascript
-	                <span>
-	                    <h1>店舗情報 Infomation</h1>
-	                    <div class="row">
-	                        <div class="col-sm">
-	                            <iframe
-	                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6669929889135!2d134.6325210152366!3d34.86459388039269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1fb4a6aab83%3A0x29aed1cf46efdcf8!2z44Oe44Oe44Oz!5e0!3m2!1sja!2sjp!4v1636499221264!5m2!1sja!2sjp"
-	                                width="100%"
-	                                height="100%"
-	                                style={{ border: 0 }}
-	                                allowfullscreen=""
-	                                loading="lazy"
-	                            ></iframe>
-	                        </div>
-	                        <div class="col-sm">
-	                            <p>【ランチ】11:00〜14:00</p>
-	                            <p>【ディナー】17:30〜20:00</p>
-	                            <p>月曜定休(祝祭日は営業)</p>
-	                            <p>兵庫県姫路市飾西41-1</p>
-	                            <p>
-	                                <a href="tel:079-268-7070" target="_blank">
-	                                    <svg
-	                                        xmlns="http://www.w3.org/2000/svg"
-	                                        width="25"
-	                                        height="25"
-	                                        fill="currentColor"
-	                                        class="bi bi-telephone-fill"
-	                                        viewBox="0 0 16 16"
-	                                    >
-	                                        <path
-	                                            fill-rule="evenodd"
-	                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-	                                        />
-	                                    </svg>
-	                                    079-268-7070
-	                                </a>
-	                            </p>
-	                        </div>
-	                    </div>
-	                </span>
-ae1ca6470e05828e6e804e59c85be8aa|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|183|1|V|javascript
-	                        <FirstSlide />
-	                        <SecondSlide />
-	                        <ThirdSlide />
-	                        <FourthSlide />
-523663c8b7d38655eb9ea4924bc403b8|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|24|1|V|javascript
-	            <div className="section" style={{ backgroundColor: "#583F2A" }}>
-1ae3241a663104db4414a92a4e0102ad|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|170|13|V|javascript
-	            <div className="section">
-83990865f36a521e5a13ceeda94622f9|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|126|1|V|javascript
-	class FourthSlide extends React.Component {
-3a81fbb40f2c69f98fbee70edd0de3ae|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|117|13|V|javascript
-	const Content = ()=>{
-0b4c61d7b5ef567d2a8629610c2a302b|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|117|1|V|javascript
-	class Content extends React.Component {
-	    render() {
-	    return(
-	        <FirstSlide />
-	        <SecondSlide />
-	        <ThirdSlide />
-	        <FourthSlide />
-	    )
-	        
-	}}
-d07de95b6db9d9c7168a6e61ed8c9cc2|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|183|1|V|javascript
-	                        <Content />
-fb83c8b049796c043aec652cddf42595|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Home.js|9|1|V|javascript
-	    const [ServicesGrouped, setServicesGrouped] = useState([]);
-0d5647929ad303363e843f6a335757cb|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|183|12|v|javascript
-	ServicesGrouped
-f36cf4a0c23b62e3bd39c1e376a95c6c|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|183|21|v|javascript
-	setServicesGrouped
-26d96e0c2f68609e67f98cfd35d2b781|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|177|1|V|javascript
-	    constructor(props) {
-	    super(props);
-	    this.state = {
-	      loading: false
-	    }
-	  }
-a678cc21baff1140e08e101dbe0d03e2|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|178|1|V|javascript
-	    () => {
-	
-	    }
-ad00fb9635813a97ac98659699851380|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|177|1|V|javascript
-	    const [Loading, serLoading] = useState([]);
-	
-f9b5d7462228012f97055b649cc35604|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Home.js|1|1|V|javascript
-	import React, { useState, useEffect, useContext } from "react";
-b594e46c607eef1df3ca672992bfc0d3|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|3|1|V|javascript
-	import React from "react";
-f15c1cae7882448b3fb0404682e17e61|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|202|22|v|javascript
-	Content
-9b2c85dd7af17d4528bd7489e72c59c5|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|202|37|v|javascript
-	Spinner
-c4950b7cc7fee66f206bffe2f02f0396|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|201|6|V|javascript
-	    kk
-87e9af06d2b64541b1549cefc426f7b6|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|199|5|V|javascript
-	    ()=>{
-ea5a1cbe764918679997181a3ea281d3|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|200|5|V|javascript
-	    }
-214f1a88510c5e203a03250a9ad7c91d|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|201|1|V|javascript
-	        return(<LoadingPage />)
-d35839f37e141901aa7d48f44036df52|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|203|17|v|javascript
-	LoadingPage
-f894c2ff308f33507ea20f7dcce2f70e|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|205|1|V|javascript
-	    return(
-	        {Loading ? (<TopPage/>) : (<LoadingPage/>) }
-	    )
-f0be5ae1cbcf930b1e8b864291cf2376|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|200|9|v|javascript
-	setTineout
-4716649e73a38f8bb442987683ad937b|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|187|1|V|javascript
-	
-	                        <LoadingPage />
-7646a6baf46c9194d397176ddb4e2c05|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|176|1|V|javascript
-	const TopPage = () => (
-	    <div class="toppage">
-	        <ReactFullpage
-	            licenseKey={"C5C881D6-81D74A73-AB857381-6D757637"}
-	            render={({ state, fullpageApi }) => {
-e791a4b392cc62f81a15d8366b3722fd|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|167|1|V|javascript
-	class LoadingPage extends React.Component {
-	    render() {
-	        return (
-ae49e782cade8b578fece6d550f67497|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|167|7|v|javascript
-	TopPage
-f9723785e5b67194f4354a160300a30e|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|190|1|V|javascript
-	                );
-	            }}
-	        />
-	    </div>
-	);
-5085251a1dccb0a9d7792c12f5f5e68f|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|180|1|V|javascript
-	        );
-	    }
-	}
-41f1da6862f4b11be2d8305f26e1d92e|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|175|1|V|javascript
-	                );
-2ea26910f865adb22376bbc961dca773|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|185|1|V|javascript
-	                return (
-cacbf8bd572c0a99d08b90e355ae31b0|file:///Users/Kouiti/local_file/maman-homepage/react-app/react-app/src/views/Top.js|206|1|v|javascript
-	    } else {
-91466359296625741e6367163a1bf9cf|file:///Users/Kouiti/.ssh/config|28|1|V|sshconfig
-	    HostName athena.gavo.t.u-tokyo.ac.jp
-	    IdentityFile ~/.ssh/id_rsa
-	    User soka01
-	    Port 22
-248f4d0a2a0f2d7c8f24f28d237f55ec|file:///Users/Kouiti/.ssh/config|37|5|V|sshconfig
-	    Port 22
-195f821a01461092c400afaa00f444ff|file:///Users/Kouiti/.ssh/config|35|30|V|sshconfig
-	    IdentityFile ~/.ssh/id_rsa
-df6a17187975fcd62d3197b24d9639a2|file:///Users/Kouiti/.ssh/config|23|1|V|sshconfig
-	  User kinoshita
-1465bac1da2e5615d06ace0c0197d46f|file:///Users/Kouiti/.ssh/id_rsa.pub|1|1|V|
-	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFDcLjJw4gGbgpBUigdFdg0E+FVaF65rt/Dtnwi9R9XSevG/Aa0YaoMz80AX/5ZAWdehukUsQmYbgw9jGYrGhHpsVJ9XJRdoW7p1/c/Vm/bBMlskT7IhRtrZvtyeBqP4iNVSwDqeIX0jFUaxMHxCQQG2X3Y4MqobedDNEB3mfr+do6ivhzvrQAU2jO0olCjmuywBY1QVPFzaEjNqTNmvMw3cbr2KKsczOBDzR+QgdyZ7imXu/kyMi+GTwfogHxBnZxbFo8YK+xfxCSUSEZJMYavGez0FRgtkqlp2+uxrFxMQQgXud+gJFrENpuJOv2L8Ta5ONAt8/eyFFetQ95gEViGfNTFWPDk843bN7fPBGiixxyYFCyQYzfl2nD0LeiCXYCkLGK3dHd9N0n0ykCRHTzNzXmPrWNxNNj1vfpx9VEzDn80HXr5CiLjUNwIOwzfo1Sez90u67RPYy54WASoabhLrtiIPQGVIm4967iz0DxDSCyTQtuvPFDG1OT7dFLK7E= Kouiti@KinoshitaLabnoMacBook-Pro.local
-e770fe788c810380adff42ea4bf59d1e|file:///Users/Kouiti/local_file/maman-homepage/.gitignore|1|1|V|
-	go-app/crypto/*
-eb5752cc1191bf1bcfd4297e4a388dd9|file:///Users/Kouiti/local_file/maman-homepage/.gitignore|1|1|V|
-	docker/mysql/mysql_data/*
-ad93bca7807ac5d0f20048ec8210ca81|file:///Users/Kouiti/.ssh/config|36|10|v|sshconfig
-	ik1-409-36910.vs.sakura.ne.jp
-fc35fdc70d5fc69d269883a822c7a53e|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|91|16|v|yaml
-	html
-e194b7ce0a02484867a0d19d80312ae7|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|86|1|V|yaml
-	
-	  certbot:
-	    image: certbot/certbot:v1.7.0
-	    volumes:
-	      - /etc/letsencrypt:/etc/letsencrypt
-	      - /var/www/html:/var/www/html
-	    command: ["--version"]
-4f64fa95320c218269a844696214b851|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|3|1|V|dockerfile
-	COPY ./nginx/wait-for-it.sh /etc/nginx/wait-for-it.sh
-b5d4fe554c8d679d10e8cfa86d71b98b|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|5|1|V|dockerfile
-	RUN chmod +x ./wait-for-it.sh
-a1736c9bb02220825c5a5db34e52e5d2|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|5|23|v|dockerfile
-	【ドメイン名 スペース区切りで複数指定可】
-28cab5ae56697823b5f996d13e97d155|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|6|22|v|dockerfile
-	【窓口メールアドレス】
-693221b078776685272bd3ce8916b325|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|7|64|v|dockerfile
-	【←仮証明書用の記載内容】
-d2bb58e146db593d31793f2ca555cd40|file:///Users/Kouiti/local_file/maman-homepage/docker/golang/Dockerfile|2|1|V|dockerfile
-	COPY ./go-app /go/src/go-app
-03defe8411526ff1661c568b81f9d258|file:///Users/Kouiti/local_file/maman-homepage/nginx/nginx.conf|28|33|V|
-	    ssl_certificate /etc/letsencrypt/live/【ドメイン名】/fullchain.pem;
-	    ssl_certificate_key /etc/letsencrypt/live/【ドメイン名】/privkey.pem;
-	    ssl_session_timeout 5m;
-	    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-	    ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv3:+EXP;
-	    ssl_prefer_server_ciphers on;
-b538ec001a39cb521a5c0ee013b50261|file:///Users/Kouiti/local_file/maman-homepage/nginx/nginx.conf|10|7|V|
-	    listen 443 ssl;
-2a2239a74a33cf4e062ef8187b2b8c62|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|1|1|V|dockerfile
-	FROM nginx
-	
-	WORKDIR /etc/nginx
-	
-a9e651c4532fc7bd63f2806ad6aee3ec|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|4|1|V|dockerfile
-	FROM nginx
-c21f969b5f03d33d43e04f8f136e7682|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|2|12|v|dockerfile
-	default
-f543f38d55dcea448e640847d74e052f|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|1|1|V|dockerfile
-	WORKDIR /etc/nginx
-	COPY nginx/nginx.conf /etc/nginx/conf.d/nginx.conf
-0e44e216bc7e970883f9e6466be8496b|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|4|12|V|dockerfile
-	COPY nginx /etc/nginx
-634dcaa3490cd4f8905fc647f5d5de71|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|4|1|V|dockerfile
-	COPY nginx/nginx.conf /etc/nginx/conf.d/nginx.conf
-0f196679c7101001b8a026f62fd0ed2c|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|4|1|V|dockerfile
-	WORKDIR /etc/nginx
-ee434023cf89d7dfb21f63d64f0f9d74|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|3|41|v|dockerfile
-	nginx
-ebe7e9e32f4baea8fe4610e44151c9d9|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|3|1|V|dockerfile
-	COPY default.conf /etc/nginx/conf.d/default.conf
-797fb86543b671bbcc62fa46d19af93a|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|5|1|V|dockerfile
-	RUN apt-get update && \
-		apt-get install snap && \
-	    sudo snap install --classic certbot && \
-	    sudo ln -s / snap / bin / certbot / usr / bin / certbot && \
-		sudo certbot --nginx
-5344a9076678e684a2d0f9aef320a23e|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|3|1|V|dockerfile
-	COPY ./nginx/wait-for-it.sh /etc/nginx/wait-for-it.sh
-	RUN chmod +x ./wait-for-it.sh
-1475c5f0419916587ccb7a2ff8ebd5aa|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|8|1|v|dockerfile
-	RUN 
-e23b76b30e0b2b506d9c588b8e8d589d|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|11|60|v|dockerfile
-	 && \
-d338b3f0f405eb5e51c8cc1e5ca66f02|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|10|5|v|dockerfile
-	sudo
-75dca49116194d2a505e4da01abe2925|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|11|5|v|dockerfile
-	wudo
-df0ad5749a760c1c7647bd1709022426|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|12|26|V|dockerfile
-	RUN systemctl restartsnapd
-57d3b2bcb23077d0d0e64e365dc079d8|file:///Users/Kouiti/local_file/maman-homepage/nginx/create_cert_ssl.sh|3|8|v|sh
-	`hostname`.japaneast.cloudapp.azure.com
-8b05ef29c8ba98e5b88e81a118629f99|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|8|1|V|dockerfile
-	COPY nginx.conf /etc/nginx/
-a840a029a9e43c576fe299f8dfac12a7|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|17|1|V|dockerfile
-	RUN set -x ; \
-	    addgroup -g 82 -S www-data ; \
-	    adduser -u 82 -D -S -G www-data www-data && exit 0 ; exit 1
-1a79a4d60de6718e8e5b326e338ae533|file:///Users/Kouiti/local_file/maman-homepage/docker/nginx/Dockerfile|17|65|v|dockerfile
-	example
-cfb70ad1d80189bc501bcb0a598742b4|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|68|1|V|yaml
-	      - ./certbot/www:/var/www/certbot/:ro
-	      - ./certbot/conf/:/etc/nginx/ssl/:ro
-	
-	  certbot:
-	    image: certbot/cerbot:latest
-	    volumes:
-	      - ./certbot/www/:/var/www/certbot/:rw
-	      - ./certbot/conf/:/etc/letsencrypt/:rw
-d7c77d1d273e65f383818b98effdea57|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|71|1|V|yaml
-	    volumes:
-	      - ./certbot/www/:/var/www/certbot/:rw
-	      - ./certbot/conf/:/etc/letsencrypt/:rw
-cf5f329e5032f3ed7676b71ab6df0a66|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|70|26|v|yaml
-	:latest
-377e79098eff2928e66ac42a91910508|file:///Users/Kouiti/local_file/maman-homepage/Makefile|1|1|V|make
-	b:
-		docker-compose -f ./docker-compose.yml build
-	s:
-		docker-compose -f ./docker-compose.yml up
-	r:
-		docker-compose -f ./docker-compose.yml restart
-	c:
-		docker volume rm (docker volume ls -qf dangling=true)
-	
-	
-	create_service:
-		curl -X POST -H "Content-Type: application/json" -d '{"title": "title", "comment":"comment", "show":"true", "grouped":"false"}' localhost/api/services/create
-	
-	get_service:
-		curl 'localhost/api/services/get/1'
-	
-	list_service:
-		curl 'localhost/api/services/list'
-	
-	signup:
-		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/signup
-	
-	login:
-		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/login
-	
-	test:
-		watch -n 3 "curl 'localhost/api/services/list/all' | jq"
-1bc8e0de6fae2cb7d883c662317dacf1|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|10|27|v|yaml
-	${PROXY_DEFAULT_HOST}
-13c83e0eb4fbaa3e04b075d10534a851|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|32|30|v|yaml
-	LETSENCRYPT_EMAIL
-84730331a123482d4d8f466141a49b88|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|69|1|V|yaml
-	  certbot:
-	    image: certbot
-	    # volumes:
-	    #   - ./certbot/www/:/var/www/certbot/:rw
-	    #   - ./certbot/conf/:/etc/letsencrypt/:rw
-1870a829d9bc69abf500eca6f00241fe|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|95|15|v|yaml
-	wordpress
-ba3988db0a3167093b1f74e8ae4a8e83|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|95|21|v|yaml
-	homepage
-ba792ce6bcd5ef954ad6fca69bd535a5|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|66|1|V|yaml
-	    networks:
-	      - proxy-link
-	      - homepage-link
-0e5f3f19ee303530a0f29046f9888c74|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|89|5|V|yaml
-	      - proxy-link
-682cf00153093483aec192c16f78947e|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|88|1|V|yaml
-	    networks:
-	      - homepage-link
-545ab86a563934146be9ada58bb507ba|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|1|1|V|yaml
-	version: "3.7"
-	
-	services:
-	
-	    proxy:
-	        image: jwilder/nginx-proxy
-	        container_name: proxy
-	        environment:
-	            TZ: Asia/Tokyo
-	            DEFAULT_HOST: "maman2030-himeji.com"
-	            DHPARAM_GENERATION: "false"
-	        ports:
-	            - 80:80
-	            - 443:443
-	        networks:
-	            - proxy-link
-	        volumes:
-	            - /var/run/docker.sock:/tmp/docker.sock:ro
-	            - ./nginx/certs:/etc/nginx/certs:ro
-	            - ./nginx/vhost.d:/etc/nginx/vhost.d
-	            - ./nginx/log:/var/log/nginx
-	            - proxy-dhparam:/etc/nginx/dhparam
-	            - proxy-html:/usr/share/nginx/html
-	        restart: always
-	
-	    letsencrypt:
-	        image: jrcs/letsencrypt-nginx-proxy-companion
-	        container_name: letsencrypt
-	        environment:
-	            TZ: Asia/Tokyo
-	            NGINX_PROXY_CONTAINER: proxy
-	            DEFAULT_EMAIL: "bdkouiti5013@gmail.com"
-	        networks:
-	            - proxy-link
-	        volumes:
-	            - /var/run/docker.sock:/var/run/docker.sock:ro
-	            - ./nginx/certs:/etc/nginx/certs
-	            - ./nginx/vhost.d:/etc/nginx/vhost.d
-	            - proxy-acme:/etc/acme.sh
-	            - proxy-html:/usr/share/nginx/html
-	        depends_on:
-	            - proxy
-	        restart: always
-	
-	networks:
-	    default:
-	        external:
-	            name: bridge
-	    proxy-link:
-	        name: proxy.internal
-	
-	volumes:
-	    proxy-dhparam:
-	    proxy-html:
-	    proxy-acme:
-6b4a0174615136d5ed1601ac6593c7f6|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|101|1|V|yaml
-	networks:
-	    default:
-	        external:
-	            name: bridge
-	    proxy-link:
-	        external:
-	            name: proxy.internal
-	    homepage-link:
-	        name: nginx.internal
-209b0e97274ab974c36685baf179ce84|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|15|1|V|yaml
-	    networks:
-bd20bc16f2954b4f80b1e80c5e0768a3|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|15|1|V|yaml
-	      - homepage-link
-67ff32d40fb51f1a2fd2c4f1b1019785|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|44|9|v|yaml
-	8000
-f487a86d84b3c03e7206834dc5cc7c5d|file:///Users/Kouiti/local_file/maman-homepage/nginx/nginx.conf|1|1|V|
-	worker_processes auto;
-	
-	events {
-	  worker_connections 1024;
-	}
-	
-	http {
-	  server {
-	    listen 80;
-	
-	    location /api/ {
-	      proxy_http_version 1.1;
-	      proxy_set_header Upgrade $http_upgrade;
-	      proxy_set_header Connection "upgrade";
-	      proxy_set_header Host $host;
-	      proxy_pass http://go:8000/;
-	    }
-	
-	    location / {
-	      proxy_http_version 1.1;
-	      proxy_set_header Upgrade $http_upgrade;
-	      proxy_set_header Connection "upgrade";
-	      proxy_set_header Host $host;
-	      proxy_pass http://react:3000/;
-	    }
-	  }
-	}
-79b645b83fa40f1c05e197dbb3282e86|file:///Users/Kouiti/local_file/reverse-proxy/nginx/vhost.d/nginx.conf|20|23|V|
-	      proxy_http_version 1.1;
-	      proxy_set_header Upgrade $http_upgrade;
-	      proxy_set_header Connection "upgrade";
-	      proxy_set_header Host $host;
-	      proxy_pass http://react:3000/;
-f6ffd63e096d9e71b050e6ca0095d798|file:///Users/Kouiti/local_file/reverse-proxy/nginx/vhost.d/nginx.conf|11|21|V|
-	    location /api/ {
-	      proxy_http_version 1.1;
-	      proxy_set_header Upgrade $http_upgrade;
-	      proxy_set_header Connection "upgrade";
-	      proxy_set_header Host $host;
-	      proxy_pass http://go:8000/;
-ade7f3bcb1cc675093e5aa15b4884e2d|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|20|23|v|yaml
-	vhost
-73f38e964c8ffb79f23a739e92e1efc2|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|98|1|V|yaml
-	# networks:
-	#     default:
-	#         external:
-	#             name: bridge
-	#     proxy-link:
-	#         external:
-	#             name: proxy.internal
-	#     homepage-link:
-	#         name: nginx.internal
-	
-4247ee3694cdcc2c82281e3e5ded2643|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|96|1|V|yaml
-	      - container-link
-b33bd184bfdd9f17891cbbdbc399e8e3|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|112|1|V|yaml
-	volumes:
-	  cert:
-	  html:
-	　vhost:
-66f996363ecea3f00346a236c2434a03|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|5|12|v|yaml
-	jwilder/nginx-proxy
-d3c22d3e71a309d632cba0159c6aa932|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|115|4|V|yaml
-	　vhost:
-5ddbb1b7ddf4b1d047efaf6438e7fc1b|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|113|3|V|yaml
-	  cert:
-ffd0e7c0dadccaf23b48d22613ff7113|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|3|1|V|yaml
-	services:
-	  nginx-proxy:
-	    image: jwilder/nginx-proxy
-	    container_name: nginx-proxy-test
-	    privileged: true
-	    environment:
-	      - "DHPARAM_GENERATION=false"
-	    ports:
-	      - 80:80
-	      - 443:443
-	    networks:
-	      - container-link
-	    volumes:
-	      - /var/run/docker.sock:/tmp/docker.sock:ro
-	      - proxy:/usr/share/nginx/html
-	      - proxy:/etc/nginx/vhost.d
-	      - ./docker/encrypt/certs:/etc/nginx/certs:ro
-	      # - ./conf.d/proxy.conf:/etc/nginx/conf.d/proxy.conf:ro # 設定を上書きするときはconf.d内に「.conf」拡張子で追加する
-	    restart: always
-	    labels:
-	      com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy: "true"
-	
-	  letsencrypt-nginx:
-	    image: jrcs/letsencrypt-nginx-proxy-companion
-	    container_name: letsencrypt-nginx-test
-	    privileged: true
-	    environment:
-	      - NGINX_PROXY_CONTAINER=nginx-proxy-test # volume_fromを使わない時はコンテナを指定する必要がある
-	    networks:
-	      - container-link
-	    volumes:
-	      - /var/run/docker.sock:/var/run/docker.sock:ro
-	      - proxy:/etc/nginx/vhost.d
-	      - proxy:/usr/share/nginx/html
-	      - ./docker/encrypt/certs:/etc/nginx/certs:rw
-	    restart: always
-	    depends_on:
-	      - nginx-proxy
-	
-	networks:
-	  default:
-	    external:
-	      name: bridge
-	  container-link:
-	    name: container_network
-795faab7c8f1fb7416204f61c2b16ae7|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|3|1|V|yaml
-	  react:
-	    build:
-	      context: .
-	      dockerfile: ./docker/react/Dockerfile
-	    container_name: react_container
-	    restart: always
-	    tty: true
-	    volumes:
-	      - ./react-app:/app/react
-	    command: sh -c "cd /app/react/react-app && yarn start"
-	    ports:
-	      - 3000:3000
-	    networks:
-	      # - homepage-link
-	      - container-link
-	
-	
-	  mysql:
-	    build:
-	      context: .
-	      dockerfile: ./docker/mysql/Dockerfile
-	    container_name: mysql_container
-	    restart: always
-	    environment:
-	      MYSQL_ROOT_PASSWORD: paswd
-	      MYSQL_DATABASE: go_database
-	      MYSQL_USER: user
-	      MYSQL_PASSWORD: paswd
-	    volumes:
-	      - ./docker/mysql/initdb.d:/docker-entrypoint-initdb.d
-	      - ./docker/mysql/conf.d:/etc/mysql/conf.d
-	      - ./docker/mysql/mysql_data:/var/lib/mysql
-	    ports:
-	      - 3306:3306
-	    links:
-	      - go
-	    networks:
-	      # - homepage-link
-	      - container-link
-	
-	
-	  go:
-	    build:
-	      context: .
-	      dockerfile: ./docker/golang/Dockerfile
-	    container_name: go_container
-	    ports:
-	      - 8000:8000
-	    tty: true
-	    stdin_open: true
-	    restart: always
-	    environment:
-	      MYSQL_DATABASE: go_database
-	      MYSQL_HOST: mysql_container
-	      MYSQL_USER: user
-	      MYSQL_PASSWORD: paswd
-	    volumes:
-	      - ./go-app/images:/go/src/go-app/images
-	    networks:
-	      # - homepage-link
-	      - container-link
-	
-	  nginx:
-	    build:
-	      context: .
-	      dockerfile: ./docker/nginx/Dockerfile
-	    container_name: nginx_container
-	    # ports:
-	    #   - 80:80
-	    restart: always
-	    environment:
-	      - TZ=Asia/Tokyo
-	    volumes:
-	      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-	      - html:/usr/share/nginx/challenge
-	      - ./web/html:/usr/share/nginx/html
-	    networks:
-	      # - proxy-link
-	      # - homepage-link
-	      - container-link
-	
-	  phpmyadmin:
-	    build:
-	      context: .
-	      dockerfile: ./docker/phpadmin/Dockerfile
-	    container_name: phpmyadmin
-	    environment:
-	      - PMA_ARBITRARY=1
-	      - PMA_HOST=mysql
-	      - PMA_USER=user
-	      - PMA_PASSWORD=paswd
-	    links:
-	      - mysql
-	    ports:
-	      - 1234:80
-	    volumes:
-	      - /sessions
-	    networks:
-	      # - homepage-link
-	      - container-link
-ad6238a439457ce1c2c97c2aaf9c41fa|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|78|1|V|yaml
-	      - html:/usr/share/nginx/challenge
-	      - ./web/html:/usr/share/nginx/html
-ec6b26e7917edbaf9acd8a500f2f12c5|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|10|1|V|yaml
-	    environment:
-7ff3aca904eef3a2c55365fb3de7b04d|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|10|35|V|yaml
-	      - WORDPRESS_DB_NAME=wordpress_db #WordPressの設定
-4cb8f978f3784aeb910dbb2f369e32d8|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|10|35|V|yaml
-	      - WORDPRESS_DB_PASSWORD=mysql_password #WordPressの設定
-f60631664fbf46ecb7f80c5387f1f798|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|75|24|V|yaml
-	            environment:
-8ca78b1a6adfead6867b881c89189086|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|75|12|V|yaml
-	environment:
-15420c28257bc415d0488bb380137353|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|84|1|V|yaml
-	      # - proxy-link
-	      # - homepage-link
-37fa779015d126bbcdc0e414f0e0b496|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|62|22|V|yaml
-	      # - homepage-link
-03f1cb9d924a60c2cc43623507706991|file:///Users/Kouiti/local_file/maman-homepage/docker-compose.yml|112|1|V|yaml
-	
-	# networks:
-	#     default:
-	#         external:
-	#             name: bridge
-	#     proxy-link:
-	#         external:
-	#             name: proxy.internal
-	#     homepage-link:
-	#         name: nginx.internal
-8fea5dc68a7f828bdda1b1c5e60502e5|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|51|1|V|yaml
-	# version: "3.7"
-	
-	# services:
-	
-	#     proxy:
-	#         image: jwilder/nginx-proxy
-	#         container_name: proxy
-	#         environment:
-	#             TZ: Asia/Tokyo
-	#             DEFAULT_HOST: "maman2030-himeji.com"
-	#             DHPARAM_GENERATION: "false"
-	#         ports:
-	#             - 80:80
-	#             - 443:443
-	#         networks:
-	#             - proxy-link
-	#         volumes:
-	#             - /var/run/docker.sock:/tmp/docker.sock:ro
-	#             - ./nginx/certs:/etc/nginx/certs:ro
-	#             - ./nginx/vhost.d:/etc/nginx/vhost.d
-	#             - ./nginx/log:/var/log/nginx
-	#             - proxy-dhparam:/etc/nginx/dhparam
-	#             - proxy-html:/usr/share/nginx/html
-	#             - ./test/html:/etc/test/html
-	#         restart: always
-	
-	#     letsencrypt:
-	#         image: jrcs/letsencrypt-nginx-proxy-companion
-	#         container_name: letsencrypt
-	#         environment:
-	#             TZ: Asia/Tokyo
-	#             NGINX_PROXY_CONTAINER: proxy
-	#             DEFAULT_EMAIL: "bdkouiti5013@gmail.com"
-	#         networks:
-	#             - proxy-link
-	#         volumes:
-	#             - /var/run/docker.sock:/var/run/docker.sock:ro
-	#             - ./nginx/certs:/etc/nginx/certs
-	#             - ./nginx/vhost.d:/etc/nginx/vhost.d
-	#             - proxy-acme:/etc/acme.sh
-	#             - proxy-html:/usr/share/nginx/html
-	#         depends_on:
-	#             - proxy
-	#         restart: always
-	
-	# networks:
-	#     default:
-	#         external:
-	#             name: bridge
-	#     proxy-link:
-	#         name: proxy.internal
-	
-	# volumes:
-	#     proxy-dhparam:
-	#     proxy-html:
-	#     proxy-acme:
-f65105e36bb763759194b8c9cb768b8e|file:///Users/Kouiti/local_file/reverse-proxy/docker-compose.yml|20|1|V|yaml
-	      # - ./conf.d/proxy.conf:/etc/nginx/conf.d/proxy.conf:ro # 設定を上書きするときはconf.d内に「.conf」拡張子で追加する
-3a040853c4a2b274fd3db2fd27260c74|file:///Users/Kouiti/local_file/maman-homepage/Makefile|11|1|V|make
-	create_service:
-		curl -X POST -H "Content-Type: application/json" -d '{"title": "title", "comment":"comment", "show":"true", "grouped":"false"}' localhost/api/services/create
-	
-	get_service:
-		curl 'localhost/api/services/get/1'
-	
-	list_service:
-		curl 'localhost/api/services/list'
-	
-	signup:
-		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/signup
-	
-	login:
-		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/login
-	
-	test:
-		watch -n 3 "curl 'localhost/api/services/list/all' | jq"
-85da28a3f9b4af58df98a0a12f3ede8b|file:///Users/Kouiti/local_file/maman-homepage/Makefile|10|1|V|make
-	
-	create_service:
-		curl -X POST -H "Content-Type: application/json" -d '{"title": "title", "comment":"comment", "show":"true", "grouped":"false"}' localhost/api/services/create
-	
-	get_service:
-		curl 'localhost/api/services/get/1'
-	
-	list_service:
-		curl 'localhost/api/services/list'
-	
-	signup:
-		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/signup
-	
-	login:
-		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/login
-	
-	test:
-		watch -n 3 "curl 'localhost/api/services/list/all' | jq"
-d864be9a146d2c186a75949887576d08|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|22|1|V|
-	alias gp="git pull origin HEAD"
-b33388391ecd6307fa948d054f535fa6|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|26|1|V|
-	alias gl="git log"
-519dd6df60ce6b8241ca8e17cdd28e0a|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|28|1|V|
-	alias gitreset="git reset --hard HEAD"
-0490e15b15c5a18138759fd774761640|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|31|7|v|
-	gitreset
-67d468e18a9fd982ad7e6bfdb3811288|file:///Users/Kouiti/.ssh/config|33|1|V|sshconfig
-	Host maman
-	    HostName 153.127.23.164
-	    IdentityFile ~/.ssh/id_rsa
-	    User ubuntu
-	    port 22
-c4e952faad46d44c6290ced8eae9dc5c|file:///Users/Kouiti/.ssh/config|34|1|V|sshconfig
-	    # HostName 153.127.23.164
-4e6f5e3271c76e9d7b5fb22af7057f37|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|14|22|v|yaml
-	maman2030-himeji.com,www.maman2030-himeji.com # nginx-proxyのホスト設定 ※本番ではlocalhost部分を「example.com,www.example.com」等にする
-50327590658e465501f9230055df29de|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|15|26|v|yaml
-	maman2030-himeji.com,www.maman2030-himeji.com # Let's Encryptのホスト設定 ※本番ではlocalhost部分を「example.com,www.example.com」等にする
-68934a3e9455fa72420237eb05902327|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|17|26|v|yaml
-	false
-81dc9bdb52d04dc20036dbd8313ed055|file:///Users/Kouiti/local_file/maman-homepage/webapp/nginx/nginx.conf|32|36|v|
-	1234
-3680a8506fdeaa6dc3078a9151ad6cbc|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|36|1|V|javascript
-	            <div class="container">
-	                <div class="card px-4 pt-2" style={{ backgroundColor: "#E8D6AE" }}>
-1e2f3fd94c680592a2f1d4fde80a87fa|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/OwnerHome.js|7|13|V|javascript
-	            <div class="container">
-e3b6c7818808cf0b9022c774f39d91b5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/OwnerHome.js|14|1|V|javascript
-	            </div>
-c4745f438b9ea7ced980cf7f3e0b0c06|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/OwnerHome.js|7|1|V|javascript
-	                <div class="card px-4 pt-2" style={{ backgroundColor: "#E8D6AE" }}>
-abe1b2e8a9bf5788064708612025490b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|30|1|V|javascript
-	                <div class="card px-4 py-2" style={{ backgroundColor: "#E8D6AE" }}>
-5b9e159e304f2f1063af79628c269fec|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|12|32|v|javascript
-	 = useState([]);
-5c55fb848995deb6dde7267421bf6c46|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|17|1|V|javascript
-	            <div>
-d0cab90d8d20d57e2f2b9be52f7dd25d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|72|42|v|javascript
-	next
-23e1f0e9167d25b23897b503247c16e6|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|13|1|V|javascript
-	    const [Content, setContent] = useState(top);
-5f7a84cdf5e2a6b065e3186788864c0a|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|15|1|v|javascript
-	    const top = () => {
-	        return (
-	            <div>
-	                contentcontent
-	            </div>
-	
-	        )
-	    }
-	
-	
-57540ed2df2d6a6e01e4c36fe333e656|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|26|14|V|javascript
-	                contentcontent
-8d6ab84ca2af9fccd4e4048694176ebf|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|81|42|v|javascript
-	menu
-0cdd0003d6cff0bb4356de5fcf5f9935|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|13|9|V|javascript
-	    const [Content, setContent] = useState();
-d8b422ec6968382f6d4fd1c271bb77d3|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|21|46|V|javascript
-	    const [Content, setContent] = useState(tpo);
-5cd8c7768dfa89257ba22146a435ce1f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|22|20|V|javascript
-	    const setcontent
-944c8c73d638d7ec64efeb44e1802b78|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|81|31|v|javascript
-	setcontent
-2a27e9f7e7d4972b4788bb601d85edbb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|23|16|V|javascript
-	        return (
-7ba1d628943672ff86856108dae898b2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|83|1|V|javascript
-	            {Content}
-	            <a onClick={() => setContent(menu)}>aaaaaaa</a>
-0735b06928ee9dd22bd093275f14a528|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|35|1|V|javascript
-	        setContent(top)
-16a3389fb5a9d107758f1126908c9736|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|13|1|V|javascript
-	
-	    const top = () => {
-	        return (
-	            <div>
-	                contentcontent
-	            </div>
-	        )
-	    }
-	    const setcontent =()=>{
-	        setContent(menu)
-	    }
-	    const menu = () => {
-	        return (
-	            <div>
-	                menumenumenu
-	            </div>
-	
-	        )
-	    }
-8434e90a193064183f02d566da9cc7e1|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|27|1|V|javascript
-	    const { ApiUrl, setApiUrl } = useContext(GlobalContext);
-0b4728a55c4b7943ea632acd40d6aa8b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|1|1|V|javascript
-	import React, { useEffect, useContext } from "react";
-098f6bcd4621d373cade4e832627b4f6|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|39|37|v|javascript
-	test
-0cbc6611f5540bd0809a388dc95a615b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|39|52|v|javascript
-	Test
-7edb10972d233d13f1812c21156bb361|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|37|V|javascript
-	    const [Content, setContent] = useState()
-0dcb6499542995c5872e584a48cc64fe|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|36|1|V|javascript
-	        //     <Navbar />
-62b227fee579badf62b29c02bcd993d8|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|10|V|javascript
-	    const 
-cfe0aff787cb5e6d1bc54c99ae65c3cd|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|6|1|V|javascript
-	    const [ApiUrl, setApiUrl] = useState(null);
-fbee1b9b54065abce92d8de117a33dfb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|7|12|v|javascript
-	ApiUrl
-a36711983c351a2931d1b5a3feed6fc9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|7|21|v|javascript
-	setApiUrl
-036932c36386e797feeb3b3f3c478adf|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|29|14|v|javascript
-	setContent
-7d3b93d486b8bee6e2fc3ed20776c778|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|29|27|V|javascript
-	    const [, ] = useState()
-7282ae667b6631e8ab1dbbc76002ef75|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|1|V|javascript
-	    const {Content , setContent} = useContext(GlobalContext);
-165587361961d24dbf6e3f5d4c33c756|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|11|1|V|javascript
-	import { Home } from "views/Home";
-	import Menu from "views/Menu";
-	
-	import LoginForm from "views/LoginForm";
-	import OwnerHome from "views/OwnerHome";
-	
-	import { ServiceOwner } from "api/services/ServiceOwner";
-	import { ServiceCreate } from "api/services/ServiceCreate";
-	import { ServiceUpdate } from "api/services/ServiceUpdate";
-	
-	import { MenuOwner } from "api/menus/MenuOwner";
-	import { MenuCreate } from "api/menus/MenuCreate";
-	import { MenuUpdate } from "api/menus/MenuUpdate";
-c292646d1a49724d9198565a55ae758c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|4|1|V|javascript
-	import { LoginCheck } from "api/Owners";
-bce34dd668db53319f509986af4f6b2e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|98|1|V|javascript
-	export default Home;
-8cf04a9734132302f96da8e113e80ce5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|75|68|v|javascript
-	Home
-b61541208db7fa7dba42c85224405911|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|75|68|v|javascript
-	Menu
-639253ba2773c0ed977fbf72cfcb52bf|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Menu.js|15|1|V|javascript
-	    useEffect(() => {
-8862e904f5ad88a663a2e2f8d690783f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|36|v|javascript
-	useContext
-d406666763942a9c062d3e624c43f1ed|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|45|v|javascript
-	GlobalContext
-7200ab0df622d908d19580786303d307|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|54|17|V|javascript
-	            <Navbar />
-e25a8bc532f0410393b560b470d9fb0c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|55|12|V|javascript
-	            {Content}
-2efeb7483f58109f75ab42c8313a50b4|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|8|1|V|javascript
-	import Navbar from "views/layouts/Navbar";
-d1f0611f34e404bd6b1dc8da0c1b2a20|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|31|12|V|javascript
-	        setContent(Top)
-f798b589f6dd70da4301d8ae2cbf5046|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|1|V|javascript
-	        // <BrowserRouter>
-	        //     <Navbar />
-	        //     <Routes>
-	        //         <Route exact path="/" element={<Top />} />
-	        //         <Route exact path="/test" element={<Test />} />
-	        //         <Route exact path="/login" element={<LoginForm />} />
-	        //         <Route exact path="/owner" element={<OwnerHome />} />
-	        //         <Route exact path="/owner/service" element={<ServiceOwner />} />
-	        //         <Route exact path="/owner/service/create" element={<ServiceCreate />} />
-	        //         <Route exact path="/owner/service/edit/:service_id" element={<ServiceUpdate />} />
-	        //         <Route exact path="/owner/menu" element={<MenuOwner />} />
-	        //         <Route exact path="/owner/:service_id/menu/create" element={<MenuCreate />} />
-	        //         <Route exact path="/owner/menu/edit/:menu_id" element={<MenuUpdate />} />
-	        //         <Route exact path="/home" element={<Home />} />
-	        //         <Route exact path="/home/menu/:service_id" element={<Menu />} />
-	        //     </Routes>
-	        // </BrowserRouter>
-21b232177c67597c392f688b7b6ddd93|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|12|V|javascript
-	    const [  , url ] = useState();
-9fc7aa6e52d2d2b5f9dea88ed6cbec14|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|14|24|V|javascript
-	                Content,
-cd65646b60c5525aa3ee032274238922|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|14|26|V|javascript
-	                setContent
-9f47d0c0679b31cd187603bef1178b2f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|12|1|V|javascript
-	                ApiUrl,
-fd514ae13e534656814976c5e9984010|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/Global.js|13|1|V|javascript
-	                setApiUrl,
-a223df44c01fbf340f74061e1ebff914|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|37|1|V|javascript
-	        <div>
-	
-	        </div>
-189b8453be34854dd5bddb0399ce7d3c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|37|1|V|javascript
-	        case 'top':
-	            return ()
-c4d81394801c414fa97c4c7da69f4871|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|48|1|V|javascript
-	    return (
-	    );
-8463381a956150fea928c3b2295f1cf6|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|40|1|V|javascript
-	            return (< />)
-4dd6fe45b3edc15fbafa5ff5a7804cdb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|42|13|V|javascript
-	            return ()
-71e7c41e9bec049bc404551d5760dc78|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|43|1|V|javascript
-	        case 'top':
-	            return ()
-	        case 'top':
-	            return ()
-86494f9ec2e331a36ac4fc4610456bff|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|41|1|V|javascript
-	        case '':
-	            return (< />)
-b9ad63eff17bb447727cde240b1b8d25|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|43|15|v|javascript
-	lwnerhome
-00350bc3b22eb2dcc15e31c081792bf9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|28|1|V|javascript
-	    const { Url, setUrl } = useContext(GlobalContext);
-106a6c241b8797f52e1e77317b96a201|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|61|62|v|javascript
-	home
-09fd1dbbc78fb38887180eb80008e9dd|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|61|41|v|javascript
-	onClick={() => setUrl('top')}
-38a40e9ff7c72c6089aa250bb72c3de2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|12|19|V|javascript
-	    console.log(Url)
-0e16fef1247c9ec36dbe0b2259655b1e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|8|1|V|javascript
-	  BrouserRouter as Router,
-35751c0c007ebcd5c05c214fc3713684|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|8|1|V|javascript
-	  Route、
-e2397ec83b020595516c1e075d757f3f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|61|41|v|javascript
-	onclick={()=>history.push("/")}
-66697846fa37e2a83b7c7f8e6d002b5c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|1|50|v|javascript
-	useHistory
-9e1db236f7806ac6f5a0d48c366776d6|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|3|26|V|javascript
-	  BrowserRouter as Router,
-e0b2b0f9a1576655b34cf078d5f29355|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|3|8|V|javascript
-	  Route,
-c65bb19a9f87991673758bf9f7061ff9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|3|8|V|javascript
-	  Switch,
-cf6cfabd0b61e986d3de1c07603dcdbb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|3|8|V|javascript
-	  useParams,
-d13ef46745a269c81af33127833b232f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|4|8|V|javascript
-	  useLocation,
-59449f2cb48dee4ff5f72f419a7c44e2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|2|31|V|javascript
-	import { useHistory } from 'react-router-dom';
-3cd15f8f2940aff879df34df4e5c2cd1|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|57|11|v|javascript
-	history
-d9ac60708910dbdf29f1fef2d60e275d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|34|1|V|javascript
-	            <Routes>
-d348bfbed984b3a7f7f320206bfc96df|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|1|V|javascript
-	            <Router>
-9405c3aff9112c3c60d03b94792877dc|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|18|v|javascript
-	Route
-6f51e454cdff429c3ba0cdbe86713f2c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|1|V|javascript
-	                <Route exact path="/" element={<Top />} />
-687793d69317d08dbd634bf767a3414d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|34|26|V|javascript
-	                <Navbar />
-3b7efa09444a31c5d58596e5bbf87d47|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|34|24|v|javascript
-	exact
-76c70109e34b6a764acad20f8ee303f9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|62|1|V|javascript
-	                <a class="navbar-brand" onclick={()=>navigate('/top', { replace: true })} style={{ color: "#FFFFFF" }}>
-21a361d96e3e13f5f109748c2a9d2434|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|79|98|v|javascript
-	push
-52520e71d92cd1400cd70727c9f9e342|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|34|27|v|javascript
-	} />
-766a6d4b681bff281512d6891c6ef3f8|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|34|1|V|javascript
-	<React.Fragment>
-cce0134cd71bd505f2a3da6949c20103|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|36|2|V|javascript
-	</React.Fragment>
-2ac4e0a2a9e22b05f2da36436b8b9ea8|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|1|V|javascript
-	                <Route exact path="/top" element={<Top />} />
-85a4c5141d28cc3bf03ed2422d76f782|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|33|17|V|javascript
-	            <Routes>
-	                <Route path="" element={<Navbar />} />
-d6f208def0e5488c74017806cc64389d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|34|17|V|javascript
-	                <Route path="" element={<Navbar />} />
-13b2ad1dba86c3b94c472614d72734b4|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|97|81|v|javascript
-	menu_page
-c75503a2e93ba68c46673ab353066761|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|29|1|V|javascript
-	    const change_page = (index) => {
-	        window.location.href = "/home/menu/" + String(index);
-	    };
-d327531efbb53a6ec0bbbaa96552af8b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|54|1|V|javascript
-	    const menu_page = (service_id) => {
-	        window.location.href = "/home/menu/" + String(service_id);
-	    };
-05fe51d96fbb3fe7dd04f6b90fd426af|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|54|1|V|javascript
-	    const navigate = useNavigate();
-ebc597fb1fc35d5807a665c580ea4191|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|2|1|V|javascript
-	import { useNavigate } from 'react-router';
-7f16e83c58d0a591d6ff3d838452a0bb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|40|74|v|javascript
-	change_page
-e8fab833730f3a939d0b3812fe043b5d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|38|58|v|javascript
-	href
-985ce670af26e84838e741bdbe16ea33|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|38|69|v|javascript
-	"/owner/service"
-6598092f8b6196970d1f32775a450cec|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|38|1|V|javascript
-	                                <a class="dropdown-item" navigate("/owner/service")>
-aaabf0d39951f3e6c3e8a7911df524c2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|44|75|v|javascript
-	service
-302187561277648308b68747e90886a2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|43|76|V|javascript
-	                                <a class="dropdown-item" href="/owner/menu">
-deafb40592c8091ce650b14211a5d324|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|39|87|v|javascript
-	navigate("/owner/service")
-243b71aad9309804d8781947830cc90d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|39|1|V|javascript
-	                                <a class="dropdown-item" onClick={() => navigate("/owner/service")}>
-6e567317793b96efa779c72efc7802e1|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|44|33|V|javascript
-	                                <a class="dropdown-item" navigate("/owner/menu")>
-f8894903630ede1982898088512651c1|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|83|1|V|python
-	    write_id_list(whole_id_list, dirname + "/whole_id_list.tsv")
-80f50a65093ac8a001a403e3d17ee19b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|87|5|v|python
-	write_id_list
-eb32e01729d173e95d17cd9ddccda732|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|18|1|V|python
-	    for row in reader:
-48a8a8f2d393a61c1180ccf0b048f14a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|18|1|V|python
-	    for row in reader:
-	        for i in range(num_column):
-620fb72a2a4578ff8befb2ca4a17db29|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|75|1|V|python
-	                    reader = csv.reader(f1, delimiter="\t")
-b0aa4e61de057281bd84880fe821f28a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|90|24|v|python
-	num_column
 bc95dfc14146aa23e43f2ea7af04d310|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|91|12|V|python
 	            
 769b7f87f1976526e213f6db90757e03|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|101|1|V|python
@@ -1334,3 +225,955 @@ c78369470d6a71d608afcde5d348c832|file:///Users/Kouiti/local_file/lets/lets_proj/
 	question_num
 a4e270b867446deec62db31cc9277540|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|85|21|V|python
 	                break
+6479c880ff16bf77f68e9d3d7cd1b7cb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|13|1|V|go
+		"log"
+		"time"
+607b637d3eb655cfc93a205916f691c3|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|13|2|V|go
+		// "fmt"
+ecbc3a05f349169e9ecad6607dbabfdd|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|1|V|go
+			log.Println(component)
+700c216fb376666eaeda0c892e8bdc09|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|37|15|v|go
+	component
+78415f46ce04c8679b334de1858833ce|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|1|V|go
+	        log.Println("component:",component)
+4676284269764e87b83a5f6b3dd759a0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|21|10|V|go
+		log.Print(service.ID)
+d1fc8eaf36937be0c3ba8cfe0a2c1bfe|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|115|15|v|go
+	response
+436004bd0cabe04a3fb1e2a679170b05|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|48|V|go
+	    log.Println("list_component:",list_component)
+1d466ae02ec34c7a93e3fb8fee5222fb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|37|9|V|go
+	        log.Print(titles)
+151bef00012561d5b1fa51ab10913718|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|19|v|go
+	titles
+7bd71370decab9a25b8ab04fd3b5813a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|27|V|go
+	        log.Print(component)
+effaca54f3edb3104ea8341d3ba28fc7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|44|1|V|go
+	        log.Print("component:",component)
+0328c3ab98529275ddfb166dc132936f|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|44|1|V|go
+	        log.Print("images:",images)
+59b514174bffe4ae402b3d63aad79fe0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|41|20|v|go
+	images
+46c0efd930a019f1305731a8f43e7063|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|41|1|V|go
+	        log.Print("comments:",commnts)
+09cbed982fc17145799a86c54f8a6824|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|31|v|go
+	commnts
+a5d491060952aa8ad5fdee071be752de|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|20|v|go
+	comments
+597369db98a0d59a53ed7439cb21e5ca|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|1|V|go
+		var list_component components.ListComponent
+f383045ff93ad81bf45b82ee428ebfe7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|6|v|go
+	list_component
+0534b255d87557c130faf82a0a120036|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|12|V|go
+		var respose components.ListComponent
+4db34e0c85e52a33a448cdae892d9594|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|48|36|V|go
+		service.Components = list_component
+c63d145ed977dfeaf3fff39546a1faea|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|37|35|V|go
+	        log.Print("titles:",titles)
+9a6f039839f00b679a76b0c1db372189|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|40|39|V|go
+	        log.Print("comments:",comments)
+4cfa6c981549e990fe2344e4c805405e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|46|v|go
+	Find
+7fb55ed0b7a30342ba6da306428cae04|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|46|v|go
+	First
+50b05b8b64a76cc3b0e88f377a1a0714|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
+			db.Model(&component).Association("Titles").(&titles, "NextID=?",0)
+29c9905db377f095dfec910236cd3548|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|51|v|go
+	(&service.Components)
+f51ef61c78d4e45cbaff73c6b39ea2af|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|54|v|go
+	, "NextID=?",0)
+38878282077f93bfb54bac9af3047462|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|14|V|go
+	    db.Session(&gorm.Session{FullSaveAssociations: true}).Updates(&user)
+46e6522b2d9c6c071a687b851a5d683a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|31|23|V|go
+		db.Model(&service).Association("Components").Find(&service.Components)
+7442e29d7d53e549b78d93c46b8cdcfc|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|17|v|go
+	Orders
+9ed39e2ea931586b6a985a6942ef573e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|30|v|go
+	state
+6dd1d57254d1293570379b3f4670a549|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|44|v|go
+	celled
+9bc65c2abec141778ffaa729489f3e87|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|49|v|go
+	users
+b3376230a87fd9032f8e86bd7c4f8ca8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|30|V|go
+	    db.Preload("Component", "NextID=", 0).Find(&service)
+d2556d285b12acf059ab7805a12c8adf|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|30|V|go
+	    log.Println("222:",service)
+1228b6c87a07f4e41fb78b039dcad711|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+	    log.Println("comp:",comp)
+005480c8a6a0357d17cff2e8eb7e060d|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|18|v|go
+	comp
+11243221db032c5d7e686bbb98c45631|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|14|V|go
+	    log.Println("service:",service)
+443412d293e1849294f777f16e0fc663|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|1|V|go
+	    var comp components.Component
+	    db.Where(&comp, "service_id = ?", service.ID)
+	    log.Println("comp:",comp)
+d65ebda504b422eb3a7b3b3930d6779e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|115|13|V|go
+	        respo
+ade34b2b0912f95075127776700423bb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|104|35|V|go
+	            defer resp.Body.Close()
+65a94d37eddeaa577a5a7ee1f02d21ac|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|104|49|V|go
+	            body, err := ioutil.ReadAll(resp.Body)
+0a00a7ac613cae0d66e4cb98dd5ffea6|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|1|V|go
+	            resp, err := http.Get("http://qiita.com/api/v2/users/snaka/items?page=1&per_page=10")
+	            if err != nil {
+	                    log.Fatal(err)
+	            }
+b55ce8b43994f428cf134c1a494a169a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|96|30|v|go
+	c.Param("comp_id")
+15f0d3db057e0d3ede0f7accf6244aa0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|74|1|V|go
+				if err != nil {
+					log.Println(err)
+3430c0c6a59a348935b9fb4c2a8a62a4|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|1|V|go
+	            URL := "http://0.0.0.0/api/components/get"+c.Param("comp_id")
+				request, err := http.NewRequest("GET", URL, nil)
+				if err != nil {
+	                log.Println("error:",err)
+	            }
+	            log.Println("request:",request)
+825a0d569c3b6c40f4d01554d7ac6e02|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|94|1|V|go
+			var adding_comp components.Component
+105b0b937a7f8ac8ded8eeffd2adb780|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|39|V|go
+	            var add_comp components.Component
+e21beb91ba7e43427f3df0e00d3fe194|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|96|41|V|go
+			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
+07589029721e600e88dbbc1e046a769e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|106|28|V|go
+			service := get(service_id)
+086fd796af3fd231fbc4108ed2a4dace|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|106|3|V|go
+			service_id, _ := strconv.Atoi(c.Param("service_id"))
+c9f4057ef2adff88021207221023d5c7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|31|V|go
+	        adding_comp := service.
+b089db49e1973cb26634e7ea497b4a28|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|104|1|V|go
+	            // target compをアップデート
+8e82b2c6fafef3f6136ab7eaf8a1772f|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|9|V|go
+	        log.Println(comp_id)
+8413c683b4b27cc3f4dbd4c90329d8ba|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|110|39|v|go
+	Comments
+c83e52772121b53535abb0aeff2cb13e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|110|1|V|go
+	        log.Println("before:",service.Components)
+2f44417567bc123bd7c60de8c2a2b444|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|112|22|v|go
+	before
+dd06120e10d38adf6f1d443062616be8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|112|9|V|go
+	        log.Println("after:",service.Components)
+3da976897858fb589d6bb49954cd97f5|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|1|V|go
+				log.Println(comp_id)
+1cd9b55d64125388b7e852d7d9a8b4ee|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|33|V|go
+			var titles components.ListTitle
+195a84e6e5d63303d9d9454fc392f6c9|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|27|V|go
+			component.Titles = titles
+3657052b4cc8de70838d4abd97ed579a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|37|V|go
+			var comments components.ListComment
+ee5465b0e1b28b64e07d7afc12684395|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|31|V|go
+			component.Comments = comments
+f44d28d588daaac69b933140672ebb44|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
+			db.Model(&component).Association("Comments").Find(&comments)
+			var images components.ListImage
+			db.Model(&component).Association("Images").Find(&images)
+			component.Images = images
+	        service.Components = append(service.Components, component)
+769011655b77661337f65ea085e29179|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+			db.Model(&component).Association("Titles").Find(&service.Components[i])
+8612579044efe457f11398b5a2377226|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|37|v|go
+	Titles
+53bfcb0a311962beb089f9baf12b46f0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+	        log.Println(service.Components)
+05bbb43b3d923283e0b6ffafd088f41f|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|29|v|go
+	Components
+b5862f5004767df84a0746d13d1487b4|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+	        log.Println("koko")
+	        log.Println(service.Components)
+	        log.Println(i)
+eaaf13d20393dfa3753001d33c6f3e98|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+	        log.Println("koko")
+	        log.Println(service.Components)
+	        log.Println(i)
+	        log.Println(service.Components[i])
+06612a0d55d1037178aa282824bf0841|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|43|25|V|go
+	        service.Components = append(service.Components, component)
+4725dcf446a342f1473a8228e42dfa48|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|13|v|go
+	components
+153ca79e1a97700964887e0803caadd0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|37|V|go
+			db.Model(&component).Association("Comments").Find(&comments)
+0b642580e9753ab8b7a077378917dc2e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|31|V|go
+			var images components.ListImage
+14d038a0e2c87a078e29548ae24a6784|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|31|V|go
+			db.Model(&component).Association("Images").Find(&images)
+cd7b64d91c73010be1646e1769518aaf|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|27|V|go
+			component.Images = images
+7429c8f56b5f2d8cec89e48360215c62|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+			db.Model(&component).Association("Titles").Find(&service.Components[i].Titles)
+2a386120fe2649c3f54ad5a77d75400a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|11|1|V|go
+	    Turn    int
+d6e6a221a70f3acbcf26057b56001b59|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|52|1|V|javascript
+	            titles.push({ Text: form_title.value, Turn:i });
+0f7b5df71122d97b3929b98fff98bc87|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|51|1|V|javascript
+	            i+= 1
+ef441d1a7f9e5b6e4d2df037be9e212c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|49|1|V|javascript
+	        i=0
+3170e89174176fbab97cf8ced4458953|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|107|1|V|go
+			service_id, _ := strconv.Atoi(c.Param("service_id"))
+			service := get(service_id)
+4e1ddba1c31545ee09fb38ae1fd79346|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|104|9|V|go
+	        }
+382facfc9eff9ba6f6e260f0970c2883|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|103|1|V|go
+	            adding_comp.NextID = 0
+bbf59573f5e7ccc4b22cfc100ca284b5|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|104|25|v|go
+	NextID
+be4ee00ba3b5e24e381f807f3d1afaae|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|104|1|V|go
+	            adding_comp.Head = true
+b0dc1e2985b388b120ee0dd7baca7034|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|42|v|go
+	service_id
+b47af1373101900adcfb886d535bd5a4|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|27|1|V|go
+	func Get(id int) Component {
+		db := db_conf.DBConnect()
+		var component Component
+		db.First(&component, "id= ?", id)
+		db.Close()
+		return component
+	}
+e8c5af6e6eb54923ede80d6d64f41ea8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|27|1|V|go
+	func Get(id int) Component {
+		db := db_conf.DBConnect()
+		var component Component
+		db.First(&component, "id= ?", id)
+		db.Close()
+		return component
+	}
+	
+46f42c01213ccfb8d5c8a5685c5c9852|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|107|1|V|go
+	                adding_comp.Head = true
+5b7cb5bf80f63520809069c89c72d506|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|17|v|go
+	head_comp
+98921133d10fbdb0fb6dbb7b2648befe|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|110|29|v|go
+	Head
+b326b5062b2f0e69046810717534cb09|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|110|38|v|go
+	true
+b963cdc14e75d60731678bcd3fc2a730|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|103|1|V|go
+	            log.Printlm("111111111111111")
+9cd20b7a0f5614dd3dd9d3c69f71f699|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|103|1|V|go
+	            log.Println("111111111111111")
+4ba36d23a78c7393b4900ef38019d8ff|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|26|v|go
+	111111111111111
+3b2de5238c13b1b950c679fcf3d26651|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|1|V|go
+	            log.Println("222222222222222")
+ff083257a5583291fb86656ad0df1b42|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|114|26|v|go
+	222222222222222
+d636efe1cde6bc6948962a304b844e28|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|122|1|V|go
+					components.Update(target_comp)
+1d349eb2a72d8a56ab7f105dc986baf0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|113|28|v|go
+	t_comp
+daac832fce7b4fa8a126412d35cf5744|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|1|V|go
+					log.Println("222222222222222")
+698202d95823787a9857a33d6259c709|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|113|1|V|go
+	                log.Println("head_comp:", head_comp)
+f7fbb872386d675411c3bb95ba422db7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|112|1|V|go
+	                log.Println("head_comp:", head_comp)
+	                log.Println("adding_comp:", adding_comp.NextID)
+6822a7f9a3c19bca5bf34c06927f7ccb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|114|3|V|go
+					log.Println("3333333333333")
+8c5495a7af70d1d73d95be8a01d177eb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|103|3|V|go
+				log.Println("111111111111111")
+c7a69cb0318eb4bbd5eaae8224cec9ef|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/menus/urls.go|71|1|V|go
+			file, err := c.FormFile("file")
+			if err != nil {
+				log.Println(err)
+			} else {
+				filename := time.Now().Format("2006-0102-150405") + "_" + file.Filename
+				err = c.SaveUploadedFile(file, "images/"+filename)
+				if err != nil {
+					log.Println(err)
+				} else {
+					form.Img = filename
+				}
+			}
+df8ff52a256d6b0af09793fc8fbd1215|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|93|1|V|go
+		router.POST("/services/:service_id/append/component/:comp_id", func(c *gin.Context) {
+			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
+	
+			var adding_comp components.Component
+			c.ShouldBindJSON(&adding_comp)
+	
+			service_id, _ := strconv.Atoi(c.Param("service_id"))
+			service := get(service_id)
+	
+			if len(service.Components) == 0 {
+				adding_comp.NextID = 0
+				adding_comp.Head = true
+			} else {
+				if comp_id == 0 {
+					adding_comp.Head = true
+					head_comp := components.GetHead(service_id)
+					head_comp.Head = false
+					adding_comp.NextID = head_comp.ID
+					components.Update(head_comp)
+				} else {
+					adding_comp.Head = false
+					// 右側に追加する対象のcomponentのNextを追加componentのNextに追加
+					target_comp := components.Get(comp_id)
+					adding_comp.NextID = target_comp.ID
+					// 右側追加する対象のcomponentの追加したcomponentに追加
+					target_comp.NextID = adding_comp.ID
+					// target compをアップデート
+					components.Update(target_comp)
+				}
+	
+			}
+			service.Components = append(service.Components, adding_comp)
+	
+			update(service)
+			c.JSON(202, get(service_id))
+		})
+f91fa29e28578f57a69e199fea2996ff|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|97|20|V|go
+	        adding_comp.
+d6906eaaf0c93195a5cdd7ba42b6906d|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|20|1|V|go
+	type Image struct {
+		gorm.Model
+		Text        string
+		Turn        int
+		ComponentID uint
+	}
+6c436f9842e5361fccf0e00a7e37d695|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|25|12|v|go
+	[]Image   `gorm:"foreignKey:ComponentID"`
+672645e8628b681c55b6d403289ab8e7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/menus/urls.go|70|1|V|go
+			var form Menu
+			file, err := c.FormFile("file")
+			if err != nil {
+				log.Println(err)
+			} else {
+				filename := time.Now().Format("2006-0102-150405") + "_" + file.Filename
+				err = c.SaveUploadedFile(file, "images/"+filename)
+				if err != nil {
+					log.Println(err)
+				} else {
+					form.Img = filename
+				}
+			}
+	
+e0eac7514fc01d8e00cf80864559814c|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/menus/urls.go|70|1|V|go
+			var form Menu
+			file, err := c.FormFile("file")
+			if err != nil {
+				log.Println(err)
+			} else {
+				filename := time.Now().Format("2006-0102-150405") + "_" + file.Filename
+				err = c.SaveUploadedFile(file, "images/"+filename)
+				if err != nil {
+					log.Println(err)
+				} else {
+					form.Img = filename
+				}
+			}
+7bb0edd98f22430a03b67f853e83c2ca|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|94|8|V|go
+	        
+8d9d56263a6a9d64d4cb25c44a0e41b0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|83|1|V|go
+			service.Title = c.PostForm("title")
+8034f6152b16c4c905fd8407ebf2f033|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|66|1|V|go
+			service_id, _ := strconv.Atoi(c.PostForm("service_id"))
+a9eb5f8fbc47f049a8552be1720b0ade|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|107|3|V|go
+			component_id, _ := strconv.Atoi(c.Param("comp_id"))
+e7b4f12ade73ec981a80e26ba904d941|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|109|1|V|go
+			var adding_comp components.Component
+			c.ShouldBindJSON(&adding_comp)
+	
+			service_id, _ := strconv.Atoi(c.Param("service_id"))
+			service := get(service_id)
+	
+			if len(service.Components) == 0 {
+				adding_comp.NextID = 0
+				adding_comp.Head = true
+			} else {
+				if comp_id == 0 {
+					adding_comp.Head = true
+					head_comp := components.GetHead(service_id)
+					head_comp.Head = false
+					adding_comp.NextID = head_comp.ID
+					components.Update(head_comp)
+				} else {
+					adding_comp.Head = false
+					// 右側に追加する対象のcomponentのNextを追加componentのNextに追加
+					target_comp := components.Get(comp_id)
+					adding_comp.NextID = target_comp.ID
+					// 右側追加する対象のcomponentの追加したcomponentに追加
+					target_comp.NextID = adding_comp.ID
+					// target compをアップデート
+					components.Update(target_comp)
+				}
+	
+			}
+			service.Components = append(service.Components, adding_comp)
+	
+			update(service)
+115a62fcc4490458808a076e069b4035|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|134|1|V|go
+					target_comp := components.Get(comp_id)
+25f8730d4bbbaecd35d8a9b48923ce36|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|33|V|go
+			component_id, _ := strconv.Atoi(c.PostForm("component_id"))
+07bcbe0f4a17ec10c3cfea5a00969a2f|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|94|3|V|go
+			var form Menu
+b0f01442e56fe3660366c03fdace8bf7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|37|v|go
+	comp_id
+3fcdb73d36d54f2cc22d0f68e6b6e182|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|105|5|v|go
+	form
+c544d35feb01067c5dd5f080c236d0a3|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|145|1|V|go
+			update(service)
+6685d675d010651c11bf9bd7dc89d056|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|27|v|go
+	target_comp
+e6823f91c16d6e9899cdd97efbf9c196|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|44|7|V|go
+		db.AutoMigrate(Image{})
+909466156ffc8baab83703145b93008e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|36|10|V|go
+	type ListImage []Image
+d50b2757eddc063e0756442dcf98dd97|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|13|V|go
+			db.Model(&component).Association("Images").Find(&service.Components[i].Images)
+774ef8345fc615f874b3a5c3a4c72cfd|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|147|39|v|go
+	get(service_id))
+	
+ef5a1f553ca1ccdd80d480520810e6cb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|31|v|go
+	component_id
+40f581e5cb77778187b0062af9e16d97|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|122|1|V|go
+			if len(service.Components) == 0 {
+8e306bd130601e64071d2643f42535f1|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|8|V|go
+			if len == 0 {
+9f184b11dbf2a70df7e9a7aeb9ab677e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|126|1|V|go
+				if comp_id == 0 {
+569a1e03e5a95f8357b6b9936037ab38|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|96|4|V|go
+				component := components.Get(comp_id)
+39fa3754badd7fa94aa7a66e89ec0b72|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|132|1|V|go
+					head_comp := components.GetHead(service_id)
+0be8406951cdfda82f00f79328cf4efc|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|96|34|v|go
+	Comment
+633ef7856bd3030d576aaabb52832b1f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|70|1|V|javascript
+	        axios
+	            .post("/api/services/" + service_id + "/append/component/"+component_id, data)
+	            .then(function (response) {
+	                console.log(response.data);
+	            })
+	            .catch(function (error) {
+	                console.log(error);
+	            });
+8d777f385d3dfec8815d20f7496026dc|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|75|105|v|javascript
+	data
+cd359c30f0730436af4b1be49560139b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/menus/MenuCreate.js|23|17|v|javascript
+	 = new FormData();
+e30f88a97c9a41c568f749a557d4adb1|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/menus/MenuCreate.js|30|1|V|javascript
+	        data.append("file", document.getElementById("form_img").files[0]);
+0668e36ca460493cfb6d6fdc8febf54d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|69|15|v|javascript
+	imgform
+76d721e8317f028d8cb79a7bf88a4244|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|120|1|V|go
+		router.POST("/services/:service_id/append/component/:comp_id", func(c *gin.Context) {
+			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
+	
+			var adding_comp components.Component
+			c.ShouldBindJSON(&adding_comp)
+	
+			service_id, _ := strconv.Atoi(c.Param("service_id"))
+			service := get(service_id)
+	
+			if len(service.Components) == 0 {
+				adding_comp.NextID = 0
+				adding_comp.Head = true
+			} else {
+				if comp_id == 0 {
+					adding_comp.Head = true
+					head_comp := components.GetHead(service_id)
+					head_comp.Head = false
+					adding_comp.NextID = head_comp.ID
+					components.Update(head_comp)
+				} else {
+					adding_comp.Head = false
+					// 右側に追加する対象のcomponentのNextを追加componentのNextに追加
+					target_comp := components.Get(comp_id)
+					adding_comp.NextID = target_comp.ID
+					// 右側追加する対象のcomponentの追加したcomponentに追加
+					target_comp.NextID = adding_comp.ID
+					// target compをアップデート
+					components.Update(target_comp)
+				}
+			}
+			service.Components = append(service.Components, adding_comp)
+			update(service)
+	
+			c.JSON(202, get(service_id))
+		})
+9516dfb15f51c7ee19a4d46b8c0dbe1d|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|93|37|v|go
+	append
+a02439ec229d8be0e74b0c1602392310|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|93|9|v|go
+	POST
+36443ebc158330eb2f406f1d48c99bf2|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|94|1|V|go
+	
+			var adding_comp components.Component
+			c.ShouldBindJSON(&adding_comp)
+	
+f5f3331eab97ce7d035eb7418552b298|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|96|1|V|go
+	
+			if len(service.Components) == 0 {
+				adding_comp.NextID = 0
+				adding_comp.Head = true
+			} else {
+				if comp_id == 0 {
+					adding_comp.Head = true
+					head_comp := components.GetHead(service_id)
+					head_comp.Head = false
+					adding_comp.NextID = head_comp.ID
+					components.Update(head_comp)
+				} else {
+					adding_comp.Head = false
+					// 右側に追加する対象のcomponentのNextを追加componentのNextに追加
+					target_comp := components.Get(comp_id)
+					adding_comp.NextID = target_comp.ID
+					// 右側追加する対象のcomponentの追加したcomponentに追加
+					target_comp.NextID = adding_comp.ID
+					// target compをアップデート
+					components.Update(target_comp)
+				}
+			}
+			service.Components = append(service.Components, adding_comp)
+			update(service)
+	
+0fa5c5674934819d5f6361404cf14994|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|102|44|v|javascript
+	navigate("/home/service/" + service_id + "/components/0/create")
+7b31561910bb75195cf25c403a582b5d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|81|1|V|javascript
+	    const changeSelectService=(e)=>{
+	navigate("/home/service/" + service_id + "/components/0/create")
+	    }
+e57585a7c998a87dd1c40d325ad5175c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|93|42|v|javascript
+	navigate("/home/service/"+e.target.value+"/contents/update")
+b5c0a12e26f968e0581b8b289d88d383|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|93|1|V|go
+		router.GET("/services/:service_id/components", func(c *gin.Context) {
+			service_id, _ := strconv.Atoi(c.Param("service_id"))
+			service := get(service_id)
+			c.JSON(202, service)
+		})
+	
+457edf9b13002143f02166080a32d3be|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|64|29|V|javascript
+	            setService(data);
+9d49d66cc120299c814be67395196dc3|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|60|28|V|javascript
+	            console.log(data)
+f39ea7f270d2ad21d8c76f9a73a4351c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|111|1|V|javascript
+	                        {Services.Components.map((component, index) => (
+	                            <div className={"col-sm-" + component.grid} onClick={() => openModal(component.ID)}>
+	                                <CompRouting component={component} />
+	                            </div>
+	                        ))}
+19b8a615d05f8aa04533d7ec6547379c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|111|1|V|javascript
+	                        {Service.Components.map((component, index) => (
+	                            <div className={"col-sm-" + component.grid} onClick={() => openModal(component.ID)}>
+	                                <CompRouting component={component} />
+	                            </div>
+	                        ))}
+8cf3f9f3ca669684c6f284377a7307fe|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|110|1|V|javascript
+	                        {Service["Components"].map((component, index) => (
+	                            <div className={"col-sm-" + component.grid} onClick={() => openModal(component.ID)}>
+	                                <CompRouting component={component} />
+	                            </div>
+	                        ))}
+77bf790da581778f36a659994f2bbc41|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|110|26|v|javascript
+	Service["Components"]
+a4f932625b30369f12b4d131bbbd25bb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|66|11|V|javascript
+	        setComponents(content.components);
+63136065a79c1da787167cfcb30c345e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|62|11|V|javascript
+	        axios.get("/api/services/get/" + service_id).then((results) => {
+	            const data = results.data;
+	            setService(data);
+	        });
+2063c1608d6e0baf80249c42e2be5804|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|82|44|v|javascript
+	value
+ec6e7da612a616c6f9505ebd6dd121de|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Title.js|2|1|V|javascript
+	    switch (props.component.TypeID) {
+4b497a7279d3c27826369aaab64ee1f6|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Card.js|2|5|V|javascript
+	    switch (props.component.type_id) {
+196e0862278bbf9118242f97be987366|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Card.js|35|55|v|javascript
+	.Text
+7bc1be694e088fb0bd327c16548c09ef|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|83|20|V|javascript
+	                    
+29edce187a478dc73b889d6062e7cdfc|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|81|1|V|javascript
+	            for(var comp of Service["Components"]){
+	                if(comp["Head"]) {
+	                    setComponents([comp])
+	                    break
+	                }
+	            }
+9e006a44b89f0dfee0906f0ffbb70232|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|89|19|V|javascript
+	                    var is_exist = false
+9c20d200a943d24a23f48ddb95132f17|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|95|1|V|javascript
+	                    if(!is_exist) {
+	                        break
+	                    }
+16d87034856003ad12279f63b816111a|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|20|10|V|javascript
+	        }"タイトル1", "タイトル2", "タイトル3"],
+77d0d6a051d6497df8380beb1c9e20b3|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|20|19|v|javascript
+	タイトル
+775a658c4ee81189f1787c6f32da215b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|20|1|V|javascript
+	            {Text: "タイトル1", Turn: 1},
+d0d920214337cba3198c19c523765acc|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|19|1|V|javascript
+	        Titles: [
+	            {Text: "タイトル1", Turn: 1},
+	            {Text: "タイトル2", Turn: 2},
+	            {Text: "タイトル3", Turn: 3},
+	        ],
+b328ea6827a1cdf91769945a1e301d8c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|31|15|V|javascript
+	            "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
+be265c7b91abb854a94e1dff98177924|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|31|15|V|javascript
+	            "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
+35fc0edd1912fd185977c6090162b0b5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|31|10|V|javascript
+	        ],
+94757cae63fd3e398c0811a976dd6bbe|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|32|9|v|javascript
+	type_id
+2e59f7b999f8e230322e86ed25e883d6|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|27|30|V|javascript
+	            {Text: "タイトル3", Turn: 3},
+57770671a687bc9d65a09c7459343a0f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|13|1|V|javascript
+	const componentA = {
+	    ID: 1,
+	    titles: ["aaa", "bbb", "ccc"],
+	    comments: ["ddd", "eee", "fff"],
+	    images: [
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
+	    ],
+	    type: "card",
+	    type_id: "F",
+	    grid: 6
+	};
+	const componentB = {
+	    ID: 2,
+	    titles: ["aaa", "bbb", "ccc"],
+	    comments: ["ddd", "eee", "fff"],
+	    images: [
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
+	    ],
+	    type: "card",
+	    type_id: "F",
+	    turn: 2,
+	    grid: 6
+	};
+	const content = {
+	    service: "unit",
+	    components: [componentA, componentB]
+	};
+eb8195e16005fe919ec4be6447738b14|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|12|1|V|javascript
+	const componentA = {
+	    titles: ["aaa", "bbb", "ccc"],
+	    comments: ["ddd", "eee", "fff"],
+	    images: [
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
+	    ],
+	    type: "card",
+	    type_id: "F",
+	    grid: 6
+	};
+	const componentB = {
+	    titles: ["aaa", "bbb", "ccc"],
+	    comments: ["ddd", "eee", "fff"],
+	    images: [
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
+	    ],
+	    type: "card",
+	    type_id: "F",
+	    turn: 2,
+	    grid: 6
+	};
+	const content = {
+	    service: "unit",
+	    components: [componentA, componentB]
+	};
+bed49da5cc38c3db7860b951945e7724|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|25|1|V|javascript
+	    useEffect(() => {
+	        axios.get("/api/services/list/all").then((results) => {
+	            const data = results.data;
+	            setServices(data);
+	        });
+	    }, [ApiUrl]);
+0cb6ecbb903fb42ac4dab745d725ef44|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|46|1|V|javascript
+	        axios.get("/api/services/get/" + service_id).then((results) => {
+	            const data = results.data;
+	            setService(data);
+	            for (let comp of Service["Components"]) {
+	                if (comp["Head"]) {
+	                    setComponents([comp]);
+	                    break;
+	                }
+	            }
+	            for (let i = 0; i < 1000; i++) {
+	                var is_exist = false;
+	                for (let comp of Service["Components"]) {
+	                    if (Components[-1].NextID == comp["ID"]) {
+	                        setComponents([...Components, comp]);
+	                        is_exist = true;
+	                        break;
+	                    }
+	                }
+	                if (!is_exist) {
+	                    break;
+	                }
+	            }
+	        });
+9d4afb6ae9ac1318ea2f835c6c6bea1f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|53|1|V|javascript
+	                <Route exact path="/home/service/:service_id/contents" element={<Contents />} />
+6ed1349f0fbc93815a8b0ae0e105f524|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|67|58|v|javascript
+	 onClick={() => navigate("/home/service/"+service.ID+"/contents")} key={service.ID}
+ccac8a66d468e2522611be86933cc0d9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|67|50|v|javascript
+	pointer
+1a201269aa5379afb290f727bdd3e18b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|68|1|V|javascript
+	                                <div class="card mb-3 pointer" onClick={() => navigate("/home/service/"+service.ID+"/contents")} key={service.ID}>
+7aa5840030d71f36eea267eea799def9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|67|1|V|javascript
+	                            <div class="col-sm-6">
+	                                <div class="card mb-3 pointer" onClick={() => navigate("/home/service/"+service.ID+"/contents")} key={service.ID}>
+af67ecd0b44402ce69332a2799668b59|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|40|29|V|javascript
+	                            <div class="col-sm-6 pointer" onClick={() => navigate("/home/service/"+service.ID+"/contents")} key={service.ID}>
+	                                <div class="card mb-3">
+e1b8259a92ea452461addb8d383a8616|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|13|31|V|javascript
+	    console.log(props.component)
+5d78b664d0697343c0850f3d920bb95f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|59|43|V|javascript
+	                    console.log(Components)
+394ebf313d00a6ba1e1836a8602487df|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|56|15|V|javascript
+	            try
+d83cf83f05ceb9b46886a258dfcfbdb0|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|59|1|V|javascript
+	            for (let i = 0; i < 200; i++) {
+	                var is_exist = false;
+	                for (let comp of Service["Components"]) {
+	                    if (Components[-1].NextID == comp["ID"]) {
+	                        setComponents([...Components, comp]);
+	                        is_exist = true;
+	                        break;
+	                    }
+	                }
+	                if (!is_exist) {
+	                    break;
+	                }
+	            }
+8a40a1f17bdd30426466fecb9cafe0c7|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|60|1|V|javascript
+	                        console.log(Components)
+794a77b29a5521d27913fec09811acb4|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|61|47|V|javascript
+	                        console.log(Components[].NextID)
+468a1c6e6032c1f2b0b98053555bf65e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|45|26|V|javascript
+	        setComponents([]);
+78abdb5d3f91e1136686242b49df9902|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|46|1|V|javascript
+	        axios.get("/api/services/get/" + service_id).then((results) => {
+	            const data = results.data;
+	            setService(data);
+	            for (let comp of Service["Components"]) {
+	                if (comp["Head"]) {
+	                    setComponents([comp]);
+	                    break;
+	                }
+	            }
+	            if (Components.length != 0) {
+	                for (let i = 0; i < 200; i++) {
+	                    var is_exist = false;
+	                    for (let comp of Service["Components"]) {
+	                        console.log(Components)
+	                        if (Components[-1].NextID == comp["ID"]) {
+	                            setComponents([...Components, comp]);
+	                            is_exist = true;
+	                            break;
+	                        }
+	                    }
+	                    if (!is_exist) {
+	                        break;
+	                    }
+	                }
+	            }
+	        });
+e643cc62032e4286232ca9630ddebb1a|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|49|45|V|javascript
+	            console.log(Service["Components"])
+c2ba7e785c49050f48da9aacc45c2b85|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|49|30|v|javascript
+	Service
+79e3588e463cf7d016ee3294414a9c9e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|49|26|V|javascript
+	            var components
+116620da37eafcbaf49d1d1f827ae50a|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|51|42|V|javascript
+	                    setComponents([comp]);
+9c04bc2ca5b419c3e6cec3cde4f4da7c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|52|37|V|javascript
+	                    console.log(comp)
+1bb908a24cde379bbc681a368f1e876e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|60|38|V|javascript
+	                            setComponents([...Components, comp]);
+6379563766ebdf0b7be90f803a8bb8e2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|60|38|V|javascript
+	                            console.log(comp)
+c913441e883c46e6b9f3d8de9454c830|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|55|13|V|javascript
+	            if (Components.length != 0) {
+7ddd5a90fd0f28f15e9b9a264dc394f8|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|68|13|V|javascript
+	            }
+55213016bab71cf425feb831b6443cfd|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|82|30|V|javascript
+	        console.log(Components)
+a951ef0eda94717651dc6fda63d637c1|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|107|1|V|javascript
+	                        {Components.map((component, index) => (
+	                            <div className={"col-sm-" + component.grid} onClick={() => openModal(component.ID)}>
+	                                <CompRouting component={component} />
+	                            </div>
+	                        ))}
+2fa47f7c65fec19cc163b195725e3844|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|49|28|v|javascript
+	length
+838f25541c40b7ee765b681dc4b8ef34|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|49|23|V|javascript
+	            console.log
+051ca02463ca9916aba8a2febba7d693|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|73|17|V|javascript
+	            setComponents(components);
+7a96679a15501c735e72473864896ead|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|24|1|V|javascript
+	            for (let comp of Service["Components"]) {
+	                if (comp["Head"]) {
+	                    setComponents([comp]);
+	                    break;
+	                }
+	            }
+	            for (let i = 0; i < 1000; i++) {
+	                var is_exist = false;
+	                for (let comp of Service["Components"]) {
+	                    if (Components[-1].NextID == comp["ID"]) {
+	                        setComponents([...Components, comp]);
+	                        is_exist = true;
+	                        break;
+	                    }
+	                }
+	                if (!is_exist) {
+	                    break;
+	                }
+	            }
+157217b12688772d47c2daf448fa4c65|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|38|42|V|javascript
+	                        setComponents([...Components, comp]);
+07414da12922e001fe39588aa845004e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|71|1|V|javascript
+	            if (components != undefined) {
+	                setComponents(components);
+	            }
+911ffce4b7741a3df2b9519bdf633a22|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|26|1|V|javascript
+	        axios.get("/api/services/list/all").then((results) => {
+	            const data = results.data;
+	            setServices(data);
+	        });
+a47888ffc2ebb3c30c19cbdec733b68f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|18|1|V|javascript
+	    const [Service, setService] = useState({ Components: [] });
+c793bf37faf590caf6bafea0f5c92680|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|17|5|V|javascript
+	    const [Service, setService] = useState({});
+c016d477306ab2ab427347d5ec4319cd|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|60|1|V|javascript
+	                        if (components[components.length-1].NextID == comp["ID"]) {
+a54cd21a937e0b9c370ac2feb8872c50|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|36|25|V|javascript
+	                if (Components[-1].NextID == comp["ID"]) {
+0285dd8061b527b82456908cbee48cba|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|78|13|V|javascript
+	        imgform.append("file", document.getElementById("form_img1").files[0]);
+fbee1b9b54065abce92d8de117a33dfb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|24|9|v|javascript
+	ApiUrl
+df645bb3c467ac9bd81d69d81ba49e3b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|27|1|V|javascript
+	    const orderdComponents = () => {
+	        for (let comp of Service["Components"]) {
+	            if (comp["Head"]) {
+	                var components = [comp];
+	                break;
+	            }
+	        }
+	        for (let i = 0; i < 1000; i++) {
+	            var is_exist = false;
+	            for (let comp of Service["Components"]) {
+	                if (components[components.length - 1].NextID == comp["ID"]) {
+	                    components.push(comp);
+	                    is_exist = true;
+	                    break;
+	                }
+	            }
+	            if (!is_exist) {
+	                break;
+	            }
+	        }
+	        if (components != undefined) {
+	            return components;
+	        }
+	        return [];
+	    };
+86c6cf540d2d89dbbedde65544e4e3c4|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|45|5|V|javascript
+	    const init_func = () => {
+	        axios.get("/api/services/get/" + service_id).then((results) => {
+	            const data = results.data;
+	            setService(data);
+	            if (data.Components.length != 0) {
+	                for (let comp of data["Components"]) {
+	                    if (comp["Head"]) {
+	                        var components = [comp];
+	                        break;
+	                    }
+	                }
+	                for (let i = 0; i < 200; i++) {
+	                    var is_exist = false;
+	                    for (let comp of data["Components"]) {
+	                        console.log(components)
+	                        if (components[components.length-1].NextID == comp["ID"]) {
+	                            components.push(comp);
+	                            is_exist = true;
+	                            break;
+	                        }
+	                    }
+	                    if (!is_exist) {
+	                        break;
+	                    }
+	                }
+	            }
+	            if (components != undefined) {
+	                setComponents(components);
+	            }
+	        });
+	    };
+60a45c32529a514a18b0ccbdd63430d8|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|30|20|V|javascript
+	        init_func();
+b4a0033406ff49caf64ade5d7ca07527|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|72|1|V|javascript
+	        console.log(service_id);
+	        init_func();
+ab5522150203a2c44623d14b8072c438|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|25|1|V|javascript
+	    }, [ApiUrl, service_id]);
+9059214b73514f1c0066eda86262e079|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|20|1|V|javascript
+	        axios.get("/api/services/get/" + service_id).then((results) => {
+	            const data = results.data;
+	            console.log(data);
+	            setService(data);
+	        });
+fd788a8a74c778779cf016625aeb9633|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|35|9|V|javascript
+	    }, [ApiUrl]);
+ee00aa05d042c9bc7c110679fa603440|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|36|24|V|go
+		log.Print(component.ID)
+2cb05e4bb7830be982f0922fed86b4cd|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|67|27|v|go
+	Component
+04d502cb59e1de257db05cccbda0edfa|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|34|1|V|go
+		db := db_conf.DBConnect()
+		defer db.Close()
+		log.Print(component.ID)
+		if err := db.Save(&component).Error; err != nil {
+			log.Println(err)
+		}
+		return component
+71e4513ebb68d4c564de6050380ca4c8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|70|1|V|go
+		log.Print(component.ID)
+		if err := db.Save(&component).Error; err != nil {
+			log.Println(err)
+		}
+757c0467d6c990aec047560b423e193c|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|70|77|v|go
+	actived
+68934a3e9455fa72420237eb05902327|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|70|84|v|go
+	false
+ca644eb811f5574cac604dd1515edd64|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|70|67|v|go
+	next_id
+f791f1fffb2fbbf37077fb6c45c6bff4|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|138|17|V|go
+	                log.Println(head_comp.Head)
+ba001168da4fdb20a39dd2910370162e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|137|26|V|go
+					head_comp.Head = false
+c506ff134babdd6e68ab3e6350e95305|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|30|12|v|go
+	bool
+433b7d97e055b6de66dc0d0092ff2dac|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|136|36|V|go
+	                components.ChangeComponentHead(head_comp, 0)
+1e2274b18bc99f612860e65ec7dd06b8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|36|14|V|go
+	    log.Print()
+8386e1fa202d2212b011d50014f9833d|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|10|1|V|go
+		db := db_conf.DBConnect()
+		defer db.Close()
+c718cf9def85c161a666e5a1a228a86e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|15|1|V|go
+		return service
+ee11cbb19052e40b07aac0ca060c23ee|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|21|15|v|go
+	user
+3a08e2e340ab29fd9263af48193cbf8e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|21|37|v|go
+	Languages
+e357faa7873159939de5ee38f75a3221|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|131|1|V|go
+	            log.Println("1111111111111111")
+593c9b4a9390551d53e5cacf28ebd638|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|136|30|v|go
+	111111111111
+b59ca9169b872950ea599c1bc70f7939|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|136|1|V|go
+	            log.Println("2222222222")
+3a08fe7b8c4da6ed09f21c3ef97efce2|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|143|26|v|go
+	2222222222

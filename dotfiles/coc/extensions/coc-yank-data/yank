@@ -1,641 +1,3 @@
-707b5f87cfdc4081cf4541fef0170e7a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|65|24|V|javascript
-	        console.log("Jio")
-98bf7d8c15784f0a3d63204441e1e2aa|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|67|94|v|javascript
-	contents
-3ac340832f29c11538fbe2d6f75e8bcc|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|67|105|v|javascript
-	update
-e38ddc5a8bd451a379f377707482b10d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|14|1|V|javascript
-	import ContentsUpdate from "api/contents/ContentsUpdate";
-02f1e1e5829f538d98439685f39f19c7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|45|1|V|javascript
-	                {/*
-2e9ef106a10461251323b5b63d293fa4|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|39|1|V|javascript
-	                <Route exact path="/test" element={<Test />} />
-4c2dad2acf01cdb6f9ebe54ef5cabbbe|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|51|17|V|javascript
-	                <Route exact path="/home/menu/:service_id" element={<Menu />} />
-75196414164a045716774ef3314b5a5c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|15|8|v|javascript
-	ComtentsCreate
-6c978f0e2aea2a8e86c39a151acb5f53|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|15|44|v|javascript
-	ComponentsUpdate
-1c5067c6307ad17d4f2021aab176074d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|15|1|V|javascript
-	import ComponentsCreate from "api/contents/ComponentsCreate";
-7be014d403b8c04535f9e9278c0293af|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/menus/MenuCreate.js|1|1|V|javascript
-	import React, { useState, useEffect, useContext } from "react";
-	import { useParams } from "react-router-dom";
-	import { GlobalContext } from "Global";
-	import { LoginCheck } from "api/Owners";
-	import axios from "axios";
-	
-	export const MenuCreate = () => {
-	    const { service_id } = useParams();
-	    const { ApiUrl, setApiUrl } = useContext(GlobalContext);
-	    const [Menu, setMenu] = useState([]);
-	
-	    useEffect(() => {
-	        LoginCheck().then((res) => {
-	            if (!res.data.state) {
-	                window.location.href = "/login";
-	            }
-	        });
-	    }, [ApiUrl]);
-	
-	    const MenuImg = () => {};
-	
-	    const MenuFormSubmit = () => {
-	        var data = new FormData();
-	        data.append("service_id", service_id);
-	        data.append("title", document.getElementById("form_title").value);
-	        data.append("comment", document.getElementById("form_comment").value);
-	        data.append("price", document.getElementById("form_price").value);
-	        data.append("show", document.getElementById("form_show").checked);
-	        data.append("star", document.getElementById("form_star").checked);
-	        data.append("file", document.getElementById("form_img").files[0]);
-	        data.append("turn", document.getElementById("form_turn").value);
-	
-	        axios
-	            .post("/api/menus/create", data)
-	            .then(function (response) {
-	                window.location.href = "/owner/menu";
-	            })
-	            .catch(function (error) {
-	                alert(error);
-	            });
-	    };
-	
-	    return (
-	        <div class="container" style={{ marginTop: "100px" }}>
-	            <div class="card px-4 py-2" style={{ backgroundColor: "#E8D6AE" }}>
-	                <h1>メニューの追加</h1>
-	                <div class="mb-3">
-	                    <label for="form_title" class="form-label">
-	                        タイトル：
-	                    </label>
-	                    <input type="text" class="form-control" id="form_title" value={Menu.Title} />
-	                </div>
-	                <div class="mb-3">
-	                    <label for="form_comment" class="form-label">
-	                        コメント：
-	                    </label>
-	                    <textarea class="form-control" id="form_comment" value={Menu.Comment} />
-	                </div>
-	                <div class="mb-3">
-	                    <label for="form_price" class="form-price">
-	                        値段(税抜)：
-	                    </label>
-	                    <input type="number" class="form-control" id="form_price" value={Menu.Price} />
-	                </div>
-	                <div class="mb-3 form-check">
-	                    <input type="checkbox" class="form-check-input" id="form_show" checked={Menu.Show} />
-	                    <label class="form-check-label" for="form_show">
-	                        表示
-	                    </label>
-	                </div>
-	                <div class="mb-3 form-star">
-	                    <input type="checkbox" class="form-check-input" id="form_star" checked={Menu.Star} />
-	                    <label class="form-check-label" for="form_star">
-	                        おすすめ
-	                    </label>
-	                </div>
-	                <div class="mb-3 form-group">
-	                    <label class="form-label" for="form_img">
-	                        画像を変更：
-	                    </label>
-	                    <input type="file" class="form-control" id="form_img" />
-	                </div>
-	                <div class="mb-3">
-	                    <label for="form_turn" class="form-turn">
-	                        番号：
-	                    </label>
-	                    <input type="number" class="form-control" id="form_turn" value={Menu.Turn} />
-	                </div>
-	                <button type="button" class="btn btn-primary" onClick={MenuFormSubmit}>
-	                    追加
-	                </button>
-	            </div>
-	        </div>
-	    );
-	};
-2bddf576fe96aec661372f4915bea7bc|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|15|8|v|javascript
-	ComponentsCreate
-e3acf5f9ba6000b17f02b45c46d58795|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|20|15|V|javascript
-	    const MenuImg = () => {};
-3420832514a376299f6aba23c90dc7c0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/menus/MenuOwner.js|46|1|V|javascript
-	                    <select
-	                        class="form-select mb-3"
-	                        aria-label="Default select example"
-	                        onChange={(e) => SelectChanged(e, this)}
-	                    >
-	                        <option selected>サービスを選択</option>
-	                        {Services.map((service, index) => (
-	                            <option value={service.ID} key={service.ID}>
-	                                {service.Title}
-	                            </option>
-	                        ))}
-	                    </select>
-17d5c6438fa04a9bc1cba30bbd35d25d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/menus/MenuOwner.js|31|1|V|javascript
-	    const SelectChanged = (e, elem) => {
-	        ShowMenus(e.target.value);
-	    };
-335d1026f91e521cf5f3ce3d9c99562d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|42|9|v|javascript
-	ShowMenus
-6c7b7363a56f8e6105293a3ad27f0be7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|10|1|V|javascript
-	    const [Menu, setMenu] = useState([]);
-992a0f0542384f1ee5ef51b7cf4ae6c4|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|53|18|v|javascript
-	Services
-438d2ac17afe288262f2b6f74521b9d8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|10|1|V|javascript
-	    const [ComponentType, setComponentType] = useState([]);
-41c30f5d3f240fb8572d9d9a05ada0ef|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|55|18|v|javascript
-	Conponents
-d39c09ca3cf09747ef4b371dbf368914|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|55|40|v|javascript
-	rvice
-6bd15522688d66fb943deede4c9e6cd0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|49|1|V|javascript
-	            <select
-	                class="form-select mb-3"
-	                aria-label="Default select example"
-	                onChange={(e) => SelectChanged(e, this)}
-	            >
-	                <option selected>要素の種類</option>
-	                {ComponentTypes.map((comp_type, index) => (
-	                    <option value={service.ID} key={service.ID}>
-	                        {service.Title}
-	                    </option>
-	                ))}
-	            </select>
-4c2682e1a2eb7f40923f5cc4c989185f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|52|34|v|javascript
-	SelectChanged
-04858da0ee8c34ba3c164f9e97f4f257|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|55|29|V|javascript
-	                {ComponentTypes.map((comp_type, index) => (
-3c91f404583de4c6331c8165402138e6|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|56|29|V|javascript
-	                        {service.Title}
-eb749c1775ba39c794ba6a8343183551|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|11|1|V|javascript
-	import { CompRouting } from "views/components/CompRouting";
-20b71f783dc07f0572239dbaf73f312c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|6|10|v|javascript
-	CompDefinition
-324e2b9cc6d47baf40884ef5f3227622|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|47|17|V|javascript
-	            type:
-90868c774ad94a50df873824abf48fa6|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|47|22|V|javascript
-	            grid: true
-d5d86f5507b31b2ced03ba4c87fe499e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|43|1|V|javascript
-	        A: {
-	            titles: 0,
-	            comments: 0,
-	            images: 0,
-	            grid: true
-	        },
-bf6b4945a65a3e583a4fb1fbaddce8a2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|43|1|V|javascript
-	        A: {
-	            titles: 1,
-	            comments: 0,
-	            images: 0,
-	            grid: true
-	        },
-49ef46a3b0cfc9eda17e0228c255b153|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|55|9|V|javascript
-	        A: {
-8b098ebbb7b16e2bec3103732e726b53|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|43|1|V|javascript
-	        A: {
-	            titles: 1,
-	            comments: 0,
-	            images: 0,
-	            grid: true
-	        },
-	        B: {
-	            titles: 1,
-	            comments: 0,
-	            images: 0,
-	            grid: true
-	        },
-	        C: {
-	            titles: 1,
-	            comments: 0,
-	            images: 0,
-	            grid: true
-	        },
-3801e6fda4569b0c690969db83c839f1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|43|1|V|javascript
-	        A: {
-	            titles: 1,
-	            comments: 0,
-	            images: 0,
-	            grid: true
-	        },
-	        B: {
-	            titles: 1,
-	            comments: 0,
-	            images: 0,
-	            grid: true
-	        },
-	        C: {
-	            titles: 1,
-	            comments: 0,
-	            images: 0,
-	            grid: true
-	        },
-	        D: {
-	            titles: 1,
-	            comments: 0,
-	            images: 0,
-	            grid: true
-	        }
-c3091206484b60d3909e373069916feb|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|87|1|V|javascript
-	        D: {
-	            titles: 1,
-	            comments: 1,
-	            images: 0,
-	            grid: true
-	        }
-a95ad6012926ce9c9ad9172251dbef20|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|99|9|v|javascript
-	D: {
-f758d4a1b59b1ba8d4a63a7aff793540|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|110|1|V|javascript
-	        A: {
-	            titles: 0,
-	            comments: 1,
-	            images: 0,
-	            grid: true
-	        },
-8628c704f2a880e3ddf9b86f6206ed86|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|67|1|V|javascript
-	                {ComponentTypes.map((comp_type, index) => (
-	                    <option value={service.ID} key={service.ID}>
-	                        {service.Title}
-	                    </option>
-	                ))}
-714273e1d0941934de00f4c5a3d30614|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|61|1|V|javascript
-	                    <option value={service.ID} key={service.ID}>
-	                        {service.Title}
-	                    </option>
-9f86f28c21a0dbf6d53a3254670da815|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|56|38|v|javascript
-	comp_def
-17bdb1208066f11b1f4cbb74b44851b9|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|63|1|V|javascript
-	            <select
-	                class="form-select mb-3"
-	                aria-label="Default select example"
-	                onChange={(e) => selectComponentTypeID(e, this)}
-	            >
-	                <option selected>要素の種類</option>
-	                {ComponentTypes.map((comp_type, index) => (
-	                    <option value={service.ID} key={service.ID}>
-	                        {service.Title}
-	                    </option>
-	                ))}
-	            </select>
-62b227fee579badf62b29c02bcd993d8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|44|10|V|javascript
-	    const 
-8d8f07b6e720082fbd00ab54ea8ff987|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|21|15|V|javascript
-	        () => {
-02c5928adb0be8f9853aa80054974110|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|21|15|V|javascript
-	            set
-4e1ddba1c31545ee09fb38ae1fd79346|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|21|9|V|javascript
-	        }
-3e12fcb3fbf3ece97c1f57f45f2582b4|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|21|1|V|javascript
-	        setComponentType(
-	            ()=>{
-	                for(let comp_type in CompDefinition){
-	
-	                }
-	            }
-	        )
-1d4e552a6a0141d9c6bf193f57ee56bf|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|23|17|V|javascript
-	            ()=>{
-b71b8c9e3c83c8ce0040342e72e49d77|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|24|1|V|javascript
-	                }
-	            }
-29ebc729fd2c407fb4dad8acef2a333b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|22|17|V|javascript
-	            var comp_types = []
-bc95dfc14146aa23e43f2ea7af04d310|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|28|12|V|javascript
-	            
-ac3ceb47e7fc0ad405e5917763a9f99d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|27|23|V|javascript
-	                return 
-c6a421c553bb348aaee63ac6a32aea0b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|67|47|v|javascript
-	comp_type
-67cf8193b294e8429d63591b2ed34db6|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|71|19|V|javascript
-	                ))}
-befe58ce11d339092c4b6d6d35c5bfb2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|51|1|V|javascript
-	    const selectComponentType = (e, elem) => {
-	        setComponentType(e.target.value);
-	        console.log(ComponentType);
-	    };
-	
-d3d72d5f2947ad5141ea3a8735d0ee26|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|62|1|V|javascript
-	            <select
-	                class="form-select mb-3"
-	                aria-label="Default select example"
-	                onChange={(e) => selectComponentType(e, this)}
-	            >
-	                <option selected>要素の種類</option>
-	                {ComponentType.map((comp_type, index) => (
-	                    <option value={comp_type} key={index}>
-	                        {comp_type}
-	                    </option>
-	                ))}
-	            </select>
-6e3237864fae78f7f1e02348db6f766e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|55|26|V|javascript
-	        console.log(ComponentType);
-43b554b34bcdc4525edaf54ea7a97756|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|73|1|V|javascript
-	                {ComponentTypeID.map((comp_type_id, index) => (
-	                    <option value={comp_type_id} key={index}>
-	                        {comp_type_id}
-	                    </option>
-	                ))}
-d1d353b4ede4059a874d9bed935e52e2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|86|17|V|javascript
-	                {ComponentType.map((comp_type, index) => (
-	                    <option value={comp_type} key={index}>
-	                        {comp_type}
-	                    </option>
-	                ))}
-44c0338a1d65b35613daf8590bb2d7a0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|62|12|V|javascript
-	        console.log(ComponentTypeID);
-8e75ecc333e44136d680e79bfdff7d74|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|12|1|V|javascript
-	    const [ComponentTypeID, setComponentTypeID] = useState([]);
-1874ff330dbb24985050d19bb585b023|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|13|12|v|javascript
-	ComponentTypeID
-00c6535a3275e5aa1ceb7204be30058c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|13|26|v|javascript
-	setComponentTypeID
-21038b81b446bb12e8ef3feb32020028|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|62|21|v|javascript
-	ComponentType
-4bac6ec4dc0e17a1cc2b956996a9bb66|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|62|1|V|javascript
-	        console.log(CompDefinition)
-8704e9d1f9d8db68dbd5f219134b49a9|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|62|1|V|javascript
-	        console.log(CompDefinition);
-94fa151b67954a7c6e672b5b0c3b89b1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|13|1|V|javascript
-	    const [SelectedComp, setSelectedComp] = useState();
-1fff3238cfdba37d0a2f6d1daa5763c8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|11|1|V|javascript
-	    const [ComponentType, setComponentType] = useState([]);
-	    const [ComponentTypeID, setComponentTypeID] = useState([]);
-0315a8dd8e8662722ddeb85a516e429a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|15|47|V|javascript
-	    const [SelectedComponent, setSelectedComp] = useState();
-91b442d385b54e1418d81adc34871053|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|13|12|v|javascript
-	Selected
-98ecdf1feb25e1979b7a266033e2de26|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|63|35|V|javascript
-	        console.log(CompDefinition[ComponentType]);
-c448909d82c896a50aa457ed52b975e0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|95|26|V|javascript
-	            {SelectedComp}
-6074f0889b7de543020ba9a4d55856d2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|65|1|V|javascript
-	        console.log(SelectedComponentType)
-98ce2543736c674541c323bbbeac59e2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|97|1|V|javascript
-	            {SelectedComponentType}
-3aa2f76d13991fee8e017c272377e11a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|65|1|V|javascript
-	        console.log(SelectedComponentType);
-	        console.log(SelectedComponentTypeID);
-438a94313d3699fd07234bec7be1d5d1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|14|1|V|javascript
-	    const [SelectedComponentTypeID, setSelectedComponentTypeID] = useState([]);
-6ca5c3010c74727c2fa269bb37e47b65|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|15|37|v|javascript
-	setSelectedComponentTypeID
-2ff69598f8a56d7788f41288f6c2eac4|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|15|12|v|javascript
-	SelectedComponentTypeID
-b2e7a0b4b4021a82f184937727ddc983|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|15|18|v|javascript
-	setEditForm
-984fe9c018bbdff8eeffe3456a99672c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|72|17|V|javascript
-	                k
-a9473ded85aa51851deb4859cdd53f98|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|72|16|V|javascript
-	                
-63973cd3ad7ccf2c8d5dce94b215f683|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|73|29|v|javascript
-	expression
-cd14c323902024e72c850aa828d634a7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|74|31|v|javascript
-	case
-7da5fcec3081ad0652c2c84bfedf9fa9|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|73|32|V|javascript
-	                    switch (comp) {
-32fb07dc6e806c8cf9e06ea01d307e38|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|73|32|V|javascript
-	                        case '':
-60964b40f025deb8ce0a235a971ed6e9|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|73|28|V|javascript
-	                            
-80e24da3496ace8855a3665c37eead7c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|73|28|V|javascript
-	                            break;
-2688b47b88b607581d586e8f973ea946|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|73|24|V|javascript
-	                        
-665672a0f3defac776da143632632f01|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|73|24|V|javascript
-	                        default:
-393ee1d23bff7766c85a5a64e610dc4e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|73|21|V|javascript
-	                    }
-470b35ddcaa6b1ac205708cc59045f9f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|72|1|V|javascript
-	                for(let i=0; i<CompDefinition.ComponentType.ComponentTypeID.titles; i++) {
-	
-	                }
-59b514174bffe4ae402b3d63aad79fe0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|75|77|v|javascript
-	images
-36c15436553fcbcd127ba71c4a03a44e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|81|78|V|javascript
-	                for(let i=0; i<CompDefinition.ComponentType.ComponentTypeID.gri; i++) {
-81789648c34c70b46164eb7a6f015c95|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|81|1|V|javascript
-	                }
-f50a87154913a1bf056ffc79bd6b0697|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|122|1|V|javascript
-	                <div class="mb-3">
-	                    <label for="form_title" class="form-label">
-	                        タイトル：
-	                    </label>
-	                    <input type="text" class="form-control" id="form_title" value={Menu.Title} />
-	                </div>
-9c0a21ddc0bf6505ef0a3fb31b1e2deb|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|79|45|V|javascript
-	                                タイトル：
-7026b3783ea8f3abdfd9a12d1e1ba6da|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|76|1|V|javascript
-	                    form.push(
-	                        <div class="mb-3">
-	                            <label for={"form_comments"+i} class="form-label">
-	                                テキスト+String(i)：
-	                            </label>
-	                            <input type="text" class="form-control" id={"form_comments"+i} />
-	                        </div>
-	                    )
-fe9ebd82f9a6a5cf33f19b18b06e6313|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|76|33|v|javascript
-	テキスト
-34edb88ab8a97a293867709c584af97c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|166|1|V|javascript
-	                <div class="mb-3 form-group">
-	                    <label class="form-label" for="form_img">
-	                        画像を変更：
-	                    </label>
-	                    <input type="file" class="form-control" id="form_img" />
-	                </div>
-a23e42e84ccc04d19fc48a7fe539d877|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|83|1|V|javascript
-	                    form.push(
-d629aee523e4b21a2b267130c351b2b4|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|156|1|V|javascript
-	                    <label for="form_price" class="form-price">
-	                        値段(税抜)：
-	                    </label>
-	                    <input type="number" class="form-control" id="form_price" value={Menu.Price} />
-15d286ba732ad6773b1d89a052fc99b9|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|101|1|V|javascript
-	                    )
-0f3cf8f37320d8875841de8c05671bb9|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|108|47|V|javascript
-	                    <input type="number" class="form-control" id="form_price" value={Menu.Price} />
-da543e962c0f51fc5a3393d0363ac8b8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|93|1|V|javascript
-	                    <div class="mb-3 form-group">
-b3b011ca8a403266d00410c38f6e784f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|93|1|V|javascript
-	                    <div class="mb-3">
-1930469f1ed209fb9e1dda6366e50f60|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|94|55|v|javascript
-	"form_images"
-1ae7c457b9cb1b0513ad7f03f2355b87|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|144|14|v|javascript
-	createForm
-82ebdf466eeede527f92141640bd9555|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|72|1|V|javascript
-	            console.log(CompDefinition.ComponentType)
-9a3ca6c96eb71fbee17728b8920567ba|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|72|53|V|javascript
-	            console.log(CompDefinition.ComponentTypeC)
-a638ed6ff25efba8ca387453ef952b39|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|72|40|v|javascript
-	SelectedComponentType
-c01b5176012b2b4f599f1d95a1cb3fbd|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|73|1|V|javascript
-	            console.log(SelectedComponentType);
-0f01557dabde718af81c7fb91aae056e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|74|1|V|javascript
-	            console.log(CompDefinition.SelectedComponentType);
-a93fb65efd7ded90c1a22ce5cd483d09|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|72|1|V|javascript
-	            console.log(CompDefinition);
-	            console.log(SelectedComponentType);
-	            console.log(CompDefinition.SelectedComponentType);
-	            console.log(CompDefinition[SelectedComponentType]);
-	            console.log(SelectedComponentTypeID);
-90f7a6535b1a21d12c2486934fe0fa4e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|70|17|v|javascript
-	() => {
-	            var form = [];
-	            for (let i = 1; i <= CompDefinition[SelectedComponentType][SelectedComponentTypeID]["titles"]; i++) {
-	                form.push(
-	                    <div class="mb-3">
-	                        <label for={"form_title" + i} class="form-label">
-	                            タイトル+String(i)：
-	                        </label>
-	                        <input type="text" class="form-control" id={"form_title" + i} />
-	                    </div>
-	                );
-	            }
-	            for (let i = 1; i <= CompDefinition[SelectedComponentType][SelectedComponentTypeID]["comments"]; i++) {
-	                form.push(
-	                    <div class="mb-3">
-	                        <label for={"form_comments" + i} class="form-label">
-	                            テキスト+String(i)：
-	                        </label>
-	                        <input type="text" class="form-control" id={"form_comments" + i} />
-	                    </div>
-	                );
-	            }
-	            for (let i = 1; i <= CompDefinition[SelectedComponentType][SelectedComponentTypeID]["images"]; i++) {
-	                form.push(
-	                    <div class="mb-3">
-	                        <label class="form-label" for={"form_images" + i}>
-	                            画像+String(i)：
-	                        </label>
-	                        <input type="file" class="form-control" id={"form_img" + 1} />
-	                    </div>
-	                );
-	            }
-	            if (CompDefinition[SelectedComponentType][SelectedComponentTypeID]["grid"]) {
-	                form.push(
-	                    <div class="mb-3">
-	                        <label for="form_grid" class="form-grid">
-	                            グリッド：
-	                        </label>
-	                        <input type="number" class="form-control" id="form_grid" />
-	                    </div>
-	                );
-	            }
-	
-ab91cad421d942e89a866f7ce56b060d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|70|17|v|javascript
-	() => {
-	            var form = [];
-	            for (let i = 1; i <= CompDefinition[SelectedComponentType][SelectedComponentTypeID]["titles"]; i++) {
-	                form.push(
-	                    <div class="mb-3">
-	                        <label for={"form_title" + i} class="form-label">
-	                            タイトル+String(i)：
-	                        </label>
-	                        <input type="text" class="form-control" id={"form_title" + i} />
-	                    </div>
-	                );
-	            }
-	            for (let i = 1; i <= CompDefinition[SelectedComponentType][SelectedComponentTypeID]["comments"]; i++) {
-	                form.push(
-	                    <div class="mb-3">
-	                        <label for={"form_comments" + i} class="form-label">
-	                            テキスト+String(i)：
-	                        </label>
-	                        <input type="text" class="form-control" id={"form_comments" + i} />
-	                    </div>
-	                );
-	            }
-	            for (let i = 1; i <= CompDefinition[SelectedComponentType][SelectedComponentTypeID]["images"]; i++) {
-	                form.push(
-	                    <div class="mb-3">
-	                        <label class="form-label" for={"form_images" + i}>
-	                            画像+String(i)：
-	                        </label>
-	                        <input type="file" class="form-control" id={"form_img" + 1} />
-	                    </div>
-	                );
-	            }
-	            if (CompDefinition[SelectedComponentType][SelectedComponentTypeID]["grid"]) {
-	                form.push(
-	                    <div class="mb-3">
-	                        <label for="form_grid" class="form-grid">
-	                            グリッド：
-	                        </label>
-	                        <input type="number" class="form-control" id="form_grid" />
-	                    </div>
-	                );
-	            }
-	            return form;
-	        }
-0e6e9bb48fc8b0243097e0de7de20d48|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|70|11|V|javascript
-	        setForm(() => {
-01108da2e7506604da67328281003fa8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|15|6|V|javascript
-	    const [Form, setForm] = useState();
-fc65f453b749a16430f54ae4de17c04d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|65|14|V|javascript
-	        createForm();
-d359c6df99b25183d81f7d728b71de0e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|142|14|v|javascript
-	Form
-f30bd6b2de86da723cb4626d357486eb|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|54|1|V|javascript
-	        setSelectedComponentType(e.target.value);
-a784dc855c6c9bc407374fda242d4da6|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|144|30|V|javascript
-	            {SelectedComponentTypeID}
-4bf6b40e7bcf6b7dc4d604955de820cc|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|146|1|V|javascript
-	            {/*
-	            <div class="card px-4 py-2" style={{ backgroundColor: "#E8D6AE" }}>
-	                <h1>メニューの追加</h1>
-	                <div class="mb-3">
-	                    <label for="form_title" class="form-label">
-	                        タイトル：
-	                    </label>
-	                    <input type="text" class="form-control" id="form_title" value={Menu.Title} />
-	                </div>
-	                <div class="mb-3">
-	                    <label for="form_comment" class="form-label">
-	                        コメント：
-	                    </label>
-	                    <textarea class="form-control" id="form_comment" value={Menu.Comment} />
-	                </div>
-	                <div class="mb-3">
-	                    <label for="form_price" class="form-price">
-	                        値段(税抜)：
-	                    </label>
-	                    <input type="number" class="form-control" id="form_price" value={Menu.Price} />
-	                </div>
-	                <div class="mb-3 form-check">
-	                    <input type="checkbox" class="form-check-input" id="form_show" checked={Menu.Show} />
-	                    <label class="form-check-label" for="form_show">
-	                        表示
-	                    </label>
-	                </div>
-	                <div class="mb-3 form-star">
-	                    <input type="checkbox" class="form-check-input" id="form_star" checked={Menu.Star} />
-	                    <label class="form-check-label" for="form_star">
-	                        おすすめ
-	                    </label>
-	                </div>
-	                <div class="mb-3 form-group">
-	                    <label class="form-label" for="form_img">
-	                        画像を変更：
-	                    </label>
-	                    <input type="file" class="form-control" id="form_img" />
-	                </div>
-	                <div class="mb-3">
-	                    <label for="form_turn" class="form-turn">
-	                        番号：
-	                    </label>
-	                    <input type="number" class="form-control" id="form_turn" value={Menu.Turn} />
-	                </div>
-	                <button type="button" class="btn btn-primary" onClick={MenuFormSubmit}>
-	                    追加
-	                </button>
-	            </div>
-	            */}
-c4745f438b9ea7ced980cf7f3e0b0c06|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|36|1|V|javascript
-	                <div class="card px-4 pt-2" style={{ backgroundColor: "#E8D6AE" }}>
-3680a8506fdeaa6dc3078a9151ad6cbc|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|35|1|V|javascript
-	            <div class="container">
-	                <div class="card px-4 pt-2" style={{ backgroundColor: "#E8D6AE" }}>
-3068306f1230e042541c0c577e79ca1d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|146|1|V|javascript
-	        </div>
-74331a046d816fedce9232e1dc8b1148|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|66|1|V|javascript
-	                                <CompRouting component={component} />
 8f8e7c9ee543e9d13e05bcc47888cf69|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|7|10|v|javascript
 	CompRouting
 7b98a9796a4e9aab3d239d621f2836a2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|7|22|V|javascript
@@ -1160,3 +522,475 @@ ef5a1f553ca1ccdd80d480520810e6cb|file:///Users/arakawakouichi/local_file/maman-h
 a272fe32cb1562b96566551ab1a3d221|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|98|1|V|go
 			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
 			service.Components.NextID = comp_id + 1
+0014a2ad07a6d5c64126502aef34f2bd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|9|1|V|htmldjango
+	      <p>task_id = {{task_id}}, user_name = {{user_name}}</p>
+ca1cd3c3055991bf20499ee86739f7e2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|13|18|v|htmldjango
+	score
+1a97de8c6a3d66165aef070a8d528c93|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|87|1|V|htmldjango
+	  var shadowing_vioce_path = "{{ task.shadowing_voice | safe }}";
+0cf31b2c283ce3431794586df7b0996d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|3|V|htmldjango
+	    
+c6fd4e1fc6410828068acefd574ccaac|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|9|v|htmldjango
+	shadowing_vioce_path
+478f3a4c51824ad23cb50c1c60670c0f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|25|v|htmldjango
+	task
+cb3d5ef297504235fb83be2b9bace6bb|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|9|v|htmldjango
+	dtw_score
+10bfc84ccadfc6b7dab844a4294e8791|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|43|v|htmldjango
+	shadowing_voice
+5c70edf37ea9edbd6fe47bb9711b3c27|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|76|5|V|htmldjango
+	    console.log(voice_records)
+9dfc8dce7280fd49fc6e7bf0436ed325|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|45|v|htmldjango
+	safe
+0684c728e5ee9fb1b67c93d9472bc52e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|112|1|V|htmldjango
+	<div class="col-md btn-group" role="group" aria-label="Basic">
+	  <button type="submit" class="btn btn-border-shadow btn-border-shadow--color next"> Next ⇨ </button>
+	</div>
+c79bdf421714f5087fc34b7c538b6807|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|61|17|v|htmldjango
+	submit
+c8d582a045724c2c3c6fb6e84f31b98c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|56|1|V|htmldjango
+	<div class="col-sm">
+	    <a type="button" class="btn btn-success" id="next-btn" hidden>Next</a>
+	</div>
+	
+466deec76ecdf5fca6d38571f6324d54|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|45|v|htmldjango
+	json
+247f140eb2d97a5a818842f3392d32ef|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|30|v|htmldjango
+	dumps
+b1a2560254281c75b990b708d4c1e4f7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|163|5|v|python
+	dtw_scores
+3396ace84e6be5fa8d0e4685890c106d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|29|v|htmldjango
+	voice_records
+a23613eb202ad0cf88ab8968b16d4ba1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|165|10|v|python
+	voice_record.dtw_score
+91ed856b1e90c8d69f261fcba5e7096b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|164|1|V|python
+	        "dtw_score":voice_record.dtw_score,
+dd54db35db48282b1b0dae92d138d6f7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|32|v|htmldjango
+	_scores 
+6a44fbb86112ab752a24fad1452bbad6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|162|1|V|python
+	    content["voice_records"] = list(voice_records.values())
+114d53ad730ff9226650291c314b6f3f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|25|60|v|htmldjango
+	dnn_gop_score
+5452fc9ac4450cc310471ab2e70cd595|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|74|42|V|htmldjango
+	    console.log(JSON.parse(voice_records))
+6d8d5a789f330853b5400457ac4f7efe|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|75|1|V|htmldjango
+	        console.log(voice_record.dtw_score)
+05aa078735400fcce8197144f68a7e09|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|166|10|V|python
+	    content["voice_records"] = json.dumps(content["voice_records"])
+e76626c306403b2b2ed3156718d0353b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|93|21|v|htmldjango
+	myDiv
+635646afa5aa31dadd625f473f2e1cf4|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|93|21|v|htmldjango
+	graph_DtwScore
+f3c3522c5e1cb130b6540e4a97d5b8dc|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|37|26|V|htmldjango
+	                    <img src="https://www.della.co.jp/resource/img/gurafu1.gif">
+f82fff0cf43c2d0daf22995163ff47da|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|76|8|V|htmldjango
+	        console.log(voice_record.dnn_gop_score)
+8d777f385d3dfec8815d20f7496026dc|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|92|38|v|htmldjango
+	data
+d904cadedf9ccbc0d022b41204d5e89d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|83|1|V|htmldjango
+	
+	    var trace2 = {
+	      x: [1, 2, 3, 4],
+	      y: [16, 5, 11, 9],
+	      type: 'scatter'
+	    };
+	
+	    var data = [trace1, trace2];
+	
+2eb7cc60658edc5af732db2015ba8daf|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|75|1|V|htmldjango
+	        graph_data["x"].push(i)
+835c336318236956aa55d66852021295|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|79|1|V|htmldjango
+	    var trace1 = {
+	        x: [1, 2, 3, 4],
+	        y: [10, 15, 13, 17],
+	        type: 'scatter'
+	    };
+fed486583ad6b4e3a805d2fdde7d4168|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|77|33|V|htmldjango
+	        console.log(voice_records)
+eb8b805f31034f9e29cb42fc33aa979c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|78|28|V|htmldjango
+	            showarrow: false
+605a71f0fe6f18385f567fc7a3424cd1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|13|1|V|htmldjango
+	        {% for voice_record in voice_records %}
+b16b3365f99133348b179d52f0101e11|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|29|1|V|htmldjango
+	        {% endfor %}
+df28d4267bd6cb8702e977efd4198465|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|39|9|V|htmldjango
+	                    {% for voice_record in voice_records %}
+	
+e593859e9b4d51850eec1811bf22e96e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|40|29|V|htmldjango
+	                    {% if voi}
+4ad2e5ebaf8ec2809b2ee13f65353633|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|15|6|V|html
+	          <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg" alt="User picture">
+be92d077b8892f972a352d9acc2c1e81|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|15|90|v|html
+	currentColor
+5e4cc4ece1f91b444e2aec157b44e466|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|21|1|V|css
+	h2 {
+e566fe79061adcd281b4d6bbcd6d0f46|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|20|1|V|css
+	
+	h2 {
+51a122058310fed1b451eb2f7b3ea545|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|29|1|V|css
+	    font-size: 4.5em;
+2845f919b6db8b9bc81bbbc0c852d852|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|38|1|V|htmldjango
+	                      {{qa.question_text}}
+32b965fac48ff7a2913bb6e029e4c1ca|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|7|1|V|htmldjango
+	<div class="subtitle"><h3>Shadowing</h3></div>
+0014b24b396b062f94883793c0fd4b6a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|6|1|V|htmldjango
+	<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+	    <h3 class="subtitle script-subtitle "><b>Task No.{{ task.id }}　　<font size="5" color="FF0000">[Script Check]</font></b></h3>
+	  </div>
+	</div>
+fd170458f72897a30012683701ae874d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|5|27|v|htmldjango
+	Shadowing
+af9ada9a7ee946649ae67cf675b2a99c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|56|1|V|htmldjango
+	<div class="col-md btn-group" role="group" aria-label="Basic">
+	  <button class="btn btn-border-shadow btn-border-shadow--color next" id="next-btn" hidden> Next ⇨ </button>
+	</div>
+36308e7529e20f029776fcc2a86e1c38|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reading_aloud.html|85|1|V|htmldjango
+	<div class="col-sm">
+	    <a type="button" class="btn btn-success" id="next-btn" hidden>Next</a>
+	</div>
+70afa9e6385c27097de88af17b18a1d7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reading_aloud.html|93|1|V|htmldjango
+	  <div class="col-md btn-group" role="group" aria-label="Basic">
+	    <button type="submit" class="btn btn-border-shadow btn-border-shadow--color next"> Next ⇨ </button>
+	  </div>
+662f707d5491e9bce8238a6c0be92190|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|74|72|v|htmldjango
+	hidden
+8357bc88eb240b9d25b475f8cef2ba18|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|67|1|V|htmldjango
+	<div class="row button-area">
+	    <div div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	        <a href="/app/{{task.id}}/{{next_turn}}">Next</a>
+	        </button>
+	    </div>
+	</div>
+f213b0d9874ace9e0f21d809d0ec5021|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|70|1|V|htmldjango
+	
+	<div class="row button-area">
+	    <div div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	        <a href="/app/{{task.id}}/{{next_turn}}">Next</a>
+	        </button>
+	    </div>
+	</div>
+8675bf3bde2ba2b77e7ffcecf15aba12|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reflection.html|7|1|V|htmldjango
+	    <h3 class="subtitle">Self reflection</h3>
+8bb98969d77a31d977912cc976c0f431|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|5|1|V|htmldjango
+	<div class="subtitle">
+	    <h3>Automatic Evaluation Scores</h3>
+	</div>
+157d738e8248391c7225d7cbbc7ccaf0|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reflection.html|6|30|v|htmldjango
+	Scwidores
+8e6cd1f5d046ef66eb31979a60011493|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|233|14|V|css
+	  font-size: 2rem;
+c999c731638affea4a55070380990472|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|87|1|V|htmldjango
+	        graph_data["x"].push(i+1)
+	        graph_data["y"].push(voice_records[i]["dtw_score"])
+c36a3716782418cc7fa164d7c69147cd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|81|17|V|htmldjango
+	            layou
+da183349c5f244c8e7e249650f477c73|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|90|6|V|htmldjango
+	    la
+bc95dfc14146aa23e43f2ea7af04d310|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|83|12|V|htmldjango
+	            
+669849edd187de0d12b6094df25466ee|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|93|27|V|htmldjango
+	    console.log(graph_data)
+ea1125cf7428c2df61d516a6c6fd01ad|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|82|1|V|htmldjango
+	    var layout = {
+	            xaxis: {
+	                range: [ 1, j ]
+	            },
+	            yaxis: {
+	                //range: [0, 8]
+	            },
+	        }
+c6eadafb9258aebf50a155b39c8946be|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|62|1|V|htmldjango
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	        <p class="border score">Fluency Score</p>
+	    </div>
+9ffef12f6233ee2264096e7fc81f7d70|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|50|1|V|htmldjango
+	    <!-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"> -->
+ecc28770ba49848e2c2442188679ec3c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|57|1|V|htmldjango
+	        <!-- <p class="border score">DNN-GOP Score</p> -->
+	        <p class="border score">{{errata_rate}}</p>
+1a010656603e1cdf2c8724e85752d912|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|48|1|V|htmldjango
+	<div class="row border-bottom">
+0a3a0b592b9c285e050805307cee87c2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|65|1|V|htmldjango
+	</div>
+fb2843d5706b02b3ffcdaa11ff500126|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|66|1|V|htmldjango
+	<div class="row border-bottom">
+	</div>
+7c4977695b670c59602654cd7314b80f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|50|1|V|htmldjango
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	        <p class="border kind">2nd Reading Aloud</p>
+	        <p class="border kind">Corrent Answer Ratio In Q&A</p>
+	        <p class="border kind">3rd Reading Aloud (After 2 weeks)</p>
+	    </div>
+	    <!--2列目-->
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	        <p class="border score">DNN-GOP Score</p>
+	        <p class="border score">{{errata_rate}}</p>
+	
+	    </div>
+	    <!--3列目-->
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	        <p class="border score">Fluency Score</p>
+	    </div>
+af1f5e1783d0f1f67af124a12dfa88b1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|52|5|V|htmldjango
+	        <p class="border kind">Corrent Answer Ratio In Q&A</p>
+e5850e18603a25a078f9cb62a10d5fe6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|52|5|V|htmldjango
+	        <p class="border kind">3rd Reading Aloud (After 2 weeks)</p>
+c2c5b68ca5d0543844aa4c6ef1b12fa4|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|52|5|V|htmldjango
+	    </div>
+	    <!--2列目-->
+6b9c4714ced78662f06cd7643c059257|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|56|5|V|htmldjango
+	        <p class="border score">{{errata_rate}}</p>
+799a8a5288a368da5a8d03fdce1571d2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|56|1|V|htmldjango
+	
+	    </div>
+63cf5de58935defd362d9d67acf56427|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|64|1|V|htmldjango
+	        <p class="border kind">2nd Reading Aloud</p>
+2f1122cf18971ad864cadc10dd3cd6ae|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|68|1|V|htmldjango
+	        <p class="border score">DNN-GOP Score</p>
+099aa5eaa7f5ca29c1fd9a76a7c7507d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|73|1|V|htmldjango
+	        <p class="border score">Fluency Score</p>
+23962cf2bcd19d0c5158f8f86661b947|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|71|1|V|htmldjango
+	    <!--3列目-->
+3c2a6d64757889fb7b8a953bf7323e79|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|66|1|V|htmldjango
+	    <!--2列目-->
+87a74813df552d12d438bcffe630f84d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|49|1|V|htmldjango
+	    <!--1列目-->
+cbac6adec3223737b3067e4717d789c8|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|71|1|V|htmldjango
+	        <p class="border kind">2nd Reading Aloud</p>
+	        <p class="border kind">Corrent Answer Ratio In Q&A</p>
+ca4b3a8c7d1f063614128bdb76a486a6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|74|1|V|htmldjango
+	        <p class="border score">DNN-GOP Score</p>
+	        <p class="border score">{{errata_rate}}</p>
+71f262d796bed1ab30e8a2d5a8ddee6f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|69|24|v|htmldjango
+	bottom
+b50538bbd6c606495524fb6b18944023|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|36|1|V|htmldjango
+	                    <p class="score-change-title card-header">SH Improvement among 1st, 4th, 7th & 2nd script shadowing (DTW Score Change)</p>
+ba13da0826122b0fff10759e8a210550|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|36|78|V|htmldjango
+	                    <p class="score-change-title card-header">SH Improvement a script shadowing (DTW Score Change)</p>
+ca09f5b687a7853c141d4d08dfeb5f72|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|15|22|V|htmldjango
+	            <!-- 1列目 -->
+74da3529c64da7f20f443cc1d46eb2b6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|20|22|V|htmldjango
+	            <!-- 2列目 -->
+11a03aa5a741608a09527d0593451ee5|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|30|22|V|htmldjango
+	            <!-- 3列目 -->
+fc04accf7be183ce3e73666a275985fe|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|15|23|V|htmldjango
+	                <div class="training">
+9b0db20282c2dc8d23943c66e26f1139|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|16|22|V|htmldjango
+	                </div>
+39da55aae872568462fdb47ea10083a3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|18|18|V|htmldjango
+	                <div class="score">
+197929f729ed16dad53113ba43dbd69e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|18|18|V|htmldjango
+	                    <p class="border score">{{ voice_record.dnn_gop_score }}</p>
+	                </div>
+289f0e3245566df966d2b6cd2147c8c5|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|19|1|V|htmldjango
+	                        {% if voice_record.task_type == "SH" &}
+3d2db931b25ddff8ac15f182547c9db3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|21|1|V|htmldjango
+	                        {{ voice_record.dnn_gop_score }}
+61bb458d24f73b3f765908a4ffa8e5f2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|19|1|V|htmldjango
+	                        {% if voice_record.task_type == "SH" %}
+	                        {{ voice_record.dnn_gop_score }}
+	                        {% elif voice_record.task_type == "SS" %}
+	                        {{ voice_record.dnn_gop_score }}
+	                        {% endif %}
+543424bd7d569a0370a6d1406dc69a7e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|27|1|V|htmldjango
+	                        {% if voice_record.task_type == "SH" %}
+8a121367f44e1a4cdc3414926bac27d6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|28|1|V|htmldjango
+	                        {% elif voice_record.task_type == "SS" %}
+	                        {{ voice_record.dnn_gop_score }}
+	                        {% endif %}
+d4bc7c3abdc21915af40217b7c53aa37|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|22|1|V|htmldjango
+	                    Shadowing Score
+cc194c8386c0e4be795cd0bad94e2caa|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|17|1|V|htmldjango
+	                        {% elif voice_record.task_type == "SS" %}
+	                        Script Shadowing Score
+	                        {% endif %}
+1c59731e4be3834bfea43faf9e95711a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|62|1|V|htmldjango
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	    </div>
+4140ad480ed08db8ba6bc524f1e0dd92|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|205|48|V|html
+	>>>>>>> 6fa6e83fd2b3517847ec8b26705749113d50cbc9
+9b274d1b3075fa85cf94fba966a2697f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|33|1|V|html
+	<<<<<<< HEAD
+	            <div class="sidebar-menu">
+	                <ul>
+	                    <li class="header-menu">
+	                        <div style="text-align:center"><span><font size="4" color="#ff00ff">Live English Training</font></span></div>
+	                        <!-- <i class="fa fa-home fa-lg "></i> -->
+	                    </li>
+	                    <li class="sidebar-dropdown">
+	                        <a href="/app/main">
+	                            <i class="fa fa-home"></i>
+	                            <span ><font color="#00ff">Main Menu</font></span>
+	                        </a>
+	                    </li>
+	                    <li class="sidebar-dropdown">
+	                        <a href="/app/task">
+	                            <i class="fa fa-eye"></i>
+	                            <span><font color="#00ff">Shadowing</font></span>
+	                        </a>
+	                    </li>
+	                    <li class="sidebar-dropdown">
+	                        <a href="#">
+	                            <i class="fas fa-backward"></i>
+	                            <span><font color="#00ff">Repeating</font></span>
+	                            <!-- <span class="badge badge-pill badge-danger">3</span> -->
+	                        </a>
+	                    </li>
+	                    <li class="sidebar-dropdown">
+	                        <a href="#">
+	                            <i class="fa fa-headphones"></i>
+	                            <span><font color="#00ff">Listening</font></span>
+	                        </a>
+	                    </li>
+	                    <li class="sidebar-dropdown">
+	                        <a href="/app/task:ID/reading_aloud">
+	                            <i class="fa fa-microphone"></i>
+	                            <span><font color="#00ff">Reading aloud</font></span>
+	                        </a>
+	                    </li>
+	                    <hr>
+	                    <li class="header-menu">
+	                        <!-- <span>Interaction</span> -->
+	                    </li>
+	                    <!-- <li>
+	                        <a href="#">
+	                        <i class="fa fa-book"></i>
+	                        <!-- <span>Coming soon ...</span> -->
+	                        <!-- <span class="badge badge-pill badge-primary">Beta</span> -->
+	                        </a>
+	                    </li>
+	                    <li class="header-menu">
+	                        <!-- <span>Extra</span> -->
+	                    </li>
+	                    <li>
+	                        <a href="#">
+	                            <!-- <i class="fa fa-book"></i> -->
+	                            <!-- <span>Records</span> -->
+	                            <!-- <span class="badge badge-pill badge-primary">Beta</span> -->
+	                        </a>
+	                    </li>
+	                    <li>
+	                        <a href="#">
+	                            <!-- <i class="fa fa-book"></i> -->
+	                            <!-- <span>help</span> -->
+	                            <!-- <span class="badge badge-pill badge-primary">Beta</span> -->
+	                        </a>
+	                    </li>
+	                    <!-- <li> -->
+	                    <!--   <a href="#"> -->
+	                    <!--     <i class="fa fa-calendar"></i> -->
+	                    <!--     <span>Calendar</span> -->
+	                    <!--   </a> -->
+	                    <!-- </li> -->
+	                    <!-- <li> -->
+	                    <!--   <a href="#"> -->
+	                    <!--     <i class="fa fa-folder"></i> -->
+	                    <!--     <span>Examples</span> -->
+	                    <!--   </a> -->
+	                    <!-- </li> -->
+	                </ul>
+	            </div>
+	            <!-- sidebar-menu  -->
+	        </div>
+	    </nav>
+	=======
+e3b6c7818808cf0b9022c774f39d91b5|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|31|1|V|html
+	            </div>
+d0c2bf55c1bce7cb0324a07dcde91fc8|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|42|1|V|htmldjango
+	                          <a style="opacity:0.5;">{{ task.title }}</a>
+2a75d093f1109b218137cf7c497fa206|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|38|27|V|htmldjango
+	                          <a>{{ task.title }}</a>
+314ebf2370ca324f361236aa5e1b1229|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script_SH.html|60|1|V|htmldjango
+	<a type="button" class="btn btn-success" id="next-btn" href="/app/{{task.id}}/{{next_turn}}" hidden>Next</a>
+9efb42d2afe4f61432633758e9e6c3a3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|96|1|V|htmldjango
+	    document.getElementById("next-btn").onclick = () => {
+	        $.ajax({
+	            url: location.href,
+	            type: "POST",
+	            processData: false,
+	            contentType: false,
+	            data: data,
+	            error: function (request, status, error) {
+	                alert(error);
+	            }
+	        }).done(function (response) {
+	            window.location.href = "/app/{{task.id}}/{{next_turn}}"
+	        });
+	    }
+d324727bda9e93082c20890a47bf773c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|36|1|V|htmldjango
+	    <svg class="scale pointer" id="start" onclick="wavesurfer.play();this.style.display='none'; document.getElementById('_stop').style.display='block'"
+ad31dde68eae7d1a159f8f94b1f68094|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|36|1|V|htmldjango
+	    <svg class="scale pointer" id="start" onclick="wavesurfer.play();this.style.display='none'; document.getElementById('_stop').style.display='block'"
+	        xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
+	      <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	      <g>
+	        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	      </g>
+	    </svg>
+	    <svg class="scale" id="_stop" xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30" style="display:none;">
+	      <circle fill="white" stroke="red" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	      <g>
+	        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	      </g>
+	    </svg>
+6b3df0446fbba49d7081dbcbcfa071cd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script_SH.html|52|1|V|htmldjango
+	    <a class="pointer" id="start" onclick="wavesurfer.play(); disable(this)">
+	      <div class="scale" id="mic-blue">
+	        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
+	          <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	          <g>
+	            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	          </g>
+	        </svg>
+	      </div>
+	      <div class="scale" id="mic-red" hidden>
+	        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
+	          <circle fill="white" stroke="red" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	          <g>
+	            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	          </g>
+	        </svg>
+	      </div>
+72f36e352b0a3a87f672588f73aeb310|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script_SH.html|52|5|V|htmldjango
+	    </a>
+3dff3aad172378fac36cf54515292578|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script_SH.html|52|5|V|htmldjango
+	    <a class="pointer" id="stop" hidden></a>
+ee480036195ed2473bd8771c1cc67c71|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/js/recording.js|134|1|V|javascript
+	document.getElementById("next-btn").onclick = () => {
+	    $.ajax({
+	        url: location.href,
+	        type: "POST",
+	        processData: false,
+	        contentType: false,
+	        data: data,
+	        error: function (request, status, error) {
+	            alert(error);
+	        }
+	    }).done(function (response) {
+	        window.location.href = "/app/{{task.id}}/{{next_turn}}"
+	    });
+	}
+b31215eaac95d1ffaeb16b4da2175dab|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|87|5|V|htmldjango
+	          console.log("Jio")
+1b190fa38ebb74b0416cb03343919792|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|30|103|v|htmldjango
+	document.getElementById('play_btn').style.display='inline'"
+759f11b4eab27b9870503aa0c9f54fc3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|86|43|v|htmldjango
+	.hidden =true
+4f2f46ce4bae7d76d16e509072868021|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|85|42|v|htmldjango
+	.style.display='inline'"
+03fdad155b7548884584c7c39b0c5cd2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|86|59|v|htmldjango
+	inline
+cff6542b3f79e428f252edde71f10ca7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|87|32|V|python
+	            maxResults += 100000
+d7dcd2369fc7eedf62feae339494cfdf|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|151|20|V|python
+	            maxResults += 10000
+167991c707587c097f13e82aa57abbb5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|115|23|v|python
+	maxResults
+112179d06ea5b9b033c3c97001e37f05|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|115|23|V|python
+	                + str()
+7ba727a65b37572cf054effb196b9a8e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|79|24|V|python
+	        + str(maxResults)

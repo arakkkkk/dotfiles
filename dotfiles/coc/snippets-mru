@@ -1,5 +1,6 @@
-switch
 div
+script
+switch
 p
 center
 a
@@ -16,4 +17,3 @@ style
 img
 span
 body
-script

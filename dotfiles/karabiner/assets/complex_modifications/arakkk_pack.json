@@ -275,25 +275,6 @@
                     "type": "basic"
                 }
             ]
-        },
-        {
-            "description": "cange contrl+spece to .",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "spacebar",
-                        "modifiers": {
-                            "mandatory": ["left_control"]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "international1"
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
         }
     ]
 }

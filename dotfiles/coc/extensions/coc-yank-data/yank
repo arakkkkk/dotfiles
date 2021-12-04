@@ -1,984 +1,3 @@
-bc95dfc14146aa23e43f2ea7af04d310|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|91|12|V|python
-	            
-769b7f87f1976526e213f6db90757e03|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|101|1|V|python
-	    list_dbid(dirname)
-dd1a3bc8923ee1f3919cc702f5f0f8e1|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|102|5|v|python
-	list_dbid
-65f36108e21cdc40cf8ba929204baa58|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/expansion_tsv.py|6|1|V|python
-	sys.path.append(os.path.join(os.path.dirname(__file__), '../'))
-fd12df0d2c43518abc5fefd912d4cbc7|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|11|1|V|python
-	sys.path.append(os.path.join(os.path.dirname(__file__), "../"))
-617f8fdd2131ce77607eb0e8664b48df|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|1|1|V|python
-	from mylib.psiquic_class import PQdataList, PQdata
-	from mylib import general_method as gm
-73bbbc9c52bc06ffceb2c9c452e60add|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|90|22|V|python
-	            print(rrow)
-5b95d048654d1c8b82eadcb46595fc5e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|71|1|V|python
-	                with open(source_dir_name) as f1:
-47d22b7ccd9ed3bae59c07b62a66815c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|85|15|v|python
-	source_dir_name
-232f2d7a559c59ccaea390bfba0c218f|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|86|15|V|python
-	        f1 = dirname + "/whole_id_list.tsv"
-9c8e2134349094d3bbac6d7401e1384a|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|90|22|V|python
-	            print(row)
-34cc2e405ace92003a88c9b05e66bcfc|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|91|23|V|python
-	                print(r)
-7af2f36184e9a38681cbf6572c6d2f3b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|92|24|V|python
-	                print(i)
-b28b3d3c69d725631fae8e0b502e255b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|93|26|V|python
-	                    print(r)
-b335a6ec44990b1f503009e66053c49e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|92|21|V|python
-	                if i != 1:
-62b034c2e84699fbcc64a26bd188c8a3|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|94|35|V|python
-	                    print(dbid_list)
-50aac18aca704e6ac55b82b622e1195d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|94|12|V|python
-	    print(r)
-8fffa4a05d9ae7f5defb9c79835344c7|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|95|20|V|python
-	    print(dbid_list)
-fc64f01130d04d897070d71bf590f024|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|25|15|V|python
-	    re.sub("\_\")
-4cd4a49f25984e26fe708c1fbd896653|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|54|35|v|python
-	dbname
-393c6f55976f7e56412dc171d6365ec7|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|32|1|V|python
-	            for i in range(5):
-	                driver.find_element_by_tag_name("body").send_keys(Keys.PAGE_DOWN)
-a14fa12e574b9bcdd5b5958b3ee52142|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|33|1|V|python
-	            # JavaScrptの実行
-	            # # downloadのdropdownをクリックして開く
-	            # elements = driver.find_elements_by_xpath(
-	            #     '//*[@id="Download"]/div/div[2]')
-	            # elements[0].click()
-dfd7f79c75e300b3c3186ec9b2060206|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|29|1|V|python
-	            driver.find_element_by_tag_name(
-	                '//*[@id="app"]/div[2]/div/div[2]/div/div/form/div/div/input'
-	            ).send_keys("")
-0dbf6c922513da69268cc15a2fdf73f1|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|33|1|V|python
-	            driver.find_element_by_tag_name(
-e2b44d64516827831a8405bc442b0d79|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|33|1|V|python
-	            driver.find_element_by_tag_name(
-	                '//*[@id="app"]/div[2]/div/div[2]/div/div/form/div/div/div[2]/div[2]/ul/li[1]/div/div[2]/button'
-	            )
-3f354bee57276309dfc7aa9a7a5321ec|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|59|20|V|python
-	    result_list = []
-8a83778e2c125ecc9e21959cf036661e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/expansion_tsv.py|99|1|V|python
-	                f = open(dir_name + "_s" + str(i) + ".tsv", "w")
-	                f.write(list2tsv(column_label))
-5ab03a60f7ffc2878e328c21706d6f7a|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|61|22|v|python
-	column_label
-5ec4d6337469f96df9838f472363f792|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|60|1|^v|python
-	i
-	p
-	t
-	b
-	t
-	g
-	c
-	c
-	w
-	p
-	r
-	e
-	e
-	p
-	p
-	o
-	i
-	i
-	p
-	b
-	d
-	e
-	m
-	m
-	r
-	e
-	h
-	b
-	i
-	C
-	W
-	W
-	'
-e507130634df9754b8459fbd328d9ee7|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|60|1|^v|python
-	i
-	p
-	t
-	b
-	t
-	g
-	c
-	c
-	w
-	p
-	r
-	e
-	e
-	p
-	p
-	o
-	i
-	i
-	p
-	b
-	d
-	e
-	m
-	m
-	r
-	e
-	h
-	b
-	i
-	C
-e9ac21a0166dc6a255c314acfe285285|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|59|19|v|python
-	list(
-47c4b9d63d77aea27c900024972fb61b|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|105|1|V|python
-	    f = open("result.csv", "w")
-	    f.write("")
-27d78e7a49311368f025ee7eb69a65e2|file:///Users/Kouiti/local_file/glycovid/get_uri/scrape.py|109|33|V|python
-	        f = open("result.csv", "a")
-	        f.write("")
-25b754c9c9bed56cf6cdd31d5f4943ed|file:///Users/Kouiti/local_file/glycovid/glycovid_PACDB/scrape_pacdb/scrape_pacdb.py|25|1|V|python
-	        # ヘッドレスモードの設定
-	        options.add_argument('--headless')
-	        driver = webdriver.Chrome("./chromedriver", chrome_options=options)
-49a2f37f309d1435fb7448924eca87d4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/q_and_a.html|77|1|V|htmldjango
-	<<<<<<< HEAD
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <a type="button" class="btn btn-success" id="next-btn" href="/app/{{task.id}}/{{next_turn}}">Next</a>
-	=======
-b02e7d30c02ec2c7637a62f9a8938f80|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/q_and_a.html|81|8|V|htmldjango
-	>>>>>>> 8bc2e1370d53cffc263b79f6eafe748f7a3f3c7f
-306a822799a5f70e27a2254060df4f3f|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|86|1|V|python
-	<<<<<<< HEAD
-	            answer_list.append(request.POST.get(str(i + 1)))
-	            QAndARecord.objects.create_record(
-	                history=history,
-	                minitask=MiniTask.objects.get(task_id=task_id, turn=task_turn),
-	                question_number=i + 1,
-	                question_answer=request.POST.get(str(i + 1)),
-	=======
-b8b22deb1f424d77dea898a825d1f483|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|177|1|V|python
-	=======
-697dfb9b235783676b63d2f1ed07cad5|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|156|1|V|python
-	<<<<<<< HEAD
-35e34e0ced8bb19e6763b5d07bae2033|file:///Users/Kouiti/local_file/lets/lets_proj/app/views.py|28|1|V|python
-	<< << << < HEAD
-	
-	== == == =
-	>>>>>> > 8bc2e1370d53cffc263b79f6eafe748f7a3f3c7f
-c9df09b4610bb43e290507a37c658ae8|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|4|69|v|htmldjango
-	defer
-ade610f1224bdfa9454813bdeee2c19f|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/recording.js|132|1|V|javascript
-	
-	function disable(target) {
-	    document.getElementById("mic-blue").hidden = true;
-	    document.getElementById("mic-red").hidden = false;
-	    target.removeAttribute("onclick");
-	    target.style.pointerEvents = "none";
-	}
-12661759c2343cb1fa6cab2477bbbefe|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|3|1|V|htmldjango
-	{% load static %}
-	<script type="text/javascript" src="{% static 'js/recording.js' %}" defer></script>
-b90f1febcc047d11822a06262540bfd4|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/q_and_a.html|75|1|V|htmldjango
-	<!-- 最終行　ボタン・次へ -->
-	<div class="row row mt-4">
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" {{popup_next}}>
-	    <button type="submit" class="btn btn-outline-dark" onclick=location.href="../{{task_id}}/{{next_turn}}">NEXT⇨</button>
-	    <button><a href="../{{task_id}}/{{next_turn}}">NEXT</a></button>
-	    <button type="submit" value="submit">NEXT</button>
-	  </div>
-	  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	    <div class="card">
-	      <div class="card-body">
-	        <h4>To 3rd shadowing recording</h4>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-a79b4755524502fcb8c2c335dd83789c|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|100|1|V|python
-	        # content["b_checked"] = button_checked
-	        content["disabled"] = "disabled"
-	        content["popup_next"] = "visibility"
-	        content["popup_save"] = "hidden"
-	        # print(content)
-	        # return render(request, "app/q_and_a.html", content)
-0086b4caee9d0ecc5bb462885fc7ea95|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|94|12|V|python
-	            # qas[i][checkpoint] = {user_answer:"checked"}
-6ea5f607c11e6d73ccdfffcdbdfa2d40|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|94|1|V|python
-	        # print(button_checked)
-321ba80330d3d2295cf7da6300f50788|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|94|1|V|python
-	        print(vars(qas[0]))
-4fbf79a304d4036be9bbc1fc97a35b77|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|94|1|V|python
-	        content["qas"] = qas
-97066034ad55786c2ff0e875b72e3c67|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|81|1|V|python
-	        button_checked = []
-620a26617c29a8f859b90a5b4e4969f4|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|86|9|V|python
-	            answer_list.append(user_answer)
-26cfdb37ba8a5c48057c8c52f86d2059|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|80|9|V|python
-	        answer_list = []
-5741ab9a473f6623c5c8d4cb474cb4f4|file:///Users/Kouiti/local_file/lets/lets_proj/account/models.py|180|68|v|python
-	currnet
-ae06f594a9b7c7a5cfcb21b391332671|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|79|17|V|python
-	        question_num = 6
-c78369470d6a71d608afcde5d348c832|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|82|24|v|python
-	question_num
-a4e270b867446deec62db31cc9277540|file:///Users/Kouiti/local_file/lets/lets_proj/app/handler/shadowing.py|85|21|V|python
-	                break
-6479c880ff16bf77f68e9d3d7cd1b7cb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|13|1|V|go
-		"log"
-		"time"
-607b637d3eb655cfc93a205916f691c3|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|13|2|V|go
-		// "fmt"
-ecbc3a05f349169e9ecad6607dbabfdd|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|1|V|go
-			log.Println(component)
-700c216fb376666eaeda0c892e8bdc09|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|37|15|v|go
-	component
-78415f46ce04c8679b334de1858833ce|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|1|V|go
-	        log.Println("component:",component)
-4676284269764e87b83a5f6b3dd759a0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|21|10|V|go
-		log.Print(service.ID)
-d1fc8eaf36937be0c3ba8cfe0a2c1bfe|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|115|15|v|go
-	response
-436004bd0cabe04a3fb1e2a679170b05|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|48|V|go
-	    log.Println("list_component:",list_component)
-1d466ae02ec34c7a93e3fb8fee5222fb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|37|9|V|go
-	        log.Print(titles)
-151bef00012561d5b1fa51ab10913718|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|19|v|go
-	titles
-7bd71370decab9a25b8ab04fd3b5813a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|27|V|go
-	        log.Print(component)
-effaca54f3edb3104ea8341d3ba28fc7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|44|1|V|go
-	        log.Print("component:",component)
-0328c3ab98529275ddfb166dc132936f|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|44|1|V|go
-	        log.Print("images:",images)
-59b514174bffe4ae402b3d63aad79fe0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|41|20|v|go
-	images
-46c0efd930a019f1305731a8f43e7063|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|41|1|V|go
-	        log.Print("comments:",commnts)
-09cbed982fc17145799a86c54f8a6824|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|31|v|go
-	commnts
-a5d491060952aa8ad5fdee071be752de|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|20|v|go
-	comments
-597369db98a0d59a53ed7439cb21e5ca|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|1|V|go
-		var list_component components.ListComponent
-f383045ff93ad81bf45b82ee428ebfe7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|6|v|go
-	list_component
-0534b255d87557c130faf82a0a120036|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|12|V|go
-		var respose components.ListComponent
-4db34e0c85e52a33a448cdae892d9594|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|48|36|V|go
-		service.Components = list_component
-c63d145ed977dfeaf3fff39546a1faea|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|37|35|V|go
-	        log.Print("titles:",titles)
-9a6f039839f00b679a76b0c1db372189|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|40|39|V|go
-	        log.Print("comments:",comments)
-4cfa6c981549e990fe2344e4c805405e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|46|v|go
-	Find
-7fb55ed0b7a30342ba6da306428cae04|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|46|v|go
-	First
-50b05b8b64a76cc3b0e88f377a1a0714|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
-			db.Model(&component).Association("Titles").(&titles, "NextID=?",0)
-29c9905db377f095dfec910236cd3548|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|51|v|go
-	(&service.Components)
-f51ef61c78d4e45cbaff73c6b39ea2af|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|54|v|go
-	, "NextID=?",0)
-38878282077f93bfb54bac9af3047462|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|14|V|go
-	    db.Session(&gorm.Session{FullSaveAssociations: true}).Updates(&user)
-46e6522b2d9c6c071a687b851a5d683a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|31|23|V|go
-		db.Model(&service).Association("Components").Find(&service.Components)
-7442e29d7d53e549b78d93c46b8cdcfc|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|17|v|go
-	Orders
-9ed39e2ea931586b6a985a6942ef573e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|30|v|go
-	state
-6dd1d57254d1293570379b3f4670a549|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|44|v|go
-	celled
-9bc65c2abec141778ffaa729489f3e87|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|49|v|go
-	users
-b3376230a87fd9032f8e86bd7c4f8ca8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|30|V|go
-	    db.Preload("Component", "NextID=", 0).Find(&service)
-d2556d285b12acf059ab7805a12c8adf|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|30|V|go
-	    log.Println("222:",service)
-1228b6c87a07f4e41fb78b039dcad711|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
-	    log.Println("comp:",comp)
-005480c8a6a0357d17cff2e8eb7e060d|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|18|v|go
-	comp
-11243221db032c5d7e686bbb98c45631|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|14|V|go
-	    log.Println("service:",service)
-443412d293e1849294f777f16e0fc663|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|32|1|V|go
-	    var comp components.Component
-	    db.Where(&comp, "service_id = ?", service.ID)
-	    log.Println("comp:",comp)
-d65ebda504b422eb3a7b3b3930d6779e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|115|13|V|go
-	        respo
-ade34b2b0912f95075127776700423bb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|104|35|V|go
-	            defer resp.Body.Close()
-65a94d37eddeaa577a5a7ee1f02d21ac|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|104|49|V|go
-	            body, err := ioutil.ReadAll(resp.Body)
-0a00a7ac613cae0d66e4cb98dd5ffea6|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|1|V|go
-	            resp, err := http.Get("http://qiita.com/api/v2/users/snaka/items?page=1&per_page=10")
-	            if err != nil {
-	                    log.Fatal(err)
-	            }
-b55ce8b43994f428cf134c1a494a169a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|96|30|v|go
-	c.Param("comp_id")
-15f0d3db057e0d3ede0f7accf6244aa0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|74|1|V|go
-				if err != nil {
-					log.Println(err)
-3430c0c6a59a348935b9fb4c2a8a62a4|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|1|V|go
-	            URL := "http://0.0.0.0/api/components/get"+c.Param("comp_id")
-				request, err := http.NewRequest("GET", URL, nil)
-				if err != nil {
-	                log.Println("error:",err)
-	            }
-	            log.Println("request:",request)
-825a0d569c3b6c40f4d01554d7ac6e02|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|94|1|V|go
-			var adding_comp components.Component
-105b0b937a7f8ac8ded8eeffd2adb780|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|39|V|go
-	            var add_comp components.Component
-e21beb91ba7e43427f3df0e00d3fe194|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|96|41|V|go
-			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
-07589029721e600e88dbbc1e046a769e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|106|28|V|go
-			service := get(service_id)
-086fd796af3fd231fbc4108ed2a4dace|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|106|3|V|go
-			service_id, _ := strconv.Atoi(c.Param("service_id"))
-c9f4057ef2adff88021207221023d5c7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|31|V|go
-	        adding_comp := service.
-b089db49e1973cb26634e7ea497b4a28|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|104|1|V|go
-	            // target compをアップデート
-8e82b2c6fafef3f6136ab7eaf8a1772f|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|9|V|go
-	        log.Println(comp_id)
-8413c683b4b27cc3f4dbd4c90329d8ba|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|110|39|v|go
-	Comments
-c83e52772121b53535abb0aeff2cb13e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|110|1|V|go
-	        log.Println("before:",service.Components)
-2f44417567bc123bd7c60de8c2a2b444|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|112|22|v|go
-	before
-dd06120e10d38adf6f1d443062616be8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|112|9|V|go
-	        log.Println("after:",service.Components)
-3da976897858fb589d6bb49954cd97f5|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|1|V|go
-				log.Println(comp_id)
-1cd9b55d64125388b7e852d7d9a8b4ee|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|33|V|go
-			var titles components.ListTitle
-195a84e6e5d63303d9d9454fc392f6c9|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|27|V|go
-			component.Titles = titles
-3657052b4cc8de70838d4abd97ed579a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|37|V|go
-			var comments components.ListComment
-ee5465b0e1b28b64e07d7afc12684395|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|31|V|go
-			component.Comments = comments
-f44d28d588daaac69b933140672ebb44|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
-			db.Model(&component).Association("Comments").Find(&comments)
-			var images components.ListImage
-			db.Model(&component).Association("Images").Find(&images)
-			component.Images = images
-	        service.Components = append(service.Components, component)
-769011655b77661337f65ea085e29179|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
-			db.Model(&component).Association("Titles").Find(&service.Components[i])
-8612579044efe457f11398b5a2377226|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|37|v|go
-	Titles
-53bfcb0a311962beb089f9baf12b46f0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
-	        log.Println(service.Components)
-05bbb43b3d923283e0b6ffafd088f41f|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|29|v|go
-	Components
-b5862f5004767df84a0746d13d1487b4|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
-	        log.Println("koko")
-	        log.Println(service.Components)
-	        log.Println(i)
-eaaf13d20393dfa3753001d33c6f3e98|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
-	        log.Println("koko")
-	        log.Println(service.Components)
-	        log.Println(i)
-	        log.Println(service.Components[i])
-06612a0d55d1037178aa282824bf0841|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|43|25|V|go
-	        service.Components = append(service.Components, component)
-4725dcf446a342f1473a8228e42dfa48|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|13|v|go
-	components
-153ca79e1a97700964887e0803caadd0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|37|V|go
-			db.Model(&component).Association("Comments").Find(&comments)
-0b642580e9753ab8b7a077378917dc2e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|31|V|go
-			var images components.ListImage
-14d038a0e2c87a078e29548ae24a6784|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|31|V|go
-			db.Model(&component).Association("Images").Find(&images)
-cd7b64d91c73010be1646e1769518aaf|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|27|V|go
-			component.Images = images
-7429c8f56b5f2d8cec89e48360215c62|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
-			db.Model(&component).Association("Titles").Find(&service.Components[i].Titles)
-2a386120fe2649c3f54ad5a77d75400a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|11|1|V|go
-	    Turn    int
-d6e6a221a70f3acbcf26057b56001b59|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|52|1|V|javascript
-	            titles.push({ Text: form_title.value, Turn:i });
-0f7b5df71122d97b3929b98fff98bc87|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|51|1|V|javascript
-	            i+= 1
-ef441d1a7f9e5b6e4d2df037be9e212c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|49|1|V|javascript
-	        i=0
-3170e89174176fbab97cf8ced4458953|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|107|1|V|go
-			service_id, _ := strconv.Atoi(c.Param("service_id"))
-			service := get(service_id)
-4e1ddba1c31545ee09fb38ae1fd79346|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|104|9|V|go
-	        }
-382facfc9eff9ba6f6e260f0970c2883|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|103|1|V|go
-	            adding_comp.NextID = 0
-bbf59573f5e7ccc4b22cfc100ca284b5|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|104|25|v|go
-	NextID
-be4ee00ba3b5e24e381f807f3d1afaae|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|104|1|V|go
-	            adding_comp.Head = true
-b0dc1e2985b388b120ee0dd7baca7034|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|42|v|go
-	service_id
-b47af1373101900adcfb886d535bd5a4|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|27|1|V|go
-	func Get(id int) Component {
-		db := db_conf.DBConnect()
-		var component Component
-		db.First(&component, "id= ?", id)
-		db.Close()
-		return component
-	}
-e8c5af6e6eb54923ede80d6d64f41ea8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|27|1|V|go
-	func Get(id int) Component {
-		db := db_conf.DBConnect()
-		var component Component
-		db.First(&component, "id= ?", id)
-		db.Close()
-		return component
-	}
-	
-46f42c01213ccfb8d5c8a5685c5c9852|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|107|1|V|go
-	                adding_comp.Head = true
-5b7cb5bf80f63520809069c89c72d506|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|17|v|go
-	head_comp
-98921133d10fbdb0fb6dbb7b2648befe|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|110|29|v|go
-	Head
-b326b5062b2f0e69046810717534cb09|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|110|38|v|go
-	true
-b963cdc14e75d60731678bcd3fc2a730|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|103|1|V|go
-	            log.Printlm("111111111111111")
-9cd20b7a0f5614dd3dd9d3c69f71f699|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|103|1|V|go
-	            log.Println("111111111111111")
-4ba36d23a78c7393b4900ef38019d8ff|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|26|v|go
-	111111111111111
-3b2de5238c13b1b950c679fcf3d26651|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|1|V|go
-	            log.Println("222222222222222")
-ff083257a5583291fb86656ad0df1b42|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|114|26|v|go
-	222222222222222
-d636efe1cde6bc6948962a304b844e28|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|122|1|V|go
-					components.Update(target_comp)
-1d349eb2a72d8a56ab7f105dc986baf0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|113|28|v|go
-	t_comp
-daac832fce7b4fa8a126412d35cf5744|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|1|V|go
-					log.Println("222222222222222")
-698202d95823787a9857a33d6259c709|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|113|1|V|go
-	                log.Println("head_comp:", head_comp)
-f7fbb872386d675411c3bb95ba422db7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|112|1|V|go
-	                log.Println("head_comp:", head_comp)
-	                log.Println("adding_comp:", adding_comp.NextID)
-6822a7f9a3c19bca5bf34c06927f7ccb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|114|3|V|go
-					log.Println("3333333333333")
-8c5495a7af70d1d73d95be8a01d177eb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|103|3|V|go
-				log.Println("111111111111111")
-c7a69cb0318eb4bbd5eaae8224cec9ef|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/menus/urls.go|71|1|V|go
-			file, err := c.FormFile("file")
-			if err != nil {
-				log.Println(err)
-			} else {
-				filename := time.Now().Format("2006-0102-150405") + "_" + file.Filename
-				err = c.SaveUploadedFile(file, "images/"+filename)
-				if err != nil {
-					log.Println(err)
-				} else {
-					form.Img = filename
-				}
-			}
-df8ff52a256d6b0af09793fc8fbd1215|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|93|1|V|go
-		router.POST("/services/:service_id/append/component/:comp_id", func(c *gin.Context) {
-			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
-	
-			var adding_comp components.Component
-			c.ShouldBindJSON(&adding_comp)
-	
-			service_id, _ := strconv.Atoi(c.Param("service_id"))
-			service := get(service_id)
-	
-			if len(service.Components) == 0 {
-				adding_comp.NextID = 0
-				adding_comp.Head = true
-			} else {
-				if comp_id == 0 {
-					adding_comp.Head = true
-					head_comp := components.GetHead(service_id)
-					head_comp.Head = false
-					adding_comp.NextID = head_comp.ID
-					components.Update(head_comp)
-				} else {
-					adding_comp.Head = false
-					// 右側に追加する対象のcomponentのNextを追加componentのNextに追加
-					target_comp := components.Get(comp_id)
-					adding_comp.NextID = target_comp.ID
-					// 右側追加する対象のcomponentの追加したcomponentに追加
-					target_comp.NextID = adding_comp.ID
-					// target compをアップデート
-					components.Update(target_comp)
-				}
-	
-			}
-			service.Components = append(service.Components, adding_comp)
-	
-			update(service)
-			c.JSON(202, get(service_id))
-		})
-f91fa29e28578f57a69e199fea2996ff|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|97|20|V|go
-	        adding_comp.
-d6906eaaf0c93195a5cdd7ba42b6906d|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|20|1|V|go
-	type Image struct {
-		gorm.Model
-		Text        string
-		Turn        int
-		ComponentID uint
-	}
-6c436f9842e5361fccf0e00a7e37d695|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|25|12|v|go
-	[]Image   `gorm:"foreignKey:ComponentID"`
-672645e8628b681c55b6d403289ab8e7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/menus/urls.go|70|1|V|go
-			var form Menu
-			file, err := c.FormFile("file")
-			if err != nil {
-				log.Println(err)
-			} else {
-				filename := time.Now().Format("2006-0102-150405") + "_" + file.Filename
-				err = c.SaveUploadedFile(file, "images/"+filename)
-				if err != nil {
-					log.Println(err)
-				} else {
-					form.Img = filename
-				}
-			}
-	
-e0eac7514fc01d8e00cf80864559814c|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/menus/urls.go|70|1|V|go
-			var form Menu
-			file, err := c.FormFile("file")
-			if err != nil {
-				log.Println(err)
-			} else {
-				filename := time.Now().Format("2006-0102-150405") + "_" + file.Filename
-				err = c.SaveUploadedFile(file, "images/"+filename)
-				if err != nil {
-					log.Println(err)
-				} else {
-					form.Img = filename
-				}
-			}
-7bb0edd98f22430a03b67f853e83c2ca|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|94|8|V|go
-	        
-8d9d56263a6a9d64d4cb25c44a0e41b0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|83|1|V|go
-			service.Title = c.PostForm("title")
-8034f6152b16c4c905fd8407ebf2f033|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|66|1|V|go
-			service_id, _ := strconv.Atoi(c.PostForm("service_id"))
-a9eb5f8fbc47f049a8552be1720b0ade|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|107|3|V|go
-			component_id, _ := strconv.Atoi(c.Param("comp_id"))
-e7b4f12ade73ec981a80e26ba904d941|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|109|1|V|go
-			var adding_comp components.Component
-			c.ShouldBindJSON(&adding_comp)
-	
-			service_id, _ := strconv.Atoi(c.Param("service_id"))
-			service := get(service_id)
-	
-			if len(service.Components) == 0 {
-				adding_comp.NextID = 0
-				adding_comp.Head = true
-			} else {
-				if comp_id == 0 {
-					adding_comp.Head = true
-					head_comp := components.GetHead(service_id)
-					head_comp.Head = false
-					adding_comp.NextID = head_comp.ID
-					components.Update(head_comp)
-				} else {
-					adding_comp.Head = false
-					// 右側に追加する対象のcomponentのNextを追加componentのNextに追加
-					target_comp := components.Get(comp_id)
-					adding_comp.NextID = target_comp.ID
-					// 右側追加する対象のcomponentの追加したcomponentに追加
-					target_comp.NextID = adding_comp.ID
-					// target compをアップデート
-					components.Update(target_comp)
-				}
-	
-			}
-			service.Components = append(service.Components, adding_comp)
-	
-			update(service)
-115a62fcc4490458808a076e069b4035|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|134|1|V|go
-					target_comp := components.Get(comp_id)
-25f8730d4bbbaecd35d8a9b48923ce36|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|33|V|go
-			component_id, _ := strconv.Atoi(c.PostForm("component_id"))
-07bcbe0f4a17ec10c3cfea5a00969a2f|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|94|3|V|go
-			var form Menu
-b0f01442e56fe3660366c03fdace8bf7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|37|v|go
-	comp_id
-3fcdb73d36d54f2cc22d0f68e6b6e182|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|105|5|v|go
-	form
-c544d35feb01067c5dd5f080c236d0a3|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|145|1|V|go
-			update(service)
-6685d675d010651c11bf9bd7dc89d056|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|27|v|go
-	target_comp
-e6823f91c16d6e9899cdd97efbf9c196|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|44|7|V|go
-		db.AutoMigrate(Image{})
-909466156ffc8baab83703145b93008e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|36|10|V|go
-	type ListImage []Image
-d50b2757eddc063e0756442dcf98dd97|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|13|V|go
-			db.Model(&component).Association("Images").Find(&service.Components[i].Images)
-774ef8345fc615f874b3a5c3a4c72cfd|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|147|39|v|go
-	get(service_id))
-	
-ef5a1f553ca1ccdd80d480520810e6cb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|31|v|go
-	component_id
-40f581e5cb77778187b0062af9e16d97|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|122|1|V|go
-			if len(service.Components) == 0 {
-8e306bd130601e64071d2643f42535f1|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|8|V|go
-			if len == 0 {
-9f184b11dbf2a70df7e9a7aeb9ab677e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|126|1|V|go
-				if comp_id == 0 {
-569a1e03e5a95f8357b6b9936037ab38|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|96|4|V|go
-				component := components.Get(comp_id)
-39fa3754badd7fa94aa7a66e89ec0b72|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|132|1|V|go
-					head_comp := components.GetHead(service_id)
-0be8406951cdfda82f00f79328cf4efc|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|96|34|v|go
-	Comment
-633ef7856bd3030d576aaabb52832b1f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|70|1|V|javascript
-	        axios
-	            .post("/api/services/" + service_id + "/append/component/"+component_id, data)
-	            .then(function (response) {
-	                console.log(response.data);
-	            })
-	            .catch(function (error) {
-	                console.log(error);
-	            });
-8d777f385d3dfec8815d20f7496026dc|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|75|105|v|javascript
-	data
-cd359c30f0730436af4b1be49560139b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/menus/MenuCreate.js|23|17|v|javascript
-	 = new FormData();
-e30f88a97c9a41c568f749a557d4adb1|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/menus/MenuCreate.js|30|1|V|javascript
-	        data.append("file", document.getElementById("form_img").files[0]);
-0668e36ca460493cfb6d6fdc8febf54d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|69|15|v|javascript
-	imgform
-76d721e8317f028d8cb79a7bf88a4244|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|120|1|V|go
-		router.POST("/services/:service_id/append/component/:comp_id", func(c *gin.Context) {
-			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
-	
-			var adding_comp components.Component
-			c.ShouldBindJSON(&adding_comp)
-	
-			service_id, _ := strconv.Atoi(c.Param("service_id"))
-			service := get(service_id)
-	
-			if len(service.Components) == 0 {
-				adding_comp.NextID = 0
-				adding_comp.Head = true
-			} else {
-				if comp_id == 0 {
-					adding_comp.Head = true
-					head_comp := components.GetHead(service_id)
-					head_comp.Head = false
-					adding_comp.NextID = head_comp.ID
-					components.Update(head_comp)
-				} else {
-					adding_comp.Head = false
-					// 右側に追加する対象のcomponentのNextを追加componentのNextに追加
-					target_comp := components.Get(comp_id)
-					adding_comp.NextID = target_comp.ID
-					// 右側追加する対象のcomponentの追加したcomponentに追加
-					target_comp.NextID = adding_comp.ID
-					// target compをアップデート
-					components.Update(target_comp)
-				}
-			}
-			service.Components = append(service.Components, adding_comp)
-			update(service)
-	
-			c.JSON(202, get(service_id))
-		})
-9516dfb15f51c7ee19a4d46b8c0dbe1d|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|93|37|v|go
-	append
-a02439ec229d8be0e74b0c1602392310|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|93|9|v|go
-	POST
-36443ebc158330eb2f406f1d48c99bf2|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|94|1|V|go
-	
-			var adding_comp components.Component
-			c.ShouldBindJSON(&adding_comp)
-	
-f5f3331eab97ce7d035eb7418552b298|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|96|1|V|go
-	
-			if len(service.Components) == 0 {
-				adding_comp.NextID = 0
-				adding_comp.Head = true
-			} else {
-				if comp_id == 0 {
-					adding_comp.Head = true
-					head_comp := components.GetHead(service_id)
-					head_comp.Head = false
-					adding_comp.NextID = head_comp.ID
-					components.Update(head_comp)
-				} else {
-					adding_comp.Head = false
-					// 右側に追加する対象のcomponentのNextを追加componentのNextに追加
-					target_comp := components.Get(comp_id)
-					adding_comp.NextID = target_comp.ID
-					// 右側追加する対象のcomponentの追加したcomponentに追加
-					target_comp.NextID = adding_comp.ID
-					// target compをアップデート
-					components.Update(target_comp)
-				}
-			}
-			service.Components = append(service.Components, adding_comp)
-			update(service)
-	
-0fa5c5674934819d5f6361404cf14994|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|102|44|v|javascript
-	navigate("/home/service/" + service_id + "/components/0/create")
-7b31561910bb75195cf25c403a582b5d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|81|1|V|javascript
-	    const changeSelectService=(e)=>{
-	navigate("/home/service/" + service_id + "/components/0/create")
-	    }
-e57585a7c998a87dd1c40d325ad5175c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|93|42|v|javascript
-	navigate("/home/service/"+e.target.value+"/contents/update")
-b5c0a12e26f968e0581b8b289d88d383|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|93|1|V|go
-		router.GET("/services/:service_id/components", func(c *gin.Context) {
-			service_id, _ := strconv.Atoi(c.Param("service_id"))
-			service := get(service_id)
-			c.JSON(202, service)
-		})
-	
-457edf9b13002143f02166080a32d3be|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|64|29|V|javascript
-	            setService(data);
-9d49d66cc120299c814be67395196dc3|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|60|28|V|javascript
-	            console.log(data)
-f39ea7f270d2ad21d8c76f9a73a4351c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|111|1|V|javascript
-	                        {Services.Components.map((component, index) => (
-	                            <div className={"col-sm-" + component.grid} onClick={() => openModal(component.ID)}>
-	                                <CompRouting component={component} />
-	                            </div>
-	                        ))}
-19b8a615d05f8aa04533d7ec6547379c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|111|1|V|javascript
-	                        {Service.Components.map((component, index) => (
-	                            <div className={"col-sm-" + component.grid} onClick={() => openModal(component.ID)}>
-	                                <CompRouting component={component} />
-	                            </div>
-	                        ))}
-8cf3f9f3ca669684c6f284377a7307fe|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|110|1|V|javascript
-	                        {Service["Components"].map((component, index) => (
-	                            <div className={"col-sm-" + component.grid} onClick={() => openModal(component.ID)}>
-	                                <CompRouting component={component} />
-	                            </div>
-	                        ))}
-77bf790da581778f36a659994f2bbc41|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|110|26|v|javascript
-	Service["Components"]
-a4f932625b30369f12b4d131bbbd25bb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|66|11|V|javascript
-	        setComponents(content.components);
-63136065a79c1da787167cfcb30c345e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|62|11|V|javascript
-	        axios.get("/api/services/get/" + service_id).then((results) => {
-	            const data = results.data;
-	            setService(data);
-	        });
-2063c1608d6e0baf80249c42e2be5804|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|82|44|v|javascript
-	value
-ec6e7da612a616c6f9505ebd6dd121de|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Title.js|2|1|V|javascript
-	    switch (props.component.TypeID) {
-4b497a7279d3c27826369aaab64ee1f6|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Card.js|2|5|V|javascript
-	    switch (props.component.type_id) {
-196e0862278bbf9118242f97be987366|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Card.js|35|55|v|javascript
-	.Text
-7bc1be694e088fb0bd327c16548c09ef|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|83|20|V|javascript
-	                    
-29edce187a478dc73b889d6062e7cdfc|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|81|1|V|javascript
-	            for(var comp of Service["Components"]){
-	                if(comp["Head"]) {
-	                    setComponents([comp])
-	                    break
-	                }
-	            }
-9e006a44b89f0dfee0906f0ffbb70232|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|89|19|V|javascript
-	                    var is_exist = false
-9c20d200a943d24a23f48ddb95132f17|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|95|1|V|javascript
-	                    if(!is_exist) {
-	                        break
-	                    }
-16d87034856003ad12279f63b816111a|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|20|10|V|javascript
-	        }"タイトル1", "タイトル2", "タイトル3"],
-77d0d6a051d6497df8380beb1c9e20b3|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|20|19|v|javascript
-	タイトル
-775a658c4ee81189f1787c6f32da215b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|20|1|V|javascript
-	            {Text: "タイトル1", Turn: 1},
-d0d920214337cba3198c19c523765acc|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|19|1|V|javascript
-	        Titles: [
-	            {Text: "タイトル1", Turn: 1},
-	            {Text: "タイトル2", Turn: 2},
-	            {Text: "タイトル3", Turn: 3},
-	        ],
-b328ea6827a1cdf91769945a1e301d8c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|31|15|V|javascript
-	            "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-be265c7b91abb854a94e1dff98177924|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|31|15|V|javascript
-	            "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
-35fc0edd1912fd185977c6090162b0b5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|31|10|V|javascript
-	        ],
-94757cae63fd3e398c0811a976dd6bbe|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|32|9|v|javascript
-	type_id
-2e59f7b999f8e230322e86ed25e883d6|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|27|30|V|javascript
-	            {Text: "タイトル3", Turn: 3},
-57770671a687bc9d65a09c7459343a0f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|13|1|V|javascript
-	const componentA = {
-	    ID: 1,
-	    titles: ["aaa", "bbb", "ccc"],
-	    comments: ["ddd", "eee", "fff"],
-	    images: [
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
-	    ],
-	    type: "card",
-	    type_id: "F",
-	    grid: 6
-	};
-	const componentB = {
-	    ID: 2,
-	    titles: ["aaa", "bbb", "ccc"],
-	    comments: ["ddd", "eee", "fff"],
-	    images: [
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
-	    ],
-	    type: "card",
-	    type_id: "F",
-	    turn: 2,
-	    grid: 6
-	};
-	const content = {
-	    service: "unit",
-	    components: [componentA, componentB]
-	};
-eb8195e16005fe919ec4be6447738b14|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|12|1|V|javascript
-	const componentA = {
-	    titles: ["aaa", "bbb", "ccc"],
-	    comments: ["ddd", "eee", "fff"],
-	    images: [
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
-	    ],
-	    type: "card",
-	    type_id: "F",
-	    grid: 6
-	};
-	const componentB = {
-	    titles: ["aaa", "bbb", "ccc"],
-	    comments: ["ddd", "eee", "fff"],
-	    images: [
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
-	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
-	    ],
-	    type: "card",
-	    type_id: "F",
-	    turn: 2,
-	    grid: 6
-	};
-	const content = {
-	    service: "unit",
-	    components: [componentA, componentB]
-	};
-bed49da5cc38c3db7860b951945e7724|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|25|1|V|javascript
-	    useEffect(() => {
-	        axios.get("/api/services/list/all").then((results) => {
-	            const data = results.data;
-	            setServices(data);
-	        });
-	    }, [ApiUrl]);
-0cb6ecbb903fb42ac4dab745d725ef44|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|46|1|V|javascript
-	        axios.get("/api/services/get/" + service_id).then((results) => {
-	            const data = results.data;
-	            setService(data);
-	            for (let comp of Service["Components"]) {
-	                if (comp["Head"]) {
-	                    setComponents([comp]);
-	                    break;
-	                }
-	            }
-	            for (let i = 0; i < 1000; i++) {
-	                var is_exist = false;
-	                for (let comp of Service["Components"]) {
-	                    if (Components[-1].NextID == comp["ID"]) {
-	                        setComponents([...Components, comp]);
-	                        is_exist = true;
-	                        break;
-	                    }
-	                }
-	                if (!is_exist) {
-	                    break;
-	                }
-	            }
-	        });
-9d4afb6ae9ac1318ea2f835c6c6bea1f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|53|1|V|javascript
-	                <Route exact path="/home/service/:service_id/contents" element={<Contents />} />
-6ed1349f0fbc93815a8b0ae0e105f524|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|67|58|v|javascript
-	 onClick={() => navigate("/home/service/"+service.ID+"/contents")} key={service.ID}
-ccac8a66d468e2522611be86933cc0d9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|67|50|v|javascript
-	pointer
-1a201269aa5379afb290f727bdd3e18b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|68|1|V|javascript
-	                                <div class="card mb-3 pointer" onClick={() => navigate("/home/service/"+service.ID+"/contents")} key={service.ID}>
-7aa5840030d71f36eea267eea799def9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|67|1|V|javascript
-	                            <div class="col-sm-6">
-	                                <div class="card mb-3 pointer" onClick={() => navigate("/home/service/"+service.ID+"/contents")} key={service.ID}>
-af67ecd0b44402ce69332a2799668b59|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|40|29|V|javascript
-	                            <div class="col-sm-6 pointer" onClick={() => navigate("/home/service/"+service.ID+"/contents")} key={service.ID}>
-	                                <div class="card mb-3">
-e1b8259a92ea452461addb8d383a8616|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|13|31|V|javascript
-	    console.log(props.component)
-5d78b664d0697343c0850f3d920bb95f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|59|43|V|javascript
-	                    console.log(Components)
-394ebf313d00a6ba1e1836a8602487df|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|56|15|V|javascript
-	            try
-d83cf83f05ceb9b46886a258dfcfbdb0|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|59|1|V|javascript
-	            for (let i = 0; i < 200; i++) {
-	                var is_exist = false;
-	                for (let comp of Service["Components"]) {
-	                    if (Components[-1].NextID == comp["ID"]) {
-	                        setComponents([...Components, comp]);
-	                        is_exist = true;
-	                        break;
-	                    }
-	                }
-	                if (!is_exist) {
-	                    break;
-	                }
-	            }
-8a40a1f17bdd30426466fecb9cafe0c7|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|60|1|V|javascript
-	                        console.log(Components)
-794a77b29a5521d27913fec09811acb4|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|61|47|V|javascript
-	                        console.log(Components[].NextID)
-468a1c6e6032c1f2b0b98053555bf65e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|45|26|V|javascript
-	        setComponents([]);
-78abdb5d3f91e1136686242b49df9902|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|46|1|V|javascript
-	        axios.get("/api/services/get/" + service_id).then((results) => {
-	            const data = results.data;
-	            setService(data);
-	            for (let comp of Service["Components"]) {
-	                if (comp["Head"]) {
-	                    setComponents([comp]);
-	                    break;
-	                }
-	            }
-	            if (Components.length != 0) {
-	                for (let i = 0; i < 200; i++) {
-	                    var is_exist = false;
-	                    for (let comp of Service["Components"]) {
-	                        console.log(Components)
-	                        if (Components[-1].NextID == comp["ID"]) {
-	                            setComponents([...Components, comp]);
-	                            is_exist = true;
-	                            break;
-	                        }
-	                    }
-	                    if (!is_exist) {
-	                        break;
-	                    }
-	                }
-	            }
-	        });
 e643cc62032e4286232ca9630ddebb1a|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|49|45|V|javascript
 	            console.log(Service["Components"])
 c2ba7e785c49050f48da9aacc45c2b85|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|49|30|v|javascript
@@ -1177,3 +196,1228 @@ b59ca9169b872950ea599c1bc70f7939|file:///Users/Kouiti/local_file/maman-homepage/
 	            log.Println("2222222222")
 3a08fe7b8c4da6ed09f21c3ef97efce2|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|143|26|v|go
 	2222222222
+648c96c48c7ce3bb12207c167be2d458|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|126|1|V|go
+	        log.Println("1",components.List())
+150adcd38ca139e172bbe437cdae3fe1|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|129|1|V|go
+	        log.Println("2",components.List())
+7f6a8aef3de3839b56b9364170376f02|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|123|1|V|go
+	        log.Println("-2",components.List())
+361a7942436d3b09cd10492dbd9823e2|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|158|9|V|go
+	        log.Println("3",components.List())
+02dfdc67af2ec8cb5a75aa97de468da5|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|147|3|V|go
+					log.Println("33333333")
+ac8d9c3c1ced566975fd1f02735c3d44|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|140|3|V|go
+					log.Println("2222222222")
+543d167003e367ae50b325ac9a003176|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|135|3|V|go
+				log.Println("1111111111111111")
+c738483118b29b403dfe8dd856b697a2|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|125|4|V|go
+	        log.Println("-1",components.List())
+221fa69dbecc1affbc2c46605218f317|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|34|9|V|go
+	    panic
+3d1a9764721c13327804b1f738a70037|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|116|1|V|go
+			components.Update(component)
+6386c5cf4abc11c034b629787de75792|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|96|17|V|go
+			var component components.Component
+89ba7b0801674761a6533365d2a42e55|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|120|1|V|go
+			c.JSON(202, component)
+a1fa27779242b4902f7ae3bdd5c6d508|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|102|22|v|go
+	Type
+31c6b3b50149ec1a3bcc75efbe3c8f09|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|105|1|V|go
+	
+			file, err := c.FormFile("file")
+			if err != nil {
+				log.Println(err)
+			} else {
+				filename := time.Now().Format("2006-0102-150405") + "_" + file.Filename
+				err = c.SaveUploadedFile(file, "images/"+filename)
+				if err != nil {
+					log.Println(err)
+				} else {
+					component.Image = filename
+				}
+			}
+	
+			components.Update(component)
+			c.JSON(202, component)
+e35d4650bec880d85d5acf7a777b07df|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|1|V|go
+			file, err := c.FormFile("file")
+			if err != nil {
+				log.Println(err)
+			} else {
+				filename := time.Now().Format("2006-0102-150405") + "_" + file.Filename
+				err = c.SaveUploadedFile(file, "images/"+filename)
+				if err != nil {
+					log.Println(err)
+				} else {
+					component.Image = filename
+				}
+			}
+	
+			components.Update(component)
+			c.JSON(202, component)
+89a4ef4bb1ac46e22193b4859bcbb3dc|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|20|1|V|go
+		db.First(&component, "service_id=? AND head=?", id, true)
+9544a626b6f753d44ebe79c22a2443a2|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|20|1|V|go
+	    log.Printlm(component)
+4d7c6414593f5e70504d2f730b9c3694|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|20|1|V|go
+		db.First(&component, "service_id=? AND head=?", id, false)
+	    log.Println(component)
+7293b2eecbbdf68fe0c9b517f5ab5011|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|21|16|V|go
+	    log.Println(component)
+abf1376cebd9ac6400f5c6374249ae96|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|19|14|V|go
+	    log.Println("id:",id)
+b5420ce01a2683c68ed3e7039e9e898e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|132|1|V|go
+	        log.Println(service_id)
+43465d7fc10edd1dc069fbd95d307653|file:///Users/Kouiti/local_file/maman-homepage/Makefile|17|1|V|make
+	rn:
+		sudo docker-compose -f ./webapp/docker-compose.yml restart nginx
+aa67462073304f56369f242689f87520|file:///Users/Kouiti/local_file/maman-homepage/Makefile|21|1|V|make
+		sudo docker-compose -f ./proxy/docker-compose.yml logs -t -f
+d200f15c010a5ec3632e76187cc414f5|file:///Users/Kouiti/local_file/maman-homepage/webapp/Makefile|11|2|V|make
+		sudo docker-compose -f ./webapp/docker-compose.yml restart nginx
+431387eb7262e1cfc79b125eb8a67c60|file:///Users/Kouiti/local_file/maman-homepage/webapp/Makefile|10|27|v|make
+	proxy
+b62514b69495aa58c72dce44a11774a8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|19|1|V|go
+	    log.Println("get;", service_id)
+438654580dbd8e2f1708c6818a2b42ef|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|134|1|V|go
+			log.Println(len(service.Components))
+be5de871634572b04e582d33a1e35f6b|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|30|12|v|go
+	iint
+1a11944774dbfbbd97fc5a34feb5c80e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|26|6|v|go
+	reate(component Component) Component {
+89a05df4b5c9e57d7ee4769d56753faa|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|156|1|V|go
+			// service.Components = append(service.Components, adding_comp)
+			// update(service)
+56e534e814050277daef94aba7f5eeab|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|150|1|V|go
+					target_comp.NextID = adding_comp.ID
+edcc81fc4313f3add3b8a88328412cec|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|146|11|V|go
+					// 右側に追加する対象のcomponentのNextを追加componentのNextに追加
+e2eb0d63bbd55b89d0553b57012ee3b5|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|148|11|V|go
+					// 右側追加する対象のcomponentの追加したcomponentに追加
+0304ae7648b34304518bd18600199864|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|149|10|V|go
+					// target compをアップデート
+ccb41918b8bb3895a470dda9e1a8df3e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|154|17|V|go
+	        adding_comp.ServiceID = service.ID
+bb445b2dac573c42e40691201f97cffa|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|128|1|V|go
+			var adding_comp components.Component
+			c.ShouldBindJSON(&adding_comp)
+e3b39f072aa1a570d267a04d01b77e14|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|154|3|V|go
+			// AppendComponent(service, adding_comp)
+6db84f9d5a00e2dec005db7c6fa7848a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|154|9|V|go
+	        components.Create(adding_comp)
+13c687e1cbf2cf5e032cd2ea234da5c0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|152|3|V|go
+					adding_comp.NextID = target_comp.ID
+c19529b4c195abab8d88ab3e5308ebb4|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|40|8|V|go
+	    for 
+bd46a849583c4730e8b32d0d230f72a4|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|16|1|V|go
+	func GetHead(service_id int) Component {
+		db := db_conf.DBConnect()
+		var component Component
+	    log.Println("get;", service_id)
+		db.First(&component, "service_id=? AND head=?", service_id, true)
+	    log.Println("get;", component)
+		db.Close()
+		return component
+	}
+aa381dc36b7b89dcc6e849a912d6ca82|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|20|1|V|go
+	type Component struct {
+		gorm.Model
+		ServiceID uint
+		Titles    []Title   `gorm:"foreignKey:ComponentID"`
+		Comments  []Comment `gorm:"foreignKey:ComponentID"`
+		Image     string
+		Type      string
+		TypeID    string
+		Grid      int
+		NextID    uint
+		Head      bool
+	}
+1bf041cf5d2c6112bb8788a3c9765e5e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/models.go|9|1|V|go
+	type Service struct {
+		gorm.Model
+		Title      string
+		Comment    string
+		Show       bool
+		Grouped    bool
+		Img        string
+		Turn       int
+		Components []components.Component `gorm:"foreignKey:ServiceID"`
+	}
+37a6259cc0c1dae299a7866489dff0bd|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|29|65|v|go
+	null
+47f1726eeedf82457c933665a6f595f8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|25|1|V|go
+	func GetTail(service_id int) Component {
+		db := db_conf.DBConnect()
+		var component Component
+	    log.Println("get;", service_id)
+		db.First(&component, "service_id=? AND next_id=?", service_id, 0)
+	    log.Println("get;", component)
+		db.Close()
+		return component
+	}
+0a21cab77e41223b6475c423f4b869a1|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|33|1|V|go
+	type ListComponent []Component
+19225ef9cc557c37c37b04ed0deb9832|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|41|1|V|go
+	        orderedComponents.append(orderedComponents, components.GetTail(service.ID))
+3d94dae7ffd4dc0936f6ef0c5f59bec8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|41|1|V|go
+	    orderedComponents.append(orderedComponents, components.GetTail(service.ID))
+aa54a0869f42b84606c15a789914a563|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|44|8|V|go
+	        components.GetTail(service.ID))
+a82dd3fb04ef5281fb8c7f3d9d94716f|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|40|1|V|go
+	    // 末端のcomponentを配列に追加
+06f00e12fbb1781c3bb674d08172b42e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|50|10|V|go
+	        hi
+c93c34c9ebd74195450fac5819efaffb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|46|1|V|go
+	        // 一つ前のcomponentが取得できなかったら終了
+856df7547e90031632aba46b872ed46d|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|43|16|V|go
+	    while truer{
+5bb8f915b1def50b3d85421f7094c588|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|42|34|V|go
+	    var service_id int = service.ID
+3f5eb10a603ec8e7d54bf2cf6fd8e696|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|40|27|v|go
+	components.ListComponent
+46d295c8a97befd247d2d634ac8cc4b3|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|47|26|v|go
+	CreatedAt
+7b5f601d9ea7fbc5c8e96758f8936a8e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|42|1|V|go
+	    orderedComponents = append(orderedComponents, components.GetTail(int(service.ID)))
+e58fc2dd7ad179bb2fc3f50d29425f7b|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|47|1|V|go
+	        log.Println("now:",now_component)
+9ffa03106212bfda6a41687798efbcab|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|43|29|v|go
+	now_component
+2fe9b6acf339005b138d284031d3c6c3|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|43|1|V|go
+	        log.Println("tail:",orderedComponents)
+7aea2552dfe7eb84b9443b6fc9ba6e01|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|57|22|v|go
+	tail
+7edbcb02ec133b0df78685738aa80b2c|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|57|1|V|go
+	        log.Println("deorder:",orderedComponents)
+0174b0693e3b7482681b20ce2d42bb6a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|46|35|V|go
+	        next_id = orderedComponents
+0738c5770e8d973c5d16c85273459fe9|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|46|35|v|go
+	int(orderedComponents[len(orderedComponents)-1].NextID)
+dc492ab17a9099800736a20943f07fb0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|46|11|V|go
+	        log
+231dfd1d3e166ef9590d86189939d883|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|46|1|V|go
+	        log.Println(int(orderedComponents[len(orderedComponents)-1].NextID))
+97f766303b9f2382338166cf457ceb33|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|46|1|V|go
+	        log.Println(orderedComponents[len(orderedComponents)-1].NextID)
+c48c985bb1f03859b9b6de6a02a25654|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|48|64|V|go
+	        log.Println(orderedComponents[len(orderedComponents)-1])
+cdc399df7c6f8e934f49f8c1879339c1|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|46|1|V|go
+	        log.Println(len(orderedComponents)-1)
+c118032a0be385298b753bc17d8795a3|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|46|1|V|go
+	        log.Println(len(orderedComponents))
+	        log.Println(len(orderedComponents)-1)
+	        log.Println(orderedComponents[len(orderedComponents)-1])
+	        log.Println(orderedComponents[len(orderedComponents)-1].NextID)
+	        log.Println(int(orderedComponents[len(orderedComponents)-1].NextID))
+6c717c12c0c61ec91c95563518c25b2b|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|25|1|V|go
+	func GetPrev(next_id uint) Component {
+		db := db_conf.DBConnect()
+		var component Component
+	    log.Println("get;", ne)
+		db.First(&component, "service_id=? AND head=?", service_id, true)
+	    log.Println("get;", component)
+		db.Close()
+		return component
+	}
+2343851b0abdd31c6347c058242b27bd|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|18|27|V|go
+	    log.Println("get;", ne)
+d4fd1a2c6a3094b54183b5c10c065c93|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|18|24|v|go
+	sehead
+d427a7001a572c5567880f7719201570|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|18|39|v|go
+	vice_id
+03846d8d8d3764ebfe26463d1b9ef290|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|19|34|V|go
+	    log.Println("get;", component)
+bb709f7601cedce45e4e04befc860d2b|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|138|9|V|go
+				adding_comp.Head = true
+9d758945a206c0f9a9ded0951f7706e6|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|142|6|V|go
+					adding_comp.Head = true
+6e633792d8513d518b607121b3eff0a2|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|126|9|V|go
+	        // comp_idをもつcomponentの右側に追加する
+8ac1aea416601d7cb23046e7b06324e5|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|1|1|V|go
+	package services
+3246a54bc66f4abd3b9f325669c25fa4|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|18|1|V|go
+	func Urls(router *gin.Engine) *gin.Engine {
+e127952b2c2b5f577ce3116e142930a2|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|15|1|V|go
+		"go-app/svc/components"
+c6c933e9e2abedf09e84f4a2d779c5ac|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|3|1|V|go
+	import (
+		// "encoding/json"
+		"log"
+		"net/http"
+		"strconv"
+		"time"
+		// "io/ioutil"
+		// "fmt"
+	
+		"github.com/gin-gonic/gin"
+		_ "github.com/go-sql-driver/mysql"
+	
+		"go-app/svc/components"
+	)
+95951a67d0c23276385b14754a43c7c6|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|125|1|V|go
+		router.POST("/services/:service_id/append/component/:comp_id", func(c *gin.Context) {
+	        // comp_idをもつcomponentの右側に追加する
+	        // comp_id == 0の場合先頭に追加する
+			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
+	
+			service_id, _ := strconv.Atoi(c.Param("service_id"))
+			service := get(service_id)
+	
+			var adding_comp components.Component
+			c.ShouldBindJSON(&adding_comp)
+	        adding_comp.ServiceID = service.ID
+	
+			if len(service.Components) == 0 {
+	            // 初めて追加する場合
+				adding_comp.NextID = 0
+				adding_comp.Head = true
+	            components.Create(adding_comp)
+			} else {
+				if comp_id == 0 {
+	                // 先頭に追加する場合
+					adding_comp.Head = true
+					head_comp := service.Components[0]
+					head_comp.Head = false
+					adding_comp.NextID = head_comp.ID
+					components.Update(head_comp)
+	                components.Create(adding_comp)
+				} else {
+	                // 途中に追加or末端に追加する場合
+					target_comp := components.Get(comp_id)
+					adding_comp.Head = false
+					adding_comp.NextID = target_comp.ID
+	                adding_comp = components.Create(adding_comp)
+					target_comp.NextID = adding_comp.ID
+					components.Update(target_comp)
+				}
+			}
+	
+			c.JSON(202, get(service_id))
+		})
+		return router
+73747f2541e71fd1a78395b45f9426f5|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|124|1|V|go
+	
+		router.POST("/services/:service_id/append/component/:comp_id", func(c *gin.Context) {
+	        // comp_idをもつcomponentの右側に追加する
+	        // comp_id == 0の場合先頭に追加する
+			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
+	
+			service_id, _ := strconv.Atoi(c.Param("service_id"))
+			service := get(service_id)
+	
+			var adding_comp components.Component
+			c.ShouldBindJSON(&adding_comp)
+	        adding_comp.ServiceID = service.ID
+	
+			if len(service.Components) == 0 {
+	            // 初めて追加する場合
+				adding_comp.NextID = 0
+				adding_comp.Head = true
+	            components.Create(adding_comp)
+			} else {
+				if comp_id == 0 {
+	                // 先頭に追加する場合
+					adding_comp.Head = true
+					head_comp := service.Components[0]
+					head_comp.Head = false
+					adding_comp.NextID = head_comp.ID
+					components.Update(head_comp)
+	                components.Create(adding_comp)
+				} else {
+	                // 途中に追加or末端に追加する場合
+					target_comp := components.Get(comp_id)
+					adding_comp.Head = false
+					adding_comp.NextID = target_comp.ID
+	                adding_comp = components.Create(adding_comp)
+					target_comp.NextID = adding_comp.ID
+					components.Update(target_comp)
+				}
+			}
+	
+			c.JSON(202, get(service_id))
+		})
+		return router
+	}
+fe7ed5e2d560c561786c088196bb6263|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+	func get(id int) Service {
+		db := db_conf.DBConnect()
+		var service Service
+		db.First(&service, "id= ?", id)
+	
+		// componentのリストをorderdComponentsとして定義
+		var orderedComponents []components.Component
+		// 対象のserviceに関連付けられたcomponentの末端要素を配列に追加
+		orderedComponents = append(orderedComponents, components.GetTail(int(service.ID)))
+		log.Println("tail:", orderedComponents)
+		for i := 0; i < 100; i++ {
+			// 現在の先頭の要素から一つ前のcomponentを取得
+			now_component := components.GetPrev(orderedComponents[len(orderedComponents)-1].ID)
+			// 一つ前のcomponentが取得できなかったら終了
+			log.Println("now:", now_component)
+			if now_component.ID == 0 {
+				break
+			}
+			// 取得した一つ前のcomponentを末端に追加
+			// この時点では逆順でsliceに追加されていく
+			orderedComponents = append(orderedComponents, now_component)
+		}
+		// ordeorderedComponentsを逆順に並び替える
+		log.Println("deorder:", orderedComponents)
+		for i := 0; i < len(orderedComponents)/2; i++ {
+			orderedComponents[i], orderedComponents[len(orderedComponents)-i-1] =
+				orderedComponents[len(orderedComponents)-i-1], orderedComponents[i]
+		}
+		log.Println("order:", orderedComponents)
+	    service.Components = orderedComponents
+	
+		for i, component := range service.Components {
+			db.Model(&component).Association("Titles").Find(&service.Components[i].Titles)
+			db.Model(&component).Association("Comments").Find(&service.Components[i].Comments)
+		}
+	
+		db.Close()
+		return service
+	}
+f0891ecfe0927f3d44b8747ceeb577c7|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|1|1|V|go
+	package services
+	
+	import (
+		"go-app/db_conf"
+		"go-app/svc/components"
+		"log"
+	)
+9e922d3dcb67fdacb75386c72a5fb05b|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|151|1|V|go
+					adding_comp.Head = false
+ad9335e4375911ca72ade03671a1afc1|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/models.go|30|1|V|go
+		Head      bool
+92b2f66baaccda3c276fee159a3437be|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|8|1|V|go
+	func Get(id int) Component {
+		db := db_conf.DBConnect()
+		var component Component
+		db.First(&component, "id=?", id)
+		db.Close()
+		return component
+	}
+	func GetPrev(next_id uint) Component {
+		db := db_conf.DBConnect()
+		var component Component
+		db.First(&component, "next_id=?", next_id)
+		db.Close()
+		return component
+	}
+	
+	func GetTail(service_id int) Component {
+		db := db_conf.DBConnect()
+		var component Component
+	    log.Println("get;", service_id)
+		db.First(&component, "service_id=? AND next_id=?", service_id, 0)
+	    log.Println("get;", component)
+		db.Close()
+		return component
+	}
+dc7abd0fb20385ab523623a92a426909|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|1|1|V|go
+	package components
+	
+	import (
+		"go-app/db_conf"
+		"log"
+	)
+84898ceb34434f64561f8b4c08b87fcd|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|144|1|V|go
+					head_comp := service.Components[0]
+8577b88252b39df4cf5b2289487866d8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|16|v|go
+	components.GetHead(service_id)
+024de21cb9ef0ffa848aa8730ce97d2d|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|100|18|v|go
+	service.Components[0]
+ac777bec809c0888ed8fc4fe8e776a8b|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|100|17|V|go
+					head_comp := 
+7b1a2f34a7331bf5403602c1f631c3d9|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|19|1|V|go
+		router.GET("/services/get/:id", func(c *gin.Context) {
+			id, err := strconv.Atoi(c.Param("id"))
+			if err != nil {
+				c.JSON(http.StatusBadRequest, err)
+			} else {
+				c.JSON(200, get(id))
+			}
+		})
+fa3a863510ae9f56774829710226356e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|60|26|v|javascript
+	orderdComponents
+cccb62ff120d2777130d6314786319d4|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|49|1|V|javascript
+	    const orderdComponents = () => {
+	        for (let comp of Service["Components"]) {
+	            if (comp["Head"] == 1) {
+	                var components = [comp];
+	                break;
+	            }
+	        }
+	        for (let i = 0; i < 1000; i++) {
+	            var is_exist = false;
+	            for (let comp of Service["Components"]) {
+	                if (components[components.length - 1].NextID == comp["ID"]) {
+	                    components.push(comp);
+	                    is_exist = true;
+	                    break;
+	                }
+	            }
+	            if (!is_exist) {
+	                break;
+	            }
+	        }
+	        if (components != undefined) {
+	            return components;
+	        }
+	        return [];
+	    };
+0cf31b2c283ce3431794586df7b0996d|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|65|4|V|go
+	    
+f516370e1c925b8f215608a13a8e21c0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|62|1|V|go
+		log.Println("order:", orderedComponents)
+c1b4761f0bce56dd22fce623821d9534|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|48|1|V|go
+			log.Println("now:", now_component)
+4c2c12cae6e7f72a2641f4aece72c3d8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|61|7|V|go
+	    if 
+2ae0f2991551eb729b1b5c699ce4fcd8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|61|7|V|go
+	    service.Components = orderedComponents
+869e8f614a29214d959b68542819f3b6|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|46|1|V|go
+		log.Println("tail:", orderedComponents)
+		for i := 0; i < 100; i++ {
+			// 現在の先頭の要素から一つ前のcomponentを取得
+			now_component := components.GetPrev(orderedComponents[len(orderedComponents)-1].ID)
+			// 一つ前のcomponentが取得できなかったら終了
+			if now_component.ID == 0 {
+				break
+			}
+			// 取得した一つ前のcomponentを末端に追加
+			// この時点では逆順でsliceに追加されていく
+			orderedComponents = append(orderedComponents, now_component)
+		}
+		// ordeorderedComponentsを逆順に並び替える
+		log.Println("deorder:", orderedComponents)
+		for i := 0; i < len(orderedComponents)/2; i++ {
+			orderedComponents[i], orderedComponents[len(orderedComponents)-i-1] =
+				orderedComponents[len(orderedComponents)-i-1], orderedComponents[i]
+		}
+	
+		for i, component := range service.Components {
+			db.Model(&component).Association("Titles").Find(&service.Components[i].Titles)
+			db.Model(&component).Association("Comments").Find(&service.Components[i].Comments)
+		}
+50f1238a2e7e9f935636d48d4b43d7b8|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|44|20|V|go
+			log.Println("tail:", orderedComponents)
+a5abf47e6644ade23329ffd63f5fcbd6|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|56|20|V|go
+			log.Println("deorder:", orderedComponents)
+8d6dd211cc3f4e416d44187769fd2706|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|65|5|V|go
+	        service.Components = orderedComponents
+60a3d84ea70a6b2c83d79157528621f4|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|69|4|V|go
+	    service.Components = []components.Component
+a1096d10331a6f75a14d6c3db0335cc9|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|65|7|v|go
+	else {
+9c63749e39501c4e31e8c081e01df0df|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|66|5|V|go
+	        service.Components = [null]
+ea5a1cbe764918679997181a3ea281d3|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|66|5|V|go
+	    }
+2b25160c20b27b2dd7e96b4a36982058|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|22|1|V|javascript
+	            if(data["Components"] == null) {
+	                data["Components"] == []
+	            }
+cb58fdf4d205977f45c5b434e9ab40eb|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|43|1|V|go
+		if orderedComponents[0].ID != 0 {
+			for i := 0; i < 100; i++ {
+				// 現在の先頭の要素から一つ前のcomponentを取得
+				now_component := components.GetPrev(orderedComponents[len(orderedComponents)-1].ID)
+				// 一つ前のcomponentが取得できなかったら終了
+				if now_component.ID == 0 {
+					break
+				}
+				// 取得した一つ前のcomponentを末端に追加
+				// この時点では逆順でsliceに追加されていく
+				orderedComponents = append(orderedComponents, now_component)
+			}
+			// ordeorderedComponentsを逆順に並び替える
+			for i := 0; i < len(orderedComponents)/2; i++ {
+				orderedComponents[i], orderedComponents[len(orderedComponents)-i-1] =
+					orderedComponents[len(orderedComponents)-i-1], orderedComponents[i]
+			}
+	        service.Components = orderedComponents
+			for i, component := range service.Components {
+				db.Model(&component).Association("Titles").Find(&service.Components[i].Titles)
+				db.Model(&component).Association("Comments").Find(&service.Components[i].Comments)
+			}
+	    }
+151bef00012561d5b1fa51ab10913718|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|63|13|v|javascript
+	titles
+68b69414f8de7653d916017b485c117f|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|69|13|V|javascript
+	            // Images: document.getElementById("form_grid").files,
+4d0abe79731192bd5910a64b107c6590|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|73|13|V|javascript
+	        console.log(data);
+3dfc5b0f83a03f11cf5213825dc9ec50|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|190|13|V|javascript
+	                <Form />
+49e8539f0feabb91e914f8eacbd19a69|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|137|96|V|javascript
+	            console.log(CompDefinition[SelectedComponentType][SelectedComponentTypeID]["images"]);
+438c3f275f6e23ed5f5ee2c21630154c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/Image.js|10|19|V|javascript
+	            return;
+8305698999766a8b00236195ba545f66|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|136|1|V|go
+	        log.Println(adding_comp)
+46cd4acd64a94ed8f1b85b34625bd537|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|80|1|V|go
+			log.Println(service_id)
+			log.Println(service.ID)
+7995627118a0711059620aa848ad7477|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|134|1|V|go
+	        log.Println(adding_comp)
+	        log.Println(adding_comp.Grid)
+a0faef0851b4294c06f2b94bb1cb2044|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|71|19|v|javascript
+	Integer
+488317e0d88fd03b28fe94b06194eba0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|120|1|V|go
+	            log.Println("jiojoijoijio")
+8facf69b743940137f8e059ad4e22208|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|121|26|v|go
+	jiojoijoijio
+d299e433e025f60f3910e4dc1470a3af|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|126|1|V|go
+		router.POST("/services/:service_id/append/component/:comp_id", func(c *gin.Context) {
+	        // comp_idをもつcomponentの右側に追加する
+	        // comp_id == 0の場合先頭に追加する
+			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
+	
+			service_id, _ := strconv.Atoi(c.Param("service_id"))
+			service := get(service_id)
+	
+			var adding_comp components.Component
+			c.ShouldBindJSON(&adding_comp)
+	        adding_comp.ServiceID = service.ID
+	
+			if len(service.Components) == 0 {
+	            // 初めて追加する場合
+				adding_comp.NextID = 0
+	            components.Create(adding_comp)
+			} else {
+				if comp_id == 0 {
+	                // 先頭に追加する場合
+					head_comp := service.Components[0]
+					adding_comp.NextID = head_comp.ID
+					components.Update(head_comp)
+	                components.Create(adding_comp)
+				} else {
+	                // 途中に追加or末端に追加する場合
+					target_comp := components.Get(comp_id)
+					adding_comp.NextID = target_comp.NextID
+	                adding_comp = components.Create(adding_comp)
+					target_comp.NextID = adding_comp.ID
+					components.Update(target_comp)
+				}
+			}
+	
+			c.JSON(202, get(service_id))
+		})
+42097822a0fe0880ba64c8014c5761de|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|163|22|V|go
+	        // comp_id == 0の場合先頭に追加する
+de4e52e0ccc47be14334b6005f20f580|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|17|1|V|javascript
+	            for (let d of data) {
+	                d.Img = ApiUrl + "/api/image/" + d.Img;
+	            }
+33bd909e90813ab08dd5b65bedce0bea|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|25|33|V|javascript
+	            for (let d of data) {
+c76cba4466d4db4ddc040a8a3fc7c811|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|25|45|V|javascript
+	                d["Components"]["Image"] = ApiUrl + "/api/image/" + d.Img;
+b8e24b5a7b6801b66a20e20213f038b9|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|25|1|V|javascript
+	            data["Components"]["Image"] = ApiUrl + "/api/image/" + data.Image;
+e01324ab85dcd5d7aec80e4e0abea83d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|28|17|V|javascript
+	                = ApiUrl + "/api/image/" + data.Image;
+50e679daf51a93c1ffd9cf5ae4961181|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|25|1|V|javascript
+	            for (let comp of data["Components"]) {
+	                comp["Image"] = ApiUrl + "/api/image/" + comp.Image;
+	            }
+69f4b7e5c6ca1ddbe7f0319b1945b16a|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|46|1|V|javascript
+	            <a
+	                className="pointer"
+	                onClick={() => navigate("/home/service/" + service_id + "/components/" + component_id + "/create")}
+	            >
+	                右側に新しく追加
+	            </a>
+705527af8b663b6e8b17bc8af3341966|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|57|18|V|javascript
+	                    右側に新しく追加
+76ea0bebb3c22822b4f0dd9c9fd021c5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|55|111|v|javascript
+	create
+637a4c38bfc98e48f84183a998c62cfd|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|79|1|V|javascript
+	            .post("/api/services/" + service_id + "/append/component/" + component_id, data)
+	            .then(function (response) {
+	                console.log(response.data);
+	                axios
+	                    .post("/api/services/" + service_id + "/append/component/" + component_id + "/upimage", imgform)
+	                    .then(function (response) {
+	                        console.log(response.data);
+	                    })
+	                    .catch(function (error) {
+	                        console.log(error);
+	                    });
+	            })
+	            .catch(function (error) {
+	                console.log(error);
+	            });
+48f6495017bcd6f3a86ed5516bc51425|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|60|1|V|javascript
+	                axios
+	                    .post("/api/services/" + service_id + "/append/component/" + component_id + "/upimage", imgform)
+	                    .then(function (response) {
+	                        console.log(response.data);
+	                    })
+	                    .catch(function (error) {
+	                        console.log(error);
+	                    });
+5c55fb848995deb6dde7267421bf6c46|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|46|1|V|javascript
+	            <div>
+e3b6c7818808cf0b9022c774f39d91b5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|69|1|V|javascript
+	            </div>
+ceccefee3a0913a41073d1b9dcefc044|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|122|1|V|javascript
+	                    <Button variant="primary" onClick={handleClose}>
+	                        Save Changes
+	                    </Button>
+4b8c3a5db83fc8aff6c25f76570bc676|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|42|1|V|go
+	func Update(component Component) Component {
+		db := db_conf.DBConnect()
+		defer db.Close()
+		log.Print(component.ID)
+		if err := db.Save(&component).Error; err != nil {
+			log.Println(err)
+		}
+		return component
+	}
+06933067aafd48425d67bcb01bba5cb6|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|52|6|v|go
+	Update
+8f9bfe9d1345237cb3b2b205864da075|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|55|16|v|go
+	User
+15caec2ed0817d0898259f26e2b63c11|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|56|1|V|go
+		if err := db.Save(&component).Error; err != nil {
+			log.Println(err)
+		}
+700c216fb376666eaeda0c892e8bdc09|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|56|9|v|go
+	component
+086fd796af3fd231fbc4108ed2a4dace|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|165|39|V|go
+			service_id, _ := strconv.Atoi(c.Param("service_id"))
+3995363bdd7ea947b77823ae628ef9bd|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|168|15|v|go
+	components.Component
+7c9e2091e2ee42cf1b641924a301c4a0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|171|1|V|go
+	
+	
+			c.ShouldBindJSON(&adding_comp)
+	        adding_comp.ServiceID = service.ID
+	
+			if len(service.Components) == 0 {
+	            // 初めて追加する場合
+				adding_comp.NextID = 0
+	            components.Create(adding_comp)
+			} else {
+				if comp_id == 0 {
+	                // 先頭に追加する場合
+					head_comp := service.Components[0]
+					adding_comp.NextID = head_comp.ID
+					components.Update(head_comp)
+	                components.Create(adding_comp)
+				} else {
+	                // 途中に追加or末端に追加する場合
+					target_comp := components.Get(comp_id)
+					adding_comp.NextID = target_comp.NextID
+	                adding_comp = components.Create(adding_comp)
+					target_comp.NextID = adding_comp.ID
+					components.Update(target_comp)
+				}
+			}
+357e3ae5eeb8648b8df5d1460fc5710a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|173|1|V|go
+	        prev_comp.NextID = delete_comp.NextID
+	        components.Update(prev_comp)
+07589029721e600e88dbbc1e046a769e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|166|3|V|go
+			service := get(service_id)
+b0dc1e2985b388b120ee0dd7baca7034|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|172|19|v|go
+	service_id
+05fe51d96fbb3fe7dd04f6b90fd426af|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|16|1|V|javascript
+	    const navigate = useNavigate();
+cc70dd840666b60abec51268b02c64b4|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|3|1|V|javascript
+	import { useNavigate } from "react-router";
+f9f90eeaf400d228facde6bc48da5cfb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|92|22|v|javascript
+	always
+67af4b18638b3f12573a7ab634ce8806|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|13|1|V|yaml
+	      - TZ=Asia/Tokyo
+	      - VIRTUAL_HOST=maman2030-himeji.com,www.maman2030-himeji.com # nginx-proxyのホスト設定 ※本番ではlocalhost部分を「example.com,www.example.com」等にする
+	      - LETSENCRYPT_HOST=maman2030-himeji.com,www.maman2030-himeji.com # Let's Encryptのホスト設定 ※本番ではlocalhost部分を「example.com,www.example.com」等にする
+	      - LETSENCRYPT_EMAIL=bdkouiti5013@gmail.com # Let's Encryptのメール設定
+	      - LETSENCRYPT_TEST=false # Let's Encryptのテストかどうかのフラグ 本番ではfalseにする (指定しないとテスト扱いになる)
+	        # - CERT_NAME=default # ローカルで認証局を立てるときに使う ※本番ではLet's Encryptから直接取得するのでコメントアウトする
+	        #- HTTPS_METHOD=noredirect # リダイレクトを無効にする
+5aef41c8099d29e6b86f610d4179c588|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|26|1|V|yaml
+	        # - CERT_NAME=default # ローカルで認証局を立てるときに使う ※本番ではLet's Encryptから直接取得するのでコメントアウトする
+	        #- HTTPS_METHOD=noredirect # リダイレクトを無効にする
+88d17fc734ffd15a4273c33a1ba9b627|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|21|7|V|yaml
+	      - TZ=Asia/Tokyo
+d2bb58e146db593d31793f2ca555cd40|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker/golang/Dockerfile|2|1|V|dockerfile
+	COPY ./go-app /go/src/go-app
+66a020c8b45d7306fc39e780c730aa14|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|38|1|V|yaml
+	    volumes:
+	      - ./react-app:/app/react
+6a2516e4de081f0388ef4a505747251d|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker/react/Dockerfile|3|12|V|dockerfile
+	    volumes:
+bd96af738f1f409d575be9261c482fdf|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker/react/Dockerfile|3|16|V|dockerfile
+	      - ./react-app:/app/react
+ec4cbde4178c531298017e3093195bf3|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|1|V|javascript
+	    console.log("------------------------")
+58f313041aa16e28096210b4bd8f3e28|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|36|16|v|javascript
+	("------------------------")
+7a94e9e6fccf02fb81e5c79466b41df1|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|36|24|V|javascript
+	    console.log(navigate)
+add910413d73cb985e9047bac80bf0ad|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|26|16|V|javascript
+	    console.log()
+d3427c30c47e75e01bde5b8e6d21b2f2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|27|17|v|javascript
+	navigate
+d6e13e96fdfa55f4d4847f83f4dafc33|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|17|33|V|javascript
+	    const location = useLocation();
+a036dbcdd934b1aba4258a10dcaa5ab0|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|1|50|v|javascript
+	useLocation
+be05d559ccc3262d3e7d034ed3c56980|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|26|26|v|javascript
+	pathname
+d5189de027922f81005951e6efe0efd5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|26|17|v|javascript
+	location
+2b7c7882a38be95411692716f365f042|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|25|40|V|javascript
+	    console.log(window.location.hostname)
+0897acf49c7c1ea9f76efe59187aa046|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|33|v|javascript
+	hostname
+9943e2d473dbfa06d941687d92be8354|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|5|V|javascript
+	    console.log(window.location)
+e10037aa39673e41d8b11aec566ad4bd|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|34|1|V|javascript
+	                                <a onClick={() => edit_page(service.ID)} class="pointer">
+	                                    {service.Title}
+	                                </a>
+04fa76a29b59b34afb4c5ea0de0f38d3|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|34|1|V|javascript
+	                                <div className="row">
+b5224129024fd734a1207cb7a3420c09|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|35|1|V|javascript
+	                                <div className="col-11">
+28a1633e683eb1c73cff07551daa2901|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|39|1|V|javascript
+	                            </div
+79bcb7e69cedb26cd08763cce6de2e83|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|58|1|V|javascript
+	                            .post("/api/services/" + service_id + "/delete/component/" + component_id)
+	                            .then(function (response) {
+	                                console.log(response.data);
+	                            })
+	                            .catch(function (error) {
+	                                console.log(error);
+	                            })
+	                            .finally(function () {
+	                                handleClose();
+	                            });
+6c70eb4815f91886df610a720304a368|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|9|35|V|javascript
+	    const [CreateButton, setCreateButton] = useState("");
+06145a21dcec7395085b033e6e169b61|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|7|12|v|javascript
+	Menus
+a209b71c26f43e2f9d785cf0d1a6e9c7|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|7|18|v|javascript
+	setMenus
+5dbeac672e43581259356cd19d43887d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|52|12|V|javascript
+	                                        handleClose();
+7cd13dda1aa6862c57f9aad8a1cd3bae|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|44|98|v|javascript
+	componwent_id
+e3a0e004d0467f5a8793361634ae4f85|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|41|49|V|javascript
+	                                            style
+2e452cad771cf7ae88339201dd5b6c78|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|33|49|V|javascript
+	                                    <div className="col-11">
+8fa5f2eff87ff2e6bf8b55b43bffe642|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|36|42|V|javascript
+	                                    </div>
+fac55b9bf8f6afdc9e10aa0da3069eed|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|36|49|V|javascript
+	                                    <div className="col-1">
+3999039cc9b4d69a327e522916c0d484|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|54|38|V|javascript
+	                                </div>
+5f93822f6cc4bf04387ac51a7040d4cb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|39|1|V|javascript
+	                                        var result = window.confirm("ボタンをクリック！");
+	                                        if (result) {
+c60034a53fbf0f154dd42423d3910498|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|42|42|v|javascript
+	 else {
+bf300ea41838e96b852c362a3fc0f8f2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|43|41|V|javascript
+	                                            console.log("キャンセルがクリックされました");
+af0e0dd99b0ed8cf47d052ff19cedbdb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|43|41|V|javascript
+	                                        }
+1e2de0e955d9acc528f3e4c753889cd6|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|19|1|V|go
+		router.GET("/services/get/:id", func(c *gin.Context) {
+			id, err := strconv.Atoi(c.Param("id"))
+			if err != nil {
+				c.JSON(http.StatusBadRequest, err)
+			} else {
+				c.JSON(200, get(id))
+			}
+		})
+	
+415d655349a60b5468938c2a92c81ca2|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|52|1|V|go
+	func Delete(component Component) Component {
+		db := db_conf.DBConnect()
+		defer db.Close()
+	    db.Delete(&component)
+		return component
+	}
+b508b0677c7f3b194e6505c8a059a64b|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|31|1|V|go
+	
+			if err != nil {
+				c.JSON(http.StatusBadRequest, err)
+			} else {
+				c.JSON(200, get(id))
+			}
+cf7218b51117112b31ea8a819472bb54|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|24|1|V|go
+				c.JSON(200, get(id))
+2f9e3eb590d1b44de779bb0b02a7aa16|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|41|22|V|javascript
+	                                            console.log("本当に消去しますか？");
+b326b5062b2f0e69046810717534cb09|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|50|61|v|javascript
+	true
+6543f38f68a2d24819b14b9c50a72cbf|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|18|27|v|python
+	data.split(":")[0]
+	
+3ea464e67fb7f679409041b12b59e37e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|18|27|v|python
+	data.split(":")[0]
+625f0f685dd25cf6c5379bace11abe2c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|18|26|V|python
+	                data_id = 
+1dd25bb6874993700425e0d04cce7c6b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|20|1|V|python
+	                    id_list[i*2-1].append(data_id)
+a565e755709166653ad81ac92b39cc15|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|21|41|v|python
+	data_id
+80f50a65093ac8a001a403e3d17ee19b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|76|21|v|python
+	write_id_list
+4b1e992f5790c82c3cd97e8fe8739a39|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|76|34|v|python
+	id_list
+9b66f777d784aefbc3f84a563420b8bb|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|76|53|v|python
+	t_dir_name
+b54b57c45d73814ffd5038fee2ee475d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|68|34|V|python
+	        print(source_dir_name_list)
+7f8d2e57fc21a848b95faa77431d502d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|78|40|V|python
+	                print("file not found ", source_dir_name)
+37424d50f047549689ac5287b2715f77|file:///Users/Kouiti/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_biope.py|95|1|V|python
+	        print("error /biope2")
+	        import traceback
+	        traceback.print_exc()
+dfc3d255e4c9666b47a2bf3356d76152|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|78|9|V|python
+	                print("error /biope2")
+04d00dff589bcb89c6e1491d242eb397|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|21|1|V|python
+	                    print(i)
+ce995c60e23332803361476e35cd06e5|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|21|1|V|python
+	                    print(i * 2)
+	                    print(len(id_list))
+	                    print(id_list[i * 2])
+347996f1c98047daecb66bad50c1f5ea|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|71|5|V|python
+	            # try:
+13b78c548c11e22ec894491882ae16ee|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|76|1|V|python
+	                # except:
+	                #     import traceback
+	                #     traceback.print_exc()
+5d190346e8fe6515c59be1199564a559|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|29|1|V|python
+	                id_list1[i].append(id_list2[i][j])
+1d9d0cda332d366992279b70cf7a0856|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/expansion_tsv.py|1|1|V|python
+	import os
+	import re
+	import csv
+	import os
+	import sys
+	sys.path.append(os.path.join(os.path.dirname(__file__), '../'))
+	from mylib import general_method as gm
+	from mylib.psiquic_class import PQdataList, PQdata
+	import glob
+	
+	from copy import copy
+	
+	def get_target_id(column_data: str, db_name: str):
+	    if db_name in column_data:
+	        return (
+	            column_data.split(db_name + ":")[1]
+	            .split("(")[0]
+	            .split("|")[0]
+	            .replace('"', "")
+	        )
+	    else:
+	        False
+	
+	
+	def has_bar_in_row(row):
+	    for column in row:
+	        if "|" in column:
+	            return True
+	    return False
+	
+	
+	def has_bar_in_row_list(row_list: list):
+	    for row in row_list:
+	        if has_bar_in_row(row):
+	            return True
+	    return False
+	
+	
+	def expansion_tsv_row(row_list: list):
+	    result_list = []
+	    for row in row_list:
+	        if has_bar_in_row(row):
+	            for i in range(len(row)):
+	                if "|" in row[i]:
+	                    row_a = copy(row)
+	                    row_a[i] = re.split("|", row[i])[0]
+	                    row_b = copy(row)
+	                    row_b[i] = re.split("[|\t$]", row[i])[1]
+	                    result_list.append(row_a)
+	                    result_list.append(row_b)
+	                    break
+	        else:
+	            result_list.append(row)
+	
+	    if has_bar_in_row_list(result_list):
+	        result_list = expansion_tsv_row(result_list)
+	    return result_list
+	
+	
+	def list2tsv(data: list):
+	    result = ""
+	    for i in range(len(data)):
+	        if i != 0:
+	            result += "\t"
+	
+	        if "psi-mi" in data[i]:
+	            result += data[i].split('"')[1].split(":")[1]
+	        elif ":" in data[i]:
+	            result += data[i].split(":")[1].split("(")[0]
+	        else:
+	            result += data[i]
+	    return result
+	
+	
+	# barで分けて展開したものをファイルの保存
+	def expansion_tsv(dirname):
+	    services_list = gm.list_serveice()
+	    column_label = gm.list_column_label()
+	    pqdatalist = PQdataList()
+	
+	    for service in services_list:
+	        dir_name = dirname + "/" + service
+	        file_list = glob.glob(dir_name + "/*.tsv", recursive=True)
+	        for i in range(len(file_list)):
+	            os.mkdir(dirname + "/" + service + "/" + service + str(i))
+	
+	            with open(dir_name + ".tsv") as f1:
+	                reader = csv.reader(f1, delimiter="\t")
+	                header = next(reader)
+	                for row in reader:
+	                    if has_bar_in_row(row):
+	                        # |で区切られてるrow dataを展開
+	                        row_list = expansion_tsv_row([row])
+	                        for devided_row in row_list:
+	                            pqdatalist.add(devided_row)
+	            # ファイルへの出力
+	            for i in range(len(pqdatalist.data)):
+	                pqdata = pqdatalist.data[i]
+	                f = open(dir_name + "_s" + str(i) + ".tsv", "w")
+	                f.write(list2tsv(column_label))
+	                f.close()
+	                for row in pqdata.row_list:
+	                    f = open(dir_name + "_s" + str(i) + ".tsv", "a")
+	                    f.write("\n" + list2tsv(row))
+	                    f.close()
+	                print(pqdata.id_set)
+	                print("created ", dir_name + "_s" + str(i) + ".tsv")
+	
+	
+	if __name__ == "__main__":
+	    dirname = "test_data/"
+	    # dirname = "data/"
+	    # main1(dirname)
+	    expansion_tsv(dirname)
+9dd2d7633bbf4fe513709406202eff4f|file:///Users/Kouiti/Desktop/NEW.PY|112|1|V|python
+	    # dirname = "data/"
+	    # main1(dirname)
+954eef6d6eac59aca304b6d7abb4fb3e|file:///Users/Kouiti/Desktop/NEW.PY|112|19|v|python
+	dirname
+6bc59662abc81932cb371c948f719aca|file:///Users/Kouiti/Desktop/NEW.PY|111|9|v|python
+	ame 
+4b0bc2c5989af0d717ee528d10f9f562|file:///Users/Kouiti/Desktop/NEW.PY|77|1|V|python
+	    services_list = gm.list_serveice()
+	    column_label = gm.list_column_label()
+	    pqdatalist = PQdataList()
+	
+c8fd38c978813a13f97cc0638d5421ff|file:///Users/Kouiti/Desktop/NEW.PY|77|1|V|python
+	    for service in services_list:
+	        dir_name = dirname + "/" + service
+	        file_list = glob.glob(dir_name + "/*.tsv", recursive=True)
+	        for i in range(len(file_list)):
+	            os.mkdir(dirname + "/" + service + "/" + service + str(i))
+	
+564d2b9af333438eae1e54afd64dfd91|file:///Users/Kouiti/Desktop/NEW.PY|77|23|v|python
+	dir_name
+9d626116e08eaed3d94480a770ced0da|file:///Users/Kouiti/Desktop/NEW.PY|78|10|V|python
+	        if
+be3a0b52e523ae86117a09ccacb61c0b|file:///Users/Kouiti/Desktop/NEW.PY|78|1|V|python
+	        if file_name[-4:] == ".tsv"
+0cc8168b7a74ec6f5ed50a748042c1c8|file:///Users/Kouiti/Desktop/NEW.PY|80|36|V|python
+	        reader = csv.reader(f1, delimiter="\t")
+21a45621dfded55b2675162380f67929|file:///Users/Kouiti/Desktop/NEW.PY|79|1|V|python
+	            reader = csv.reader(f1, delimiter="\t")
+b34d1b9d47dfc3a232a08d11a9cb5ea3|file:///Users/Kouiti/Desktop/aa.py|90|21|v|python
+	row_list
+b1da36eb555b2b3c95d8bbecd5e80667|file:///Users/Kouiti/Desktop/aa.py|92|24|v|python
+	pqdatalist
+8d777f385d3dfec8815d20f7496026dc|file:///Users/Kouiti/Desktop/aa.py|92|36|v|python
+	data
+ecddbf71a5062242be4d0ed9aab21166|file:///Users/Kouiti/Desktop/aa.py|93|11|V|python
+	        pqdata = pqdatalist.data[i]
+e28edd5c66dd65601a3d964f0e417875|file:///Users/Kouiti/Desktop/aa.py|96|1|V|python
+	        for row in pqdata.row_list:
+	            f = open(dir_name + "_s" + str(i) + ".tsv", "a")
+	            f.write("\n" + list2tsv(row))
+	            f.close()
+	        print(pqdata.id_set)
+	        print("created ", dir_name + "_s" + str(i) + ".tsv")
+186251aa8a2e7c2f9c3050dbd07a512c|file:///Users/Kouiti/Desktop/aa.py|80|20|V|python
+	        if file_name[-4:] == ".tsv":
+28a226e904978543059ce7362cc011ed|file:///Users/Kouiti/Desktop/aa.py|81|1|V|python
+	        elif file_name[-4:] == ".csv":
+	            reader = csv.reader(f1, delimiter=",")
+3063991a8b5b94fd58c49d99a8bb3302|file:///Users/Kouiti/Desktop/aa.py|77|1|V|python
+	def expansion_tsv(file_name):
+	    result_list = []
+	    with open(file_name) as f1:
+	        reader = csv.reader(f1, delimiter="\t")
+	        header = next(reader)
+	        for row in reader:
+	            if has_bar_in_row(row):
+	                # |で区切られてるrow dataを展開
+	                row_list = expansion_tsv_row([row])
+	                for devided_row in row_list:
+	                    result_list.add(devided_row)
+	    # ファイルへの出力
+	    for row in result_list):
+	        f = open("out.tsv", "w")
+	        f.write(row)
+	        f.close()
+b5b04c0dad6c021b786ceffa88fcfaac|file:///Users/Kouiti/Desktop/aa.py|14|1|V|python
+	def get_target_id(column_data: str, db_name: str):
+	    if db_name in column_data:
+	        return (
+	            column_data.split(db_name + ":")[1]
+	            .split("(")[0]
+	            .split("|")[0]
+	            .replace('"', "")
+	        )
+	    else:
+	        False
+	
+e905bfbf6a3e20518dd54932e7d64020|file:///Users/Kouiti/Desktop/aa.py|13|1|V|python
+	# 対象の行が| を持つか判定
+33a243abe8ab42996a44252f4b5c7ea9|file:///Users/Kouiti/Desktop/aa.py|52|1|V|python
+	def list2tsv(data: list):
+	    result = ""
+	    for i in range(len(data)):
+	        if i != 0:
+	            result += "\t"
+	
+	        if "psi-mi" in data[i]:
+	            result += data[i].split('"')[1].split(":")[1]
+	        elif ":" in data[i]:
+	            result += data[i].split(":")[1].split("(")[0]
+	        else:
+	            result += data[i]
+	    return result
+	
+95b6859cc7cf27e5a1970a8e303f17aa|file:///Users/Kouiti/Desktop/aa.py|2|1|V|python
+	import glob
+7b90963980d484c56dc9dd30f4f0724a|file:///Users/Kouiti/Desktop/aa.py|2|1|V|python
+	from mylib.psiquic_class import PQdataList, PQdata
+38757f0b7d62c9ce22d47e95a66de48a|file:///Users/Kouiti/Desktop/aa.py|2|1|V|python
+	from mylib import general_method as gm
+d4d8cbbf70cc64e81039e3bdabdf0b0b|file:///Users/Kouiti/Desktop/aa.py|7|1|V|python
+	
+	sys.path.append(os.path.join(os.path.dirname(__file__), "../"))
+9940ec9d6462a96f51f674c82c628866|file:///Users/Kouiti/Desktop/aa.py|6|1|V|python
+	import sys
+ed9f4b8f879ddbb59fda1057ea3a2810|file:///Users/Kouiti/Desktop/aa.py|2|1|V|python
+	import os
+31914dd72b66dc25496c9bbd57013345|file:///Users/Kouiti/Desktop/aa.py|53|1|V|python
+	        # csvのヘッダーを飛ばす
+8f758b77301be9ef98c779ee9b116d54|file:///Users/Kouiti/Desktop/aa.py|74|1|V|python
+	        # 行データの読み込み
+a74a993abb3f3561607724dcb364259a|file:///Users/Kouiti/Desktop/aa.py|1|1|V|python
+	from copy import copy
+	import re
+	import csv
+	
+	# 行が | を持つか判定
+	
+	
+	def has_bar_in_row(row):
+	    for column in row:
+	        if "|" in column:
+	            return True
+	    return False
+	
+	
+	# 行のリストが | を持つか判定
+	def has_bar_in_row_list(row_list: list):
+	    for row in row_list:
+	        if has_bar_in_row(row):
+	            return True
+	    return False
+	
+	
+	def expansion_tsv_row(row_list: list):
+	    result_list = []
+	    for row in row_list:
+	        # | が存在する場合に処理を行う
+	        if has_bar_in_row(row):
+	            for i in range(len(row)):
+	                if "|" in row[i]:
+	                    # 以下の6行でカラムを | で分割
+	                    row_a = copy(row)
+	                    row_a[i] = re.split("|", row[i])[0]
+	                    row_b = copy(row)
+	                    row_b[i] = re.split("[|\t$]", row[i])[1]
+	                    result_list.append(row_a)
+	                    result_list.append(row_b)
+	                    break
+	        else:
+	            result_list.append(row)
+	
+	    # | がまだ存在する場合再帰的にexpantion_tsv_rowを実行
+	    if has_bar_in_row_list(result_list):
+	        result_list = expansion_tsv_row(result_list)
+	    return result_list
+	
+	
+	# barで分けて展開したものをファイルの保存
+	def expansion_tsv(file_name):
+	    result_list = []
+	    with open(file_name) as f1:
+	        reader = csv.reader(f1, delimiter="\t")
+	        # tsvのヘッダーを飛ばす
+	        header = next(reader)
+	        # 行データの読み込み
+	        for row in reader:
+	            if has_bar_in_row(row):
+	                # |で区切られてるrow dataを展開
+	                row_list = expansion_tsv_row([row])
+	                for devided_row in row_list:
+	                    result_list.append(devided_row)
+	    # ファイルへの出力
+	    for row in result_list:
+	        f = open("out.tsv", "w")
+	        f.write(row)
+	        f.close()
+	
+	
+	def expansion_csv(file_name):
+	    result_list = []
+	    with open(file_name) as f1:
+	        reader = csv.reader(f1, delimiter=",")
+	        # csvのヘッダーを飛ばす
+	        header = next(reader)
+	        # 行データの読み込み
+	        for row in reader:
+	            if has_bar_in_row(row):
+	                # |で区切られてるrow dataを展開
+	                row_list = expansion_tsv_row([row])
+	                for devided_row in row_list:
+	                    result_list.append(devided_row)
+	    # ファイルへの出力
+	    for row in result_list:
+	        f = open("out.csv", "w")
+	        f.write(row)
+	        f.close()
+	
+	
+	if __name__ == "__main__":
+	    file_name = "test.tsv"
+	    expansion_tsv(file_name)
+ef1c3e68a8fcfd1da92b81fb9b4d5f46|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|70|28|V|python
+	            print("|", end="")
+b33388391ecd6307fa948d054f535fa6|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|26|1|V|
+	alias gl="git log"
+519dd6df60ce6b8241ca8e17cdd28e0a|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|30|10|V|
+	alias gitreset="git reset --hard HEAD"

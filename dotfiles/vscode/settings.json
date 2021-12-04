@@ -33,35 +33,6 @@
     "terminal.integrated.fontSize": 13,
 
 
-    // Vim key mappings
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["<C-e>"],
-            "after": ["<Esc>", "$", "a"]
-        },
-        {
-            "before": ["<C-a>"],
-            "after": ["<Esc>", "^", "i"]
-        }
-    ],
-    "vim.normalModeKeyBindings": [
-        {
-            "before": ["<C-h>"],
-            "commands": ["workbench.action.previousEditor"]
-        },
-        {
-            "before": ["<C-l>"],
-            "commands": ["workbench.action.nextEditor"]
-        },
-        {
-            "before": ["<C-j>"],
-            "after": ["5", "j"]
-        },
-        {
-            "before": ["<C-k>"],
-            "after": ["5", "k"]
-        }
-    ],
 
 
     // Formatter
@@ -99,18 +70,75 @@
 
 
 
-
     //// Extensions
     // vim
+    // カーソル移動をNERDTreeと同じかんじに
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
     "vim.highlightedyank.enable": true,                      //yankした箇所をハイライト表示にする
     "vim.highlightedyank.duration":700,                      //yankした時の色の表示時間
     "vim.visualstar"            : true,                      //カーソル上にあるワードを"*"で検索
+    "workbench.list.keyboardNavigation": "simple",
+    "macros": {
+        "selectAndToggleSidebar": [
+            "list.select",
+            "workbench.action.toggleSidebarVisibility"
+        ]
+    },
 
     // vscode workspace
     "vscodeWorkspaceSwitcher.paths": [
         "~/dotfiles/dotfiles/vscode/vscode-workspace"
     ],
     "vscodeWorkspaceSwitcher.showTreeView": false,
+
+
+
+
+    // Vim key mappings
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["<C-e>"],
+            "after": ["<Esc>", "$", "a"]
+        },
+        {
+            "before": ["<C-a>"],
+            "after": ["<Esc>", "^", "i"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<C-h>"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+        {
+            "before": ["<C-l>"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<C-j>"],
+            "after": ["5", "j"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["5", "k"]
+        },
+        {
+            "before": ["t", "a"],
+            "commands": ["workbench.action.files.newUntitledFile"]
+        },
+        {
+            "before": ["f", "f"],
+            "commands": ["workbench.action.quickOpen"]
+
+        },
+        {
+            "before" : ["u"],
+            "commands" : ["undo"]
+        },
+        {
+            "before" : ["<C-r>"],
+            "commands" : ["redo"]
+        },
+    ],
 }

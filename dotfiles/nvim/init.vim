@@ -8,9 +8,8 @@ set expandtab          "タブ入力を空白に変換
 set splitright         "画面を縦分割する際に右に開く
 set clipboard=unnamed  "yank した文字列をクリップボードにコピー
 set hls                "検索した文字をハイライトする
-lang en_US.UTF-8
 
-
+" undo履歴の永続化
 if has('persistent_undo')
   set undodir=~/.config/nvim/undo
   set undofile
@@ -64,7 +63,6 @@ syntax enable
 " colorscheme solarized
 colorscheme night-owl
 source ~/.config/nvim/colors/colorscheme.vim
-
 
 
 map :init<CR> :source ~/.config/nvim/init.vim<CR>

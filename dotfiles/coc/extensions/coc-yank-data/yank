@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 e643cc62032e4286232ca9630ddebb1a|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|49|45|V|javascript
 	            console.log(Service["Components"])
 c2ba7e785c49050f48da9aacc45c2b85|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|49|30|v|javascript
@@ -224,6 +225,212 @@ a1fa27779242b4902f7ae3bdd5c6d508|file:///Users/Kouiti/local_file/maman-homepage/
 	Type
 31c6b3b50149ec1a3bcc75efbe3c8f09|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|105|1|V|go
 	
+=======
+8f8e7c9ee543e9d13e05bcc47888cf69|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|7|10|v|javascript
+	CompRouting
+7b98a9796a4e9aab3d239d621f2836a2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|7|22|V|javascript
+	import {  } from "views/components/CompRouting";
+51f6f089940f8aa8ba4570fbd5a41937|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|13|1|V|javascript
+	const componentA = {
+	    ID: 1,
+	    titles: ["aaa", "bbb", "ccc"],
+	    comments: ["ddd", "eee", "fff"],
+	    images: [
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg",
+	        "http://0.0.0.0/api/image/2021-1201-010233_2021-1122-112133_maman_f12.jpg"
+	    ],
+	    type: "card",
+	    type_id: "F",
+	    grid: 6
+	};
+fab3ac63fc18f63ee02b7f6461ae6c05|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|86|1|V|javascript
+	        var form = [<CompRouting component={component} />];
+d1cb8cce54613deea3cb018d54e1b069|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|87|17|v|javascript
+	 = [<CompRouting component={component} />];
+175079e9ce2cf5f7609c6a14bd2092c0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|87|16|V|javascript
+	        var form
+b19eb87e753bdbff43365558c4ee5f70|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|88|19|v|javascript
+	<hr />
+392fab604db84a54ac27e3e4586899b4|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|89|14|V|javascript
+	        form.push();
+5b65634f4d36d4787e8e110c0196bd51|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|49|1|V|javascript
+	        var comments = []
+e7fbe8251deaf8efa6de57d17408d0f5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|51|12|V|javascript
+	        var grid = 
+3146e2b60baac0ebf04b5e953353ef53|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|51|12|V|javascript
+	        var 
+2f29166fbaf76db1f761b6a082ebc7a5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|60|12|V|javascript
+	        data
+e80747f2dba01af50a4154d4d8c36438|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|53|70|V|javascript
+	        data.append("title", document.getElementById("form_title").value);
+	        data.append("comment", document.getElementById("form_comment").value);
+	        data.append("price", document.getElementById("form_price").value);
+	        data.append("show", document.getElementById("form_show").checked);
+	        data.append("star", document.getElementById("form_star").checked);
+	        data.append("file", document.getElementById("form_img").files[0]);
+643acba10848c561340ea0636884062c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/menus/MenuCreate.js|89|1|V|javascript
+	                <button type="button" class="btn btn-primary" onClick={MenuFormSubmit}>
+	                    追加
+	                </button>
+80980e3eb651852e9c4db3690d34ab82|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|161|72|v|javascript
+	MenuFormSubmit
+9537d0510062541ceb83f90ad1df9b17|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/CompRouting.js|13|1|V|javascript
+	    const { service_id } = useParams();
+	
+d304ba20e96d87411588eeabac850e34|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|88|67|v|javascript
+	label
+44b0f7e483d84ef63a1f2ced2413835b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|48|23|V|javascript
+	        var titles = [];
+5897f2b24ddf3e82bba6ea3f26289548|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|48|23|V|javascript
+	        var comments = [];
+f189943949595d9f5d83937d542d36f3|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|48|23|V|javascript
+	        var images = [];
+38695ce6ab39e63c87c34204d6970892|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|50|1|V|javascript
+	        data.append("grid", document.getElementById("form_grid").value);
+ff4a008470319a22d9cf3d14af485977|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|50|22|v|javascript
+	grid
+f9c67b505a0ee3a6e652ffe996cc422f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|50|1|V|javascript
+	        data.append("title", document.getElementsByClassName("form_grid").value);
+2063c1608d6e0baf80249c42e2be5804|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|53|66|v|javascript
+	value
+45b963397aa40d4a0063e0d85e4fe7a1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|52|22|v|javascript
+	files
+7f97c5d4487c269e969bb59b19e02f69|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|49|1|V|javascript
+	        for (var form_title of document.getElementsByClassName("form-title")) {
+	            titles.push(form_title);
+	        }
+d5d3db1765287eef77d7927cc956f50a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|53|72|v|javascript
+	title
+d5712fac3c030c4df75ce0f1300c4b9b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|54|25|v|javascript
+	form_title
+c9c2fd68f5b4c26d99fae45a0f39f456|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|56|1|V|javascript
+	        var images = [];
+	        for (var form_title of document.getElementsByClassName("form-title")) {
+	            titles.push(form_);
+	        }
+0ce905093f5e7fd1f2652c202740d8c5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|57|1|V|javascript
+	        data.append("service_id", service_id);
+b0dc1e2985b388b120ee0dd7baca7034|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|58|22|v|javascript
+	service_id
+10cd395cf71c18328c863c08e78f3fd0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/pagelayouts/models.go|1|9|v|go
+	services
+cb2b8d66b31e89d507595e68b8b95c8d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|5|1|V|go
+	    "go-app/svc/services"
+9f87e23553dc61864d4fb5327f3bfba1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/pagelayouts/models.go|11|11|V|go
+		Title   string
+410d2b0c009e5f5061b2a941aaa993a1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/pagelayouts/models.go|11|11|V|go
+		Comment string
+8dce6090a984df381bdd211c52dc38a1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/pagelayouts/models.go|11|11|V|go
+		Show    bool
+2b4b28f7d8a51f80a853205c5d1d2f58|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/pagelayouts/models.go|11|11|V|go
+		Grouped bool
+d22b2e9888ee340b2ba2adaae8c52b09|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/pagelayouts/models.go|11|11|V|go
+		Img     string
+26254f1b03d6c035f72af222e78beba1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/pagelayouts/models.go|11|11|V|go
+		Turn    int
+98891a4de71c70c7c89843db266fccce|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|6|1|V|go
+	    "go-app/svc/menus"
+81ca0b7c951be89184c130d2860a5b00|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|7|17|v|go
+	menus
+22d8422ce0bc37c3dc92e41a404a3212|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|7|5|V|go
+	    s
+7ab4e2e50f77f33f42ac4ffa390b1f52|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|10|1|V|go
+		Title   string
+		Comment string
+		Show    bool
+		Grouped bool
+		Img     string
+		Turn    int
+96c282f0b06f0666a6c157a0c780581c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|6|1|V|go
+	    "go-app/svc/components"
+2a06ae562bddb2dcd56cd95e9708d632|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|9|1|V|go
+		gorm.Model
+f5144c6e93bbf0bb9711419650c4e5f5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|10|1|V|go
+	    Titles: []Title
+09528c866712c05702f0b8a4d7b45f46|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|18|1|V|go
+	type Title struct {
+		gorm.Model
+	    Text: string
+	    ComponentID: unit
+	}
+b78a3223503896721cca1303f776159b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|23|6|v|go
+	Title
+0ffc796cae68def8987879a3ac1325fc|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|40|1|V|go
+		db.AutoMigrate(Component{})
+2cb05e4bb7830be982f0922fed86b4cd|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|40|17|v|go
+	Component
+b5ebc3aa31193c91b496c2179a462c7b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|33|1|V|go
+		components.DBInit()
+	    router = components.Urls(router)
+50327590658e465501f9230055df29de|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/docker-compose.yml|15|26|v|yaml
+	maman2030-himeji.com,www.maman2030-himeji.com # Let's Encryptのホスト設定 ※本番ではlocalhost部分を「example.com,www.example.com」等にする
+4e6f5e3271c76e9d7b5fb22af7057f37|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/docker-compose.yml|14|22|v|yaml
+	maman2030-himeji.com,www.maman2030-himeji.com # nginx-proxyのホスト設定 ※本番ではlocalhost部分を「example.com,www.example.com」等にする
+74018e3eabc3d46b4d24c9ab74f0d46c|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|1|1|V|make
+	ba:
+		sudo docker-compose -f ./webapp/docker-compose.yml build
+ca6b7e1c1bf60f09fd451836fd789ced|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|5|1|V|make
+	ra:
+		sudo docker-compose -f ./webapp/docker-compose.yml restart
+4d32e4c397049a02e85fcdd4823935cf|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|10|1|V|make
+	ra:
+		sudo docker-compose -f ./webapp/docker-compose.yml go restart
+ee434023cf89d7dfb21f63d64f0f9d74|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|14|53|v|make
+	nginx
+03a03858d9ddfacd3fc1687c106b4f00|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|15|1|V|make
+	# b proxy:
+	# 	docker-compose -f ./proxy/docker-compose.yml build
+	# b webapp:
+	# 	docker-compose -f ./webapp/docker-compose.yml build
+	# s proxy:
+	# 	docker-compose -f ./proxy/docker-compose.yml up -d
+	# s webapp:
+	# 	docker-compose -f ./webapp/docker-compose.yml up -d
+	# r proxy:
+	# 	docker-compose -f ./proxy/docker-compose.yml restart
+	# r webapp:
+	# 	docker-compose -f ./webapp/docker-compose.yml restart
+	# l proxy:
+	# 	docker-compose -f ./proxy/docker-compose.yml logs -t -f
+23dcc63166724cf36830b6f2359a3d43|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|18|1|V|go
+	type Title struct {
+		gorm.Model
+	    Text: string
+	    ComponentID: unit
+	}
+	type Comment struct {
+		gorm.Model
+	    Text: string
+	    ComponentID: unit
+	}
+	type Image struct {
+		gorm.Model
+	    Text: string
+	    ComponentID: unit
+	}
+3e34bdebd9bd5edda27e8728904a2552|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|11|21|v|go
+	unit
+0be8406951cdfda82f00f79328cf4efc|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|27|21|v|go
+	Comment
+531ca928337d6a47ddd2e88b59f0dfe4|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/plugins/ale.vim|19|1|V|vim
+	map :ale<CR> :source ~/.config/nvim/plugins/ale.vim<CR>
+63dc9087c660611bdf3fcb1a1257247a|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|68|38|v|vim
+	plugins
+090676cd4bf7145f0bf437403a5015b7|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|10|1|V|make
+	rg:
+		sudo docker-compose -f ./webapp/docker-compose.yml restart go
+df307c0bad0e9482e3bac234846686fe|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|4|1|V|make
+		sudo docker-compose -f ./webapp/docker-compose.yml up -d
+56dbc0af45d27178746058733234ed9f|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|11|2|V|make
+		sudo docker-compose -f ./webapp/docker-compose.yml restart go
+5682e7555e5134bd59a791e6f0694bc0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|26|18|v|go
+	 `gorm:"foreignKey:ComponentID"`
+f1b56cc738203250e96f8f2dcddb418b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|62|1|V|go
+		router.POST("/services/update", func(c *gin.Context) {
+			service_id, _ := strconv.Atoi(c.PostForm("service_id"))
+			service := get(service_id)
+>>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
 			file, err := c.FormFile("file")
 			if err != nil {
 				log.Println(err)
@@ -233,6 +440,7 @@ a1fa27779242b4902f7ae3bdd5c6d508|file:///Users/Kouiti/local_file/maman-homepage/
 				if err != nil {
 					log.Println(err)
 				} else {
+<<<<<<< HEAD
 					component.Image = filename
 				}
 			}
@@ -240,6 +448,28 @@ a1fa27779242b4902f7ae3bdd5c6d508|file:///Users/Kouiti/local_file/maman-homepage/
 			components.Update(component)
 			c.JSON(202, component)
 e35d4650bec880d85d5acf7a777b07df|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|108|1|V|go
+=======
+					service.Img = filename
+				}
+			}
+			log.Println(service_id)
+			log.Println(service.ID)
+	
+			service.Title = c.PostForm("title")
+			service.Comment = c.PostForm("comment")
+			service.Show, _ = strconv.ParseBool(c.PostForm("show"))
+			service.Grouped, _ = strconv.ParseBool(c.PostForm("grouped"))
+			service.Turn, _ = strconv.Atoi(c.PostForm("turn"))
+	
+			response := update(service)
+			c.JSON(202, response)
+		})
+9a0364b9e99bb480dd25e1f0284c8555|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|90|32|v|go
+	content
+e20953d7426e13e8ea9e5bc3d346a005|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|91|1|V|go
+			service_id, _ := strconv.Atoi(c.PostForm("service_id"))
+			service := get(service_id)
+>>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
 			file, err := c.FormFile("file")
 			if err != nil {
 				log.Println(err)
@@ -249,6 +479,7 @@ e35d4650bec880d85d5acf7a777b07df|file:///Users/Kouiti/local_file/maman-homepage/
 				if err != nil {
 					log.Println(err)
 				} else {
+<<<<<<< HEAD
 					component.Image = filename
 				}
 			}
@@ -824,12 +1055,282 @@ e01324ab85dcd5d7aec80e4e0abea83d|file:///Users/Kouiti/local_file/maman-homepage/
 	                comp["Image"] = ApiUrl + "/api/image/" + comp.Image;
 	            }
 69f4b7e5c6ca1ddbe7f0319b1945b16a|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|46|1|V|javascript
+=======
+					service.Img = filename
+				}
+			}
+			log.Println(service_id)
+			log.Println(service.ID)
+	
+0a21cab77e41223b6475c423f4b869a1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|35|1|V|go
+	type ListComponent []Component
+e379d4d9b0445353030175d8fccc1368|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|36|1|V|go
+	type ListTitle []Title
+3a9c6464993f64cb81d0e4a5e32342a5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|37|1|V|go
+	type ListComment []Comment
+466c39317ef9d55b03179427e57af889|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|37|1|V|go
+			// var form Component
+259a571b0a7d1b5f6ef304d8a2b870b0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|50|13|V|go
+	        list_
+2fe852bb390cae38d3bd21ad54bed8a3|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|51|17|v|go
+	c.PostForm("titles")
+1cf7880af56637898017db8fc1ed8d79|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|23|1|V|make
+	login:
+		curl -X POST -H "Content-Type: application/json" -d '{"name": "admin", "password":"admin"}' localhost/api/login
+344d1820196f522c6c36010fb521665b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|11|1|V|make
+	create_service:
+		curl -X POST -H "Content-Type: application/json" -d '{"title": "title", "comment":"comment", "show":"true", "grouped":"false"}' localhost/api/services/create
+65c1ec717a8e2fb0a40d6ac7c0a98748|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|45|1|V|go
+			// 		log.Println(err)
+a0c71c5fd97fbdc5bc17035a3325ebd6|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|37|16|V|go
+					log.Println()
+6fc1883113432ab247083cb46d36d618|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|11|1|V|make
+		curl -X POST -H "Content-Type: application/json" -d '{"titles": ["title1", "title2", "title3"]}' localhost/api/components/create
+932ef3c6af376154eecb8d444b94bf31|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|11|2|V|make
+		# curl -X POST -H "Content-Type: application/json" -d '{"titles": ["title1", "title2", "title3"]}' localhost/api/components/create
+3870f6c796c119c99550c322556de8f2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|37|1|V|go
+			log.Println(c.PostForm("titles"))
+fad7ce53de84086a43218642a8bdf028|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/menus/MenuCreate.js|33|1|V|javascript
+	        axios
+	            .post("/api/menus/create", data)
+	            .then(function (response) {
+	                window.location.href = "/owner/menu";
+	            })
+	            .catch(function (error) {
+	                alert(error);
+	            });
+0a4a34fc92768cc2be003212aa667b18|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|57|1|V|javascript
+	        data.append("service_id", service_id);
+	        data.append("titles", titles);
+	        data.append("comments", comments);
+	        data.append("images", document.getElementById("form_grid").files);
+	        data.append("grid", document.getElementById("form_grid").value);
+151bef00012561d5b1fa51ab10913718|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|64|31|v|javascript
+	titles
+a5d491060952aa8ad5fdee071be752de|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|65|33|v|javascript
+	comments
+6c86cc8a646c2f4a585851685fba0776|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/owners/urls.go|57|1|V|go
+	        c.ShouldBindJSON(&form)
+8ed5cd5e28a866ee6527a641abdaeec8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|39|3|V|go
+			log.Println(reflect.TypeOf(c.PostForm("titles")))
+0d211312749fb4b1a025db88b19b1992|file:///Users/arakawakouichi/local_file/maman-homepage/Makefile|9|1|V|make
+		sudo docker-compose -f ./webapp/docker-compose.yml build go
+a6be1e5e8814527fd6e813cf959d0200|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|12|74|V|make
+		curl -X POST -H "Content-Type: application/json" -d '{"titles": "title1"e3"]}' localhost/api/components/create
+b0e7a39d7ea8e21b9892055a75168dbc|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|66|1|V|javascript
+	        data.append("images", []);
+cdccf941e51a13992020d014cd550da8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|64|31|v|javascript
+	["title1", "title2", "title3"]);
+c33b1def052a0c042097864fd5f56f8a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|66|33|v|javascript
+	["comment1", "comment2", "comment3"]);
+e97f505a2110f52de92badd50b387d39|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|65|1|V|javascript
+	        data.append("service_id", service_id);
+	        data.append("titles", 
+	        data.append("comments", 
+	        data.append("images", []);
+8fa94e8e1a36ea4298673929b777b960|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|65|1|V|javascript
+	        data.append("type", SelectedComponentType);
+7829ec7e816e8e6148a85c48fd2a598a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|65|1|V|javascript
+	        data.append("type", SelectedComponentType);
+	        data.append("type_id", SelectedComponentTypeID);
+dd1ad49983b3afd2e07e7c071a757a4f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|47|9|V|javascript
+	        var data = new FormData();
+9516dfb15f51c7ee19a4d46b8c0dbe1d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|68|14|v|javascript
+	append
+f368ee2d4fb60b281a3a705fa5daaf97|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|72|13|V|javascript
+	                // window.location.href = "/owner/menu";
+f0ac572844e7a133c90cb96a3f3363b1|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|62|1|V|javascript
+	            Images: document.getElementById("form_grid").files,
+68037c5a11874f098da2278f8c080701|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|69|22|V|javascript
+	        data["grid"] = 2;
+3fcdb73d36d54f2cc22d0f68e6b6e182|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|61|15|v|go
+	form
+43cd4ae9a20febba541d5c27a050a2e8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|55|1|V|javascript
+	        var titles = ["title1", "title2", "title3"];
+	        var comments = ["comment1", "comment2", "comment3"];
+	
+68b69414f8de7653d916017b485c117f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|59|22|V|javascript
+	            // Images: document.getElementById("form_grid").files,
+0c6f3247767c85f048fe1e3baa2a5c86|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|62|22|V|javascript
+	            // Grid: document.getElementById("form_grid").value,
+c18d708be3ecf686c35fe4b7c2e0e220|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|30|1|V|go
+		router = components.Urls(router)
+59795abcd2f6f43d85d4a1ed3a4ce7cb|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|30|1|V|go
+		router = components.Urls(router)
+	
+4725dcf446a342f1473a8228e42dfa48|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|35|11|v|go
+	components
+cc7689d0d3d15df984504ed33eddde57|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|62|1|V|javascript
+	            Images: document.getElementById("form_grid").files,
+	            Images: [],
+	            Type: SelectedComponentType,
+	            TypeID: SelectedComponentTypeID,
+	            Grid: document.getElementById("form_grid").value
+88cf0fe73e01f64a1871954a1e4d080a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|61|1|V|javascript
+	            Images: [],
+	            Type: SelectedComponentType,
+	            TypeID: SelectedComponentTypeID,
+2a6b690b8d8373d53649e80424088108|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|61|13|V|javascript
+	            Grid: document.getElementById("form_grid").value
+e6108535731dac1b88989f841eb9226d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|64|13|V|javascript
+	            Grid: 2
+8aa70a03845eb4843809a2493e6739cf|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|56|10|V|javascript
+	            ServiceID: service_id,
+cfc382074811e7e1fa468a8fd7cbb652|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/urls.go|39|1|V|go
+			var form Component
+			c.ShouldBindJSON(&form)
+989288a4933c2c4eeffa9c5feb0ba202|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|91|3|V|go
+			service.Title = c.PostForm("title")
+			service.Comment = c.PostForm("comment")
+			service.Show, _ = strconv.ParseBool(c.PostForm("show"))
+			service.Grouped, _ = strconv.ParseBool(c.PostForm("grouped"))
+			service.Turn, _ = strconv.Atoi(c.PostForm("turn"))
+e127952b2c2b5f577ce3116e142930a2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/main.go|4|1|V|go
+		"go-app/svc/components"
+b53194dc3e8c84865ec0bf5236126caa|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|15|v|go
+	append_component
+aee69811e73ef9ba2e7ed90ec733c4c7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|52|1|V|go
+		db := db_conf.DBConnect()
+		var list_service ListService
+		db.Where("Grouped = ?", false).Find(&list_service).Order("turn DESC")
+		db.Close()
+		return list_service
+4a2e86bf0842343231f622f59174bcc4|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|18|1|V|go
+		db := db_conf.DBConnect()
+		defer db.Close()
+		log.Print(service.ID)
+		if err := db.Save(&service).Error; err != nil {
+			log.Println(err)
+		}
+		return service
+f99b7fdf44d1103abf3b93f7faea515b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|62|14|V|go
+		log.Print(com.ID)
+fec17b9194ea9229e1575ebc58e040c7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|59|1|V|go
+	func append_component() Service {
+		db := db_conf.DBConnect()
+		defer db.Close()
+		if err := db.Save(&service).Error; err != nil {
+			log.Println(err)
+		}
+		return service
+	}
+b4638aaa68153988e3a952293dd0dd64|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|64|1|V|go
+			service_id, _ := strconv.Atoi(c.PostForm("service_id"))
+			service := get(service_id)
+ff61922635c5a8d42f159f0849e60090|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|92|1|V|go
+			service_id, _ := strconv.Atoi(c.PostForm("service_id"))
+			service := get(service_id)
+	
+dbf2fd732b7dfbcf1f098c7acbf91de8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|87|1|V|go
+			response := update(service)
+a41797ad2c6f359ee39db500380dd54e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|99|3|V|go
+			response := append_component(form)
+1df03c177f285f53495211b4a8cc86b0|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|18|1|V|go
+			id, err := strconv.Atoi(c.Param("id"))
+8034f6152b16c4c905fd8407ebf2f033|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|10|V|go
+			service_id, _ := strconv.Atoi(c.PostForm("service_id"))
+76ea0bebb3c22822b4f0dd9c9fd021c5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|66|36|v|javascript
+	create
+282f97f3c266ff98709a4df72ab5c278|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|10|1|V|make
+	create_comp:
+		curl -X POST -H "Content-Type: application/json" -d '{"titles": ["title1", "title2", "title3"]}' localhost/api/components/create
+d6467d2df8081519ce6874e451fb220c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|18|1|V|make
+	get_service:
+		curl 'localhost/api/services/get/1'
+fc61aa4c5cf934fe4336106b78ee1eea|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|19|1|V|make
+		curl 'localhost/api/services/get/1'
+f0a1e5fa0baa497c8d228fefa4a7440f|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|30|1|V|go
+		db.First(&service, "id= ?", id)
+7fb55ed0b7a30342ba6da306428cae04|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|31|5|v|go
+	First
+4ae73040bc5072a8693be9bad4e9d0b8|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|31|19|v|go
+	, "id= ?", id)
+f3e334d42863e8250c7d03efefbfd387|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|52|v|go
+	languages
+3a08e2e340ab29fd9263af48193cbf8e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|33|34|v|go
+	Languages
+2ba7b73b071b7299315b56cab7388f3c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|2|V|go
+		log.Println(comp)
+898aa4546192df609de3a76e2baa6734|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|31|1|V|make
+		watch -n 3 "curl 'localhost/api/services/list/all' | jq"
+10ae9fc7d453b0dd525d0edf2ede7961|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/Makefile|19|43|v|make
+	list
+46077bc561e1d3157d2fded42e38ed1b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+		db.Model(&service).Association("Components").Find(&components)
+24f21de04dada5d10e4c71f07ab6f31b|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+		db.Model(&service).Association("Components").Find(&components)
+		service.Components = components
+6c23f6c2ef240b189bd0d6ac23c95ff5|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|38|v|go
+	onents
+aaabf0d39951f3e6c3e8a7911df524c2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|12|v|go
+	service
+a30aec84fe90be900f71d275d147848a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|40|1|V|go
+		var titles components.ListTitle
+		db.Model(&).Association("Title").Find(&components)
+39b02774e2e26c93ea469e1420d7ad1a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|40|1|V|go
+		service.Components = components
+fd9f49cf0f60dc5c93399c0ee6cb7cea|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|1|V|go
+	        var titles components.ListTitle
+	        db.Model(&component).Association("Title").Find(&titles)
+		    component.Titles = titles
+8612579044efe457f11398b5a2377226|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|41|16|v|go
+	Titles
+700c216fb376666eaeda0c892e8bdc09|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|3|v|go
+	component
+38bf1687016cfc7c333c67d146998448|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
+		log.Println("com", list_component)
+c5373bd132839f160a196595bb269f36|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
+		log.Println("com", list_component)
+		for _, component := range list_component {
+38423dad81aa344cc350d2374c042be2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|2|V|go
+		for _, component := range list_component {
+929ead8cd22e6fec59f04ff58f9b8d10|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
+	    log.Println("list_component:", list_component)
+1fb17105e49824658c77b885c6bc03d2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|37|1|V|go
+			log.Println("component:", component)
+4ce020f49d399f19195927ab9df3654c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|1|V|go
+			log.Println("component:", &component)
+cfb3ca95235d22ca82564e1797019ade|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|39|18|v|go
+	mponent
+c93e95d8a6ff9d9868a219feca0aa72a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|39|32|V|go
+			log.Println("titles:", &titles)
+54bb1029a2231350315e4372331fc50a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
+		log.Println("list_component:", list_component)
+75aa22689cd3b1993841344506deb90d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|8|V|go
+	    jjjj
+c64e9a100d68612f275e90b2b1993644|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
+		log.Println("list_component:", &list_component)
+f383045ff93ad81bf45b82ee428ebfe7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|15|v|go
+	list_component
+7bf9570d7a4e9f57d219d7e316b7d5a2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
+		log.Println("service:", &service)
+		log.Println("list_component:", &list_component)
+e21dee31807119a9f5be35cb1b9ab08c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|1|V|go
+			log.Println("component:", component)
+			log.Println("component:", &component)
+c5e0eb70d11eb1c2250f396cee6e447a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|45|29|V|go
+	        log.Println(component)
+47f5c407849eac1fc332a94de9365a93|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|32|1|V|go
+		next      *Component
+d0cab90d8d20d57e2f2b9be52f7dd25d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|32|2|v|go
+	next
+686af9af59fede89232e1ff8a1f5c0e7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|33|2|V|go
+		      *Component
+e2e45476a6a771959b7af53fa664d42e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|32|1|V|go
+		Next      *Component
+97335d24af995833e016d9c14ac0d40e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|33|16|V|go
+		NextID    *uint
+3b11af408a7a2c2fef9db6d4e77af9ee|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|32|12|v|go
+	  *Component
+69f4b7e5c6ca1ddbe7f0319b1945b16a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|67|1|V|javascript
+>>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
 	            <a
 	                className="pointer"
 	                onClick={() => navigate("/home/service/" + service_id + "/components/" + component_id + "/create")}
 	            >
 	                右側に新しく追加
 	            </a>
+<<<<<<< HEAD
 705527af8b663b6e8b17bc8af3341966|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|57|18|V|javascript
 	                    右側に新しく追加
 76ea0bebb3c22822b4f0dd9c9fd021c5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|55|111|v|javascript
@@ -1421,3 +1922,486 @@ b33388391ecd6307fa948d054f535fa6|file:///Users/Kouiti/dotfiles/dotfiles/fish/con
 	alias gl="git log"
 519dd6df60ce6b8241ca8e17cdd28e0a|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|30|10|V|
 	alias gitreset="git reset --hard HEAD"
+=======
+ef5a1f553ca1ccdd80d480520810e6cb|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|87|92|v|javascript
+	component_id
+9116ca6d7a928df5765a99fdb2a4b291|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|1|V|go
+			service_id, _ := strconv.Atoi(c.Param("id"))
+086fd796af3fd231fbc4108ed2a4dace|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|1|V|go
+			service_id, _ := strconv.Atoi(c.Param("service_id"))
+a272fe32cb1562b96566551ab1a3d221|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|98|1|V|go
+			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
+			service.Components.NextID = comp_id + 1
+0014a2ad07a6d5c64126502aef34f2bd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|9|1|V|htmldjango
+	      <p>task_id = {{task_id}}, user_name = {{user_name}}</p>
+ca1cd3c3055991bf20499ee86739f7e2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|13|18|v|htmldjango
+	score
+1a97de8c6a3d66165aef070a8d528c93|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|87|1|V|htmldjango
+	  var shadowing_vioce_path = "{{ task.shadowing_voice | safe }}";
+0cf31b2c283ce3431794586df7b0996d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|3|V|htmldjango
+	    
+c6fd4e1fc6410828068acefd574ccaac|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|9|v|htmldjango
+	shadowing_vioce_path
+478f3a4c51824ad23cb50c1c60670c0f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|25|v|htmldjango
+	task
+cb3d5ef297504235fb83be2b9bace6bb|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|9|v|htmldjango
+	dtw_score
+10bfc84ccadfc6b7dab844a4294e8791|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|43|v|htmldjango
+	shadowing_voice
+5c70edf37ea9edbd6fe47bb9711b3c27|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|76|5|V|htmldjango
+	    console.log(voice_records)
+9dfc8dce7280fd49fc6e7bf0436ed325|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|45|v|htmldjango
+	safe
+0684c728e5ee9fb1b67c93d9472bc52e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|112|1|V|htmldjango
+	<div class="col-md btn-group" role="group" aria-label="Basic">
+	  <button type="submit" class="btn btn-border-shadow btn-border-shadow--color next"> Next ⇨ </button>
+	</div>
+c79bdf421714f5087fc34b7c538b6807|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|61|17|v|htmldjango
+	submit
+c8d582a045724c2c3c6fb6e84f31b98c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|56|1|V|htmldjango
+	<div class="col-sm">
+	    <a type="button" class="btn btn-success" id="next-btn" hidden>Next</a>
+	</div>
+	
+466deec76ecdf5fca6d38571f6324d54|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|45|v|htmldjango
+	json
+247f140eb2d97a5a818842f3392d32ef|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|30|v|htmldjango
+	dumps
+b1a2560254281c75b990b708d4c1e4f7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|163|5|v|python
+	dtw_scores
+3396ace84e6be5fa8d0e4685890c106d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|29|v|htmldjango
+	voice_records
+a23613eb202ad0cf88ab8968b16d4ba1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|165|10|v|python
+	voice_record.dtw_score
+91ed856b1e90c8d69f261fcba5e7096b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|164|1|V|python
+	        "dtw_score":voice_record.dtw_score,
+dd54db35db48282b1b0dae92d138d6f7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|32|v|htmldjango
+	_scores 
+6a44fbb86112ab752a24fad1452bbad6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|162|1|V|python
+	    content["voice_records"] = list(voice_records.values())
+114d53ad730ff9226650291c314b6f3f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|25|60|v|htmldjango
+	dnn_gop_score
+5452fc9ac4450cc310471ab2e70cd595|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|74|42|V|htmldjango
+	    console.log(JSON.parse(voice_records))
+6d8d5a789f330853b5400457ac4f7efe|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|75|1|V|htmldjango
+	        console.log(voice_record.dtw_score)
+05aa078735400fcce8197144f68a7e09|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|166|10|V|python
+	    content["voice_records"] = json.dumps(content["voice_records"])
+e76626c306403b2b2ed3156718d0353b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|93|21|v|htmldjango
+	myDiv
+635646afa5aa31dadd625f473f2e1cf4|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|93|21|v|htmldjango
+	graph_DtwScore
+f3c3522c5e1cb130b6540e4a97d5b8dc|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|37|26|V|htmldjango
+	                    <img src="https://www.della.co.jp/resource/img/gurafu1.gif">
+f82fff0cf43c2d0daf22995163ff47da|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|76|8|V|htmldjango
+	        console.log(voice_record.dnn_gop_score)
+8d777f385d3dfec8815d20f7496026dc|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|92|38|v|htmldjango
+	data
+d904cadedf9ccbc0d022b41204d5e89d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|83|1|V|htmldjango
+	
+	    var trace2 = {
+	      x: [1, 2, 3, 4],
+	      y: [16, 5, 11, 9],
+	      type: 'scatter'
+	    };
+	
+	    var data = [trace1, trace2];
+	
+2eb7cc60658edc5af732db2015ba8daf|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|75|1|V|htmldjango
+	        graph_data["x"].push(i)
+835c336318236956aa55d66852021295|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|79|1|V|htmldjango
+	    var trace1 = {
+	        x: [1, 2, 3, 4],
+	        y: [10, 15, 13, 17],
+	        type: 'scatter'
+	    };
+fed486583ad6b4e3a805d2fdde7d4168|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|77|33|V|htmldjango
+	        console.log(voice_records)
+eb8b805f31034f9e29cb42fc33aa979c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|78|28|V|htmldjango
+	            showarrow: false
+605a71f0fe6f18385f567fc7a3424cd1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|13|1|V|htmldjango
+	        {% for voice_record in voice_records %}
+b16b3365f99133348b179d52f0101e11|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|29|1|V|htmldjango
+	        {% endfor %}
+df28d4267bd6cb8702e977efd4198465|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|39|9|V|htmldjango
+	                    {% for voice_record in voice_records %}
+	
+e593859e9b4d51850eec1811bf22e96e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|40|29|V|htmldjango
+	                    {% if voi}
+4ad2e5ebaf8ec2809b2ee13f65353633|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|15|6|V|html
+	          <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg" alt="User picture">
+be92d077b8892f972a352d9acc2c1e81|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|15|90|v|html
+	currentColor
+5e4cc4ece1f91b444e2aec157b44e466|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|21|1|V|css
+	h2 {
+e566fe79061adcd281b4d6bbcd6d0f46|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|20|1|V|css
+	
+	h2 {
+51a122058310fed1b451eb2f7b3ea545|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|29|1|V|css
+	    font-size: 4.5em;
+2845f919b6db8b9bc81bbbc0c852d852|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|38|1|V|htmldjango
+	                      {{qa.question_text}}
+32b965fac48ff7a2913bb6e029e4c1ca|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|7|1|V|htmldjango
+	<div class="subtitle"><h3>Shadowing</h3></div>
+0014b24b396b062f94883793c0fd4b6a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|6|1|V|htmldjango
+	<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+	    <h3 class="subtitle script-subtitle "><b>Task No.{{ task.id }}　　<font size="5" color="FF0000">[Script Check]</font></b></h3>
+	  </div>
+	</div>
+fd170458f72897a30012683701ae874d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|5|27|v|htmldjango
+	Shadowing
+af9ada9a7ee946649ae67cf675b2a99c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|56|1|V|htmldjango
+	<div class="col-md btn-group" role="group" aria-label="Basic">
+	  <button class="btn btn-border-shadow btn-border-shadow--color next" id="next-btn" hidden> Next ⇨ </button>
+	</div>
+36308e7529e20f029776fcc2a86e1c38|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reading_aloud.html|85|1|V|htmldjango
+	<div class="col-sm">
+	    <a type="button" class="btn btn-success" id="next-btn" hidden>Next</a>
+	</div>
+70afa9e6385c27097de88af17b18a1d7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reading_aloud.html|93|1|V|htmldjango
+	  <div class="col-md btn-group" role="group" aria-label="Basic">
+	    <button type="submit" class="btn btn-border-shadow btn-border-shadow--color next"> Next ⇨ </button>
+	  </div>
+662f707d5491e9bce8238a6c0be92190|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|74|72|v|htmldjango
+	hidden
+8357bc88eb240b9d25b475f8cef2ba18|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|67|1|V|htmldjango
+	<div class="row button-area">
+	    <div div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	        <a href="/app/{{task.id}}/{{next_turn}}">Next</a>
+	        </button>
+	    </div>
+	</div>
+f213b0d9874ace9e0f21d809d0ec5021|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|70|1|V|htmldjango
+	
+	<div class="row button-area">
+	    <div div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	        <a href="/app/{{task.id}}/{{next_turn}}">Next</a>
+	        </button>
+	    </div>
+	</div>
+8675bf3bde2ba2b77e7ffcecf15aba12|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reflection.html|7|1|V|htmldjango
+	    <h3 class="subtitle">Self reflection</h3>
+8bb98969d77a31d977912cc976c0f431|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|5|1|V|htmldjango
+	<div class="subtitle">
+	    <h3>Automatic Evaluation Scores</h3>
+	</div>
+157d738e8248391c7225d7cbbc7ccaf0|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reflection.html|6|30|v|htmldjango
+	Scwidores
+8e6cd1f5d046ef66eb31979a60011493|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|233|14|V|css
+	  font-size: 2rem;
+c999c731638affea4a55070380990472|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|87|1|V|htmldjango
+	        graph_data["x"].push(i+1)
+	        graph_data["y"].push(voice_records[i]["dtw_score"])
+c36a3716782418cc7fa164d7c69147cd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|81|17|V|htmldjango
+	            layou
+da183349c5f244c8e7e249650f477c73|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|90|6|V|htmldjango
+	    la
+bc95dfc14146aa23e43f2ea7af04d310|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|83|12|V|htmldjango
+	            
+669849edd187de0d12b6094df25466ee|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|93|27|V|htmldjango
+	    console.log(graph_data)
+ea1125cf7428c2df61d516a6c6fd01ad|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|82|1|V|htmldjango
+	    var layout = {
+	            xaxis: {
+	                range: [ 1, j ]
+	            },
+	            yaxis: {
+	                //range: [0, 8]
+	            },
+	        }
+c6eadafb9258aebf50a155b39c8946be|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|62|1|V|htmldjango
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	        <p class="border score">Fluency Score</p>
+	    </div>
+9ffef12f6233ee2264096e7fc81f7d70|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|50|1|V|htmldjango
+	    <!-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"> -->
+ecc28770ba49848e2c2442188679ec3c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|57|1|V|htmldjango
+	        <!-- <p class="border score">DNN-GOP Score</p> -->
+	        <p class="border score">{{errata_rate}}</p>
+1a010656603e1cdf2c8724e85752d912|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|48|1|V|htmldjango
+	<div class="row border-bottom">
+0a3a0b592b9c285e050805307cee87c2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|65|1|V|htmldjango
+	</div>
+fb2843d5706b02b3ffcdaa11ff500126|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|66|1|V|htmldjango
+	<div class="row border-bottom">
+	</div>
+7c4977695b670c59602654cd7314b80f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|50|1|V|htmldjango
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	        <p class="border kind">2nd Reading Aloud</p>
+	        <p class="border kind">Corrent Answer Ratio In Q&A</p>
+	        <p class="border kind">3rd Reading Aloud (After 2 weeks)</p>
+	    </div>
+	    <!--2列目-->
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	        <p class="border score">DNN-GOP Score</p>
+	        <p class="border score">{{errata_rate}}</p>
+	
+	    </div>
+	    <!--3列目-->
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	        <p class="border score">Fluency Score</p>
+	    </div>
+af1f5e1783d0f1f67af124a12dfa88b1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|52|5|V|htmldjango
+	        <p class="border kind">Corrent Answer Ratio In Q&A</p>
+e5850e18603a25a078f9cb62a10d5fe6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|52|5|V|htmldjango
+	        <p class="border kind">3rd Reading Aloud (After 2 weeks)</p>
+c2c5b68ca5d0543844aa4c6ef1b12fa4|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|52|5|V|htmldjango
+	    </div>
+	    <!--2列目-->
+6b9c4714ced78662f06cd7643c059257|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|56|5|V|htmldjango
+	        <p class="border score">{{errata_rate}}</p>
+799a8a5288a368da5a8d03fdce1571d2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|56|1|V|htmldjango
+	
+	    </div>
+63cf5de58935defd362d9d67acf56427|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|64|1|V|htmldjango
+	        <p class="border kind">2nd Reading Aloud</p>
+2f1122cf18971ad864cadc10dd3cd6ae|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|68|1|V|htmldjango
+	        <p class="border score">DNN-GOP Score</p>
+099aa5eaa7f5ca29c1fd9a76a7c7507d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|73|1|V|htmldjango
+	        <p class="border score">Fluency Score</p>
+23962cf2bcd19d0c5158f8f86661b947|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|71|1|V|htmldjango
+	    <!--3列目-->
+3c2a6d64757889fb7b8a953bf7323e79|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|66|1|V|htmldjango
+	    <!--2列目-->
+87a74813df552d12d438bcffe630f84d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|49|1|V|htmldjango
+	    <!--1列目-->
+cbac6adec3223737b3067e4717d789c8|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|71|1|V|htmldjango
+	        <p class="border kind">2nd Reading Aloud</p>
+	        <p class="border kind">Corrent Answer Ratio In Q&A</p>
+ca4b3a8c7d1f063614128bdb76a486a6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|74|1|V|htmldjango
+	        <p class="border score">DNN-GOP Score</p>
+	        <p class="border score">{{errata_rate}}</p>
+71f262d796bed1ab30e8a2d5a8ddee6f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|69|24|v|htmldjango
+	bottom
+b50538bbd6c606495524fb6b18944023|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|36|1|V|htmldjango
+	                    <p class="score-change-title card-header">SH Improvement among 1st, 4th, 7th & 2nd script shadowing (DTW Score Change)</p>
+ba13da0826122b0fff10759e8a210550|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|36|78|V|htmldjango
+	                    <p class="score-change-title card-header">SH Improvement a script shadowing (DTW Score Change)</p>
+ca09f5b687a7853c141d4d08dfeb5f72|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|15|22|V|htmldjango
+	            <!-- 1列目 -->
+74da3529c64da7f20f443cc1d46eb2b6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|20|22|V|htmldjango
+	            <!-- 2列目 -->
+11a03aa5a741608a09527d0593451ee5|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|30|22|V|htmldjango
+	            <!-- 3列目 -->
+fc04accf7be183ce3e73666a275985fe|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|15|23|V|htmldjango
+	                <div class="training">
+9b0db20282c2dc8d23943c66e26f1139|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|16|22|V|htmldjango
+	                </div>
+39da55aae872568462fdb47ea10083a3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|18|18|V|htmldjango
+	                <div class="score">
+197929f729ed16dad53113ba43dbd69e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|18|18|V|htmldjango
+	                    <p class="border score">{{ voice_record.dnn_gop_score }}</p>
+	                </div>
+289f0e3245566df966d2b6cd2147c8c5|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|19|1|V|htmldjango
+	                        {% if voice_record.task_type == "SH" &}
+3d2db931b25ddff8ac15f182547c9db3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|21|1|V|htmldjango
+	                        {{ voice_record.dnn_gop_score }}
+61bb458d24f73b3f765908a4ffa8e5f2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|19|1|V|htmldjango
+	                        {% if voice_record.task_type == "SH" %}
+	                        {{ voice_record.dnn_gop_score }}
+	                        {% elif voice_record.task_type == "SS" %}
+	                        {{ voice_record.dnn_gop_score }}
+	                        {% endif %}
+543424bd7d569a0370a6d1406dc69a7e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|27|1|V|htmldjango
+	                        {% if voice_record.task_type == "SH" %}
+8a121367f44e1a4cdc3414926bac27d6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|28|1|V|htmldjango
+	                        {% elif voice_record.task_type == "SS" %}
+	                        {{ voice_record.dnn_gop_score }}
+	                        {% endif %}
+d4bc7c3abdc21915af40217b7c53aa37|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|22|1|V|htmldjango
+	                    Shadowing Score
+cc194c8386c0e4be795cd0bad94e2caa|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|17|1|V|htmldjango
+	                        {% elif voice_record.task_type == "SS" %}
+	                        Script Shadowing Score
+	                        {% endif %}
+1c59731e4be3834bfea43faf9e95711a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|62|1|V|htmldjango
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	    </div>
+4140ad480ed08db8ba6bc524f1e0dd92|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|205|48|V|html
+	>>>>>>> 6fa6e83fd2b3517847ec8b26705749113d50cbc9
+9b274d1b3075fa85cf94fba966a2697f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|33|1|V|html
+	<<<<<<< HEAD
+	            <div class="sidebar-menu">
+	                <ul>
+	                    <li class="header-menu">
+	                        <div style="text-align:center"><span><font size="4" color="#ff00ff">Live English Training</font></span></div>
+	                        <!-- <i class="fa fa-home fa-lg "></i> -->
+	                    </li>
+	                    <li class="sidebar-dropdown">
+	                        <a href="/app/main">
+	                            <i class="fa fa-home"></i>
+	                            <span ><font color="#00ff">Main Menu</font></span>
+	                        </a>
+	                    </li>
+	                    <li class="sidebar-dropdown">
+	                        <a href="/app/task">
+	                            <i class="fa fa-eye"></i>
+	                            <span><font color="#00ff">Shadowing</font></span>
+	                        </a>
+	                    </li>
+	                    <li class="sidebar-dropdown">
+	                        <a href="#">
+	                            <i class="fas fa-backward"></i>
+	                            <span><font color="#00ff">Repeating</font></span>
+	                            <!-- <span class="badge badge-pill badge-danger">3</span> -->
+	                        </a>
+	                    </li>
+	                    <li class="sidebar-dropdown">
+	                        <a href="#">
+	                            <i class="fa fa-headphones"></i>
+	                            <span><font color="#00ff">Listening</font></span>
+	                        </a>
+	                    </li>
+	                    <li class="sidebar-dropdown">
+	                        <a href="/app/task:ID/reading_aloud">
+	                            <i class="fa fa-microphone"></i>
+	                            <span><font color="#00ff">Reading aloud</font></span>
+	                        </a>
+	                    </li>
+	                    <hr>
+	                    <li class="header-menu">
+	                        <!-- <span>Interaction</span> -->
+	                    </li>
+	                    <!-- <li>
+	                        <a href="#">
+	                        <i class="fa fa-book"></i>
+	                        <!-- <span>Coming soon ...</span> -->
+	                        <!-- <span class="badge badge-pill badge-primary">Beta</span> -->
+	                        </a>
+	                    </li>
+	                    <li class="header-menu">
+	                        <!-- <span>Extra</span> -->
+	                    </li>
+	                    <li>
+	                        <a href="#">
+	                            <!-- <i class="fa fa-book"></i> -->
+	                            <!-- <span>Records</span> -->
+	                            <!-- <span class="badge badge-pill badge-primary">Beta</span> -->
+	                        </a>
+	                    </li>
+	                    <li>
+	                        <a href="#">
+	                            <!-- <i class="fa fa-book"></i> -->
+	                            <!-- <span>help</span> -->
+	                            <!-- <span class="badge badge-pill badge-primary">Beta</span> -->
+	                        </a>
+	                    </li>
+	                    <!-- <li> -->
+	                    <!--   <a href="#"> -->
+	                    <!--     <i class="fa fa-calendar"></i> -->
+	                    <!--     <span>Calendar</span> -->
+	                    <!--   </a> -->
+	                    <!-- </li> -->
+	                    <!-- <li> -->
+	                    <!--   <a href="#"> -->
+	                    <!--     <i class="fa fa-folder"></i> -->
+	                    <!--     <span>Examples</span> -->
+	                    <!--   </a> -->
+	                    <!-- </li> -->
+	                </ul>
+	            </div>
+	            <!-- sidebar-menu  -->
+	        </div>
+	    </nav>
+	=======
+e3b6c7818808cf0b9022c774f39d91b5|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|31|1|V|html
+	            </div>
+d0c2bf55c1bce7cb0324a07dcde91fc8|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|42|1|V|htmldjango
+	                          <a style="opacity:0.5;">{{ task.title }}</a>
+2a75d093f1109b218137cf7c497fa206|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|38|27|V|htmldjango
+	                          <a>{{ task.title }}</a>
+314ebf2370ca324f361236aa5e1b1229|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script_SH.html|60|1|V|htmldjango
+	<a type="button" class="btn btn-success" id="next-btn" href="/app/{{task.id}}/{{next_turn}}" hidden>Next</a>
+9efb42d2afe4f61432633758e9e6c3a3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|96|1|V|htmldjango
+	    document.getElementById("next-btn").onclick = () => {
+	        $.ajax({
+	            url: location.href,
+	            type: "POST",
+	            processData: false,
+	            contentType: false,
+	            data: data,
+	            error: function (request, status, error) {
+	                alert(error);
+	            }
+	        }).done(function (response) {
+	            window.location.href = "/app/{{task.id}}/{{next_turn}}"
+	        });
+	    }
+d324727bda9e93082c20890a47bf773c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|36|1|V|htmldjango
+	    <svg class="scale pointer" id="start" onclick="wavesurfer.play();this.style.display='none'; document.getElementById('_stop').style.display='block'"
+ad31dde68eae7d1a159f8f94b1f68094|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|36|1|V|htmldjango
+	    <svg class="scale pointer" id="start" onclick="wavesurfer.play();this.style.display='none'; document.getElementById('_stop').style.display='block'"
+	        xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
+	      <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	      <g>
+	        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	      </g>
+	    </svg>
+	    <svg class="scale" id="_stop" xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30" style="display:none;">
+	      <circle fill="white" stroke="red" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	      <g>
+	        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	      </g>
+	    </svg>
+6b3df0446fbba49d7081dbcbcfa071cd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script_SH.html|52|1|V|htmldjango
+	    <a class="pointer" id="start" onclick="wavesurfer.play(); disable(this)">
+	      <div class="scale" id="mic-blue">
+	        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
+	          <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	          <g>
+	            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	          </g>
+	        </svg>
+	      </div>
+	      <div class="scale" id="mic-red" hidden>
+	        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
+	          <circle fill="white" stroke="red" stroke-width="1.7" cx="8" cy="8" r="12"/>
+	          <g>
+	            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+	            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+	          </g>
+	        </svg>
+	      </div>
+72f36e352b0a3a87f672588f73aeb310|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script_SH.html|52|5|V|htmldjango
+	    </a>
+3dff3aad172378fac36cf54515292578|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script_SH.html|52|5|V|htmldjango
+	    <a class="pointer" id="stop" hidden></a>
+ee480036195ed2473bd8771c1cc67c71|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/js/recording.js|134|1|V|javascript
+	document.getElementById("next-btn").onclick = () => {
+	    $.ajax({
+	        url: location.href,
+	        type: "POST",
+	        processData: false,
+	        contentType: false,
+	        data: data,
+	        error: function (request, status, error) {
+	            alert(error);
+	        }
+	    }).done(function (response) {
+	        window.location.href = "/app/{{task.id}}/{{next_turn}}"
+	    });
+	}
+b31215eaac95d1ffaeb16b4da2175dab|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|87|5|V|htmldjango
+	          console.log("Jio")
+1b190fa38ebb74b0416cb03343919792|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|30|103|v|htmldjango
+	document.getElementById('play_btn').style.display='inline'"
+759f11b4eab27b9870503aa0c9f54fc3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|86|43|v|htmldjango
+	.hidden =true
+4f2f46ce4bae7d76d16e509072868021|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|85|42|v|htmldjango
+	.style.display='inline'"
+03fdad155b7548884584c7c39b0c5cd2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|86|59|v|htmldjango
+	inline
+cff6542b3f79e428f252edde71f10ca7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|87|32|V|python
+	            maxResults += 100000
+d7dcd2369fc7eedf62feae339494cfdf|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|151|20|V|python
+	            maxResults += 10000
+167991c707587c097f13e82aa57abbb5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|115|23|v|python
+	maxResults
+112179d06ea5b9b033c3c97001e37f05|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|115|23|V|python
+	                + str()
+7ba727a65b37572cf054effb196b9a8e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|79|24|V|python
+	        + str(maxResults)
+>>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1

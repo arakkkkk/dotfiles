@@ -22,12 +22,7 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "files.associations": {
-        "*.erb": "erb"
-    },
-    "emmet.includeLanguages": {
-        "erb": "erb"
-    },
+
     // Shell
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
     "terminal.integrated.fontSize": 13,
@@ -79,20 +74,12 @@
     "vim.highlightedyank.duration":700,                      //yankした時の色の表示時間
     "vim.visualstar"            : true,                      //カーソル上にあるワードを"*"で検索
     "workbench.list.keyboardNavigation": "simple",
-    "macros": {
-        "selectAndToggleSidebar": [
-            "list.select",
-            "workbench.action.toggleSidebarVisibility"
-        ]
-    },
 
     // vscode workspace
     "vscodeWorkspaceSwitcher.paths": [
         "~/dotfiles/dotfiles/vscode/vscode-workspace"
     ],
     "vscodeWorkspaceSwitcher.showTreeView": false,
-
-
 
 
     // Vim key mappings
@@ -106,7 +93,21 @@
             "after": ["<Esc>", "^", "i"]
         }
     ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<C-j>"],
+            "after": ["5", "j"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["5", "k"]
+        },
+    ],
     "vim.normalModeKeyBindings": [
+        {
+            "before": ["Enter"],
+            "after": ["o", "Esc"]
+        },
         {
             "before": ["<C-h>"],
             "commands": ["workbench.action.previousEditor"]
@@ -130,7 +131,10 @@
         {
             "before": ["f", "f"],
             "commands": ["workbench.action.quickOpen"]
-
+        },
+        {
+            "before": ["f", "w"],
+            "commands": ["workbench.action.switchWindow"]
         },
         {
             "before" : ["u"],
@@ -141,4 +145,7 @@
             "commands" : ["redo"]
         },
     ],
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.tabSizing": "shrink",
 }
+

@@ -25,6 +25,10 @@
         "key": "ctrl+t",
         "command": "workbench.action.togglePanel"
     },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.switchWindow"
+    },
 
     // ワークスペース
     {
@@ -56,5 +60,17 @@
         "key": "ctrl+b",
         "command": "workbench.explorer.fileView.focus",
         "when": "!filesExplorerFocus"
+    },
+
+    // その他
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!editorFocus"
     },
 ]

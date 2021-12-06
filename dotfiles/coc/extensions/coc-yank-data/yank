@@ -1,519 +1,3 @@
-700c216fb376666eaeda0c892e8bdc09|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|3|v|go
-	component
-38bf1687016cfc7c333c67d146998448|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
-		log.Println("com", list_component)
-c5373bd132839f160a196595bb269f36|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
-		log.Println("com", list_component)
-		for _, component := range list_component {
-38423dad81aa344cc350d2374c042be2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|2|V|go
-		for _, component := range list_component {
-929ead8cd22e6fec59f04ff58f9b8d10|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
-	    log.Println("list_component:", list_component)
-1fb17105e49824658c77b885c6bc03d2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|37|1|V|go
-			log.Println("component:", component)
-4ce020f49d399f19195927ab9df3654c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|38|1|V|go
-			log.Println("component:", &component)
-cfb3ca95235d22ca82564e1797019ade|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|39|18|v|go
-	mponent
-c93e95d8a6ff9d9868a219feca0aa72a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|39|32|V|go
-			log.Println("titles:", &titles)
-54bb1029a2231350315e4372331fc50a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
-		log.Println("list_component:", list_component)
-75aa22689cd3b1993841344506deb90d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|8|V|go
-	    jjjj
-c64e9a100d68612f275e90b2b1993644|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|35|1|V|go
-		log.Println("list_component:", &list_component)
-f383045ff93ad81bf45b82ee428ebfe7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|15|v|go
-	list_component
-7bf9570d7a4e9f57d219d7e316b7d5a2|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|34|1|V|go
-		log.Println("service:", &service)
-		log.Println("list_component:", &list_component)
-e21dee31807119a9f5be35cb1b9ab08c|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|36|1|V|go
-			log.Println("component:", component)
-			log.Println("component:", &component)
-c5e0eb70d11eb1c2250f396cee6e447a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/repository.go|45|29|V|go
-	        log.Println(component)
-47f5c407849eac1fc332a94de9365a93|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|32|1|V|go
-		next      *Component
-d0cab90d8d20d57e2f2b9be52f7dd25d|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|32|2|v|go
-	next
-686af9af59fede89232e1ff8a1f5c0e7|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|33|2|V|go
-		      *Component
-e2e45476a6a771959b7af53fa664d42e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|32|1|V|go
-		Next      *Component
-97335d24af995833e016d9c14ac0d40e|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|33|16|V|go
-		NextID    *uint
-3b11af408a7a2c2fef9db6d4e77af9ee|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/components/models.go|32|12|v|go
-	  *Component
-69f4b7e5c6ca1ddbe7f0319b1945b16a|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|67|1|V|javascript
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1|undefined|undefined|undefined|undefined|undefined
-	            <a
-	                className="pointer"
-	                onClick={() => navigate("/home/service/" + service_id + "/components/" + component_id + "/create")}
-	            >
-	                右側に新しく追加
-	            </a>
-<<<<<<< HEAD|undefined|undefined|undefined|undefined|undefined
-705527af8b663b6e8b17bc8af3341966|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|57|18|V|javascript
-	                    右側に新しく追加
-76ea0bebb3c22822b4f0dd9c9fd021c5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|55|111|v|javascript
-	create
-637a4c38bfc98e48f84183a998c62cfd|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|79|1|V|javascript
-	            .post("/api/services/" + service_id + "/append/component/" + component_id, data)
-	            .then(function (response) {
-	                console.log(response.data);
-	                axios
-	                    .post("/api/services/" + service_id + "/append/component/" + component_id + "/upimage", imgform)
-	                    .then(function (response) {
-	                        console.log(response.data);
-	                    })
-	                    .catch(function (error) {
-	                        console.log(error);
-	                    });
-	            })
-	            .catch(function (error) {
-	                console.log(error);
-	            });
-48f6495017bcd6f3a86ed5516bc51425|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|60|1|V|javascript
-	                axios
-	                    .post("/api/services/" + service_id + "/append/component/" + component_id + "/upimage", imgform)
-	                    .then(function (response) {
-	                        console.log(response.data);
-	                    })
-	                    .catch(function (error) {
-	                        console.log(error);
-	                    });
-5c55fb848995deb6dde7267421bf6c46|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|46|1|V|javascript
-	            <div>
-e3b6c7818808cf0b9022c774f39d91b5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|69|1|V|javascript
-	            </div>
-ceccefee3a0913a41073d1b9dcefc044|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|122|1|V|javascript
-	                    <Button variant="primary" onClick={handleClose}>
-	                        Save Changes
-	                    </Button>
-4b8c3a5db83fc8aff6c25f76570bc676|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|42|1|V|go
-	func Update(component Component) Component {
-		db := db_conf.DBConnect()
-		defer db.Close()
-		log.Print(component.ID)
-		if err := db.Save(&component).Error; err != nil {
-			log.Println(err)
-		}
-		return component
-	}
-06933067aafd48425d67bcb01bba5cb6|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|52|6|v|go
-	Update
-8f9bfe9d1345237cb3b2b205864da075|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|55|16|v|go
-	User
-15caec2ed0817d0898259f26e2b63c11|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|56|1|V|go
-		if err := db.Save(&component).Error; err != nil {
-			log.Println(err)
-		}
-700c216fb376666eaeda0c892e8bdc09|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|56|9|v|go
-	component
-086fd796af3fd231fbc4108ed2a4dace|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|165|39|V|go
-			service_id, _ := strconv.Atoi(c.Param("service_id"))
-3995363bdd7ea947b77823ae628ef9bd|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|168|15|v|go
-	components.Component
-7c9e2091e2ee42cf1b641924a301c4a0|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|171|1|V|go
-	
-	
-			c.ShouldBindJSON(&adding_comp)
-	        adding_comp.ServiceID = service.ID
-	
-			if len(service.Components) == 0 {
-	            // 初めて追加する場合
-				adding_comp.NextID = 0
-	            components.Create(adding_comp)
-			} else {
-				if comp_id == 0 {
-	                // 先頭に追加する場合
-					head_comp := service.Components[0]
-					adding_comp.NextID = head_comp.ID
-					components.Update(head_comp)
-	                components.Create(adding_comp)
-				} else {
-	                // 途中に追加or末端に追加する場合
-					target_comp := components.Get(comp_id)
-					adding_comp.NextID = target_comp.NextID
-	                adding_comp = components.Create(adding_comp)
-					target_comp.NextID = adding_comp.ID
-					components.Update(target_comp)
-				}
-			}
-357e3ae5eeb8648b8df5d1460fc5710a|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|173|1|V|go
-	        prev_comp.NextID = delete_comp.NextID
-	        components.Update(prev_comp)
-07589029721e600e88dbbc1e046a769e|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|166|3|V|go
-			service := get(service_id)
-b0dc1e2985b388b120ee0dd7baca7034|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|172|19|v|go
-	service_id
-05fe51d96fbb3fe7dd04f6b90fd426af|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|16|1|V|javascript
-	    const navigate = useNavigate();
-cc70dd840666b60abec51268b02c64b4|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|3|1|V|javascript
-	import { useNavigate } from "react-router";
-f9f90eeaf400d228facde6bc48da5cfb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|92|22|v|javascript
-	always
-67af4b18638b3f12573a7ab634ce8806|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|13|1|V|yaml
-	      - TZ=Asia/Tokyo
-	      - VIRTUAL_HOST=maman2030-himeji.com,www.maman2030-himeji.com # nginx-proxyのホスト設定 ※本番ではlocalhost部分を「example.com,www.example.com」等にする
-	      - LETSENCRYPT_HOST=maman2030-himeji.com,www.maman2030-himeji.com # Let's Encryptのホスト設定 ※本番ではlocalhost部分を「example.com,www.example.com」等にする
-	      - LETSENCRYPT_EMAIL=bdkouiti5013@gmail.com # Let's Encryptのメール設定
-	      - LETSENCRYPT_TEST=false # Let's Encryptのテストかどうかのフラグ 本番ではfalseにする (指定しないとテスト扱いになる)
-	        # - CERT_NAME=default # ローカルで認証局を立てるときに使う ※本番ではLet's Encryptから直接取得するのでコメントアウトする
-	        #- HTTPS_METHOD=noredirect # リダイレクトを無効にする
-5aef41c8099d29e6b86f610d4179c588|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|26|1|V|yaml
-	        # - CERT_NAME=default # ローカルで認証局を立てるときに使う ※本番ではLet's Encryptから直接取得するのでコメントアウトする
-	        #- HTTPS_METHOD=noredirect # リダイレクトを無効にする
-88d17fc734ffd15a4273c33a1ba9b627|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|21|7|V|yaml
-	      - TZ=Asia/Tokyo
-d2bb58e146db593d31793f2ca555cd40|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker/golang/Dockerfile|2|1|V|dockerfile
-	COPY ./go-app /go/src/go-app
-66a020c8b45d7306fc39e780c730aa14|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|38|1|V|yaml
-	    volumes:
-	      - ./react-app:/app/react
-6a2516e4de081f0388ef4a505747251d|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker/react/Dockerfile|3|12|V|dockerfile
-	    volumes:
-bd96af738f1f409d575be9261c482fdf|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker/react/Dockerfile|3|16|V|dockerfile
-	      - ./react-app:/app/react
-ec4cbde4178c531298017e3093195bf3|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|1|V|javascript
-	    console.log("------------------------")
-58f313041aa16e28096210b4bd8f3e28|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|36|16|v|javascript
-	("------------------------")
-7a94e9e6fccf02fb81e5c79466b41df1|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|36|24|V|javascript
-	    console.log(navigate)
-add910413d73cb985e9047bac80bf0ad|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|26|16|V|javascript
-	    console.log()
-d3427c30c47e75e01bde5b8e6d21b2f2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|27|17|v|javascript
-	navigate
-d6e13e96fdfa55f4d4847f83f4dafc33|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|17|33|V|javascript
-	    const location = useLocation();
-a036dbcdd934b1aba4258a10dcaa5ab0|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|1|50|v|javascript
-	useLocation
-be05d559ccc3262d3e7d034ed3c56980|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|26|26|v|javascript
-	pathname
-d5189de027922f81005951e6efe0efd5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|26|17|v|javascript
-	location
-2b7c7882a38be95411692716f365f042|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|25|40|V|javascript
-	    console.log(window.location.hostname)
-0897acf49c7c1ea9f76efe59187aa046|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|33|v|javascript
-	hostname
-9943e2d473dbfa06d941687d92be8354|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/App.js|35|5|V|javascript
-	    console.log(window.location)
-e10037aa39673e41d8b11aec566ad4bd|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|34|1|V|javascript
-	                                <a onClick={() => edit_page(service.ID)} class="pointer">
-	                                    {service.Title}
-	                                </a>
-04fa76a29b59b34afb4c5ea0de0f38d3|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|34|1|V|javascript
-	                                <div className="row">
-b5224129024fd734a1207cb7a3420c09|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|35|1|V|javascript
-	                                <div className="col-11">
-28a1633e683eb1c73cff07551daa2901|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|39|1|V|javascript
-	                            </div
-79bcb7e69cedb26cd08763cce6de2e83|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|58|1|V|javascript
-	                            .post("/api/services/" + service_id + "/delete/component/" + component_id)
-	                            .then(function (response) {
-	                                console.log(response.data);
-	                            })
-	                            .catch(function (error) {
-	                                console.log(error);
-	                            })
-	                            .finally(function () {
-	                                handleClose();
-	                            });
-6c70eb4815f91886df610a720304a368|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|9|35|V|javascript
-	    const [CreateButton, setCreateButton] = useState("");
-06145a21dcec7395085b033e6e169b61|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|7|12|v|javascript
-	Menus
-a209b71c26f43e2f9d785cf0d1a6e9c7|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|7|18|v|javascript
-	setMenus
-5dbeac672e43581259356cd19d43887d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|52|12|V|javascript
-	                                        handleClose();
-7cd13dda1aa6862c57f9aad8a1cd3bae|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|44|98|v|javascript
-	componwent_id
-e3a0e004d0467f5a8793361634ae4f85|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|41|49|V|javascript
-	                                            style
-2e452cad771cf7ae88339201dd5b6c78|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|33|49|V|javascript
-	                                    <div className="col-11">
-8fa5f2eff87ff2e6bf8b55b43bffe642|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|36|42|V|javascript
-	                                    </div>
-fac55b9bf8f6afdc9e10aa0da3069eed|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|36|49|V|javascript
-	                                    <div className="col-1">
-3999039cc9b4d69a327e522916c0d484|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|54|38|V|javascript
-	                                </div>
-5f93822f6cc4bf04387ac51a7040d4cb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|39|1|V|javascript
-	                                        var result = window.confirm("ボタンをクリック！");
-	                                        if (result) {
-c60034a53fbf0f154dd42423d3910498|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|42|42|v|javascript
-	 else {
-bf300ea41838e96b852c362a3fc0f8f2|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|43|41|V|javascript
-	                                            console.log("キャンセルがクリックされました");
-af0e0dd99b0ed8cf47d052ff19cedbdb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|43|41|V|javascript
-	                                        }
-1e2de0e955d9acc528f3e4c753889cd6|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|19|1|V|go
-		router.GET("/services/get/:id", func(c *gin.Context) {
-			id, err := strconv.Atoi(c.Param("id"))
-			if err != nil {
-				c.JSON(http.StatusBadRequest, err)
-			} else {
-				c.JSON(200, get(id))
-			}
-		})
-	
-415d655349a60b5468938c2a92c81ca2|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/components/repository.go|52|1|V|go
-	func Delete(component Component) Component {
-		db := db_conf.DBConnect()
-		defer db.Close()
-	    db.Delete(&component)
-		return component
-	}
-b508b0677c7f3b194e6505c8a059a64b|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|31|1|V|go
-	
-			if err != nil {
-				c.JSON(http.StatusBadRequest, err)
-			} else {
-				c.JSON(200, get(id))
-			}
-cf7218b51117112b31ea8a819472bb54|file:///Users/Kouiti/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|24|1|V|go
-				c.JSON(200, get(id))
-2f9e3eb590d1b44de779bb0b02a7aa16|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|41|22|V|javascript
-	                                            console.log("本当に消去しますか？");
-b326b5062b2f0e69046810717534cb09|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/services/ServiceOwner.js|50|61|v|javascript
-	true
-6543f38f68a2d24819b14b9c50a72cbf|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|18|27|v|python
-	data.split(":")[0]
-	
-3ea464e67fb7f679409041b12b59e37e|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|18|27|v|python
-	data.split(":")[0]
-625f0f685dd25cf6c5379bace11abe2c|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|18|26|V|python
-	                data_id = 
-1dd25bb6874993700425e0d04cce7c6b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|20|1|V|python
-	                    id_list[i*2-1].append(data_id)
-a565e755709166653ad81ac92b39cc15|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|21|41|v|python
-	data_id
-80f50a65093ac8a001a403e3d17ee19b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|76|21|v|python
-	write_id_list
-4b1e992f5790c82c3cd97e8fe8739a39|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|76|34|v|python
-	id_list
-9b66f777d784aefbc3f84a563420b8bb|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|76|53|v|python
-	t_dir_name
-b54b57c45d73814ffd5038fee2ee475d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|68|34|V|python
-	        print(source_dir_name_list)
-7f8d2e57fc21a848b95faa77431d502d|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|78|40|V|python
-	                print("file not found ", source_dir_name)
-37424d50f047549689ac5287b2715f77|file:///Users/Kouiti/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_biope.py|95|1|V|python
-	        print("error /biope2")
-	        import traceback
-	        traceback.print_exc()
-dfc3d255e4c9666b47a2bf3356d76152|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|78|9|V|python
-	                print("error /biope2")
-04d00dff589bcb89c6e1491d242eb397|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|21|1|V|python
-	                    print(i)
-ce995c60e23332803361476e35cd06e5|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|21|1|V|python
-	                    print(i * 2)
-	                    print(len(id_list))
-	                    print(id_list[i * 2])
-347996f1c98047daecb66bad50c1f5ea|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|71|5|V|python
-	            # try:
-13b78c548c11e22ec894491882ae16ee|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|76|1|V|python
-	                # except:
-	                #     import traceback
-	                #     traceback.print_exc()
-5d190346e8fe6515c59be1199564a559|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|29|1|V|python
-	                id_list1[i].append(id_list2[i][j])
-1d9d0cda332d366992279b70cf7a0856|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/expansion_tsv.py|1|1|V|python
-	import os
-	import re
-	import csv
-	import os
-	import sys
-	sys.path.append(os.path.join(os.path.dirname(__file__), '../'))
-	from mylib import general_method as gm
-	from mylib.psiquic_class import PQdataList, PQdata
-	import glob
-	
-	from copy import copy
-	
-	def get_target_id(column_data: str, db_name: str):
-	    if db_name in column_data:
-	        return (
-	            column_data.split(db_name + ":")[1]
-	            .split("(")[0]
-	            .split("|")[0]
-	            .replace('"', "")
-	        )
-	    else:
-	        False
-	
-	
-	def has_bar_in_row(row):
-	    for column in row:
-	        if "|" in column:
-	            return True
-	    return False
-	
-	
-	def has_bar_in_row_list(row_list: list):
-	    for row in row_list:
-	        if has_bar_in_row(row):
-	            return True
-	    return False
-	
-	
-	def expansion_tsv_row(row_list: list):
-	    result_list = []
-	    for row in row_list:
-	        if has_bar_in_row(row):
-	            for i in range(len(row)):
-	                if "|" in row[i]:
-	                    row_a = copy(row)
-	                    row_a[i] = re.split("|", row[i])[0]
-	                    row_b = copy(row)
-	                    row_b[i] = re.split("[|\t$]", row[i])[1]
-	                    result_list.append(row_a)
-	                    result_list.append(row_b)
-	                    break
-	        else:
-	            result_list.append(row)
-	
-	    if has_bar_in_row_list(result_list):
-	        result_list = expansion_tsv_row(result_list)
-	    return result_list
-	
-	
-	def list2tsv(data: list):
-	    result = ""
-	    for i in range(len(data)):
-	        if i != 0:
-	            result += "\t"
-	
-	        if "psi-mi" in data[i]:
-	            result += data[i].split('"')[1].split(":")[1]
-	        elif ":" in data[i]:
-	            result += data[i].split(":")[1].split("(")[0]
-	        else:
-	            result += data[i]
-	    return result
-	
-	
-	# barで分けて展開したものをファイルの保存
-	def expansion_tsv(dirname):
-	    services_list = gm.list_serveice()
-	    column_label = gm.list_column_label()
-	    pqdatalist = PQdataList()
-	
-	    for service in services_list:
-	        dir_name = dirname + "/" + service
-	        file_list = glob.glob(dir_name + "/*.tsv", recursive=True)
-	        for i in range(len(file_list)):
-	            os.mkdir(dirname + "/" + service + "/" + service + str(i))
-	
-	            with open(dir_name + ".tsv") as f1:
-	                reader = csv.reader(f1, delimiter="\t")
-	                header = next(reader)
-	                for row in reader:
-	                    if has_bar_in_row(row):
-	                        # |で区切られてるrow dataを展開
-	                        row_list = expansion_tsv_row([row])
-	                        for devided_row in row_list:
-	                            pqdatalist.add(devided_row)
-	            # ファイルへの出力
-	            for i in range(len(pqdatalist.data)):
-	                pqdata = pqdatalist.data[i]
-	                f = open(dir_name + "_s" + str(i) + ".tsv", "w")
-	                f.write(list2tsv(column_label))
-	                f.close()
-	                for row in pqdata.row_list:
-	                    f = open(dir_name + "_s" + str(i) + ".tsv", "a")
-	                    f.write("\n" + list2tsv(row))
-	                    f.close()
-	                print(pqdata.id_set)
-	                print("created ", dir_name + "_s" + str(i) + ".tsv")
-	
-	
-	if __name__ == "__main__":
-	    dirname = "test_data/"
-	    # dirname = "data/"
-	    # main1(dirname)
-	    expansion_tsv(dirname)
-9dd2d7633bbf4fe513709406202eff4f|file:///Users/Kouiti/Desktop/NEW.PY|112|1|V|python
-	    # dirname = "data/"
-	    # main1(dirname)
-954eef6d6eac59aca304b6d7abb4fb3e|file:///Users/Kouiti/Desktop/NEW.PY|112|19|v|python
-	dirname
-6bc59662abc81932cb371c948f719aca|file:///Users/Kouiti/Desktop/NEW.PY|111|9|v|python
-	ame 
-4b0bc2c5989af0d717ee528d10f9f562|file:///Users/Kouiti/Desktop/NEW.PY|77|1|V|python
-	    services_list = gm.list_serveice()
-	    column_label = gm.list_column_label()
-	    pqdatalist = PQdataList()
-	
-c8fd38c978813a13f97cc0638d5421ff|file:///Users/Kouiti/Desktop/NEW.PY|77|1|V|python
-	    for service in services_list:
-	        dir_name = dirname + "/" + service
-	        file_list = glob.glob(dir_name + "/*.tsv", recursive=True)
-	        for i in range(len(file_list)):
-	            os.mkdir(dirname + "/" + service + "/" + service + str(i))
-	
-564d2b9af333438eae1e54afd64dfd91|file:///Users/Kouiti/Desktop/NEW.PY|77|23|v|python
-	dir_name
-9d626116e08eaed3d94480a770ced0da|file:///Users/Kouiti/Desktop/NEW.PY|78|10|V|python
-	        if
-be3a0b52e523ae86117a09ccacb61c0b|file:///Users/Kouiti/Desktop/NEW.PY|78|1|V|python
-	        if file_name[-4:] == ".tsv"
-0cc8168b7a74ec6f5ed50a748042c1c8|file:///Users/Kouiti/Desktop/NEW.PY|80|36|V|python
-	        reader = csv.reader(f1, delimiter="\t")
-21a45621dfded55b2675162380f67929|file:///Users/Kouiti/Desktop/NEW.PY|79|1|V|python
-	            reader = csv.reader(f1, delimiter="\t")
-b34d1b9d47dfc3a232a08d11a9cb5ea3|file:///Users/Kouiti/Desktop/aa.py|90|21|v|python
-	row_list
-b1da36eb555b2b3c95d8bbecd5e80667|file:///Users/Kouiti/Desktop/aa.py|92|24|v|python
-	pqdatalist
-8d777f385d3dfec8815d20f7496026dc|file:///Users/Kouiti/Desktop/aa.py|92|36|v|python
-	data
-ecddbf71a5062242be4d0ed9aab21166|file:///Users/Kouiti/Desktop/aa.py|93|11|V|python
-	        pqdata = pqdatalist.data[i]
-e28edd5c66dd65601a3d964f0e417875|file:///Users/Kouiti/Desktop/aa.py|96|1|V|python
-	        for row in pqdata.row_list:
-	            f = open(dir_name + "_s" + str(i) + ".tsv", "a")
-	            f.write("\n" + list2tsv(row))
-	            f.close()
-	        print(pqdata.id_set)
-	        print("created ", dir_name + "_s" + str(i) + ".tsv")
-186251aa8a2e7c2f9c3050dbd07a512c|file:///Users/Kouiti/Desktop/aa.py|80|20|V|python
-	        if file_name[-4:] == ".tsv":
-28a226e904978543059ce7362cc011ed|file:///Users/Kouiti/Desktop/aa.py|81|1|V|python
-	        elif file_name[-4:] == ".csv":
-	            reader = csv.reader(f1, delimiter=",")
-3063991a8b5b94fd58c49d99a8bb3302|file:///Users/Kouiti/Desktop/aa.py|77|1|V|python
-	def expansion_tsv(file_name):
-	    result_list = []
-	    with open(file_name) as f1:
-	        reader = csv.reader(f1, delimiter="\t")
-	        header = next(reader)
-	        for row in reader:
-	            if has_bar_in_row(row):
-	                # |で区切られてるrow dataを展開
-	                row_list = expansion_tsv_row([row])
-	                for devided_row in row_list:
-	                    result_list.add(devided_row)
-	    # ファイルへの出力
-	    for row in result_list):
-	        f = open("out.tsv", "w")
-	        f.write(row)
-	        f.close()
-b5b04c0dad6c021b786ceffa88fcfaac|file:///Users/Kouiti/Desktop/aa.py|14|1|V|python
-	def get_target_id(column_data: str, db_name: str):
-	    if db_name in column_data:
-	        return (
-	            column_data.split(db_name + ":")[1]
-	            .split("(")[0]
-	            .split("|")[0]
-	            .replace('"', "")
-	        )
-	    else:
-	        False
-	
 e905bfbf6a3e20518dd54932e7d64020|file:///Users/Kouiti/Desktop/aa.py|13|1|V|python
 	# 対象の行が| を持つか判定
 33a243abe8ab42996a44252f4b5c7ea9|file:///Users/Kouiti/Desktop/aa.py|52|1|V|python
@@ -1228,3 +712,347 @@ d36497e0b394d5c4dce9139488744846|file:///Users/Kouiti/local_file/maman-homepage/
 	    color: "#583F2A",
 	    fontSize: "20px"
 	};
+a33b90686647327c2c5e8e80713ac3bc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|24|1|V|python
+	        if count % 1000 == 0:
+cedfc10beee7676614dad516a3e61a25|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|17|1|V|python
+	        count += 1
+ee31488397b38109b3e931c646e7a7c0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|15|1|V|python
+	    count = 0
+a2e3bb8276b746422b760781b1888d71|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|22|1|V|python
+	    print()
+60529e4f113d661a8abe9995ba3fe35e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|38|1|V|python
+	            ):
+	        text += column_label[i]
+6537900bfa08ced0fd47a7f6b7a214db|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|37|1|V|python
+	    for i in range(len(column_label)*2):
+	            ):
+b78f56cd206cfde0e68102fbf436f1fa|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|37|1|V|python
+	    for i in range(len(column_label)*2):
+8c606e833cc045144b88a660b1fbd60b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|38|14|V|python
+	            ):
+c90e921ed32e524bb6347133eb39d6dd|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|99|1|V|python
+	    for t in dbid_list:
+	        if t == "-":
+	            continue
+	        cont = True
+	        services_list = gm.list_serveice()
+	        for service in services_list:
+	            path = dirname + service + "/*.tsv"
+	            source_dir_name_list = glob.glob(path)
+	            for i in range(len(source_dir_name_list)):
+	                source_dir_name = source_dir_name_list[i]
+	                with open(source_dir_name) as f1:
+	                    reader = csv.reader(f1, delimiter="\t")
+	                    for row in reader:
+	                        for r in row:
+	                            if t in r:
+	                                print(t, r)
+	                                cont = False
+	                                break
+	                        if not cont:
+	                            break
+	
+	                if not cont:
+	                    break
+	            if not cont:
+	                break
+	
+919b9bc17c9edd9c3cbb7b334ce30128|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|89|1|V|python
+	        j = 0
+d73b3169fc4bc9f5d16b84c775c2d120|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|90|1|V|python
+	            j += 1
+0d0e26604ffa3d7a95c120e32793d3ee|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|90|15|V|python
+	            if 
+bfd5764df9bd5b7ee44d1c320486b53c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|87|9|V|python
+	    j = 0
+b903a2fa1cbb3ad8428485fede88d93f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|88|1|V|python
+	        reader = csv.reader(f1, delimiter="\t")
+	        j = 0
+	        for row in reader:
+	            if j % 2 == 0:
+	                continue
+	            j += 1
+	            if j not in black_list:
+	                i = 0
+	                for r in row:
+	                    i += 1
+	                    if i != 1:
+	                        if r not in dbid_list:
+	                            dbid_list.append(r)
+7298987eb04dab9e00f90341cc1bc4f4|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|91|11|V|python
+	        if 
+bafde0d4222bf2c460d3ed394c7dfd2c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|93|36|V|python
+	        columns = row[i].split("\t")
+54ca84a794888fe8d92834787dfa935a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|93|28|v|python
+	columns
+98c8274f7917fd703967df26d2d0630b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|93|28|v|python
+	rows[i].split("\t"))
+8fffa4a05d9ae7f5defb9c79835344c7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|98|14|V|python
+	    print(dbid_list)
+b545fad4e903885a905ea90f36ce0978|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|94|16|v|python
+	rows[i].split("\t")[j]
+4d9681722aa4c2e61d82993266bb0593|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|96|1|V|python
+	                dbid_list.append(rows[i].split("\t")[j])
+2185bcf5b30fd2c1cb53a92118f2aaed|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|107|1|V|python
+	    # list_dbid(dirname)
+2bde86a252f59748efd87cd7829e6851|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|12|1|V|python
+	    column = re.sub("{.*?}", "")
+edf82fb4aeced59eaaefdc21b88b09a7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|13|1|V|python
+	    column = re.sub('"', "", column)
+4f91d0da2e05075b6df8aaf47833323f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|14|1|V|python
+	    column = re.sub("'", "", column)
+24748a973a9f814944a52f007649e5e5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|27|1|V|python
+	                    print(row[i])
+5c7c91890d31c3acb6b9fdc4787e6312|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|11|1|V|python
+	def treat_psicquic_column(column: str):
+	    column = re.sub("{.*?}", "", column)
+	    column = re.sub('"', "", column)
+	    column = re.sub("'", "", column)
+	    column = re.sub("\s", "", column)
+	    return column
+c29cfa2bb85c1f2c597f326fa1fb2f7b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|99|1|V|python
+	def treat_psicquic_column(column: str):
+7229bc3ad5ea080cb2948522723e5226|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|103|5|V|python
+	    return column
+487d480613d58beb9ee8d79594040b46|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|99|1|V|python
+	            column = re.sub("{.*?}", "", column)
+	            column = re.sub('"', "", column)
+	            column = re.sub("'", "", column)
+	            column = re.sub("\s", "", column)
+f9abf90c83fcdd1a6e17273fa5be5f42|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|57|20|V|python
+	    # error handling
+fe63ab877812107fc3a75fe7a952deea|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|49|1|V|python
+	    # key = dbname, value = uriの辞書を作成
+35ae1718ce912f9683bbca21f2093d6f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|31|1|V|python
+	    # key = dbname, value = uriの辞書を作成
+	    # with open("turtle/subject_url_list.csv") as f1:
+	    #     reader = csv.reader(f1, delimiter=",")
+	    #     for row in reader:
+	    #         db_list[row[0]] = rdflib.Namespace(row[1])
+85462f3980833d67fc6a95b192e39299|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|36|44|v|python
+	column1
+92e0be3306efbbe4cfa50133f6d511dc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|36|73|v|python
+	column2
+1bd3d7a8ee661a08fb869536e09957b3|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|32|1|V|python
+	    db_name1, identifier1 = treat_data(column1)
+	    db_name2, identifier2 = treat_data(column2)
+0d377636edaebcb874063c5b90b9348e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|34|1|V|python
+	    column1 = trate_interactor(column1)
+bbc3698b90f89b2cdbc1922fe8fff5f0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|27|1|V|python
+	    column = re.sub("_", "-", column)
+cd7358da2322654ae0e3c8676c772278|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|28|14|v|python
+	re.sub("_", "-", column)
+81e073b428b50247daba38531dcf412a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|41|69|v|python
+	lower
+4f17bae102267acf7cca2132c9e7c81c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|37|53|V|python
+	    # アルファベット以外は-に置き換える
+cda44739a679e2de28a9f683b3f10a52|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|111|37|V|python
+	                Taxon_id = create_object_uri(row[9])
+3ad08554af3afc21289923da3b3d9a29|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|103|17|V|python
+	                # カラムデータの取得、バリデーション
+60dd0a6cc3368de1bc0a5efd49cb70ab|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|97|9|V|python
+	        progress = 0
+1a266c3731009165ab89c2b8e0645a11|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|100|9|V|python
+	                progress += 1
+525abe68d5c07fbcb0fe032cbc29aff6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|100|9|V|python
+	                init_log("progress", str(progress))
+e59a2f44bb13a0b9a9861bdd86ace487|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|8|1|V|python
+	from log.log import init_log, log
+af7b70890aba0cea30fa37eaf10429f6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|33|1|V|python
+	    db_list = dict()
+24b70d62d72f06f02720b4a7f6b7d27e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|107|1|V|python
+	
+	                # URIの作成
+	
+	                # RDFの作成
+85b1ec9b051f60ea6765ff5b1de8d310|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|108|17|V|python
+	                g.add((Interactor_ab, detected_by, Detection_method))
+d6e4263377021dc7b91349942c2c04bd|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|107|1|V|python
+	
+	                g.add((Interactor_ab, author_is, First_aouthor))
+d52c80a565392355fecf6b1be5218c89|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|108|1|V|python
+	                g.add((Interactor_ab, author_is, First_aouthor))
+18c1478c0b135e139c348892d1494abc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|116|17|V|python
+	                g.add((First_aouthor, pub_id, Publication_id))
+b04ba7f4584efc39e51bfa2094671b5e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|117|17|V|python
+	                g.add((Interactor_ab, has_interaction_type_bp, Interaction_type))
+418c49d872432394a31aefa616959f90|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|118|17|V|python
+	                g.add((Interactor_ab, has_interaction_type_obo, Interaction_type))
+de82f63556eb716edaa29116cd9d272d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|119|17|V|python
+	                g.add((Interactor_ab, souce_db, Source_database))
+ff49725f8dd2b2306f5ab5a96428c344|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|120|17|V|python
+	                g.add((Interactor_ab, has_interaction_id_bao, Interaction_id))
+bb421b48f465778606551ebd66d2432e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|121|1|V|python
+	                g.add((Interactor_ab, has_interaction_id_lim, Interaction_id))
+	                g.add((Interactor_ab, has_interaction_id_obo, Interaction_id))
+354bcd930c2dabb57d6da15de84c3492|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|123|17|V|python
+	                g.add((Interactor_ab, organizm, Taxon_id))
+9e125e0ff2bceb6160e10d0614f16018|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|65|1|V|python
+	    detected_by = URIRef("http://www.bioassayontology.org/bao#BAO_0002875")
+58455fcff2277556a1eb6d2adc889c60|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|102|50|v|python
+	First_aouthor
+a2a34fe21841c82badb9ecf627b3b111|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|102|39|v|python
+	author_is
+69d644138847849250ad1fa7c6926af5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|104|1|V|python
+	    # for id_ in dbid_list:
+	    #     print(id_[0], ",", id_[1])
+a35b156e84fa086b361d47a418df7189|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|47|1|V|python
+	    with open("turtle/object_url_list.csv") as f1:
+	        reader = csv.reader(f1, delimiter=",")
+	        for row in reader:
+e72d83960cad1d13d0bc78eb720db5ab|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|93|1|V|python
+	        header = next(reader)
+312eab5118c9b07265730077518d8e3b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|6|9|V|python
+	        header = 
+fffaf30e1e85eee47cdcbd7cf89a90a6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|9|20|V|python
+	            for culumn in row:
+4ef34a7cd63946eb20549989ce05ee42|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|8|16|V|python
+	        for row in reader:
+	            dict
+1e234998dc55b371ebbe2937f417d3b6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|9|16|V|python
+	            dict
+15d286ba732ad6773b1d89a052fc99b9|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|10|21|V|python
+	                    )
+9cf45af2f8a8369dcdca6de413b62892|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|12|21|v|python
+	uri_example
+f7531e2d0ea27233ce00b5f01c5bf335|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|22|5|v|python
+	print
+7bb0edd98f22430a03b67f853e83c2ca|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|19|8|V|python
+	        
+7ddd5a90fd0f28f15e9b9a264dc394f8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|18|13|V|python
+	            }
+2477e9c701e631560fb6e71bde9369f1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|18|13|V|python
+	            )
+ba3a904d361ecc57b92b579cd15dd400|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|19|34|v|python
+	object_uri_list[key]["uri"]
+7cb4ee25bf8defa14e896bbc8539e8d0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|9|1|V|python
+	            csv_dict[row[0]]['uri'] = row[1],
+7a7c2c424a562d92da5ae6b05003f0c9|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|12|1|V|python
+	                    uri_example=row[2],
+	                    # psucquic_data=row[3]
+c6f58872973236bd20c8671391d3315f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|10|1|V|python
+	            try:
+c09891ce37168397a0d009e9b534bfa8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|12|1|V|python
+	            except:
+	                pass
+76aba201dd1be88dd23ee5452432b4f7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|17|13|V|python
+	                pass
+53f377659d9e72d8cac8a8b24fb4c109|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|25|49|v|python
+	 +","
+	
+7f5d2b4d0323d155a0b528a0d212c6a7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|26|22|v|python
+	"," + 
+c637030674b0adad0e88d380600c281c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|26|1|V|python
+	        try:
+07e64943ccc1c4f3220d986c9d1d056a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|29|9|V|python
+	            pass
+86404d8cee5ad6fcfac5de759cd527a6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|28|1|V|python
+	        except:
+	            file_text += ","
+7abddb32e807fe848a59d8dbdcc21f4d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|43|1|V|python
+	    object_uri_list = csv_to_dict()
+	    print(object_uri_list)
+d07711f7205df4ac3fdac96f81385f7a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|50|1|V|python
+	    f = open(out_dir_name, "w")
+	    f.write(text)
+	    f.close()
+8d48b91376b0e6548febfd8b00835638|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|41|14|v|python
+	out_dir_name
+cbc131e0498a298871a2fbc204755c99|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|5|1|V|python
+	    with open("uri_list/object_uri_list.csv") as f1:
+89dbf051971dec26b98fe5b3579520b3|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|42|16|v|python
+	uri_list/object_uri_list.csv
+0139477e4df2c6838fe4e69357a219e1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|42|24|V|python
+	    with open("") as f1:
+1cb251ec0d568de6a929b520c4aed8d1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|42|13|v|python
+	text
+ea59c88a638025022463ebc96274df89|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|42|13|v|python
+	obje
+ee2c0d8ddc78cdf8013801603a3cb2fd|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|40|12|V|python
+	    print(object_uri_list)
+7b7a118c1df024124eeda31f0787977e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|9|29|v|python
+	['uri'] = row[1],
+21a275d18414f7ac02770a8355abfbf5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|26|1|V|python
+	        print(object_uri_list[key]["uri"])
+b00f2ee08e7bc0e53d2630abe151de85|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|10|1|V|python
+	            print(row[1])
+399d67c8da80fcba038173b2868daef1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|28|1|V|python
+	        # print(object_uri_list[key]["uri"])
+	        # print(type(object_uri_list[key]["uri"]))
+605c09de1d98b499e38fc6f89e81f3bb|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|10|1|V|python
+	            # print(row[1])
+	            # print(type(row[1]))
+f54b9a001fc609405d2600c1be8583f8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|11|19|v|python
+	row[1]
+66fccdb6f899d986c0c5d273abb457b0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|11|19|v|python
+	row1]
+58ca7f7ce1649958943bbba8cdbc8065|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|12|22|V|python
+	            print(csv_dict)
+34a12d4079075f37ee74a8bfc41261cc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|11|28|V|python
+	            print(type(row[1]))
+f1ea063d3be76dde8c614d11cbbacaf1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|7|1|V|python
+	        next(reader)
+	        for row in reader:
+6975956a406500070ddc167ce81bcb74|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|43|9|V|python
+	        t = f1.read()
+7c85c76b3b483ffdc295be556f4820c5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|45|9|V|python
+	        for 
+b20ba678183617337b2299aa37dae58c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|6|1|V|python
+	        reader = csv.reader(f1, delimiter=",")
+a7284b7ad7c3aaa85b3ba98bb57845a3|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|44|20|V|python
+	        next(reader)
+9718c9e340693832a5943deaca6f1de1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|44|26|V|python
+	        for row in reader:
+	            object_uri_list[row[0]] = 
+e8224af38600d907bf770626b4c97b1e|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|55|1|V|vim
+	noremap <silent>ta :tabnew<CR>
+642348b4012079c2c34f284782194877|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|58|11|V|vim
+	fdjisa jifoa s oiajfso
+97a5527025b3b03c741712346e0b3eaf|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|57|2|v|vim
+	noremap
+73be252ca82217b1458a25e6b4e99f15|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|55|11|v|vim
+	silent
+7785ca5b0c13a04102f82bad42c76aee|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|59|1|V|vim
+	noremap <silent>:" diwi""<Esc>P
+cc60c7eaafb874e4096c5f379533b4b4|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|57|1|V|vim
+	noremap <C-h> gT
+592cdab319ead22c18fd74ecb34687e8|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|58|16|V|vim
+	noremap <CR> o<Esc>
+788d31c19751bc96188fe2002b5390c5|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|60|1|V|vim
+	noremap <silent>:' diwi''<Esc>P
+40fe30719ce755fd1d5c599706ca5a50|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|61|1|V|vim
+	noremap <silent>:[ diwi[]<Esc>P
+b785940d4310243072cb99cfb4f9866d|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|62|23|V|vim
+	noremap <silent>:d diwa<Esc>P
+444c896a8e3b8ce38864cdd378a75905|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all.py|193|1|V|python
+	    queryes = [
+	        "species:human"
+	        + " OR species:9606"
+	        + " OR taxidA:human"
+	        + " OR taxidA:9606"
+	        + " OR taxidB:human"
+	        + " OR taxidA:9606"
+	    ]
+01ed599292f2c7ce79ee2ff6cb7b88a2|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all.py|56|1|V|python
+	    interactiontype_except_list = [
+	        'psi-mi:"MI:0217"(phosphorylation reaction)',
+	        'psi-mi:"MI:0203"(dephosphorylation reaction)',
+	        'psi-mi:"MI:1110"(predicted interaction)',
+	    ]
+db372f16081c62d283e529e0045ba602|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|47|1|V|python
+	                object_uri_list[row[0]]["psiquic_data"] = row[1]
+e1dd8b00b496566d456981d292ab5faa|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|49|42|v|python
+	psiquic_data
+0dc391f41e8f44c433e351cfd1933b7a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|49|33|V|python
+	                object_uri_list[] = row[1]
+8637dbbc4f12d267ce62277e4d0b6288|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|21|22|v|python
+	object_uri_text
+f47fa0bf801bc847ca86cf7ec0aa43e6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|48|1|V|python
+	    with open("uri_list/out.csv") as f1:
+	        reader = csv.reader(f1, delimiter=",")
+	        for row in reader:
+	            try:
+	                object_uri_list[row[0]]["psiquic_data"] = row[1]
+	            except:
+	                object_uri_list[row[0]] = dict()
+	                object_uri_list[row[0]]["psiquic_data"] = row[1]

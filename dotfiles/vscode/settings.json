@@ -3,7 +3,6 @@
     // Editor
     "workbench.statusBar.visible": true,
     "editor.renderWhitespace": "all",
-    "editor.fontSize": 13,
     "diffEditor.ignoreTrimWhitespace": false,
     "emmet.variables": {},
     "editor.minimap.enabled": false,
@@ -25,7 +24,6 @@
 
     // Shell
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-    "terminal.integrated.fontSize": 13,
 
 
 
@@ -145,7 +143,13 @@
             "commands" : ["redo"]
         },
     ],
+    // タブ
     "workbench.editor.wrapTabs": true,
     "workbench.editor.tabSizing": "shrink",
+
+    // サイズ
+    "debug.console.fontSize": 13,
+    "terminal.integrated.fontSize": 13,
+    "editor.fontSize": 12,
 }
 

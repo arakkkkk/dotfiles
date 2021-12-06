@@ -44,17 +44,25 @@ noremap <S-k>   {
 noremap <S-l>   $
 noremap <C-j>   5j
 noremap <C-k>   5k
-
 noremap <C-e>  $
 noremap <C-a>  ^
 map! <C-e>  <C-c>$a
 map! <C-a>  <C-c>^i
+noremap <CR> o<Esc>
 
 noremap <silent>tr :vsplit<CR>
 noremap <silent>tu  :split<CR><C-w><C-w>
 noremap <silent>ta :tabnew<CR>
 noremap <C-l> gt
 noremap <C-h> gT
+
+noremap <silent>:" diwi""<Esc>P
+noremap <silent>:' diwi''<Esc>P
+noremap <silent>:[ diwi[]<Esc>P
+
+
+
+
 
 
 syntax enable

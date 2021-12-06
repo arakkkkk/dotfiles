@@ -367,7 +367,7 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "left_command",
+                                    "key_code": "spacebar",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_control"

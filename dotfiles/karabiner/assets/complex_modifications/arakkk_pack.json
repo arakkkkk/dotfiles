@@ -214,7 +214,8 @@
                             "type": "frontmost_application_unless",
                             "bundle_identifiers": [
                                 "com.googlecode.iterm2",
-                                "com.microsoft.VSCode"
+                                "com.microsoft.VSCode",
+                                "com.vivaldi.Vivaldi"
                             ]
                         }
                     ]
@@ -345,6 +346,36 @@
                         }
                     ],
                     "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "<C-c> to <Esc>",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "c",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape"
+                        }
+                    ],
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "com.googlecode.iterm2",
+                                "com.microsoft.VSCode"
+                            ]
+                        }
+                    ]
                 }
             ]
         },

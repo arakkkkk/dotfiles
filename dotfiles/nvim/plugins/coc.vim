@@ -8,7 +8,10 @@ let g:coc_global_extensions = [
       \, 'coc-json'
       \, 'coc-css'
       \, 'coc-go'
+      \, 'coc-prettier'
+      \, 'coc-eslint'
       \, ]
+
 set nocompatible
 set runtimepath^=/path/to/coc.nvim
 filetype plugin indent on

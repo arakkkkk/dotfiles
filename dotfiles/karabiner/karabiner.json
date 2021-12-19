@@ -210,7 +210,8 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
-                                            "com.microsoft.VSCode"
+                                            "com.microsoft.VSCode",
+                                            "com.vivaldi.Vivaldi"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -356,6 +357,36 @@
                                     },
                                     {
                                         "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "<C-c> to <Esc>",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.googlecode.iterm2",
+                                            "com.microsoft.VSCode"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape"
                                     }
                                 ],
                                 "type": "basic"

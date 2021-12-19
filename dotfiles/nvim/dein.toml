@@ -115,3 +115,6 @@ hook_add = '''
 
 [[plugins]]
 repo = 'Xuyuanp/scrollbar.nvim'
+
+[[plugins]]
+repo = 'maxmellon/vim-jsx-pretty'

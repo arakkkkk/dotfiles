@@ -26,3 +26,5 @@ alias gb="git branch"
 alias gl="git log"
 
 alias code="code ."
+
+alias cb="cd .."

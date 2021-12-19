@@ -1,8 +1,13 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": [
-        "json",
-        "css",
-        "markdown"
-    ],
-    "tsserver.enableJavascript": false
+  "coc.preferences.formatOnSaveFiletypes": [
+    "json",
+    "css",
+    "markdown",
+    "typescriptreact",
+    "javascriptreact",
+    "javascript"
+
+  ],
+  "prettier.useTabs": true,
+  "tsserver.enableJavascript": false
 }

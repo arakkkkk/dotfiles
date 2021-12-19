@@ -5,9 +5,8 @@ let g:ale_linters = {
 " 各ツールをFixerとして登録
 let g:ale_fixers = {
     \ '*': ['remove_trailing_lines', 'trim_whitespace'],
-    \ 'python': ['autopep8', 'black', 'isort'],
+    \ 'python': ['autopep8', 'black', 'isort', "prettier"],
     \ 'json': ['fixjson', 'jq'],
-    \ 'javascript': ['prettier'],
     \ 'html': ['html-beautify'],
     \ 'htmldjango': ['html-beautify'],
     \ 'css': ['prettier', 'stylelint'],

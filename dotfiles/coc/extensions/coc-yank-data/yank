@@ -1,1058 +1,1732 @@
-e905bfbf6a3e20518dd54932e7d64020|file:///Users/Kouiti/Desktop/aa.py|13|1|V|python
-	# 対象の行が| を持つか判定
-33a243abe8ab42996a44252f4b5c7ea9|file:///Users/Kouiti/Desktop/aa.py|52|1|V|python
-	def list2tsv(data: list):
-	    result = ""
-	    for i in range(len(data)):
-	        if i != 0:
-	            result += "\t"
-	
-	        if "psi-mi" in data[i]:
-	            result += data[i].split('"')[1].split(":")[1]
-	        elif ":" in data[i]:
-	            result += data[i].split(":")[1].split("(")[0]
-	        else:
-	            result += data[i]
-	    return result
-	
-95b6859cc7cf27e5a1970a8e303f17aa|file:///Users/Kouiti/Desktop/aa.py|2|1|V|python
-	import glob
-7b90963980d484c56dc9dd30f4f0724a|file:///Users/Kouiti/Desktop/aa.py|2|1|V|python
-	from mylib.psiquic_class import PQdataList, PQdata
-38757f0b7d62c9ce22d47e95a66de48a|file:///Users/Kouiti/Desktop/aa.py|2|1|V|python
-	from mylib import general_method as gm
-d4d8cbbf70cc64e81039e3bdabdf0b0b|file:///Users/Kouiti/Desktop/aa.py|7|1|V|python
-	
-	sys.path.append(os.path.join(os.path.dirname(__file__), "../"))
-9940ec9d6462a96f51f674c82c628866|file:///Users/Kouiti/Desktop/aa.py|6|1|V|python
-	import sys
-ed9f4b8f879ddbb59fda1057ea3a2810|file:///Users/Kouiti/Desktop/aa.py|2|1|V|python
-	import os
-31914dd72b66dc25496c9bbd57013345|file:///Users/Kouiti/Desktop/aa.py|53|1|V|python
-	        # csvのヘッダーを飛ばす
-8f758b77301be9ef98c779ee9b116d54|file:///Users/Kouiti/Desktop/aa.py|74|1|V|python
-	        # 行データの読み込み
-a74a993abb3f3561607724dcb364259a|file:///Users/Kouiti/Desktop/aa.py|1|1|V|python
-	from copy import copy
-	import re
-	import csv
-	
-	# 行が | を持つか判定
-	
-	
-	def has_bar_in_row(row):
-	    for column in row:
-	        if "|" in column:
-	            return True
-	    return False
-	
-	
-	# 行のリストが | を持つか判定
-	def has_bar_in_row_list(row_list: list):
-	    for row in row_list:
-	        if has_bar_in_row(row):
-	            return True
-	    return False
-	
-	
-	def expansion_tsv_row(row_list: list):
-	    result_list = []
-	    for row in row_list:
-	        # | が存在する場合に処理を行う
-	        if has_bar_in_row(row):
-	            for i in range(len(row)):
-	                if "|" in row[i]:
-	                    # 以下の6行でカラムを | で分割
-	                    row_a = copy(row)
-	                    row_a[i] = re.split("|", row[i])[0]
-	                    row_b = copy(row)
-	                    row_b[i] = re.split("[|\t$]", row[i])[1]
-	                    result_list.append(row_a)
-	                    result_list.append(row_b)
-	                    break
-	        else:
-	            result_list.append(row)
-	
-	    # | がまだ存在する場合再帰的にexpantion_tsv_rowを実行
-	    if has_bar_in_row_list(result_list):
-	        result_list = expansion_tsv_row(result_list)
-	    return result_list
-	
-	
-	# barで分けて展開したものをファイルの保存
-	def expansion_tsv(file_name):
-	    result_list = []
-	    with open(file_name) as f1:
-	        reader = csv.reader(f1, delimiter="\t")
-	        # tsvのヘッダーを飛ばす
-	        header = next(reader)
-	        # 行データの読み込み
-	        for row in reader:
-	            if has_bar_in_row(row):
-	                # |で区切られてるrow dataを展開
-	                row_list = expansion_tsv_row([row])
-	                for devided_row in row_list:
-	                    result_list.append(devided_row)
-	    # ファイルへの出力
-	    for row in result_list:
-	        f = open("out.tsv", "w")
-	        f.write(row)
-	        f.close()
-	
-	
-	def expansion_csv(file_name):
-	    result_list = []
-	    with open(file_name) as f1:
-	        reader = csv.reader(f1, delimiter=",")
-	        # csvのヘッダーを飛ばす
-	        header = next(reader)
-	        # 行データの読み込み
-	        for row in reader:
-	            if has_bar_in_row(row):
-	                # |で区切られてるrow dataを展開
-	                row_list = expansion_tsv_row([row])
-	                for devided_row in row_list:
-	                    result_list.append(devided_row)
-	    # ファイルへの出力
-	    for row in result_list:
-	        f = open("out.csv", "w")
-	        f.write(row)
-	        f.close()
-	
+6efeeb6302059e3a895baad3555266e4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/merge_sbml.py|1|1|V|python
+	if __name__ == "__main__":
+	    import sys
+	    sys.path.append('/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/')
+6b5f0a706d674ec87d7971939eac7e1a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|103|1|V|python
+	    if __name__ == "__main__":
+055fd9c236770d3104406f46ffa0cdb4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/merge_sbml.py|209|1|V|python
+	    signaling_sbase = readSBML('/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/Notch_Signaling_Pathway copy.xml')
+c5054d771009c6e1b0d73f5171998343|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|1|1|V|python
+	if __name__ == "__main__":
+cdc04db9ba8bd166a2bfffaefa11b062|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|105|1|V|python
+	if __name__ == "__main__":
+	    signaling_sbase = readSBML('/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/signaling.xml')
+	    formatsbml(writeSBMLToString(signaling_sbase))
+682788937b0f1debc31fc7f56df87f86|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|104|1|V|python
 	
 	if __name__ == "__main__":
-	    file_name = "test.tsv"
-	    expansion_tsv(file_name)
-ef1c3e68a8fcfd1da92b81fb9b4d5f46|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|70|28|V|python
-	            print("|", end="")
-b33388391ecd6307fa948d054f535fa6|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|26|1|V|
-	alias gl="git log"
-519dd6df60ce6b8241ca8e17cdd28e0a|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|30|10|V|
-	alias gitreset="git reset --hard HEAD"
-=======|undefined|undefined|undefined|undefined|undefined
-ef5a1f553ca1ccdd80d480520810e6cb|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/ContentsUpdate.js|87|92|v|javascript
-	component_id
-9116ca6d7a928df5765a99fdb2a4b291|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|1|V|go
-			service_id, _ := strconv.Atoi(c.Param("id"))
-086fd796af3fd231fbc4108ed2a4dace|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|95|1|V|go
-			service_id, _ := strconv.Atoi(c.Param("service_id"))
-a272fe32cb1562b96566551ab1a3d221|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/go-app/svc/services/urls.go|98|1|V|go
-			comp_id, _ := strconv.Atoi(c.Param("comp_id"))
-			service.Components.NextID = comp_id + 1
-0014a2ad07a6d5c64126502aef34f2bd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|9|1|V|htmldjango
-	      <p>task_id = {{task_id}}, user_name = {{user_name}}</p>
-ca1cd3c3055991bf20499ee86739f7e2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|13|18|v|htmldjango
-	score
-1a97de8c6a3d66165aef070a8d528c93|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|87|1|V|htmldjango
-	  var shadowing_vioce_path = "{{ task.shadowing_voice | safe }}";
-0cf31b2c283ce3431794586df7b0996d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|3|V|htmldjango
-	    
-c6fd4e1fc6410828068acefd574ccaac|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|9|v|htmldjango
-	shadowing_vioce_path
-478f3a4c51824ad23cb50c1c60670c0f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|25|v|htmldjango
-	task
-cb3d5ef297504235fb83be2b9bace6bb|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|9|v|htmldjango
-	dtw_score
-10bfc84ccadfc6b7dab844a4294e8791|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|43|v|htmldjango
-	shadowing_voice
-5c70edf37ea9edbd6fe47bb9711b3c27|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|76|5|V|htmldjango
-	    console.log(voice_records)
-9dfc8dce7280fd49fc6e7bf0436ed325|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|45|v|htmldjango
-	safe
-0684c728e5ee9fb1b67c93d9472bc52e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|112|1|V|htmldjango
-	<div class="col-md btn-group" role="group" aria-label="Basic">
-	  <button type="submit" class="btn btn-border-shadow btn-border-shadow--color next"> Next ⇨ </button>
-	</div>
-c79bdf421714f5087fc34b7c538b6807|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|61|17|v|htmldjango
-	submit
-c8d582a045724c2c3c6fb6e84f31b98c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|56|1|V|htmldjango
-	<div class="col-sm">
-	    <a type="button" class="btn btn-success" id="next-btn" hidden>Next</a>
-	</div>
+	    signaling_sbase = readSBML('/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/signaling.xml')
+	    formatsbml(writeSBMLToString(signaling_sbase))
 	
-466deec76ecdf5fca6d38571f6324d54|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|45|v|htmldjango
-	json
-247f140eb2d97a5a818842f3392d32ef|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|30|v|htmldjango
-	dumps
-b1a2560254281c75b990b708d4c1e4f7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|163|5|v|python
-	dtw_scores
-3396ace84e6be5fa8d0e4685890c106d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|29|v|htmldjango
-	voice_records
-a23613eb202ad0cf88ab8968b16d4ba1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|165|10|v|python
-	voice_record.dtw_score
-91ed856b1e90c8d69f261fcba5e7096b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|164|1|V|python
-	        "dtw_score":voice_record.dtw_score,
-dd54db35db48282b1b0dae92d138d6f7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|72|32|v|htmldjango
-	_scores 
-6a44fbb86112ab752a24fad1452bbad6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|162|1|V|python
-	    content["voice_records"] = list(voice_records.values())
-114d53ad730ff9226650291c314b6f3f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|25|60|v|htmldjango
-	dnn_gop_score
-5452fc9ac4450cc310471ab2e70cd595|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|74|42|V|htmldjango
-	    console.log(JSON.parse(voice_records))
-6d8d5a789f330853b5400457ac4f7efe|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|75|1|V|htmldjango
-	        console.log(voice_record.dtw_score)
-05aa078735400fcce8197144f68a7e09|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/handler/shadowing.py|166|10|V|python
-	    content["voice_records"] = json.dumps(content["voice_records"])
-e76626c306403b2b2ed3156718d0353b|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|93|21|v|htmldjango
-	myDiv
-635646afa5aa31dadd625f473f2e1cf4|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|93|21|v|htmldjango
-	graph_DtwScore
-f3c3522c5e1cb130b6540e4a97d5b8dc|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|37|26|V|htmldjango
-	                    <img src="https://www.della.co.jp/resource/img/gurafu1.gif">
-f82fff0cf43c2d0daf22995163ff47da|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|76|8|V|htmldjango
-	        console.log(voice_record.dnn_gop_score)
-8d777f385d3dfec8815d20f7496026dc|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|92|38|v|htmldjango
-	data
-d904cadedf9ccbc0d022b41204d5e89d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|83|1|V|htmldjango
 	
-	    var trace2 = {
-	      x: [1, 2, 3, 4],
-	      y: [16, 5, 11, 9],
-	      type: 'scatter'
-	    };
+0a1aaaee718967f042d74d7eff86c00c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|96|1|V|python
+	    sbml_doc = readSBMLFromString(sbml_text)
+	    sbml_doc = checkname(sbml_doc)
+	    sbml_doc = amount2cocentration(sbml_doc)
+	    sbml_doc = celldesigner2layouts.celldesigner2layouts(sbml_doc)
+5c83c87dd788e4bb3509362b45c47a78|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|107|5|V|python
+	    formatsbml(writeSBMLToString(signaling_sbase))
+493d3eae1c815c561c053807cdd625cb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_modelconverter.py|12|1|V|python
+	from source.GSS.model_converter import sbml2cy
+4f45a3b789b9fcf95e9decb823c4bf8b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|91|68|v|python
+	sbml_reaction
+b07c6b2fcc20ce611a43e8ab65a4ecbc|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/libGSS.py|41|14|V|python
+	    formula = 
+35be2c1cf2cc489bdb16b678cd73cd78|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/libGSS.py|47|21|v|python
+	formula
+10ac618901a6f0e90b03d34df04ecf33|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_main.py|262|1|V|python
+	        document = SBMLDocument(3, 1)
+	        model = document.createModel()
 	
-	    var data = [trace1, trace2];
+	        reaction = model.createReaction()
+	        kinetic = reaction.createKineticLaw()
+	        math_ast = parseL3Formula(request.json)
+	        kinetic.setMath(math_ast)
+	        reaction.setKineticLaw(kinetic)
+	        model.addReaction(reaction)
 	
-2eb7cc60658edc5af732db2015ba8daf|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|75|1|V|htmldjango
-	        graph_data["x"].push(i)
-835c336318236956aa55d66852021295|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|79|1|V|htmldjango
-	    var trace1 = {
-	        x: [1, 2, 3, 4],
-	        y: [10, 15, 13, 17],
-	        type: 'scatter'
-	    };
-fed486583ad6b4e3a805d2fdde7d4168|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|77|33|V|htmldjango
-	        console.log(voice_records)
-eb8b805f31034f9e29cb42fc33aa979c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|78|28|V|htmldjango
-	            showarrow: false
-605a71f0fe6f18385f567fc7a3424cd1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|13|1|V|htmldjango
-	        {% for voice_record in voice_records %}
-b16b3365f99133348b179d52f0101e11|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|29|1|V|htmldjango
-	        {% endfor %}
-df28d4267bd6cb8702e977efd4198465|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|39|9|V|htmldjango
-	                    {% for voice_record in voice_records %}
+	        sbml = writeSBMLToString(document)
+	        mathml = "<math" + sbml.split("<math")[1].split("</math>")[0] + "</math>"
+	        mathml = mathml.replace("\n", "")
+	        mathml = mathml.replace(' type="integer"', "")
+	        mathml = re.sub("\s+<", "<", mathml)
+	        mathml = re.sub(">\s+", ">", mathml)
 	
-e593859e9b4d51850eec1811bf22e96e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|40|29|V|htmldjango
-	                    {% if voi}
-4ad2e5ebaf8ec2809b2ee13f65353633|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|15|6|V|html
-	          <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg" alt="User picture">
-be92d077b8892f972a352d9acc2c1e81|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|15|90|v|html
+	        return mathml
+cdce91cc92db812f1312201d0c132c19|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_main.py|262|1|V|python
+	        document = SBMLDocument(3, 1)
+	        model = document.createModel()
+	
+	        reaction = model.createReaction()
+	        kinetic = reaction.createKineticLaw()
+	        math_ast = parseL3Formula(request.json)
+	        kinetic.setMath(math_ast)
+	        reaction.setKineticLaw(kinetic)
+	        model.addReaction(reaction)
+	
+	        sbml = writeSBMLToString(document)
+	        mathml = "<math" + sbml.split("<math")[1].split("</math>")[0] + "</math>"
+	        mathml = mathml.replace("\n", "")
+	        mathml = mathml.replace(' type="integer"', "")
+	        mathml = re.sub("\s+<", "<", mathml)
+	        mathml = re.sub(">\s+", ">", mathml)
+553811c61a11ba0fc3e2c9383d432839|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|88|1|V|python
+	            if simple == 1:
+	                node["data"]["note"] = {
+	                        "formula": libGSS.getFormulaFromRaction(reaction),
+	                        "kinetic": libGSS.getMathmlFromReaction(reaction),
+	                        "parameters": libGSS.getParameterByformula(reaction, sbml_model)
+	                        }
+8a98d42d0ce502c034e2b86982523be2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|88|1|V|python
+	            if simple != 0:
+	                node["data"]["note"] = {
+	                        "formula": libGSS.getFormulaFromRaction(reaction),
+	                        "kinetic": libGSS.getMathmlFromReaction(reaction),
+	                        "parameters": libGSS.getParameterByformula(reaction, sbml_model)
+	                        }
+971e5fe231bdd9535697d24f77062879|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|215|1|V|typescriptreact
+	          <div className="row">
+	            <div className="col-xl-12 col-lg-12 scroll">
+	              <div id="clickedupcnotent"></div>
+	              <div id="clickedcnotent"></div>
+	            </div>
+	          </div>
+3e3b1ac95d9fc7196d0ac39a291bc032|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|23|15|v|typescriptreact
+	fill="currentColor"
+7f7415f37ff94dc830bc795720b2b060|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|19|1|V|typescriptreact
+	            <svg
+	              xmlns="http://www.w3.org/2000/svg"
+	              width="20"
+	              height="20"
+	              
+	              className="bi bi-arrows-angle-expand"
+	              viewBox="0 0 16 16"
+	            >
+	              <path
+	                fillRule="evenodd"
+	                d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z"
+	              />
+	            </svg>
+be92d077b8892f972a352d9acc2c1e81|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|20|22|v|typescriptreact
 	currentColor
-5e4cc4ece1f91b444e2aec157b44e466|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|21|1|V|css
-	h2 {
-e566fe79061adcd281b4d6bbcd6d0f46|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|20|1|V|css
-	
-	h2 {
-51a122058310fed1b451eb2f7b3ea545|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|29|1|V|css
-	    font-size: 4.5em;
-2845f919b6db8b9bc81bbbc0c852d852|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/q_and_a.html|38|1|V|htmldjango
-	                      {{qa.question_text}}
-32b965fac48ff7a2913bb6e029e4c1ca|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|7|1|V|htmldjango
-	<div class="subtitle"><h3>Shadowing</h3></div>
-0014b24b396b062f94883793c0fd4b6a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|6|1|V|htmldjango
-	<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-	    <h3 class="subtitle script-subtitle "><b>Task No.{{ task.id }}　　<font size="5" color="FF0000">[Script Check]</font></b></h3>
-	  </div>
-	</div>
-fd170458f72897a30012683701ae874d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|5|27|v|htmldjango
-	Shadowing
-af9ada9a7ee946649ae67cf675b2a99c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|56|1|V|htmldjango
-	<div class="col-md btn-group" role="group" aria-label="Basic">
-	  <button class="btn btn-border-shadow btn-border-shadow--color next" id="next-btn" hidden> Next ⇨ </button>
-	</div>
-36308e7529e20f029776fcc2a86e1c38|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reading_aloud.html|85|1|V|htmldjango
-	<div class="col-sm">
-	    <a type="button" class="btn btn-success" id="next-btn" hidden>Next</a>
-	</div>
-70afa9e6385c27097de88af17b18a1d7|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reading_aloud.html|93|1|V|htmldjango
-	  <div class="col-md btn-group" role="group" aria-label="Basic">
-	    <button type="submit" class="btn btn-border-shadow btn-border-shadow--color next"> Next ⇨ </button>
-	  </div>
-662f707d5491e9bce8238a6c0be92190|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|74|72|v|htmldjango
-	hidden
-8357bc88eb240b9d25b475f8cef2ba18|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|67|1|V|htmldjango
-	<div class="row button-area">
-	    <div div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	        <a href="/app/{{task.id}}/{{next_turn}}">Next</a>
-	        </button>
-	    </div>
-	</div>
-f213b0d9874ace9e0f21d809d0ec5021|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|70|1|V|htmldjango
-	
-	<div class="row button-area">
-	    <div div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-	        <a href="/app/{{task.id}}/{{next_turn}}">Next</a>
-	        </button>
-	    </div>
-	</div>
-8675bf3bde2ba2b77e7ffcecf15aba12|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reflection.html|7|1|V|htmldjango
-	    <h3 class="subtitle">Self reflection</h3>
-8bb98969d77a31d977912cc976c0f431|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|5|1|V|htmldjango
-	<div class="subtitle">
-	    <h3>Automatic Evaluation Scores</h3>
-	</div>
-157d738e8248391c7225d7cbbc7ccaf0|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/reflection.html|6|30|v|htmldjango
-	Scwidores
-8e6cd1f5d046ef66eb31979a60011493|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/css/index.css|233|14|V|css
-	  font-size: 2rem;
-c999c731638affea4a55070380990472|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|87|1|V|htmldjango
-	        graph_data["x"].push(i+1)
-	        graph_data["y"].push(voice_records[i]["dtw_score"])
-c36a3716782418cc7fa164d7c69147cd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|81|17|V|htmldjango
-	            layou
-da183349c5f244c8e7e249650f477c73|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|90|6|V|htmldjango
-	    la
-bc95dfc14146aa23e43f2ea7af04d310|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|83|12|V|htmldjango
-	            
-669849edd187de0d12b6094df25466ee|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|93|27|V|htmldjango
-	    console.log(graph_data)
-ea1125cf7428c2df61d516a6c6fd01ad|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|82|1|V|htmldjango
-	    var layout = {
-	            xaxis: {
-	                range: [ 1, j ]
-	            },
-	            yaxis: {
-	                //range: [0, 8]
-	            },
-	        }
-c6eadafb9258aebf50a155b39c8946be|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|62|1|V|htmldjango
-	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-	        <p class="border score">Fluency Score</p>
-	    </div>
-9ffef12f6233ee2264096e7fc81f7d70|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|50|1|V|htmldjango
-	    <!-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"> -->
-ecc28770ba49848e2c2442188679ec3c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|57|1|V|htmldjango
-	        <!-- <p class="border score">DNN-GOP Score</p> -->
-	        <p class="border score">{{errata_rate}}</p>
-1a010656603e1cdf2c8724e85752d912|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|48|1|V|htmldjango
-	<div class="row border-bottom">
-0a3a0b592b9c285e050805307cee87c2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|65|1|V|htmldjango
-	</div>
-fb2843d5706b02b3ffcdaa11ff500126|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|66|1|V|htmldjango
-	<div class="row border-bottom">
-	</div>
-7c4977695b670c59602654cd7314b80f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|50|1|V|htmldjango
-	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-	        <p class="border kind">2nd Reading Aloud</p>
-	        <p class="border kind">Corrent Answer Ratio In Q&A</p>
-	        <p class="border kind">3rd Reading Aloud (After 2 weeks)</p>
-	    </div>
-	    <!--2列目-->
-	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-	        <p class="border score">DNN-GOP Score</p>
-	        <p class="border score">{{errata_rate}}</p>
-	
-	    </div>
-	    <!--3列目-->
-	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-	        <p class="border score">Fluency Score</p>
-	    </div>
-af1f5e1783d0f1f67af124a12dfa88b1|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|52|5|V|htmldjango
-	        <p class="border kind">Corrent Answer Ratio In Q&A</p>
-e5850e18603a25a078f9cb62a10d5fe6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|52|5|V|htmldjango
-	        <p class="border kind">3rd Reading Aloud (After 2 weeks)</p>
-c2c5b68ca5d0543844aa4c6ef1b12fa4|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|52|5|V|htmldjango
-	    </div>
-	    <!--2列目-->
-6b9c4714ced78662f06cd7643c059257|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|56|5|V|htmldjango
-	        <p class="border score">{{errata_rate}}</p>
-799a8a5288a368da5a8d03fdce1571d2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|56|1|V|htmldjango
-	
-	    </div>
-63cf5de58935defd362d9d67acf56427|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|64|1|V|htmldjango
-	        <p class="border kind">2nd Reading Aloud</p>
-2f1122cf18971ad864cadc10dd3cd6ae|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|68|1|V|htmldjango
-	        <p class="border score">DNN-GOP Score</p>
-099aa5eaa7f5ca29c1fd9a76a7c7507d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|73|1|V|htmldjango
-	        <p class="border score">Fluency Score</p>
-23962cf2bcd19d0c5158f8f86661b947|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|71|1|V|htmldjango
-	    <!--3列目-->
-3c2a6d64757889fb7b8a953bf7323e79|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|66|1|V|htmldjango
-	    <!--2列目-->
-87a74813df552d12d438bcffe630f84d|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|49|1|V|htmldjango
-	    <!--1列目-->
-cbac6adec3223737b3067e4717d789c8|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|71|1|V|htmldjango
-	        <p class="border kind">2nd Reading Aloud</p>
-	        <p class="border kind">Corrent Answer Ratio In Q&A</p>
-ca4b3a8c7d1f063614128bdb76a486a6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|74|1|V|htmldjango
-	        <p class="border score">DNN-GOP Score</p>
-	        <p class="border score">{{errata_rate}}</p>
-71f262d796bed1ab30e8a2d5a8ddee6f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|69|24|v|htmldjango
-	bottom
-b50538bbd6c606495524fb6b18944023|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|36|1|V|htmldjango
-	                    <p class="score-change-title card-header">SH Improvement among 1st, 4th, 7th & 2nd script shadowing (DTW Score Change)</p>
-ba13da0826122b0fff10759e8a210550|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|36|78|V|htmldjango
-	                    <p class="score-change-title card-header">SH Improvement a script shadowing (DTW Score Change)</p>
-ca09f5b687a7853c141d4d08dfeb5f72|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|15|22|V|htmldjango
-	            <!-- 1列目 -->
-74da3529c64da7f20f443cc1d46eb2b6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|20|22|V|htmldjango
-	            <!-- 2列目 -->
-11a03aa5a741608a09527d0593451ee5|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|30|22|V|htmldjango
-	            <!-- 3列目 -->
-fc04accf7be183ce3e73666a275985fe|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|15|23|V|htmldjango
-	                <div class="training">
-9b0db20282c2dc8d23943c66e26f1139|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|16|22|V|htmldjango
-	                </div>
-39da55aae872568462fdb47ea10083a3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|18|18|V|htmldjango
-	                <div class="score">
-197929f729ed16dad53113ba43dbd69e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|18|18|V|htmldjango
-	                    <p class="border score">{{ voice_record.dnn_gop_score }}</p>
-	                </div>
-289f0e3245566df966d2b6cd2147c8c5|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|19|1|V|htmldjango
-	                        {% if voice_record.task_type == "SH" &}
-3d2db931b25ddff8ac15f182547c9db3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|21|1|V|htmldjango
-	                        {{ voice_record.dnn_gop_score }}
-61bb458d24f73b3f765908a4ffa8e5f2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|19|1|V|htmldjango
-	                        {% if voice_record.task_type == "SH" %}
-	                        {{ voice_record.dnn_gop_score }}
-	                        {% elif voice_record.task_type == "SS" %}
-	                        {{ voice_record.dnn_gop_score }}
-	                        {% endif %}
-543424bd7d569a0370a6d1406dc69a7e|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|27|1|V|htmldjango
-	                        {% if voice_record.task_type == "SH" %}
-8a121367f44e1a4cdc3414926bac27d6|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|28|1|V|htmldjango
-	                        {% elif voice_record.task_type == "SS" %}
-	                        {{ voice_record.dnn_gop_score }}
-	                        {% endif %}
-d4bc7c3abdc21915af40217b7c53aa37|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|22|1|V|htmldjango
-	                    Shadowing Score
-cc194c8386c0e4be795cd0bad94e2caa|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|17|1|V|htmldjango
-	                        {% elif voice_record.task_type == "SS" %}
-	                        Script Shadowing Score
-	                        {% endif %}
-1c59731e4be3834bfea43faf9e95711a|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/score.html|62|1|V|htmldjango
-	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-	    </div>
-4140ad480ed08db8ba6bc524f1e0dd92|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|205|48|V|html
-	>>>>>>> 6fa6e83fd2b3517847ec8b26705749113d50cbc9
-9b274d1b3075fa85cf94fba966a2697f|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|33|1|V|html
-	<<<<<<< HEAD
-	            <div class="sidebar-menu">
-	                <ul>
-	                    <li class="header-menu">
-	                        <div style="text-align:center"><span><font size="4" color="#ff00ff">Live English Training</font></span></div>
-	                        <!-- <i class="fa fa-home fa-lg "></i> -->
-	                    </li>
-	                    <li class="sidebar-dropdown">
-	                        <a href="/app/main">
-	                            <i class="fa fa-home"></i>
-	                            <span ><font color="#00ff">Main Menu</font></span>
-	                        </a>
-	                    </li>
-	                    <li class="sidebar-dropdown">
-	                        <a href="/app/task">
-	                            <i class="fa fa-eye"></i>
-	                            <span><font color="#00ff">Shadowing</font></span>
-	                        </a>
-	                    </li>
-	                    <li class="sidebar-dropdown">
-	                        <a href="#">
-	                            <i class="fas fa-backward"></i>
-	                            <span><font color="#00ff">Repeating</font></span>
-	                            <!-- <span class="badge badge-pill badge-danger">3</span> -->
-	                        </a>
-	                    </li>
-	                    <li class="sidebar-dropdown">
-	                        <a href="#">
-	                            <i class="fa fa-headphones"></i>
-	                            <span><font color="#00ff">Listening</font></span>
-	                        </a>
-	                    </li>
-	                    <li class="sidebar-dropdown">
-	                        <a href="/app/task:ID/reading_aloud">
-	                            <i class="fa fa-microphone"></i>
-	                            <span><font color="#00ff">Reading aloud</font></span>
-	                        </a>
-	                    </li>
-	                    <hr>
-	                    <li class="header-menu">
-	                        <!-- <span>Interaction</span> -->
-	                    </li>
-	                    <!-- <li>
-	                        <a href="#">
-	                        <i class="fa fa-book"></i>
-	                        <!-- <span>Coming soon ...</span> -->
-	                        <!-- <span class="badge badge-pill badge-primary">Beta</span> -->
-	                        </a>
-	                    </li>
-	                    <li class="header-menu">
-	                        <!-- <span>Extra</span> -->
-	                    </li>
-	                    <li>
-	                        <a href="#">
-	                            <!-- <i class="fa fa-book"></i> -->
-	                            <!-- <span>Records</span> -->
-	                            <!-- <span class="badge badge-pill badge-primary">Beta</span> -->
-	                        </a>
-	                    </li>
-	                    <li>
-	                        <a href="#">
-	                            <!-- <i class="fa fa-book"></i> -->
-	                            <!-- <span>help</span> -->
-	                            <!-- <span class="badge badge-pill badge-primary">Beta</span> -->
-	                        </a>
-	                    </li>
-	                    <!-- <li> -->
-	                    <!--   <a href="#"> -->
-	                    <!--     <i class="fa fa-calendar"></i> -->
-	                    <!--     <span>Calendar</span> -->
-	                    <!--   </a> -->
-	                    <!-- </li> -->
-	                    <!-- <li> -->
-	                    <!--   <a href="#"> -->
-	                    <!--     <i class="fa fa-folder"></i> -->
-	                    <!--     <span>Examples</span> -->
-	                    <!--   </a> -->
-	                    <!-- </li> -->
-	                </ul>
-	            </div>
-	            <!-- sidebar-menu  -->
-	        </div>
-	    </nav>
-	=======
-e3b6c7818808cf0b9022c774f39d91b5|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/layouts/sidebar.html|31|1|V|html
-	            </div>
-d0c2bf55c1bce7cb0324a07dcde91fc8|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|42|1|V|htmldjango
-	                          <a style="opacity:0.5;">{{ task.title }}</a>
-2a75d093f1109b218137cf7c497fa206|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/task.html|38|27|V|htmldjango
-	                          <a>{{ task.title }}</a>
-314ebf2370ca324f361236aa5e1b1229|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script_SH.html|60|1|V|htmldjango
-	<a type="button" class="btn btn-success" id="next-btn" href="/app/{{task.id}}/{{next_turn}}" hidden>Next</a>
-9efb42d2afe4f61432633758e9e6c3a3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|96|1|V|htmldjango
-	    document.getElementById("next-btn").onclick = () => {
-	        $.ajax({
-	            url: location.href,
-	            type: "POST",
-	            processData: false,
-	            contentType: false,
-	            data: data,
-	            error: function (request, status, error) {
-	                alert(error);
-	            }
-	        }).done(function (response) {
-	            window.location.href = "/app/{{task.id}}/{{next_turn}}"
-	        });
-	    }
-d324727bda9e93082c20890a47bf773c|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|36|1|V|htmldjango
-	    <svg class="scale pointer" id="start" onclick="wavesurfer.play();this.style.display='none'; document.getElementById('_stop').style.display='block'"
-ad31dde68eae7d1a159f8f94b1f68094|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/shadowing.html|36|1|V|htmldjango
-	    <svg class="scale pointer" id="start" onclick="wavesurfer.play();this.style.display='none'; document.getElementById('_stop').style.display='block'"
-	        xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
-	      <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
-	      <g>
-	        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-	        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-	      </g>
-	    </svg>
-	    <svg class="scale" id="_stop" xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30" style="display:none;">
-	      <circle fill="white" stroke="red" stroke-width="1.7" cx="8" cy="8" r="12"/>
-	      <g>
-	        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-	        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-	      </g>
-	    </svg>
-6b3df0446fbba49d7081dbcbcfa071cd|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script_SH.html|52|1|V|htmldjango
-	    <a class="pointer" id="start" onclick="wavesurfer.play(); disable(this)">
-	      <div class="scale" id="mic-blue">
-	        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
-	          <circle fill="white" stroke="#2770C0" stroke-width="1.7" cx="8" cy="8" r="12"/>
-	          <g>
-	            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-	            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-	          </g>
-	        </svg>
-	      </div>
-	      <div class="scale" id="mic-red" hidden>
-	        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="-7 -7 30 30">
-	          <circle fill="white" stroke="red" stroke-width="1.7" cx="8" cy="8" r="12"/>
-	          <g>
-	            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-	            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-	          </g>
-	        </svg>
-	      </div>
-72f36e352b0a3a87f672588f73aeb310|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script_SH.html|52|5|V|htmldjango
-	    </a>
-3dff3aad172378fac36cf54515292578|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script_SH.html|52|5|V|htmldjango
-	    <a class="pointer" id="stop" hidden></a>
-ee480036195ed2473bd8771c1cc67c71|file:///Users/arakawakouichi/local_file/lets/lets_proj/static/js/recording.js|134|1|V|javascript
-	document.getElementById("next-btn").onclick = () => {
-	    $.ajax({
-	        url: location.href,
-	        type: "POST",
-	        processData: false,
-	        contentType: false,
-	        data: data,
-	        error: function (request, status, error) {
-	            alert(error);
-	        }
-	    }).done(function (response) {
-	        window.location.href = "/app/{{task.id}}/{{next_turn}}"
-	    });
-	}
-b31215eaac95d1ffaeb16b4da2175dab|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|87|5|V|htmldjango
-	          console.log("Jio")
-1b190fa38ebb74b0416cb03343919792|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|30|103|v|htmldjango
-	document.getElementById('play_btn').style.display='inline'"
-759f11b4eab27b9870503aa0c9f54fc3|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|86|43|v|htmldjango
-	.hidden =true
-4f2f46ce4bae7d76d16e509072868021|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|85|42|v|htmldjango
-	.style.display='inline'"
-03fdad155b7548884584c7c39b0c5cd2|file:///Users/arakawakouichi/local_file/lets/lets_proj/app/templates/app/script.html|86|59|v|htmldjango
-	inline
-cff6542b3f79e428f252edde71f10ca7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|87|32|V|python
-	            maxResults += 100000
-d7dcd2369fc7eedf62feae339494cfdf|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|151|20|V|python
-	            maxResults += 10000
-167991c707587c097f13e82aa57abbb5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|115|23|v|python
-	maxResults
-112179d06ea5b9b033c3c97001e37f05|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|115|23|V|python
-	                + str()
-7ba727a65b37572cf054effb196b9a8e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all1.py|79|24|V|python
-	        + str(maxResults)
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1|undefined|undefined|undefined|undefined|undefined
-2cfc8bff38640070d28050938df86409|file:///Users/Kouiti/local_file/maman-homepage/Makefile|10|1|V|make
-	sg:
-		sudo docker-compose -f ./webapp/docker-compose.yml build go
-		sudo docker-compose -f ./webapp/docker-compose.yml up -d go
-50e679daf51a93c1ffd9cf5ae4961181|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|25|1|V|javascript
-	            for (let comp of data["Components"]) {
-	                comp["Image"] = ApiUrl + "/api/image/" + comp.Image;
-	            }
-be53a0541a6d36f6ecb879fa2c584b08|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|29|23|v|javascript
+70dda5dfb8053dc6d1c492574bce9bfd|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|18|69|v|typescriptreact
+	color
+0e3fcb7b075bda5a181a6f12cfbe87e2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|20|34|V|typescriptreact
+	              style={{ backGroundcolor: "white" }}
+be53a0541a6d36f6ecb879fa2c584b08|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|18|14|v|typescriptreact
 	Image
-ff6282a2f16b64bc803cd5ccb63a3d1e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|29|36|v|javascript
-	ApiUrl + "/api/image/" + comp.Image;
-a1ca19802028b4f28b0cb61b6e7dac74|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|31|1|v|javascript
-	.replace(/\n/g, '<br />')
-17755ca70605485599bf14b5e3fcacdb|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|28|1|V|javascript
-	            for (let comp of data["Components"]) {
-	                comp["Comments"]["Text"] = comp["Comments"]["Text"].replace(/\n/g, '<br />')
-	            }
-099cf5742fea900954097480b2f5d809|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|29|28|V|javascript
-	                comp["Comments"]["Text"] = comp["Comments"]["Text"].replace(/\n/g, '<br />')
-10a0e6e4de556aa79f09c4977cd1e4db|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|30|1|V|javascript
-	            for (let comp of data["Components"]) {
-	            }
-	            for (let comp of data["Components"]) {
-	            }
-8413c683b4b27cc3f4dbd4c90329d8ba|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|27|23|v|javascript
-	Comments
-221164f14a0edda476babea1051fa127|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|26|27|V|javascript
-	                comp["Image"] = ApiUrl + "/api/image/" + comp.Image;
-c457c1f98801e4a94f232db6aa6e9601|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|28|17|v|javascript
-	comp["Comments"]
-167ee80c523891afd7ef2aec8daff66b|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|30|21|V|javascript
-	                comp["Comments"]["Text"] = comp["Comments"]["Text"].replace(/\n/g, "<br />");
-a363550fac0d1b406dcae693aadc7b18|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|27|1|V|javascript
-	                for(let comp_comments of comp["Comments"]) {
-0303c1114f28b55153fab761ae940020|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|26|17|V|javascript
-	                comp["Title"]["Text"] = comp["Comments"]["Text"].replace(/\n/g, "<br />");
-319ad25414f8cf3ea84d152ffdf7461e|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|29|1|V|javascript
-	                for(let comp_title of comp["Titles"]) {
-	                    comp["Title"]["Text"] = comp["Comments"]["Text"].replace(/\n/g, "<br />");
-	                }
-65a8f17f5a538cd255b2754328f07915|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|27|24|V|javascript
-	                    console.log()
-397260b0ca27f2b98b7a398db3f2d95d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|31|21|v|javascript
-	comp_comments["Text"]
-8145b438cc2a569d8472ce804b94b307|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|30|1|V|javascript
-	                    console.log(comp_comments["Text"]);
-b2a233583eddffc71f7ee9111a1c770d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|29|33|V|javascript
-	                console.log(comp);
-8cc9dcd50c4bf30eb9e5e307b5837566|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|29|1|V|javascript
-	                    text1.split('\n').map(t => (
-	                          t !== '' ? <div>{t}</div> : <br/>
-	                        ))
-7f60812441e6a46a61187236003d0ccf|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|30|41|V|javascript
-	                    // console.log(comp_comments["Text"]);
-1d39fd3abd43edba2e53bd7fa749f550|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|26|1|V|javascript
-	                for (let comp_title of comp["Titles"]) {
-	                    comp_title["Text"] = comp_title["Text"].replace(/\n/g, "<br />");
-	                }
-	                for (let comp_comments of comp["Comments"]) {
-	                    // comp_comments["Text"] = comp_comments["Text"].replace(/\n/g, "<br />");
-	                    comp_comments["Text"].split("\n").map((t) => (t !== "" ? <div>{t}</div> : <br />));
-	                    console.log(comp_comments["Text"]);
-	                }
-0607297472b09aa87694842d2d7f050c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/contents/Contents.js|41|1|V|javascript
-	                            <div className={"col-sm-" + component.grid} style={{ whiteSpace: "pre-line" }}>
-d36497e0b394d5c4dce9139488744846|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|76|1|V|javascript
-	        try {
-9106af010be3577fcf7bcce846a4274c|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|79|1|V|javascript
-	        } catch {}
-524acab8a8e520fed3907d4028323ed5|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/api/components/ComponentsCreate.js|76|19|v|javascript
-	Number(document.getElementById("form-grid").value)
-939b3573107edecf61025f6dd6c590af|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/RowSpace.js|6|1|V|javascript
+23e30db877ac486b93dc47d7148fc984|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|7|10|v|typescriptreact
+	FaBeer
+eb8ede89e21b043253c03908a2398d00|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|19|1|V|typescriptreact
+	            <Image
+	              src="/icons-1.7.2/icons/arrows-angle-expand.svg"
+	              style={{ color: "white" }}
+	              width={20}
+	              height={20}
+	              alt="img"
+	            />
+050a67bb32d816100a5d626f21a85977|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|19|18|V|typescriptreact
+	            <GiExpand />
+2b8b4f11f13828ad78ea471702055e42|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|20|17|v|typescriptreact
+	xpand
+3422dc053b36198e79f00d37d7c9ebb5|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|19|14|v|typescriptreact
+	GiExpand
+db667b96a086a914c8680dcd5051b012|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|92|1|V|typescriptreact
+	              <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                width="16"
+	                height="16"
+	                fill="currentColor"
+	                className="bi bi-columns-gap"
+	                viewBox="0 0 16 16"
+	              >
+	                <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z" />
+	              </svg>
+a4e1b68fcfedacd93cc8068028752c8f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|145|1|V|typescriptreact
+	          <span id="changelayout"></span>
+bb180b481c32e6f67dfcaf9ac3132ba7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|7|26|v|typescriptreact
+	"react-icons/gi";
+b0214cf5cf9ce41b1b135e27e61e10e5|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|6|31|V|typescriptreact
+	import Image from "next/image";
+d9cf2548d4a145efedb7d5ba7ced8d07|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|6|1|V|typescriptreact
+	import { GiExpand } from "react-icons/gi";
+	import {TiFlowSwitch} from "react-icons/gi";
+02009da42fb0aedba9b18b9815fb095d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|8|1|V|typescriptreact
+	  import { GiExpand } from "react-icons/gi";
+	  import { TiFlowSwitch } from "react-icons/ti";
+c463cce2a8029232f5a4f0451b50344a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|19|22|v|typescriptreact
+	 style={{ height: "20px", width: "20px" }} />
+06d549ebfa192341659635376178c3cd|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|26|1|V|typescriptreact
+	              <svg
+	                className="hovertext"
+	                type="button"
+	                id="cy-layout"
+	                width="16"
+	                height="16"
+	                viewBox="0 0 16 16"
+	                className="bi bi-bezier2"
+	                fill="brack"
+	                xmlns="http://www.w3.org/2000/svg"
+	              >
+	                <path
+	                  fillRule="evenodd"
+	                  d="M1 2.5A1.5 1.5 0 0 1 2.5 1h1A1.5 1.5 0 0 1 5 2.5h4.134a1 1 0 1 1 0 1h-2.01c.18.18.34.381.484.605.638.992.892 2.354.892 3.895 0 1.993.257 3.092.713 3.7.356.476.895.721 1.787.784A1.5 1.5 0 0 1 12.5 11h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5H6.866a1 1 0 1 1 0-1h1.711a2.839 2.839 0 0 1-.165-.2C7.743 11.407 7.5 10.007 7.5 8c0-1.46-.246-2.597-.733-3.355-.39-.605-.952-1-1.767-1.112A1.5 1.5 0 0 1 3.5 5h-1A1.5 1.5 0 0 1 1 3.5v-1zM2.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10 10a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"
+	                />
+	              </svg>
+af16cb8c5a74bce55cab7403eca5652f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/gss_getdata_cyt.py|243|21|v|python
+	getInitialConcentration
+0f3beef5fd1fe8dfc8b80dbc550128e2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|91|33|V|python
+	                        "units": 
+81e7e4512737650c68b8ce76605df092|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_cy_clickaction.js|200|1|V|javascript
+	    cy.on("click", "node", function (evt) {
+ef828bd72663354f3928b29176aaa496|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|109|1|V|typescriptreact
+	  const [cytoscapeLoading, setCytoscapeLoading] = useState(true);
+3f2f7fd0e4b07cd900716e44b8730aa5|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|183|3|V|typescriptreact
+	    window.cy.on("click", "node", function (evt) {
+	      
+a127fd1f86e4ab650f2216f09992afa4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|184|3|V|typescriptreact
+	      
+fe176ef4b4dd364161752616ae5a361a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|182|13|V|typescriptreact
+	  const speciesDetail = () => {
+42386a69bd671ee46bde35e2d4a8cf13|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|180|7|v|typescriptreact
+	PathwayDetail
+05ee8bdbb79dabcff50a0f09cea6c803|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/pages/signaling.tsx|7|22|v|typescriptreact
+	ProtvistaView
+951955dc6fe962c98bb38135dd8bf3ef|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|12|39|V|typescriptreact
+	    <div className="col-xl-8 col-lg-12">
+b082895fab4c56c1aba17dcc672fca3a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|103|10|V|typescriptreact
+	    </div>
+f3c0afdb3a5bd897579beafc9f0b25c7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|12|1|V|typescriptreact
+	      <Col sm={8}>
+731438d432687d69f72fa813e0af689c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|103|1|V|typescriptreact
+	      </Col>
+241b176c0e01674394bce4165bdc799a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|194|16|V|typescriptreact
+	    <div className="col-xl-4 col-lg-12">
+fcc3c75380c124cbb812678e1c50900b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|202|12|V|typescriptreact
+	      </div>
+fa5f7a6a8b923e07b1f49947390ef0bf|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|190|1|V|typescriptreact
+	  window.cy.on("click", "node", function (e) {
+	    console.log(window.cy);
+	    console.log(e);
+	  });
+28ef8fa985666eecff9e39cf50803d82|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|188|1|V|typescriptreact
+	    console.log("jio");
+4587b5cd30ae254e0c6797a137f3f540|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|187|5|V|typescriptreact
+	  console.log("jio");
+63e0fdfcde97a0335167f941849ed1ab|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|115|1|V|typescriptreact
+	  useEffect(() => {
+918372bb85979e2fae81f36032a2a0fe|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|187|3|V|typescriptreact
+	  () => {
+a5a165d22c549cc321a9ed806ec97f9a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|130|1|V|typescriptreact
+	  }, [ModelSession]);
+b9a2db5ce0707f5800faca7147e56350|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|130|1|V|typescriptreact
+	  }, [ModelSession]);
 	
-	        case "B":
-	            return <div style={b}>{props.component.comments[0]}</div>;
-	            break;
-	
-	        case "C":
-	            return <div style={c}>{props.component.comments[0]}</div>;
-	            break;
-	
-	        // case "D":
-	        //     return (
-	        //         <div style={d}>
-	        //             {props.component.comments[0]}
-	        //         </div>
-	        //     );
-	        //     break;
-4dbf68850bf9fcc1c11f325bb4855f13|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/components/RowSpace.js|16|1|V|javascript
-	const b = {
-	    textAlign: "center",
-	    color: "#583F2A",
-	    fontSize: "24px"
+	  return (
+	    <div className="cytoscape_view">
+	      <div className="row">
+	        <div className="col-xl-1 col-lg-1">
+	          <span id="changelayout"></span>
+	        </div>
+	        <div className="col-xl-11 col-lg-11">
+	          {cytoscapeLoading && (
+	            <div style={{ height: "calc(100vh - 300px)", position: "relative" }}>
+	              <Spinner
+	                animation="grow"
+	                variant="primary"
+	                style={{
+	                  height: "100px",
+	                  width: "100px",
+	                  marginTop: "calc((70vh-300px) / 2)"
+	                }}
+	              />
+	            </div>
+	          )}
+	          <div id="cy" style={{ height: "calc(100vh - 300px)" }} hidden></div>
+	        </div>
+	      </div>
+	    </div>
+	  );
 	};
-	const c = {
-	    textAlign: "center",
-	    color: "#583F2A",
-	    fontSize: "20px"
+	
+	const ProtvistaView = () => {
+	  // return (
+	  //   <div className="protvista-nightingale" hidden>
+	  //     <protvista-manager
+	  //       attributes="length displaystart displayend variantfilters highlight"
+	  //       length="250"
+	  //       displaystart="10"
+	  //       displayend="240"
+	  //     >
+	  //       <div className="protvista_nav">
+	  //         <div style={{ width: "200px" }}></div>
+	  //         <protvista-navigation></protvista-navigation>
+	  //         <div id="labelarea"></div>
+	  //       </div>
+	  //       <div className="protvista_track">
+	  //         <div className="protvista_category">
+	  //           <span className="protvista_category_text">Glycosylation Site</span>
+	  //         </div>
+	  //         <protvista-track length="223" id="gss-track"></protvista-track>
+	  //       </div>
+	  //     </protvista-manager>
+	  //     <div className="positionspelist"></div>
+	  //   </div>
+	  // );
 	};
-a33b90686647327c2c5e8e80713ac3bc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|24|1|V|python
-	        if count % 1000 == 0:
-cedfc10beee7676614dad516a3e61a25|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|17|1|V|python
-	        count += 1
-ee31488397b38109b3e931c646e7a7c0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|15|1|V|python
-	    count = 0
-a2e3bb8276b746422b760781b1888d71|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|22|1|V|python
-	    print()
-60529e4f113d661a8abe9995ba3fe35e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|38|1|V|python
-	            ):
-	        text += column_label[i]
-6537900bfa08ced0fd47a7f6b7a214db|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|37|1|V|python
-	    for i in range(len(column_label)*2):
-	            ):
-b78f56cd206cfde0e68102fbf436f1fa|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|37|1|V|python
-	    for i in range(len(column_label)*2):
-8c606e833cc045144b88a660b1fbd60b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|38|14|V|python
-	            ):
-c90e921ed32e524bb6347133eb39d6dd|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|99|1|V|python
-	    for t in dbid_list:
-	        if t == "-":
-	            continue
-	        cont = True
-	        services_list = gm.list_serveice()
-	        for service in services_list:
-	            path = dirname + service + "/*.tsv"
-	            source_dir_name_list = glob.glob(path)
-	            for i in range(len(source_dir_name_list)):
-	                source_dir_name = source_dir_name_list[i]
-	                with open(source_dir_name) as f1:
-	                    reader = csv.reader(f1, delimiter="\t")
-	                    for row in reader:
-	                        for r in row:
-	                            if t in r:
-	                                print(t, r)
-	                                cont = False
-	                                break
-	                        if not cont:
-	                            break
 	
-	                if not cont:
-	                    break
-	            if not cont:
-	                break
+	const PathwayDetail = () => {
+	  const [selected, setSelected] = useState("");
+	  useEffect(() => {
+	    console.log("jio");
+	    window.cy.on("click", "node", function (e) {
+	      console.log(window.cy);
+	      console.log(e);
+	      console.log("oijoi");
+	    });
+	  };
 	
-919b9bc17c9edd9c3cbb7b334ce30128|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|89|1|V|python
-	        j = 0
-d73b3169fc4bc9f5d16b84c775c2d120|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|90|1|V|python
-	            j += 1
-0d0e26604ffa3d7a95c120e32793d3ee|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|90|15|V|python
-	            if 
-bfd5764df9bd5b7ee44d1c320486b53c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|87|9|V|python
-	    j = 0
-b903a2fa1cbb3ad8428485fede88d93f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|88|1|V|python
-	        reader = csv.reader(f1, delimiter="\t")
-	        j = 0
-	        for row in reader:
-	            if j % 2 == 0:
-	                continue
-	            j += 1
-	            if j not in black_list:
-	                i = 0
-	                for r in row:
-	                    i += 1
-	                    if i != 1:
-	                        if r not in dbid_list:
-	                            dbid_list.append(r)
-7298987eb04dab9e00f90341cc1bc4f4|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|91|11|V|python
-	        if 
-bafde0d4222bf2c460d3ed394c7dfd2c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|93|36|V|python
-	        columns = row[i].split("\t")
-54ca84a794888fe8d92834787dfa935a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|93|28|v|python
-	columns
-98c8274f7917fd703967df26d2d0630b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|93|28|v|python
-	rows[i].split("\t"))
-8fffa4a05d9ae7f5defb9c79835344c7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|98|14|V|python
-	    print(dbid_list)
-b545fad4e903885a905ea90f36ce0978|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|94|16|v|python
-	rows[i].split("\t")[j]
-4d9681722aa4c2e61d82993266bb0593|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|96|1|V|python
-	                dbid_list.append(rows[i].split("\t")[j])
-2185bcf5b30fd2c1cb53a92118f2aaed|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|107|1|V|python
-	    # list_dbid(dirname)
-2bde86a252f59748efd87cd7829e6851|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|12|1|V|python
-	    column = re.sub("{.*?}", "")
-edf82fb4aeced59eaaefdc21b88b09a7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|13|1|V|python
-	    column = re.sub('"', "", column)
-4f91d0da2e05075b6df8aaf47833323f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|14|1|V|python
-	    column = re.sub("'", "", column)
-24748a973a9f814944a52f007649e5e5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|27|1|V|python
-	                    print(row[i])
-5c7c91890d31c3acb6b9fdc4787e6312|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|11|1|V|python
-	def treat_psicquic_column(column: str):
-	    column = re.sub("{.*?}", "", column)
-	    column = re.sub('"', "", column)
-	    column = re.sub("'", "", column)
-	    column = re.sub("\s", "", column)
-	    return column
-c29cfa2bb85c1f2c597f326fa1fb2f7b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|99|1|V|python
-	def treat_psicquic_column(column: str):
-7229bc3ad5ea080cb2948522723e5226|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|103|5|V|python
-	    return column
-487d480613d58beb9ee8d79594040b46|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|99|1|V|python
-	            column = re.sub("{.*?}", "", column)
-	            column = re.sub('"', "", column)
-	            column = re.sub("'", "", column)
-	            column = re.sub("\s", "", column)
-f9abf90c83fcdd1a6e17273fa5be5f42|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|57|20|V|python
-	    # error handling
-fe63ab877812107fc3a75fe7a952deea|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|49|1|V|python
-	    # key = dbname, value = uriの辞書を作成
-35ae1718ce912f9683bbca21f2093d6f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|31|1|V|python
-	    # key = dbname, value = uriの辞書を作成
-	    # with open("turtle/subject_url_list.csv") as f1:
-	    #     reader = csv.reader(f1, delimiter=",")
-	    #     for row in reader:
-	    #         db_list[row[0]] = rdflib.Namespace(row[1])
-85462f3980833d67fc6a95b192e39299|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|36|44|v|python
-	column1
-92e0be3306efbbe4cfa50133f6d511dc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|36|73|v|python
-	column2
-1bd3d7a8ee661a08fb869536e09957b3|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|32|1|V|python
-	    db_name1, identifier1 = treat_data(column1)
-	    db_name2, identifier2 = treat_data(column2)
-0d377636edaebcb874063c5b90b9348e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|34|1|V|python
-	    column1 = trate_interactor(column1)
-bbc3698b90f89b2cdbc1922fe8fff5f0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|27|1|V|python
-	    column = re.sub("_", "-", column)
-cd7358da2322654ae0e3c8676c772278|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|28|14|v|python
-	re.sub("_", "-", column)
-81e073b428b50247daba38531dcf412a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|41|69|v|python
-	lower
-4f17bae102267acf7cca2132c9e7c81c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|37|53|V|python
-	    # アルファベット以外は-に置き換える
-cda44739a679e2de28a9f683b3f10a52|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|111|37|V|python
-	                Taxon_id = create_object_uri(row[9])
-3ad08554af3afc21289923da3b3d9a29|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|103|17|V|python
-	                # カラムデータの取得、バリデーション
-60dd0a6cc3368de1bc0a5efd49cb70ab|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|97|9|V|python
-	        progress = 0
-1a266c3731009165ab89c2b8e0645a11|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|100|9|V|python
-	                progress += 1
-525abe68d5c07fbcb0fe032cbc29aff6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|100|9|V|python
-	                init_log("progress", str(progress))
-e59a2f44bb13a0b9a9861bdd86ace487|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|8|1|V|python
-	from log.log import init_log, log
-af7b70890aba0cea30fa37eaf10429f6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|33|1|V|python
-	    db_list = dict()
-24b70d62d72f06f02720b4a7f6b7d27e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|107|1|V|python
-	
-	                # URIの作成
-	
-	                # RDFの作成
-85b1ec9b051f60ea6765ff5b1de8d310|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|108|17|V|python
-	                g.add((Interactor_ab, detected_by, Detection_method))
-d6e4263377021dc7b91349942c2c04bd|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|107|1|V|python
-	
-	                g.add((Interactor_ab, author_is, First_aouthor))
-d52c80a565392355fecf6b1be5218c89|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|108|1|V|python
-	                g.add((Interactor_ab, author_is, First_aouthor))
-18c1478c0b135e139c348892d1494abc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|116|17|V|python
-	                g.add((First_aouthor, pub_id, Publication_id))
-b04ba7f4584efc39e51bfa2094671b5e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|117|17|V|python
-	                g.add((Interactor_ab, has_interaction_type_bp, Interaction_type))
-418c49d872432394a31aefa616959f90|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|118|17|V|python
-	                g.add((Interactor_ab, has_interaction_type_obo, Interaction_type))
-de82f63556eb716edaa29116cd9d272d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|119|17|V|python
-	                g.add((Interactor_ab, souce_db, Source_database))
-ff49725f8dd2b2306f5ab5a96428c344|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|120|17|V|python
-	                g.add((Interactor_ab, has_interaction_id_bao, Interaction_id))
-bb421b48f465778606551ebd66d2432e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|121|1|V|python
-	                g.add((Interactor_ab, has_interaction_id_lim, Interaction_id))
-	                g.add((Interactor_ab, has_interaction_id_obo, Interaction_id))
-354bcd930c2dabb57d6da15de84c3492|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|123|17|V|python
-	                g.add((Interactor_ab, organizm, Taxon_id))
-9e125e0ff2bceb6160e10d0614f16018|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|65|1|V|python
-	    detected_by = URIRef("http://www.bioassayontology.org/bao#BAO_0002875")
-58455fcff2277556a1eb6d2adc889c60|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|102|50|v|python
-	First_aouthor
-a2a34fe21841c82badb9ecf627b3b111|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|102|39|v|python
-	author_is
-69d644138847849250ad1fa7c6926af5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|104|1|V|python
-	    # for id_ in dbid_list:
-	    #     print(id_[0], ",", id_[1])
-a35b156e84fa086b361d47a418df7189|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|47|1|V|python
-	    with open("turtle/object_url_list.csv") as f1:
-	        reader = csv.reader(f1, delimiter=",")
-	        for row in reader:
-e72d83960cad1d13d0bc78eb720db5ab|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|93|1|V|python
-	        header = next(reader)
-312eab5118c9b07265730077518d8e3b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|6|9|V|python
-	        header = 
-fffaf30e1e85eee47cdcbd7cf89a90a6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|9|20|V|python
-	            for culumn in row:
-4ef34a7cd63946eb20549989ce05ee42|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|8|16|V|python
-	        for row in reader:
-	            dict
-1e234998dc55b371ebbe2937f417d3b6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|9|16|V|python
-	            dict
-15d286ba732ad6773b1d89a052fc99b9|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|10|21|V|python
-	                    )
-9cf45af2f8a8369dcdca6de413b62892|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|12|21|v|python
-	uri_example
-f7531e2d0ea27233ce00b5f01c5bf335|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|22|5|v|python
-	print
-7bb0edd98f22430a03b67f853e83c2ca|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|19|8|V|python
-	        
-7ddd5a90fd0f28f15e9b9a264dc394f8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|18|13|V|python
+	  const speciesDetail = () => {};
+	  return (
+	    <div className="card shadow mb-4">
+	      <div
+	        className="card-header py-2 d-flex flex-row align-items-center justify-content-between text-white"
+	        id="basecolor"
+	      >
+	        <h6 className="m-0 font-weight-bold text-light">Clicked</h6>
+	      </div>
+	      <div className="card-body scroll"></div>
+	    </div>
+	  );
+	};
+4ac3986f2badc1480056dffb47b37079|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|194|3|V|typescriptreact
+	  };
+43fa4dc055d89922992ff3093a95479c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|201|1|V|typescriptreact
+	    <div className="card shadow mb-4">
+	      <div
+	        className="card-header py-2 d-flex flex-row align-items-center justify-content-between text-white"
+	        id="basecolor"
+	      >
+	        <h6 className="m-0 font-weight-bold text-light">Clicked</h6>
+	      </div>
+	      <div className="card-body scroll"></div>
+	    </div>
+90b7bf2caf011828073a54c75c04e556|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|141|1|V|typescriptreact
+	              <Spinner
+	                animation="grow"
+	                variant="primary"
+	                style={{
+	                  height: "100px",
+	                  width: "100px",
+	                  marginTop: "calc((70vh-300px) / 2)"
+	                }}
+	              />
+5c398a6968507454ba18432a85a83f63|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|208|5|V|typescriptreact
+	    )
+fea5e9aaee9044d2eaa0d87139a1c6d5|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|106|83|v|typescriptreact
+	setCytoscapeLoading
+50fe03ab7bf37089a7e88da9b31ffb3b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|112|27|v|typescriptreact
+	props
+a9848fb8b708454dbd044c4cae88ba90|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|106|1|V|typescriptreact
+	        <PathwayDetail cytoscapeLoading={cytoscapeLoading} setCytoscapeLoading={setCytoscapeLoading} />
+a58076fc5cd67371a0ac646fd5b17d0f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|101|14|v|typescriptreact
+	CytoscapePathway
+fcac0cabe040a051bb6cc117ad737361|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|101|16|V|typescriptreact
+	            < />
+b1bc248a7ff2b2e95569f56de68615df|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|185|31|v|typescriptreact
+	number
+ef1a82572d815b74a6b11c2adf8f3767|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|10|10|v|typescriptreact
+	cytoscapeLoading
+3c8bf18a13c1a259a53355c3f619b423|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|209|29|V|typescriptreact
+	    const [selected, setSelected] = useState("");
+defbd73900b6cbba7250d1406c5ea4aa|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|212|21|V|typescriptreact
+	        console.log(window.cy);
+74c6dec8db78281e9386ca2027b257ab|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|213|21|V|typescriptreact
+	        console.log("oijoi");
+3d97c9a86dcb05f4b56b15290be0dd51|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|70|1|V|vim
+	noremap <C-a>  ^
+579bab9f0e35c892008eaa34c6201346|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|71|1|V|vim
+	noremap zz  10jzz10k
+89a4c075cfb8308238653c607130367f|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|72|19|v|vim
+	10jzz10k
+989249235b9168692ca430e0b486c76b|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|72|1|V|vim
+	noremap <Space>j jzz
+729943f6c21489b41696b17d96239d35|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|186|2|V|typescriptreact
+	  const [selected, setSelected] = useState("");
+2353b2c8b372eb45dd5c4674b2b63520|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|228|12|V|typescriptreact
+	          ()
+0ec509325e51366d891c79bc8ef0f221|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|216|33|V|typescriptreact
+	        console.log(this.data());
+060cde0a0b8b646c6ef2bfd0f1556b28|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_cy_clickaction.js|217|1|V|javascript
+	                '<div class="font-weight-bold text-primary mt-3">COMPARTMENT NAME:</div>' +
+824dd0bdb39eac5fbf189a36eea08099|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|221|1|V|typescriptreact
+	      <div className="font-weight-bold text-primary mt-3">NAME:</div>;
+551f0e706abf1175fb6afb426ed8705e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|222|1|V|typescriptreact
+	      <div className="font-weight-bold text-primary mt-3">NAME:</div>
+1c2c77ab8dbf441aaa7bbf390ebb3ebb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|211|1|V|typescriptreact
+	    useEffect(() => {
+	      console.log(window.cy);
+20357800a26caa8cc1ffdd46bbcf7370|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|216|21|V|typescriptreact
+	    }, [ModelSession]);
+850d10b74f056b72c77c9246d8acc13a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|216|23|V|typescriptreact
+	        console.log(selectedType);
+25c669ecc58c489cdcefd5be7e10dbd9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|218|9|V|typescriptreact
+	    console.log("render");
+fbed2b31964825bb4d6dce6b4024dc81|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|218|30|V|typescriptreact
+	    console.log(selectedType);
+949b69fd4758747ea4ffea5a185ab23f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|212|1|V|typescriptreact
+	      console.log(window.cy);
+bc7eacde7ee3e77b3bd8778bbbb3eeeb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|216|6|v|typescriptreact
+	, [ModelSession]);
+2d7fc9329b1991e16bc256117d1ef4de|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|217|1|V|typescriptreact
+	    console.log(selectedData)
+2bde3db2c1a6a1b06c917e6b9c2ccc10|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|240|12|v|typescriptreact
+	selectedData
+08bfceabd3df20af2b1ae7da009c50b3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|216|11|V|typescriptreact
+	        setSelectedType("species");
+809b4e060f8f657d6c5f3d381bfaf096|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|221|1|V|typescriptreact
+	    console.log(selectedType);
+	    console.log(selectedData);
+efcd1688a5f1917f4a24dbe28f692b47|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|249|1|V|typescriptreact
+	          {() => {
+	            console.log("okok");
+	          }}
+553defedd35c481710fa9739ff5cd6fa|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|245|28|V|typescriptreact
+	            if (selectedType == "species") {
+7ddd5a90fd0f28f15e9b9a264dc394f8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|246|13|V|typescriptreact
 	            }
-2477e9c701e631560fb6e71bde9369f1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|18|13|V|python
-	            )
-ba3a904d361ecc57b92b579cd15dd400|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|19|34|v|python
-	object_uri_list[key]["uri"]
-7cb4ee25bf8defa14e896bbc8539e8d0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|9|1|V|python
-	            csv_dict[row[0]]['uri'] = row[1],
-7a7c2c424a562d92da5ae6b05003f0c9|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|12|1|V|python
-	                    uri_example=row[2],
-	                    # psucquic_data=row[3]
-c6f58872973236bd20c8671391d3315f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|10|1|V|python
-	            try:
-c09891ce37168397a0d009e9b534bfa8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|12|1|V|python
-	            except:
-	                pass
-76aba201dd1be88dd23ee5452432b4f7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|17|13|V|python
-	                pass
-53f377659d9e72d8cac8a8b24fb4c109|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|25|49|v|python
-	 +","
+03eb2334c20735ad1605387950b60b21|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|242|1|V|typescriptreact
+	          {selectedType}
+	          {((selectedType: string) => {
+	            console.log(selectedType);
+	            // if (selectedType == "species") {
+	            return <speciesDetail />;
+	            // }
+	          })(selectedType, selectedData, )}
+b1199827e764c2786f94022644a3fd07|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|222|1|V|typescriptreact
+	    const speciesDetail = (selectedType: string, selectedData: any) => {
+	      return (
+	        <>
+	          <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	          <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	          <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	          <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	          <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	        </>
+	      );
+	    };
+f1462876def6b15c188f1af2761e1823|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|185|1|V|typescriptreact
+	const SpeciesDetail = (selectedType: string, selectedData: any) => {
+	  return (
+	    <>
+	      <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	      <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	      <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	      <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	      <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	    </>
+	  );
+	};
+fe7e6744fac4ca8e8871fc508872c104|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|225|13|V|typescriptreact
+	          con
+1ab99160cb4971e296d998f4b32c5081|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|243|26|v|typescriptreact
+	selectedType={selectedType} selectedData={selectedData} />
+a9b68ed6961da22a231adfa0cf52bc92|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|226|68|v|typescriptreact
+	{selectedData.label}
+ad32e604e17467fc435538334fbddf3e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|228|63|v|typescriptreact
+	NAME
+306eeac86c6883a55a0ff5ec5cbedb69|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|231|55|V|typescriptreact
+	          <div className="font-weight-bold text-primary mt-3">NAME:</div>
+543a5eef709a0d69e60caefc59a72958|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|227|1|V|typescriptreact
+	          <span>{selectedData.label}</span>
+d304ba20e96d87411588eeabac850e34|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|229|31|v|typescriptreact
+	label
+3ded3e4470100ffd7f805ae30575923f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|229|1|V|typescriptreact
+	          <span>{selectedData.}</span>
+36c4536996ca5615dcf9911f068786dc|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|90|17|v|python
+	node
+9181bbcfc6bf6307be750064d9995f47|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|233|36|v|typescriptreact
+	initialconcentration
+aad653ca3ee669635f2938b73098b6d7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|233|32|v|typescriptreact
+	note
+15fa942220199620514a912b3db57aec|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|233|11|V|typescriptreact
+	          <span>{selectedData["note"]["initialconcentration"]}</span>
+256567e4d601e6477018f5ec9d62eac4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|223|32|V|typescriptreact
+	      console.log(selectedData);
+85ad9a943afacec2da979ef54cdb0cbb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|223|1|V|typescriptreact
+	      if (selectedType != "species") {
+	        return <a></a>;
+	      }
+451d7eb0714bce476551c94f97808e8e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|226|1|V|typescriptreact
+	      return (
+	        <>
+	          <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	          <span>{selectedData.label}</span>
+	          <div className="font-weight-bold text-success mt-3">TYPE:</div>
+	          <span>{selectedData.class}</span>
+	          <div className="font-weight-bold text-info mt-3">COMPARTMANT:</div>
+	          <span>{selectedData.parent}</span>
+	          <div className="font-weight-bold text-warning mt-3">INITALCONCENTRATION:</div>
+	          <span>{selectedData.note.initialconcentration}</span>
+	        </>
+	      );
+84a49c809fe15100d7a387ded6fb661c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|222|1|V|typescriptreact
+	    const SpeciesDetail = () => {
+	      try {
+	        return (
+	          <>
+	            <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	            <span>{selectedData.label}</span>
+	            <div className="font-weight-bold text-success mt-3">TYPE:</div>
+	            <span>{selectedData.class}</span>
+	            <div className="font-weight-bold text-info mt-3">COMPARTMANT:</div>
+	            <span>{selectedData.parent}</span>
+	            <div className="font-weight-bold text-warning mt-3">INITALCONCENTRATION:</div>
+	            <span>{selectedData.note.initialconcentration}</span>
+	          </>
+	        );
+	      } catch {
+	        return <a></a>;
+	      }
+	    };
+9d8336630c1b1464da50f65f481d619f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|267|1|V|typescriptreact
+	          <SpeciesDetail />
+c804f92d73d89f59322992f9731b7dcc|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|246|1|V|typescriptreact
+	            <div className="font-weight-bold text-success mt-3">TYPE:</div>
+	            <span>{selectedData.class}</span>
+	            <div className="font-weight-bold text-info mt-3">COMPARTMANT:</div>
+	            <span>{selectedData.parent}</span>
+	            <div className="font-weight-bold text-warning mt-3">INITALCONCENTRATION:</div>
+	            <span>{selectedData.note.initialconcentration}</span>
+ed3bb3724bc9fa14b2c2a3c6997091d6|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|241|1|V|typescriptreact
+	    const CompartmentDetail = () => {
+	      try {
+	        return (
+	          <>
+	            <div className="font-weight-bold text-primary mt-3">COMPARTMENT NAME:</div>
+	            <span>{selectedData.id}</span>
+	          </>
+	        );
+	      } catch {
+	        return <a></a>;
+	      }
+	    };
+40c0e2eedb4926217bf40f7a1faff589|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|227|1|V|typescriptreact
+	            <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	            <span>{selectedData.label}</span>
+	            <div className="font-weight-bold text-success mt-3">TYPE:</div>
+	            <span>{selectedData.class}</span>
+	            <div className="font-weight-bold text-info mt-3">COMPARTMANT:</div>
+	            <span>{selectedData.parent}</span>
+	            <div className="font-weight-bold text-warning mt-3">INITALCONCENTRATION:</div>
+	            <span>{selectedData.note.initialconcentration}</span>
+b34fb90a8e1ff7a1dfc3099e63609793|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|257|13|V|typescriptreact
+	            <div className="font-weight-bold text-primary mt-3">COMPARTMENT NAME:</div>
+	            <span>{selectedData.id}</span>
+2a27e9f7e7d4972b4788bb601d85edbb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|255|13|V|typescriptreact
+	        return (
+066c22d00f2bb40d59a006da7cddc528|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|255|1|V|typescriptreact
+	        var comp = (
+26f260451215544b7987a4b9a65ad0f7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|267|1|V|typescriptreact
+	        return comp;
+d1e9fbaec0f82f23c27ae2a2e9528efa|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|281|1|V|typescriptreact
+	          <CompartmentDetail />
+ab944fa3134fc448eeed45ee2dbeaac7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|280|40|v|typescriptreact
+	<SpeciesDetail />
+fd88f4fc01eeb1609d400373e48af98f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|280|1|V|typescriptreact
+	          {selectedType == "species" && <SpeciesDetail />}
+7515d4100a58fcaddb6617b4d329907d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|281|46|v|typescriptreact
+	SpeciesDetail
+aeee04903c6517439ac9c8f8d69e531d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|281|1|V|typescriptreact
+	          {selectedType == "compartment" && <CompartmentDetail />}
+31c75576e00cc1f46a81c33c2e68d472|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|282|29|v|typescriptreact
+	compartment
+9ec072e5a6112e979c9a5fce533c7467|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|282|43|v|typescriptreact
+	CompartmentDetail
+a79eb658105a8733cde339f2262a4f03|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_cy_clickaction.js|377|1|V|javascript
+	    cy.on("click", "edge", function (evt) {
+e793d3c7b1c20cc9162db6fd8d0dd523|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|214|1|V|typescriptreact
+	          setSelectedType("compartment");
+fda2f00390b39915769d19689ecdfda0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|218|1|V|typescriptreact
+	        setSelectedData(this.data());
+948495146facadfe8859789036313d79|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|264|65|v|typescriptreact
+	TYPE
+001812eedc45c1d1d0c1db48e468362f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|266|62|v|typescriptreact
+	COMPARTMANT
+ef547a539fb7a1cc7f97cb124b012599|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|268|65|v|typescriptreact
+	INITALCONCENTRATION
+3e8f8c8298208564b0837205a3c4dc3d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|273|23|V|typescriptreact
+	        return <a></a>;
+9528639ddf1b69919148a000de5bc3a2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/libGSS.py|5|11|V|python
+	def getReac
+41de3e4bcdb3928f709ca53c53ec0201|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|94|37|V|python
+	                        "reactants": 
+bfa273f91ff8aa368009b861c6af403f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|117|24|v|python
+	__dict__
+fea4ae6dd49492f6ca6d087065c5377f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|108|1|V|python
+	    sbml_text = writeSBMLToString(signaling_sbase)
+	    sbml_doc = readSBMLFromString(sbml_text)
+85d7c69f50c04d53d0fb4d77eda1afe5|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|107|5|v|python
+	signaling_sbase
+9fa3aa54528a596a718a61ea201475b7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|112|1|V|python
 	
-7f5d2b4d0323d155a0b528a0d212c6a7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|26|22|v|python
-	"," + 
-c637030674b0adad0e88d380600c281c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|26|1|V|python
-	        try:
-07e64943ccc1c4f3220d986c9d1d056a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|29|9|V|python
+	    sbml_model = sbml_doc.getModel()
+	    for reaction in sbml_model.getListOfReactions():
+	        print(reaction.kk)
+	        break
+	        for reactant in reaction.getListOfReactants():
+	            # print(reactant.__dict__)
 	            pass
-86404d8cee5ad6fcfac5de759cd527a6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|28|1|V|python
+	
+	
+7bb0edd98f22430a03b67f853e83c2ca|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/libGSS.py|7|8|V|python
+	        
+359a44f97d9061269fec4dcf8f4ab744|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/libGSS.py|8|9|v|python
+	reactants
+c5cf89041282aa44c384710c3d9de160|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/libGSS.py|5|1|V|python
+	def getReactantsFromReaction(reaction: Reaction) -> list:
+	    results = []
+	    for reactant in reaction.getListOfReactants():
+	        results.append(reactant.getSpecies())
+	    return results
+8354efb039b7001ff5c7415e7a25f6a1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/libGSS.py|14|28|v|python
+	tant
+14b69159eb5c9a50ded533b882fbd886|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/libGSS.py|20|24|v|python
+	reactant
+81f1ebf798f020e6b27c9ff8f42ada42|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|94|1|V|python
+	                        "reactants": libGSS.getReactantsFromReaction(reaction),
+1cf8ffd56a64a8faa5e23d793e47cf98|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|96|70|v|python
+	FromReaction(reaction),
+ad50ba923be2d06f17e6b428466929ab|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|95|69|v|python
+	sFromReaction(reaction),
+3a50603b25a0341fff4cbe4a169e8b51|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|94|1|V|python
+	                        "reactants": libGSS.getReactantsFromReaction(reaction),
+	                        "products": libGSS.getProductsFromReaction(reaction),
+	                        "modifiers": libGSS.getModifiersFromReaction(reaction)
+ca3aeedc6801929c5c72524fc847b889|file:///Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app/src/views/Home.js|39|1|V|javascript
+	                        {ServicesGrouped.map((service, index) => (
+0d5647929ad303363e843f6a335757cb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|265|14|v|typescriptreact
+	ServicesGrouped
+aaabf0d39951f3e6c3e8a7911df524c2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|265|42|v|typescriptreact
+	service
+52146578d194b5a94a75fe483c2f401c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|263|1|V|typescriptreact
+	            <span>{selectedData.id}</span>
+a336b9c5269d7a49def2f2ddd940fd76|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|266|20|v|typescriptreact
+	selecc
+6a992d5529f459a44fee58c733255e86|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|265|52|v|typescriptreact
+	index
+04f4712e904ed48eb7597c825b98ef68|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|265|1|V|typescriptreact
+	            {selectedData.reactants.map((reactant, _) => (
+	              <span>{reactant}</span>
+	            ))}
+633143ffd58399cf7c14d1364703fcc8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|268|1|V|typescriptreact
+	            <span>{selectedData.class}</span>
+42a53def0e753df502ba1f09ed37acd5|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|269|1|V|typescriptreact
+	            <span>{selectedData.parent}</span>
+993d773ece9b6834dc46f1ed5a1d8eb1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|270|1|V|typescriptreact
+	            <span>{selectedData.note.initialconcentration}</span>
+9039450fb67fb8056e940a1e173fdf51|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|270|38|v|typescriptreact
+	<br />
+c5a0e9b5c299ec39a2fb26fa8b1c0dcf|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|270|31|v|typescriptreact
+	<br/>
+d17b11c941aa45282f6b9f89cd27d7e7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|288|23|V|typescriptreact
+	        console.log(e);
+6a0f1ae020f20c366e1ffb5255321e43|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|185|1|V|typescriptreact
+	const PathwayDetail = (props: any) => {
+	  if (props.cytoscapeLoading) {
+	    return (
+	      <div className="card shadow mb-4">
+	        <div
+	          className="card-header py-2 d-flex flex-row align-items-center justify-content-between text-white"
+	          id="basecolor"
+	        >
+	          <h6 className="m-0 font-weight-bold text-light">Clicked</h6>
+	        </div>
+	        <div className="card-body scroll">
+	          <Spinner
+	            animation="grow"
+	            variant="primary"
+	            style={{
+	              height: "100px",
+	              width: "100px",
+	              marginTop: "calc((70vh-300px) / 2)"
+	            }}
+	          />
+	        </div>
+	      </div>
+	    );
+	  } else {
+	    const [selectedType, setSelectedType] = useState("");
+	    const [selectedData, setSelectedData] = useState({});
+	    useEffect(() => {
+	      window.cy.on("click", "node", function (_: any) {
+	        if (this.data().class == "compartment") {
+	          setSelectedType("compartment");
+	        } else {
+	          setSelectedType("species");
+	        }
+	        setSelectedData(this.data());
+	        console.log(this.data());
+	      });
+	      window.cy.on("click", "edge", function (e) {
+	        setSelectedType("reaction");
+	        setSelectedData(this.data());
+	        console.log(this.data());
+	      });
+	    }, [ModelSession, selectedData]);
+	
+	    const SpeciesDetail = () => {
+	      try {
+	        return (
+	          <>
+	            <div className="font-weight-bold text-primary mt-3">NAME:</div>
+	            <span>{selectedData.label}</span>
+	            <div className="font-weight-bold text-success mt-3">TYPE:</div>
+	            <span>{selectedData.class}</span>
+	            <div className="font-weight-bold text-info mt-3">COMPARTMANT:</div>
+	            <span>{selectedData.parent}</span>
+	            <div className="font-weight-bold text-warning mt-3">INITALCONCENTRATION:</div>
+	            <span>{selectedData.note.initialconcentration}</span>
+	          </>
+	        );
+	      } catch {
+	        return <a></a>;
+	      }
+	    };
+	    const CompartmentDetail = () => {
+	      try {
+	        return (
+	          <>
+	            <div className="font-weight-bold text-primary mt-3">COMPARTMENT NAME:</div>
+	            <span>{selectedData.id}</span>
+	          </>
+	        );
+	      } catch {
+	        return <a></a>;
+	      }
+	    };
+	    const ReactionDetail = () => {
+	      try {
+	        return (
+	          <>
+	            <div className="font-weight-bold text-primary mt-3">REACTION ID:</div>
+	            <span>{selectedData.id}</span>
+	            <div className="font-weight-bold text-success mt-3">REACTANTS:</div>
+	            {selectedData.note.reactants.map((reactant: string, _: number) => (
+	              <span>
+	                {reactant}
+	                <br />
+	              </span>
+	            ))}
+	            <div className="font-weight-bold text-info mt-3">PRODUCTS:</div>
+	            {selectedData.note.products.map((products: string, _: number) => (
+	              <span>
+	                {products}
+	                <br />
+	              </span>
+	            ))}
+	            <div className="font-weight-bold text-warning mt-3">MODIFIERS:</div>
+	            {selectedData.note.modifiers.map((modifiers: string, _: number) => (
+	              <span>
+	                {modifiers}
+	                <br />
+	              </span>
+	            ))}
+	          </>
+	        );
+	      } catch (e) {
+	        return <a></a>;
+	      }
+	    };
+	    return (
+	      <div className="card shadow mb-4">
+	        <div
+	          className="card-header py-2 d-flex flex-row align-items-center justify-content-between text-white"
+	          id="basecolor"
+	        >
+	          <h6 className="m-0 font-weight-bold text-light">Clicked</h6>
+	        </div>
+	        <div className="card-body scroll">
+	          {selectedType == "species" && <SpeciesDetail />}
+	          {selectedType == "compartment" && <CompartmentDetail />}
+	          {selectedType == "reaction" && <ReactionDetail />}
+	        </div>
+	      </div>
+	    );
+	  }
+	};
+9de8c88c59ced296fe31d2cc2b0486f3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|3|1|V|typescriptreact
+	import { GssModel } from "/api/GssModel";
+da204421ad3bc3776bc43f84220db59b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|4|10|v|typescriptreact
+	GssModel
+ecb126681dddee39a7ab0d93924e7b25|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|4|59|v|typescriptreact
+	pathway
+e09208b3cd0cd376b18c8f4d1b6c4380|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|4|1|V|typescriptreact
+	import { CytoscapePathway } from "/compartments/signaling/CytoscapePathway";
+5423ce743d7ded3f68675ba29555b841|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|114|1|V|typescriptreact
+	const CytoscapePathway = (props: any) => {
+	  var cytoscape = require("cytoscape");
+	  var sbgnStylesheet = require("cytoscape-sbgn-stylesheet");
+	  useEffect(() => {
+	    GssModel.gssmodel_get().then((res: any) => {
+	      const host = "http://0.0.0.0:4444/";
+	      axios.post(host + "sbml2cyjson", { sbml_text: res.data }).then((results) => {
+	        props.setCytoscapeLoading(false);
+	        document.getElementById("cy").hidden = false;
+	        window.cy = cytoscape({
+	          container: document.getElementById("cy"),
+	          style: sbgnStylesheet(cytoscape),
+	          layout: { name: "preset" },
+	          elements: results.data,
+	          userZoomingEnabled: false
+	        });
+	      });
+	    });
+	  }, [ModelSession]);
+	
+	  return (
+	    <div className="cytoscape_view">
+	      <div className="row">
+	        <div className="col-xl-1 col-lg-1">
+	          <span id="changelayout"></span>
+	        </div>
+	        <div className="col-xl-11 col-lg-11">
+	          {props.cytoscapeLoading && (
+	            <div style={{ height: "calc(100vh - 300px)", position: "relative" }}>
+	              <Spinner
+	                animation="grow"
+	                variant="primary"
+	                style={{
+	                  height: "100px",
+	                  width: "100px",
+	                  marginTop: "calc((70vh-300px) / 2)"
+	                }}
+	              />
+	            </div>
+	          )}
+	          <div id="cy" style={{ height: "calc(100vh - 300px)" }} hidden></div>
+	        </div>
+	      </div>
+	    </div>
+	  );
+	};
+4e9d78104c402c263f5154f3360372c7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|4|36|v|typescriptreact
+	compartments
+4cb91c2af00625b81805f20cd5166a6b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/Visualiser.tsx|2|1|V|typescriptreact
+	import { ModelSession } from "/api/ModelSession";
+	import { GssModel } from "/api/GssModel";
+	import { CytoscapePathway } from "/components/signaling/CytoscapePathway";
+	import { CytoscapeDetail } from "/components/signaling/CytoscapeDetail";
+	import axios from "axios";
+	import { Row, Col, Spinner } from "react-bootstrap";
+	import { GiExpand } from "react-icons/gi";
+	import { TiFlowSwitch } from "react-icons/ti";
+8bb41f72893465f9535eaa09d96e80da|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/signaling/CytoscapeDetail.tsx|108|1|V|typescriptreact
+	                <br />
+a3cd8fb7fef0e83ce48cf2326d8a7696|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_cy_clickaction.js|1|41|V|javascript
+	// function getunitsfromforula(formula){
+	//   bef_units = formula.split(" ")
+	//   units = []
+	//   for(i=0; i<units.length; i++){
+	//     if(units[i] != "*" && units[i] != "/" && units[i] != "+" && units[i] != "-" && re.match("[\(\)0-9]")){
+	//       units.push(units)
+	//     }
+	//   }
+	// }
+601acf5ef239cafb7bf86e6245c66486|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gsssessions.py|46|9|v|python
+	traceback.print_exc()
+f56ac3d0fc4809ae1c100a6b745ccf4b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gsssessions.py|45|1|V|python
+	
+	        
+c17403f9c187f623dec27f1900f837d7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gsssessions.py|44|24|V|python
+	        import traceback
+019351c912798a00dac228c5df644b37|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gsssessions.py|44|9|V|python
+	        print("error /session/create/simdata")
+2c740ecdac5f2043dfefb8e173174d13|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gsssessions.py|35|18|V|python
+	        sbml_model
+e26994d6b4267e7aaf9ea72ea6a1a0c5|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gsssessions.py|39|1|V|python
+	            dict(
+	                session_id=session_id,
+	            )
+	        )
+3f8f0fdaa88c93ed7e028a7b3cc28a80|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|28|1|V|javascript
+	  if (title == "") {
+	    title = "No Title";
+	  }
+20f35e630daf44dbfa4c3f68f5399d8c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/gss_main.py|85|22|v|python
+	model
+dcfbfccaccc6033f54d128b7e011dfdf|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/gss_main.py|86|1|V|python
+	  # print(set_species_dic)
+	  # print(set_params_dic)
+ccfb148eb74fd5bbdd61c8a473577b13|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/gss_main.py|90|22|V|python
+	    # print('----------->', species_id)
+b2c01144550c753bdeb29eeec52e7445|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/gss_main.py|93|22|V|python
+	    # print('----------->', param_id)
+5cf76c31d802349eeb2529e1ce52cc96|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sbml.js|1068|1|V|javascript
+	    libsbml_module().then((module) => {
+004234fd6228af1f0acda496f41d1c04|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|83|1|V|javascript
+	  // console.log(index)
+	  let json = {
+	    index: index
+	  };
+9938adffddc3bb706e8821aa7d4dd366|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|92|18|V|javascript
+	      changeQueryPath("GssModel", gssmodel_id);
+67a4ca3af2e060a6b32f0b56a5bfe30d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/init.js|554|1|V|javascript
+	    /*
+	    return
+	      queries{
+	        query1: 'query1',
+	        query2: 'query2'
+	      }
+	  */
+75a04634da724e87444854373dcc505b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/init.js|553|1|V|javascript
+	    return queries;
+	}
+d9e22f1dc8a368fec08b1c9a9f0ba1f1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/init.js|540|1|V|javascript
+	function getUrlQueries() {
+	    var queryStr = window.location.search.slice(1); // 文頭?を除外
+	    var queries = {};
+	    // クエリがない場合は空のオブジェクトを返す
+	    if (!queryStr) {
+	        return queries;
+	    }
+	    // クエリ文字列を & で分割して処理
+	    queryStr.split("&").forEach(function (queryStr) {
+	        // = で分割してkey,valueをオブジェクトに格納
+	        var queryArr = queryStr.split("=");
+	        queries[queryArr[0]] = queryArr[1];
+	    });
+	    return queries;
+	}
+71cf73b3675edafab51bffafeb025122|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/init.js|531|1|V|javascript
+	  var queryStr = window.location.search.slice(1); // 文頭?を除外
+	  var queries = {};
+	  // クエリがない場合は空のオブジェクトを返す
+	  if (!queryStr) {
+	    return queries;
+	  }
+	  // クエリ文字列を & で分割して処理
+	  queryStr.split("&").forEach(function (queryStr) {
+	    // = で分割してkey,valueをオブジェクトに格納
+	    var queryArr = queryStr.split("=");
+	    queries[queryArr[0]] = queryArr[1];
+	  });
+	  return queries;
+640eabb834c7ee993cac4f7848e728e4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/init.js|531|27|V|javascript
+	  console.log(getUrlQueries)
+7f322ab0a392153e66afcf7ca1f035b8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|86|1|V|javascript
+	    contentType: "application/json",
+	    data: JSON.stringify(json),
+	    dataType: "json",
+	    scriptCharset: "utf-8"
+ae063155e4400156c3827d47c238a0c2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|74|32|V|python
+	        print(gss_model.__dict__)
+d4517f93f45a3dbf6e15d910e2d39c19|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|74|16|v|python
+	json.dumps(gss_model.__dict__)
+cabe722eba47c05c268244c75cad4c7f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|74|18|v|python
+	sbml_text
+efea08d2e56b8df722bc088da1232eb2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|220|1|V|javascript
+	  var result = $.ajax({
+	    type: "POST",
+	    url: apiUrl + "/get_innermodel_parent_id",
+	    contentType: "application/json",
+	    data: JSON.stringify(json),
+	    dataType: "json",
+	    scriptCharset: "utf-8",
+	    async: false
+	  }).responseText;
+	  $("#overlay").fadeOut();
+	  return result;
+44bad0f10376a621a7023d073a9b2e84|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|84|1|V|javascript
+	    type: "POST",
+	    url: apiUrl + "/get_innermodel_parent_id",
+	    contentType: "application/json",
+	    data: JSON.stringify(json),
+	    dataType: "json",
+	    scriptCharset: "utf-8",
+39be59b7b98a5fba494fc158b2a543e0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|90|1|V|javascript
+	    type: "GET",
+	    url: apiUrl + "/gssmodel/get/" + gssmodel_id
+09611c3918d8109cb056c34271f82aab|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|94|1|V|javascript
+	      set_alert(
+	        "check",
+	        "Model data named " + document.getElementById("gss_model_title_area").innerHTML + " was imported.",
+	        "info",
+	        3.5
+	      );
+7c47b292b022be1ce759dce523b19f45|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|95|7|V|javascript
+	  // return result;
+a336799b2ce7c55eed8aee8cd9206941|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|96|1|V|javascript
+	  $.ajax({
+	  })
+	    .done(function (result) {
+	      setviewer(result);
+	    })
+	    .fail(function (jqXHR, textStatus, errorThrown) {
+	      alert(errorThrown + " \nimport model is failed! model is broken.");
+	    })
+	    .always(function () {
+	      $("#overlay").fadeOut();
+	    });
+a6b87f3e32a06a9dfd411df99a5afb8a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|1|23|V|javascript
+	// const db_glycosim_session_ctl = {
+	//   create: (e) => {
+	//     e.preventDefault();
+	
+	//     $("#overlay").fadeIn();
+	
+	//     // only usable in glycosim index page
+	//     const title = document.querySelector("#glycosim_session_modal .glycosim_session_title").value;
+	//     if (title === "") {
+	//       alert("Session Title is not set.");
+	//       return;
+	//     }
+	//     let json = {
+	//       title: title,
+	//       glycosim_session: JSON.stringify(glycosim_session),
+	//     };
+	//     console.log(json);
+	//     $.ajax({
+	//       type: "POST",
+	//       url: apiUrl + "/glycosimsession/create",
+	//       contentType: "application/json",
+	//       data: JSON.stringify(json),
+	//       dataType: "json",
+	//       scriptCharset: "utf-8",
+	//     })
+	//       .done(function (result) {
+	//         const index = result["index"];
+	//         const model = result["title"];
+	//         // text message
+	//         console.log("saccessfully registered!");
+	//         alertPopup("informationAlert", `The session ${model} has been successfully registered.`);
+	//       })
+	//       .fail(function (jqXHR, textStatus, errorThrown) {
+	//         alert("error(/save model)\n" + errorThrown);
+	//         alertPopup("informationErrorAlert", "Sorry, something has been broken, the session could not be registered.");
+	//       })
+	//       .always(function () {
+	//         $("#overlay").fadeOut();
+	
+	//         jQuery(document).ready(function () {
+	//           jQuery("#glycosim_session_modal").modal("hide");
+	//         });
+	//       });
+	//   },
+	
+	//   delete: (e) => {
+	//     e.preventDefault();
+	//     var orDelete = window.confirm("Are you sure you want to remove the data ?");
+	//     const user = e.target.parentNode.dataset.user;
+	//     const index = e.target.parentNode.dataset.index;
+	//     if (orDelete) {
+	//       let json = {
+	//         index: index,
+	//         user: user,
+	//       };
+	//       console.log(JSON.stringify(json));
+	//       $.ajax({
+	//         type: "POST",
+	//         url: apiUrl + "/glycosimsession/delete",
+	//         contentType: "application/json",
+	//         data: JSON.stringify(json),
+	//         dataType: "json",
+	//         scriptCharset: "utf-8",
+	//       })
+	//         .done(function (result) {
+	//           location.reload();
+	//         })
+	//         .fail(function (jqXHR, textStatus, errorThrown) {
+	//           alert("error(/delete model)\n" + errorThrown);
+	//         })
+	//         .always(function () {});
+	//     }
+	//   },
+	//   update: () => {
+	//     let json = {
+	//       index: index,
+	//     };
+	//     console.log(JSON.stringify(json));
+	//     $.ajax({
+	//       type: "POST",
+	//       url: apiUrl + "/glycosimsession/update",
+	//       contentType: "application/json",
+	//       data: JSON.stringify(json),
+	//       dataType: "json",
+	//       scriptCharset: "utf-8",
+	//     })
+	//       .done(function (result) {
+	//         console.log("saccessfully registered!");
+	//       })
+	//       .fail(function (jqXHR, textStatus, errorThrown) {
+	//         alert("error(/delete model)\n" + errorThrown);
+	//       })
+	//       .always(function () {});
+	//   },
+	// };
+	
+	// function create_session() {
+	//   console.log("clicked");
+	// }
+	
+	// const onclick_event = (event) => {
+	//   create_session();
+	//   document.removeEventListener("click", onclick_event);
+	//   window.setTimeout(function () {
+	//     document.addEventListener("click", onclick_event);
+	//   }, 1000);
+	// };
+	// document.addEventListener("click", onclick_event);
+	
+2ac7081a3e922a2f273fcb8c8dd4ff8f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|9|28|v|javascript
+	ies()["GssModel"]
+26adaf8ef6985c473e8ad4f126b42f75|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|2|1|V|javascript
+	  // var params = get_input_params();
+	  // var set_species_dic = params[0];
+	  // var set_parameter_dic = params[1];
+	
+a80d3f8e75a9caeab830f7f8340dbe0b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|3|1|V|javascript
+	    // set_species_dic: set_species_dic,
+	    // set_parameter_dic: set_parameter_dic,
+	    // gssmodel_id: getUrlQuery("GssModel")
+d7e5327e09085f82ff44697ce7e99d8f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|7|36|v|javascript
+	gssmodel
+a04c0c7bf2d5ea1fa94ba91840bb89e7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|13|40|V|javascript
+	  console.log("model session created.");
+b068931cc450442b63f5b3d276ea4297|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|13|22|v|javascript
+	name
+7fc8ef54a8154c28341bf9a47443a5ce|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gsssessions.py|35|18|v|python
+	session_id
+95f45e10cefcf434ed8ec0df3d7bc227|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|95|11|V|javascript
+	  console.log(result);
+5d3392e728cea8805ebdbe13a88a49f3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gsssessions.py|34|27|V|python
+	        print(request.json)
+8a02917bbcde26c71fc1ff64bf544361|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|5|18|V|javascript
+	  console.log(json);
+868c0ad56ce859283993581519bce93e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|13|17|V|javascript
+	  result = JSON.parse(result);
+75f5bf4c0809a445eebc5cc477d7386b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gsssessions.py|35|24|V|python
+	        print(session_id)
+059191806d91ff8c67b1689942251d03|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gsssessions.py|35|16|v|python
+	{"session_id": session_id}
+9474bef67b4d9e8dbf29c79281020b6e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gsssessions.py|37|18|V|python
+	        print("err")
+00abc8d2179aacb69bfead258c2ac2f4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/GssModel.js|87|1|V|javascript
+	  }).responseText;
+4863e21c72a7384ddfe8180400582eac|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|16|18|V|javascript
+	  document.cookie = "model_key=" + result.session_id;
+b2a85930b066eed263d493766fb629f8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|12|1|V|javascript
+	    async : false,
+65fbdd0bd2d404d598acd246fb8ffeb7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|14|17|V|javascript
+	  window.setTimeout(() => console.log(result), 4000);
+ccaa4928a1fdd22d6992f8a3cee35361|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|14|17|V|javascript
+	  // result = JSON.parse(result);
+33b9c40d57992fd45e8ce6d3a9534898|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_main.js|2|1|V|javascript
+	    // if result is errorlist
+861aaba8f9aee7b89b86c03b46f329bb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_main.js|2|1|V|javascript
+	    try {
+	        result = JSON.parse(result);
+	    } catch (e) {
+	        console.log("parse error: in result");
+	    }
+	    try {
+	        result["datalist"] = JSON.parse(result["datalist"]);
+	    } catch (e) {
+	        console.log("parse error: in result");
+	    }
+	    // console.log(result);
+	    if (typeOf(result["datalist"][0]) == "string") {
+	        var text = "";
+	        for (let r of result["datalist"]) {
+	            text += r + "<br>";
+	        }
+	        open_errormodal(text);
+	        return -1;
+	    }
+df5fe75ca89be60dd0545695d4f3d9cf|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_main.js|2|1|V|javascript
+	    var datalist = result["datalist"];
+	    var session_id = result["session_id"];
+	    set_session_id("sbml_text", session_id);
+	    console.log("datalist", datalist);
+	
+	    // console.log(result)
+c75949b3a32cbfe8574d81e1de285872|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_main.js|7|1|V|javascript
+	    document.getElementById("toggle_content").hidden = false;
+	
+	    var dlbutton = document.getElementById("dl_sbml");
+	    dlbutton.disabled = false;
+7780c9c43ec900a17016b07b550a01f5|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_main.js|10|1|V|javascript
+	  //////////////////////////////////
+	  // set data species parameters//
+	  //////////////////////////////////
+c29985575165a55c6aed0c2fe571f55c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_main.js|11|1|V|javascript
+	  document.getElementById("species_list").innerHTML = "";
+	  document.getElementById("parameter_list").innerHTML = "";
+	  document.getElementById("boxtitle").innerHTML = "";
+	  document.getElementById("reactioncy").innerHTML = "";
+	
+	  species_dic = datalist[0];
+	  console.log("species_dic", species_dic);
+	  parameter_dic = datalist[1];
+	  console.log("parameter_dicc", parameter_dic);
+	  reaction_dic = datalist[2];
+	  console.log("raction_dic", reaction_dic);
+	  compartment_dic = datalist[3];
+	  console.log("compartment_dic", compartment_dic);
+	  cyjson = datalist[4];
+	  console.log("cyjson", cyjson);
+	  var sbml_text = datalist[5];
+	  model_dic = datalist[6];
+	  console.log("model_dic", model_dic);
+733e335a4fca21758bdc353acbe5021d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|2|1|V|javascript
+	  let json = {
+	    sbml_text: sbml_text
+	  };
+	  var result = $.ajax({
+	    type: "POST",
+	    url: apiUrl + "/session/model/create",
+	    contentType: "application/json",
+	    data: JSON.stringify(json),
+	    dataType: "json",
+	    scriptCharset: "utf-8",
+	    async: false
+	  }).responseJSON;
+	  document.cookie = "model_key=" + result.session_id;
+	  return result;
+2f2bf3f29ec6fd33ca617b5983c5d800|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_modelconverter.py|19|1|V|python
+	@app_gss_modelconverter.route("/sbml2cyjson", methods=["POST"])
+5515655356759ebf2e8c33590568eb7a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|73|1|V|python
+	        # gss_session = gsssession.GssSession()
+	        # session_id = gss_session.create(sbml_text=sbml_text)
+6d7a7127b272173a7cd0daeec89d2a0b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|74|1|V|python
+	        signaling_sbase = readSBMLFromString(sbml_text)
+	        datalist = gss_getdata_cyt.get_dataset(signaling_sbase)
+	        if(gss_model.modeltype is not None):
+	            datalist.append(gss_model.modeltype)
+	        datalist_str = libGSS.arrangeDictForJS(datalist)
+	        return json.dumps(
+	            dict(
+	                datalist = datalist_str,
+	                session_id = session_id
+	            )
+415ece355bdeb6b5dc29971def54613c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|74|9|V|python
+	        )
+ebdd2b17572fb9e95603af5d5a4a7869|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|71|1|V|python
+	        sbml_text = gss_model.sbml_text
+	        sbml_doc = formatsbml(sbml_text)
+	        sbml_text = writeSBMLToString(sbml_doc)
+ecc6537483ba5e1fec6eb673d9d5b709|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gsssessions.py|33|9|V|python
+	        sbml_text = gss_model.sbml_text
+5e9d4fee8d61e8cbd31950dd16b8d48c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|10|1|V|python
+	from source.GSS.model_converter import formatsbml
+9cdd231b148f562757cedfffbc340ab0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_modelconverter.py|17|1|V|python
+	
+	# GSS innermodel function
+e6a968068b16985873e0f4d073184a21|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_modelconverter.py|18|1|V|python
+	@app_gss_modelconverter.route("/sbml2cyjson", methods=["POST"])
+	def app_delete_species():
+	    if request.method == 'POST' and request.headers['Content-Type'] != 'application/json':
+	        abort(400)
+	    try:
+	        sbml_doc = readSBMLFromString(request.json["sbml_text"])
+	        try:
+	            simple = request.json["simple"]
 	        except:
-	            file_text += ","
-7abddb32e807fe848a59d8dbdcc21f4d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|43|1|V|python
-	    object_uri_list = csv_to_dict()
-	    print(object_uri_list)
-d07711f7205df4ac3fdac96f81385f7a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|50|1|V|python
-	    f = open(out_dir_name, "w")
-	    f.write(text)
-	    f.close()
-8d48b91376b0e6548febfd8b00835638|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|41|14|v|python
-	out_dir_name
-cbc131e0498a298871a2fbc204755c99|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|5|1|V|python
-	    with open("uri_list/object_uri_list.csv") as f1:
-89dbf051971dec26b98fe5b3579520b3|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|42|16|v|python
-	uri_list/object_uri_list.csv
-0139477e4df2c6838fe4e69357a219e1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|42|24|V|python
-	    with open("") as f1:
-1cb251ec0d568de6a929b520c4aed8d1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|42|13|v|python
-	text
-ea59c88a638025022463ebc96274df89|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|42|13|v|python
-	obje
-ee2c0d8ddc78cdf8013801603a3cb2fd|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|40|12|V|python
-	    print(object_uri_list)
-7b7a118c1df024124eeda31f0787977e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|9|29|v|python
-	['uri'] = row[1],
-21a275d18414f7ac02770a8355abfbf5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|26|1|V|python
-	        print(object_uri_list[key]["uri"])
-b00f2ee08e7bc0e53d2630abe151de85|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|10|1|V|python
-	            print(row[1])
-399d67c8da80fcba038173b2868daef1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|28|1|V|python
-	        # print(object_uri_list[key]["uri"])
-	        # print(type(object_uri_list[key]["uri"]))
-605c09de1d98b499e38fc6f89e81f3bb|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|10|1|V|python
-	            # print(row[1])
-	            # print(type(row[1]))
-f54b9a001fc609405d2600c1be8583f8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|11|19|v|python
-	row[1]
-66fccdb6f899d986c0c5d273abb457b0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|11|19|v|python
-	row1]
-58ca7f7ce1649958943bbba8cdbc8065|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|12|22|V|python
-	            print(csv_dict)
-34a12d4079075f37ee74a8bfc41261cc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|11|28|V|python
-	            print(type(row[1]))
-f1ea063d3be76dde8c614d11cbbacaf1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|7|1|V|python
-	        next(reader)
-	        for row in reader:
-6975956a406500070ddc167ce81bcb74|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|43|9|V|python
-	        t = f1.read()
-7c85c76b3b483ffdc295be556f4820c5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|45|9|V|python
-	        for 
-b20ba678183617337b2299aa37dae58c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|6|1|V|python
-	        reader = csv.reader(f1, delimiter=",")
-a7284b7ad7c3aaa85b3ba98bb57845a3|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|44|20|V|python
-	        next(reader)
-9718c9e340693832a5943deaca6f1de1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|44|26|V|python
-	        for row in reader:
-	            object_uri_list[row[0]] = 
-e8224af38600d907bf770626b4c97b1e|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|55|1|V|vim
-	noremap <silent>ta :tabnew<CR>
-642348b4012079c2c34f284782194877|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|58|11|V|vim
-	fdjisa jifoa s oiajfso
-97a5527025b3b03c741712346e0b3eaf|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|57|2|v|vim
-	noremap
-73be252ca82217b1458a25e6b4e99f15|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|55|11|v|vim
-	silent
-7785ca5b0c13a04102f82bad42c76aee|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|59|1|V|vim
-	noremap <silent>:" diwi""<Esc>P
-cc60c7eaafb874e4096c5f379533b4b4|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|57|1|V|vim
-	noremap <C-h> gT
-592cdab319ead22c18fd74ecb34687e8|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|58|16|V|vim
-	noremap <CR> o<Esc>
-788d31c19751bc96188fe2002b5390c5|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|60|1|V|vim
-	noremap <silent>:' diwi''<Esc>P
-40fe30719ce755fd1d5c599706ca5a50|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|61|1|V|vim
-	noremap <silent>:[ diwi[]<Esc>P
-b785940d4310243072cb99cfb4f9866d|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|62|23|V|vim
-	noremap <silent>:d diwa<Esc>P
-444c896a8e3b8ce38864cdd378a75905|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all.py|193|1|V|python
-	    queryes = [
-	        "species:human"
-	        + " OR species:9606"
-	        + " OR taxidA:human"
-	        + " OR taxidA:9606"
-	        + " OR taxidB:human"
-	        + " OR taxidA:9606"
-	    ]
-01ed599292f2c7ce79ee2ff6cb7b88a2|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/query_all.py|56|1|V|python
-	    interactiontype_except_list = [
-	        'psi-mi:"MI:0217"(phosphorylation reaction)',
-	        'psi-mi:"MI:0203"(dephosphorylation reaction)',
-	        'psi-mi:"MI:1110"(predicted interaction)',
-	    ]
-db372f16081c62d283e529e0045ba602|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|47|1|V|python
-	                object_uri_list[row[0]]["psiquic_data"] = row[1]
-e1dd8b00b496566d456981d292ab5faa|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|49|42|v|python
-	psiquic_data
-0dc391f41e8f44c433e351cfd1933b7a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|49|33|V|python
-	                object_uri_list[] = row[1]
-8637dbbc4f12d267ce62277e4d0b6288|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|21|22|v|python
-	object_uri_text
-f47fa0bf801bc847ca86cf7ec0aa43e6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/treat_uri_list.py|48|1|V|python
-	    with open("uri_list/out.csv") as f1:
-	        reader = csv.reader(f1, delimiter=",")
-	        for row in reader:
-	            try:
-	                object_uri_list[row[0]]["psiquic_data"] = row[1]
-	            except:
-	                object_uri_list[row[0]] = dict()
-	                object_uri_list[row[0]]["psiquic_data"] = row[1]
+	            simple = 1
+	
+	        cyjson = sbml2cy(sbml_doc, simple)
+	        return json.dumps(cyjson)
+	
+	    except:
+	        import traceback
+	        traceback.print_exc()
+	        abort(400)
+f8fb14ccaea2f2b2447b461437673e88|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_modelconverter.py|23|21|v|python
+	eadSBMLFromString(request.json["sbml_text"])
+c637030674b0adad0e88d380600c281c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_modelconverter.py|24|12|V|python
+	        try:
+3c02033d2f00c618668fd57502c0d929|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_modelconverter.py|24|43|V|python
+	            simple = request.json["simple"]
+dd83023c345189377b36badd5d9bd219|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_modelconverter.py|24|15|V|python
+	        except:
+d5bfb7e436d5b1550b7357eedc331d86|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_modelconverter.py|24|15|V|python
+	            simple = 1
+77eb8510033b345091f3ed3f7c789f9f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_modelconverter.py|25|42|V|python
+	        cyjson = sbml2cy(sbml_doc, simple)
+f6b8e1a1de48019f454a365938fee01f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/gss_session.js|1|1|V|javascript
+	function session_model_create(sbml_text) {
+	  let json = {
+	    sbml_text: sbml_text
+	  };
+	  var result = $.ajax({
+	    type: "POST",
+	    url: apiUrl + "/session/model/create",
+	    contentType: "application/json",
+	    data: JSON.stringify(json),
+	    dataType: "json",
+	    scriptCharset: "utf-8",
+	    async: false
+	  }).responseJSON;
+	  document.cookie = "model_key=" + result.session_id;
+	  return result;
+	}
+8c3fe21831c22d6c25783604ed95f810|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_cy_event.js|1|1|V|javascript
+	function sbml2cyjson(sbml_text){
+	  let json = {
+	    sbml_text: sbml_text
+	  };
+	  var result = $.ajax({
+	    type: "POST",
+	    url: apiUrl + "/session/model/create",
+	    contentType: "application/json",
+	    data: JSON.stringify(json),
+	    dataType: "json",
+	    scriptCharset: "utf-8",
+	    async: false
+	  }).responseJSON;
+	  document.cookie = "model_key=" + result.session_id;
+	  return result;
+	}
+	
+a7ab2d449898a79053e5221a7e99b7a4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/ModeConverter.js|1|1|V|javascript
+	function formatsbml(sbml_text) {
+	  let json = {
+	    sbml_text: sbml_text
+	  };
+	  var result = $.ajax({
+	    type: "POST",
+	    url: apiUrl + "/formatsbml",
+	    contentType: "application/json",
+	    data: JSON.stringify(json),
+	    dataType: "json",
+	    scriptCharset: "utf-8",
+	    async: false
+	  }).responseJSON;
+	  return result;
+	}
+	
+2ef297b17090665e9d6855e033293995|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/sqlite/ModeConverter.js|17|10|v|javascript
+	formatsbml
+ea7408ea88ad6e73737de79296590895|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/templates/gss/layouts_main/_headtag.html|61|1|V|html
+	  <script src={{ url_for("static", filename="./js/sqlite/gss_session.js" ) }} defer></script>
+194e50abcc9d81092efdedc3aa288008|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_main.js|13|1|V|javascript
+	  ////////////////////////////
+	  // cytscapeでパスウェイを表示//
+	  ////////////////////////////
+	  signalingcyjson = { nodes: [], edges: [] };
+	  glycosylationcyjson = { nodes: [], edges: [] };
+	  for (let cyee in cyjson) {
+	    if (cyee.indexOf("glycosylation_") == -1 && cyee != "wholepathway") {
+	      signalingcyjson["nodes"] = signalingcyjson["nodes"].concat(cyjson[cyee]["nodes"]);
+	      signalingcyjson["edges"] = signalingcyjson["edges"].concat(cyjson[cyee]["edges"]);
+	    } else if (cyee == "glycosylation") {
+	      glycosylationcyjson["nodes"] = glycosylationcyjson["nodes"].concat(cyjson[cyee]["nodes"]);
+	      glycosylationcyjson["edges"] = glycosylationcyjson["edges"].concat(cyjson[cyee]["edges"]);
+	    }
+	  }
+	  wholepathwaycyjson = cyjson["wholepathway"];
+	  // sbgnstylejs(wholepathwaycyjson,"preset")
+51a9ffa43c30c423d92acd74088c840e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_main.js|13|15|v|javascript
+	signalingcyjson
+52d489d5ff3a4403751441e1f2d52e36|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_main.js|12|1|V|javascript
+	  cyjson = sbml2cyjson(sbml_text);
+	
+	  sbgnstylejs(cyjson, "preset");
+	  cy.panzoom();
+	  layout_clicker = 0;
+3f0c3a403d4e532a2ae0e44aa412fb58|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_cy_event.js|2|15|V|javascript
+	  if(type=="all")
+d048806ffc17b603991692f52e3661a1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_main.js|13|1|V|javascript
+	  for (let reaction_key in reaction_dic) {
+	    var reaction = reaction_dic[reaction_key];
+	    reaction["compartment"] = [];
+	    for (let i of reaction["Reactant"]) {
+	      // console.log(reaction_key);
+	      // console.log("->", i);
+	      if (!reaction["compartment"].includes(species_dic[i]["compartment"])) {
+	        reaction["compartment"].push(species_dic[i]["compartment"]);
+	      }
+	    }
+	    for (let i of reaction["Product"]) {
+	      if (!reaction["compartment"].includes(species_dic[i]["compartment"])) {
+	        reaction["compartment"].push(species_dic[i]["compartment"]);
+	      }
+	    }
+	    for (let i of reaction["Modifiers"]) {
+	      if (!reaction["compartment"].includes(species_dic[i]["compartment"])) {
+	        reaction["compartment"].push(species_dic[i]["compartment"]);
+	      }
+	    }
+	  }
+080a398f417520a1410795d2b0b6dc58|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_main.js|644|1|V|javascript
+	// reactionlistのために
+	function createcyjsonByReaction(reactionid) {
+	  var reac_cyjson = { nodes: [], edges: [] };
+	  var complist = [];
+	  var x = 0;
+	  var y = 0;
+	  var hl = 300;
+	
+	  var count = 0;
+	  for (let species_id of reaction_dic[reactionid]["Reactant"]) {
+	    count += 1;
+	    let data = {};
+	    data["id"] = species_id;
+	    data["class"] = "macromolecule";
+	    data["label"] = species_dic[species_id]["name"];
+	    data["parent"] = species_dic[species_id]["compartment"];
+	    data["stateVariables"] = [];
+	    data["unitsOfInformation"] = [];
+	    ////////////////////
+	    if (!complist.includes(species_dic[species_id]["compartment"])) {
+	      complist.push(species_dic[species_id]["compartment"]);
+	    }
+	    x = 0;
+	    y =
+	      (hl / reaction_dic[reactionid]["Reactant"].length) * count -
+	      (hl / reaction_dic[reactionid]["Reactant"].length) * 0.5;
+	    reac_cyjson["nodes"].push({ data: data, position: { x: x, y: y } });
+	  }
+	  x += 300;
+	  for (let species_id of reaction_dic[reactionid]["Modifiers"]) {
+	    var data = {};
+	    data["id"] = species_id;
+	    data["class"] = "simple chemical";
+	    data["label"] = species_dic[species_id]["name"];
+	    data["parent"] = species_dic[species_id]["compartment"];
+	    data["stateVariables"] = [];
+	    data["unitsOfInformation"] = [];
+	    ////////////////////
+	    if (!complist.includes(species_dic[species_id]["compartment"])) {
+	      complist.push(species_dic[species_id]["compartment"]);
+	    }
+	    x += 50;
+	    y = 40;
+	    reac_cyjson["nodes"].push({ data: data, position: { x: x, y: y } });
+	    x += 50;
+	  }
+	  x += 300;
+	  count = 0;
+	  for (let species_id of reaction_dic[reactionid]["Product"]) {
+	    count += 1;
+	    data = {};
+	    data["id"] = species_id;
+	    data["class"] = "macromolecule";
+	    data["label"] = species_dic[species_id]["name"];
+	    data["parent"] = species_dic[species_id]["compartment"];
+	    data["stateVariables"] = [];
+	    data["unitsOfInformation"] = [];
+	    ////////////////////
+	    if (!complist.includes(species_dic[species_id]["compartment"])) {
+	      complist.push(species_dic[species_id]["compartment"]);
+	    }
+	    data["class"] = "macromolecule";
+	    y =
+	      (hl / reaction_dic[reactionid]["Product"].length) * count -
+	      (hl / reaction_dic[reactionid]["Product"].length) * 0.5;
+	    reac_cyjson["nodes"].push({ data: data, position: { x: x, y: y } });
+	  }
+	
+	  for (let compartment_id of complist) {
+	    if (compartment_dic[compartment_id]["name"] != "default") {
+	      data = {};
+	      data["id"] = compartment_id;
+	      data["class"] = "compartment";
+	      data["label"] = compartment_dic[compartment_id]["name"];
+	      data["stateVariables"] = [];
+	      data["parent"] = "";
+	      data["unitsOfInformation"] = [];
+	      reac_cyjson["nodes"].push({ data: data, position: { x: 0, y: 0 } });
+	    }
+	  }
+	
+	  for (let s = 0; s < reaction_dic[reactionid]["Reactant"].length; s++) {
+	    data = {};
+	    data["id"] = reactionid + "-react" + String(s);
+	    data["class"] = "consumption";
+	    data["bendPointPositions"] = [];
+	    data["cardinality"] = 0;
+	    data["source"] = reaction_dic[reactionid]["Reactant"][s];
+	    data["target"] = reactionid + "-point";
+	    data["portsource"] = reaction_dic[reactionid]["Reactant"][s];
+	    data["porttarget"] = reactionid + "-point";
+	    reac_cyjson["edges"].push({ data: data });
+	  }
+	  for (let t = 0; t < reaction_dic[reactionid]["Product"].length; t++) {
+	    data = {};
+	    data["id"] = reactionid + "-product" + String(t);
+	    data["class"] = "production";
+	    data["bendPointPositions"] = [];
+	    data["cardinality"] = 0;
+	    data["source"] = reactionid + "-point";
+	    data["target"] = reaction_dic[reactionid]["Product"][t];
+	    data["portsource"] = reactionid + "-point";
+	    data["porttarget"] = reaction_dic[reactionid]["Product"][t];
+	    reac_cyjson["edges"].push({ data: data });
+	  }
+	  for (let m = 0; m < reaction_dic[reactionid]["Modifiers"].length; m++) {
+	    data = {};
+	    data["id"] = reactionid + "-modify" + String(m);
+	    data["class"] = "catalysis";
+	    data["bendPointPositions"] = [];
+	    data["cardinality"] = 0;
+	    data["source"] = reaction_dic[reactionid]["Modifiers"][m];
+	    data["target"] = reactionid + "-point";
+	    data["portsource"] = reaction_dic[reactionid]["Modifiers"][m];
+	    data["porttarget"] = reactionid + "-point";
+	    // data["arrow"] = "circle"
+	    reac_cyjson["edges"].push({ data: data });
+	  }
+	  // 中間地点□の作成
+	  data = {};
+	  data["id"] = reactionid + "-point";
+	  data["class"] = "process";
+	  data["label"] = "";
+	  data["stateVariables"] = [];
+	  data["parent"] = "";
+	  // data["clonemarker"] = "false"
+	  data["unitsOfInformation"] = [];
+	  reac_cyjson["nodes"].push({
+	    data: data,
+	    position: { x: x / 2, y: hl / 2 }
+	  });
+	
+	  return reac_cyjson;
+	}
+111dfc6cb44c733683e69577e5e1dad1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_modelconverter.py|24|17|V|python
+	        sbml_text = writeSBMLToString(sbml_doc)
+9e572d66658ec315bbc73160a8f05be2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/static/js/gss/main/gss_cy_event.js|2|23|V|javascript
+	  console.log(sbml_text);
+518818ba2725e615dd6302a668ff4d2f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|121|25|V|python
+	                    print(xmlid)
+44683a582def902e735b81ea1f3d85c7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|30|25|V|python
+	            print(species)
+014790b75d340ea26bdbea6b922ce12b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|31|25|V|python
+	            bbox = species_glyph.getBoundingBox()
+d49a66366e0f8c5dbef5d9864f61c95c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|33|1|V|python
+	                node = {
+	                        "data": {
+	                            "id": species.getId(),
+	                            "class": getSpeciestypeFromBbox(bbox),
+	                            "label": species.getName(),
+	                            "stateVariables": [],
+	                            "parent": species.getCompartment(),
+	                            "unitsOfInformation": []
+	                            },
+	                        "position": {
+	                            "x": bbox.getX(),
+	                            "y": bbox.getY()
+	                            },
+	                    }
+	                if simple != 0:
+	                    node["data"]["note"] = {
+	                                "layoutId": layout.getId(),
+	                                "initialconcentration": species.getInitialConcentration()
+	                            }
+	                cyjson["nodes"].append(node)
+	                break
+275f359d417095a92f9830d7e21216fa|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|65|34|v|python
+	bbox.getX(),
+bb30ef11a95ef6de151cd8d40c68e634|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|66|34|v|python
+	bbox.getY()
+1601a92336559fff563453946f4ae6fe|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|71|34|V|python
+	                                "layoutId": layout.getId(),
+7fbfbff1b6e0fead3f2c24d20436806d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|47|1|V|python
+	                if simple != 0:
+	                    node["data"]["note"] = {
+	                                "layoutId": layout.getId(),
+	                                "initialconcentration": species.getInitialConcentration()
+	                            }
+	                cyjson["nodes"].append(node)
+73450a08ecc91a929be914c9df968639|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|52|38|v|python
+	getSpeciestypeFromBbox(bbox),
+aa6f0eda1e34c2439c6a5e544d482042|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|9|17|v|python
+	macromolecule
+7f9dbfb065f69c23f84318a7c9696a91|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|129|35|V|python
+	                    signaling_layout.setSpeciesGlyph(speciesGlyph)
+d86f13045080747ac5e5d1fe33c8e289|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|129|39|V|python
+	                    print(species_glyph)
+0c0a5414d6b1c8010fa6d61553eebb5e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|1|1|V|python
+	if __name__ == "__main__":
+	    import sys
+	    sys.path.append('/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/')
+	    from source.GSS.model_converter import sbml2cy
+d324dd8148789c75d61d9ed09c66151d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|101|13|V|python
+	    cyjson = 
+e48692144af9bf8afc57cfa2d24cde76|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|4|1|V|python
+	    from source.GSS.model_converter import sbml2cy
+fbc15bab5c4a181a4d14c285c48ab2e7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|129|57|V|python
+	                    print(speciesGlyph.getBoundingBox().x)
+db7c03b1336274191c15a4122fb5b584|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|32|1|V|python
+	        for layout in mplugin.getListOfLayouts():
+e72e0076278c573462c1efad5d91b92a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|34|1|V|python
+	            species_glyph = layout.getSpeciesGlyph("speciesGlyph_"+species.getId())
+619f427bf811bca10fb6dc094e2353e7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|33|13|V|python
+	        species_glyph = layout.getSpeciesGlyph("speciesGlyph_"+species.getId())
+3400bcb15faba830726484f0e86ababa|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|38|52|v|python
+	"speciesGlyph_"+species.getId())
+0d7e6dc866da32eb9cfd6b311466eebb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|39|1|V|python
+	            print("speciesGlyph_"+species.getId())
+9ca051c0bc2741e0af8234cead7a7980|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|40|13|V|python
+	                print("speciesGlyph_"+species.getId())
+140efa3c15dc7fc32c60fa2d48188fde|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|56|1|V|python
+	            else:
+	                node = {
+	                        "data": {
+	                            "id": species.getId(),
+	                            "class": "macromolecule",
+	                            "label": species.getName(),
+	                            "stateVariables": [],
+	                            "parent": species.getCompartment(),
+	                            "unitsOfInformation": []
+	                            },
+	                        "position": {
+	                            "x": 0,
+	                            "y": 0
+	                            },
+	                    }
+a4e270b867446deec62db31cc9277540|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|55|13|V|python
+	                break
+edaea21223ba673bbcc9f7b3e4bc4ec9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|60|17|V|python
+	            break
+cdd271d72e153579800cdb76966340c0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|41|1|V|python
+	                node = {
+	                        "data": {
+	                            "id": species.getId(),
+	                            "class": getSpeciestypeFromBbox(bbox),
+	                            "label": species.getName(),
+	                            "stateVariables": [],
+	                            "parent": species.getCompartment(),
+	                            "unitsOfInformation": []
+	                            },
+	                        "position": {
+	                            "x": bbox.getX(),
+	                            "y": bbox.getY()
+	                            },
+	                    }
+46821c47960c3969fb7e9fed058e03aa|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|37|1|V|python
+	        node = {
+	                "data": {
+	                    "id": species.getId(),
+	                    "class": "macromolecule",
+	                    "label": species.getName(),
+	                    "stateVariables": [],
+	                    "parent": species.getCompartment(),
+	                    "unitsOfInformation": []
+	                    },
+	                "position": {
+	                    "x": 0,
+	                    "y": 0
+	                    },
+	            }
+0bb0d7a276e206e0f3a0defea61484b4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|62|16|V|python
+	        node = 0
+e9132c48c1bd0833d40dc55b121b754a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|121|33|V|python
+	                    print(species)
+037109ea50475a4b750b836fa30b41f0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/sbml2cyjson.py|31|1|V|python
+	    for layout in mplugin.getListOfLayouts():
+	        for species_glyph in layout.getListOfSpeciesGlyphs():
+	            print(species_glyph.getId())
+13048bf145b3ebfe64c34dc98b85e7d5|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|141|1|V|python
+	    for layout in mplugin.getListOfLayouts():
+	        for species_glyph in layout.getListOfSpeciesGlyphs():
+	            print(species_glyph.getId())
+	
+114099c340074628d473003a44636ab2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|108|1|V|python
+	    sbml_doc = checkname(sbml_doc)
+	    sbml_doc = amount2cocentration(sbml_doc)
+	    sbml_doc = celldesigner2layouts(sbml_doc)
+	    # cyjson = sbml2cy(sbml_doc, 1)
+63b05a326c705d34329ffd3652cb2beb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|107|1|V|python
+	            mplugin = sbml_model.getPlugin("layout")
+fa3eda47f06661399d982ba0f9407b8c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|141|1|V|python
+	    mplugin = sbml_doc.getModel().getPlugin("layout")
+	    for layout in mplugin.getListOfLayouts():
+	        for species_glyph in layout.getListOfSpeciesGlyphs():
+	            print(species_glyph.getId())
+5eb4cd4341188ecb01a80a39dde3a0ba|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|163|37|V|python
+	                    Interaction_id = create_object_uri(row[13], db_list)
+1b28eacf1a7e2118a883a84d7c1e56fd|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|352|1|V|json
+	        {
+	            "description": "move-space",
+	            "manipulators": [
+	                {
+	                    "from": {
+	                        "key_code": "spacebar",
+	                        "modifiers": {
+	                            "mandatory": [
+	                                "left_control"
+	                            ]
+	                        }
+	                    },
+	                    "to": [
+	                        {
+	                            "key_code": "left_arrow",
+	                            "modifiers": [
+	                                "left_control"
+	                            ]
+	                        }
+	                    ],
+	                    "type": "basic"
+	                },
+	                {
+	                    "from": {
+	                        "key_code": "right_command",
+	                        "modifiers": {
+	                            "mandatory": [
+	                                "left_control"
+	                            ]
+	                        }
+	                    },
+	                    "to": [
+	                        {
+	                            "key_code": "right_arrow",
+	                            "modifiers": [
+	                                "left_control"
+	                            ]
+	                        }
+	                    ],
+	                    "type": "basic"
+	                }
+	            ]
+	        }
+e9ab1bafa86d09a5192c9b10a9715848|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|367|1|V|json
+	                            "modifiers": [
+	                                "left_control"
+	                            ]
+eae0497c7f848e9b96883d71b5872fc6|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|371|1|V|json
+	                {
+	                    "from": {
+	                        "key_code": "right_command",
+	                        "modifiers": {
+	                            "mandatory": [
+	                                "left_control"
+	                            ]
+	                        }
+	                    },
+	                    "to": [
+	                        {
+	                            "key_code": "right_arrow",
+	                            "modifiers": [
+	                                "left_control"
+	                            ]
+	                        }
+	                    ],
+	                    "type": "basic"
+	                }
+cdfb00ed946c54f0d3b3658ed2af0d42|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|211|1|V|json
+	                    "type": "basic",
+	                    "conditions": [
+	                        {
+	                            "type": "frontmost_application_unless",
+	                            "bundle_identifiers": [
+	                                "com.googlecode.iterm2",
+	                                "com.microsoft.VSCode",
+	                                "com.vivaldi.Vivaldi"
+	                            ]
+	                        }
+	                    ]
+9e658fff626ac34010535a80a4368552|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|370|21|V|json
+	                    "type": "basic",
+f2f9a00e6dd0ae30bec4d20ca9d28174|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|376|36|V|json
+	                                "com.vivaldi.Vivaldi"

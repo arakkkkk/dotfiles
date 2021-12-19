@@ -1,7 +1,7 @@
 #!/bin/sh
 ####### install dein for nvim
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-sh ./installer.sh ~/.cache/dein
+# curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+# sh ./installer.sh ~/.cache/dein
 
 dotfiles_root=$(cd $(dirname $0)/.. && pwd)
 
@@ -32,15 +32,15 @@ ln -fsn ${HOME}/dotfiles/dotfiles/vscode/keybindings.json ${HOME}/Library/Applic
 ln -fsn ${HOME}/dotfiles/dotfiles/Vivaldi/Default/Sessions ${HOME}/Library/Application\ Support/Vivaldi/Default/Sessions
 
 ####### homebrew
-brew update
-brew upgrade
-brew install direnv
-brew install pyenv
-brew install ag
+# brew update
+# brew upgrade
+# brew install direnv
+# brew install pyenv
+# brew install ag
 
 ######### for fish shell
-source ~/.config/fish/config.fish
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
-fisher install jethrokuan/z
-fisher install jethrokuan/fzf
-fisher install oh-my-fish/theme-bobthefish
+# source ~/.config/fish/config.fish
+# curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+# fisher install jethrokuan/z
+# fisher install jethrokuan/fzf
+# fisher install oh-my-fish/theme-bobthefish

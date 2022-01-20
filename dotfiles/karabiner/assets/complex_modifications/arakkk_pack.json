@@ -215,7 +215,8 @@
                             "bundle_identifiers": [
                                 "com.googlecode.iterm2",
                                 "com.microsoft.VSCode",
-                                "com.vivaldi.Vivaldi"
+                                "com.vivaldi.Vivaldi",
+                                "com.google.Chrome"
                             ]
                         }
                     ]
@@ -419,6 +420,37 @@
                         }
                     ],
                     "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "iterm short cut",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "r",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_command",
+                                "left_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {"shell_command": "sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh"}
+                    ],
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type":"frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com.googlecode.iterm2"
+                            ]
+                        }
+                    ]
                 }
             ]
         }

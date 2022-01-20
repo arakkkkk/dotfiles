@@ -211,7 +211,8 @@
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
-                                            "com.vivaldi.Vivaldi"
+                                            "com.vivaldi.Vivaldi",
+                                            "com.google.Chrome"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -430,6 +431,39 @@
                                         "modifiers": [
                                             "left_control"
                                         ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "iterm short cut",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.googlecode.iterm2"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh"
                                     }
                                 ],
                                 "type": "basic"

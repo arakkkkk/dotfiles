@@ -59,37 +59,6 @@ let g:python3_host_prog = '~/.pyenv/shims/python'
 let g:coc_node_path = '/usr/local/bin/node'
 
 
-
-noremap <S-h>   ^
-noremap <S-j>   }
-noremap <S-k>   {
-noremap <S-l>   $
-noremap <C-j>   5j
-noremap <C-k>   5k
-noremap <C-e>  $
-noremap <C-a>  ^
-noremap zz  10jzz10k
-noremap <Space>j jzz
-noremap <Space>k kzz
-map! <C-e>  <C-c>$a
-map! <C-a>  <C-c>^i
-
-noremap <silent>tr :vsplit<CR>
-noremap <silent>tu  :split<CR><C-w><C-w>
-noremap <silent>ta :tabnew<CR>
-noremap <C-l> gt
-noremap <C-h> gT
-
-noremap <silent>:" diwi""<Esc>P
-noremap <silent>:' diwi''<Esc>P
-noremap <silent>:[ diwi[]<Esc>P
-noremap <silent>:( diwi()<Esc>P
-
-
-
-
-
-
 syntax enable
 " source ~/.config/nvim/colors/func.vim
 " colorscheme iceberg
@@ -97,5 +66,5 @@ syntax enable
 colorscheme night-owl
 source ~/.config/nvim/colors/colorscheme.vim
 
-
-map :init<CR> :source ~/.config/nvim/init.vim<CR>
+runtime shortcuts.vim
+map :init<CR> :tabnew<CR>:source ~/.config/nvim/init.vim<CR>gT

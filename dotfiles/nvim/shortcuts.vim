@@ -29,5 +29,4 @@ noremap <silent>:< diwi<><Esc>P
 noremap <silent>:oq<CR> :only | close!
 noremap <silent>:v<CR> :! sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh<CR><CR>
 
-
 map :sc<CR> :tabnew<CR>:source ~/.config/nvim/shortcuts.vim<CR>gT

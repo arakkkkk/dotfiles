@@ -17,6 +17,7 @@ let g:ale_fixers = {
 map :fix<CR> :ALEFix<CR>
 map :ale<CR> :source ~/.config/nvim/plugins/ale.vim<CR>
 
+
 let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 " let g:ale_fix_on_save = 0

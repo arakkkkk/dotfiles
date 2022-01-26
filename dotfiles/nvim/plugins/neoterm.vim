@@ -17,4 +17,4 @@ noremap <C-q> a<C-c>
 :tnoremap <C-q> <C-c>
 
 " run python file
-nnoremap :r<CR> :split<CR><C-w><C-w> :term python %<CR>
+nnoremap :r<CR> :w<CR>:split<CR><C-w><C-w> :term python %<CR>

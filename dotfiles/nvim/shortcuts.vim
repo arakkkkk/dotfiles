@@ -6,7 +6,6 @@ noremap <C-j>   5j
 noremap <C-k>   5k
 noremap <C-e>  $
 noremap <C-a>  ^
-noremap zz  10jzz10k
 noremap <Space>j jzz
 noremap <Space>k kzz
 map! <C-e>  <C-c>$a
@@ -27,6 +26,8 @@ noremap <silent>:< diwi<><Esc>P
 
 
 noremap <silent>:oq<CR> :only | close!
-noremap <silent>:v<CR> :! sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh<CR><CR>
+noremap <silent>:v<CR> :! osascript -e 'tell application "Vivaldi" to reload active tab of window 1'<CR><CR>
 
-map :sc<CR> :tabnew<CR>:source ~/.config/nvim/shortcuts.vim<CR>gT
+
+
+map :sc<CR> :tabnew<CR>:source ~/.config/nvim/shortcuts.vim<CR>

@@ -67,4 +67,4 @@ colorscheme night-owl
 source ~/.config/nvim/colors/colorscheme.vim
 
 runtime shortcuts.vim
-map :init<CR> :tabnew<CR>:source ~/.config/nvim/init.vim<CR>gT
+map :init<CR> :tabnew<CR>:source ~/.config/nvim/init.vim<CR>

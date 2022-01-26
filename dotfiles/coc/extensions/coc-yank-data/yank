@@ -1,737 +1,67 @@
-97a80f09e8dbbc6e62a8001ea2cba803|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|12|1|V|python
-	    print("------------------------")
-	    print(dir(model))
-	    print("------------------------")
-	    print(model.__dict__.0)
-	    print("------------------------")
-	    print("------------------------")
-48fdcdb493bc1ae2144a83aa1480b2ed|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|12|1|V|python
-	    # for
-	    # content_dict = 
-b5b864d10798dcedfd2713d191169a4d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|11|1|V|python
-	def dict(model):
-	    Vk
+a9db7403ac20cc962159062a57a53f83|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/functions/cytoscape/LibCyjson.tsx|104|7|V|typescriptreact
+	        node["position"]["x"] = (node["position"]["x"] / x_max) * mag;
+43443adc962f065bc066d7f15225aacb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/functions/cytoscape/LibCyjson.tsx|106|1|V|typescriptreact
+	      if(node["position"]["x"] == NaN) node["position"]["x"] = 0
+d17b11c941aa45282f6b9f89cd27d7e7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/cytoscape/Pathway.tsx|40|19|V|typescriptreact
+	        console.log(e);
+fc474365c5f987493536c23d6a58869c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/modelform/ModelTemplate.tsx|25|1|V|typescriptreact
+	    console.log(fileName);
+2acdf363ba82422ece1d632528901025|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|54|36|V|typescriptreact
+	    console.log(res1.data.session_id);
+bee2857906d504bc24330b7fbf2c1b2f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|33|1|V|python
+	    def __repr__(self):
+	        return "<Title %r>" % (self.title)
+a75c36db8db91b2012976cbfdbf05b07|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|28|28|V|python
+	    print(content.session_id)
+e5fbdfb18959ffdfa9a09c6d604bdd3d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|32|24|V|python
+	    print(content.keys())
+3b06d689f3e5222dcc637639c7defe71|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|33|28|V|python
+	        print(content.keys())
+fa8dd80adfa071ff9c958c6b88bfa3d3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|30|1|V|python
+	    content.sbml_text = sbml_text
 	
-	    return model
-8426b715ec2278c9c64b6c1dbed4ea61|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|29|12|v|python
-	dict(content)
-2ef28319cb320eab0b383bcd1c720f44|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|37|1|V|python
-	    return content.__dict__
-4650838d55038f54821bc36d091015eb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|53|32|v|typescriptreact
-	model_session
-a4fcfd2ae70af644d49698deb25f7d24|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|12|1|V|python
-	    Vk
-a8f7488d51e96f0a338f9b3a20cfd35e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|12|25|V|python
-	    print("------------")
-44cb6a2328b0ee5b9082d14f5a2a9d71|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|13|24|V|python
-	        print(model.key)
-f7531e2d0ea27233ce00b5f01c5bf335|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|13|14|v|python
-	print
-21c9a111eb70e14d996c8106409ec2cb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|14|17|V|python
-	        # if(key)
-176a26d1c33c810446ca723c2ad35ea8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|13|1|V|python
-	        if(key != "sbml_text"):
-	            eval("print(key, model."+key+")")
-6a9bfc5515cc66cf8fcaa0c059bd49d0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|14|12|v|python
-	type(model.__dict__[key])
-69085eb8d8c2a1246dd8dc0666d2d2ac|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|12|17|V|python
-	    content_dict 
-5d1c5e5077c5ddbd66b23fcc1a4f9495|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|14|24|V|python
-	            eval("print(key, str(model."+key+"))")
-404f351ed89b2e652ba7338b7e3b892d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|14|28|V|python
-	            print(model.key.)
-cbfd338fb343d79f186fe6495bce21e7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|13|1|V|python
-	        if(key != "sbml_text"):
-	
-bfa273f91ff8aa368009b861c6af403f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|13|22|v|python
-	__dict__
-579f12a29926777b4ec7b9120d2809a8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|14|13|V|python
-	        model
-a2e3bb8276b746422b760781b1888d71|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|15|10|V|python
-	    print()
-c793fb08d36c8c628246f760e8340145|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|15|7|V|python
-	    for
-780fef3f8aaef1d4073130b0ec0dba95|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|11|1|V|python
-	def dict(model):
-	    content_dict = model.__dict__
-	    for key in content_dict.keys():
-	        content_dict[key] = str(content_dict[key])
-	        print(key, type(content_dict[key]))
-	    return content_dict
-9c11d5254e4a8f08c58a9cf5dc018c87|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|16|1|V|python
-	    return content_dict
-e73ac8d1a0554cb26d26bd8dc24e03d2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|47|5|V|python
-	    return contents
+	    print(content.session_id)
+d510792d9e5c275dc1d9c76131319f51|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|37|1|V|python
+	    content =  dict(content)
+	    print(content.keys())
+4882e87d884ca5310ca37a0be9016c45|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|29|23|V|python
+	    content_dict = dict(content)
+1b9219e44fb17c9fcf58162b776fa8d2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|11|16|v|python
+	content_dict
+c689bc109ab1921ab789cad1fb2f4fe6|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|36|1|V|python
+	    print(content.session_id)
+	    content_dict = dict(content)
+	    # content_dict["sbml_text"] = sbml_text
+26b1804d66f973af211c79690839d5b4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|33|24|v|python
+	cnotent
+a06077e4f6e5b4107e3a7b9662cf8dbc|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|33|29|V|python
+	        print(jsonify(content))
+3cbc03eb92e865ee39705edb568412b1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|36|18|V|python
 	    return content
-4500af17dcc96faddf1fca9dea02ab13|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|48|1|V|python
-	        content = dict(content)
-dc0c7adcb092637b923e44c29891b914|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|103|32|V|python
-	        return {"model_session": content.session_id}
-946ad62035f937e4c71eaf5664434aef|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|40|20|V|python
-	    print(session_id)
-bb4c374392133719a324ab1ba2799cd6|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|72|27|v|python
-	dict
-ab45a5c2330c09f9931723b7bb43c79c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|17|5|V|python
-	        print(key, type(content_dict[key]))
-49b49ee54edbbc7ee2679c48cb97209d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|72|1|V|python
-	    print("-------------------------")
-bbcf595d7f274a5df38827eebc813aee|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|72|1|V|python
-	    print("-------------------------")
-	    print(id)
-f179a8fa5c0866ef44d5dee442f99014|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|20|14|V|python
-	    print("get")
-f4ffb77bfc140e4b5d9d6a3c0e53d3df|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|35|1|V|python
-	@app_gssmodels.route("/gssmodel/get/<id>", methods=["GET"])
-	def app_gssmodel_get(id):
-	    try:
-	        content = GssModel.get(id)
-	        return {"sbml_text": content.sbml_text}
-	    except:
-	        print("error /gssmodel_get")
-	        abort(400, traceback.print_exc())
-4457842f532b9ffc570cec91a62c57a6|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|22|1|V|python
-	def app_gssmodel_list() -> dict:
-	    try:
-	        offset = request.json["offset"]
-	        maxresults = request.json["maxresults"]
-	        user_name = request.json["user_name"]
-	        contents = GssModel.list(user_name, offset, maxresults)
-	        return {"gssmodels": contents}
-	
-	    except:
-	        print("error /gssmodel_get")
-	        abort(400, traceback.print_exc())
-64d2371d8d8721307fe50e56a0da88e4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|21|1|V|python
-	@app_gssmodels.route("/gssmodel/list", methods=["POST"])
-	def app_gssmodel_list() -> dict:
-	    try:
-	        offset = request.json["offset"]
-	        maxresults = request.json["maxresults"]
-	        user_name = request.json["user_name"]
-	        contents = GssModel.list(user_name, offset, maxresults)
-	        return {"gssmodels": contents}
-	
-	    except:
-	        print("error /gssmodel_get")
-	        abort(400, traceback.print_exc())
-	
-	
-c73687c833d667ef9384b903fc68c6fe|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|62|32|V|python
-	        generation = generation,
-d5d3db1765287eef77d7927cc956f50a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|49|5|V|python
-	title
-011dde20986eabf81c39e473d16ada85|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|49|5|V|python
-	                )
-	        return {"sbml_text": content.sbml_text}
-2cad87d017627ab174d71f5bb6be1939|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|49|1|V|python
-	                title=request.json["title"]
-e219c1fe99484739c9422f5f79b18fe0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|50|1|V|python
-	                body=request.json["body"]
-841a2d689ad86bd1611447453c22c6fc|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|51|17|v|python
-	body
-0c7d3a678860394938d3fd1da6ddbfba|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|55|42|V|python
-	        return {"sbml_text": content.sbml_text}
-46aa271709b802b3626f0f12721c3dae|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|42|1|V|typescriptreact
-	const updateModel = (model: LibSbml, setModel: any, setModelLoading: any) => {
-	  const species_list = model.listOfSpecies;
-	  const parameters_list = model.listOfParameters;
-	  // エラーチェック
-	  setModelLoading(true);
-	  (async () => {
-	    const res1 = await ModelSession.updateParams(species_list, parameters_list);
-	    const res2 = await ModelSession.updateGssModel();
-	    setModelLoading(false);
-	  })();
-	};
-0577eae18a2dc3dbc1f9f33f6c629cef|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|54|7|v|typescriptreact
-	updateModel
-1c53e757d89b43c5dcd0578ab84e5966|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|96|1|V|typescriptreact
-	    let cookie = parseCookies();
-	    let model_session = cookie.model_session;
-	    let data = {
-	      model_session: model_session
-	    };
-	    const res1 = await axios.post(ApiUrl + "session/model/updategssmodel", data);
-	    return res1;
-c66827900f9023125d4c3de4f1646ff6|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|105|1|V|typescriptreact
-	    let cookie = parseCookies();
-	    let model_session = cookie.model_session;
-7766485cc11bdda89a68edbc32868f79|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|49|1|V|python
-	                title=request.json["title"],
-	                body=request.json["body"],
-	                sbml_text=request.json["sbml_text"],
-	                parent_id=request.json["parent_id"],
-	                user_name=session["user_name"]
-7bcca48313eb6c52eea3b954fbcc3307|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|106|31|V|typescriptreact
-	      model_session: model_session
-6bcba1f6261f1988b0e0bfd5b448c15e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|110|7|V|typescriptreact
-	      u
-3704bf052a23e7afe475f926df248179|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|104|1|V|typescriptreact
-	  createGssModel: () => {
-	    let data = {
-	      title: title,
-	      body: body,
-	      sbml_text: sbml_text,
-	      parent_id: parent_id,
-	    };
-	    const res1 = await axios.post(ApiUrl + "session/model/updategssmodel", data);
-	    return res1;
-	
-	  }
-63f5ee321afbfbcbc075fbac9cd5aa53|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|108|1|V|python
-	@app_gssmodelsessions.route("/session/model/updategssmodel", methods=["POST"])
-	def session_model_updategssmodel():
-	    if (
-	        request.method == "POST"
-	        and request.headers["Content-Type"] != "application/json"
-	    ):
-	        abort(400, "request is correct")
-	    try:
-	        modelsession = GssModelSession.get(request.json["model_session"])
-	        content = GssModel.update(
-	                id=modelsession["gssmodel_id"],
-	                data={
-	                    "sbml_text": modelsession["sbml_text"]
-	                    }
-	                )
-	        return content
-	    except:
-	        abort(400, traceback.print_exc())
-063b918fdafc23cc52a9f27140c582de|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|48|1|V|python
-	        content = GssModel.create(
-	                title=request.json["title"],
-	                body=request.json["body"],
-	                sbml_text=request.json["sbml_text"],
-	                parent_id=request.json["parent_id"],
-	                user_name=session["user_name"]
-	                )
-e2bc7dfd49f5a06fca28a3c76a9a8f90|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|136|9|V|python
-	        content = GssModel.(
-	                id=modelsession["gssmodel_id"],
-	                data={
-	                    "sbml_text": modelsession["sbml_text"]
-	                    }
-	                )
-c623de67b62916c0d6c2c881e1f54fd7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|139|27|v|python
-	request.json["sbml_text"],
-da13d7aa3f1f8c6650c70480f6356a81|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|112|7|V|typescriptreact
-	      sbml_text: sbml_text,
-41c800c2db66268ccd40060900e3c1ae|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|105|63|v|typescriptreact
-	teger
-e1ae1a2054ad5ed27973c77c9967b423|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|105|61|v|typescriptreact
-	ininu
-fb30ae5c4b1c73d525d55c942811142d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|118|1|V|typescriptreact
-	            <a className="mx-1" onClick={() => updateModel(props.model, props.setModel, props.setModelLoading)}>
-	              <BsFillCloudCheckFill style={{ height: "25px", width: "25px", color: "black" }} />
-	            </a>
-97c9e7150f2a6d7aeb90e0c0e481538c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|121|13|V|typescriptreact
-	            <div className="mx-1"></div>
-47fe9d64f2a8bef9a9174b26617e4be2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|124|13|V|typescriptreact
-	            <HiInformationCircle style={{ height: "25px", width: "25px", color: "black" }} />
-d51ea2d4d2ab5e534b0569ab05056a1d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|122|16|v|typescriptreact
-	BsFillCloudCheckFill
-be55b0239ef1eb5d2a2ecba6488f3b75|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|124|14|v|typescriptreact
-	HiInformationCircle
-bdcf317974c292ed836efa3eed0fa688|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|124|34|V|typescriptreact
-	            < style={{ height: "25px", width: "25px", color: "black" }} />
-0888da97a5da653a0b7b965e2a1fcbd6|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|121|1|V|typescriptreact
-	            <a className="mx-1" onClick={() => createModel(props.model, props.setModel, props.setModelLoading)}>
-	              <HiInformationCircle style={{ height: "25px", width: "25px", color: "black" }} />
-	            </a>
-c6a3f077ea61e4d7a32a7f41ba244767|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|119|13|V|typescriptreact
-	              <HiInformationCircle style={{ height: "25px", width: "25px", color: "black" }} />
-9591db545b864b6306e8687eb894a787|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|117|13|V|typescriptreact
-	            <BsFillCloudArrowDownFill style={{ height: "25px", width: "25px", color: "black" }} />
-87e2692df205f2796e7ec919fb31dfb4|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|93|1|V|python
-	    # has_interaction_id_obo = URIRef("http://purl.obolibrary.org/obo/id")
-cd277ade512562d85a3a1b8e43e5307a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|94|1|V|python
-	    # has_interaction_id_lim = URIRef(
-286c3ef6b90d888f9b23b032c249e44c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|97|34|v|python
-	http://purl.obolibrary.org/obo/id
-9306d046116cd713c2d3f8880f38a701|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|114|59|v|typescriptreact
-	updategssmodel
-6afbe8f78e4375ae0d1d95279fea8c1e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|139|12|V|python
-	        usre
-c0a44c8a37720328d24326a8636cb0a4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|135|1|V|python
-	        model_session = request.json["model_session"]
-	        title = request.json["title"]
-	        body = request.json["title"]
-	        parent_id = request.json["parent_id"]
-4589047eae83f7326bce37030ef3864a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|135|10|V|python
-	        ``
-137aa588d49524427f5caf85f0582fe6|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|132|5|V|python
-	    ```
-a43c1b0aa53a0c908810c06ab1ff3967|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|131|8|v|python
-	input
-eb2ce79c91c66e6d4f861a06095dbba4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|129|7|V|python
-	    def
-0d1234d8fdb507cb2457274ee28d0dfa|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|129|1|V|python
-	    def function(self, arg1):
-	        """TODO: Docstring for function.
-	
-	                                        :arg1: TODO
-	                                        :returns: TODO
-	
-	                                        """
-	        pass
-	    
-f543c9db339e6e149ce015f9094d0444|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|131|9|V|python
-	    model
-0c5357917be99ef1295a40cae5d92951|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|135|11|V|python
-	        usr
-e460fb30a2dff517ec8fae55e3235681|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|145|21|V|python
-	        print(session)
-c014ba9d508cd52d9e888c35ec49496c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|138|1|V|python
-	    if (
-	        request.method == "POST"
-	        and request.headers["Content-Type"] != "application/json"
-	    ):
-	        abort(400, "request is correct")
-7544a7158a565f834eb42e82eb30c108|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|69|8|v|python
-	(
-	        request.method == "POST"
-	        and request.headers["Content-Type"] != "application/json"
-	    ):
-	        
-3e2e8b77bef87537e29b27e3dbd2e1ab|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|69|8|V|python
-	    if abort(400, "request not correct")
-edf3600143f8a72b8a24ae03b8a14f22|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|51|1|V|python
-	    if (
-	        request.method == "POST"
-	        and request.headers["Content-Type"] != "application/json"
-	    ):
-	        abort(400, "request not correct")
-577c4b997ed629fe6d64ecbaae6221b2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/pages/simulation.tsx|15|61|v|typescriptreact
-	timecourse
-e98e95994d13dcd39b30756d4b4e36ee|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|104|1|V|python
-	    """create gssmodel from gsssession id
-	    in:
-	        model_session: GssModelSession.session_id
-	        title: str
-	        body: str
-	        parent_id: GssModel.id
-	        user_name: User.user_name
-	    out:
-	        GssModelSessoin
-	    """
-1c8d9e8540078ee12389665776ea19d1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|35|1|V|python
-	        model_session: GssModelSession.session_id
-	        title: str
-	        body: str
-	        parent_id: GssModel.id
-	        user_name: User.user_name
-ce24f983cba3f370a7fce7152db3e607|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|39|23|V|python
-	        GssModelSessoin
-b7cbd16c4db407d89b4ea6553c569965|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|41|10|v|python
-	GssModel[]
-94a602cd9bdf342e5bf254f5737f1ba6|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|46|25|V|python
-	        user_name = request.json["user_name"]
-84e2c64f38f78ba3ea5c905ab5a2da27|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/GssModel.tsx|19|66|v|typescriptreact
-	boolean
-b4bf6c6d531defb85cfc33f2087d927b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/pages/models/gssmodel.tsx|3|1|V|typescriptreact
-	import { NextAuth } from "next-auth/client";
-3a9b7add41c20296e2fd22254066a5ec|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/users.py|46|29|V|python
-	                print(session)
-1b50c46d52e06e9fa1f3390d78f27e77|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|311|9|V|python
-	        progress=None,
-b8e59a875618ce96a6be2b90bf15fbae|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|316|9|V|python
-	        self.progress
-49a4464058655149be0814ae5d25301d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|300|1|V|python
-	class User(Base):
-	    __tablename__ = "users"
-	    id = Column(Integer, primary_key=True, autoincrement=True)
-	    user_name = Column(String(128), unique=True)
-	    hashed_password = Column(String(128))
-	    progress = Integer
-	
-	    def __init__(
-	        self,
-	        user_name=None,
-	        hashed_password=None,
-	        model_records=None,
-	        param_recoeds=None,
-	    ):
-	        self.user_name = user_name
-	        self.hashed_password = hashed_password
-	        self.model_records = model_records
-	        self.param_recoeds = param_recoeds
-	
-	    def __repr__(self):
-	        return "<Name %r>" % (self.user_name)
-31d2e1cb743c8fb0ce6791ac7f3d20b1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|325|14|V|python
-	    user_name = Column(String(128), unique=True)
-998788ccb8239ebdbad3c0e65243a25c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|20|1|V|python
-	    generation = Column(Integer)
-9cb9ce5bd9e807867d42a740c9633fc7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|326|5|v|python
-	generation
-381944fc32c7c0c205cf16f3d7710950|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|325|11|V|python
-	    user_id
-33f2429083af5334fda0a1a8cdff70e0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|326|5|v|python
-	hashed_password
-d6808ad2fa8831ac1bf4c61c0d34e076|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|327|22|V|python
-	    progress = Integer
-b7ffc826356cf1d61522e2e82496fd84|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|330|1|V|python
-	        user_name=None,
-	        hashed_password=None,
-	        model_records=None,
-	        param_recoeds=None,
-fd9d13338b65226e539d1f3e98a1e4bd|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|333|1|V|python
-	        self.user_name = user_name
-	        self.hashed_password = hashed_password
-	        self.model_records = model_records
-	        self.param_recoeds = param_recoeds
-f57e371150ce8aa4bd116a371f06c9df|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|335|1|V|python
-	    def __repr__(self):
-	        return "<Name %r>" % (self.user_name)
-40782f56e94fa9579992b0ef021188f3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|1|1|V|python
-	from requests.sessions import session
-	from sqlalchemy import Column, Integer, String, Text, DateTime, Boolean, ForeignKey
-	from sqlalchemy.dialects.mysql import LONGTEXT
-	from sqlalchemy.orm import column_property, relation, relationship
-	from models.database import Base, db_session
-	from datetime import datetime
-	import os
-	import json
-	
-	# ALTER TABLE テーブル名 ADD COLUMN カラム名[ データ型];
-	
-	
-	class GssModel(Base):
-	    __tablename__ = "gssmodels"
-	    id = Column(Integer, primary_key=True)
-	    title = Column(String(128))
-	    body = Column(Text)
-	    sbml_dir = Column(String(128))
-	    user_name = Column(String(128))
-	    generation = Column(Integer)
-	    date = Column(DateTime, default=datetime.now())
-	
-	    def __init__(
-	        self, title=None, body=None, sbml_dir=None, user_name=None, generation=None
-	    ):
-	        self.title = title
-	        self.body = body
-	        self.sbml_dir = sbml_dir
-	        self.user_name = user_name
-	        self.generation = generation
-	        self.date = datetime.now()
-	
-	    def __repr__(self):
-	        return "<Title %r>" % (self.title)
-	
-	
-	class GssParam(Base):
-	    __tablename__ = "gssparams"
-	    id = Column(Integer, primary_key=True)
-	    title = Column(String(128))
-	    body = Column(Text)
-	    params_list = Column(Text)
-	    user_name = Column(String(128))
-	    gssmodel_id = Column(Integer)
-	    date = Column(DateTime, default=datetime.now())
-	
-	    def __init__(
-	        self,
-	        title=None,
-	        body=None,
-	        params_list=None,
-	        user_name=None,
-	        gssmodel_id=None,
-	        date=None,
-	    ):
-	        self.title = title
-	        self.body = body
-	        self.params_list = params_list
-	        self.user_name = user_name
-	        self.gssmodel_id = gssmodel_id
-	        self.date = date
-	
-	    def __repr__(self):
-	        return "<Title %r>" % (self.title)
-	
-	
-	class GssWorkflow(Base):
-	    __tablename__ = "gssworkflows"
-	    id = Column(Integer, primary_key=True)
-	    title = Column(String(128))
-	    body = Column(Text)
-	    form_json = Column(Text)
-	    flow_json = Column(Text)
-	    user_name = Column(String(128))
-	    gssmodel_id = Column(Integer)
-	    gssparam_id = Column(Integer)
-	    date = Column(DateTime, default=datetime.now())
-	
-	    def __init__(
-	        self,
-	        title=None,
-	        body=None,
-	        form_json=None,
-	        flow_json=None,
-	        user_name=None,
-	        gssmodel_id=None,
-	        gssparam_id=None,
-	        date=None,
-	    ):
-	        self.title = title
-	        self.body = body
-	        self.form_json = form_json
-	        self.flow_json = flow_json
-	        self.user_name = user_name
-	        self.gssmodel_id = gssmodel_id
-	        self.gssparam_id = gssparam_id
-	        self.date = date
-	
-	    def __repr__(self):
-	        return "<Title %r>" % (self.title)
-	
-	
-	class GssModelSession(Base):
-	    __tablename__ = "gssmodelsessions"
-	    id = Column(Integer, primary_key=True)
-	    session_id = Column(String(128))
-	    sbml_dir = Column(String(128))
-	    gssmodel_id = Column(String(128))
-	    date = Column(DateTime, default=datetime.now())
-	
-	    def __init__(
-	        self,
-	        id=None,
-	        session_id: str = None,
-	        sbml_dir:str = None,
-	        gssmodel_id: str = None,
-	        date: datetime = None,
-	    ):
-	        self.id = id
-	        self.session_id = session_id
-	        self.sbml_dir = sbml_dir
-	        self.gssmodel_id = gssmodel_id
-	        self.date = date
-	
-	    def __repr__(self):
-	        return "<Title %r>" % (self.title)
-	
-	
-	class GSSSession(Base):
-	    __tablename__ = "gsssessions"
-	    id = Column(Integer, primary_key=True)
-	    title = Column(String(128))
-	    session_json = Column(Text)
-	    param_json = Column(Text)
-	    pe_json = Column(Text)
-	    sim_json = Column(Text)
-	    sbml_text = Column(Text)
-	    user_name = Column(String(128))
-	    date = Column(DateTime, default=datetime.now())
-	
-	    def __init__(
-	        self,
-	        id=None,
-	        title: str = None,
-	        session_json: str = None,
-	        param_json: str = None,
-	        pe_json: str = None,
-	        sim_json: str = None,
-	        sbml_text: str = None,
-	        user_name: str = None,
-	        date: datetime = None,
-	    ):
-	        self.id = id
-	        self.title = title
-	        self.session_json = session_json
-	        self.sbml_text = sbml_text
-	        self.param_json = param_json
-	        self.pe_json = pe_json
-	        self.sim_json = sim_json
-	        self.user_name = user_name
-	        self.date = date
-	
-	    def __repr__(self):
-	        return "<Title %r>" % (self.title)
-	
-	
-	class Progress(Base):
-	    __tablename__ = "progress"
-	    id = Column(Integer, primary_key=True, autoincrement=True)
-	    user_name = Column(String(128))
-	    progress_id = Column(Integer)
-	    progress_value = Column(Integer)
-	
-	    def __init__(self, user_name=None, progress_id=None, progress_value=None):
-	        self.user_name = user_name
-	        self.progress_id = progress_id
-	        self.progress_value = progress_value
-	
-	    def __repr__(self):
-	        return "<Title %r>" % (self.title)
-	
-	
-	class GssEstimationConditionData(Base):
-	    __tablename__ = "gssecdata"
-	    id = Column(Integer, primary_key=True)
-	    exp_json = Column(Text)
-	    pe_condition = Column(Text)
-	    method_json = Column(Text)
-	    gssparam_id = Column(Integer)
-	
-	    def __init__(
-	        self, exp_json=None, pe_condition=None, method_json=None, gssparam_id=None
-	    ):
-	        self.exp_json = exp_json
-	        self.pe_condition = pe_condition
-	        self.method_json = method_json
-	        self.gssparam_id = gssparam_id
-	
-	
-	# GlycoSim 用
-	
-	
-	class GlycoSimTaskDir(Base):
-	    """Collection for glycosim task record directory"""
-	
-	    __tablename__ = "glycosimtaskdir"
-	
-	    id = Column(Integer, primary_key=True)
-	    session_id = Column(Integer, ForeignKey("glycosimsessions.id"))
-	
-	    dir_path = Column(String(255), default="")
-	    """task_type would be PE or SA"""
-	    task_type = Column(String(128), default="")
-	    """glycosimsessionstask_method would be PSO or GA now (20211118)"""
-	    task_method = Column(String(128), default="")
-	
-	    date = Column(DateTime, default=datetime.now())
-	
-	
-	class GlycoSimTaskDirManager:
-	    @staticmethod
-	    def create_data(session_id, dir_path, task_type, task_method):
-	        d = GlycoSimTaskDir()
-	        d.session_id = session_id
-	        d.dir_path = dir_path
-	        d.task_type = task_type
-	        d.task_method = task_method
-	
-	        db_session.add(d)
-	
-	        try:
-	            db_session.commit()
-	        except:
-	            print("GlycoSimTaskDirManager commit failed.")
-	            return None
-	
-	        return d
-	
-	    @staticmethod
-	    def get_latest(session_id):
-	        d = GlycoSimTaskDir.query.filter_by(session_id=session_id).all()[-1]
-	
-	        return d
-	
-	
-	class GlycoSimSession(Base):
-	    __tablename__ = "glycosimsessions"
-	    id = Column(Integer, primary_key=True)
-	    title = Column(String(128))
-	    if os.environ.get("FLASK_ENV"):
-	        session_json = Column(LONGTEXT)
-	    else:
-	        session_json = Column(Text)
-	    session_path = Column(String(255))
-	    user_name = Column(String(128))
-	    is_processing = Column(Boolean())
-	    # sensitivity analysis progress status
-	    pe_status = Column(Integer)
-	    sa_status = Column(Integer)
-	    dirs = relationship("GlycoSimTaskDir", backref="glycosimsessions")
-	    date = Column(DateTime, default=datetime.now())
-	
-	    def __init__(
-	        self,
-	        title=None,
-	        session_json=None,
-	        session_path=None,
-	        user_name=None,
-	        is_processing=None,
-	        pe_status=None,
-	        sa_status=None,
-	        date=None,
-	    ):
-	        self.title = title
-	        self.session_json = session_json
-	        self.session_path = session_path
-	        self.user_name = user_name
-	        self.is_processing = is_processing
-	        self.pe_status = pe_status
-	        self.sa_status = sa_status
-	        self.date = date
-	
-	    def __repr__(self):
-	        return "<Title %r>" % (self.title)
-	
-	    def update_by_pe(self, session_id, modelName, optValue, optLog, estimation_time):
-	        """Model update by parameter estimation"""
-	
-	        s = self.query.filter_by(id=session_id).first()
-	        s_json = json.loads(s.session_json)
-	        s_json["pe"]["output"]["model_name"] = modelName
-	        s_json["pe"]["output"]["optValue"] = bestFitness.tolist()
-	        s_json["pe"]["output"]["optLog"] = log
-	
-	        s_json["pe"]["output"]["estimation_time"] = end - start
-	        s_json["tab_enables"]["senAlyTab"] = True
-	        s.is_processing = False
-	
-	
-	class User(Base):
-	    __tablename__ = "users"
-	    id = Column(Integer, primary_key=True, autoincrement=True)
-	    user_name = Column(String(128), unique=True)
-	    hashed_password = Column(String(128))
-	    progress = Integer
-	
-	    def __init__(
-	        self,
-	        user_name=None,
-	        hashed_password=None,
-	        model_records=None,
-	        param_recoeds=None,
-	    ):
-	        self.user_name = user_name
-	        self.hashed_password = hashed_password
-	        self.model_records = model_records
-	        self.param_recoeds = param_recoeds
-	
-	    def __repr__(self):
-	        return "<Name %r>" % (self.user_name)
-	
-	class UserAuth(Base):
-	    __tablename__ = "users"
-	    id = Column(Integer, primary_key=True, autoincrement=True)
-	    user_id = Column(Integer)
-	    auth = Column(String(128))
-	
-	    def __init__(
-	        self,
-	        user_id: str,
-	        auth: str
-	    ):
-	        self.
-	
-dc163574eb1717b15b26a7b93513dcc9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/__init__.py|1|1|V|python
-	from .repository import * 
-36b3597bf0b37fb36cea56bf45669368|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|1|1|V|python
-	from models.models import GssModel as model
-	from models.database import db_session
-	from sqlalchemy import desc
-	from flask import session
-	from datetime import datetime
-	
-	def readSBML(sbml_dir:str):
-	    f = open(sbml_dir, 'r')
-	    sbml_text = f.read()
-	    f.close()
-	    return sbml_text
+f3b58fe241c000e1ae65b7a9d70b77e8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|11|1|V|python
+	    for key in model.__dict__.keys():
+	        print(key)
+	        content_dict[key] = str(model.__dict__[key])
+	    return content_dict
+29005f436b66322abc211d761bda39b9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|10|1|V|python
+	    content_dict = {}
+7fc8ef54a8154c28341bf9a47443a5ce|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|14|14|v|python
+	session_id
+bc2ee41ec7d8d86747fddeaccaf1875c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|33|22|V|python
+	        print(content)
+659aab8b8aa3ed94ac47b9db63dbf069|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|38|9|V|python
+	    print(content)
+2f7113607d0be506ba2f9874b24e329c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|38|22|V|python
+	    print(dict(content))
+daa758d4cbd019a52e68ad1c19fa088b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|9|1|V|python
+	def dict(model) -> dict:
+	    return {
+	            "id": model.id,
+	            "sbml_dir": model.sbml_dir,
+	            "sbml_text": writeSBMLToString(readSBML(model.sbml_dir)),
+	            "session_id": model.session_id
+	            }
+ee4fa3a19adfe822a49b599f19034067|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|23|1|V|python
 	
 	def dict(model):
 	    content_dict = model.__dict__
@@ -739,1168 +69,915 @@ dc163574eb1717b15b26a7b93513dcc9|file:///Users/arakawakouichi/local_file/dev-Gly
 	        content_dict[key] = str(content_dict[key])
 	    return content_dict
 	
-	def get(id:int):
-	    content = model.query.filter_by(
-	        id=id
-	    ).first()
-	    content.sbml_text = readSBML(content.sbml_dir)
-	    return dict(content)
+09eb6ed0db2bb54162e83bc252a2c9be|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|1|1|V|python
+	from libsbml import readSBML, readSBMLFromString, writeMathMLToString, writeSBML, writeSBMLToString
+b9bed0bdd63ee79969ccfbbae8b51935|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|2|1|V|python
+	import libsbml
+6d807dd170080b62abb061b9bcd378df|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|28|31|V|python
+	            "session_id": model.session_id
+6afdbd01bea6ec556fcf05bb3fa4ba84|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|11|1|V|python
+	def readSBML(sbml_dir: str):
+	    sbml_doc = libsbml.readSBML(sbml_dir)
+	    sbml_text = libsbml.writeSBMLToString(sbml_doc)
+	    return sbml_text
 	
-	def list(user_name:str= None, offset:int=0, maxresults: int=30):
-	    if(user_name):
-	        contents = (
-	            model.query.filter(
-	                model.modeltype == 0,
-	                model.user_name == user_name,
-	            )
-	            .order_by(desc(model.date))
-	            .offset(offset)
-	            .limit(maxresults)
-	            .all()
-	        )
-	    else:
-	        contents = (
-	            model.query.filter(model.modeltype == 0)
-	            .order_by(desc(model.date))
-	            .offset(offset)
-	            .limit(maxresults)
-	            .all()
-	        )
-	    for content in contents:
-	        content = dict(content)
-	    return contents
 	
-	def create(title: str, body: str, sbml_text: str, parent_id, user_name:str):
-	    sbml_dir = "./models/GssModel/sbml/"+str(id)+".xml"
-	
-	    f = open(sbml_dir, 'w')
+	def writeSBML(sbml_dir: str, sbml_text: str):
+	    f = open(sbml_dir, "w")
 	    f.write(sbml_text)
-	    f.close()
-	
-	    content = model(
-	        title = title,
-	        body = body,
-	        sbml_dir = sbml_dir,
-	        user_name = user_name,
-	    )
-	    db_session.add(content)
-	    db_session.commit()
-	
-	    content.sbml_text = readSBML(content.sbml_dir)
-	    return dict(content)
-	
-	
-	def update(id: int, data):
-	    print(id)
-	    content = get(id)
-	    # content.sbml_text = modelsession.sbml_text
-	    # content.date = datetime.now()
-	    # db_session.commit()
-	    return dict(content)
-	
-	
-ed7d41399560f80c387ee07f4c04f29f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/pages/signaling.tsx|25|1|V|typescriptreact
-	  const [userName, setUserName] = useState<string | null>(null);
-0380dd2244a9dd379bdbb65ebd1b96a1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/pages/models/gssmodel.tsx|16|3|V|typescriptreact
-	  const router = useRouter();
-b4927cce6434f392ccacf7b2870cd369|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/pages/signaling.tsx|43|1|V|typescriptreact
-	    setUserName("arakkk");
-1662e8add7fb11f6ed3b158f1d82eec7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|1|1|V|python
-	from models.models import GssModel as model
-23464d5fc7dedc1ea17f1ec795ceb710|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModelSession/repository.py|39|1|V|python
-	    content = model.query.filter_by(
-	        session_id=session_id
-	    ).first()
-00a99ff27191234f2d1c24667c748295|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|47|1|V|python
-	        print("----------------------")
-	        print(contents)
-e0f4da8c9052424173c431e94dab4d7c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|48|30|V|python
-	        print(content.sbml_dir)
-124da73624a4b534b442d66532bbd55e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|18|22|V|python
-	    print(content_dict)
-98bf7d8c15784f0a3d63204441e1e2aa|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|47|26|v|python
-	contents
-453c4cac27150d8c13de3d7064326280|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|49|1|V|python
-	    print("----------------------")
-	    print(contents)
-a1f78450f604b526c2e64deb2ed2a84d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/pages/models/gssmodel.tsx|23|22|V|typescriptreact
-	      console.log(res1);
-8d777f385d3dfec8815d20f7496026dc|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/pages/models/gssmodel.tsx|23|25|v|typescriptreact
-	data
-15434037dd4a37b038d801f45a056243|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|22|22|V|python
-	        sbml_text = modelsession["sbml_text"]
-9a0364b9e99bb480dd25e1f0284c8555|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|22|16|v|python
-	content
-4c9fa2553b3103025510ccfe039a4d5b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|92|37|V|python
-	        request.json.pop("modesl_session")
-e694cf807d50cf2733ae0661958a9888|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|72|1|V|python
-	    print(id)
-b916adb57cc62ae192f61e42289b0f41|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|73|1|V|python
-	    content.sbml_text = modelsession.sbml_text
-	    content.date = datetime.now()
-	    db_session.commit()
-bf24d5cdda02e1fecd546f8d614a2c82|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|77|1|V|python
-	    # content.date = datetime.now()
-	    # db_session.commit()
-a4eed3dae031f432cd1026c086b61dcf|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|21|1|V|python
-	    content = model.query.filter_by(
-	        id=id
-	    ).first()
-248b29b5731964f287d1eaadeedd09e4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|8|1|V|python
-	def readSBML(sbml_dir:str):
-	    f = open(sbml_dir, 'r')
-	    sbml_text = f.read()
 	    f.close()
 	    return sbml_text
-ecae13117d6f0584c25a9da6c8f8415e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|16|19|v|python
-	read
-1952d1aa94e60b05dd58e7b1b3dead0e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|61|1|V|python
-	    f = open(sbml_dir, 'w')
-	    f.write(sbml_text)
-	    f.close()
-7153ae219225a983946ecc2764267ea1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|78|1|V|python
-	    content = get(id)
-1b51e11a4f7f63684ab0eb7e8b18c290|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|83|1|V|python
-	    content.sbml_text = modelsession.sbml_text
-	    content.date = datetime.now()
-e2ecd19b5c18cead05b7c3695795d887|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|58|1|V|python
-	    sbml_dir = "./models/GssModel/sbml/"+str(uuid.uuid4())+".xml"
-	    writeSBML(sbml_dir, sbml_text)
-062fbf9707bf8eef24d614752a8b8d6b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|19|10|V|python
-	    ptinnn
-dc5693b37279ee70902704e0ccd50382|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|19|1|V|python
-	    print("run timecourse by pypesco")
-6580c3fc4bd8caa90ee6af7c1107a5b6|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|20|12|v|python
-	run timecourse by pypesco
-87177bacdfba66e5c3755a2d4ed00411|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|20|1|V|python
-	    print("---------------------------")
-add910413d73cb985e9047bac80bf0ad|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/simulation/Timecourse.tsx|42|16|V|typescriptreact
-	    console.log()
-f05f66daf601ec410c3b6823491d7df0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/simulation/Timecourse.tsx|49|30|V|typescriptreact
-	    console.log(simulationTool);
-89576afe91924e56c551ca14176a7bac|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/simulation/Timecourse.tsx|42|13|V|typescriptreact
-	    console.l
-181df072b522e78726e27d295921a4f8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_sim.py|83|28|v|python
-	PyCoTools
-13660a2b8ceec1462b705b70023bee63|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodelsessions.py|19|23|V|python
-	    print("gssmodelsessions 19: ",session)
-753700092c1ed7fa7ea4b985b9e37db9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|29|1|V|python
-	    pycotools3.model.ImportSBML
-20f35e630daf44dbfa4c3f68f5399d8c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|24|26|v|python
-	model
-e9bd167f05c8773567f6be8744158647|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|40|1|V|python
-	    # sbml_importer = amici.SbmlImporter('/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/test_glycosim.xml')
-	    # fixedParameters = []
+6d2b076440deee42fa086c5283db57c9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|21|69|V|python
+	    content.sbml_text = writeSBMLToString(readSBML(content.sbml_dir))
+c1f0bf85a23d7a3d57e0e2cfec927e16|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|29|1|V|typescriptreact
+	        <Dropdown.Item href="/models/gssmodel">Something else</Dropdown.Item>
+24d6a1b73f6c9fee626b90267b084799|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/layouts/HeaderMain.tsx|28|51|V|typescriptreact
+	        <Dropdown.Item>Import model</Dropdown.Item>
+9d331a4c8815bd9cfc3928762a948f4c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/pages/models/gssmodel.tsx|23|32|V|typescriptreact
+	      console.log(res1.gssmodels);
+f8e1ea7eaf9655ea5f7b0dd3efb922dd|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/pages/models/gssmodel.tsx|23|32|V|typescriptreact
+	      setGssModels(res1.gssmodels);
+dcc3c819049ddd95e5c33b0882e69442|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|48|22|V|python
+	        print(contents)
+2ac34a2b125bf29c3c7fbc14018af787|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/model/gssmodels.py|48|22|V|python
+	        print(len(contents))
+a2e72d108f3857fa3d5c1e819d514043|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/GssModel.tsx|27|25|V|typescriptreact
+	    console.log(gssmodels);
+5b3fbd18c9f5431ffa1ea6e213149905|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|17|44|V|python
+	            "gssmodel_id": model.gssmodel_id
+617630f1ba5185f9d0731c35fcda05cb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/GssModel.tsx|27|40|V|typescriptreact
+	    console.log(gssmodels.data.gssmodels);
+91e79adbe4de72fce4f9dbc2f913e85c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/models.py|16|1|V|python
+	    title = Column(String(128))
+	    body = Column(Text)
+84d593367011657bbffc50b8617e6fe3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|20|1|v|python
 	
-	    # observables = amici.assignmentRules2observables(
-	    #     sbml_importer.sbml, # the libsbml model object
-	    #     filter_function=lambda variable: variable.getName() == 'pPROT'
-	    # )
-	    # model_name = "testmodel"
-	    # output_dir = "/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/out/"
-	    # sbml_importer.sbml2amici(model_name=model_name,
-	    #                         output_dir=output_dir,
-	    #                         verbose=False,
-	    #                         observables=observables,
-	    #                         constant_parameters=fixedParameters)
-	    # sys.path.insert(0, os.path.abspath(model_output_dir))
-	    # # load the compiled module
-	    # model_module = importlib.import_module(model_name)
-	    # # Create Model instance
-	    # model = model_module.getModel()
-	    # # set timepoints for which we want to simulate the model
-	    # # Create solver instance
-	    # solver = model.getSolver()
-	    # # Run simulation using default model parameters and solver options
-	    # model.setTimepoints(np.linspace(0, 60, 60)) 
-	    # rdata = amici.runAmiciSimulation(model, solver)
-d0579b56f3fba63424b5923fd470f6ef|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|35|29|v|python
-	# the libsbml model object
-33362d23603c75897274706d3e83bc63|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|31|41|v|python
-	/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/test_glycosim.xml
-3946a14e24fa74109b23265180a8eb9f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|27|14|v|python
-	newModelDir+"/sbml.xml"
-53dc4ad2b2900a2ace29aafda2ea3799|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|38|19|v|python
-	/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/out/
-84bc7aae26078140dfd1edd39eb1049d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_sim.py|100|25|V|python
-	        print(result_list)
-f387b501ce7d8ed283a5173ca223d049|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|47|10|V|python
-	    return
-2185bcf5b30fd2c1cb53a92118f2aaed|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/mylib/list_dbid.py|114|5|V|python
-	    # list_dbid(dirname)
-665b09d90c27a0d90b68d8c3bf3bfabd|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|32|1|V|python
-	    fixedParameters = []
-	    observables = amici.assignmentRules2observables(
-	        sbml_importer.sbml, # the libsbml model object
-	        filter_function=lambda variable: variable.getName() == 'pPROT'
-	    )
-	    model_name = "glycosimmodel"
-	    output_dir = newModelDir
-	    sbml_importer.sbml2amici(model_name=model_name,
-	                            output_dir=output_dir,
-	                            verbose=False,
-	                            observables=observables,
-	                            constant_parameters=fixedParameters)
-	    sys.path.insert(0, os.path.abspath(output_dir))
-	    # load the compiled module
-	    model_module = importlib.import_module(model_name)
-	    # Create Model instance
-	    model = model_module.getModel()
-	    # set timepoints for which we want to simulate the model
-	    # Create solver instance
-	    solver = model.getSolver()
-	    # Run simulation using default model parameters and solver options
-	    model.setTimepoints(np.linspace(0, 60, 60))
-	    rdata = amici.runAmiciSimulation(model, solver)
-7c1f92ce8eee375d5c18c8d2467fea3c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|31|31|v|python
-	model_name
-535a3e7f53d68883309a7c861bade63f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|38|1|V|python
-	    # model_name = "glycosimmodel"
-	    # output_dir = newModelDir
-9d2c5658df6165f6ddc2c96bb4aae14b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_sim.py|41|1|V|python
-	        print(traceback.print_exc())
-7236becae479eec7fdd9b9911ab49c62|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|76|1|V|python
-	    print(rdata)
-c9d5881abd873f1a141e715ba8cf6b1b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|52|1|V|python
-	    for r in rdata:
-	        print(r)
-5316f360783b270fe9ac3887ce27ef1d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|52|11|v|python
-	rdata
-5b56e7d4623e482ba7e2a8ce29bc11db|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|53|11|v|python
-	dir(rdata)
-691d502cfd0e0626cd3b058e5682ad1c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|54|17|v|python
-	items
-3f683d478d68b62443d8ce877463b7d1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|54|1|V|python
-	    print(dir(rdata))
-1e114971017d3e978047f3fb99505c5d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|56|12|V|python
-	    print(da)
-3d9040bbd55faf9ad947dc7f40c83f12|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|55|1|V|python
-	    print(rdata.__doc__)
-	    print(rdata.__abstractmethods__)
-b3e344d679574818413e113ebf2cd653|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|56|1|V|python
-	        print(key)
-1681d574e706aeb4e1180fe8bd3b5338|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|55|21|V|python
-	    for key in rdata.keys():
-455fa55b5b05a7fe03e1af52f6ac7731|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|61|19|v|python
-	rdata.x[i],
-94da0bcbe4b138cb2fbb0bc146b374fd|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/BioMASS/run.py|22|9|V|python
+	    title = Column(String(128))
+	    body = Co
+a9aa87d951fc1b0c05da3a4eb12cd237|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|20|1|V|python
+	lumn(Text)
+71f2518109b72dcc9fd41dac0d765adc|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|48|56|v|python
+	.strftime("%Y_%m_%d_%H_%M_%S")
+80b6a00e37c554ad337a41a12a191337|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/models/GssModel/repository.py|20|1|V|python
+	            "date": model.date.strftime("%Y/%m/%d %H:%M"),
+7a13b5f99cf9c93c0a3996f89c1f5667|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|44|1|V|typescriptreact
+	    console.log("model session", model_session);
+4650838d55038f54821bc36d091015eb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|54|34|v|typescriptreact
+	model_session
+d4bfad53493ea7fe1c52ff84ff7912f4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|54|53|V|typescriptreact
+	    console.log("model session", res1.data.session_id);
+99c22b7c9b0446d9c9273846dec81d22|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/module/gss/gss_modelconverter.py|22|13|V|python
+	        print
+a2a04a4c4bc3c1e01286eb18b0c34246|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|109|1|V|python
+	    print(sbml_doc.getModel())
+1b33d11c1dc865b56f5e812596a7b8b4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|93|1|V|python
+	    assert s_base.getModel() != None, "Model import failed!!"
+b8858e0a850d3a81f5a9e23d61572aef|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|110|12|v|python
+	s_base
+5deb6bb022aeaa4b63935d27b45f29d7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|110|1|V|python
+	    assert sbml_doc.getModel() != None, "Model import failed!!"
+f786310f4a8edfa81b7040235bdc19e0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|116|5|V|python
+	    # model_status = biosim_timecourse(sbml_doc)
+	    # if type(model_status) == list:
+	    #     return model_status
+02e3f396d75146682a69dd927148a927|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|16|17|V|python
+	    print(mplugin)
+a2e3bb8276b746422b760781b1888d71|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|12|10|V|python
+	    print()
+f476d81f8b2df7970d0038d466b1a0c3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/pages/signaling.tsx|59|43|V|typescriptreact
+	        console.log(model_session.sbml_text);
+68fd054302262bba0b7955b142030017|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/simulation/timecourse/TimecourseMain.tsx|45|41|V|typescriptreact
+	      console.log(model_session.sbml_text);
+c6f901b86c8c9306f5b582a8dcf01550|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/api/ModelSession.tsx|40|32|V|typescriptreact
+	      console.log(data.sbml_text);
+f0731b1a749ebd19015e9e5f256bd2d6|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|14|22|V|python
+	        print(species)
+0e695c568f04edfa67efdca874bbaee3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|13|22|V|python
+	    for species in sbml_model.getListOfSpecies():
+036f391bc21d955e4e42397654732fd9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|18|1|V|python
+	        print("14", mplugin)
+3b22a93f7463a4a8fd5d1495976c7ae4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|15|1|V|python
+	        sbml_doc.enablePackage(LayoutExtension.getXmlnsL2(), "layout", True)
+96087ec1ac2eaea702f7841b9d5e31c6|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|16|37|V|python
+	        sbml_doc.setModel(sbml_model)
+fdc3bdefb79cec8eb8211d2499e04704|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|15|9|v|python
+	document
+dc3dce496601882f016121ec161cc18a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|11|1|V|python
+	    sbml_model = sbml_doc.getModel()
+7267ff0ac130d51f7a9f40a9a0924999|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|18|31|V|python
+	        sbml_doc.getNameSpece()
+04166e5a31932b7d2401049781812ea4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|154|99|v|python
+	signaling
+2ef297b17090665e9d6855e033293995|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|109|5|v|python
+	formatsbml
+1909a2420ae7e0809f18bf9106624984|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/signaling.xml|1|1|V|xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<sbml xmlns:celldesigner="http://www.sbml.org/2001/ns/celldesigner" xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:render="http://www.sbml.org/sbml/level3/version1/render/version1" metaid="_679776" level="3" version="1">
+8019e38bf0e425bff4c4889b7e417904|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/test_glycosim.xml|3|1|V|xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+6a071c8f200598d182a1b688d550d599|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|17|9|V|python
+	        # sbml_model = sbml_doc.getModel()
+e822491ff13e66c66e707d97f8de6911|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|13|9|V|python
+	    print("13", mplugin)
+754955679df8195ce6ba620bd86168cb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|16|21|V|python
+	        sbml_model = 
+1262933e1c8ec95a40b4b2f2db517164|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|16|5|V|python
+	        print(mplugin)
+0e1f0a049be7176144a7092ee545350f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|153|1|V|python
+	    sbml_doc = readSBML('/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/test_glycosim.xml')
+85167e71800d6fb83d3e5e4463ff4f36|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/test_glycosim.xml|2|1|V|xml
+	<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+42de7b867b844d6c7896a20267599e35|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/notch_wnt_fgf.xml|2|58|V|xml
+	<sbml xmlns:celldesigner="http://www.sbml.org/2001/ns/celldesigner" xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:render="http://www.sbml.org/sbml/level3/version1/render/version1" metaid="_679776" level="3" version="1">
+8beaebb39210ebc1e06f37dc822bbb61|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|112|1|V|python
+	    sbml_doc = convertDocToL3(sbml_doc)
+4450ccf629d85553b9f9ae95a5735244|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|13|1|V|python
+	    print("------", mplugin)
+76a42507fe6dcdc056ea1fa4ccfadb36|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|6|1|V|python
+	from libsbml import (
+	    readSBML,
+	    SBMLDocument,
+	    readSBMLFromString,
+	    writeSBMLToString,
+	    readSBMLFromFile,
+	    LayoutPkgNamespaces,
+	    BoundingBox,
+	    RenderPkgNamespaces,
+	    SBMLNamespaces,
+	    ConversionProperties,
+	)
+5f9945160e127dafe13d6d61a2af62e5|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|1|1|V|python
+	from libsbml import readSBML, readSBMLFromString, writeSBMLToString, readSBMLFromFile, LayoutPkgNamespaces, BoundingBox, RenderPkgNamespaces, SBMLNamespaces, ConversionProperties, LayoutExtension
+406bbe85a55288924ed14dc1d1b35eac|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|21|23|V|python
+	    sbml_doc = sbml_doc
+2d0895db27314098f064d30df26ba171|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|25|1|V|python
+	    # print(t[:400])
+	    # sbml_doc = ""
+dcb13ddeac9593d817862a96ebb2f182|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|24|1|V|python
+	
+	
+	
+	
+	
+	
+	
+	    mplugin = sbml_doc.getModel().getPlugin("layout")
+6d93d3216dc4a7f5df47d4876fbec4d3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|24|1|V|python
+	
+	
+	
+	
+	
+	
+	
+e2cff0733b499b24d39aa60c31080bc3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|20|19|V|python
+	    return sbml_doc
+01a435589641b7633780fbd7dd3ed7e1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|27|19|V|python
+	    sbml_text = writeSBMLToString(sbml_doc)
+67227adf69517e5f058df85221dcdbe9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|27|16|v|python
+	readSBMLFromString(sbml_text)
+a57b3fe873b2b8937d7b977d6e43a07c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|27|1|V|python
+	    sbml_doc = reloadSBMLDocument(sbml_doc)
+60dc4187a0557cc7a12afb9d99e7e13f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|30|5|V|python
+	        # print(writeSBMLToString(sbml_doc)[:400])
+e8c8d50bc734f22cff078f6dda4646ae|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|32|5|V|python
+	        print("------", mplugin)
+34c7d4f9d53883ba388539e72cb3ff2d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|166|5|V|python
+	    from . import sbml2cyjson as cy
+3687784f3d01806fd7ea5274906c1fd9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|166|5|V|python
+	    from . import formatsbml as f
+82efe56fed4b912df87f4c5208c26a1e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|169|5|V|python
+	    f.convertDocToL3(sbml_doc)
+188a91b122b402902e3e58b331ac960d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|30|25|V|python
+	        sbml_doc = reloadSBMLDocument(sbml_doc)
+e5c644f39564266c6fcdc085656c8284|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/celldesigner2layouts.py|29|1|V|python
+	    if mplugin is None:
+	        sbml_doc.setPkgRequired("layout", True)
+	        mplugin = sbml_doc.getModel().getPlugin("layout")
+f7531e2d0ea27233ce00b5f01c5bf335|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/cytoscape/Pathway.tsx|34|9|v|typescriptreact
+	print
+dcd787060ca1a3e6fc79e54319e69403|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|115|35|V|python
+	    sbml_doc = amount2cocentration(sbml_doc)
+6881683519b3d312698ac39a633c9f32|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/cytoscape/Pathway.tsx|35|1|V|typescriptreact
+	        console.log(res_cyjson.data.slice(54150, 54200));
+1c5685ddac2d0ad910941290e4aa1a87|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/cytoscape/Pathway.tsx|35|36|v|typescriptreact
+	.slice(54150, 54200));
+0072dcf2269188009b0043a90d5a9136|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/cytoscape/Pathway.tsx|34|1|V|typescriptreact
+	        console.log(res_cyjson.data);
+	        JSON.parse(res_cyjson.data);
+	        // console.log(res_cyjson.data.slice(54150, 54200));
+8bed0cc7587b9f8c0e7b65e68ee1df91|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/GSS/model_converter/formatsbml.py|103|5|V|python
+	        print(species, species.getInitialConcentration())
+a08fb105163ec94220c9a6a7ddc47256|file:///Users/arakawakouichi/local_file/dev-GlycoSim/web-glycosim/components/cytoscape/Pathway.tsx|34|1|V|typescriptreact
+	        // console.log(res_cyjson.data);
+	        // JSON.parse(res_cyjson.data);
+	        // console.log(res_cyjson.data);
+	        // console.log(res_cyjson.data.slice(54150, 54200));
+aebab38ee5451c0d11bb28117987ec83|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/__init__.py|1|1|v|python
+	create_data
+21616a370b9020c96641d7a5a81f0e19|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/create_data.py|1|3|v|python
+	create owl data from spo list
+491c24ba54309a1a5f4acb53e0ede015|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|152|6|v|
+	http://glycoinfo.org/dbid/imex/IM-23322
+10ae9fc7d453b0dd525d0edf2ede7961|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/create_data.py|1|21|v|python
+	list
+d732656ca06464eae26780a00046f21c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/create_data.py|4|24|V|python
+	        s: string = "http://glycoinfo.org/dbid/imex/IM-23322"
+19a28a5d8e50c33387306228f304549c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/create_data.py|6|10|v|python
+	s: string = "http://glycoinfo.org/dbid/imex/IM-23322"
+94da0bcbe4b138cb2fbb0bc146b374fd|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/create_data.py|4|9|V|python
 	        [
-f0368e65882f3be90ab2f902c7823f95|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/BioMASS/run.py|24|9|V|python
+f0368e65882f3be90ab2f902c7823f95|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/create_data.py|5|1|V|python
 	        ]
-6bec5ecc2ad4f4c1cf8d4bf4dbe8de22|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/BioMASS/run.py|20|1|V|python
-	    """return result of timecourse simulation
-	    in:
-	        sbml: SBMLDocument
-	        duration: int
-	        step: int
-	    out:
-	        list(
-	            name: str
-	            x: int[]
-	            y: int[]
-	        )
+cdcc127a3561c7f0a5979a8b8bce7f2c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|2|1|V|python
+	    def __init__(self, subject):
+20a33b30adea65647b39c2e5a092580f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|2|9|V|python
+	    this.
+4c2c12cae6e7f72a2641f4aece72c3d8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|18|7|V|python
+	    if 
+4c058719ea8233e07310c13f2a075bfa|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|16|1|V|python
+	    if iri[0:1] == "<":
+	        iri = iri[1:]
+18d95d968b5faa1769dc3606df5726d3|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|17|1|V|python
+	def treatIRI(iri: str):
+	    if iri[0:1] == "<":
+	        iri = iri[1:]
+	    if iri[-1:] == ">":
+	        iri = iri[:-1]
+	    return iri
 	
-	    """
-435e323940b46b11f431a15f9f5dadfb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|33|1|V|python
-	    print("---------------------------")
-	    print("run timecourse by pypesco")
-fe1a956f20bd0a9f7a9a49b5cd3a1a7e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|75|1|V|python
-	
-	    # print(rdata["x"])
-	    # print("---------------------------")
-	    # print(edata)
-	    # print("---------------------------")
-	
-	    # fixedParameters = []
-	    # observables = amici.assignmentRules2observables(
-	    #     sbml_importer.sbml, # the libsbml model object
-	    #     filter_function=lambda variable: variable.getName() == 'pPROT'
-	    # )
-	    # sbml_importer.sbml2amici(model_name=model_name,
-	    #                         output_dir=output_dir,
-	    #                         verbose=False,
-	    #                         observables=observables,
-	    #                         constant_parameters=fixedParameters)
-	    # sys.path.insert(0, os.path.abspath(output_dir))
-	    # # load the compiled module
-	    # model_module = importlib.import_module(model_name)
-	    # # Create Model instance
-	    # model = model_module.getModel()
-	    # # set timepoints for which we want to simulate the model
-	    # # Create solver instance
-	    # solver = model.getSolver()
-	    # # Run simulation using default model parameters and solver options
-	    # model.setTimepoints(np.linspace(0, 60, 60))
-	    # rdata = amici.runAmiciSimulation(model, solver)
-	
-	
-72cde933bbc9ff922d1a1568bf8e6dd5|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|75|15|V|python
-	        return 
-3e7dac46170930ab5de417d72008d3bb|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/BioMASS/run.py|56|1|V|python
-	        dataList = []
-	        for i in range(len(modelProps["species"])):
-	            data = {
-	                    "x": modelProps["xaxis"],
-	                    "y": trace[i],
-	                    "name": modelProps["species"][i]
-	                    }
-	            dataList.append(data)
-	        return dataList
-97b3c21f92ba10a19c39d9cf4ec0fd2e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|75|9|V|python
-	        dataList = []
-86ff52f169798ee0a23e0b558c05f734|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|76|1|V|python
-	        for i in range(len(modelProps["species"])):
-	            data = {
-	                    "x": modelProps["xaxis"],
-	                    "y": trace[i],
-	                    "name": modelProps["species"][i]
-	                    }
-abfe8b797a951d7b1ec2cbaefa40b90f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|78|12|V|python
-	    return {}
-3094941482b5eb842f079dd88771580a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|72|30|V|python
-	                name=rdata.x_ss[i],
-cb515ef2636ba19e97ffac48c1b84f03|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|49|1|V|python
-	    sys.path.insert(0, os.path.abspath(output_dir))
-6befcabb2ac77452befb26e0fb3367e0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|50|40|v|python
-	output_dir
-67465bd806f3520976445a935a02de3e|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|39|13|V|python
-	    modelName
-6aed18776d0aa0683d4416825e8730e0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|79|1|V|python
-	    print(len(rdata.x))
-b6e1a6e180092856a892dd5eb8fb080f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|80|1|V|python
-	    print(len(rdata.x[0]))
-8ebb04fad8725063e714b692cc56c1b8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|81|1|V|python
-	    print(len(rdata.ts))
-c28aeff94fb07021fd20d9509ca200b4|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|191|1|V|json
-	        {
-	            "description": "support control+h",
-	            "manipulators": [
-	                {
-	                    "from": {
-	                        "key_code": "h",
-	                        "modifiers": {
-	                            "mandatory": [
-	                                "left_control"
-	                            ],
-	                            "optional": [
-	                                "any"
-	                            ]
-	                        }
-	                    },
-	                    "to": [
-	                        {
-	                            "key_code": "delete_or_backspace"
-	                        }
-	                    ],
-	                    "type": "basic",
-	                    "conditions": [
-	                        {
-	                            "type": "frontmost_application_unless",
-	                            "bundle_identifiers": [
-	                                "com.googlecode.iterm2",
-	                                "com.microsoft.VSCode",
-	                                "com.vivaldi.Vivaldi",
-	                                "com.google.Chrome"
-	                            ]
-	                        }
-	                    ]
-	                }
-	            ]
-	        },
-cd052dc1d1e2942baabcb6d2f67e62b9|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|132|1|V|json
-	                        {
-	                            "key_code": "right_arrow",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        },
-	                        {
-	                            "key_code": "left_arrow",
-	                            "modifiers": [
-	                                "left_command",
-	                                "left_shift"
-	                            ]
-	                        },
-	                        {
-	                            "key_code": "x",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        },
-	                        {
-	                            "key_code": "return_or_enter"
-	                        }
-9aa00196270f800ab8bd0c7708e8ff41|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|433|1|V|json
-	                            "mandatory": [
-	                                "left_control"
-	                            ],
-	                            "optional": [
-	                                "any"
-	                            ]
-b8db086aeb3d78c771979d857606815c|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|466|1|V|json
-	                            "modifiers": [
-	                                "left_command",
-	                                "left_shift"
-	                            ]
-f5406c6cf525f24652942c14c53fec21|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|432|29|V|json
-	                        "modifiers": {
-	                        }
-f5369c29f2a592f2b75fa888d1d05a12|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|461|1|V|json
-	                            "key_code": "right_arrow",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-edda7c18f276eaf7713b91efdbc2dcdc|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|442|1|V|json
-	                        {
-	                            "key_code": "delete_or_backspace"
-	                        }
-a5152794e9c4bd4571b68dc8df1ac2f7|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|441|34|v|json
-	left_command
-b644dacde15dd40eef4b36e34da46c00|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|439|1|V|json
-	                            "key_code": "spacebar",
-bf36cdfe948ea948858133cd8cfa819b|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|445|42|v|json
-	spacebar
-73acb61bb4d707e7a85192cb80c6ac53|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|444|1|V|json
-	                        {"key_code": "v"},
-933d8cca6f3aa315cd19cba6ccd4c8fe|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|451|1|V|json
-	                        {"key_code": "v"},
-	                        {"key_code": "v",
-cb8d1bbc10d4969a7a35be4dc53770c9|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|438|1|V|json
-	                        {
-	                            "key_code": "spacebar",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        },
-	                        {"key_code": "v"},
-	                        {"key_code": "i"},
-	                        {"key_code": "v"},
-	                        {"key_code": "a"},
-	                        {"key_code": "l"},
-	                        {"key_code": "d"},
-	                        {"key_code": "i"}
-0d99aa1befe49661c7f65e99c4d4ba5f|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|438|1|V|json
-	                        {
-	                            "key_code": "spacebar",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        },
-5e17392f11b0671a1aa8d16791cf438c|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|444|1|V|json
-	                        {"key_code": "v"},
-	                        {"key_code": "i"},
-	                        {"key_code": "v"},
-	                        {"key_code": "a"},
-	                        {"key_code": "l"},
-	                        {"key_code": "d"},
-	                        {"key_code": "i"},
-adf1a4f70ebcbb0ee8a1c0c6da5fca86|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|468|1|V|json
-	                        {"key_code": "d"},
-	                        {"key_code": "i"},
-a3c79c7506752883e0c746b6052ebc17|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|506|1|V|json
-	                        {
-	                            "key_code": "return_or_enter"
-	                        }
-dbdd51c76af5d80c54995e76a943002c|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|451|1|V|json
-	                        {"key_code": "return_or_enter"},
-1e6db7755bd55dfd96152f27e817a55d|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|488|1|V|json
-	
-	                        {
-	                            "key_code": "right_arrow",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        },
-	                        {
-	                            "key_code": "left_arrow",
-	                            "modifiers": [
-	                                "left_command",
-	                                "left_shift"
-	                            ]
-	                        },
-	                        {
-	                            "key_code": "x",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        },
-	                        {
-	                            "key_code": "return_or_enter"
-	                        }
-dfef7c0b3eb9006dc6769527532969c9|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|474|1|V|json
-	                            "type": "frontmost_application_unless",
-81bfac93de5e9eaa9a06fce63a711544|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|476|1|V|json
-	                                "com.microsoft.VSCode",
-	                                "com.vivaldi.Vivaldi",
-	                                "com.google.Chrome"
-	                            ]
-55cf5e140373e0d887b845cf83b9af16|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|70|1|V|json
-	                        "modifiers": {
-	                            "mandatory": [
-	                                "left_command",
-	                                "left_control"
-	                            ],
-	                            "optional": [
-	                                "any"
-	                            ]
-	                        }
-5051bdff8259f237dc5fbbb5ed94b123|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|432|25|V|json
-	                        "modifiers": [
-	                            "left_command",
-	                            "left_control"
-	                        ]
-c87c3bd39bfb414e31405646433c7fcf|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|448|25|V|json
-	                                "left_control"
-5dccf6522f71b1bbe5b0037e36b14dad|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|453|1|V|json
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-f0e0ba8c9c7ee62ac1158b65246eaeff|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|445|1|V|json
-	                        "modifiers": {
-	                            "mandatory": [
-	                                "left_command"
-	                            ],
-	                            "optional": [
-	                                "any"
-	                            ]
-	                        }
-14a1e764d211bbb59eac4e8c3515c914|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|464|13|V|json
-	            ]
-7ee45fc42a9029185a05f34c70cc0bab|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|470|26|V|json
-	                        },
-a7bac5dcd63b486c0db39fd59934e2d0|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|465|42|V|json
-	                    "to_delayed_action": [
-a027826264f54ad7a3eb27778f07e18e|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|464|42|v|json
-	 {} ]
-f226cacbba3af7804222dd049335b8ee|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|456|1|V|json
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-2bd01f042f7ef3d5da5834a45f7c6bf3|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|474|1|V|json
-	                    ],
-	                    "to_after_key_up" : [
-d13eaa35cfa1a648b0e80167ddaf1248|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|456|1|V|json
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-d81ec1af461a8b489e2190a764d5cdda|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|540|1|V|json
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-63b5378dfdb5fb80632bf38c418a3a99|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|601|1|V|json
-	                        {"key_code": "i"},
-	                        {"key_code": "t"},
-	                        {"key_code": "e"},
-	                        {"key_code": "r"},
-	                        {"key_code": "m"},
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        {"key_code": "return_or_enter"}
-6d477e768903b4cba8b6afd43ebf1c83|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|529|1|V|json
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        {
-	                            "key_code": "spacebar",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-02c829ad4fe705797253bbdb087e840c|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|458|25|V|json
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        {"key_code": "return_or_enter"},
-e443f3085c1d3f1c62c80f8fb4e50881|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|449|25|V|json
-	                        {"key_code": "v"},
-	                        {"key_code": "i"},
-	                        {"key_code": "v"},
-	                        {"key_code": "a"},
-	                        {"key_code": "l"},
-	                        {"key_code": "d"},
-	                        {"key_code": "i"},
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-3beb75d1563ebc22253341be4ce57f44|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|444|56|v|json
-	Dictionary
-f488305f5106013f2a8e2a1e5e989a44|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|443|27|v|json
-	shell_command
-ad6e19f1a1c40116a9bbecb6421b90de|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|443|1|V|json
-	                        {"shell_command": "open -a vivaldi"},
-15607a23632c7b2c8018fb4fbb50c66a|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|450|52|v|json
-	vivaldi
-53a059b9a9ca4d014f6eae7c808ecefe|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|444|1|V|json
-	                        {
-	                            "key_code": "r",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        },
-	                        {"shell_command": "open -a iTerm"}
-92bd47c5cb46ce06c6a0d5098f13eeb0|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|444|1|V|json
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-	                        { "set_variable": { "name": "waittime", "value": 1  }  },
-464e8dbb863f3e7b086ee7a37bcf09be|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|464|1|V|json
-	                    "to_delayed_action": {}
-	                        {
-	                            "key_code": "spacebar",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        },
-	                        {"key_code": "i"},
-	                        {"key_code": "t"},
-	                        {"key_code": "e"},
-	                        {"key_code": "r"},
-	                        {"key_code": "m"},
-	                        {"key_code": "return_or_enter"}
-	                    ],
-b0c62e70f1c17252657dfc8213984a5d|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|443|25|v|json
-	{
-	                            "key_code": "spacebar",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        },
-	                        {"key_code": "v"},
-	                        {"key_code": "i"},
-	                        {"key_code": "v"},
-	                        {"key_code": "a"},
-	                        {"key_code": "l"},
-	                        {"key_code": "d"},
-	                        {"key_code": "i"},
-	                        {
-e3fc21662f587601cf15ac0299cc2b85|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|444|27|V|json
-	                        "{key_code": "return_or_enter"},
-1b2e97d1d0285680e480edb66f031fe4|file:///Users/arakawakouichi/local_file/lets/lets_proj/account/models.py|295|4|V|python
-	    "osascript -e 'tell application " + '"' + 'Vivaldi' + '"' +  "to reload active tab of window 1'"
-a07740298ca32a764a0fd83d81ea70a7|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|443|5|V|json
-	                        {"shell_command": "osascript -e 'tell application " + '"'+ "Vivaldi" + '" +  to reload active tab of window 1'"},
-6da5f370abf703ae8431756c0769b949|file:///Users/arakawakouichi/local_file/lets/lets_proj/account/models.py|295|1|V|python
-	    'osascript -e "tell application ' + "'" + "Vivaldi" + "'" +  'to reload active tab of window 1"'
-be171bbd535f5e48809ce4b9c224bb57|file:///Users/arakawakouichi/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|445|5|V|json
-	    "osascript -e 'tell application " + '"' + 'Vivaldi' + '"' +  "to reload active tab of window 1'"},
-443482208daddd8463b0520c965b9ef8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|79|15|v|python
-	"x: ",
-dc80386eddec3a6af34a2e3fb2d23127|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|79|15|v|python
-	"x: ", 
-ba517150078fa086a9ee80cfa0522cd8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|80|1|V|python
-	    print("x[:, 0]: ", len(rdata.x[:, 0]))
-1d88ce1a85fe2c3f1462fc9315ad0d90|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|74|24|V|python
-	                name="a"+str(i),
-bf09988950298d43b9bbf2fdb8eb333f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|78|1|V|python
-	    print("x: ", len(rdata.x))
-dc319716c39ea26d41a0cc90f429e595|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|74|22|v|python
-	rdata.x_ss[i],
-53deb4d22e2dd5a763c46815529ca286|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|88|1|V|python
-	    # results = timecourse(sbml_doc, 10, 10)
-	    # # sbml_importer = amici.SbmlImporter('/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/boehm_ProteomeRes2014.xml')
-	    # # sbml_importer = amici.SbmlImporter('/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/notch_glycosylated.xml')
-	    # # sbml_importer = amici.SbmlImporter('/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/notch_wnt_fgf.xml')
-	    # sbml_importer = amici.SbmlImporter('/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/data/gss/sbml/test_glycosim.xml')
-	    # fixedParameters = []
-	
-	    # observables = amici.assignmentRules2observables(
-	    #     sbml_importer.sbml, # the libsbml model object
-	    #     filter_function=lambda variable: variable.getName() == 'pPROT'
-	    # )
-	    # model_name = "testmodel"
-	    # output_dir = "/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/out/"
-	    # sbml_importer.sbml2amici(model_name=model_name,
-	    #                         output_dir=output_dir,
-	    #                         verbose=False,
-	    #                         observables=observables,
-	    #                         constant_parameters=fixedParameters)
-	    # sys.path.insert(0, os.path.abspath(model_output_dir))
-	    # # load the compiled module
-	    # model_module = importlib.import_module(model_name)
-	    # # Create Model instance
-	    # model = model_module.getModel()
-	    # # set timepoints for which we want to simulate the model
-	    # # Create solver instance
-	    # solver = model.getSolver()
-	    # # Run simulation using default model parameters and solver options
-	    # model.setTimepoints(np.linspace(0, 60, 60)) 
-	    # rdata = amici.runAmiciSimulation(model, solver)
-	    pass
-7f5bfa7aaa00241ea26747aa0af0abed|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|66|1|V|python
-	    print("---------------------------")
-	    print(dir(rdata))
-	    # for key, value in rdata.items():
-	    #     print(key, " :", value)
-	    print("---------------------------")
-ae421a44519ba68be726874a958b4354|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|74|1|V|python
-	    print("x: ", len(rdata.x))
-	    print("x[:, 0]: ", len(rdata.x[:, 0]))
-	    print("x[0]: ", len(rdata.x[0]))
-	    print("ts: ", len(rdata.ts))
-	    print("x_ss: ", len(rdata.x_ss))
-e149be135a8b6803951f75776d589aaa|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/document.md|4|26|v|markdown
-	https://www.example.com
-816768a9394f333b83aaf2f808e15bb3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/document.md|5|82|V|markdown
-	https://pypesto.readthedocs.io/en/latest/example/conversion_reaction.html#Optimize
-21273a5791baefe2bd6e27c886474ed4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/document.md|3|26|V|markdown
-	### example for simulation
-eb5a77c8c925ea629f2f723aadea122a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/document.md|3|1|V|markdown
-		[examel for simulation](https://pypesto.readthedocs.io/en/latest/example/conversion_reaction.html#Optimize)
-983f2864d2dd92be5a0c62495c92ffef|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/document.md|2|3|v|markdown
-	examel for simulation
-b01e89d8eaa7afc3ca38338646ccd6c4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|53|8|V|python
-	    sys.path.insert(0, os.path.abspath("./out/amici/Model_2022_01_20_03_47_42"))
-	    model_name = "glycosimmodel"
-47ba81170e01dc8e130dd7203a3de1ae|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|47|19|v|python
-	glycosimmodel
-70f1ea12f58e2bd1120f153a5ee9c8aa|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|47|26|V|python
-	    model_name = modelName
-c5b7c59bc591810c4bf08b99cf2e6045|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|42|5|v|python
-	newModelDir
-82c5a6fa3e9a97850b8f119fe69c6507|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|75|1|V|python
-	    print(rdata.x.__doc__)
-8383c0894c22e5673c0f66ee43f943df|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|78|1|V|python
-	    print(rdata.y.__doc__)
-dc19ea3566476a02bb8bd1e52019ccd9|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|51|18|V|python
-	        model_name
-f493f8fe56db1af623b5862b856c83c8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|50|1|V|python
-	    else:
+21a361d96e3e13f5f109748c2a9d2434|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|30|24|v|python
+	push
+0a22f1e10fdebcfe19cd0b514bb75be5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|152|1|V|
+	###  http://glycoinfo.org/dbid/imex/IM-23322
+	<http://glycoinfo.org/dbid/imex/IM-23322> rdf:type owl:NamedIndividual ,
+	                                                   obo:NCIT_C93638 .
+8475c81d575f049a9d88b7a033bc4dfb|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|36|1|V|python
+	        ###  http://glycoinfo.org/dbid/imex/IM-23322
+	        <http://glycoinfo.org/dbid/imex/IM-23322> rdf:type owl:NamedIndividual ,
+	                                                           obo:NCIT_C93638 .
+c16bf2542cc34567d355784564d365d7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|38|9|V|python
 	        pass
-810666f8dd9cb9b2a3a32096a6972d10|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|43|1|V|python
-	        new_model_dir = "./out/amici/" + model_name
-b2cb99485fc3174d6f580861fc28bf7a|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|44|21|v|python
-	new_model_dir
-24b0d6027db31b5d0fde96d4df184a2c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|47|27|V|python
-	        output_dir = new_model_dir
-bf51f696505ee7c971530cb5897eafae|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|43|1|V|python
-	        output_dir = "./out/amici/" + model_name
-c16bf2542cc34567d355784564d365d7|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|51|9|V|python
-	        pass
-7b36479aa703ccede847a1ed8a4ed0a1|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|23|43|V|python
-	    output_dir = "Model_2022_01_20_05_27_25"
-686883e7e15e8ac471931db2457f5b58|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|37|5|V|python
-	    # create sbml file
-dfe03958f56c06b6e10eb1270d2da33c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|76|1|V|python
-	    print(rdata)
-	    print(dir(rdata))
-	    print(rdata.x.__doc__)
-	    print(rdata.x_ss.__doc__)
-	    print(rdata.ts.__doc__)
-	    print(rdata.y.__doc__)
-	    print(rdata.w.__doc__)
-d80936cf325fd830fc8bb640e04487e3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|78|1|V|python
-	    print(rdata.x.__doc__)
-	    print(rdata.x_ss.__doc__)
-	    print(rdata.ts.__doc__)
-	    print(rdata.y.__doc__)
-	    print(rdata.w.__doc__)
-985ca7b5a3a4295f2a3cbc6346c88044|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|76|1|V|python
-	    print(rdata)
-	    print(dir(rdata))
-4175029e036b78bc2a7b18d3afb08914|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/document.md|12|26|V|markdown
-	amici.numpy.ReturnDataView
-0db4cf07af5f8c88783d9382a5d283d3|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/document.md|11|1|V|markdown
-	- keys
-		- ts
-		- x
-		- x0
-		- x_ss
-		- sx
-		- sx0
-		- sx_ss
-		- y
-		- sigmay
-		- sy
-		- ssigmay
-		- z
-		- rz
-		- sigmaz
-		- sz
-		- srz
-		- ssigmaz
-		- sllh
-		- s2llh
-		- J
-		- xdot
-		- status
-		- llh
-		- chi2
-		- res
-		- sres
-		- FIM
-		- w
-		- preeq_wrms
-		- preeq_t
-		- preeq_numlinsteps
-		- preeq_numsteps
-		- preeq_numstepsB
-		- preeq_status
-		- preeq_cpu_time
-		- preeq_cpu_timeB
-		- posteq_wrms
-		- posteq_t
-		- posteq_numlinsteps
-		- posteq_numsteps
-		- posteq_numstepsB
-		- posteq_status
-		- posteq_cpu_time
-		- posteq_cpu_timeB
-		- numsteps
-		- numrhsevals
-		- numerrtestfails
-		- numnonlinsolvconvfails
-		- order
-		- cpu_time
-		- numstepsB
-		- numrhsevalsB
-		- numerrtestfailsB
-		- numnonlinsolvconvfailsB
-		- cpu_timeB
-c69e089b5711bba0ee77490418fe7f2f|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/AMICI/python/amici/numpy.py|145|1|V|python
-	    """
-	    Interface class for C++ Return Data objects that avoids possibly costly
-	    copies of member data.
-	    """
+06fdccfbaaf8afaea3055af812636d3f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|189|1|V|
+	###  https://identifiers.org/matrixdb.association:ensembl_ENSG00000023445__uniprotkb_Q04206
+	<https://identifiers.org/matrixdb.association:ensembl_ENSG00000023445__uniprotkb_Q04206> rdf:type owl:NamedIndividual ,
+	                                                                                                  bpo:MolecularInteraction ;
+	                                                                                         obo:IAO_0000119 <http://glycoinfo.org/dbid/imex/IM-23322> ;
+	                                                                                         obo:INO_0000154 obo:MI_0914 ;
+	                                                                                         <http://rdf.glycoinfo.org/ontology/interaction#has_interactor_A> <http://glycovid.glycosmos.org/ensembl/id/ENSG00000023445> ;
+	                                                                                         <http://rdf.glycoinfo.org/ontology/interaction#has_interactor_B> <http://glycoinfo.org/dbid/uniprot/Q04206> ;
+	                                                                                         bpo:interactionType obo:MI_0914 ;
+	                                                                                         bpo:organism <http://glycoinfo.org/dbid/taxonomy/9606> ;
+	                                                                                         dc:identifier <http://glycoinfo.org/dbid/imex/IM-23322-1> ;
+	                                                                                         dc:source obo:MI_0469 ;
+	                                                                                         bao:BAO_0002875 obo:MI_0402 .
+c9ee3994c26ff4f80893142ccf6cf1f6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|50|1|V|python
+	        str
+93945264629feb46f42025856beffdd9|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|38|1|V|python
+	###  https://identifiers.org/matrixdb.association:ensembl_ENSG00000023445__uniprotkb_Q04206
+	<https://identifiers.org/matrixdb.association:ensembl_ENSG00000023445__uniprotkb_Q04206> rdf:type owl:NamedIndividual ,
+	        bpo:MolecularInteraction ;
+	         obo:IAO_0000119 <http://glycoinfo.org/dbid/imex/IM-23322> ;
+	         obo:INO_0000154 obo:MI_0914 ;
+	         <http://rdf.glycoinfo.org/ontology/interaction#has_interactor_A> <http://glycovid.glycosmos.org/ensembl/id/ENSG00000023445> ;
+	         <http://rdf.glycoinfo.org/ontology/interaction#has_interactor_B> <http://glycoinfo.org/dbid/uniprot/Q04206> ;
+	         bpo:interactionType obo:MI_0914 ;
+	         bpo:organism <http://glycoinfo.org/dbid/taxonomy/9606> ;
+	         dc:identifier <http://glycoinfo.org/dbid/imex/IM-23322-1> ;
+	         dc:source obo:MI_0469 ;
+	         bao:BAO_0002875 obo:MI_0402 .
+3d523bac127a9e898182a92329dd64c2|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|34|1|V|python
+	            ###  http://glycoinfo.org/dbid/imex/IM-23322
+	            <http://glycoinfo.org/dbid/imex/IM-23322> rdf:type owl:NamedIndividual ,
+	                                                               obo:NCIT_C93638 .
+c46b819db434aab0c2c200cf2fae7972|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|39|1|V|python
+	                         <http://rdf.glycoinfo.org/ontology/interaction#has_interactor_A> <http://glycovid.glycosmos.org/ensembl/id/ENSG00000023445> ;
+	                         <http://rdf.glycoinfo.org/ontology/interaction#has_interactor_B> <http://glycoinfo.org/dbid/uniprot/Q04206> ;
+f43204a3dae54bbf73389c7a1623745c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|2|1|V|python
+	    if iri[0:1] == "<":
+	        iri = iri[1:]
+	    if iri[-1:] == ">":
+	        iri = iri[:-1]
+	    return iri
+8af2256334d83fad29b0872be350f614|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|45|22|V|python
+	                + "\n"
+ef55d031b436bef108c512b24dd37e5b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|47|23|V|python
+	                    + "\n"
+7bb0edd98f22430a03b67f853e83c2ca|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|47|8|V|python
+	        
+8b75c83d7623a8b07888716d5c697fec|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|11|1|V|python
+	        data = f.read()
+7cf02c1deeb5162e17fdbc0701a31a3c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|7|1|V|python
+	        f = file
+0e3e544d01543ff9f45193c82542b630|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|8|1|V|python
+	        text = open('myfile.txt', 'r')
+	        data = f.read()
+	        f.close()
+1cb251ec0d568de6a929b520c4aed8d1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|11|9|v|python
+	text
+53bbed4f3e30fab2c40e665ce9018dbb|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|20|1|V|
+	#################################################################
+76376a6c788cf95f31feec24f51ee281|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|14|19|v|python
+	myfile.txt
+0e2a5faa1bc6f980a37f018226ff4f33|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|65|14|V|python
+	    print(owl)
+3e25ef786422b1c569426fd6a9cc47dd|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|54|18|v|python
+	"### " + self.subject \
+c80a227465975c6dd5899b8587e6791e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|56|1|V|python
+	                + "\n" + self.subject + " rdf:type owl:NameIndividual ," \
+	                + "\n\t\t" + self.type + ";"
+960c0b339e0dadb095e9c3b029fc592f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|8|1|V|python
+	        template = self.readFile(template_file)
+	        templates = template.split("#################################################################")
+c2b4185df97297f985766bf02a844290|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|14|1|V|python
+	    def readFile(self, file: str) -> str:
+	        f = open(file, 'r')
+	        data = f.read()
+	        f.close()
+	        return data
+75228eda42c10c19e0711efacaeddfa6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|10|1|V|python
+	               print line
+	                print(templates)
+	                pass
+96e89a298e0a9f469b9ae458d6afae9f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|8|15|v|python
+	head
+4ad947a30cab80eeb1385a8e866d6106|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|9|36|V|python
+	        templates = template.split("#################################################################")
+b535fed7675d4b473e1c4edf9a6f593c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|21|1|V|python
+	        f = open(file, 'r')
+	        data = f.read()
+	        f.close()
+ffbe1ea1921c4c74772e2d6e513d7fd0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|22|9|V|python
+	        return data
+d63a3d24123e3a7f919f5eb2daa2964a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|20|1|V|python
+	    def getOwlHeader(self, file: str) -> str:
+	        owl = self.readFile(file)
+91ebfd21ea5e50c00e5d5198133e504b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|34|5|V|python
+	    def getOwl
+bc8db61a0714b0f339f53e2f83d2d9ab|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|30|1|V|python
+	    def getOwlIndividuals(self, file: str) -> str:
+	        owl = self.readFile(file)
+1de37930df8f51c78ba1cb90092574e4|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|34|5|V|python
+	    def getComment
+fb5c5cdfc29ea5a6bdf3049a78813cd0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|9|1|V|python
 	
-	    _field_names = [
-	        'ts', 'x', 'x0', 'x_ss', 'sx', 'sx0', 'sx_ss', 'y', 'sigmay',
-	        'sy', 'ssigmay', 'z', 'rz', 'sigmaz', 'sz', 'srz',
-	        'ssigmaz', 'sllh', 's2llh', 'J', 'xdot', 'status', 'llh',
-	        'chi2', 'res', 'sres', 'FIM', 'w',
-	        'preeq_wrms', 'preeq_t', 'preeq_numlinsteps', 'preeq_numsteps',
-	        'preeq_numstepsB', 'preeq_status', 'preeq_cpu_time',
-	        'preeq_cpu_timeB', 'posteq_wrms', 'posteq_t', 'posteq_numlinsteps',
-	        'posteq_numsteps', 'posteq_numstepsB', 'posteq_status',
-	        'posteq_cpu_time', 'posteq_cpu_timeB', 'numsteps', 'numrhsevals',
-	        'numerrtestfails', 'numnonlinsolvconvfails', 'order', 'cpu_time',
-	        'numstepsB', 'numrhsevalsB', 'numerrtestfailsB',
-	        'numnonlinsolvconvfailsB', 'cpu_timeB'
-	    ]
-ec22a964ce6d15978cbb9df18f7640bf|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|78|1|V|python
-	    a = amici.numpy.ReturnDataView(rdata)
-	    print(a)
-6e2f54f7dbf2e5158fb248eb9a75c4d8|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|54|1|V|python
-	    # print(model)
-	    # print(dir(model))
-6ba3133a4360dc99d705f9ee8df65664|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|65|5|V|python
-	    # how to run amici now:
-fe20fb9d9e9e4f51f0a54f5f78fed677|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|76|5|V|python
-	    for r in rdata.keys():
-	        print(r)
-7e5947705104b51cc48f948f65b786ef|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|56|17|v|python
-	getParameterList
-ee99f15af263cbcbaf33a25a2e393ecd|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|54|1|V|python
-	    print(model)
-	    print(dir(model))
-47e03cee461de011deb1aac8eedbb75b|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|54|34|V|python
-	    print(model.getExpressionNames())
-aef12e903e606a4895a16b393bfdec8c|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/BioMASS/run.py|19|22|v|python
-	Union
-9779e189cbeaeaaf91dd691f29db0d33|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/BioMASS/run.py|5|24|V|python
-	from typing import Union
-0a9da3fb9480380fe1928458794fca3d|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|69|22|v|python
-	model.getExpressionNames()[i],
-23c885d2d84c1c6db714e6618737dfa2|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|1|26|V|python
-	if __name__ == "__main__":
+	        print(templates)
+4f878e7e51f282d3adac07f9f0fa0b37|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|8|1|V|python
+	        template = self.readFile(template_file)
+0cf31b2c283ce3431794586df7b0996d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|10|4|V|python
+	    
+d2773263bee3710c95032e2787a4812d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|9|1|V|python
+	
+	    def readFile(self, file: str) -> str:
+a233e3ec9b326d767d840da787ab0824|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|7|1|V|python
+	        self.individuals = []
+e3cc92c14a5e6dd1a7d94b6ff634d7fc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|20|15|v|python
+	match
+b1e464401e203d7f48a80717ea21db05|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|21|32|V|python
+	        print(owl_header.group())
+55fad9859aadb65c1b6e844e85217ed8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|22|1|V|python
+	        owl = self.readFile(file)
+	        owl_header = re.search(r"^([^(##########################################################)]|\\n)+", owl, flags=re.DOTALL)
+	        print(owl_header)
+	        # assert owl_header is None
+	        # for line in owl_header.group():
+	        #     print(line)
+b79b88d7fb2170d73c00cea0baa6848c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|21|1|V|python
+	               print line
+	
+603d3ab3ef6218ae54aa2ea23b9f4cdf|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|19|20|v|python
+	./test.txt
+f462bdc726d03a917fe423ea31a80f09|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|21|22|V|python
+	               print line
+a2fd630cb563b1fafefecf0dc4bb62d9|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|26|1|V|python
+	        owl = self.readFile(file)
+26d2aff18b1d7f3fb862c016ce08ebbd|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|12|1|V|python
+	    def readFile(self, file: str) -> str:
+	        f = open(file, 'r')
+	        data = f.read()
+	        f.close()
+	        return data
+	
+a9473ded85aa51851deb4859cdd53f98|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|16|1|V|python
+	                
+509f9670e84d091bba29113af81ca3da|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|13|19|V|python
+	        return true
+96e4c0dcf3f785a2e15a8385bbae3823|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|12|1|V|python
+	    def judgeSeparation(self, line: str) -> bool:
+	
+	
+6438c669e0d0de98e6929c2cc0fac474|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|15|17|v|python
+	line
+029a5682a4d491785d2f76fbd8dfd620|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|13|1|V|python
+	        owl_header = list()
+	        with open(file) as f:
+	            for line in f:
+	                owl_header.append(line)
+	                if len(line) > 3 and "#################" in line:
+	                    break
+	        assert len(owl_header) > 0
+	        return owl_header
+ea2b2676c28c0db26d39331a336c6b92|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|25|9|v|python
+	start
+51fab5e241d1f9b81b49228dab0aeb8c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|21|1|V|
+	#    Annotation properties
+a68c668dc5b6de8cfaa517b6e0e5198d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|31|19|V|python
+	                    return
+18770da8ae4a6095cccae4cb0ca920b2|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|24|9|v|python
+	owl_header
+4727fba31c3dc24c34d5b482a9b33fbe|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|32|17|v|python
+	owl_annotation_properties
+caf7614c144ba598ff5df1322a785fe4|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|23|56|v|python
+	cwstr
+0f7226f47c9bc69dc41514bc37c8e474|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|24|1|V|python
+	        text = list()
+	        isTarget = False
+	        with open(file) as f:
+	            for line in f:
+	                if "Annotation properties" in line:
+	                    isTarget = True
+	                if not isTarget:
+	                    continue
+	                text.append(line)
+	                if len(line) > 3 and "#################" in line:
+	                    break
+	        assert len(text) > 0
+	        return text
+0c11ed7332a14e141555349ffd7c2f72|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|73|6|v|
+	Object Properties
+d656597c1e5c8ef8b9109b0fd79d1a05|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|58|21|v|python
+	Annotation properties
+15ea3916d0441d15d79d7211e063eab0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|149|6|v|
+	Individuals
+ff563b8ae7ddb56c21cb8231c5a5ca98|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|84|1|V|python
+	        text = list()
+	        isTarget = False
+	        with open(file) as f:
+	            for line in f:
+	                if "Annotation properties" in line:
+	                    isTarget = True
+	                if not isTarget:
+	                    continue
+	                text.append(line)
+	                if len(line) > 3 and "#################" in line:
+	                    break
+	        assert len(text) > 0
+de99df139a6943367c88c32bf7b60f2f|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|140|1|V|python
 	    import sys
-c76e1e27e2064fa0945976d833183fe0|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|66|20|V|python
-	    sbml_model = sbml.getModel()
-583a26d769aca1e2ca440e95ba0030b4|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|66|21|V|python
-	    print(sbml_model)
-8a1d750e42b1f6f1ba6e651e8e0d0513|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|69|38|v|python
-	model.getExpressionNames()[i]
-cdff30885622599a8fbaf8452fd4b4ee|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|78|1|V|python
-	    print(len(rdata.y))
-34226a84181441c0c7846a139dc9edde|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/source/SIM/pyPESCO/run.py|66|30|v|python
-	x_ss
-20c8863d5cd265ac2a4deef37e628af9|file:///Users/arakawakouichi/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh|2|1|v|sh
-	osascript -e 'tell application "Vivaldi" to reload active tab of window 1'
-521a254a17d245017794b714feb2d953|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|87|1|V|vim
-	noremap <silent>:oq<CR> :only | close!
-694a30750735520b140547c75f19b686|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|63|1|V|vim
-	noremap <S-h>   ^
-	noremap <S-j>   }
-	noremap <S-k>   {
-	noremap <S-l>   $
-	noremap <C-j>   5j
-	noremap <C-k>   5k
-	noremap <C-e>  $
-	noremap <C-a>  ^
-	noremap zz  10jzz10k
-	noremap <Space>j jzz
-	noremap <Space>k kzz
-	map! <C-e>  <C-c>$a
-	map! <C-a>  <C-c>^i
+	    print(sys.path)
+a7b84d6354b9ad7f50b580037fe70ae2|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|1|1|V|python
+	import re
+90c534f3193e136e78f98c6f79ddcb70|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|92|1|v|python
+	 convert rdf data to Individual instance and append in LibOwl.individuals
+72cde933bbc9ff922d1a1568bf8e6dd5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|94|15|V|python
+	        return 
+f65c79392d24b23f94d11d4a86e663d6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|73|1|V|python
+	        with open(file) as f:
+	            for line in f:
+77be05eeff7982557cf746fbaca16336|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|64|1|V|python
+	                text.append(line.split("\n", ""))
+7211b32c4c701b801b07ba44c8ca53e5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|64|1|V|python
+	                text.append(line.replace("\n", ""))
+f644b05d9e7cf44815bd02ce6d14a29a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|79|17|V|python
+	                text.append(line)
+43f2e939cde2c79ee408da118454f342|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|97|29|v|python
+	line.replace("\n", ""))
+9e155e7c97af8406a6a355e1320eeea3|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|95|19|V|python
+	            rdfs = 
+6b68f25f3ff08d06d4a0ea8cb27fa2d5|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|100|45|V|python
+	                print(line.replace("\n", ""))
+a35c424f38d510b875b6f834523d97db|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|100|1|V|python
+	                if line == "\n":
+	                    isRdf = True
+a7144edf55d390ffe0b0a4f6e9e06e6c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/create_ttl.py|28|1|V|python
+	    ## P39060-PRO_000005794 → P39060#PRO_000005794
+	    identifier = re.sub(r"uniprotkb\-(?P<id>(.+))", r"uniprotkb#\g<id>", identifier)
+15f3cbbd133f10891f719b33405db278|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|104|21|v|python
+	rdfs
+7bc1be694e088fb0bd327c16548c09ef|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|106|20|V|python
+	                    
+fd711467fb217a3485ae09fdc755edc2|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|99|1|V|python
+	                if line == "\n":
+	                    isRdf = True
+	                    continue
+72664b1280a36c09789bbdda771cbe4d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|104|28|V|python
+	                    rdf = []
+3672785bfecbf9b96a6caa64bed15a24|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|99|21|V|python
+	            for line in f:
+868bc31b4a6ee5ff80997ae1e3f9f012|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|98|1|V|python
+	            rdf = list()
+c03d2ba8013ad09c054f174ad86b290d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|97|16|V|python
+	            rdfs = []
+c869783ebc5ca4f5ea5489e799ba17de|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|107|1|V|python
+	                if line == "\n":
+	                    rdfs.append(rdf)
+	                    rdf = []
+	                    isRdf = True
+	                    continue
+573b2555c84d8fe15ae17ded91bd7861|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|107|28|V|python
+	                    print(cols)
+07e64943ccc1c4f3220d986c9d1d056a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|119|9|V|python
+	            pass
+e6350f3b3fe366056977f7e10c2861d9|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|118|1|V|python
+	            if len(len)
+	            print(len(rdf))
+34cc2e405ace92003a88c9b05e66bcfc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|121|24|V|python
+	                print(r)
+abfb056e53c2904aa08b7acad91c4906|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|96|15|V|python
+	        create 
+6ccfde7d8e580cf178f2b4ecf5e8e6a6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|95|19|V|python
+	            create 
+dbef885244284e07e94b1b966db96d03|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|120|1|V|python
+	        # print(prefix)
+3de49e4a67ded5db24d0da12eb1dd5ac|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|125|9|V|python
+	                print(col)
+df688806d4096da44426aeaf3dfd3026|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|125|1|V|python
+	                for i in range(1, len(col)):
+	                    print(col[i])
+90adcc3831df0cb8d4b123b468cc042b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|96|15|V|python
+	        assert 
+bf42336eedbf5dee742d60d068c7c51d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|122|27|V|python
+	        print(self.owl_individuals)
+d49daab391b5839a93bca84d729b4219|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|71|1|V|python
+	        text.insert(0, "#################################################################")
+38a710b04a9e7fc4814f0521c566ad41|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|89|1|V|python
+	        for t in text:
+	            print(t)
+1989d387eff403c179836cd453659e07|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|134|1|V|python
+	                col = re.split(r"\s+", r)
+a85fdfb8e8137ec621bac55b31d61d31|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|93|15|V|python
+	            col
+2b65c84243a077add7ff7792d0f3e98b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|95|20|V|python
+	            print(t)
+b5e20a1f9d365b46544b79bebd5ed282|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|95|29|V|python
+	                individual = 
+c77d8540d2eb47922275081872246d33|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|98|23|V|python
+	                assert 
+b4894daafc4866c80d3bef9cdd3859c3|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|99|34|V|python
+	                individual.type = 
+a0c754f98280afe0e45b25c970444275|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|105|1|V|python
+	                    assert col[-1] == ",", "cant create multiple class object"
+e837ffe37ace0a117d707bef8bf7156e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|105|1|V|python
+	                    assert col[-1] == ",", "cant create multiple class object"
+	                    isType = False
+59609446120e504176ec16ce8a07f100|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|109|34|V|python
+	                    isType = False
+6c36c4a08036cf461e886e4b39c964c9|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|111|22|V|python
+	            print(col)
+665ee8a75f728b7f58ede539fc928978|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|92|24|V|python
+	        individuals = []
+fd3462caeb96817ba48d7692956ce0f8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|100|29|V|python
+	                if individual:
+076afdb9462cc64cc2c06a549abc2006|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|96|24|V|python
+	            isType = False
+88d28d19e7f7adc8a992f4ad58d143c1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|102|1|V|python
+	                    individuals.append((individual))
+426647efb00af689a65175b1fa082691|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|116|1|V|python
+	            print(i.subject)
+	            print("\trdf:type: ", i.type)
+4acdafb04eafc4820602abefbd60a6d0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|176|1|V|
 	
-	noremap <silent>tr :vsplit<CR>
-	noremap <silent>tu  :split<CR><C-w><C-w>
-	noremap <silent>ta :tabnew<CR>
-	noremap <C-l> gt
-	noremap <C-h> gT
-	
-	noremap <silent>:" diwi""<Esc>P
-	noremap <silent>:' diwi''<Esc>P
-	noremap <silent>:[ diwi[]<Esc>P
-	noremap <silent>:( diwi()<Esc>P
-	noremap <silent>:oq<CR> :only | close!
-	
-	noremap <silent>:v<CR> :! sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh<CR>
-b7a1defc5ab9893ef71847901d57f142|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|78|1|V|vim
-	map :init<CR> :source ~/.config/nvim/init.vim<CR>
-e37f0136aa3ffaf149b351f6a4c948e9|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/shortcuts.vim|30|38|v|vim
-	init
-aa0d4a4a699cb2ef82685419db641fcd|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|67|9|v|vim
-	statusline
-cc9067c2ee470dc248b14b194209a34e|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|61|1|V|vim
+	###  http://purl.obolibrary.org/obo/MI_0402
+	obo:MI_0402 rdf:type owl:NamedIndividual .
 	
 	
+	###  http://purl.obolibrary.org/obo/MI_0469
+	obo:MI_0469 rdf:type owl:NamedIndividual .
 	
 	
+	###  http://purl.obolibrary.org/obo/MI_0914
+	obo:MI_0914 rdf:type owl:NamedIndividual .
+	
+590b2376c2bb7e52772908428ad97cc3|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/uri_list/object_uri_list2.csv|59|1|V|
+	InnateDB Allergy	http://rdf.glycoinfo.org/dbid/innatedb-allergy/
+	efo	http://rdf.glycoinfo.org/dbid/efo/
+034ac1e27e26f19135e911cf0c60a4ec|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|167|6|v|
+	http://glycoinfo.org/dbid/
+7690b31910fc475fb04b38f1dd09292d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|157|1|V|python
+	            assert len(rdf) > 1, "Rdf import error !"
+4f5fa5b75fdcc6f7286baac3944e5fce|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|181|23|V|python
+	        object = object
+899c754938e187772f7a7957649588c6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|203|17|V|python
+	            if len(relation["object"]) == 1:
+b1eeb2041dc51e821dada4394dadc72d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|205|1|V|python
+	                    text.append("\t" + relation["property"] +  " " + relation["object"] + " ;")
+2b72c69dba96e195e12156c841d9a77d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|204|32|V|python
+	                if len(relation)
+4cb8cc83afc5054b060f76d6551eeb25|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|210|1|V|python
+	                        text.append("\t" + relation["property"] +  " " + relation["object"] + " ;")
+1cb4aca496038540bf238b74d5b81beb|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|209|21|V|python
+	                    for i in range(len(relation["object"])):
+1d527c26c524f82bd7b988319e42edc2|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|211|1|V|python
+	                            text.append("\t " + relation["object"] + " ;")
+0158bbbb8bc34ee7cf30ecf54eecb2fb|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|214|29|V|python
+	                            text.append("\t" + relation["property"] +  " " + relation["object"] + " ;")
+2cb8f16df8c2ca9c08d87d84ee78eb52|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|215|1|V|python
+	        text = ""
+	        for tl in textlist:
+	            text += tl
+03258b18e89b06cbaba80fd155237749|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|118|28|V|python
+	        print(individuals[0].toStr())
+a2b14ba26f6c3283b14fe7acd08778ba|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|161|22|V|python
+	                # assert col[-1] == ";" or col[-1] == "."
+eba972ea7b4adb5f56fb15d17cb59cf6|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|161|22|V|python
+	                # set subject
+fc6c843cd8387e2b3e6886a21f762069|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|162|17|V|python
+	                # create object individuals
+9243c6fb17806af9651efd4abe2f19e3|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|163|1|V|python
+	                if len(col) == 3:
+5f7363b5f128395fffa51b06bbcf2521|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|167|17|V|python
+	                # o
+274f898743c860dd8e051555f03397de|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|166|38|V|python
+	                    individual.type = 
+0da3401c8b5a8984b8e053c0c972c072|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|15|1|V|python
+	        self.owl_individuals = self.getOwlIndividuals(template_file)
+1d4d49284584e9b0a6de17795f5322b3|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|16|37|v|python
+	self.getOwlIndividuals(template_file)
+2dd4472245a696bc0b4b944db2a8b519|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|184|7|v|python
+	Individual
+a5d3d0ef8c12372242cc9149b1a6f0e1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|179|46|v|python
+	.join("/")
+43c24ed7b00f700398fd66728bbc262c|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|186|36|V|python
+	                individual.relations
+a8a48315839d51ecfa5f187df8851022|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|191|25|V|python
+	        return individual
+b14552d1b632a26f7fd04f3ca9c7bc67|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|190|1|V|python
+	            return individual
+	
+67cd45a3a8300008ca852c1aa03f9fdf|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|186|1|V|python
+	        assert individual.type is None, uri
+e97979a09dedea6344bddd718dd7f93d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|166|1|V|python
+	                    individual = Individual(col[0])
+ec7d63348a6912edd1d19fca98bd14c0|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|166|1|V|python
+	                    uri = self.toURI(col[0], prefix)
+	                    individual = self.createIndividualFromTemp(uri)
+322b75ea130d7339c477c952332dbce1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|172|21|V|python
+	                    pass
+00d5e605ce6a8a2790a1cb68c7b8524b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|168|1|V|python
+	                    self.owl_individuals.append(individual)
+5c565bbb654c68129ac2b0c94540b2c9|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|178|1|V|python
+	                # o
+	                elif len(col) == 2:
+	                    uri = self.toURI(col[1], prefix)
+	                    individual = self.createIndividualFromTemp(uri)
+	                    self.owl_individuals.append(individual)
+21f907acbf156b78751292fd94fdb055|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|169|1|V|python
+	                    uri = self.toURI(col[0], prefix)
+	                    individual = self.createIndividualFromTemp(uri)
+	                    self.owl_individuals.append(individual)
+	                    uri = self.toURI(col[2], prefix)
+	                    individual = self.createIndividualFromTemp(uri)
+	                    self.owl_individuals.append(individual)
+2e790cbf7b8bcd12ed22c140b87800ae|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|177|1|V|python
+	                    uri = self.toURI(col[2], prefix)
+	                    individual = self.createIndividualFromTemp(uri)
+	                    self.owl_individuals.append(individual)
+956cf2d113c0b550d4d60e048f43578b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|1|1|V|
+	@prefix : <http://www.semanticweb.org/arakawakouichi/ontologies/2022/0/untitled-ontology-11#> .
+	@prefix dc: <http://purl.org/dc/elements/1.1/> .
+	@prefix lm: <http://www.linkedmodel.org/schema/vaem#> .
+	@prefix bao: <http://www.bioassayontology.org/bao#> .
+	@prefix bpo: <http://www.biopax.org/release/biopax-level3.owl#> .
+	@prefix obo: <http://purl.obolibrary.org/obo/> .
+	@prefix owl: <http://www.w3.org/2002/07/owl#> .
+	@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+	@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+	@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+	@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+	@base <http://www.semanticweb.org/arakawakouichi/ontologies/2022/0/untitled-ontology-11> .
+	
+	<http://www.semanticweb.org/arakawakouichi/ontologies/2022/0/untitled-ontology-11> rdf:type owl:Ontology ;
+	                                                                                    owl:imports <http://biomodels.net/SBO/> ,
+	                                                                                                <http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl> ,
+	                                                                                                <http://www.bioassayontology.org/bao/bao_complete.owl> ,
+	                                                                                                <http://www.biopax.org/release/biopax-level3.owl> .
+	
+	#################################################################
+	#    Annotation properties
+	#################################################################
+	
+	###  http://purl.obolibrary.org/obo/IAO_0000112
+	obo:IAO_0000112 rdf:type owl:AnnotationProperty .
 	
 	
-269e2e249c278f05139e1044dabcdf90|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|61|18|V|vim
-	runtime shortcuts.vim
-c90caf6993c279505b1607146817b811|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/shortcuts.vim|30|53|v|vim
-	<CR>
-ef634b5828086fe365fd80aaf1353727|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/shortcuts.vim|30|1|V|vim
-	map :sc<CR> :tabnew<CR>:source ~/.config/nvim/shortcuts.vim<CR>gT
-ebf87251d092a6de9c12cc3e85c1707a|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/init.vim|71|49|v|vim
-	shortcuts
-9592ae76028fd8f809c3ea8e5bd054de|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/shortcuts.vim|24|1|V|vim
-	noremap <silent>:( diwi()<Esc>P
-08969b0b65f691e5176eb525bee490f9|file:///Users/arakawakouichi/dotfiles/dotfiles/nvim/shortcuts.vim|25|1|V|vim
-	noremap <silent>:{ diwi{}<Esc>P
-a9aab0e4ad49c96503485b6d4bd7e358|file:///Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim/.gitignore|17|1|V|conf
-	models/GssModel/sbml/*
+	###  http://purl.obolibrary.org/obo/IAO_0000115
+	obo:IAO_0000115 rdf:type owl:AnnotationProperty .
+	
+	
+	###  http://purl.obolibrary.org/obo/IAO_0000117
+	obo:IAO_0000117 rdf:type owl:AnnotationProperty .
+	
+	
+	###  http://purl.obolibrary.org/obo/IAO_0006012
+	obo:IAO_0006012 rdf:type owl:AnnotationProperty .
+	
+	
+	###  http://purl.obolibrary.org/obo/NCIT_NHC0
+	obo:NCIT_NHC0 rdf:type owl:AnnotationProperty .
+	
+	
+	###  http://purl.obolibrary.org/obo/NCIT_P106
+	obo:NCIT_P106 rdf:type owl:AnnotationProperty .
+	
+	
+	###  http://purl.obolibrary.org/obo/NCIT_P108
+	obo:NCIT_P108 rdf:type owl:AnnotationProperty .
+	
+	
+	###  http://purl.obolibrary.org/obo/NCIT_P207
+	obo:NCIT_P207 rdf:type owl:AnnotationProperty .
+	
+	
+	###  http://purl.obolibrary.org/obo/NCIT_P322
+	obo:NCIT_P322 rdf:type owl:AnnotationProperty .
+	
+	
+	###  http://www.bioassayontology.org/bao#BAO_0002875
+	bao:BAO_0002875 rdf:type owl:AnnotationProperty .
+	
+	
+	###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> rdf:type owl:AnnotationProperty .
+	
+	
+	###  http://www.geneontology.org/formats/oboInOwl#inSubset
+	<http://www.geneontology.org/formats/oboInOwl#inSubset> rdf:type owl:AnnotationProperty .
+	
+	
+	#################################################################
+	#    Object Properties
+	#################################################################
+	
+	###  http://purl.obolibrary.org/obo/IAO_0000119
+	obo:IAO_0000119 rdf:type owl:ObjectProperty ;
+	                rdfs:domain <http://biomodels.net/SBO/SBO_0000344> ;
+	                rdfs:range obo:NCIT_C93638 ;
+	                rdfs:label "difinition source" .
+	
+	
+	###  http://purl.obolibrary.org/obo/INO_0000154
+	obo:INO_0000154 rdf:type owl:ObjectProperty .
+	
+	
+	###  http://purl.obolibrary.org/obo/RO_0000087
+	obo:RO_0000087 rdf:type owl:ObjectProperty ;
+	               rdfs:label "has role"@en .
+	
+	
+	###  http://rdf.glycoinfo.org/ontology/interaction#has_interactor_A
+	<http://rdf.glycoinfo.org/ontology/interaction#has_interactor_A> rdf:type owl:ObjectProperty ;
+	                                                                 rdfs:domain <http://biomodels.net/SBO/SBO_0000344> ;
+	                                                                 rdfs:range <http://biomodels.net/SBO/SBO_0000241> .
+	
+	
+	###  http://rdf.glycoinfo.org/ontology/interaction#has_interactor_B
+	<http://rdf.glycoinfo.org/ontology/interaction#has_interactor_B> rdf:type owl:ObjectProperty ;
+	                                                                 rdfs:domain <http://biomodels.net/SBO/SBO_0000344> ;
+	                                                                 rdfs:range <http://biomodels.net/SBO/SBO_0000241> .
+	
+	
+	###  http://www.biopax.org/release/biopax-level3.owl#organism
+	bpo:organism rdfs:domain <http://biomodels.net/SBO/SBO_0000344> ;
+	             rdfs:range obo:EUPATH_0000591 .
+	
+	
+	#################################################################
+	#    Classes
+	#################################################################
+	
+	###  http://purl.obolibrary.org/obo/EUPATH_0000591
+	obo:EUPATH_0000591 rdf:type owl:Class ;
+	                   owl:equivalentClass [ owl:intersectionOf ( obo:OBI_0100026
+	                                                              [ rdf:type owl:Restriction ;
+	                                                                owl:onProperty obo:RO_0000087 ;
+	                                                                owl:someValuesFrom obo:OBI_0000725
+	                                                              ]
+	                                                            ) ;
+	                                         rdf:type owl:Class
+	                                       ] ;
+	                   rdfs:subClassOf obo:OBI_0100026 ;
+	                   obo:IAO_0000115 "An organism that has host role" ;
+	                   obo:IAO_0006012 "yes"^^xsd:string ;
+	                   rdfs:label "host organism"@en .
+	
+	
+	###  http://purl.obolibrary.org/obo/NCIT_C93638
+	obo:NCIT_C93638 rdf:type owl:Class ;
+	                rdfs:label "Publication Identifier"^^rdfs:Literal .
+	
+	
+	###  http://purl.obolibrary.org/obo/OBI_0000725
+	obo:OBI_0000725 rdf:type owl:Class ;
+	                rdfs:label "host role"^^xsd:string .
+	
+	
+	###  http://purl.obolibrary.org/obo/OBI_0100026
+	obo:OBI_0100026 rdf:type owl:Class ;
+	                rdfs:label "organism"@en .
+	
+	
+	###  http://rdf.glycoinfo.org/ontology/interaction#InteractionId
+	<http://rdf.glycoinfo.org/ontology/interaction#InteractionId> rdf:type owl:Class .
+	
+	
+	#################################################################
+	#    Individuals
+	#################################################################
+	
+	###  http://rdf.glycoinfo.org/dbid/imex/IM-23322
+	<http://rdf.glycoinfo.org/dbid/imex/IM-23322> rdf:type owl:NamedIndividual ,
+	                                                   obo:NCIT_C93638 .
+69a9f969dc1b9510ec1d7c19cdb845e8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|204|18|V|python
+	        print(indi)
+dd9b139dc793a876ef55beaab47efc5a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|205|19|V|python
+	            print(i)
+e22f37618646f706c5650a93e84ed6a8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|16|37|v|python
+	self.owl_individuals
+236cda8463e7a80167de55d1ac14f837|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|159|28|V|python
+	        individuals = list()
+8348279f61377151200fd51e312b3988|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|158|21|V|python
+	        print(prefix)
+5cf941437a58fd6509119c387216cc6d|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|184|29|v|python
+	self.owl_individuals[-1].subject
+b5e3374e43f6544852f7751dfc529100|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|184|88|v|python
+	subject
+0d0e26604ffa3d7a95c120e32793d3ee|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|207|15|V|python
+	            if 
+2a3bebb169ea51a84d48ba23c0069413|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|204|17|V|python
+	            print
+05ff5bdce3ddfcf6dc3ddbb1a0210ebc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|203|1|V|python
+	        print("\t\t", self.getURIHeader(uri))
+d27f554382007ea1ebe1ee44b23c8321|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|206|9|V|python
+	            print("\t\t", self.getURIHeader(uri))
+5e6c1f3a7addee19a504a92c3f5b00cf|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|173|32|v|
+	ENSG00000023445
+3bf1e63c0032ac417957835416f0e843|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|173|1|V|python
+	                        print("000000000")
+	                        print(col[2])
+c1ab93bba086815eabc95f7f9237ae7a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|210|22|V|python
+	            sys.exit()
+	            return None
+0f08ddf7551298ca1629f91209583f8e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|211|1|V|python
+	            return None
+54f3bdc63e045efd9f3f84b5c6ac2d00|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|199|18|V|python
+	        print(uri)
+c9662d3553bfface61035a48f7184552|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|196|22|V|python
+	                    te
+702b95fc4e6e9a135d60a55254e5911b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|175|30|V|python
+	                        print(uri)
+c6901e25229191fd318b8f86915af128|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|179|99|v|
+	bpo:MolecularInteraction
+3c333a3a51e9cf834d11784b5ac30414|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|168|47|V|python
+	                        individual = self.createIndividualFromTemp(uri)
+9d643c88ec18abfcee8ff719f46ae2af|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|206|47|V|python
+	        # print("\t\t", self.getURIHeader(uri))
+2960c73ab4b79f79104586c9807badfa|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|207|43|V|python
+	            # print("\t\t", self.getURIHeader(i.subject))
+9541f4ab6d4a540098f3aafc6796da96|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|172|1|V|python
+	                        prouri = self.toURI(col[1], prefix)
+	                        individual = self.createIndividualFromTemp(prouri, uri)
+dc6fcb97ebf42fa42a57c979e55e5152|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|178|1|V|python
+	                        individual = self.createIndividualFromTemp(prouri, uri)
+1cdfd7f0ef9516073f68ecf2c7321a5e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|178|1|V|python
+	                        individual = self.createIndividualFromTemp(prouri, uri)
+	                        self.owl_individuals.append(individual)
+b1d806df4ef4f606adb3d0fa42d7f8bb|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|183|25|V|python
+	                    individual = self.createIndividualFromTemp(uri)
+bc9ca6b4b1a63820dc8f8b9ef65d0a98|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|21|1|V|python
+	        text = list()
+	        with open(file) as f:
+	            for line in f:
+	                text.append(line.replace("\n", ""))
+	                if len(line) > 3 and "#################" in line:
+	                    break
+	        assert len(text) > 1
+	        text.insert(0, "#################################################################")
+9a671a745dd1f73f8669c060870e9364|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|36|1|V|python
+	                text.append(line.replace("\n", ""))
+	                if len(line) > 3 and "#################" in line:
+	                    break
+	        assert len(text) > 1
+0e72a14f8f412ba2b0c8c179e931d2c7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|33|21|V|python
+	        text = list()
+4bc413ec9f63611295965ee1180d55e1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|206|1|V|python
+	            if text[0:1] == "<" and text[-1:] == ">":
+	                return text
+ed46706efc5fc28683ad4b7f30e0cd36|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|208|13|V|python
+	            else:
+ffe6e71ad3211067c2d62d288b93f1d8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|208|1|V|python
+	            for key in prefix:
+	                if re.match(r"^"+key, text):
+	                    text = text.replace(key, prefix[key][:-1], 1)
+	                    text += ">"
+	                    return text
+e4dacd9b9bb83c10f3e371bc98acb6bb|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|228|27|V|python
+	            for oi in self.
+2fade64727a4077d263ac5a816313480|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|229|20|v|python
+	self.toURI(relation["property"]
+1a8db4c996d8ed8289da5f957879ab94|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|230|51|v|python
+	property
+7af6d9cec07bd258ea1aa30f471595e8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|227|1|V|python
+	        for i in self.owl_individuals_temp:
+2a29fc4c24dd015011cfe0da6913e8dc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|234|28|V|python
+	                        pass

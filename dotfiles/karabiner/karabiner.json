@@ -2,7 +2,7 @@
     "global": {
         "check_for_updates_on_startup": true,
         "show_in_menu_bar": false,
-        "show_profile_name_in_menu_bar": false
+        "show_profile_name_in_menu_bar": true
     },
     "profiles": [
         {
@@ -196,6 +196,45 @@
                                         "modifiers": [
                                             "left_command"
                                         ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "y",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "v",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "return_or_enter"
                                     }
                                 ],
                                 "type": "basic"
@@ -622,7 +661,7 @@
                     ]
                 }
             ],
-            "name": "vim mode",
+            "name": "normal",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
@@ -768,7 +807,7 @@
                     ]
                 }
             ],
-            "name": "normal mode",
+            "name": "vim",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },

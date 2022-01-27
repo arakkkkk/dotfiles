@@ -25,7 +25,7 @@ noremap <silent>:{ diwi{}<Esc>P
 noremap <silent>:< diwi<><Esc>P
 
 
-noremap <silent>:oq<CR> :only | close!
+" noremap <silent>:oq<CR> :only | close!
 noremap <silent>:v<CR> :! osascript -e 'tell application "Vivaldi" to reload active tab of window 1'<CR><CR>
 
 

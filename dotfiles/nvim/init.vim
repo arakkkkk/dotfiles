@@ -10,6 +10,7 @@ set expandtab          "タブ入力を空白に変換
 set splitright         "画面を縦分割する際に右に開く
 set clipboard=unnamed  "yank した文字列をクリップボードにコピー
 set hls                "検索した文字をハイライトする
+set sh=fish
 
 if has("autocmd")
   filetype plugin on

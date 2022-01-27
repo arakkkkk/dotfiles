@@ -1,0 +1,4 @@
+fi|fish|file
+|bin|file
+ho|homebrew|file
+op|opt|file

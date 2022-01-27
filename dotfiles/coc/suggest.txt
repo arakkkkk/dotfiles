@@ -1,3 +1,6 @@
+|undo|file
+n|nvim|file
+dotf|dotfiles|around
 fi|fish|file
 |bin|file
 ho|homebrew|file

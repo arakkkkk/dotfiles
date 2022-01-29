@@ -9,5 +9,7 @@
 
   ],
   "prettier.useTabs": true,
-  "tsserver.enableJavascript": false
+  "tsserver.enableJavascript": false,
+
+  "python.jediEnabled":false
 }

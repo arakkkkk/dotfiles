@@ -18,3 +18,6 @@ noremap <C-q> a<C-c>
 
 " run python file
 nnoremap :r<CR> :w<CR>:split<CR><C-w><C-w> :term python %<CR>
+nnoremap :g<CR> :w<CR>:split<CR><C-w><C-w> :term sh ~/dotfiles/dotfiles/nvim/run.sh %<CR>
+
+map :neo<CR> :tabnew<CR>:source ~/.config/nvim/plugins/neoterm.vim<CR>

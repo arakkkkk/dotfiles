@@ -1,1015 +1,1311 @@
-3bf1e63c0032ac417957835416f0e843|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|173|1|V|python
-	                        print("000000000")
-	                        print(col[2])
-c1ab93bba086815eabc95f7f9237ae7a|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|210|22|V|python
-	            sys.exit()
-	            return None
-0f08ddf7551298ca1629f91209583f8e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|211|1|V|python
-	            return None
-54f3bdc63e045efd9f3f84b5c6ac2d00|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|199|18|V|python
-	        print(uri)
-c9662d3553bfface61035a48f7184552|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|196|22|V|python
-	                    te
-702b95fc4e6e9a135d60a55254e5911b|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|175|30|V|python
-	                        print(uri)
-c6901e25229191fd318b8f86915af128|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|179|99|v|
-	bpo:MolecularInteraction
-3c333a3a51e9cf834d11784b5ac30414|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|168|47|V|python
-	                        individual = self.createIndividualFromTemp(uri)
-9d643c88ec18abfcee8ff719f46ae2af|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|206|47|V|python
-	        # print("\t\t", self.getURIHeader(uri))
-2960c73ab4b79f79104586c9807badfa|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|207|43|V|python
-	            # print("\t\t", self.getURIHeader(i.subject))
-9541f4ab6d4a540098f3aafc6796da96|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|172|1|V|python
-	                        prouri = self.toURI(col[1], prefix)
-	                        individual = self.createIndividualFromTemp(prouri, uri)
-dc6fcb97ebf42fa42a57c979e55e5152|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|178|1|V|python
-	                        individual = self.createIndividualFromTemp(prouri, uri)
-1cdfd7f0ef9516073f68ecf2c7321a5e|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|178|1|V|python
-	                        individual = self.createIndividualFromTemp(prouri, uri)
-	                        self.owl_individuals.append(individual)
-b1d806df4ef4f606adb3d0fa42d7f8bb|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|183|25|V|python
-	                    individual = self.createIndividualFromTemp(uri)
-bc9ca6b4b1a63820dc8f8b9ef65d0a98|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|21|1|V|python
-	        text = list()
-	        with open(file) as f:
-	            for line in f:
-	                text.append(line.replace("\n", ""))
-	                if len(line) > 3 and "#################" in line:
-	                    break
-	        assert len(text) > 1
-	        text.insert(0, "#################################################################")
-9a671a745dd1f73f8669c060870e9364|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|36|1|V|python
-	                text.append(line.replace("\n", ""))
-	                if len(line) > 3 and "#################" in line:
-	                    break
-	        assert len(text) > 1
-0e72a14f8f412ba2b0c8c179e931d2c7|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|33|21|V|python
-	        text = list()
-4bc413ec9f63611295965ee1180d55e1|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|206|1|V|python
-	            if text[0:1] == "<" and text[-1:] == ">":
-	                return text
-ed46706efc5fc28683ad4b7f30e0cd36|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|208|13|V|python
-	            else:
-ffe6e71ad3211067c2d62d288b93f1d8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|208|1|V|python
-	            for key in prefix:
-	                if re.match(r"^"+key, text):
-	                    text = text.replace(key, prefix[key][:-1], 1)
-	                    text += ">"
-	                    return text
-e4dacd9b9bb83c10f3e371bc98acb6bb|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|228|27|V|python
-	            for oi in self.
-2fade64727a4077d263ac5a816313480|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|229|20|v|python
-	self.toURI(relation["property"]
-1a8db4c996d8ed8289da5f957879ab94|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|230|51|v|python
-	property
-7af6d9cec07bd258ea1aa30f471595e8|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|227|1|V|python
-	        for i in self.owl_individuals_temp:
-2a29fc4c24dd015011cfe0da6913e8dc|file:///Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC/owl/Owl/LibOwl.py|234|28|V|python
-	                        pass
-109f6de4545ca90fc5d56bfc4bd73581|file:///Users/kouiti/localfile/dev-glycosim/venv/bin/activate.fish|32|1|V|fish
-	set -gx VIRTUAL_ENV "/Users/kouiti/localfile/dev-glycosim/venv"
-b501f5c2b3ca03d02d715400fa19f2a5|file:///Users/kouiti/localfile/venv/bin/activate.fish|1|1|V|fish
-	# This file must be used with "source <venv>/bin/activate.fish" *from fish*
-	# (https://fishshell.com/); you cannot run it directly.
+d2c66ec16d5ef72e44509b3db63f269b|file:///Users/kouiti/localfile/dev-glycosim/docker-compose.yml|48|29|v|yaml
+	47be1b5935b2755fa1c1abd7032b132b28eb6cda164b063f729046d7512d2028
+ff1bdf97e26f2bb75b876dd7ec23dc97|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|96|14|V|typescriptreact
+	  if (error === null) {
+314a65b4b82013be5ff1883708826c01|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|102|1|V|typescriptreact
+	    run();
+	    createGssParam("test gssparam");
+5cb7a3622119affdea2430a9d20e3793|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|96|1|V|typescriptreact
+	  try{
+	    a = 3
+	  }
+99617ab405a782cabb9891d4639b7397|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|98|3|V|typescriptreact
+	  const a = "a"
+841e094757ac6d488ed3a44ff7d816d7|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|23|1|V|typescriptreact
+	      <Button variant="primary" onClick={handleShow}>
+	        ok
+	      </Button>
+d2d4f7af6027cee3ecca91c3c7ed0c4a|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|126|42|v|typescriptreact
+	handleShow
+1f294b63c17cf72e6ebd34e16597bc49|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|126|1|V|typescriptreact
+	        <Button variant="primary" onClick={() => createGssParam("testparam")}>
+	          ok
+	        </Button>
+cb5e100e5a9a3e7f6d1fd97512215282|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|64|10|v|typescriptreact
+	error
+71045b1055ba351cef0db3a36b1f74d9|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|64|14|v|typescriptreact
+	setError
+63e0fdfcde97a0335167f941849ed1ab|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|38|1|V|typescriptreact
+	  useEffect(() => {
+df1f25b007a09822e4f976328740a638|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|64|1|V|typescriptreact
+	  }, [router.isReady, estimationRunning]);
+8ecc1b8349583bfc0b68e17ffd3db533|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|62|1|V|typescriptreact
+	  const [updateCount, setUpdateCount] = useState<number>(0);
+	  const [error, setError] = useState<string | null>(null);
+	  const condition = props.libgssparam.condition;
 	
-	function deactivate  -d "Exit virtual environment and return to normal shell environment"
-	    # reset old environment variables
-	    if test -n "$_OLD_VIRTUAL_PATH"
-	        set -gx PATH $_OLD_VIRTUAL_PATH
-	        set -e _OLD_VIRTUAL_PATH
-	    end
-	    if test -n "$_OLD_VIRTUAL_PYTHONHOME"
-	        set -gx PYTHONHOME $_OLD_VIRTUAL_PYTHONHOME
-	        set -e _OLD_VIRTUAL_PYTHONHOME
-	    end
+	  // const onFormChange = (e: any) => {
+	  //   let key = e.target.id;
+	  //   let value = e.target.value;
+	  //   if (condition.update(key, value)) {
+	  //     console.log(key + "\t->\t" + value);
+	  //     setUpdateCount(updateCount + 1);
+	  //   } else {
+	  //     alert("Error: " + key + "\t->\t" + value);
+	  //   }
+	  // };
 	
-	    if test -n "$_OLD_FISH_PROMPT_OVERRIDE"
-	        functions -e fish_prompt
-	        set -e _OLD_FISH_PROMPT_OVERRIDE
-	        functions -c _old_fish_prompt fish_prompt
-	        functions -e _old_fish_prompt
-	    end
+	  useEffect(() => {
+	    const run = () => {
+	      console.log(props.libgssparam);
+	    };
+	    const createGssParam = async (title: string) => {
+	      const res = await GssParam.create({
+	        title: title,
+	        body: "",
+	        result_json: {},
+	        user_name: "",
+	        gssmodel_id: 0
+	      });
+	      if (res === null) {
+	        return;
+	      } else if (res.status > 400) {
+	        setError(res.data);
+	      }
+	      console.log("create gssparam", title);
+	    };
+	    createGssParam("testparam");
+	  }, [router.isReady, estimationRunning]);
 	
-	    set -e VIRTUAL_ENV
-	    set -e VIRTUAL_ENV_PROMPT
-	    if test "$argv[1]" != "nondestructive"
-	        # Self-destruct!
-	        functions -e deactivate
-	    end
-	end
+	  return (
+	    <Card style={Styles.maxSubHeight}>
+	      {/* <ErrorModal error={error} setError={setError} /> */}
+	      {/* <Card.Header className="text-white" id="basecolor"> */}
+	      {/*   Simulation */}
+	      {/* </Card.Header> */}
+	      {/* <Card.Body> */}
+	      {/*   <Form.Group className="mb-3"> */}
+	      {/*     <Form.Label>Estimation tools</Form.Label> */}
+	      {/*     <Form.Select id="tool" onChange={onFormChange}> */}
+	      {/*       <option>BioMASS</option> */}
+	      {/*       <option>BioMASS</option> */}
+	      {/*     </Form.Select> */}
+	      {/*   </Form.Group> */}
+	      {/*   <Form.Group className="mb-3"> */}
+	      {/*     <Form.Label>Estimation methods</Form.Label> */}
+	      {/*     <Form.Select id="method" onChange={onFormChange}> */}
+	      {/*       <option>Genetic algorithm</option> */}
+	      {/*       <option>Genetic algorithm</option> */}
+	      {/*     </Form.Select> */}
+	      {/*   </Form.Group> */}
+	      {/*   <Form.Group className="mb-3"> */}
+	      {/*     <Form.Label>Max iteration</Form.Label> */}
+	      {/*     <Form.Control id="max_iteration" value={condition.max_iteration} onChange={onFormChange} /> */}
+	      {/*   </Form.Group> */}
+	      {/*   <Form.Group className="mb-3"> */}
+	      {/*     <Form.Label>Estimation times</Form.Label> */}
+	      {/*     <Form.Control id="estimation_times" value={condition.estimation_times} onChange={onFormChange} /> */}
+	      {/*   </Form.Group> */}
+	      {/*   <GssParamCreateModal createGssParam={createGssParam} run={run} /> */}
+	      {/* </Card.Body> */}
+	    </Card>
+	  );
+2ae0a3a2620d2e2b12c7d3b3205112ce|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|97|7|v|typescriptreact
+	router.isReady, estimationRunning
+0c8927e0e8041815ecedf20d358aad73|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|96|6|V|typescriptreact
+	    createGssParam("testparam");
+ccac313665c356935a1273edd702c88d|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|97|1|V|typescriptreact
+	  createGssParam("testparam");
+d1369d44dc169d0ac0d703e84562132c|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|78|1|V|typescriptreact
+	    const run = () => {
+	      console.log(props.libgssparam);
+	    };
+	    const createGssParam = async (title: string) => {
+	      const res = await GssParam.create({
+	        title: title,
+	        body: "",
+	        result_json: {},
+	        user_name: "",
+	        gssmodel_id: 0
+	      });
+	      if (res === null) {
+	        return;
+	      } else if (res.status > 400) {
+	        setError(res.data);
+	      }
+	      console.log("create gssparam", title);
+	    };
+e6ef07c48b96c6b6202f05189d5a2b78|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|77|1|V|typescriptreact
+	  useEffect(() => {
+	    createGssParam("testparam");
+	  }, []);
+659aab8b8aa3ed94ac47b9db63dbf069|file:///Users/kouiti/localfile/dev-glycosim/models/GssModelSession/repository.py|52|18|V|python
+	    print(content)
+277672db861e9ddebff1228753acddce|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|93|3|V|typescriptreact
+	    console.log("create gssparam", title);
+4aa924fd656b38442a63cca706bf54a4|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|55|1|V|python
+	#     if request.method == 'POST' and request.headers['Content-Type'] != 'application/json':
+	#         abort(400)
+154b0f536cc25b61b156120ebbb3ea42|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|34|24|v|python
+	gssparam/create
+7ccbc066f23bfde3516e16e7aec1d9e8|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|30|20|V|typescriptreact
+	    console.log(data);
+076e7e3a760f773995a582f680dc40c8|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|31|1|V|typescriptreact
+	      const res1 = await axios.post(ApiUrl + "gssparam/create", data);
+f2978fc89349e10dd6ea39b9b298716e|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssmodelsessions.py|22|62|v|python
+	, methods=["POST"])
+568a5131cb6ce0c1167b879691726f90|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|36|1|V|python
+	    print("start create gssparam")
+	    if request.method == 'POST' and request.headers['Content-Type'] != 'application/json':
+	        abort(400)
+4bac2d71e2d8e75ea4a03f7be9a0d06f|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|30|1|V|typescriptreact
+	    const data = {
+	      title: dataa.title,
+	      body: dataa.body,
+	      result_json: dataa.result_json,
+	      user_name: dataa.user_name,
+	      gssmodel_id: dataa.gssmodel_id
+	    };
+89bb625629852dc886148fd05a87b5e4|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|29|9|V|typescriptreact
+	  create: async (dataa: GssParamObject) => {
+	    try {
+f06a13b45b6a425c3c34a5586c2c7608|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssmodelsessions.py|6|1|V|python
+	from models import GssModel, GssModelSession
+c85a67ea62ca8f9a1e4dfc033408395f|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|8|1|V|python
+	from models.models import (GssEstimationConditionData, GssModel, GssParam,
+	                           GSSSession, GssWorkflow)
+31e7be6fef6970e83b215d3e7dad1190|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|8|30|v|python
+	GssModelSession
+3bcfae1c7fe0af046df4d923d6e05d36|file:///Users/kouiti/localfile/dev-glycosim/models/GssModelSession/repository.py|31|24|V|python
+	    print("create content")
+7e3a435393d6bc52ccf0e88fae5ecc84|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|67|1|V|python
+	        title=title,
+	        body=body,
+	        result_dir=result_dir,
+	        user_name=user_name,
+	        gssmodel_id=gssmodel_id
+d5d3db1765287eef77d7927cc956f50a|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|19|14|v|python
+	title
+841a2d689ad86bd1611447453c22c6fc|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|20|14|v|python
+	body
+80b6a00e37c554ad337a41a12a191337|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|21|24|V|python
+	            "date": model.date.strftime("%Y/%m/%d %H:%M"),
+65be288b282165ea7e0e6c12c6fcfcef|file:///Users/kouiti/localfile/dev-glycosim/models/GssModel/repository.py|16|1|V|python
+	            "sbml_text": writeSBMLToString(readSBML(model.sbml_dir)),
+93ce058de86d1d442fdcd7ac8a6bc39f|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|63|1|V|python
+	        with open(result_dir, 'w') as f:
+	            json.dump(result_json, f, indent=4)
+b7017157a54e7f5665756d279b87eeed|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|14|15|v|python
+	result_dir
+b9ef165b255673dde47bff07f4390fb1|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|15|14|v|python
+	dump
+0ff6bef5199ab0394f252e8b6d0577ff|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|15|19|v|python
+	result_json, f, indent=4
+4d153b506043143a027a8f9565fcbad4|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|21|26|v|python
+	writeSBMLToString(readSBML(model.sbml_dir)),
+35adda3afae918d42e2a24bdc1ac2ece|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|36|1|V|typescriptreact
+	  const router = useRouter();
 	
-	# Unset irrelevant variables.
-	deactivate nondestructive
+	  useEffect(() => {
+	    if (router.isReady && libsbml === null) {
+	      var query = { ...router.query };
+62f50c7a98fbad5c8593578064a201aa|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|66|1|V|typescriptreact
+	  useEffect(() => {
+	    if (router.isReady && libsbml === null) {
+	      var query = { ...router.query };
+5cdf6c704dd177bfeeea25ba5c95e499|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|4|1|V|typescriptreact
+	import { useRouter } from "next/router";
+0ea2ab514d2262d0230bf2eac0c856f4|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|101|19|v|typescriptreact
+	resdata
+a1f78450f604b526c2e64deb2ed2a84d|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|32|22|V|typescriptreact
+	      console.log(res1);
+d1b9977e96be3c62c66fd9cf4ec51ec1|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|37|14|V|typescriptreact
+	    return res;
+8956e1cda345e2a103fd858ff312b3f0|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|37|5|V|typescriptreact
+	    c
+c71be1c4cab7e9919e0f6aafb3e8c1b4|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|37|15|V|typescriptreact
+	    console.lgo
+91e7e433e34c3b8843334c1467001cb7|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|33|15|v|typescriptreact
+	res1
+ba3d88743f723fa697dbf2225cba458e|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|101|21|V|typescriptreact
+	      console.log(res);
+b7458fa42038b0617824ac6ffcaf6d2a|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|99|18|V|typescriptreact
+	    (async () => {
+2b9959c12285ad7e50e4e6e813425d3b|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|100|1|V|typescriptreact
+	      console.log(res);
+	      router.query["gssparam"] = "jio";
+	    })();
+2b0513850fa1e5c7ebc853f2df6af7ca|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|99|17|v|typescriptreact
+	await
+12e0da93e9b617747ee2bdf3c413910c|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|36|1|V|python
+	        print(request.json["result_json"])
+1fa2650fa13c3ab380d9ab7fe60c1253|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|36|1|V|python
+	        print(request.json["result_json"])
+	        print(request.json["result_json"])
+	        print(request.json["result_json"])
+	        print(request.json["result_json"])
+	        print(request.json["result_json"])
+	        print(request.json["result_json"])
+	        print(request.json["result_json"])
+	        print(request.json["result_json"])
+	        print(request.json["result_json"])
+	        print(request.json["result_json"])
+	        print(request.json["result_json"])
+	        print(type(request.json["result_json"]))
+abed9c983cd4cabbb36c459e663fe201|file:///Users/kouiti/localfile/glycovid_PSIQUIC/uri_list/object_uri_list2.csv|2|1|V|
+	mi	http://purl.obolibrary.org/obo/MI_	\d{4}
+ce74e2fa8cecd8e3bc53915179abe9eb|file:///Users/kouiti/localfile/glycovid_PSIQUIC/uri_list/object_uri_list2.csv|3|1|V|
+	ia	http://purl.obolibrary.org/obo/MI_	\d{4}
+ed7d41399560f80c387ee07f4c04f29f|file:///Users/kouiti/localfile/web-glycosim/next/pages/signaling.tsx|25|1|V|typescriptreact
+	  const [userName, setUserName] = useState<string | null>(null);
+b2ee912b91d69b435159c7c3f6df7f5f|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|12|7|v|typescriptreact
+	Number
+4dba6484c755e02f276488d5a3402282|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|135|30|v|typescriptreact
+	createGssParam
+7e07095b9e6cd009c9cd9a1044a20423|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|80|1|V|typescriptreact
+	  const run = () => {
+	    // props.setEstimationRunnig
+	    console.log(props.libgssparam);
+	  };
+51e19f59e833beaf5a38207229f438f7|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|16|21|v|typescriptreact
+	setTitle
+6a7b0d702b5c826f0f520928669d9a09|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|11|1|V|typescriptreact
+	  run: any;
+	  createGssParam: any;
+18a81b2b7d0f6e5fb7acba0efaf2c80c|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|12|20|V|typescriptreact
+	setLibgssparam: any;
+f42f0188040d0b9573f31d4a9f75c38f|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|20|25|V|typescriptreact
+	    setTitle(e.target.value);
+ad74ba7b3b1211007f119719651efedb|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|46|1|V|typescriptreact
+	              props.run();
+	              props.createGssParam(title);
+efd471b65286a0bac579e2081d01e056|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|82|1|V|typescriptreact
+	    const res = await GssParam.create({
+	      title: title,
+	      body: "",
+	      result_json: null,
+	      user_name: "",
+	      gssmodel_id: 0
+	    });
+	    if (res === null) {
+	      return;
+	    } else if (res.status == 400) {
+	      setError(res.data);
+	    } else {
+	      console.log(res.data);
+	    }
+b6379ffa4ff46d0e5f5c68bf000048bf|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|7|4|V|typescriptreact
+	import { GssParam } from "api/GssParam";
+aaca0d72041718d329bb6d81acf96547|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|25|5|V|typescriptreact
+	  | "experimentalData"
+	  | "estimationResult"
+	  | "analyseData"
+	  | "estimationCondition"
+	  | null;
 	
-	set -gx VIRTUAL_ENV "/Users/kouiti/localfile/venv"
+0d3b1ef5f2787933cbf61c628b158195|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|47|33|V|typescriptreact
+	        console.log(model_session);
+9b0b397b5654c11f6af2ecdbb8568e9d|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|9|9|V|typescriptreact
+	  import 
+c35224d314cf5c247bae94e7981aa342|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|15|1|V|typescriptreact
+	    this.sbml_text = sbml_text;
+	    this.listOfSpecies = this.getListOfSpecies();
+	    this.listOfParameters = this.getListOfParameters();
+	    this.listOfReactions = this.getListOfReactions();
+41c7ee7476c0603f2b1d24235bbaca4d|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|15|1|V|typescriptreact
+	import { ModelSession } from "api/ModelSession";
+ae34064d9b4da1438f6cca787fc3b183|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|12|1|V|typescriptreact
+	      this.sbml_text = sbml_text;
+	      this.listOfSpecies = this.getListOfSpecies();
+	      this.listOfParameters = this.getListOfParameters();
+	      this.listOfReactions = this.getListOfReactions();
+11c2b4cd2a2d0a3289d26932a28b3b79|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|19|46|v|typescriptreact
+	elSession
+b7dccc7d9373cd4717256318909fcebe|file:///Users/kouiti/localfile/web-glycosim/next/api/ModelSession.tsx|6|11|v|typescriptreact
+	Param
+6edbed9acd3d504fb0fe212b5d02b182|file:///Users/kouiti/localfile/web-glycosim/next/api/ModelSession.tsx|7|1|V|typescriptreact
+	  name: string;
+	  value: number;
+3f4d655cc71c4d52c08a6bb0ca2994c0|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|2|10|v|typescriptreact
+	ModelSession
+3ec436fafc395e5f229e09949fcaffd6|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|17|18|V|typescriptreact
+	      this.date = 
+04f37433b2601dec4194baba61ca452e|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|25|7|V|typescriptreact
+	    this.sbml_text = modelsession.sbml_text;
+6eddb51fb5726c78a7aa5d3bc5165cea|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|48|36|v|typescriptreact
+	modelsession
+4650838d55038f54821bc36d091015eb|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|47|37|v|typescriptreact
+	model_session
+37a6259cc0c1dae299a7866489dff0bd|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|34|58|v|typescriptreact
+	null
+e3b2d57a4a813c86da03c7c421eaaf9c|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|57|31|v|typescriptreact
+	LibSbml
+6efecc4e4e959b7ce9af68d68f95e282|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|16|1|V|typescriptreact
+	    this.isNull = true
+b326b5062b2f0e69046810717534cb09|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|22|19|v|typescriptreact
+	true
+44bf971321bb860ced370920ef688b84|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|22|1|V|typescriptreact
+	      this.isNull = false
+93bad0d53c4cf509fbba115018f18732|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|25|1|V|typescriptreact
 	
-	set -gx _OLD_VIRTUAL_PATH $PATH
-	set -gx PATH "$VIRTUAL_ENV/bin" $PATH
+	  isNull(): boolean {
+	    if (this.sbml_text === null) {
+	      return true;
+	    } else {
+	      return true;
+	    }
+	  }
 	
-	# Unset PYTHONHOME if set.
-	if set -q PYTHONHOME
-	    set -gx _OLD_VIRTUAL_PYTHONHOME $PYTHONHOME
-	    set -e PYTHONHOME
-	end
+c7a7218fe0b1c2454373d7c2730a9c4f|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|12|4|V|typescriptreact
+	  is
+c5697e288636064baa31a3439884a19d|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|61|1|V|typescriptreact
+	          title: libgssparam.title,
+	          body: "",
+	          result_json: null,
+	          user_name: "",
+	          gssmodel_id: 0
+3a2cdcaf7214133cee21a98637b4e571|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|13|1|V|typescriptreact
+	import { LibGssParam } from "functions/libgssparams/LibGssParam";
+ca9a91fea43602a92f13a3f5e039d786|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|30|24|v|typescriptreact
+	GssParamObject
+b09ac0ec38e01459d9c91a5b8f4784a6|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|31|1|V|typescriptreact
+	    data = {
 	
-	if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
-	    # fish uses a function instead of an env var to generate the prompt.
+	    }
+62af61b46e10a73aac0deb024f0f281d|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|34|7|V|typescriptreact
+	      body: this.body,
 	
-	    # Save the current fish_prompt function as the function _old_fish_prompt.
-	    functions -c fish_prompt _old_fish_prompt
-	
-	    # With the original prompt function renamed, we can override with our own.
-	    function fish_prompt
-	        # Save the return status of the last command.
-	        set -l old_status $status
-	
-	        # Output the venv prompt; color taken from the blue of the Python logo.
-	        printf "%s%s%s" (set_color 4B8BBE) "(venv) " (set_color normal)
-	
-	        # Restore the return status of the previous command.
-	        echo "exit $old_status" | .
-	        # Output the original/"old" prompt.
-	        _old_fish_prompt
-	    end
-	
-	    set -gx _OLD_FISH_PROMPT_OVERRIDE "$VIRTUAL_ENV"
-	    set -gx VIRTUAL_ENV_PROMPT "(venv) "
-	end
-877236c5f2d2a3ef1c8a1246570e0979|file:///Users/kouiti/localfile/dev-glycosim/venv/bin/activate.fish|1|1|V|fish
-	# This file must be used with ". bin/activate.fish" *from fish* (http://fishshell.org)
-	# you cannot run it directly
-	
-	function deactivate  -d "Exit virtualenv and return to normal shell environment"
-	    # reset old environment variables
-	    if test -n "$_OLD_VIRTUAL_PATH"
-	        set -gx PATH $_OLD_VIRTUAL_PATH
-	        set -e _OLD_VIRTUAL_PATH
-	    end
-	    if test -n "$_OLD_VIRTUAL_PYTHONHOME"
-	        set -gx PYTHONHOME $_OLD_VIRTUAL_PYTHONHOME
-	        set -e _OLD_VIRTUAL_PYTHONHOME
-	    end
-	
-	    if test -n "$_OLD_FISH_PROMPT_OVERRIDE"
-	        functions -e fish_prompt
-	        set -e _OLD_FISH_PROMPT_OVERRIDE
-	        functions -c _old_fish_prompt fish_prompt
-	        functions -e _old_fish_prompt
-	    end
-	
-	    set -e VIRTUAL_ENV
-	    if test "$argv[1]" != "nondestructive"
-	        # Self destruct!
-	        functions -e deactivate
-	    end
-	end
-	
-	# unset irrelevant variables
-	deactivate nondestructive
-	
-	set -gx VIRTUAL_ENV "/Users/kouiti/localfile/dev-glycosim/venv"
-	
-	set -gx _OLD_VIRTUAL_PATH $PATH
-	set -gx PATH "$VIRTUAL_ENV/bin" $PATH
-	
-	# unset PYTHONHOME if set
-	if set -q PYTHONHOME
-	    set -gx _OLD_VIRTUAL_PYTHONHOME $PYTHONHOME
-	    set -e PYTHONHOME
-	end
-	
-	if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
-	    # fish uses a function instead of an env var to generate the prompt.
-	
-	    # save the current fish_prompt function as the function _old_fish_prompt
-	    functions -c fish_prompt _old_fish_prompt
-	
-	    # with the original prompt function renamed, we can override with our own.
-	    function fish_prompt
-	        # Save the return status of the last command
-	        set -l old_status $status
-	
-	        # Prompt override?
-	        if test -n "(venv) "
-	            printf "%s%s" "(venv) " (set_color normal)
-	        else
-	            # ...Otherwise, prepend env
-	            set -l _checkbase (basename "$VIRTUAL_ENV")
-	            if test $_checkbase = "__"
-	                # special case for Aspen magic directories
-	                # see http://www.zetadev.com/software/aspen/
-	                printf "%s[%s]%s " (set_color -b blue white) (basename (dirname "$VIRTUAL_ENV")) (set_color normal)
-	            else
-	                printf "%s(%s)%s" (set_color -b blue white) (basename "$VIRTUAL_ENV") (set_color normal)
-	            end
-	        end
-	
-	        # Restore the return status of the previous command.
-	        echo "exit $old_status" | .
-	        _old_fish_prompt
-	    end
-	
-	    set -gx _OLD_FISH_PROMPT_OVERRIDE "$VIRTUAL_ENV"
-	end
-19ad89bc3e3c9d7ef68b89523eff1987|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|3|10|v|dockerfile
-	install
-fb8c973a9dd1d11170f1e4081ba55644|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|9|1|V|yaml
-	    command: sh -c "cd next && yarn dev"
-5577cd9784e7273d47a08b522c8e533a|file:///Users/kouiti/localfile/dev-glycosim/Dockerfile|13|21|V|dockerfile
-	Run pip install amici
-87e6b96aaca0c417f0a33799904a8336|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|4|15|V|dockerfile
-	RUN npm upgrade
-b0f25f6b04cecdf0464bd5878ee783b6|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|3|3|V|dockerfile
-	RUN node npm install create-next-app
-ab3527caf8107939a36611f36f64ab9a|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|4|15|V|dockerfile
-	WORKDIR /usr/src/app
-1475c5f0419916587ccb7a2ff8ebd5aa|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|5|4|V|dockerfile
-	RUN 
-f62d5ebeda82522d2b6a359fa7790712|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|4|16|V|dockerfile
-	RUN yarn upgrade
-fd0c8ed3af52fc30d6b35374c130f352|file:///Users/kouiti/localfile/dev-glycosim/requirements.txt|17|1|V|text
-	python-copasi==4.28.226
-4b8bd9da920ae3e367c968cab8260755|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|9|9|V|dockerfile
-	RUN sudo apt install -y next
-381967dfa4390ce4fc3d701284136fcc|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|9|1|V|yaml
-	    command: sh -c "ls && yarn dev"
-bb3462b62cd8db3f9ba007d86f8d1c6d|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|10|21|v|yaml
-	yarn
-3dd1320bc9977a9c477a86b4ebd36f8e|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|10|1|V|yaml
-	    command: sh -c "next dev"
-72c78761d354d20aef9ebaba432914c9|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|11|21|v|yaml
-	next dev
-8f4ee4bc05587d826d825e68abbfce86|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|11|22|V|yaml
-	    command: sh -c "ls"
-d5390e2209f85dd3b219335bddb6cf9b|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|10|10|V|yaml
-	    command: sh -c "next dev"
-	    ports:
-515c385f1ddd1d3c2ea2ff444f4049e7|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|6|14|V|dockerfile
-	RUN yarn add next
-114b58be5748081c8d18660ad449572a|file:///Users/kouiti/localfile/web-glycosim/next-glycosim/package.json|46|1|V|json
-	        "@types/node": "^16.11.12",
-	        "@types/react": "^17.0.37",
-78960cef3d53b4c3a1d14ee4a5f2243e|file:///Users/kouiti/localfile/dev-glycosim/Dockerfile|14|6|V|dockerfile
-	RUN ls
-15bdb62db18e99ae38868123dcb865e1|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|7|4|V|dockerfile
-	RUN yarn add --dev typescript @types/react @types/node
-80b6cbb19e8f326dbaaa25d436379e29|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|8|1|V|dockerfile
-	RUN npm install -g @types/react @types/node
-e9d88eedf174f4de445e92ef91742efb|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|9|32|v|dockerfile
-	 @types/node
-c34739409f487cd6e789465a96c5942d|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|9|1|V|dockerfile
-	RUN npm install -g @types/react
-deb76c70b5c3ffb41c980e6f1b330130|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|10|20|v|dockerfile
-	@types/react
-411c141d2de7cacfadf34d1f86c01c10|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|4|1|V|dockerfile
-	# RUN yarn upgrade
-2ebeab208d61d1834f38b27ee6ef8a1b|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|5|1|V|dockerfile
-	# RUN npm upgrade
-	# RUN npm install -g next
-	# RUN npm install -g @types/node
-	# RUN npm install -g @types/react
-	# RUN npm install -g typescript
-47f87c4e5c238bf8e36038321d8493ef|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|10|1|V|yaml
-	    # command: sh -c "ls"
-	    # command: sh -c "next dev"
-647c6969bfdf9d53452d2671f1c14777|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|9|28|V|yaml
-	    command: sh -c "yarn dev"
-9c2bda9f4db8c9c8079284211b108dae|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|4|1|V|dockerfile
-	RUN yarn install
-	CMD ["yarn", "dev"]
-29eae5afdc02363a393aa1d5cb51fdd3|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|2|1|V|dockerfile
-	COPY ./next-glycosim /usr/src/app/next-glycosim
-	WORKDIR /usr/src/app/next-glycosim
-03e3c1dab38543de3ecd3058bb423f55|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|1|6|v|dockerfile
-	node:16.13.0
-f61d349189f07babfa1c3ee1538d48a6|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|5|1|V|yaml
-	    build:
-	      context: .
-	      dockerfile: Dockerfile
-07d812981e5cbe790c118096b3fc5ef7|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|7|21|v|yaml
-	yarn dev
-3a63c3a55f747f6f12c30e54c8e3b558|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|4|5|V|yaml
-	    image: node:16.13.0
-71050c148c668738d0b03634c7664c40|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|2|1|V|dockerfile
-	COPY ./next-glycosim /usr/src/app/next-glycosim
-4d49c02d202d53209c7bc4a361fe75ec|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|2|22|v|dockerfile
-	next-glycosim
-920ca6bb22a1d3c5b23c4ba72a7bb4f5|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|10|1|V|yaml
-	    # command: sh -c "yarn dev"
-af911a5fd5142ba8273bef5e5c82e9cd|file:///Users/kouiti/localfile/dev-glycosim/Dockerfile|14|1|V|dockerfile
-	RUN pip install python-copasi
-dd60fa07668fbdae54f85b272961f593|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|5|1|V|dockerfile
-	CMD ["yarn", "dev"]
-4fc728fa98ca7099d33b023fa4c69a57|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|7|1|V|yaml
-	    # volumes:
-	    #   - ./next-glycosim:/usr/src/app/next-glycosim
-	    # command: sh -c "cd next-glycosim && pwd && yarn install && yarn dev"
-d3dfc006c27dfced83dc9f59169fdfc3|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|11|1|V|yaml
-	      - ./next-glycosim/component:/usr/src/app/next-glycosim/component
-700c216fb376666eaeda0c892e8bdc09|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|12|25|v|yaml
-	component
-d6169c9e9414a6dd1f836d2d1e7cc6ba|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|1|1|V|dockerfile
-	FROM node:16.13.0
-	COPY ./next-glycosim /usr/src/app/next-glycosim
-	WORKDIR /usr/src/app/next-glycosim
-	RUN yarn install
-5487cbeeaeb0e8bdb21b70b3a8e5cdb5|file:///Users/kouiti/localfile/web-glycosim/Dockerfile|2|30|v|dockerfile
-	-glycosim
-861769f0082e3d62e5312193f9aa0ba5|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|12|1|V|yaml
-	      - ./next-glycosim/functions:/usr/src/app/next-glycosim/component
-	      - ./next-glycosim/component:/usr/src/app/next-glycosim/component
-	      - ./next-glycosim/component:/usr/src/app/next-glycosim/component
-f6afc2de51de6a6ccdd910a680b27be4|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|11|1|V|yaml
-	      - ./next/component:/usr/src/app/next/component
-637843f1fc2831623d2676669872d4fc|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|14|1|V|yaml
-	      - ./next/pages:/usr/src/app/next/pages
-f6f325d6fbce72b8709a8ab35cffa798|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|6|7|v|yaml
-	dockerfile: Dockerfile
-	    # volumes:
-	    #   - ./next-glycosim:/usr/src/app/next-glycosim
-	    # command: sh -c "cd next-glycosim && pwd && yarn install && yarn dev"
-	    volumes:
-	      - ./next/components:/usr/src/app/next/component
-	      - ./next/api:/usr/src/app/next/api
-	      - ./next/functions:/usr/src/app/next/functions
-	      - ./next/pages:/usr/src/app/next/pages
-	      - ./next/pages:/usr/src/app/next/pages
-	      - ./next/pages:/usr/src/app/next/pages
-	    command: sh -c "yarn dev"
-	    ports:
-	      - "3000:3000"
-b3b32a2d422265cd25c3323ed0157f81|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|15|16|v|yaml
-	pages
-382c6c84f52e9939acd34d49c73b235b|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|16|1|V|yaml
-	      - ./next/styles:/usr/src/app/next/styles
-bc4150d023d3255136db671d61ac93f2|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|17|16|v|yaml
-	styles
-ac0f28e2b311d544d6531cbff0e0b58a|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|17|1|V|yaml
-	      - ./next/package.json:/usr/src/app/next/package.json
-efe90a8e604a7c840e88d03a67f6b7d8|file:///Users/kouiti/localfile/web-glycosim/docker-compose.yml|18|48|v|yaml
-	package
-d047160bd91ac8e8a60fe7ebac6519d7|file:///Users/kouiti/localfile/web-glycosim/.gitignore|144|1|V|conf
-	>>>>>>> origin/main
-697dfb9b235783676b63d2f1ed07cad5|file:///Users/kouiti/localfile/web-glycosim/.gitignore|1|1|V|conf
-	<<<<<<< HEAD
-eadb5c346835f9c32dbf2680da74f46b|file:///Users/kouiti/localfile/dev-glycosim/docker-compose.yml|2|1|V|yaml
-	version: '2'
-	services:
-	  test-glycosim:
-	    build: .
-24902c694d09fec4753c0b215c146c0d|file:///Users/kouiti/localfile/dev-glycosim/Dockerfile|1|1|V|dockerfile
-	FROM python:3.7
-	
-	RUN pip install --upgrade pip
-dcd4f20cb1ea9cfceeadce61bb29a011|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|29|1|V|vim
-	noremap <silent>:v<CR> :! osascript -e 'tell application "Vivaldi" to reload active tab of window 1'<CR><CR>
-0849dfbb182a8d3dc486ececf29e86fc|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|30|34|V|vim
-	noremap <silent>:v<CR> :! ./run.sh<CR><CR>
-4b44f39d881afd73b75e7333b0f46f11|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|2|16|V|sh
-	print(" ijioj ")
-3583105ee33fe0045d347d1e6e336f42|file:///Users/kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/karabiner-vim.json|42|1|V|json
-	              "shell_command": "osascript -e 'display notification \"Release [caps lock] to leave\" with title \"-- NORMAL --\"'"
-6cc9e91ef8715887140f6a4d43deae06|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|4|15|v|sh
-	"shell_command": "osascript -e '
-d9beac868a1d679dc46f0529d45abcf2|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|3|1|V|sh
-	
-	display notification \"Release [caps lock] to leave\" with title \"-- NORMAL --\"'
-fd7f7111c996d33d1ad8a956c4b38e4a|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|20|1|V|vim
-	nnoremap :r<CR> :w<CR>:split<CR><C-w><C-w> :term python %<CR>
-cea7924e45aa08dc16c5efde5ed197cc|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|30|18|V|vim
-	noremap <silent>:g<CR> :! sh ~/dotfiles/dotfiles/nvim/run.sh<CR><CR>
-82ef35a79350310665fa851489d91c7b|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|1|20|V|sh
-	echo "eeeeeeeeeeeeee"
-b9a6ed27c1fc2a921e9b39ffe08e5c10|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|1|9|v|sh
-	$(pwd)/run.sh
-70a9c7a88563a091e355cb372a82ae7f|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|1|1|V|sh
-	if [ -e $(pwd)/run.sh ]; then
-39be3faa6756adbe3c5ceabd9265b7b9|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|3|1|V|sh
-	elif
-806385f162854ac7327a5ab4800afcf5|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|2|23|V|sh
-	  echo "eeeeeeeeeeeeee"
-7334ae4eff9f8cd2c41e9348cafa51c4|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|2|1|V|sh
-	  sh $(pwd)/run.sh
-0c89072f20f2d7c8a95c5ba6be980663|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|7|1|V|sh
-	elif [ -e $(pwd)/../../../run.sh ]; then
-	  sh $(pwd)/../../../run.sh
-f5a3c59f04bafd619dfdc405ec13a11d|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|16|18|V|sh
-	# sh $(pwd)/run.sh
-1dfa6b6c73f2f8f3234d4b2f59c6b612|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|15|18|V|sh
-	else python $(pwd)
-d196f8851f775e00440f4f10566270f1|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|33|1|V|vim
-	map :sc<CR> :tabnew<CR>:source ~/.config/nvim/shortcuts.vim<CR>
-ebf87251d092a6de9c12cc3e85c1707a|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|23|48|v|vim
-	shortcuts
-eb0d08a056c2dbf69dc5002dff71f7b4|file:///Users/kouiti/localfile/dev-glycosim/docker-compose.yml|16|1|V|yaml
-	    command:  bash -c 'python ./models/init.py;python -u app.py'
-0246ffebde551816b7dcda9a1aeff87e|file:///Users/kouiti/Desktop/docker-compose.yml|5|5|V|yaml
-	    command
-0f569db2140a79fa819958e8e299fb66|file:///Users/kouiti/Desktop/run.sh|1|1|V|sh
-	docker-compose build
-40a4954ef2e70d3992f31a758d27b073|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|16|7|V|sh
-	echo $1
-403c108a85f07faee42dd072ecf7bb4d|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|1|1|V|sh
-	echo $1
-	echo "-----------------"
-56cd360a529f959b012b27c82d217414|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|15|1|V|sh
-	else python $(pwd)$1
-b0da275520918e23dd615e2a747528f1|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|25|16|v|sh
-	build
-323733a14738f3b2e0e532f144ec1b1e|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|25|1|V|sh
-	docker-compose up
-2b2c3b5b92553dd92d08785d684927e9|file:///Users/kouiti/Desktop/docker-compose.yml|5|30|v|yaml
-	(----------------)
-419dcf6e5ca3d1165795d6d9452d2c30|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|26|1|V|sh
-	# python $(pwd)$1
-	
-	# docker-compose build
-	# docker-compose up
-	# docker-compose restart
-c72f7b0789f280523a1dc623007d443b|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|28|1|V|sh
-	tempates
-3a43b4f88325d94022c0efa9c2fa2f5a|file:///Users/kouiti/Desktop/docker-compose.yml|5|49|v|yaml
-	pandas
-2ea9510c37f7f89e4941ff75f62f21cb|file:///Users/kouiti/Desktop/docker-compose.yml|5|49|v|yaml
-	numpy
-f02113237a5a5fff03e34c9eeeb46640|file:///Users/kouiti/Desktop/docker-compose.yml|5|49|v|yaml
-	matplotlib
-690989f69514a4652b83b8fcdcf753c0|file:///Users/kouiti/Desktop/docker-compose.yml|5|1|V|yaml
-	    command:  bash -c 'python -V && pip install https://files.pythonhosted.org/packages/08/59/8cae65b611bed9b4b717848241c46cb1bb09176b1bc983923c6867e5b47b/python_copasi-4.34.251-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl'
-368a3c8f582b6567d72f6d1363eee187|file:///Users/kouiti/Desktop/docker-compose.yml|6|49|v|yaml
-	https://files.pythonhosted.org/packages/ff/f4/1300aaa85afb5d5e49b2997f8e8bd74dd636a111c8e0f994cd0d9d0ce231/python_copasi-4.34.251-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.whl
-fe4539c8e05744b28741f295232c09f3|file:///Users/kouiti/Desktop/docker-compose.yml|6|49|v|yaml
-	https://files.pythonhosted.org/packages/ff/f4/1300aaa85afb5d5e49b2997f8e8bd74dd636a111c8e0f994cd0d9d0ce231/python_copasi-4.34.251-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.whl'
-bfcfa4ee14b5aff8923f801dd7571d2e|file:///Users/kouiti/Desktop/docker-compose.yml|6|1|V|yaml
-	    command:  bash -c 'python -V && pip install https://files.pythonhosted.org/packages/55/84/1a1021cc61a8c5eefe81ea0fb2b52d6f926b36891896a8b62648f67a8ee3/python_copasi-4.34.251-cp37-cp37m-macosx_10_9_x86_64.whl'
-e6462c0b6d8dbada04ee2c5a85a36139|file:///Users/kouiti/localfile/dev-glycosim/Dockerfile|16|1|V|dockerfile
-	RUN 2to3 -f types -w /usr/local/lib/python3.7/site-packages/COPASI/__init__.py
-7336d81aa80097b5497f07c3de3ad3ae|file:///Users/kouiti/localfile/dev-glycosim/requirements.txt|18|1|V|text
-	python-libsbml==5.18.0
-a4752473f711f5a8b21fecf4c374ea45|file:///Users/kouiti/Desktop/docker-compose.yml|7|1|V|yaml
-	    # command:  bash -c 'python -V && pip install https://files.pythonhosted.org/packages/ff/f4/1300aaa85afb5d5e49b2997f8e8bd74dd636a111c8e0f994cd0d9d0ce231/python_copasi-4.34.251-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.whl'
-9627815faa73ab5f2915e15534472c1a|file:///Users/kouiti/localfile/dev-glycosim/Dockerfile|14|67|V|dockerfile
-	pip install --no-index --find-links=python-copasi-src python-copasi
-e21c3d1d12625502f885fa25dfce9a04|file:///Users/kouiti/localfile/dev-glycosim/Dockerfile|13|1|V|dockerfile
-	RUN pip install --no-index --find-links=python-copasi-src python-copasi
-98f35d702cbe21a0066f0e6324ef14b5|file:///Users/kouiti/Desktop/Dockerfile|3|24|V|dockerfile
-	COPY ./python-copasi-src
-42da6c7371d825a8f48ef987728b070a|file:///Users/kouiti/Desktop/Dockerfile|3|5|V|dockerfile
-	RUN .
-f2a88dd9865e05527758b3f3c1b9041a|file:///Users/kouiti/Desktop/docker-compose.yml|8|1|V|yaml
-	    # command:  bash -c 'cat /etc/issue && python -V && pip install python-copasi-src/python_copasi-4.34.251-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl'
-733d0dc8f32f92feb32dc6d3d793a4f6|file:///Users/kouiti/Desktop/docker-compose.yml|10|5|V|yaml
-	  command:  bash -c 'pwd'
-a6d51d0749a4e49a922139a1207eb299|file:///Users/kouiti/Desktop/docker-compose.yml|9|24|v|yaml
-	cat /etc/issue && python -V && pip install python-copasi-src/python_copasi-4.34.251-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-5257f1731f964828b49084b0c6b0e265|file:///Users/kouiti/Desktop/docker-compose.yml|9|1|V|yaml
-	    command:  bash -c 'pip install --no-index --find-links=python-copasi-src python-copasi'
-0fb60f20bc50c10c32016e9184a93da8|file:///Users/kouiti/Desktop/docker-compose.yml|10|24|v|yaml
-	p install --no-index --find-links=python-copasi-src python-copasi
-a9ab7492998f379135e88ef50bd4d3d4|file:///Users/kouiti/Desktop/docker-compose.yml|8|55|v|yaml
-	pip install python-copasi-src/python_copasi-4.34.251-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl'
-fe9ef1ac5ceab9bb3c306c1fed680381|file:///Users/kouiti/localfile/dev-glycosim/docker-compose.yml|17|1|V|yaml
-	    volumes:
-	      - .:/app
-b10a5807c02ba2143ba8d742dd49e087|file:///Users/kouiti/Desktop/docker-compose.yml|10|1|V|yaml
-	    command:  bash -c 'cat /etc/issue && python -V && pip install python-copasi-src/python_copasi-4.34.251-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl --log ./app/log.txt'
-228138857f025d0cc5c08f10b1206519|file:///Users/kouiti/Desktop/docker-compose.yml|11|24|v|yaml
-	cat /etc/issue && python -V && pip install python-copasi-src/python_copasi-4.34.251-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl --log ./app/log.txt
-3ac1acc77a2481f7fca797c3acd1e113|file:///Users/kouiti/Desktop/docker-compose.yml|11|1|V|yaml
-	    command:  bash -c 'uname&–-help'
-39a2a99102d01200c3a6c37d96ffb723|file:///Users/kouiti/Desktop/docker-compose.yml|15|84|v|yaml
-	2021 aarch64 GNU/Linux
-caddf4833a3077b63e8cd6a8921d5e7f|file:///Users/kouiti/Desktop/docker-compose.yml|6|1|V|yaml
-	    platform: linux/x86_64
-345ef9faeb95adaacac6d6c0f983b5ad|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|1|6|v|sh
-	${1%.*}.py
-d8f8604f080b409c8a0feb9c99c22164|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|3|6|v|sh
-	${1##*.}
-e344920f2c7a9b8f3dd0f7cd0d8ee6ee|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|8|6|v|sh
-	extention
-a647b7e31bef103874ccebe0b5e08ca3|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|1|1|V|sh
-	echo ${1%.*}.py
-	echo $1
-	echo ${1##*.}
-	echo --------------
-	
-a563f7f4a3299bfe4110d091364d87fe|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|1|1|V|sh
-	STRING=hello_world
-	echo $STRING
-44db4d2bc062e7a94502cdc0547eebd3|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|2|9|V|sh
-	echo run 
-8196fa7e8d3aa53798e2192251759fa3|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|4|1|V|sh
-	if [[ ${EXTENTION}="py" ]]; then
-	  python $(pwd)/$1
-4d968ead066f7772181d49081978ea2a|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|3|1|V|sh
-	[[ "$String1" == "$String2" ]]
-cbb11ed87dc8a95d81400c7f33c7c171|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|4|1|v|sh
-	echo
-b65fa9abece058f45306fcf787b8470d|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|5|2|V|sh
-	cd pwd
-8270e34a0cd096961f15e51672e774da|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|2|1|V|sh
-	echo run $1
-	
-acc60d3e3d1381c660e6186ec1376247|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|7|11|V|sh
-	  python $1
-b2c31c7bd00c5928e0e5a9bd85ef6934|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|7|1|V|sh
-	  docker-compose build
-92c4341f03d64ef4b33f7f1890c488df|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|6|1|V|sh
-	if [[ $1="Dockerfile" ]]; then
-	  docker-compose build
-	  docker-compose up
-3254677a7917c6c01f55212f86c57fbf|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|9|13|v|sh
-	Dockerfile
-2a551491cd87affebb06d7cf992a2f86|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|6|1|V|sh
-	echo $1
-	echo Dockerfile
-3ec16b07642198e0747caa57f801c912|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|6|1|V|sh
-	if [ "$1" == "Dockerfile" ]; then
-b4c8bef023d84f041e963a9f4a850be7|file:///Users/kouiti/dotfiles/test/app.py|1|6|v|python
-	("-------------")
-e6d463766f2df5d8832836fcb13a4c3a|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|7|17|V|sh
-	  echo dockerfile
-8d975905d5379bd29ccb34a7442e0e74|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|10|21|V|sh
-	  echo docker-compose
-b4473a0df580e09905384b3e9b5b072c|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|3|29|V|sh
-	echo -------------------------
-27e371cb018bfea36760921c8dac9190|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|15|4|V|sh
-	echo ----------------------------------------
-e11a395c650834cc512a39dbd5a1d284|file:///Users/kouiti/dotfiles/dotfiles/nvim/run.sh|15|1|V|sh
-	echo ----------------------------------------
-	echo
-d0505793d08c3b36418bf05b9fd90555|file:///Users/kouiti/localfile/glycovid_PSIQUIC/uri_list/object_uri_list2.csv|51|1|V|
-	ensembl	http://rdf.glycoinfo.org/dbid/ensembl/
-2e6601ed6b6f97ae3ab47b2f6ce35b09|file:///Users/kouiti/localfile/glycovid_PSIQUIC/uri_list/object_uri_list2.csv|52|1|v|
-	ensemblgenomes
-5cbb1ee074b5422b178490f3108d33fb|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/LibOwl.py|17|12|V|python
-	        self
-9af21be0b48fba2d6248eb3321e7a690|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/LibOwl.py|16|1|V|python
-	        # self.owl_individuals = self.getOwlIndividuals(template_file)
-23b79ae0fc0f07a3669598dd23c694cc|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/LibOwl.py|235|39|v|python
-	individual
-cc5673704b1ee070c24945339f5ab4d5|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/LibOwl.py|235|40|V|python
-	                                print(ii)
-b906ef041dc8c99ac8b89d98ea149354|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/LibOwl.py|228|23|V|python
-	        print(property)
-9812133be3a8f0715d08eedaba69d775|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/LibOwl.py|234|39|v|python
-	indiividual
-39ea49ae3c0d45f0380177567af2fc2d|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/LibOwl.py|233|31|V|python
-	                    for o in self.toURI(relation["object"]):
-dd0071a036e7f138a51c975bfd7247c9|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/LibOwl.py|145|1|V|python
-	        with open(file) as f:
-	            isRdf = False
-	            prefix = dict()
-	            rdfs = list()
-	            for line in f:
-	                if line == "\n":
-	                    if isRdf:
-	                        rdfs.append(rdf)
-	                    rdf = []
-	                    isRdf = True
-	                    continue
-	                if not isRdf:
-	                    cols = line.split(" ")
-	                    prefix[cols[1]] = cols[2]
-	                else:
-	                    line = line.replace("\n", "")
-	                    rdf.append(line)
-	                if line == "\n":
-	                    rdfs.append(rdf)
-	                    rdf = []
-	                    isRdf = True
-	                    continue
-	        # create indivisdual instance from rdf matrix
-	        # for i in self.owl_individuals:
-	        #     print(i.type)
-	        # print(prefix)
-	        for rdf in rdfs:
-9f47d9e00a14e7ea62efa1048ebac757|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/LibOwl.py|303|1|V|python
-	if __name__ == "__main__":
-	    owl = LibOwl("owl/1_19/psicquic1_19.owl")
-	    owl.importRdf("turtle/IntAct/IntAct1.ttl", "bpo:MolecularInteraction")
-46637a3eed5d5efbbb4bdfb2148e8206|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|2|1|V|python
-	    """create owl data from spo list
-	    input:
-	        {
-	            s: string = "http://glycoinfo.org/dbid/imex/IM-23322"
-	        }[]
-	
-	
-	    """
-28e46788bfed5ce2a54fe1ceb968df46|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|34|14|V|python
-	    owl = LibOwl("owl/1_19/psicquic1_19.owl")
-acb4c29d10b58ec3f1781cc333858064|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|34|14|V|python
-	    owl.importRdf("turtle/IntAct/IntAct1.ttl", "bpo:MolecularInteraction")
-9f3a128342712a236603956b33310242|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|34|7|v|python
-	importRdf
-dcc8766732c0921f4240437ed3fcd877|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|24|1|V|python
-	    # create indivisdual instance from rdf matrix
-	    # for i in self.owl_individuals:
-	    #     print(i.type)
-	    # print(prefix)
-e48df0f0f93e6543d2d5ca012913d306|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|178|1|v|
-	<https://identifiers.org/matrixdb.association:ensembl_ENSG00000023445__uniprotkb_Q04206>
-201f5fbaa92d39ddc37b41fb0f05ecc7|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/temp.tsv|14|7|v|
-	<https://identifiers.org/matrixdb.association:ensembl_ENSG00000023445__uniprotkb_Q04206>,
-05814f86a71d64a70aaa78fdd904d3b5|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|180|90|v|
-	obo:IAO_0000119
-3f10409ec3c3df30ae1ca525805ac711|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|32|1|V|python
-	            "obo:IAO_0000119": "",
-62ea560dd99d9dfa0374dad6f5cb32f4|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|33|1|V|python
-	            "": "",
-f82828209d880140a377c329d31c339f|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|154|52|v|
-	obo:NCIT_C93638
-25b5af91bb1ee339e4d4c2d21cfafa30|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|181|90|v|
-	obo:INO_0000154
-2875b540694164610be001d66e1efd3f|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|182|90|v|
-	<http://rdf.glycoinfo.org/ontology/interaction#has_interactor_A>
-a5b8ef941c58794bb707d8aeb2680975|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|33|34|V|python
-	            "obo:INO_0000154": "",
-6d2f27c5ab7ae6ef019a0d91848631fa|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|174|69|v|
-	<http://biomodels.net/SBO/SBO_0000241> .
-5ab1b2527fc6ae7990103802af175e50|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|34|1|V|python
-	            "<http://rdf.glycoinfo.org/ontology/interaction#has_interactor_A>": "<http://biomodels.net/SBO/SBO_0000241>",
-668418c0b0f4d4b914be728df7fe6089|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|184|90|v|
-	bpo:interactionType
-d4afa7d735aaecd403b45785fcddb613|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|185|90|v|
-	bpo:organism
-b4b95321575789029f00343418748094|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|164|52|v|
-	obo:EUPATH_0000591
-1d751f95085baea1656e7821a146648b|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|186|90|v|
-	dc:identifier
-a010e7e6675b7c46654465a541c1698e|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|159|54|v|
-	<http://rdf.glycoinfo.org/ontology/interaction#InteractionId> .
-a104857db42ae681bf411e27b2ba1a4a|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|187|89|v|
-	 dc:source
-4debaa64afe15ad9c294eb34feafd1bc|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|188|90|v|
-	bao:BAO_0002875
-b64362ac61c5efbd0dfadeffe95f28de|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|6|14|v|
-	<http://purl.obolibrary.org/obo/
-37278703605db4ab3736f17cc8f334a4|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|5|14|v|
-	<http://www.biopax.org/release/biopax-level3.owl#
-46e27feee1792d23f567dc848e75edf9|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|2|13|v|
-	<http://purl.org/dc/elements/1.1/
-b3126582cf31688873417e7094bd176b|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|5|14|v|
-	<http://www.biopax.org/release/biopax-level3.owl#> .
-429709c7fec9f5a10492f4fe16114501|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/LibOwl.py|172|1|V|python
-	            assert len(rdf) > 1, "Rdf import error !"
-	            for r in rdf:
-	                col = re.split(r"\s+", r)
-	                # print(col)
-	                # spo
-	                if len(col) == 4:
-	                    if col[0] != "":
-	                        uri = self.toURI(col[0], prefix)
-	                        individual = Individual(uri)
-	                        individual.typeIs(subject_class)
-	                        self.owl_individuals.append(individual)
-	                        uri = self.toURI(col[2], prefix)
-	                        prouri = self.toURI(col[1], prefix)
-	                        individual = self.createIndividualFromTemp(prouri, uri)
-	                        self.owl_individuals.append(individual)
-	                    else:
-	                        uri = self.toURI(col[2], prefix)
-	                        prouri = self.toURI(col[1], prefix)
-	                        individual = self.createIndividualFromTemp(prouri, uri)
-	                        self.owl_individuals.append(individual)
-	                # po
-	                elif len(col) == 3:
-	                    uri = self.toURI(col[2], prefix)
-	                    individual = self.createIndividualFromTemp(prouri, uri)
-	                    self.owl_individuals.append(individual)
-	                else:
-	                    print("error >>", len(col), col)
-	                    sys.exit()
-	                print("\t", self.owl_individuals[-1].subject, self.owl_individuals[-1].type)
-	            return
-bf20475ecdc30d635c1f7c149c0bf412|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|25|13|V|python
-	        for line in rdf:
-	            print(line)
-	        return
-e1eb3869c7e85ea99177f61d7ada9092|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/LibOwl.py|203|1|V|python
-	    def toURI(self, text:str, prefix: dict=None):
-	        if text[0:1] == "<" and text[-1:] == ">":
-	            return text
-	        if prefix is None:
-	            for key in self.owl_prefix:
-	                if re.match(r"^"+key, text):
-	                    text = text.replace(key, self.owl_prefix[key][:-1], 1)
-	                    text += ">"
-	                    return text
-	
-	        else:
-	            for key in prefix:
-	                if re.match(r"^"+key, text):
-	                    text = text.replace(key, prefix[key][:-1], 1)
-	                    text += ">"
-	                    return text
-	            print("error in", text)
-	            sys.exit()
-bafe21de6d196c1aeb86ffba8e7dc297|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|56|1|V|python
-	                    individual = Individual(uri)
-	                    individual.typeIs(subject_class)
-	                    self.owl_individuals.append(individual)
-a66fc850f1c865bedf81a0797e71f473|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|57|1|V|python
-	                    prouri = self.toURI(col[1], prefix)
-	                    individual = self.createIndividualFromTemp(prouri, uri)
-	                    self.owl_individuals.append(individual)
-92ac20a64372bf5692ba30e72aea02ce|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|58|1|V|python
-	                    individual = self.createIndividualFromTemp(prouri, uri)
-	                    self.owl_individuals.append(individual)
-ea29c68d02b43ce99f06aabf4c6f0c0e|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|64|1|V|python
-	                individual = self.createIndividualFromTemp(prouri, uri)
-	                self.owl_individuals.append(individual)
-11f6b7383bdcef893f4013b6f8083ce1|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|67|25|V|python
-	            print("\t", self.owl_individuals[-1].subject, self.owl_individuals[-1].type)
-1ad1356895d55f9a2c0c920ce5440742|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|64|21|V|python
-	                print
-d728fe2fb77d3e26fddee288a6ab1dc6|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|63|31|V|python
-	                prouri = prouri
-3ce2fbf03f128692243cbbe51bc7c951|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|88|13|V|python
-	    s_class =
-71c7bd4a59a75c722aece7d5c3514f34|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|88|66|v|python
-	_class
-38d89e5d3a3aa587ae79b3193e24b4d3|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|72|1|V|python
-	def create_spo(owl_list: list, s: str, po: dict, uri:str, property: str):
-	    pass
-c8007350a49ca97eb44862217f878eca|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|8|1|V|python
-	    if prefix is None:
-	        for key in self.owl_prefix:
-	            if re.match(r"^"+key, text):
-	                text = text.replace(key, self.owl_prefix[key][:-1], 1)
-	                text += ">"
-	                return text
-	
-	    else:
-c7e7e1b5d09c4581157d6e2aabd9668c|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|50|9|V|python
-	                    assert uri is not None
-333a5ea789b4d46b63d348ff1e0f5cb8|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|50|1|V|python
-	                    create_spo(owl_list, s, po, uri)
-b908603e00406584fd9c2fdb532f5474|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|53|1|V|python
-	                    create_spo(owl_list, s, po, uri, prouri)
-9e9f970558862ec4d3a9da9e65827bc5|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|65|21|V|python
-	            print(prouri, "\n\t", uri, "\n")
-3dd7aa0eaaf86ce7edebc38ddfeffb92|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|68|8|V|python
-	    pass
-a02aec3f3bf2b354c48ec09908635778|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/1_19/psicquic1_19.owl|173|65|v|
-	 owl:NamedIndividual ,
-c31c11ecafcf4cd4c41450fad3a60951|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|69|16|v|python
-	uri + " rdf:type owl:NamedIndividual ,"
-4da8fedb38990eefb78722d899d7f517|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|69|24|V|python
-	        line = uri + " rdf:type owl:NamedIndividual ,"
-f205225f7659e63159883b2cd6bb3ca9|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|69|1|V|python
-	        owl_list.append("### " + uri)
-	        owl_list.append(uri + " rdf:type owl:NamedIndividual ,")
-	        owl_list.append("\t" + s + " .")
-	        owl_list.append("")
-45678795131a9c9a3b8c2b21959cfb8c|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|75|9|V|python
-	            owl_list.append
-851f5ac9941d720844d143ed9cfcf60a|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|81|29|v|python
-	prefix
-7bb0edd98f22430a03b67f853e83c2ca|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|73|8|V|python
-	        
-97a4e3b581ea70dc86102502736955e7|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|65|8|V|python
-	        return
-882c16095d8be41dac40e15622e7f364|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|183|1|V|python
-	    for service in services_list:
-	        try:
-	            shutil.rmtree("turtle/" + service)
-	        except:
-	            pass
-	        try:
-	            os.mkdir("turtle/" + service)
-	        except:
-	            pass
-38f6c2b50217d4b7fb92f6d8b278b474|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|182|1|V|python
-	    services_list = gm.list_serveice()
-38757f0b7d62c9ce22d47e95a66de48a|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|11|1|V|python
-	from mylib import general_method as gm
-d4705b9f42c96eeb0b9fb53266013516|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|105|28|v|python
-	turtle
-aaabf0d39951f3e6c3e8a7911df524c2|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|106|36|v|python
-	service
-9e7a395bcbe5e841a419a5dd06c1eb56|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|106|1|V|python
-	            shutil.rmtree("owl/" + dirname + "/data/" + service)
-02cfaf7a8c81745b81a982a372f46055|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|110|13|V|python
-	            os.mkdir("turtle/" + service)
-3b4e376df4319a9f28f16e9339e3d1d8|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|105|1|V|python
-	        try:
-	            shutil.rmtree("owl/" + dirname + "/data/" + service)
-	        except:
-	            pass
-10dec0e723c56439608d5c112720a70e|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|110|20|v|python
-	rmtree
-3982c30cfeff59eae12bf36d851cc830|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|110|13|v|python
-	shutil
-ad2cdbc94a935a6750358192b5f601b9|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/Owl/create_data.py|109|1|V|python
-	        try:
-	            os.mkdir("owl/" + dirname + "/data/" + service)
-	        except:
-	            pass
-885d8b3f348bc04815157aaefc149243|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|192|1|V|python
-	        dir_list = glob.glob(dir_name + service + "/*.tsv", recursive=True)
-	        for i in range(len(dir_list)):
-	            print("... create ttl from", dir_list[i], "\t", i+1, "/", len(dir_list))
-	            create_ttl(dir_list[i], service + str(i), service)
-ee58a044e25dc897c51120e8eacdb4d6|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|105|7|V|python
-	    dir
-a456dbbbc9c05b696c11a2f5ac8956d5|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|111|27|v|python
-	"owl/" + dirname + "/data/" + service
-e5b52242b5fd60a6eeb42e043d55ccb0|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|111|1|V|python
-	            shutil.rmtree(dirname + "/" + service)
-1394d07250cd292dfff5d76f4806ea6e|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|115|13|V|python
-	            os.mkdir("owl/" + dirname + "/data/" + service)
-564d2b9af333438eae1e54afd64dfd91|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|118|30|v|python
-	dir_name
-cdf18a21056806f94a4728f715835ecb|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|121|33|V|python
-	            create_ttl(dir_list[i], service + str(i), service)
-fd79098d5e651d502a92ff98f136d7cf|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|70|14|v|python
-	out_dir + "/" + file.split("/")[-1].split(".")[0] + ".owl", "w")
-465dd8b0f84722c8ba197cb47207d5af|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|70|1|V|python
-	    f = open(out_dir + "/" + file.split("/")[-1].split(".")[0] + ".owl", "w")
-	    f.write()
-1508c75a9d7631f225e5e0080ea370fe|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|71|22|V|python
-	        for line in owl_list:
-dd5d99ee691f536d427d629404585fb0|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|70|1|V|python
-	    with open(out_dir + "/" + file.split("/")[-1].split(".")[0] + ".owl", mode='w') as f:
-	        f.write("")
-d8311abd745bc0b22015df62b57b8c8e|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|91|28|V|python
-	    print("error: create_spo", uri, property)
-e8bfb77d196c2803bf76aecc894bfbb4|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|91|1|V|python
-	
-	    sys.exit()
-d9e67d738835c46786b7300411b260b7|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|92|8|V|python
-	    print("error: create_spo", uri, property)
-	    sys.exit()
-f387b501ce7d8ed283a5173ca223d049|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|94|8|V|python
-	    return
-dd4195d30eadf39eefada3e9f409dd73|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|48|13|V|python
-	            # print(col)
-2715e574bb36a6439da3184f85cd6ddd|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|63|1|V|python
-	                if(col[-1] == ";"):
-	                    uri = toURI(col[1], prefix)
-	                    create_spo(col, owl_list, s, po, uri, prouri)
-8e29d6b25ab4ba372977206b73e317f8|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|55|1|V|python
-	                    prouri = toURI(col[1], prefix)
-edaea21223ba673bbcc9f7b3e4bc4ec9|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|134|1|V|python
-	            break
-29d35d817ee2e8de6365846fbcc7d2e5|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|103|13|V|python
-	    s = "<http://www.biopax.org/release/biopax-level3.owl#MolecularInteraction>"
-	    po = {
-c7cb5fb0924b93f3c63c845085917484|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|83|1|V|python
-	        owl_list.append(uri + " rdf:type owl:NamedIndividual ,")
-ebd3474b015023f9dfd091efa090e75f|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|92|9|V|python
-	            owl_list.append("\t" + s + " .")
-4ad291e1ae33800c5ad4358f786afc45|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|77|1|V|python
-	            f.write(line + "\n")
-2a874a47c1226b984b8e3af58dcf3f2c|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|71|17|V|python
-	        print(rdf)
-9516dfb15f51c7ee19a4d46b8c0dbe1d|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|57|30|v|python
-	append
-88ad88c398aabc07587bc52fd022ed9d|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|57|40|V|python
-	                    owl_list.extend(rdf)
-6adf97f83acf6453d4a6a4b1070f3754|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|82|102|v|python
+a127fd1f86e4ab650f2216f09992afa4|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|38|3|V|typescriptreact
+	      
+e59efcd7122d9b4482fdc331abb1b51f|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|32|1|V|typescriptreact
+	      title = libgssparam.title
+ea5a1cbe764918679997181a3ea281d3|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|32|1|V|typescriptreact
+	    }
+48805aeff1fffaa7db95f2e704c92949|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|61|1|V|typescriptreact
+	        if (res1 === null) {
+	          return;
+	        } else if (res1.status == 400) {
+	          setError(res1.data);
+	        } else {
+	          console.log(res1.data);
+	        }
+674fbd23d1c8f52d79b5de8f6b4490df|file:///Users/kouiti/localfile/web-glycosim/next/api/ApiHandler.tsx|9|15|V|typescriptreact
+	    console.log(response.data);
+a03a3d4c98693bc7e66529b874ac0d6a|file:///Users/kouiti/localfile/web-glycosim/next/api/ApiHandler.tsx|1|17|v|typescriptreact
+	AxiosRequestConfig
+38c3787939c7b0b6c77d73fce3d28891|file:///Users/kouiti/localfile/web-glycosim/next/api/ApiHandler.tsx|1|8|v|typescriptreact
+	axios
+21f94635b019e2d1d6bd7abd783de224|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|22|18|V|typescriptreact
+	import {ApiHandler} from "api/ApiHandler";
+d4b39228fcc3cfcbc52f23318d11e6aa|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|21|1|V|typescriptreact
+	import { GeneticAlgorithm } from "api/parameterestimation/GeneticAlgorithm";
+63ce81cea3205efd3633924970e289f2|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|22|1|V|typescriptreact
+	import { ErrorModal } from "components/layouts/ErrorModal";
+a86698e14f999fffff6d320069543411|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|63|1|V|typescriptreact
+	        if (res1 === null) {
+	          return;
+	        } else if (res1.status >= 400) {
+	          setError(res1.data);
+	        } else {
+	          console.log(res1.data);
+	        }
+25da643e6ec742d84cd5ff612753c825|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|62|15|v|typescriptreact
+	res_gssparam
+797dfb99751972d8a114c6e019ebd5e4|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|67|1|V|typescriptreact
+	        if (res2 === null) {
+	          return;
+	        } else if (res2.status == 400) {
+	          setError(res2.data);
+	        }
+	        console.log(res2);
+d1cc652b86b9858fe78058511716e92f|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|38|46|v|python
+	except
+356ef8fd103cddd99afb70e629e1ca8e|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|39|12|V|python
+	    print(if)
+b73fdaa1fb7669da760b49600c45d9be|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|41|12|v|python
+	okok
+6adf97f83acf6453d4a6a4b1070f3754|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|45|82|v|python
 	None
-b6da577417dda6b6538e235331b28de5|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|88|24|V|python
-	        owl_list.extend(rdf)
-6438c669e0d0de98e6929c2cc0fac474|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|88|36|v|python
-	line
-276d10b5b875e85b7d65ae5806324a46|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|87|1|V|python
-	        for line in rdf:
-	            owl_list.append(toURI(line, ))
-04460d398c6e77efd00649ee669bf279|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|87|1|V|python
-	        for line in rdf:
-	            owl_list.append(toURI(line, ))
-	        owl_list.append("")
-6f874550eff80a2125c703c7509d87c6|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|57|1|V|python
-	                    #############
-	                    for line in rdf:
-	                        owl_list.append(toURI(line, prefix))
-	                    owl_list.append("")
-	                    ##############
-25accbe6db53bdb0436ddf9e3ada64c8|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|21|5|V|python
-	    owl_list = list()
-2d2956ddc1918eb1a86f6d907ba2baef|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|44|23|V|python
-	    owl_s_list = list()
-31a424d48b447b870661dc6971b90ff1|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|61|1|V|python
-	                    owl_s_list.append("\t" + prouri + " " + uri)
-a2544dff897ae7a24fb7874edfd0e317|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|61|1|V|python
-	                    owl_s_list.append("\t" + prouri + " " + uri + " ;")
-0e1e84a30854781780c38918c730ac8f|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|71|1|V|python
-	                owl_s_list.append("\t" + prouri + " " + uri)
-	                    owl_s_list.append("\t" + prouri + " " + uri + " ;")
-44e583abb37aecc305325823cab757cf|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|111|1|V|python
-	    s = "<http://www.biopax.org/release/biopax-level3.owl#MolecularInteraction>"
-	    po = {
-	            "<http://purl.obolibrary.org/obo/IAO_0000119>": "<http://purl.obolibrary.org/obo/NCIT_C93638>",
-	            # "obo:INO_0000154": "",
-	            "<http://rdf.glycoinfo.org/ontology/interaction#has_interactor_A>": "<http://biomodels.net/SBO/SBO_0000241>",
-	            "<http://rdf.glycoinfo.org/ontology/interaction#has_interactor_B>": "<http://biomodels.net/SBO/SBO_0000241>",
-	            # "bpo:interactionType": "",
-	            "<http://www.biopax.org/release/biopax-level3.owl#organism>": "<http://purl.obolibrary.org/obo/EUPATH_0000591>",
-	            "<http://purl.org/dc/elements/1.1/identifier>": "<http://rdf.glycoinfo.org/ontology/interaction#InteractionId>",
-	            # "dc:source": "",
-	            # "bao:BAO_0002875": "",
-	            }
-	    services_list = gm.list_serveice()
-	    dirname = "owl/1_19/data"
-	    for service in services_list:
-	        try:
-	            os.mkdir(dirname)
-	        except:
-	            pass
-	        try:
-	            shutil.rmtree(dirname + "/" + service)
-	        except:
-	            pass
-	        try:
-	            os.mkdir(dirname + "/" + service)
-	        except:
-	            pass
-	        dir_list = glob.glob("turtle/" + service + "/*.ttl", recursive=True)
-	        for i in range(len(dir_list)):
-	            print("... create owl from", dir_list[i], "\t", i+1, "/", len(dir_list))
-	            create_owl(dir_list[i], dirname + "/" + service, s, po)
-	            # break
-	        # break
-0afa1adfed3f6e204223f70cf1832d7b|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|141|1|V|python
-	            # break
-	        # break
-a4e270b867446deec62db31cc9277540|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|140|1|V|python
-	                break
-2f2458053b3451bfb3a80671d6af9c1c|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|140|9|V|python
-	                return
-994b612238d03cfc486e6e7fedcce011|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|121|9|V|python
-	    dirname = "owl/1_19/data"
-244715cf6d774571d8fea99fcac6f94c|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|139|1|V|python
-	                print("testmode")
-5275db36ccefc34ba2608a73365d196e|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|98|1|V|python
-	            owl_list.append("")
-a422174ea99fee65d904f3f70f879d1c|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_owl.py|76|1|V|python
-	        owl_list.append("")
-e56c3e98c8f3901a72d55b9ea04e7c1b|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|43|1|V|python
-	    interactor_ab = rdflib.Namespace("https://identifiers.org/matrixdb.association:")
-7c26f6ae97679422063d8d33a8623c57|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|44|47|v|python
-	identifiers
-eff030ffb381b81d9f85b0d2d39eb869|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|27|1|V|python
-	    identifier = re.sub(r"PR\((?P<id>(.*))\)", r"\g<id>", identifier)
-ac93f7188c68e4de2fc4febade848752|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|26|1|V|python
-	    ## protein ontology:PR(000027395)
-	    identifier = re.sub(r"PR\((?P<id>(.*))\)", r"\g<id>", identifier)
-c8e5642c577f668fc5d07460708284da|file:///Users/kouiti/localfile/glycovid_PSIQUIC/query_all.py|67|1|V|python
+ffa7c13ba219e9897dc72e59d9ac2da0|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|35|1|V|python
+	    print("------------------------")
+	    print("------------------------")
+	    print("------------------------")
+	    print(request.json.keys())
+	    if "title" in request.json.keys():
+	        print("okok")
+	    print("bdbd")
+812b8bec263320a31a01852d8dd36c92|file:///Users/kouiti/localfile/web-glycosim/next/api/ApiHandler.tsx|4|22|V|typescriptreact
+	  console.log(response);
+d642cd6afc40ce63ca754b89b4a750f3|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|67|31|V|typescriptreact
+	      console.log(res_gssparam);
+c1cbfe271a40788a00e8bf8574d94d4b|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|77|21|v|typescriptreact
+	handler
+b9ef7a003e335ecc50224f2d5aa938ba|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|74|14|V|typescriptreact
+	        // set
+09d96736682197cbec1e19980dafe0b8|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|80|5|V|typescriptreact
+	  window.setTimeout(() => setEstimationRunnig(true), 5000);
+cfb44e094c919e51e16f5be6b99fabf8|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|77|3|V|typescriptreact
+	  if (window) {
+e3f575775494e856888bc51a033b82e9|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|80|5|V|typescriptreact
+	    window.setTimeout(() => setEstimationRunnig(true), 5000);
+2666a275464f0a66f5f857001125a54b|file:///Users/kouiti/localfile/dev-glycosim/source/PE/mocks/out.json|1|1|V|json
+	
+	    "modelName": "Model_2022_02_03_07_38_51",
+	    "bestValue": 0,
+	    "fitParam": [
+	        0.004422959731402711,
+	        2.692597244965275
+	    ],
+	    "paramNames": [],
+	    "initNames": [
+	        "cis_MAN1_2",
+	        "cis_MAN1_1"
+	    ],
+	    "log": "Generating the initial population. . .\n1 / 10\n2 / 10\n3 / 10\n4 / 10\n5 / 10\n6 / 10\n7 / 10\n8 / 10\n9 / 10\n10 / 10\n\n----------------------------------------\n\nGeneration1: Best Fitness = 0.000000e+00\n"
+	}
+99cda4fa49cb111670be94331d83ffb6|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|78|1|V|python
+	                    sbml_text=request.json["sbml_text"],
+2ba292e9d28e824fa6b9241adc4ff262|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|78|1|V|python
+	                    exp_data=request.json["exp_data"],
+209694f7fd014b2d72112c673fa759b2|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|45|15|v|typescriptreact
+	handleClose
+41196ca027d988be001881c7bdd86071|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|16|27|V|typescriptreact
+	  const handleClose = () => setShow(false);
+e7919e8983141fb952625388b7335074|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|65|1|V|typescriptreact
+	        const res1 = await GssParam.create(libgssparam);
+	        const res_gssparam = ApiHandler(res1, setError);
+76ea0bebb3c22822b4f0dd9c9fd021c5|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|76|37|v|typescriptreact
+	create
+b975be3d83f6e8c9625e6a8bd0f61fed|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|76|44|v|typescriptreact
+	libgssparam
+b817b2fedd9ed306555a6bfa61aa67a5|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|76|44|v|typescriptreact
+	res_pe
+278e449db25f15bb220e442b4d7bfd91|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|76|25|V|typescriptreact
+	        libgssparam.id = 
+f22c121315d4963359c984625cf4acf4|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|74|28|V|typescriptreact
+	        if(res_pe === null) 
+af56ae5e2d1526f083dc9c03ed474514|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|82|31|V|typescriptreact
+	        const res3 = await GssParam.update();
+780bc2132bd7f2d9e919bc3aff258d21|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|76|9|V|typescriptreact
+	          libgssparam.update({})
+f38d016c49b80f8e2cadc055b23a548c|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|76|1|V|typescriptreact
+	          const res3 = await GssParam.update({});
+f31c9dad17f11d88fefd74edcd988112|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|42|3|V|typescriptreact
+	  result_json() {
+	  }
+3840832e1725b28c69b0ad9998372c4f|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|81|22|V|typescriptreact
+	        const res_gssparam = ApiHandler(res1, setError);
+c1abed0d794f8a397b3999e7f8d2ae05|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|80|1|V|typescriptreact
+	  const createGssParam = async (title: string) => {};
+	
+	  useEffect(() => {
+	    createGssParam("testparam");
+	  }, []);
+a4631771503f80d42caffa6cd81f7b60|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|41|7|V|typescriptreact
+	  updat
+ee2070c403e7f932a3240974b75d58bd|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|30|1|V|typescriptreact
+	  create: async (libgssparam: LibGssParam) => {
+	    const data: GssParamObject = libgssparam.export();
+	    try {
+	      const res1 = await axios.post(ApiUrl + "gssparam/create", data);
+	      return res1;
+	    } catch (err: any) {
+	      console.log(err);
+	      return err.response;
+	    }
+	  }
+a1ffd43d22c461f3716f6de4b20f7acb|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|41|31|v|typescriptreact
+	LibGssParam
+c79450ba1c05a6298ad0b6932cee1995|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|42|32|V|typescriptreact
+	    const data: GssParamObject = libgssparam.export();
+0a4d80b556986fff3e8144d9381ddecf|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|84|1|V|python
+	# def update(id: int, data):
+	#     content = model.query.filter_by(id=id).first()
+	#     if "sbml_text" in data:
+	#         sbml_dir = "./models/GssModel/sbml/" + str(uuid.uuid4()) + ".xml"
+	#         sbml_doc = readSBMLFromString(data["sbml_text"])
+	#         writeSBML(sbml_doc, sbml_dir)
+	#         data.pop("sbml_text")
+	#         data.sbml_dir = sbml_dir
+	#     for key in data:
+	#         try:
+	#             eval("content." + key + "= data.key")
+	#             print("update gssmodel ->")
+	#             print(key, "->", data.key)
+	#         except:
+	#             print(key, "passed")
+	#             pass
+	#     db_session.commit()
+	#     return dict(content)
+f426b0517999226b9daf50a5fbc65b7c|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|59|1|V|python
+	def create(title: str, body: str, result_json: Union[str, None], user_name: str, gssmodel_id: Union[int, None]):
+cb9cc2639d291a762de86171d92a13f7|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|84|1|V|python
+	def update(id: int, data):
+2970f2227769068e4daf8dd32dda404f|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|33|1|V|python
+	@app_gssparams.route('/gssparam/create', methods=["POST"])
+	def app_gssparam_create():
 	    try:
-	        os.mkdir(dirname)
+	        content = GssParam.create(
+	                title=request.json["title"] if "title" in request.json.keys() else "",
+	                body=request.json["body"] if "body" in request.json.keys() else "",
+	                result_json=request.json["result_json"] if "result_json" in request.json.keys() else None,
+	                user_name=request.json["user_name"],
+	                gssmodel_id=request.json["gssmodel_id"] if "gssmodel_id" in request.json.keys() else None
+	                )
+	        return content
+	    except:
+	        print("error /gssparam_create")
+	        traceback.print_exc()
+	        abort(400, traceback.format_exc())
+4a02e3062789ff81d05dcd62d58b6f57|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|54|1|V|python
+	                title=request.json["title"] if "title" in request.json.keys() else "",
+	                body=request.json["body"] if "body" in request.json.keys() else "",
+	                result_json=request.json["result_json"] if "result_json" in request.json.keys() else None,
+	                user_name=request.json["user_name"],
+	                gssmodel_id=request.json["gssmodel_id"] if "gssmodel_id" in request.json.keys() else None
+13749fc07425dd60fc66af2dad16b75c|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|83|12|v|python
+	title: str, body: str, result_json: Union[str, None], user_name: str, gssmodel_id: Union[int, None]
+bb4c374392133719a324ab1ba2799cd6|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|83|18|v|python
+	dict
+9649ae24085899d341cae56544bbba20|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|84|1|V|python
+	    content = model.query.filter_by(id=id).first()
+	    if "sbml_text" in data:
+	        sbml_dir = "./models/GssModel/sbml/" + str(uuid.uuid4()) + ".xml"
+	        sbml_doc = readSBMLFromString(data["sbml_text"])
+	        writeSBML(sbml_doc, sbml_dir)
+	        data.pop("sbml_text")
+	        data.sbml_dir = sbml_dir
+	    for key in data:
+	        try:
+	            eval("content." + key + "= data.key")
+	            print("update gssmodel ->")
+	            print(key, "->", data.key)
+	        except:
+	            print(key, "passed")
+	            pass
+	    db_session.commit()
+	    return dict(content)
+a8cfde6331bd59eb2ac96f8911c4b666|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|59|116|v|python
+	object
+b2fa4306720ba0a0864f30c5fb6f04b4|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|85|1|V|python
+	    if "sbml_text" in data:
+	        sbml_dir = "./models/GssModel/sbml/" + str(uuid.uuid4()) + ".xml"
+	        sbml_doc = readSBMLFromString(data["sbml_text"])
+	        writeSBML(sbml_doc, sbml_dir)
+	        data.pop("sbml_text")
+	        data.sbml_dir = sbml_dir
+	    for key in data:
+	        try:
+	            eval("content." + key + "= data.key")
+	            print("update gssmodel ->")
+	            print(key, "->", data.key)
+	        except:
+	            print(key, "passed")
+	            pass
+4c2c12cae6e7f72a2641f4aece72c3d8|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|85|7|V|python
+	    if 
+466deec76ecdf5fca6d38571f6324d54|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|83|12|v|python
+	json
+6a991042d8a213824eb83201bcb3948d|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|59|19|V|python
+	        return None
+f77b49d501b581d18028b9db19d0b7ad|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|48|12|V|python
+	    return N
+a02439ec229d8be0e74b0c1602392310|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|33|52|v|python
+	POST
+08a73a5f40f435d4e9ce6410161e59b1|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|43|20|V|python
+	        [object]: []
+0e3636acb48df2adbe3354573d78bda2|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|82|12|V|python
+	def function(arg1):
+0310159a31cb6b8cd1ecc82e52df8b85|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|82|1|V|python
+	    """TODO: Docstring for function.
+	
+	                    :arg1: TODO
+	                    :returns: TODO
+	
+	                    """
+	    pass
+a0f36809cfd3dbb56e4c4b84f79a0257|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|32|1|V|python
+	    """
+	    Args:
+	        params_list: dict[]
+	        species_list: dict[]
+	        sbml_text: string
+	        exp_data: dict[]
+	        max_iteration = int
+	        estimation_times: int
+	
+	        see source/PE/BioMASS/mock/settings2.json
+	    Returns:
+	        best_value: int
+	        fit_param_names: str[]
+	        fit_param_values: int[]
+	    """
+d23398cde39c5ad151daf7873220ddf2|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|46|1|V|python
+	        best_value: int
+	        fit_param_names: str[]
+	        fit_param_values: int[]
+566aaa704536b64ccc0e78b13c4f5093|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|37|9|v|python
+	params_list
+425252429b1df10ef892aa964ec1c8af|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|38|9|v|python
+	species_list
+cabe722eba47c05c268244c75cad4c7f|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|39|9|v|python
+	sbml_text
+7eb76cdfbff1d3b65e6f15080a2d7417|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|40|9|v|python
+	exp_data
+15379ec33c927b021b08101083680525|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|42|19|V|python
+	        estimation_times: int
+51ce557201a5b5defaa7990cc5f2b749|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|42|1|V|python
+	        see source/PE/BioMASS/mock/settings2.json
+c25ff7cecf1fcc088faaca3301c721ed|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|35|1|V|python
+	    """
+	    Args:
+	        title:          str|null
+	        body:           str|null
+	        result_json:    dict|null
+	        user_name:      str|null
+	        gssmodel_id:    int|null
+	    Returns:
+	    """
+aff55cb2905180c4b68ae74e560a75ec|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|98|5|V|python
+	    """
+	    """
+89425fb92519abebf862de3bb363b5b1|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|84|5|V|python
+	    """
+	    Args:
+	        params_list: dict[] | null
+	        species_list: dict[]
+	        sbml_text: string
+	        exp_data: dict[]
+	        max_iteration = int
+	        estimation_times: int
+	
+	        see source/PE/BioMASS/mock/settings2.json
+	    Returns:
+	        best_value: int
+	        fit_param_names: str[]
+	        fit_param_values: int[]
+	    """
+0e79edbbd914127972ddd8d29906aefc|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|96|1|V|python
+	    args = [
+	            "title",
+	            "body",
+	           "result_json",
+	           "user_name",
+	           "gssmodel_id"
+	            ]
+0407d27bf2468303425e50381417bc86|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|93|5|V|python
+	    args = [
+	            "title",
+	            "body",
+	           "result_json",
+	           "user_name",
+	           "gssmodel_id"
+	            ]
+	
+9d626116e08eaed3d94480a770ced0da|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|97|5|V|python
+	        if
+2fcf3e165d3d9911c90ff69ccffd75e2|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|96|5|V|python
+	    for key in args:
+8dae193ccf68a011d65da100a1b21ec5|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|96|1|V|python
+	    try:
+	        content.title = request.title
 	    except:
 	        pass
-954eef6d6eac59aca304b6d7abb4fb3e|file:///Users/kouiti/localfile/glycovid_PSIQUIC/query_all.py|62|18|v|python
-	dirname
-8d777f385d3dfec8815d20f7496026dc|file:///Users/kouiti/localfile/glycovid_PSIQUIC/query_all.py|62|19|v|python
-	data
-c44f88115e97c2040657ec2095df2bd6|file:///Users/kouiti/localfile/web-glycosim/next/components/cytoscape/Pathway.tsx|49|1|V|typescriptreact
-	      {failed ? <>Create pathway failed!!</> : null}
-d2feff5855b8051161d6ae9aabf98766|file:///Users/kouiti/localfile/web-glycosim/next/components/modelform/ModelFormMain.tsx|19|1|V|typescriptreact
-	  return (
-	    <Container>
-	      <Row>
-	        <Col sm={3}>
-	          <ModelTemplate {...props} />
-	        </Col>
-	        <Col sm={3}>
-	          <SBMLImport {...props} />
-	        </Col>
-	        <Col sm={3}>
-	          <BioModels {...props} />
-	        </Col>
-	        <Col sm={3}>
-	          <SBMLDownload {...props} />
-	        </Col>
-	      </Row>
-	    </Container>
-	  );
-9d5c73e1a00bd567c41e511daccdbbca|file:///Users/kouiti/localfile/web-glycosim/next/components/cytoscape/Pathway.tsx|51|1|V|typescriptreact
-	      {showLoading ? <LoadingSpinner /> : null}
-adabfc11f3f606b9ff9da224b55940cf|file:///Users/kouiti/localfile/web-glycosim/next/components/modelform/ModelFormMain.tsx|16|23|v|typescriptreact
-	 : null}
-dd9cbf052f35616dff7d65426ecfabab|file:///Users/kouiti/localfile/web-glycosim/next/components/cytoscape/Pathway.tsx|5|1|V|typescriptreact
-	import { LoadingSpinner } from "/components/layouts/LoadingSpinner";
-caf5e910cf2bc14c0122daa6f61cbec4|file:///Users/kouiti/localfile/web-glycosim/next/components/modelform/ModelFormMain.tsx|5|20|V|typescriptreact
-	import { Container, Row, Col } from "react-bootstrap";
-	import { LoadingSpinner } from "/components/layouts/LoadingSpinner";
-5f053fb08326d138ecf8a088563f0892|file:///Users/kouiti/dotfiles/dotfiles/nvim/coc-settings.json|1|1|V|json
-	{
-	  "coc.preferences.formatOnSaveFiletypes": [
-	    "json",
-	    "css",
-	    "markdown",
-	    "typescriptreact",
-	    "javascriptreact",
-	    "javascript"
-	
-	  ],
-	  "prettier.useTabs": true,
-	  "tsserver.enableJavascript": false
+60d20fbd93b636188ef26517dfda74eb|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|101|5|V|python
+	        content.body = request.title
+	    except:
+b0f145c330ac57940d06fd5bc3f3e5a3|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|105|40|v|python
+	request_jsonchhhhhhhhhh
+c8d0190b1c4d275d68a8834abfbf04bc|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|105|17|v|python
+	request_json
+63680e3e219c8c41a6bd0f6a1f35905d|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|116|1|V|python
+	    try:
+	        content.title = request.title
+	    except:
+	        pass
+	    return
+a748cf78be67604e642e88afeaa60e9e|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|105|18|v|python
+	result_json
+c56f5648d4c0e137f9de3dfc7a54d55b|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|109|18|v|python
+	user_name
+b361ecb46d8db0afa5aef08893530177|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|113|18|v|python
+	gssmodel_id
+306cae278cd11fab6e4528f2a0a4c997|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|9|1|V|typescriptreact
+	    fit_param_name: string[]
+	    git_param_values: 
+6680dba00f3a88f66f8029a93d71d93c|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|32|5|v|typescriptreact
+	const
+cd3fffeeb67625cdbd5ca4e4f3458319|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|47|1|V|typescriptreact
+	  result_json() {
+	    console.log("okok");
+	  }
+dcef731730dc302945f82b6d3c7ab8ad|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|30|1|V|typescriptreact
+	  create: async (libgssparam: LibGssParam) => {
+2b2f71f1c5f0ec574aa560b63bc78172|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|41|3|V|typescriptreact
+	  update: async (result_json: {}) => {
+82055a2096912172d1b3e32723e739c1|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|9|1|V|typescriptreact
+	  expdata: LibGssParamExpData;
+	  results: LibGssParamResults;
+	  settings: LibGssParamSettings;
+	  condition: LibGssParamConditions;
+320aaff0ae52f9e59c181406853630c7|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|2|1|V|typescriptreact
+	import { LibGssParamExpData } from "./LibGssParamExpData";
+	import { LibGssParamResults } from "./LibGssParamResults";
+	import { LibGssParamSettings } from "./LibGssParamSettings";
+	import { LibGssParamConditions } from "./LibGssParamConditions";
+bed7d8af6455f0b0c3bb3bc9e75dcb8b|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|9|18|v|typescriptreact
+	ParamExpData
+1360c4f83d94d5f3a06f510edef7bcc3|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|9|12|v|typescriptreact
+	LibGssi
+2121c0b073e6c63a1727a8eab29652d1|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|10|12|v|typescriptreact
+	LibGssParamResults
+45c4d9087cfedf599ef470cfa68ceb4d|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|11|13|v|typescriptreact
+	LibGssParamSettings
+2e15e3347ff5c4412a2f6b39c2a24ee5|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|12|14|v|typescriptreact
+	LibGssParamConditions
+dae2c52be0d1f4cbb6570e52e39129d6|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|5|1|V|typescriptreact
+	export interface GssParamObject {
+	  title: string;
+	  body: string;
+	  result_json: {
+	    expdata: any;
+	    results: any;
+	    settings: any;
+	    condition: any;
+	  } | null;
+	  user_name: string;
+	  gssmodel_id: Number;
 	}
-585c664389874fa2e737973c30cc7a2b|file:///Users/kouiti/dotfiles/dotfiles/nvim/coc-settings.json|14|3|V|json
-	  "coc.preferences.timeout": 5000,
+62dd7b8a67e5ceaca5985d6774c64834|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|6|25|V|typescriptreact
+	import { GssParamObject } from "api/GssParam";
+40d842496cd85447f2567fec8f39dbbf|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|4|18|V|typescriptreact
+	TypeOfModelSession
+ffb4b7e4f2e929b9538a1ed85dde1061|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|1|22|V|typescriptreact
+	import { Species, Parameter } from "./GssParam";
+0d0c04772eecb3044943dd39649e83d0|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|2|1|V|typescriptreact
+	  listOfSpecies: Species[];
+	  listOfParameters: Parameter[];
+98a4b93dfb75bd7172307b186ddc231d|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|7|1|V|typescriptreact
+	export interface TypeOfLibGssParam {
+	  title: string;
+	  body: string;
+	  result_json: {
+	    expdata: any;
+	    results: any;
+	    settings: any;
+	    condition: any;
+	  } | null;
+	  user_name: string;
+	  gssmodel_id: Number;
+	}
+5c66f900dadf3ca5f0a05d1ea970b897|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|2|1|V|typescriptreact
+	  title: string;
+	  body: string;
+	  result_json: {
+	    expdata: any;
+	    results: any;
+	    settings: any;
+	    condition: any;
+	  } | null;
+	  user_name: string;
+	  gssmodel_id: Number;
+822a11a79b21bf4969c08c50f235b090|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|6|1|V|typescriptreact
+	  data: {
+	    best_value: number;
+	    fit_params: { id: string; value: number }[];
+	  }[];
+7169863c2a1e0bfc7ae553c1119a14cd|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|2|8|V|typescriptreact
+	  data: {
+8b64701e4abe9364f0e8125961495b66|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|4|6|V|typescriptreact
+	  }[];
+3c75fbd2360d1b214dce3bdfe705cff3|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|1|1|V|typescriptreact
+	export interface TypeOfLibGssResult {
+	  best_value: number;
+	  fit_params: { id: string; value: number }[];
+	}
+a6dce062f36e7adcf29581c824e3a282|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|6|1|V|typescriptreact
+	  best_value: number;
+	  fit_params: { id: string; value: number }[];
+8eb58dd5e328e978169c7b0cbd30d43f|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|5|8|v|typescriptreact
+	interface
+c40dac67b2f5abf11cf7bcea237f6926|file:///Users/kouiti/localfile/dev-glycosim/source/PE/mocks/out.json|2|10|V|json
+	    "modelName": "Model_2022_02_03_07_38_51",
+9f81730930500bf0ebbc704edb8d8b20|file:///Users/kouiti/localfile/dev-glycosim/source/PE/mocks/out.json|7|6|v|json
+	paramNames
+655bffded44b3fea690d49d12260b3fd|file:///Users/kouiti/localfile/dev-glycosim/source/PE/mocks/out.json|7|5|V|json
+	    "": [],
+722e79a15095ff7d270a0fe99733a5c9|file:///Users/kouiti/localfile/dev-glycosim/source/PE/mocks/out.json|7|6|v|json
+	initNames
+54057db71e86e0d2d8f4c31536a89d2d|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|20|1|V|python
+	# def geneticalgorithm(
+	#         time: int,
+	#         step: int,
+	#         params_list: list,
+	#         species_list: list,
+	#         sbml_text: str,
+	#         exp_data: list,
+	#         max_generation: int
+	#         ):
+	#     time = time
+	#     step = step
+	#     params_list = params_list
+	#     optEtItemList = species_list
+	#     sbmlString = sbml_text
+	#     expDataList = exp_data
+	#     maxGen = max_generation
+	#     pe_exec_ids = []
+	
+	#     optItemList = params_list
+	
+	#     # # Etはパラメータではなく変数(初期値)に入る
+	#     # optEtItemList = []
+	
+	#     # # elongate optItemList
+	#     # optItemList.extend(kfList)
+	#     # optItemList.extend(KmList)
+	#     # optItemList.extend(KmdList)
+	#     # optEtItemList.extend(EtList)
+	#     # make csv file of experimental data by using expDataList
+	#     tmpId = randint(1, 100000)
+	
+	#     # get a unique id in reference to pe_exec_ids
+	#     for i in range(len(pe_exec_ids)):
+	#         if tmpId == pe_exec_ids[i]:
+	#             continue
+	#     pe_exec_ids.append(tmpId)
+	
+	#     # print("expDataList: {}".format(expDataList))
+	
+	#     # fileName = "/Users/isami/PycharmProjects/Glycosim/glycosim_sbml_parser/dev-glycosim/source/SBML/SBMLfile_1.txt"
+	#     # time = 22.24
+	#     # step_number = 100
+	
+	#     # type? sim pe sa?
+	
+	#     # initialization
+	#     method_type = "sim"
+	#     search_param_regions = {}
+	#     search_inits_regions = {}
+	#     observed_points_y = {}
+	#     observed_time_points = {}
+	
+	#     for item in optItemList:
+	#         search_param_regions[item["name"]] = [
+	#             float(item["lowerBound"]), float(item["upperBound"]), float(item["value"])]
+	
+	#     for item in optEtItemList:
+	#         search_inits_regions[item["name"]] = [
+	#             float(item["lowerBound"]), float(item["upperBound"]), float(item["value"])]
+	#     # constraints
+	#     # print("\nsearch_param_regions: {}".format(search_param_regions))
+	
+	#     # 名前の記述
+	#     for expData in expDataList:
+	#         for key in expData.keys():
+	#             # get time data
+	
+	#             en = s2b.conv_semicolon_letter(key)
+	#             # key exists
+	#             if en != "time":
+	#                 if observed_points_y.get(en) == None:
+	#                     observed_points_y[en] = [float(expData[key])]
+	#                 else:
+	#                     observed_points_y[en].append(float(expData[key]))
+	
+	#                 if observed_time_points.get(en) == None:
+	#                     observed_time_points[en] = [float(expData["time"])]
+	#                 else:
+	#                     observed_time_points[en].append(float(expData["time"]))
+	#     # check
+	#     print("\n observed_points_y: {}\n".format(observed_points_y))
+	
+	#     # write biomass code
+	#     # if not os.path.exists():
+	#     print("\n src_params: {}".format(search_param_regions))
+	#     model = s2b.importSBML2Biomass(
+	#         sbmlString,
+	#         ["ODE"],
+	#         method="param_estim",
+	#         duration=float(time),
+	#         step=float(step),
+	#         obs_species=observed_points_y,
+	#         obs_timepoints=observed_time_points,
+	#         src_params=search_param_regions,
+	#         src_inits=search_inits_regions,
+	#         overwrite=True)
+	#     modelName = model["modelName"]
+	
+	
+	#     # do parameter estimation
+	#     print("new model name {}".format(modelName))
+	#     exec("from out.model import {} as m".format(modelName))
+	#     print("log max_gen: {}".format(maxGen))
+	#     # run optimization
+	#     exec("optimize(m, 1, overwrite=True, max_generation=" + maxGen + ")")
+	
+	#     # file path
+	#     # compare result data
+	#     # get fit param
+	#     rep = re.compile(r"fit_param[1-9]+.npy")
+	#     modelPath = os.path.join("./out/model", modelName, "out", "1")
+	#     optPath = os.path.join("./out/model", modelName, "out", "1", "optimization.log")
+	#     # get optimization string
+	#     if os.path.exists(optPath):
+	#         # n_file include list of int
+	#         n_file = 0
+	#         # fit param file number init
+	#         num = 0
+	#         # result: np.array = np.load()
+	#         # fit params
+	#         fitparam_files: list(str) = os.listdir(modelPath)
+	#         for file in fitparam_files:
+	#             print(file)
+	#             if re.search(r'\d', file):
+	#                 idx = int(re.search(r'\d+', file)[0])
+	#                 print(idx)
+	#                 if num < idx:
+	#                     n_file = idx
+	#                     num = idx
+	#         # best fitness value
+	#         bestFitness = np.load(os.path.join(modelPath, "best_fitness.npy"))
+	#         # fit param import
+	#         fitParamVec = np.load(os.path.join(modelPath, "fit_param"+str(n_file) + ".npy"))
+	#         # optimization log
+	#         with open(os.path.join(modelPath, "optimization.log"), "r")as f:
+	#             log = f.read()
+	
+	#          # get params names List[str]
+	#         params = eval("m.C.NAMES")
+	#         search_params = eval("m.SearchParam.idx_params")
+	#         paramNames = [params[i] for i in search_params]
+	
+	#         initials = eval("m.V.NAMES")
+	#         search_initials = eval("m.SearchParam.idx_initials")
+	#         initNames = [initials[i] for i in search_initials]
+	#         # get target variables List[str]
+	#         # rxns = m.ReactionNetwork().reactions
+	
+	#         exec("del m")
+	#         # send json data
+	#         return json.dumps({
+	#             "modelName": modelName,
+	#             "bestValue": bestFitness + 0.,
+	#             "fitParam": fitParamVec.tolist(),
+	#             "paramNames": paramNames,
+	#             "initNames": initNames,
+	#             "log": log,
+	#         })
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+0dd1aadc2169aed02f53d60773123f72|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|213|1|V|python
+	            "fit_param_valuess": fitParamVec.tolist(),
+6266fe9b31416d12250ccb0bef1ef70a|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|216|1|V|python
+	            "fit_param_names": initNames,
+a85b19ad6b59836a9d8aaa6053486809|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|205|23|V|python
+	        fit_params = {}
+2667b11c0255008332ddb306417a2185|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|208|9|V|python
+	        a
+238dc5ab9b556a790ebbd3a9f6c8db16|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|216|26|v|python
+	fitParamVec.tolist(),
+2334580daf8b534172b41aff2c942c65|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|217|1|V|python
+	            # "paramNames": paramNames,
+	            "fit_param_names": initNames,
+	            # "log": log,
+f6523a8d075cacf1d751d2035d858bb9|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|65|20|V|python
+	        results = {}
+84bc7aae26078140dfd1edd39eb1049d|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|85|1|V|python
+	        print(result_list)
+e8db2b86cbebdb1925c78bda33e95a27|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|74|26|V|typescriptreact
+	        console.log(res_pe);
+2523c36a39dda01fefc3c6e9affbaa52|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|207|1|V|python
+	        print(fit_param_names)
+	        print(fit_param_values)
+e44f5df1fc969820cab0807f8c7afca1|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|11|1|V|typescriptreact
+	    expdata: any;
+	    results: TypeOfLibGssResults;
+	    settings: any;
+	    condition: any;
+	  } | null;
+1867fdef245119fc007221d59e6c2c09|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|7|1|V|typescriptreact
+	export type TypeOfLibGssParam = {
+	  title: string;
+	  body: string;
+	  result_json: TypeOfLibGssParamResults;
+	  user_name: string;
+	  gssmodel_id: Number;
+	};
+59691002de66ff9cf74170c3dc6e8684|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|15|13|v|typescriptreact
+	TypeOfLibGssParam
+5808eed08a656acaeb1d0eb2fe2f0545|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|15|1|V|typescriptreact
+	export type result_json = {
+	  title: string;
+	  body: string;
+	  result_json: TypeOfLibGssParamResults;
+	  user_name: string;
+	  gssmodel_id: Number;
+	};
+05701c5f249eee8d3fc119eb04235f03|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|8|1|V|typescriptreact
+	  title: string;
+	  body: string;
+	  result_json: TypeOfLibGssParamResults;
+	  user_name: string;
+	  gssmodel_id: Number;
+1a4e501fa3dabbbfd3395501cd079186|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|8|12|v|typescriptreact
+	LibGssParamExpData
+a4583cb1778d70dcc5fd7e15481f43dd|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|8|12|v|typescriptreact
+	TypeOfLibGssParamResults
+827f0bf0613626d585db2bd3535abaf1|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|46|7|V|typescriptreact
+	    if()
+a60a983895291c581a59cef9104ff5c1|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|47|15|V|typescriptreact
+	    result_json
+e71095eaee3f178ca2aeb340aefffb74|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|50|1|V|typescriptreact
+	    if (this.results.isNull) {
+	      result_json.results = null;
+	    } else {
+	      result_json.results = this.results.export();
+	    }
+3fc1776fa54486d6e7d086cba682b2c9|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|1|1|V|typescriptreact
+	export type TypeOfLibGssParamResult = {
+	  best_value: number;
+	  fit_params: { id: string; value: number }[];
+	};
+	export type TypeOfLibGssParamResults = TypeOfLibGssParamResult[] | null;
+af9790cd507d3a115e88f10b73ca9080|file:///Users/kouiti/localfile/dev-glycosim/source/PE/mocks/out.json|1|2|V|json
+	{
+	    "best_value": 0,
+	    "fit_param_values": [
+	        0.004422959731402711,
+	        2.692597244965275
+	    ],
+	    "fit_param_names": [
+	        "cis_MAN1_2",
+	        "cis_MAN1_1"
+	    ],
+	    "log": "Generating the initial population. . .\n1 / 10\n2 / 10\n3 / 10\n4 / 10\n5 / 10\n6 / 10\n7 / 10\n8 / 10\n9 / 10\n10 / 10\n\n----------------------------------------\n\nGeneration1: Best Fitness = 0.000000e+00\n"
+	}
+21a361d96e3e13f5f109748c2a9d2434|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|211|24|v|python
+	push
+fbd70088852e8d00ab04282278d76c6c|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|210|43|V|python
+	            fit_params[fit_param_names[i]] = fit_param_values[i]
+a25d88804e7d17e1a7c1eb6293523963|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|20|1|V|typescriptreact
+	  export(): TypeOfLibGssParamResults {
+	    return this.data;
+	  }
+5bcbf40f6fac2ef53a18a05ce166bb59|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|85|1|V|python
+	        print("0000000000000000000000000000000000")
+	        print(result_list)
+	        print(result_list)
+	        print(result_list)
+	        print(result_list)
+	        print(result_list)
+d6a5cd7407a709129bd236a0c0b2ba0d|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|22|1|V|python
+	@app_gss_pe.route("/parameterestimation/geneticalgorithm/<tool>", methods=["POST"])
+	def api_geneticalgorithm(tool):
+	    try:
+	        return route_geneticalgorithm(request, tool)
+	    except:
+	        traceback.print_exc()
+	        abort(400, traceback.format_exc())
+3aeadc3749b9de85bf20a0f8fd45c37e|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|16|1|V|python
+	        params = GssParam.query.filter_by(gssmodel_id=request.args.get('GssModel')) \
+	                            .order_by(desc(GssParam.date)).all()
+21ffce5b8a6cc8cc6a41448dd69623c9|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|56|9|v|python
+	params
+23848554999c7ad529475fb24e4e9a6e|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|56|1|V|python
+	        contents = GssParam.query.filter_by(gssmodel_id=request.args.get('GssModel')) \
+	                            .order_by(desc(GssParam.date)).all()
+8cc98ca9a1a2cd80ef91fa2fe191545b|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|34|10|v|python
+	user_name: str = None, offset: int = 0, maxresults: int = 30
+384e03ef189071589b9ae4bd4fa2ba35|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|56|16|v|python
+	GssParam
+bea53381764747723969501c9e1fe952|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|35|20|V|python
+	#     if user_name:
+	#         contents = (
+	#             model.query.filter(
+	#                 model.parent_id == None,
+	#                 model.user_name == user_name,
+	#             )
+	#             .order_by(desc(model.date))
+	#             .offset(offset)
+	#             .limit(maxresults)
+	#             .all()
+	#         )
+	#     else:
+	#         contents = (
+	#             model.query.filter(model.parent_id == None)
+	#             # .order_by(desc(model.date))
+	#             # .offset(offset)
+	#             # .limit(maxresults)
+	#             .all()
+	#         )
+	#     for i in range(len(contents)):
+	#         contents[i] = dict(contents[i])
+10573b873d2fa5a365d558a45e328e47|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|35|50|v|python
+	request
+da204421ad3bc3776bc43f84220db59b|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|35|61|v|python
+	GssModel
+f1a0b449e3576c70b206add00efd3251|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|24|1|V|python
+	        content = GssParam.get(id)
+5a818ad2a9ed55c76cfc2e752101f127|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|16|9|V|python
+	        return params
+93473a7344419b15c4219cc2b6c64c6f|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|10|1|v|python
+	import
+afe91f0403491cd987cf914a8b339b14|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|85|1|V|python
+	        return route_geneticalgorithm(request, tool)
+5e5106d05b6120d4cdc051a7ab9aadff|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|86|16|v|python
+	route_geneticalgorithm(request, tool)
+72cde933bbc9ff922d1a1568bf8e6dd5|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|86|15|V|python
+	        return 
+473370598d319463dbbac2a14d1a8842|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|34|1|V|python
+	        params_list: dict[]
+	        species_list: dict[]
+	        sbml_text: string
+	        exp_data: dict[]
+	        max_iteration = int
+	        estimation_times: int
+715883f82fbf8442d830593ab62d76b8|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|76|1|V|python
+	                    time=time,
+	                    step=step,
+	                    params_list=request.json["params_list"],
+	                    species_list=request.json["species_list"],
+	                    sbml_text=request.json["sbml_text"],
+	                    exp_data=request.json["exp_data"],
+	                    max_iteration=request.json["max_iteration"]
+adc31af4a1c8d7f73bde66c2c6fe3c13|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|32|14|V|typescriptreact
+	  tool: string
+3b71febf8f6b168d52f8cfcc9b619a7d|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|91|21|V|python
+	                    params_list=request.json["params_list"],
+	                    species_list=request.json["species_list"],
+07cc694b9b3fc636710fa08b6922c42b|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|89|26|v|python
+	time
+2764ca9d34e90313978d044f27ae433b|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|90|22|v|python
+	step
+798230e0bfe95af1169918f79c4a931a|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|91|18|v|python
+	max_iteration
+513dcb49e5e8220dc05c639f1c87ea32|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|92|18|v|python
+	estimation_times
+54e8103766b1d8df2b6476f0f832be0f|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|93|17|v|python
+	result_liststr
+333413ac645c83e0a8a06da1bd620c21|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|88|1|V|python
+	                "time":100,
+	                "step":100,
+1f1c519f23c5f12d1beedf225229dcbf|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|93|1|V|python
+	        result_json = {
+	                "c"
+	                "tool": tool,
+	                }
+ea9f6aca279138c58f705c8d4cb4b8ce|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|95|17|v|python
+	method
+6a563b2878cd3592cd85fb5e67362754|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|89|1|V|python
+	                "max_iteration":request.json["max_iteration"],
+	                "estimation_times": request.json["estimation_times"],
+e1ee10ae6acaf753c7168827d0030a77|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|96|17|V|python
+	                "max_iteration": requ
+2b0f650c3018217659baafce6bc6b533|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|88|28|v|python
+	request.json["exp_data"],
+a2db6cddcb224a4cd6da03b3178424fc|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|87|1|V|python
+	        result_json = {
+	                "exp_data":request.json["exp_data"],
+	                "max_iteration":request.json["max_iteration"],
+	                "estimation_times": request.json["estimation_times"],
+	                "result_liststr": result_liststr
+	                }
+cf75f160c166143ea1f44114376c1074|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|95|1|V|python
+	        "exp_data":request.json["exp_data"],
+	        "max_iteration":request.json["max_iteration"],
+	        "estimation_times": request.json["estimation_times"],
+	        "result_liststr": result_liststr
+b76b3bcef4a41ba76bcfa5714f841f59|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|100|12|V|python
+	        content = GssParam.get(request.json["gssmodel_id"])
+46af6f3d599784abc9d47931fc1fda7f|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|101|30|V|python
+	            content.result_json = json.dumps(result_json)
+ebcdc45fa360444c44cf86f7a5cb3e7c|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|87|15|V|python
+	        assert GssParam.get(request.json["gssmodel_id"])
+909db4057c7752cab87d803693f3fa84|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|101|1|V|python
+	            GssParam.update({"result_json": json.dumps(result_json)})
+8c2184d4fa31845974379e114987d938|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|103|59|v|python
+	ult_json
+a0fab7b20c87126e6612858df44fecb8|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|34|1|V|python
+	        # 1. 存在しないtaxon id
+	        # 2. create ttl のミス
+	        # 3. uniprotの-2
+faf86533cd71c3320411b6b69325047d|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|39|1|V|python
+	                and not re.match(r"<http:\/\/rdf\.glycoinfo\.org\/dbid\/reactome\/R-COV-\d+>", uri)\
+dc14e5a603f4d82394d8f0aa4f522ed2|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|40|1|V|python
+	                and not re.match(r"<http:\/\/rdf\.glycoinfo\.org\/dbid\/pubmed\/unassigned\d+>", uri):
+4d88c4756cfc221c8a578ad950a5bb86|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|41|73|v|python
+	pubmed
+6211a7dcc77f425f9ad17eb8141406a3|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|41|1|V|python
+	                and not re.match(r"<http:\/\/rdf\.glycoinfo\.org\/dbid\/mint\/[-a-z0-9]+>", uri):
+8b823f49ba31caa5cd88e520c2f82bdc|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|42|73|v|python
+	mint
+ef5dcf36502f03f2f3384e362987484e|file:///Users/kouiti/localfile/lets/lets_proj/app/add_dbdata.py|127|1|V|python
+	    MiniTask.objects.create_record(task=task, task_type="RF", turn=14)  # 14
+8916a6975bdd357611e75ef2f19f365f|file:///Users/kouiti/localfile/lets/lets_proj/app/handler/go_by_order.py|24|1|V|python
+	    history = History.objects.get(
+	            learner=learner,
+	            task=task,
+	            is_achieved=False
+	            )
+8e28c63c4171715b3e8bc3f8cd17999a|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|42|1|V|python
+	                and not re.match(r"<http:\/\/rdf\.glycoinfo\.org\/dbid\/mpid\/MPIDB-INT-\d{3,4}>", uri):
+70812455678d4d3164bacdb3e4f4c478|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|1|1|V|python
+	                and not re.match(r"<http:\/\/rdf\.glycoinfo\.org\/dbid\/imex\/\d>", uri):
+386ad6d7bb3b4475eb8b0f5ba01b942a|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|172|21|V|python
+	                    g.add((Interactor_ab, organizm, Taxon_id))
+5068750d92199083ec80cee9bebb2602|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|1|10|V|python
+	import csv
+	import glob
+5e3b96e17a6cff088c7f5e3eb8976f37|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|117|1|V|python
+	    organizm = URIRef("http://semanticscience.org/resource/SIO_000253")
+8e0931b5d92d6cb6fc1ceac6369058c8|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|117|6|v|python
+	rganizm
+6ebd4b217b05f7722854816e42c0ff13|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|118|5|v|python
+	organizm
+123952613f1d19789212b61aa365c7ef|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|118|34|v|python
+	http://semanticscience.org/resource/SIO_000253
+99fa53bc8d3506c154fe98c27ed5a556|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|174|57|v|python
+	Taxon_id
+df6e4a7bab7da10cbfec6eb76de0188d|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|173|1|V|python
+	                    if(Taxon_id == "-1"):
+	                        g.add((Interactor_ab, organizm, in_vitro))
+c749b31d3a2a5f070e217264a77ee012|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|176|57|v|python
+	in_vitro
+b25260fae2725e2fc37083989d0cf275|file:///Users/kouiti/localfile/glycovid_PSIQUIC/uri_list/object_uri_list2.csv|33|50|v|
+	(R-[A-Z]{3}-\d+(-\d+)?(\.\d+)?$)|(^REACT_\d+(\.\d+)?)
+64d0d73ae8b23844ada38387b8d3eab7|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|38|1|V|python
+	                and not re.match(r"<http:\/\/rdf\.glycoinfo\.org\/dbid\/reactome\/R-HSA-\d+>", uri)\
+	                and not re.match(r"<http:\/\/rdf\.glycoinfo\.org\/dbid\/reactome\/R-COV-\d+>", uri)\
+b12e9539672ea8fd4e770d494bab2e6c|file:///Users/kouiti/localfile/glycovid_PSIQUIC/uri_list/object_uri_list2.csv|55|1|V|
+	ntnu	http://rdf.glycoinfo.org/dbid/ntnu/	.*
+60233ddaa466195a3fbe1efa36c4f940|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|39|79|v|python
+	[-a-z0-9]+
+c587e97308241028116800cd3fa4e55c|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|39|79|V|python
+	                and not re.match(r"<http:\/\/rdf\.glycoinfo\.org\/dbid\/mint\/>", uri)\

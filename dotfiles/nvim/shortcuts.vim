@@ -1,3 +1,4 @@
+" cursole movement
 noremap <S-h>   ^
 noremap <S-j>   }
 noremap <S-k>   {
@@ -11,12 +12,16 @@ noremap <Space>k kzz
 map! <C-e>  <C-c>$a
 map! <C-a>  <C-c>^i
 
+
+" tab control
 noremap <silent>tr :vsplit<CR>
 noremap <silent>tu  :split<CR><C-w><C-w>
 noremap <silent>ta :tabnew<CR>
 noremap <C-l> gt
 noremap <C-h> gT
 
+
+" bracket
 noremap <silent>:" diwi""<Esc>P
 noremap <silent>:' diwi''<Esc>P
 noremap <silent>:[ diwi[]<Esc>P
@@ -28,6 +33,9 @@ noremap <silent>:< diwi<><Esc>P
 " noremap <silent>:oq<CR> :only | close!
 noremap <silent>:v<CR> :! osascript -e 'tell application "Vivaldi" to reload active tab of window 1'<CR><CR>
 
+" others
+noremap <silent>R *:%s//
 
 
+" init
 map :sc<CR> :tabnew<CR>:source ~/.config/nvim/shortcuts.vim<CR>

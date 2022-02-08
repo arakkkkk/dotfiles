@@ -1,0 +1,6 @@
+version: '3'
+services:
+  dotos:
+    image: centos:latest
+    # volumes:
+    tty: true

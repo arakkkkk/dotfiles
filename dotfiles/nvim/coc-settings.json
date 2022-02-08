@@ -6,7 +6,6 @@
     "typescriptreact",
     "javascriptreact",
     "javascript"
-
   ],
   "prettier.useTabs": true,
   "tsserver.enableJavascript": false,

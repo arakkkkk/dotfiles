@@ -1,4 +1,5 @@
 let $PATH = "~/.pyenv/shims:".$PATH
+let mapleader = "\<SPACE>"
 
 set number             "行番号を表示
 set autoindent         "改行時に自動でインデントする

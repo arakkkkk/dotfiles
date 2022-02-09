@@ -4,14 +4,23 @@ let mapleader = "\<SPACE>"
 set number             "行番号を表示
 set autoindent         "改行時に自動でインデントする
 " set tabstop=4          "タブを何文字の空白に変換するか
-" set shiftwidth=4       "自動インデント時に入力する空白の数
-set tabstop=2          "タブを何文字の空白に変換するか
-set shiftwidth=2       "自動インデント時に入力する空白の数
-set expandtab          "タブ入力を空白に変換
+set shiftwidth=4       "自動インデント時に入力する空白の数
+" set tabstop=2          "タブを何文字の空白に変換するか
+" set shiftwidth=2       "自動インデント時に入力する空白の数
+" set expandtab          "タブ入力を空白に変換
 set splitright         "画面を縦分割する際に右に開く
 set clipboard=unnamed  "yank した文字列をクリップボードにコピー
-set hls                "検索した文字をハイライトする
-set sh=fish
+set sh=fish             "shellをfishに変換
+set conceallevel=0                       "jsonファイルで"を非表示にしない設定
+let g:vim_json_syntax_conceal = 0      "jsonファイルで"を非表示にしない設定
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
+
+" 日本語を使用可能に
+set encoding=utf-8
+set fileencodings=utf-8
+set fileformats=unix,dos,mac
+lang en_US.UTF-8
 
 if has("autocmd")
   filetype plugin on
@@ -69,4 +78,4 @@ colorscheme night-owl
 source ~/.config/nvim/colors/colorscheme.vim
 
 runtime shortcuts.vim
-map :init<CR> :tabnew<CR>:source ~/.config/nvim/init.vim<CR>
+noremap <silent>:sc<CR> :tabnew<CR>:source ~/.config/nvim/init.vim<CR>

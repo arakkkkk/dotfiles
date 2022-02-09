@@ -1,5 +1,6 @@
 let g:ale_linters = {
     \ 'javascript': ['eslint'],
+    \ 'rust': ['analyzer', 'cargo', 'cspell', 'rls', 'rustc']
     \ }
 
 " 各ツールをFixerとして登録
@@ -11,11 +12,13 @@ let g:ale_fixers = {
     \ 'htmldjango': ['html-beautify'],
     \ 'css': ['prettier', 'stylelint'],
     \ 'Dockerfile': ['dockerfile_lint', 'hadolint'],
-    \ 'go': ['gofmt']
+    \ 'go': ['gofmt'],
+    \ "rust": ['rustfmt']
     \ }
 
 map :fix<CR> :ALEFix<CR>
-map :ale<CR> :source ~/.config/nvim/plugins/ale.vim<CR>
+noremap <silent>:sc<CR> :tabnew<CR>:source ~/.config/nvim/plugins/ale.vim<CR>
+
 
 
 let g:ale_lint_on_save = 1

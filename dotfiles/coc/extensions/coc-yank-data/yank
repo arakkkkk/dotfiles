@@ -1,1130 +1,3 @@
-d2c66ec16d5ef72e44509b3db63f269b|file:///Users/kouiti/localfile/dev-glycosim/docker-compose.yml|48|29|v|yaml
-	47be1b5935b2755fa1c1abd7032b132b28eb6cda164b063f729046d7512d2028
-ff1bdf97e26f2bb75b876dd7ec23dc97|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|96|14|V|typescriptreact
-	  if (error === null) {
-314a65b4b82013be5ff1883708826c01|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|102|1|V|typescriptreact
-	    run();
-	    createGssParam("test gssparam");
-5cb7a3622119affdea2430a9d20e3793|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|96|1|V|typescriptreact
-	  try{
-	    a = 3
-	  }
-99617ab405a782cabb9891d4639b7397|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|98|3|V|typescriptreact
-	  const a = "a"
-841e094757ac6d488ed3a44ff7d816d7|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|23|1|V|typescriptreact
-	      <Button variant="primary" onClick={handleShow}>
-	        ok
-	      </Button>
-d2d4f7af6027cee3ecca91c3c7ed0c4a|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|126|42|v|typescriptreact
-	handleShow
-1f294b63c17cf72e6ebd34e16597bc49|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|126|1|V|typescriptreact
-	        <Button variant="primary" onClick={() => createGssParam("testparam")}>
-	          ok
-	        </Button>
-cb5e100e5a9a3e7f6d1fd97512215282|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|64|10|v|typescriptreact
-	error
-71045b1055ba351cef0db3a36b1f74d9|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|64|14|v|typescriptreact
-	setError
-63e0fdfcde97a0335167f941849ed1ab|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|38|1|V|typescriptreact
-	  useEffect(() => {
-df1f25b007a09822e4f976328740a638|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|64|1|V|typescriptreact
-	  }, [router.isReady, estimationRunning]);
-8ecc1b8349583bfc0b68e17ffd3db533|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|62|1|V|typescriptreact
-	  const [updateCount, setUpdateCount] = useState<number>(0);
-	  const [error, setError] = useState<string | null>(null);
-	  const condition = props.libgssparam.condition;
-	
-	  // const onFormChange = (e: any) => {
-	  //   let key = e.target.id;
-	  //   let value = e.target.value;
-	  //   if (condition.update(key, value)) {
-	  //     console.log(key + "\t->\t" + value);
-	  //     setUpdateCount(updateCount + 1);
-	  //   } else {
-	  //     alert("Error: " + key + "\t->\t" + value);
-	  //   }
-	  // };
-	
-	  useEffect(() => {
-	    const run = () => {
-	      console.log(props.libgssparam);
-	    };
-	    const createGssParam = async (title: string) => {
-	      const res = await GssParam.create({
-	        title: title,
-	        body: "",
-	        result_json: {},
-	        user_name: "",
-	        gssmodel_id: 0
-	      });
-	      if (res === null) {
-	        return;
-	      } else if (res.status > 400) {
-	        setError(res.data);
-	      }
-	      console.log("create gssparam", title);
-	    };
-	    createGssParam("testparam");
-	  }, [router.isReady, estimationRunning]);
-	
-	  return (
-	    <Card style={Styles.maxSubHeight}>
-	      {/* <ErrorModal error={error} setError={setError} /> */}
-	      {/* <Card.Header className="text-white" id="basecolor"> */}
-	      {/*   Simulation */}
-	      {/* </Card.Header> */}
-	      {/* <Card.Body> */}
-	      {/*   <Form.Group className="mb-3"> */}
-	      {/*     <Form.Label>Estimation tools</Form.Label> */}
-	      {/*     <Form.Select id="tool" onChange={onFormChange}> */}
-	      {/*       <option>BioMASS</option> */}
-	      {/*       <option>BioMASS</option> */}
-	      {/*     </Form.Select> */}
-	      {/*   </Form.Group> */}
-	      {/*   <Form.Group className="mb-3"> */}
-	      {/*     <Form.Label>Estimation methods</Form.Label> */}
-	      {/*     <Form.Select id="method" onChange={onFormChange}> */}
-	      {/*       <option>Genetic algorithm</option> */}
-	      {/*       <option>Genetic algorithm</option> */}
-	      {/*     </Form.Select> */}
-	      {/*   </Form.Group> */}
-	      {/*   <Form.Group className="mb-3"> */}
-	      {/*     <Form.Label>Max iteration</Form.Label> */}
-	      {/*     <Form.Control id="max_iteration" value={condition.max_iteration} onChange={onFormChange} /> */}
-	      {/*   </Form.Group> */}
-	      {/*   <Form.Group className="mb-3"> */}
-	      {/*     <Form.Label>Estimation times</Form.Label> */}
-	      {/*     <Form.Control id="estimation_times" value={condition.estimation_times} onChange={onFormChange} /> */}
-	      {/*   </Form.Group> */}
-	      {/*   <GssParamCreateModal createGssParam={createGssParam} run={run} /> */}
-	      {/* </Card.Body> */}
-	    </Card>
-	  );
-2ae0a3a2620d2e2b12c7d3b3205112ce|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|97|7|v|typescriptreact
-	router.isReady, estimationRunning
-0c8927e0e8041815ecedf20d358aad73|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|96|6|V|typescriptreact
-	    createGssParam("testparam");
-ccac313665c356935a1273edd702c88d|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|97|1|V|typescriptreact
-	  createGssParam("testparam");
-d1369d44dc169d0ac0d703e84562132c|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|78|1|V|typescriptreact
-	    const run = () => {
-	      console.log(props.libgssparam);
-	    };
-	    const createGssParam = async (title: string) => {
-	      const res = await GssParam.create({
-	        title: title,
-	        body: "",
-	        result_json: {},
-	        user_name: "",
-	        gssmodel_id: 0
-	      });
-	      if (res === null) {
-	        return;
-	      } else if (res.status > 400) {
-	        setError(res.data);
-	      }
-	      console.log("create gssparam", title);
-	    };
-e6ef07c48b96c6b6202f05189d5a2b78|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|77|1|V|typescriptreact
-	  useEffect(() => {
-	    createGssParam("testparam");
-	  }, []);
-659aab8b8aa3ed94ac47b9db63dbf069|file:///Users/kouiti/localfile/dev-glycosim/models/GssModelSession/repository.py|52|18|V|python
-	    print(content)
-277672db861e9ddebff1228753acddce|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|93|3|V|typescriptreact
-	    console.log("create gssparam", title);
-4aa924fd656b38442a63cca706bf54a4|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|55|1|V|python
-	#     if request.method == 'POST' and request.headers['Content-Type'] != 'application/json':
-	#         abort(400)
-154b0f536cc25b61b156120ebbb3ea42|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|34|24|v|python
-	gssparam/create
-7ccbc066f23bfde3516e16e7aec1d9e8|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|30|20|V|typescriptreact
-	    console.log(data);
-076e7e3a760f773995a582f680dc40c8|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|31|1|V|typescriptreact
-	      const res1 = await axios.post(ApiUrl + "gssparam/create", data);
-f2978fc89349e10dd6ea39b9b298716e|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssmodelsessions.py|22|62|v|python
-	, methods=["POST"])
-568a5131cb6ce0c1167b879691726f90|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|36|1|V|python
-	    print("start create gssparam")
-	    if request.method == 'POST' and request.headers['Content-Type'] != 'application/json':
-	        abort(400)
-4bac2d71e2d8e75ea4a03f7be9a0d06f|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|30|1|V|typescriptreact
-	    const data = {
-	      title: dataa.title,
-	      body: dataa.body,
-	      result_json: dataa.result_json,
-	      user_name: dataa.user_name,
-	      gssmodel_id: dataa.gssmodel_id
-	    };
-89bb625629852dc886148fd05a87b5e4|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|29|9|V|typescriptreact
-	  create: async (dataa: GssParamObject) => {
-	    try {
-f06a13b45b6a425c3c34a5586c2c7608|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssmodelsessions.py|6|1|V|python
-	from models import GssModel, GssModelSession
-c85a67ea62ca8f9a1e4dfc033408395f|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|8|1|V|python
-	from models.models import (GssEstimationConditionData, GssModel, GssParam,
-	                           GSSSession, GssWorkflow)
-31e7be6fef6970e83b215d3e7dad1190|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|8|30|v|python
-	GssModelSession
-3bcfae1c7fe0af046df4d923d6e05d36|file:///Users/kouiti/localfile/dev-glycosim/models/GssModelSession/repository.py|31|24|V|python
-	    print("create content")
-7e3a435393d6bc52ccf0e88fae5ecc84|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|67|1|V|python
-	        title=title,
-	        body=body,
-	        result_dir=result_dir,
-	        user_name=user_name,
-	        gssmodel_id=gssmodel_id
-d5d3db1765287eef77d7927cc956f50a|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|19|14|v|python
-	title
-841a2d689ad86bd1611447453c22c6fc|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|20|14|v|python
-	body
-80b6a00e37c554ad337a41a12a191337|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|21|24|V|python
-	            "date": model.date.strftime("%Y/%m/%d %H:%M"),
-65be288b282165ea7e0e6c12c6fcfcef|file:///Users/kouiti/localfile/dev-glycosim/models/GssModel/repository.py|16|1|V|python
-	            "sbml_text": writeSBMLToString(readSBML(model.sbml_dir)),
-93ce058de86d1d442fdcd7ac8a6bc39f|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|63|1|V|python
-	        with open(result_dir, 'w') as f:
-	            json.dump(result_json, f, indent=4)
-b7017157a54e7f5665756d279b87eeed|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|14|15|v|python
-	result_dir
-b9ef165b255673dde47bff07f4390fb1|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|15|14|v|python
-	dump
-0ff6bef5199ab0394f252e8b6d0577ff|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|15|19|v|python
-	result_json, f, indent=4
-4d153b506043143a027a8f9565fcbad4|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|21|26|v|python
-	writeSBMLToString(readSBML(model.sbml_dir)),
-35adda3afae918d42e2a24bdc1ac2ece|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|36|1|V|typescriptreact
-	  const router = useRouter();
-	
-	  useEffect(() => {
-	    if (router.isReady && libsbml === null) {
-	      var query = { ...router.query };
-62f50c7a98fbad5c8593578064a201aa|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|66|1|V|typescriptreact
-	  useEffect(() => {
-	    if (router.isReady && libsbml === null) {
-	      var query = { ...router.query };
-5cdf6c704dd177bfeeea25ba5c95e499|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|4|1|V|typescriptreact
-	import { useRouter } from "next/router";
-0ea2ab514d2262d0230bf2eac0c856f4|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|101|19|v|typescriptreact
-	resdata
-a1f78450f604b526c2e64deb2ed2a84d|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|32|22|V|typescriptreact
-	      console.log(res1);
-d1b9977e96be3c62c66fd9cf4ec51ec1|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|37|14|V|typescriptreact
-	    return res;
-8956e1cda345e2a103fd858ff312b3f0|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|37|5|V|typescriptreact
-	    c
-c71be1c4cab7e9919e0f6aafb3e8c1b4|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|37|15|V|typescriptreact
-	    console.lgo
-91e7e433e34c3b8843334c1467001cb7|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|33|15|v|typescriptreact
-	res1
-ba3d88743f723fa697dbf2225cba458e|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|101|21|V|typescriptreact
-	      console.log(res);
-b7458fa42038b0617824ac6ffcaf6d2a|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|99|18|V|typescriptreact
-	    (async () => {
-2b9959c12285ad7e50e4e6e813425d3b|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|100|1|V|typescriptreact
-	      console.log(res);
-	      router.query["gssparam"] = "jio";
-	    })();
-2b0513850fa1e5c7ebc853f2df6af7ca|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|99|17|v|typescriptreact
-	await
-12e0da93e9b617747ee2bdf3c413910c|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|36|1|V|python
-	        print(request.json["result_json"])
-1fa2650fa13c3ab380d9ab7fe60c1253|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|36|1|V|python
-	        print(request.json["result_json"])
-	        print(request.json["result_json"])
-	        print(request.json["result_json"])
-	        print(request.json["result_json"])
-	        print(request.json["result_json"])
-	        print(request.json["result_json"])
-	        print(request.json["result_json"])
-	        print(request.json["result_json"])
-	        print(request.json["result_json"])
-	        print(request.json["result_json"])
-	        print(request.json["result_json"])
-	        print(type(request.json["result_json"]))
-abed9c983cd4cabbb36c459e663fe201|file:///Users/kouiti/localfile/glycovid_PSIQUIC/uri_list/object_uri_list2.csv|2|1|V|
-	mi	http://purl.obolibrary.org/obo/MI_	\d{4}
-ce74e2fa8cecd8e3bc53915179abe9eb|file:///Users/kouiti/localfile/glycovid_PSIQUIC/uri_list/object_uri_list2.csv|3|1|V|
-	ia	http://purl.obolibrary.org/obo/MI_	\d{4}
-ed7d41399560f80c387ee07f4c04f29f|file:///Users/kouiti/localfile/web-glycosim/next/pages/signaling.tsx|25|1|V|typescriptreact
-	  const [userName, setUserName] = useState<string | null>(null);
-b2ee912b91d69b435159c7c3f6df7f5f|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|12|7|v|typescriptreact
-	Number
-4dba6484c755e02f276488d5a3402282|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|135|30|v|typescriptreact
-	createGssParam
-7e07095b9e6cd009c9cd9a1044a20423|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|80|1|V|typescriptreact
-	  const run = () => {
-	    // props.setEstimationRunnig
-	    console.log(props.libgssparam);
-	  };
-51e19f59e833beaf5a38207229f438f7|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|16|21|v|typescriptreact
-	setTitle
-6a7b0d702b5c826f0f520928669d9a09|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|11|1|V|typescriptreact
-	  run: any;
-	  createGssParam: any;
-18a81b2b7d0f6e5fb7acba0efaf2c80c|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|12|20|V|typescriptreact
-	setLibgssparam: any;
-f42f0188040d0b9573f31d4a9f75c38f|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|20|25|V|typescriptreact
-	    setTitle(e.target.value);
-ad74ba7b3b1211007f119719651efedb|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|46|1|V|typescriptreact
-	              props.run();
-	              props.createGssParam(title);
-efd471b65286a0bac579e2081d01e056|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|82|1|V|typescriptreact
-	    const res = await GssParam.create({
-	      title: title,
-	      body: "",
-	      result_json: null,
-	      user_name: "",
-	      gssmodel_id: 0
-	    });
-	    if (res === null) {
-	      return;
-	    } else if (res.status == 400) {
-	      setError(res.data);
-	    } else {
-	      console.log(res.data);
-	    }
-b6379ffa4ff46d0e5f5c68bf000048bf|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|7|4|V|typescriptreact
-	import { GssParam } from "api/GssParam";
-aaca0d72041718d329bb6d81acf96547|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|25|5|V|typescriptreact
-	  | "experimentalData"
-	  | "estimationResult"
-	  | "analyseData"
-	  | "estimationCondition"
-	  | null;
-	
-0d3b1ef5f2787933cbf61c628b158195|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|47|33|V|typescriptreact
-	        console.log(model_session);
-9b0b397b5654c11f6af2ecdbb8568e9d|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|9|9|V|typescriptreact
-	  import 
-c35224d314cf5c247bae94e7981aa342|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|15|1|V|typescriptreact
-	    this.sbml_text = sbml_text;
-	    this.listOfSpecies = this.getListOfSpecies();
-	    this.listOfParameters = this.getListOfParameters();
-	    this.listOfReactions = this.getListOfReactions();
-41c7ee7476c0603f2b1d24235bbaca4d|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|15|1|V|typescriptreact
-	import { ModelSession } from "api/ModelSession";
-ae34064d9b4da1438f6cca787fc3b183|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|12|1|V|typescriptreact
-	      this.sbml_text = sbml_text;
-	      this.listOfSpecies = this.getListOfSpecies();
-	      this.listOfParameters = this.getListOfParameters();
-	      this.listOfReactions = this.getListOfReactions();
-11c2b4cd2a2d0a3289d26932a28b3b79|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|19|46|v|typescriptreact
-	elSession
-b7dccc7d9373cd4717256318909fcebe|file:///Users/kouiti/localfile/web-glycosim/next/api/ModelSession.tsx|6|11|v|typescriptreact
-	Param
-6edbed9acd3d504fb0fe212b5d02b182|file:///Users/kouiti/localfile/web-glycosim/next/api/ModelSession.tsx|7|1|V|typescriptreact
-	  name: string;
-	  value: number;
-3f4d655cc71c4d52c08a6bb0ca2994c0|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|2|10|v|typescriptreact
-	ModelSession
-3ec436fafc395e5f229e09949fcaffd6|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|17|18|V|typescriptreact
-	      this.date = 
-04f37433b2601dec4194baba61ca452e|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|25|7|V|typescriptreact
-	    this.sbml_text = modelsession.sbml_text;
-6eddb51fb5726c78a7aa5d3bc5165cea|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|48|36|v|typescriptreact
-	modelsession
-4650838d55038f54821bc36d091015eb|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|47|37|v|typescriptreact
-	model_session
-37a6259cc0c1dae299a7866489dff0bd|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|34|58|v|typescriptreact
-	null
-e3b2d57a4a813c86da03c7c421eaaf9c|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|57|31|v|typescriptreact
-	LibSbml
-6efecc4e4e959b7ce9af68d68f95e282|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|16|1|V|typescriptreact
-	    this.isNull = true
-b326b5062b2f0e69046810717534cb09|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|22|19|v|typescriptreact
-	true
-44bf971321bb860ced370920ef688b84|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|22|1|V|typescriptreact
-	      this.isNull = false
-93bad0d53c4cf509fbba115018f18732|file:///Users/kouiti/localfile/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|25|1|V|typescriptreact
-	
-	  isNull(): boolean {
-	    if (this.sbml_text === null) {
-	      return true;
-	    } else {
-	      return true;
-	    }
-	  }
-	
-c7a7218fe0b1c2454373d7c2730a9c4f|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|12|4|V|typescriptreact
-	  is
-c5697e288636064baa31a3439884a19d|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|61|1|V|typescriptreact
-	          title: libgssparam.title,
-	          body: "",
-	          result_json: null,
-	          user_name: "",
-	          gssmodel_id: 0
-3a2cdcaf7214133cee21a98637b4e571|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|13|1|V|typescriptreact
-	import { LibGssParam } from "functions/libgssparams/LibGssParam";
-ca9a91fea43602a92f13a3f5e039d786|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|30|24|v|typescriptreact
-	GssParamObject
-b09ac0ec38e01459d9c91a5b8f4784a6|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|31|1|V|typescriptreact
-	    data = {
-	
-	    }
-62af61b46e10a73aac0deb024f0f281d|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|34|7|V|typescriptreact
-	      body: this.body,
-	
-a127fd1f86e4ab650f2216f09992afa4|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|38|3|V|typescriptreact
-	      
-e59efcd7122d9b4482fdc331abb1b51f|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|32|1|V|typescriptreact
-	      title = libgssparam.title
-ea5a1cbe764918679997181a3ea281d3|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|32|1|V|typescriptreact
-	    }
-48805aeff1fffaa7db95f2e704c92949|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|61|1|V|typescriptreact
-	        if (res1 === null) {
-	          return;
-	        } else if (res1.status == 400) {
-	          setError(res1.data);
-	        } else {
-	          console.log(res1.data);
-	        }
-674fbd23d1c8f52d79b5de8f6b4490df|file:///Users/kouiti/localfile/web-glycosim/next/api/ApiHandler.tsx|9|15|V|typescriptreact
-	    console.log(response.data);
-a03a3d4c98693bc7e66529b874ac0d6a|file:///Users/kouiti/localfile/web-glycosim/next/api/ApiHandler.tsx|1|17|v|typescriptreact
-	AxiosRequestConfig
-38c3787939c7b0b6c77d73fce3d28891|file:///Users/kouiti/localfile/web-glycosim/next/api/ApiHandler.tsx|1|8|v|typescriptreact
-	axios
-21f94635b019e2d1d6bd7abd783de224|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|22|18|V|typescriptreact
-	import {ApiHandler} from "api/ApiHandler";
-d4b39228fcc3cfcbc52f23318d11e6aa|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|21|1|V|typescriptreact
-	import { GeneticAlgorithm } from "api/parameterestimation/GeneticAlgorithm";
-63ce81cea3205efd3633924970e289f2|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|22|1|V|typescriptreact
-	import { ErrorModal } from "components/layouts/ErrorModal";
-a86698e14f999fffff6d320069543411|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|63|1|V|typescriptreact
-	        if (res1 === null) {
-	          return;
-	        } else if (res1.status >= 400) {
-	          setError(res1.data);
-	        } else {
-	          console.log(res1.data);
-	        }
-25da643e6ec742d84cd5ff612753c825|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|62|15|v|typescriptreact
-	res_gssparam
-797dfb99751972d8a114c6e019ebd5e4|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|67|1|V|typescriptreact
-	        if (res2 === null) {
-	          return;
-	        } else if (res2.status == 400) {
-	          setError(res2.data);
-	        }
-	        console.log(res2);
-d1cc652b86b9858fe78058511716e92f|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|38|46|v|python
-	except
-356ef8fd103cddd99afb70e629e1ca8e|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|39|12|V|python
-	    print(if)
-b73fdaa1fb7669da760b49600c45d9be|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|41|12|v|python
-	okok
-6adf97f83acf6453d4a6a4b1070f3754|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|45|82|v|python
-	None
-ffa7c13ba219e9897dc72e59d9ac2da0|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|35|1|V|python
-	    print("------------------------")
-	    print("------------------------")
-	    print("------------------------")
-	    print(request.json.keys())
-	    if "title" in request.json.keys():
-	        print("okok")
-	    print("bdbd")
-812b8bec263320a31a01852d8dd36c92|file:///Users/kouiti/localfile/web-glycosim/next/api/ApiHandler.tsx|4|22|V|typescriptreact
-	  console.log(response);
-d642cd6afc40ce63ca754b89b4a750f3|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|67|31|V|typescriptreact
-	      console.log(res_gssparam);
-c1cbfe271a40788a00e8bf8574d94d4b|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|77|21|v|typescriptreact
-	handler
-b9ef7a003e335ecc50224f2d5aa938ba|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|74|14|V|typescriptreact
-	        // set
-09d96736682197cbec1e19980dafe0b8|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|80|5|V|typescriptreact
-	  window.setTimeout(() => setEstimationRunnig(true), 5000);
-cfb44e094c919e51e16f5be6b99fabf8|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|77|3|V|typescriptreact
-	  if (window) {
-e3f575775494e856888bc51a033b82e9|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|80|5|V|typescriptreact
-	    window.setTimeout(() => setEstimationRunnig(true), 5000);
-2666a275464f0a66f5f857001125a54b|file:///Users/kouiti/localfile/dev-glycosim/source/PE/mocks/out.json|1|1|V|json
-	
-	    "modelName": "Model_2022_02_03_07_38_51",
-	    "bestValue": 0,
-	    "fitParam": [
-	        0.004422959731402711,
-	        2.692597244965275
-	    ],
-	    "paramNames": [],
-	    "initNames": [
-	        "cis_MAN1_2",
-	        "cis_MAN1_1"
-	    ],
-	    "log": "Generating the initial population. . .\n1 / 10\n2 / 10\n3 / 10\n4 / 10\n5 / 10\n6 / 10\n7 / 10\n8 / 10\n9 / 10\n10 / 10\n\n----------------------------------------\n\nGeneration1: Best Fitness = 0.000000e+00\n"
-	}
-99cda4fa49cb111670be94331d83ffb6|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|78|1|V|python
-	                    sbml_text=request.json["sbml_text"],
-2ba292e9d28e824fa6b9241adc4ff262|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|78|1|V|python
-	                    exp_data=request.json["exp_data"],
-209694f7fd014b2d72112c673fa759b2|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|45|15|v|typescriptreact
-	handleClose
-41196ca027d988be001881c7bdd86071|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|16|27|V|typescriptreact
-	  const handleClose = () => setShow(false);
-e7919e8983141fb952625388b7335074|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|65|1|V|typescriptreact
-	        const res1 = await GssParam.create(libgssparam);
-	        const res_gssparam = ApiHandler(res1, setError);
-76ea0bebb3c22822b4f0dd9c9fd021c5|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|76|37|v|typescriptreact
-	create
-b975be3d83f6e8c9625e6a8bd0f61fed|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|76|44|v|typescriptreact
-	libgssparam
-b817b2fedd9ed306555a6bfa61aa67a5|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|76|44|v|typescriptreact
-	res_pe
-278e449db25f15bb220e442b4d7bfd91|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|76|25|V|typescriptreact
-	        libgssparam.id = 
-f22c121315d4963359c984625cf4acf4|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|74|28|V|typescriptreact
-	        if(res_pe === null) 
-af56ae5e2d1526f083dc9c03ed474514|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|82|31|V|typescriptreact
-	        const res3 = await GssParam.update();
-780bc2132bd7f2d9e919bc3aff258d21|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|76|9|V|typescriptreact
-	          libgssparam.update({})
-f38d016c49b80f8e2cadc055b23a548c|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|76|1|V|typescriptreact
-	          const res3 = await GssParam.update({});
-f31c9dad17f11d88fefd74edcd988112|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|42|3|V|typescriptreact
-	  result_json() {
-	  }
-3840832e1725b28c69b0ad9998372c4f|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|81|22|V|typescriptreact
-	        const res_gssparam = ApiHandler(res1, setError);
-c1abed0d794f8a397b3999e7f8d2ae05|file:///Users/kouiti/localfile/web-glycosim/next/components/parameterestimation/EstimationCondition.tsx|80|1|V|typescriptreact
-	  const createGssParam = async (title: string) => {};
-	
-	  useEffect(() => {
-	    createGssParam("testparam");
-	  }, []);
-a4631771503f80d42caffa6cd81f7b60|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|41|7|V|typescriptreact
-	  updat
-ee2070c403e7f932a3240974b75d58bd|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|30|1|V|typescriptreact
-	  create: async (libgssparam: LibGssParam) => {
-	    const data: GssParamObject = libgssparam.export();
-	    try {
-	      const res1 = await axios.post(ApiUrl + "gssparam/create", data);
-	      return res1;
-	    } catch (err: any) {
-	      console.log(err);
-	      return err.response;
-	    }
-	  }
-a1ffd43d22c461f3716f6de4b20f7acb|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|41|31|v|typescriptreact
-	LibGssParam
-c79450ba1c05a6298ad0b6932cee1995|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|42|32|V|typescriptreact
-	    const data: GssParamObject = libgssparam.export();
-0a4d80b556986fff3e8144d9381ddecf|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|84|1|V|python
-	# def update(id: int, data):
-	#     content = model.query.filter_by(id=id).first()
-	#     if "sbml_text" in data:
-	#         sbml_dir = "./models/GssModel/sbml/" + str(uuid.uuid4()) + ".xml"
-	#         sbml_doc = readSBMLFromString(data["sbml_text"])
-	#         writeSBML(sbml_doc, sbml_dir)
-	#         data.pop("sbml_text")
-	#         data.sbml_dir = sbml_dir
-	#     for key in data:
-	#         try:
-	#             eval("content." + key + "= data.key")
-	#             print("update gssmodel ->")
-	#             print(key, "->", data.key)
-	#         except:
-	#             print(key, "passed")
-	#             pass
-	#     db_session.commit()
-	#     return dict(content)
-f426b0517999226b9daf50a5fbc65b7c|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|59|1|V|python
-	def create(title: str, body: str, result_json: Union[str, None], user_name: str, gssmodel_id: Union[int, None]):
-cb9cc2639d291a762de86171d92a13f7|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|84|1|V|python
-	def update(id: int, data):
-2970f2227769068e4daf8dd32dda404f|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|33|1|V|python
-	@app_gssparams.route('/gssparam/create', methods=["POST"])
-	def app_gssparam_create():
-	    try:
-	        content = GssParam.create(
-	                title=request.json["title"] if "title" in request.json.keys() else "",
-	                body=request.json["body"] if "body" in request.json.keys() else "",
-	                result_json=request.json["result_json"] if "result_json" in request.json.keys() else None,
-	                user_name=request.json["user_name"],
-	                gssmodel_id=request.json["gssmodel_id"] if "gssmodel_id" in request.json.keys() else None
-	                )
-	        return content
-	    except:
-	        print("error /gssparam_create")
-	        traceback.print_exc()
-	        abort(400, traceback.format_exc())
-4a02e3062789ff81d05dcd62d58b6f57|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|54|1|V|python
-	                title=request.json["title"] if "title" in request.json.keys() else "",
-	                body=request.json["body"] if "body" in request.json.keys() else "",
-	                result_json=request.json["result_json"] if "result_json" in request.json.keys() else None,
-	                user_name=request.json["user_name"],
-	                gssmodel_id=request.json["gssmodel_id"] if "gssmodel_id" in request.json.keys() else None
-13749fc07425dd60fc66af2dad16b75c|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|83|12|v|python
-	title: str, body: str, result_json: Union[str, None], user_name: str, gssmodel_id: Union[int, None]
-bb4c374392133719a324ab1ba2799cd6|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|83|18|v|python
-	dict
-9649ae24085899d341cae56544bbba20|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|84|1|V|python
-	    content = model.query.filter_by(id=id).first()
-	    if "sbml_text" in data:
-	        sbml_dir = "./models/GssModel/sbml/" + str(uuid.uuid4()) + ".xml"
-	        sbml_doc = readSBMLFromString(data["sbml_text"])
-	        writeSBML(sbml_doc, sbml_dir)
-	        data.pop("sbml_text")
-	        data.sbml_dir = sbml_dir
-	    for key in data:
-	        try:
-	            eval("content." + key + "= data.key")
-	            print("update gssmodel ->")
-	            print(key, "->", data.key)
-	        except:
-	            print(key, "passed")
-	            pass
-	    db_session.commit()
-	    return dict(content)
-a8cfde6331bd59eb2ac96f8911c4b666|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|59|116|v|python
-	object
-b2fa4306720ba0a0864f30c5fb6f04b4|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|85|1|V|python
-	    if "sbml_text" in data:
-	        sbml_dir = "./models/GssModel/sbml/" + str(uuid.uuid4()) + ".xml"
-	        sbml_doc = readSBMLFromString(data["sbml_text"])
-	        writeSBML(sbml_doc, sbml_dir)
-	        data.pop("sbml_text")
-	        data.sbml_dir = sbml_dir
-	    for key in data:
-	        try:
-	            eval("content." + key + "= data.key")
-	            print("update gssmodel ->")
-	            print(key, "->", data.key)
-	        except:
-	            print(key, "passed")
-	            pass
-4c2c12cae6e7f72a2641f4aece72c3d8|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|85|7|V|python
-	    if 
-466deec76ecdf5fca6d38571f6324d54|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|83|12|v|python
-	json
-6a991042d8a213824eb83201bcb3948d|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|59|19|V|python
-	        return None
-f77b49d501b581d18028b9db19d0b7ad|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|48|12|V|python
-	    return N
-a02439ec229d8be0e74b0c1602392310|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|33|52|v|python
-	POST
-08a73a5f40f435d4e9ce6410161e59b1|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|43|20|V|python
-	        [object]: []
-0e3636acb48df2adbe3354573d78bda2|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|82|12|V|python
-	def function(arg1):
-0310159a31cb6b8cd1ecc82e52df8b85|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|82|1|V|python
-	    """TODO: Docstring for function.
-	
-	                    :arg1: TODO
-	                    :returns: TODO
-	
-	                    """
-	    pass
-a0f36809cfd3dbb56e4c4b84f79a0257|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|32|1|V|python
-	    """
-	    Args:
-	        params_list: dict[]
-	        species_list: dict[]
-	        sbml_text: string
-	        exp_data: dict[]
-	        max_iteration = int
-	        estimation_times: int
-	
-	        see source/PE/BioMASS/mock/settings2.json
-	    Returns:
-	        best_value: int
-	        fit_param_names: str[]
-	        fit_param_values: int[]
-	    """
-d23398cde39c5ad151daf7873220ddf2|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|46|1|V|python
-	        best_value: int
-	        fit_param_names: str[]
-	        fit_param_values: int[]
-566aaa704536b64ccc0e78b13c4f5093|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|37|9|v|python
-	params_list
-425252429b1df10ef892aa964ec1c8af|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|38|9|v|python
-	species_list
-cabe722eba47c05c268244c75cad4c7f|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|39|9|v|python
-	sbml_text
-7eb76cdfbff1d3b65e6f15080a2d7417|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|40|9|v|python
-	exp_data
-15379ec33c927b021b08101083680525|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|42|19|V|python
-	        estimation_times: int
-51ce557201a5b5defaa7990cc5f2b749|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|42|1|V|python
-	        see source/PE/BioMASS/mock/settings2.json
-c25ff7cecf1fcc088faaca3301c721ed|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|35|1|V|python
-	    """
-	    Args:
-	        title:          str|null
-	        body:           str|null
-	        result_json:    dict|null
-	        user_name:      str|null
-	        gssmodel_id:    int|null
-	    Returns:
-	    """
-aff55cb2905180c4b68ae74e560a75ec|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|98|5|V|python
-	    """
-	    """
-89425fb92519abebf862de3bb363b5b1|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|84|5|V|python
-	    """
-	    Args:
-	        params_list: dict[] | null
-	        species_list: dict[]
-	        sbml_text: string
-	        exp_data: dict[]
-	        max_iteration = int
-	        estimation_times: int
-	
-	        see source/PE/BioMASS/mock/settings2.json
-	    Returns:
-	        best_value: int
-	        fit_param_names: str[]
-	        fit_param_values: int[]
-	    """
-0e79edbbd914127972ddd8d29906aefc|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|96|1|V|python
-	    args = [
-	            "title",
-	            "body",
-	           "result_json",
-	           "user_name",
-	           "gssmodel_id"
-	            ]
-0407d27bf2468303425e50381417bc86|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|93|5|V|python
-	    args = [
-	            "title",
-	            "body",
-	           "result_json",
-	           "user_name",
-	           "gssmodel_id"
-	            ]
-	
-9d626116e08eaed3d94480a770ced0da|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|97|5|V|python
-	        if
-2fcf3e165d3d9911c90ff69ccffd75e2|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|96|5|V|python
-	    for key in args:
-8dae193ccf68a011d65da100a1b21ec5|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|96|1|V|python
-	    try:
-	        content.title = request.title
-	    except:
-	        pass
-60d20fbd93b636188ef26517dfda74eb|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|101|5|V|python
-	        content.body = request.title
-	    except:
-b0f145c330ac57940d06fd5bc3f3e5a3|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|105|40|v|python
-	request_jsonchhhhhhhhhh
-c8d0190b1c4d275d68a8834abfbf04bc|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|105|17|v|python
-	request_json
-63680e3e219c8c41a6bd0f6a1f35905d|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|116|1|V|python
-	    try:
-	        content.title = request.title
-	    except:
-	        pass
-	    return
-a748cf78be67604e642e88afeaa60e9e|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|105|18|v|python
-	result_json
-c56f5648d4c0e137f9de3dfc7a54d55b|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|109|18|v|python
-	user_name
-b361ecb46d8db0afa5aef08893530177|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|113|18|v|python
-	gssmodel_id
-306cae278cd11fab6e4528f2a0a4c997|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|9|1|V|typescriptreact
-	    fit_param_name: string[]
-	    git_param_values: 
-6680dba00f3a88f66f8029a93d71d93c|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|32|5|v|typescriptreact
-	const
-cd3fffeeb67625cdbd5ca4e4f3458319|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|47|1|V|typescriptreact
-	  result_json() {
-	    console.log("okok");
-	  }
-dcef731730dc302945f82b6d3c7ab8ad|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|30|1|V|typescriptreact
-	  create: async (libgssparam: LibGssParam) => {
-2b2f71f1c5f0ec574aa560b63bc78172|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|41|3|V|typescriptreact
-	  update: async (result_json: {}) => {
-82055a2096912172d1b3e32723e739c1|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|9|1|V|typescriptreact
-	  expdata: LibGssParamExpData;
-	  results: LibGssParamResults;
-	  settings: LibGssParamSettings;
-	  condition: LibGssParamConditions;
-320aaff0ae52f9e59c181406853630c7|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|2|1|V|typescriptreact
-	import { LibGssParamExpData } from "./LibGssParamExpData";
-	import { LibGssParamResults } from "./LibGssParamResults";
-	import { LibGssParamSettings } from "./LibGssParamSettings";
-	import { LibGssParamConditions } from "./LibGssParamConditions";
-bed7d8af6455f0b0c3bb3bc9e75dcb8b|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|9|18|v|typescriptreact
-	ParamExpData
-1360c4f83d94d5f3a06f510edef7bcc3|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|9|12|v|typescriptreact
-	LibGssi
-2121c0b073e6c63a1727a8eab29652d1|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|10|12|v|typescriptreact
-	LibGssParamResults
-45c4d9087cfedf599ef470cfa68ceb4d|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|11|13|v|typescriptreact
-	LibGssParamSettings
-2e15e3347ff5c4412a2f6b39c2a24ee5|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|12|14|v|typescriptreact
-	LibGssParamConditions
-dae2c52be0d1f4cbb6570e52e39129d6|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|5|1|V|typescriptreact
-	export interface GssParamObject {
-	  title: string;
-	  body: string;
-	  result_json: {
-	    expdata: any;
-	    results: any;
-	    settings: any;
-	    condition: any;
-	  } | null;
-	  user_name: string;
-	  gssmodel_id: Number;
-	}
-62dd7b8a67e5ceaca5985d6774c64834|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|6|25|V|typescriptreact
-	import { GssParamObject } from "api/GssParam";
-40d842496cd85447f2567fec8f39dbbf|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|4|18|V|typescriptreact
-	TypeOfModelSession
-ffb4b7e4f2e929b9538a1ed85dde1061|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|1|22|V|typescriptreact
-	import { Species, Parameter } from "./GssParam";
-0d0c04772eecb3044943dd39649e83d0|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|2|1|V|typescriptreact
-	  listOfSpecies: Species[];
-	  listOfParameters: Parameter[];
-98a4b93dfb75bd7172307b186ddc231d|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|7|1|V|typescriptreact
-	export interface TypeOfLibGssParam {
-	  title: string;
-	  body: string;
-	  result_json: {
-	    expdata: any;
-	    results: any;
-	    settings: any;
-	    condition: any;
-	  } | null;
-	  user_name: string;
-	  gssmodel_id: Number;
-	}
-5c66f900dadf3ca5f0a05d1ea970b897|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|2|1|V|typescriptreact
-	  title: string;
-	  body: string;
-	  result_json: {
-	    expdata: any;
-	    results: any;
-	    settings: any;
-	    condition: any;
-	  } | null;
-	  user_name: string;
-	  gssmodel_id: Number;
-822a11a79b21bf4969c08c50f235b090|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|6|1|V|typescriptreact
-	  data: {
-	    best_value: number;
-	    fit_params: { id: string; value: number }[];
-	  }[];
-7169863c2a1e0bfc7ae553c1119a14cd|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|2|8|V|typescriptreact
-	  data: {
-8b64701e4abe9364f0e8125961495b66|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|4|6|V|typescriptreact
-	  }[];
-3c75fbd2360d1b214dce3bdfe705cff3|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|1|1|V|typescriptreact
-	export interface TypeOfLibGssResult {
-	  best_value: number;
-	  fit_params: { id: string; value: number }[];
-	}
-a6dce062f36e7adcf29581c824e3a282|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|6|1|V|typescriptreact
-	  best_value: number;
-	  fit_params: { id: string; value: number }[];
-8eb58dd5e328e978169c7b0cbd30d43f|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|5|8|v|typescriptreact
-	interface
-c40dac67b2f5abf11cf7bcea237f6926|file:///Users/kouiti/localfile/dev-glycosim/source/PE/mocks/out.json|2|10|V|json
-	    "modelName": "Model_2022_02_03_07_38_51",
-9f81730930500bf0ebbc704edb8d8b20|file:///Users/kouiti/localfile/dev-glycosim/source/PE/mocks/out.json|7|6|v|json
-	paramNames
-655bffded44b3fea690d49d12260b3fd|file:///Users/kouiti/localfile/dev-glycosim/source/PE/mocks/out.json|7|5|V|json
-	    "": [],
-722e79a15095ff7d270a0fe99733a5c9|file:///Users/kouiti/localfile/dev-glycosim/source/PE/mocks/out.json|7|6|v|json
-	initNames
-54057db71e86e0d2d8f4c31536a89d2d|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|20|1|V|python
-	# def geneticalgorithm(
-	#         time: int,
-	#         step: int,
-	#         params_list: list,
-	#         species_list: list,
-	#         sbml_text: str,
-	#         exp_data: list,
-	#         max_generation: int
-	#         ):
-	#     time = time
-	#     step = step
-	#     params_list = params_list
-	#     optEtItemList = species_list
-	#     sbmlString = sbml_text
-	#     expDataList = exp_data
-	#     maxGen = max_generation
-	#     pe_exec_ids = []
-	
-	#     optItemList = params_list
-	
-	#     # # Etはパラメータではなく変数(初期値)に入る
-	#     # optEtItemList = []
-	
-	#     # # elongate optItemList
-	#     # optItemList.extend(kfList)
-	#     # optItemList.extend(KmList)
-	#     # optItemList.extend(KmdList)
-	#     # optEtItemList.extend(EtList)
-	#     # make csv file of experimental data by using expDataList
-	#     tmpId = randint(1, 100000)
-	
-	#     # get a unique id in reference to pe_exec_ids
-	#     for i in range(len(pe_exec_ids)):
-	#         if tmpId == pe_exec_ids[i]:
-	#             continue
-	#     pe_exec_ids.append(tmpId)
-	
-	#     # print("expDataList: {}".format(expDataList))
-	
-	#     # fileName = "/Users/isami/PycharmProjects/Glycosim/glycosim_sbml_parser/dev-glycosim/source/SBML/SBMLfile_1.txt"
-	#     # time = 22.24
-	#     # step_number = 100
-	
-	#     # type? sim pe sa?
-	
-	#     # initialization
-	#     method_type = "sim"
-	#     search_param_regions = {}
-	#     search_inits_regions = {}
-	#     observed_points_y = {}
-	#     observed_time_points = {}
-	
-	#     for item in optItemList:
-	#         search_param_regions[item["name"]] = [
-	#             float(item["lowerBound"]), float(item["upperBound"]), float(item["value"])]
-	
-	#     for item in optEtItemList:
-	#         search_inits_regions[item["name"]] = [
-	#             float(item["lowerBound"]), float(item["upperBound"]), float(item["value"])]
-	#     # constraints
-	#     # print("\nsearch_param_regions: {}".format(search_param_regions))
-	
-	#     # 名前の記述
-	#     for expData in expDataList:
-	#         for key in expData.keys():
-	#             # get time data
-	
-	#             en = s2b.conv_semicolon_letter(key)
-	#             # key exists
-	#             if en != "time":
-	#                 if observed_points_y.get(en) == None:
-	#                     observed_points_y[en] = [float(expData[key])]
-	#                 else:
-	#                     observed_points_y[en].append(float(expData[key]))
-	
-	#                 if observed_time_points.get(en) == None:
-	#                     observed_time_points[en] = [float(expData["time"])]
-	#                 else:
-	#                     observed_time_points[en].append(float(expData["time"]))
-	#     # check
-	#     print("\n observed_points_y: {}\n".format(observed_points_y))
-	
-	#     # write biomass code
-	#     # if not os.path.exists():
-	#     print("\n src_params: {}".format(search_param_regions))
-	#     model = s2b.importSBML2Biomass(
-	#         sbmlString,
-	#         ["ODE"],
-	#         method="param_estim",
-	#         duration=float(time),
-	#         step=float(step),
-	#         obs_species=observed_points_y,
-	#         obs_timepoints=observed_time_points,
-	#         src_params=search_param_regions,
-	#         src_inits=search_inits_regions,
-	#         overwrite=True)
-	#     modelName = model["modelName"]
-	
-	
-	#     # do parameter estimation
-	#     print("new model name {}".format(modelName))
-	#     exec("from out.model import {} as m".format(modelName))
-	#     print("log max_gen: {}".format(maxGen))
-	#     # run optimization
-	#     exec("optimize(m, 1, overwrite=True, max_generation=" + maxGen + ")")
-	
-	#     # file path
-	#     # compare result data
-	#     # get fit param
-	#     rep = re.compile(r"fit_param[1-9]+.npy")
-	#     modelPath = os.path.join("./out/model", modelName, "out", "1")
-	#     optPath = os.path.join("./out/model", modelName, "out", "1", "optimization.log")
-	#     # get optimization string
-	#     if os.path.exists(optPath):
-	#         # n_file include list of int
-	#         n_file = 0
-	#         # fit param file number init
-	#         num = 0
-	#         # result: np.array = np.load()
-	#         # fit params
-	#         fitparam_files: list(str) = os.listdir(modelPath)
-	#         for file in fitparam_files:
-	#             print(file)
-	#             if re.search(r'\d', file):
-	#                 idx = int(re.search(r'\d+', file)[0])
-	#                 print(idx)
-	#                 if num < idx:
-	#                     n_file = idx
-	#                     num = idx
-	#         # best fitness value
-	#         bestFitness = np.load(os.path.join(modelPath, "best_fitness.npy"))
-	#         # fit param import
-	#         fitParamVec = np.load(os.path.join(modelPath, "fit_param"+str(n_file) + ".npy"))
-	#         # optimization log
-	#         with open(os.path.join(modelPath, "optimization.log"), "r")as f:
-	#             log = f.read()
-	
-	#          # get params names List[str]
-	#         params = eval("m.C.NAMES")
-	#         search_params = eval("m.SearchParam.idx_params")
-	#         paramNames = [params[i] for i in search_params]
-	
-	#         initials = eval("m.V.NAMES")
-	#         search_initials = eval("m.SearchParam.idx_initials")
-	#         initNames = [initials[i] for i in search_initials]
-	#         # get target variables List[str]
-	#         # rxns = m.ReactionNetwork().reactions
-	
-	#         exec("del m")
-	#         # send json data
-	#         return json.dumps({
-	#             "modelName": modelName,
-	#             "bestValue": bestFitness + 0.,
-	#             "fitParam": fitParamVec.tolist(),
-	#             "paramNames": paramNames,
-	#             "initNames": initNames,
-	#             "log": log,
-	#         })
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-0dd1aadc2169aed02f53d60773123f72|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|213|1|V|python
-	            "fit_param_valuess": fitParamVec.tolist(),
-6266fe9b31416d12250ccb0bef1ef70a|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|216|1|V|python
-	            "fit_param_names": initNames,
-a85b19ad6b59836a9d8aaa6053486809|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|205|23|V|python
-	        fit_params = {}
-2667b11c0255008332ddb306417a2185|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|208|9|V|python
-	        a
-238dc5ab9b556a790ebbd3a9f6c8db16|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|216|26|v|python
-	fitParamVec.tolist(),
-2334580daf8b534172b41aff2c942c65|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|217|1|V|python
-	            # "paramNames": paramNames,
-	            "fit_param_names": initNames,
-	            # "log": log,
-f6523a8d075cacf1d751d2035d858bb9|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|65|20|V|python
-	        results = {}
-84bc7aae26078140dfd1edd39eb1049d|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|85|1|V|python
-	        print(result_list)
-e8db2b86cbebdb1925c78bda33e95a27|file:///Users/kouiti/localfile/web-glycosim/next/pages/parameterestimation.tsx|74|26|V|typescriptreact
-	        console.log(res_pe);
-2523c36a39dda01fefc3c6e9affbaa52|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|207|1|V|python
-	        print(fit_param_names)
-	        print(fit_param_values)
-e44f5df1fc969820cab0807f8c7afca1|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|11|1|V|typescriptreact
-	    expdata: any;
-	    results: TypeOfLibGssResults;
-	    settings: any;
-	    condition: any;
-	  } | null;
-1867fdef245119fc007221d59e6c2c09|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|7|1|V|typescriptreact
-	export type TypeOfLibGssParam = {
-	  title: string;
-	  body: string;
-	  result_json: TypeOfLibGssParamResults;
-	  user_name: string;
-	  gssmodel_id: Number;
-	};
-59691002de66ff9cf74170c3dc6e8684|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|15|13|v|typescriptreact
-	TypeOfLibGssParam
-5808eed08a656acaeb1d0eb2fe2f0545|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|15|1|V|typescriptreact
-	export type result_json = {
-	  title: string;
-	  body: string;
-	  result_json: TypeOfLibGssParamResults;
-	  user_name: string;
-	  gssmodel_id: Number;
-	};
-05701c5f249eee8d3fc119eb04235f03|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|8|1|V|typescriptreact
-	  title: string;
-	  body: string;
-	  result_json: TypeOfLibGssParamResults;
-	  user_name: string;
-	  gssmodel_id: Number;
-1a4e501fa3dabbbfd3395501cd079186|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|8|12|v|typescriptreact
-	LibGssParamExpData
-a4583cb1778d70dcc5fd7e15481f43dd|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|8|12|v|typescriptreact
-	TypeOfLibGssParamResults
-827f0bf0613626d585db2bd3535abaf1|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|46|7|V|typescriptreact
-	    if()
-a60a983895291c581a59cef9104ff5c1|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|47|15|V|typescriptreact
-	    result_json
-e71095eaee3f178ca2aeb340aefffb74|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|50|1|V|typescriptreact
-	    if (this.results.isNull) {
-	      result_json.results = null;
-	    } else {
-	      result_json.results = this.results.export();
-	    }
-3fc1776fa54486d6e7d086cba682b2c9|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|1|1|V|typescriptreact
-	export type TypeOfLibGssParamResult = {
-	  best_value: number;
-	  fit_params: { id: string; value: number }[];
-	};
-	export type TypeOfLibGssParamResults = TypeOfLibGssParamResult[] | null;
-af9790cd507d3a115e88f10b73ca9080|file:///Users/kouiti/localfile/dev-glycosim/source/PE/mocks/out.json|1|2|V|json
-	{
-	    "best_value": 0,
-	    "fit_param_values": [
-	        0.004422959731402711,
-	        2.692597244965275
-	    ],
-	    "fit_param_names": [
-	        "cis_MAN1_2",
-	        "cis_MAN1_1"
-	    ],
-	    "log": "Generating the initial population. . .\n1 / 10\n2 / 10\n3 / 10\n4 / 10\n5 / 10\n6 / 10\n7 / 10\n8 / 10\n9 / 10\n10 / 10\n\n----------------------------------------\n\nGeneration1: Best Fitness = 0.000000e+00\n"
-	}
-21a361d96e3e13f5f109748c2a9d2434|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|211|24|v|python
-	push
-fbd70088852e8d00ab04282278d76c6c|file:///Users/kouiti/localfile/dev-glycosim/source/PE/BioMASS/run.py|210|43|V|python
-	            fit_params[fit_param_names[i]] = fit_param_values[i]
-a25d88804e7d17e1a7c1eb6293523963|file:///Users/kouiti/localfile/web-glycosim/next/functions/libgssparams/LibGssParamResults.tsx|20|1|V|typescriptreact
-	  export(): TypeOfLibGssParamResults {
-	    return this.data;
-	  }
-5bcbf40f6fac2ef53a18a05ce166bb59|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|85|1|V|python
-	        print("0000000000000000000000000000000000")
-	        print(result_list)
-	        print(result_list)
-	        print(result_list)
-	        print(result_list)
-	        print(result_list)
 d6a5cd7407a709129bd236a0c0b2ba0d|file:///Users/kouiti/localfile/dev-glycosim/module/gss/gss_pe.py|22|1|V|python
 	@app_gss_pe.route("/parameterestimation/geneticalgorithm/<tool>", methods=["POST"])
 	def api_geneticalgorithm(tool):
@@ -1309,3 +182,851 @@ b12e9539672ea8fd4e770d494bab2e6c|file:///Users/kouiti/localfile/glycovid_PSIQUIC
 	[-a-z0-9]+
 c587e97308241028116800cd3fa4e55c|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|39|79|V|python
 	                and not re.match(r"<http:\/\/rdf\.glycoinfo\.org\/dbid\/mint\/>", uri)\
+4d47d0e2b20ff2b04e136d4f793ccff5|file:///Users/kouiti/localfile/glycovid_PSIQUIC/.gitignore|4|1|V|
+	owl/1_19/data/
+218da1951c5fbdf2b2f1a62eb68dbb44|file:///Users/kouiti/localfile/glycovid_PSIQUIC/.gitignore|2|6|V|
+	data1_
+02d4d32b0359dcc3a85a5838e2be4233|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|39|79|v|python
+	MPIDB-INT-\d{3,4}
+8136aba13e6cb914b2bc8d865a027e01|file:///Users/kouiti/localfile/glycovid_PSIQUIC/uri_list/object_uri_list2.csv|8|91|v|
+	0074
+eb830b1012d323d1339f5db28152c18a|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|39|79|V|python
+	                and not re.match(r"<http:\/\/rdf\.glycoinfo\.org\/dbid\/mpid\/>", uri):
+0ddf1c36870360a9831cb04979cd3605|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|38|36|V|python
+	                and not re.match(r"<http:\/\/rdf\.glycoinfo\.org\/dbid\/pubmed\/unassigned\d+>", uri)\
+	            print("failed in ", uri)
+06f6691165ad449de60c7938dbe336ea|file:///Users/kouiti/dotfiles/dotfiles/nvim/coc-settings.json|14|29|V|json
+	  "python.jediEnabled": false
+3f517979e379a6756ba266d96c039b8f|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|37|1|V|vim
+	noremap <silent>R *:%s//
+b4f1e4b358092338a8a99bc7bf87f8e8|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|42|24|v|vim
+	:source ~/.config/nvim/shortcuts.vim<CR>
+3bd351edab3e4bda7a8d55ab27cb475a|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|38|1|V|vim
+	noremap <silent>:e<CR> p
+c2daecdeca9f042b88af41b177d722d4|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|38|1|V|vim
+	noremap <silent>:e<CR> :source ~/.config/nvim/shortcuts.vim<CR>:edit<CR>
+ebf87251d092a6de9c12cc3e85c1707a|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|39|87|v|vim
+	shortcuts
+18c50b5bd69fec05a6bab11f88aefae4|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/general_method.py|11|10|v|python
+	iRefIndex
+b4bfc1f13dd1d99f9e31a85fe9d32909|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|33|28|v|vim
+	only | close!
+	
+bad097494597a4e092c1524102eeaea7|file:///Users/kouiti/localfile/glycovid_PSIQUIC/test/validate_turtle.py|39|80|v|python
+	unassigned
+6b6aaf786012d2c9742ae40effb055a0|file:///Users/kouiti/localfile/glycovid_PSIQUIC/uri_list/object_uri_list2.csv|31|44|v|
+	[A-Za-z0-9]+
+a42f5c7682f5681e4aa9bb0edb01975e|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|174|24|v|python
+	Taxon_ii
+80ac6ec9835fccc1f333b0629e4795c2|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|174|1|V|python
+	                    if(row[9][-2:] == "-1"):
+afd3370560353846d469dc738b248705|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|176|22|V|python
+	                    elif(Taxon_id == "-2"):
+98a61b8b6556b079cb935f6b07f37991|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|167|32|v|python
+	row[8]
+03fa6f3dbd993c49999222b082f8925d|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|167|34|v|python
+	\d{2}
+c6bff625bdb0393992c9d4db0c6bbe45|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|167|42|v|python
+	1101
+7b7a53e239400a13bd6be6c91c4f6c4e|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|167|49|v|python
+	2020
+0a8bbea06c788fc9a24b6bf7d7639ffc|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|167|70|v|python
+	156455
+2a29fc4c24dd015011cfe0da6913e8dc|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|168|28|V|python
+	                        pass
+d95707be29939982dd2ad5ca01d391f2|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/create_owl.py|83|20|v|python
+	1_19
+0add707dfbe1a072152ee5d3d4d801ab|file:///Users/kouiti/dotfiles/dotfiles/fish/config.fish|20|1|V|fish
+	eval (goenv init - | source)
+67fd1aa7f162d4b401ec084f1b009314|file:///Users/kouiti/dotfiles/dotfiles/fish/config.fish|16|1|V|fish
+	eval (rbenv init -)
+da315005a99c331986375caf554ecf7d|file:///Users/kouiti/dotfiles/dotfiles/fish/config.fish|15|7|v|fish
+	goenv
+5a8a4353e4c88c7e60e74bc7c0977264|file:///Users/kouiti/dotfiles/dotfiles/fish/config.fish|19|1|V|fish
+	set -x PATH $GOENV_ROOT/bin $PATH
+f049df9fc02d90419ab4f17979bf28f4|file:///Users/kouiti/dotfiles/dotfiles/fish/config.fish|15|14|v|fish
+	GOENV_ROOT
+7742ba4a78eb537fa0795ad15de24828|file:///Users/kouiti/dotfiles/dotfiles/fish/config.fish|14|18|V|fish
+	export PATH="$HOME/.rbenv/bin:$PATH"
+62cc6e287223e8ca2c02f6a36fd60f8d|file:///Users/kouiti/localfile/PLANE3T_APP/README.md|3|1|V|markdown
+	This README would normally document whatever steps are necessary to get the
+	application up and running.
+	
+	Things you may want to cover:
+	
+a130e5403fa0bc8e4a7eb0bbe82b408d|file:///Users/kouiti/localfile/PLANE3T_APP/README.md|4|1|V|markdown
+	* Ruby version
+	ruby 2.7.3p183 (2021-04-05 revision 6847ee089d)ruby 2.7.3p183 (2021-04-05 revision 6847ee089d)
+aa949a3101dd11181aaf912d7abd5b05|file:///Users/kouiti/localfile/PLANE3T_APP/README.md|7|1|V|markdown
+	ruby 2.7.3p183 (2021-04-05 revision 6847ee089d)ruby 2.7.3p183 (2021-04-05 revision 6847ee089d)
+9916d1fc59fe22cc046a2fe1615bc764|file:///Users/kouiti/localfile/PLANE3T_APP/README.md|6|3|v|markdown
+	Ruby
+ee571fb6970e9727fe27834fec1efe6b|file:///Users/kouiti/localfile/PLANE3T_APP/README.md|19|47|V|markdown
+	[mac OS](https://prog-8.com/docs/rails-env)<br>
+	[windows](https://prog-8.com/docs/rails-env-win)<br>
+b8af13ea9c8fe890c9979a1fa8dbde22|file:///Users/kouiti/localfile/PLANE3T_APP/README.md|18|9|V|markdown
+	reference
+3495d5d84b3bedeb4377cfc005bfbe52|file:///Users/kouiti/localfile/PLANE3T_APP/config/routes.rb|3|9|v|ruby
+	patients
+a7dd12b1dab17d25467b0b0a4c8d4a92|file:///Users/kouiti/localfile/PLANE3T_APP/config/routes.rb|3|35|v|ruby
+	show
+5d41402abc4b2a76b9719d911017c592|file:///Users/kouiti/localfile/PLANE3T_APP/app/controllers/trace_growenv_controller.rb|4|23|v|ruby
+	hello
+2c1e42f13d17705b79011560f3dd41fc|file:///Users/kouiti/localfile/PLANE3T_APP/app/views/trace_growenv/index.html|1|1|V|html
+	ijoij
+	joijo
+	jfiosjdfiosjafisajfoisajfiosjfaoi
+fad58de7366495db4650cfefac2fcd61|file:///Users/kouiti/localfile/run.sh|1|7|v|sh
+	main
+74ab20e880f5f67e969c86dac444d851|file:///Users/kouiti/localfile/run.sh|2|6|V|sh
+	./main
+aba64287f4111cc8510038011f38f5e9|file:///Users/kouiti/dotfiles/dotfiles/fish/config.fish|16|1|V|fish
+	set -x PATH $HOME/rbenv init.rbenv/bin $PATH
+5d37b760b0a7d6bf6a1782327d149c81|file:///Users/kouiti/dotfiles/dotfiles/fish/config.fish|14|19|v|fish
+	rbenv
+96185c1802e66f0876ae951f8bca25a7|file:///Users/kouiti/dotfiles/dotfiles/fish/config.fish|14|30|v|fish
+	init.rbenv/bin
+f2095999830987fe0bcd617299ca92ed|file:///Users/kouiti/dotfiles/dotfiles/fish/config.fish|13|30|V|fish
+	export PATH="$HOME/.cargo/bin:$PATH"
+209691593368e6785c74e4e216af481a|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|39|64|v|vim
+	:source ~/.config/nvim/init.vim<CR>
+09d5b90eeb5b02264b2c2908b03f52d3|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|1|1|V|rust
+	fn main() {
+	    println!("Hello, world!");
+	}
+041ebd24b00e7a5eeee4347dabc9fef9|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/general_method.py|3|1|V|python
+	        "BioGrid",
+	        "bhf-ucl",
+	        "ChEMBL",
+	        "HPIDb",
+	        "IntAct",
+	        "IMEx",
+	        "mentha",
+	        "MPIDB",
+	        "iRefIndex",
+	        "MatrixDB",
+	        "MINT",
+	        "Reactome",
+	        "Reactome-FIs",
+	        "EBI-GOA-miRNA",
+	        "UniProt",
+	        "MBInfo",
+	        "BindingDB",
+	        "VirHostNet",
+	        "BAR",
+	        "EBI-GOA-nonIntAct",
+	        "tfact2gene",
+219563166f872c7f34ab78852af555d2|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|1|1|V|rust
+	use std::env;
+	use std::fs::File;
+	use std::io::prelude::*;
+	
+	fn main() {
+	    // --snip--
+	    println!("In file {}", filename);
+	
+	    // ファイルが見つかりませんでした
+	    let mut f = File::open(filename).expect("file not found");
+	
+	    let mut contents = String::new();
+	    f.read_to_string(&mut contents)
+	        // ファイルの読み込み中に問題がありました
+	        .expect("something went wrong reading the file");
+	
+	    // テキストは\n{}です
+	    println!("With text:\n{}", contents);
+097e05d65acafcb1f0c7bb458157e7f3|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|1|1|V|rust
+	//tutorial-setup-01.rs
+	//jふぃおsふぁは
+	// ???csv crate???????????????
+	extern crate csv;
+	
+	// ????????I/O?????????????stdin????????????????
+	use std::io;
+	
+	// `main`?????????????????????
+	fn main() {
+	    // CSV???????stdin????????
+	    let mut rdr = csv::Reader::from_reader(io::stdin());
+	    // ????????????????
+	    for result in rdr.records() {
+	        // ????????????????????????(abort)??
+	        // ??????????????????
+	        let record = result.expect("a CSV record");
+	        // ????????????????
+	        println!("{:?}", record);
+	    }
+	}
+e31b79d0493b5e980f33209f88cacf31|file:///Users/kouiti/localfile/practice_rust/hello/test/test.tsv|2|1|V|
+	2-1 2-2 2-3
+52598efd928e0701c98cbf89d428a829|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|39|167|v|vim
+	echo 
+aaea584c619c7e5bef8c4c7a0272822d|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|39|151|v|vim
+	:! echo "e success!"<CR>
+fda37a0184e88c87ffcc9259daa09b7f|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|5|1|V|rust
+	// 標準ライブラリのI/Oモジュールをインポートしてstdinからの読み込みをできるようにする
+	// use std::io;
+	
+fe8f957e742d9837e2ff17e7faf68c5d|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|5|1|V|rust
+	// 標準ライブラリのI/Oモジュールをインポートしてstdinからの読み込みをできるようにする
+	use std::io;
+	
+cd51ace6441f2db26fd6fb09ad81f0fc|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|8|1|V|rust
+	    // CSVパーサを生成しstdinからデータを読む
+	    let mut rdr = csv::Reader::from_reader("");
+	    // それぞれのレコード上をループする
+	    for result in rdr.records() {
+	        // もしエラーが起こったら、プログラムを不親切に中止(abort)する
+	        // ここはあとでより丁寧なチェックを行う
+	        let record = result.expect("a CSV record");
+	        // レコードをデバッグ形式で出力する
+	        println!("{:?}", record);
+	    }
+	}
+4ca1ebbf9877ac77c00770bfab49e321|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|5|1|V|rust
+	// `main`関数はプログラムの実行が始まるところである
+	fn main() {
+49faacb7050dee6799e750333aed965a|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|5|1|V|rust
+	    let filename = "~/localfile/glycovid_PSIQUIC/data/BioGrid/BioGrid0.tsv";
+a15ffd62fd79f2c093fff820f8dbd478|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|14|17|V|rust
+	    let file_path = get_first_arg()?;
+e4c264fdffa730c73d11c061cd238763|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|24|1|V|rust
+	/// このプロセスに送られた最初の固定引数を返す
+	/// 固定引数がなかった場合エラーを返す。
+bf5163d87451f485aea0285db1b3a079|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|4|1|V|rust
+	
+	extern crate csv;
+7cc15a836a26cf1a61af0c5c13cbd891|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|24|1|V|rust
+	fn get_first_arg() -> Result<OsString, Box<dyn Error>> {
+	    match env::args_os().nth(1) {
+	        None => Err(From::from("expected 1 argument, but got none")),
+	        Some(file_path) => Ok(file_path),
+	    }
+	}
+1ebd42e67dc979471678843b155587d4|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|22|1|V|rust
+	// /// このプロセスに送られた最初の固定引数を返す
+	// /// 固定引数がなかった場合エラーを返す。
+	
+70fafe894840dd86b45264cba9b57a5d|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|7|1|V|rust
+	use std::ffi::OsString;
+330e51703630531c569528b085a15531|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|5|1|V|rust
+	use std::env;
+2d647ffae26835e3e6adc48536f25811|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|10|22|v|rust
+	~/localfile/glycovid_PSIQUIC/data/BioGrid/BioGrid0.tsv
+825aabbdfea79d79f0f35323ffb9155c|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|21|18|V|rust
+	        return ();
+254d6fed82a2f3237b15a6b35848a894|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|22|1|V|rust
+	    Ok(())
+a92ea65ec7fe66d239ea9b6023547eec|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|21|5|V|rust
+	        Ok(())
+14b2757d1b82c96536193bb924a0f3ba|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|19|1|V|rust
+	        let record = result?;
+de17f0f24b49f8364187891f8550ffbb|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|19|13|v|rust
+	record
+6f5ecc16326242bb7f0a1930cf751a9b|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|13|5|V|rust
+	    {
+934c62516228c0fbb46b807f10cb3d5a|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|14|5|V|rust
+	    // lifetimeのために、この呼び出しはそれ所有スコープでネストされている。
+b8939a0739aadf3b034ad2adee030bb0|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|14|33|V|rust
+	    let headers = rdr.headers()?;
+dcac29cac2b2ff9c16101432178753f3|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|20|1|V|rust
+	        // println!("{:?}", record);
+458eccbd9c0e7cbb8405d09ae322ec43|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|17|4|V|rust
+	    println!({}, rdr.records());
+2063c1608d6e0baf80249c42e2be5804|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|25|16|v|rust
+	value
+1fdfd2218975fba9c6d548881e86c86f|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|21|14|V|rust
+	        count += 1;
+4229da6cea9a6a3c02bdfb4ef96f275d|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|22|9|V|rust
+	        // let record = result?;
+	        // println!("{:?}", record);
+4853a61ed87b0705d9fe8fb4b050d065|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|36|1|V|rust
+	fn type_of<T>(_: T) -> String {
+	    let a = std::any::type_name::<T>();
+	    return a.to_string();
+	}
+b935d593d3172a577e376572548fe3ca|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|8|1|V|rust
+	
+	fn run() -> Result<(), Box<dyn Error>> {
+	    let file_path = "/Users/kouiti/localfile/glycovid_PSIQUIC/data/BioGrid/BioGrid0.tsv";
+	    let file = File::open(file_path)?;
+	    let mut rdr = csv::Reader::from_reader(file);
+	
+	    // let headers = rdr.headers()?.clone();
+	    // println!("{:?}", headers);
+	
+	    // println!("{}", type_of(&rdr.records()));
+	    let mut count = 0;
+	    for result in rdr.records() {
+	        let _ = result?;
+	        count += 1
+	        // let record = result?;
+	        // println!("{:?}", record);
+	    }
+	    println!("{}", count);
+	    Ok(())
+	}
+	
+	fn main() {
+	    if let Err(err) = run() {
+	        println!("{}", err);
+	        process::exit(1);
+	    }
+	}
+f6db1bae334771d3e8e69768c2a7a6ef|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|1|1|V|rust
+	//tutorial-setup-01.rs
+	// これはcsv crateをプログラムから利用可能にする
+	extern crate csv;
+	
+	use std::error::Error;
+	use std::fs::File;
+	use std::process;
+	
+	fn run() -> Result<(), Box<dyn Error>> {
+	    let file_path = "/Users/kouiti/localfile/glycovid_PSIQUIC/data/BioGrid/BioGrid0.tsv";
+	    let file = File::open(file_path)?;
+	    let mut rdr = csv::Reader::from_reader(file);
+	
+	    // let headers = rdr.headers()?.clone();
+	    // println!("{:?}", headers);
+	
+	    // println!("{}", type_of(&rdr.records()));
+	    let mut count = 0;
+	    for result in rdr.records() {
+	        let _ = result?;
+	        count += 1
+	        // let record = result?;
+	        // println!("{:?}", record);
+	    }
+	    println!("{}", count);
+	    Ok(())
+	}
+	
+	fn main() {
+	    if let Err(err) = run() {
+	        println!("{}", err);
+	        process::exit(1);
+	    }
+	}
+411392b7ecd936829210d4673af2ab7d|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|10|1|V|rust
+	    let file_path = "/Users/kouiti/localfile/glycovid_PSIQUIC/data/BioGrid/BioGrid0.tsv";
+b603a971528b39c7d2f173f2f63a76f7|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|8|5|V|rust
+	    println!("In file {}", filename);
+435ed7e9f07f740abf511a62c00eef6e|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|10|28|v|rust
+	filename
+e76be83d2042229cea0fb35ab96a3b8e|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|21|9|V|rust
+	    println!("{}", v)
+40572cc9b0f5fb3bbc3fe5865b022c40|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|16|11|V|rust
+	    let mut count = 0;
+c1b6c6b4dce075251de54aa42f2776c8|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|22|33|V|rust
+	    println!("row count {}", row_count)
+450fbee56ac49f7905f72d8fb02cd008|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|16|24|V|rust
+	    let mut row_count = 0;
+0b0ee2f34c664e7342691f7e20702648|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|18|23|V|rust
+	        row_count += 1;
+61af838408b12f0c3ea5bd19b11c5868|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|16|1|V|rust
+	    let rows: Vec<&str> = contents.split('\n').collect();
+	    for row in rows {
+df347a373b8f92aa0ae3dd920a5ec2f6|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|18|13|v|rust
+	rows
+98bf7d8c15784f0a3d63204441e1e2aa|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|18|31|v|rust
+	contents
+d4f827305d8ae192bfa36428d70b0671|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|23|18|V|rust
+	    -C panic=abort
+930f099721aeacdf50111324c4cd874b|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|20|1|V|rust
+	            println!("{}", col)
+cf54cd8c0da9212ac0c76775800e6826|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|18|28|V|rust
+	        println!("{}", &rows[0]);
+e26ce7ab36851ba66920c90e1f43e6e5|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|205|1|V|python
+	def main(dir_name: str):
+	    services_list = gm.list_serveice()
+	    for service in services_list:
+	        try:
+	            shutil.rmtree("turtle/" + service)
+	        except:
+	            pass
+	        try:
+	            os.mkdir("turtle/" + service)
+	        except:
+	            pass
+	        dir_list = glob.glob(dir_name + service + "/*.tsv", recursive=True)
+	        for i in range(len(dir_list)):
+	            print("... create ttl from", dir_list[i], "\t", i+1, "/", len(dir_list))
+	            create_ttl(dir_list[i], service + str(i), service)
+f290d0276c9251962e3fc283a0230fca|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|77|1|V|python
+	def main(dir_name: str):
+075b0f3acecaaa2296f1ca5da7da83ae|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|111|1|V|python
+	    dirname = "data/"
+511f8310717deffd5f529e40a6bbaea7|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|206|1|V|python
+	    services_list = gm.list_serveice()
+	    for service in services_list:
+	        try:
+	            shutil.rmtree("turtle/" + service)
+	        except:
+	            pass
+	        try:
+	            os.mkdir("turtle/" + service)
+	        except:
+	            pass
+	        dir_list = glob.glob(dir_name + service + "/*.tsv", recursive=True)
+	        for i in range(len(dir_list)):
+	            print("... create ttl from", dir_list[i], "\t", i+1, "/", len(dir_list))
+	            create_ttl(dir_list[i], service + str(i), service)
+88082a6dbac2ccc81a8796dca3a64d92|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|91|1|V|python
+	    services_list = gm.list_serveice()
+	    column_label = gm.list_column_label()
+	    pqdatalist = PQdataList()
+	
+	    for service in services_list:
+	        dir_name = dirname + "/" + service
+	        file_list = glob.glob(dir_name + "/*.tsv", recursive=True)
+	        for i in range(len(file_list)):
+	            os.mkdir(dirname + "/" + service + "/" + service + str(i))
+	
+	            with open(dir_name + ".tsv") as f1:
+	                reader = csv.reader(f1, delimiter="\t")
+	                header = next(reader)
+	                for row in reader:
+	                    if has_bar_in_row(row):
+	                        # |で区切られてるrow dataを展開
+	                        row_list = expansion_tsv_row([row])
+	                        for devided_row in row_list:
+	                            pqdatalist.add(devided_row)
+	            # ファイルへの出力
+	            for i in range(len(pqdatalist.data)):
+	                pqdata = pqdatalist.data[i]
+	                f = open(dir_name + "_s" + str(i) + ".tsv", "w")
+	                f.write(list2tsv(column_label))
+	                f.close()
+	                for row in pqdata.row_list:
+	                    f = open(dir_name + "_s" + str(i) + ".tsv", "a")
+	                    f.write("\n" + list2tsv(row))
+	                    f.close()
+	                print(pqdata.id_set)
+	                print("created ", dir_name + "_s" + str(i) + ".tsv")
+ddfffde5fbd23d9394d3c38faef52e41|file:///Users/kouiti/localfile/glycovid_PSIQUIC/.gitignore|1|1|V|
+	data/*
+8d777f385d3dfec8815d20f7496026dc|file:///Users/kouiti/localfile/glycovid_PSIQUIC/.gitignore|2|1|v|
+	data
+46ff7235e986f5eb5387e8cca2623701|file:///Users/kouiti/localfile/glycovid_PSIQUIC/README.md|5|29|V|markdown
+	python mylib/expansion_tsv.py
+3d02d9f9ed7a6561e25c95adde82194c|file:///Users/kouiti/localfile/glycovid_PSIQUIC/README.md|6|1|V|markdown
+	# exppantion tsv by "|"
+1d4299da9d9957fb9645157c26b981ef|file:///Users/kouiti/localfile/glycovid_PSIQUIC/README.md|6|3|v|markdown
+	exppantion
+b09fdf48b67058af27cea0314feb6145|file:///Users/kouiti/localfile/glycovid_PSIQUIC/README.md|10|1|V|markdown
+	# create ttl file from tsv
+f21c1dc1870062a6a84d8d47c6992c0c|file:///Users/kouiti/localfile/glycovid_PSIQUIC/README.md|11|1|V|markdown
+	python create_ttl.py
+3211b5d1e9eab89f4a1ea9acdb6d3c8d|file:///Users/kouiti/localfile/glycovid_PSIQUIC/README.md|11|1|V|markdown
+	python create_ttl.py
+	# create owl file from ttl
+3720f5c44288d5c388c8eb58c57a8128|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|140|1|V|python
+	    with open(dir_name) as f1:
+	        reader = csv.reader(f1, delimiter="\t")
+	        next(reader)
+	        for row_bef in reader:
+	            row_bef = except_columns(row_bef)
+	            row_list = expansion_tsv_row([row_bef])
+cdf18a21056806f94a4728f715835ecb|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|90|5|V|python
+	            create_ttl(dir_list[i], service + str(i), service)
+f3e26c3bbaea6a53be669b24dd09a307|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|81|1|V|python
+	            shutil.rmtree(dirname + service)
+d4705b9f42c96eeb0b9fb53266013516|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|85|23|v|python
+	turtle
+11c5199ca32ae08823099d7000a0e6cf|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|83|38|v|python
+	n_dir
+564d2b9af333438eae1e54afd64dfd91|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|93|23|v|python
+	dir_name
+fc4df188ba598b312e85dfa3758e53c5|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|97|32|V|python
+	                    row_bef = except_columns(row_bef)
+63bc8512187eee66ad660b7f0f41b166|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|95|28|V|python
+	                next(reader)
+25d761d283a5df140e2f2648f5d62e34|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/create_owl.py|85|1|V|python
+	    with open(out_dir + "/" + file.split("/")[-1].split(".")[0] + ".owl", mode='w') as f:
+	        f.write(temp_text + "\n\n")
+	    # print("------------------------------\n")
+	    with open(out_dir + "/" + file.split("/")[-1].split(".")[0] + ".owl", mode='a') as f:
+	        for line in owl_list:
+	            f.write(line + "\n")
+a8c32a33310f9c13a2e154b55f8e8d16|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|83|27|v|python
+	dirname + out_dir +  service
+ca0dce65a4cfecf3997129c3d9e2ab51|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|98|33|v|python
+	temp_text
+2d3d75f11cabec9b065dc0d9221b1904|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|97|1|V|python
+	                    with open(dirname + out_dir +  service + "/" + dir_list[i].split("/")[-1], mode='w') as f:
+e80ae60d06f532ec9bccc6ee7ea035e1|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|100|21|V|python
+	                    with open(out_dir + "/" + file.split("/")[-1].split(".")[0] + ".owl", mode='a') as f:
+f729a62f56eca773398c9888c71ab92f|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|101|37|v|python
+	owl_list
+6438c669e0d0de98e6929c2cc0fac474|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|101|29|v|python
+	line
+9dd2d7633bbf4fe513709406202eff4f|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|107|1|V|python
+	    # dirname = "data/"
+	    # main1(dirname)
+2bb483b96e4d0053133960016baa73a6|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|102|42|V|python
+	                            print(type(row))
+00eada68a1de87f9a2cb0a3ee45f5410|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|101|1|V|python
+	                        for row in row_list:
+	                            f.write(row + "\n")
+68b846c7f76bd53e88f316253fe92c22|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|100|1|V|python
+	                    with open(dirname + out_dir +  service + "/" + dir_list[i].split("/")[-1], mode='a') as f:
+97f31a7812ab8632f803781381ba6fd6|file:///Users/kouiti/localfile/glycovid_PSIQUIC/mylib/expansion_tsv.py|99|1|V|python
+	                    # print("------------------------------\n")
+c504ae0f6be0cc538e2b2c99451c3f51|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|144|20|V|python
+	            row_bef = except_columns(row_bef)
+c34e0d6d81dd0b54d8fbf4e20c0d13b9|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|144|20|V|python
+	            row_list = expansion_tsv_row([row_bef])
+d7ef0b423f4580a807831203b9b3d5cc|file:///Users/kouiti/localfile/practice_rust/hello/src/main.rs|24|1|V|rust
+	    // テキストは\n{}です
+	    // println!("With text:\n{}", contents);
+428bbfae12bdf3de987a04c09f8e6f79|file:///Users/kouiti/dotfiles/dotfiles/nvim/init.vim|15|36|v|vim
+	      "jsonファイルで"を非表示にしない設定
+615472b9a9749ee854455eabf913e78f|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|28|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795446
+	=======
+39b4267c630ec7eee05a7349f7fe5e67|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|29|1|V|json
+	>>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+dcb490d3761d199a1e58952a571b2eeb|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|53|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795447
+	=======
+1afcc60d7aa558c1f97a0de2e4064a6e|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|78|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795448
+	=======
+b2c869b18cb43c4a5e099f888c273dcc|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|128|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638682654194
+	=======
+2e028cdb03a4fe378778bfc3413ac8c4|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|353|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795781
+	=======
+bda55c04c7fc04fcf432b3710d187f91|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|558|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795445
+	=======
+3756fc3aeb4aae1484abc45e5a1f58f5|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|563|1|V|json
+	<<<<<<< HEAD
+	        "path": "/Users/Kouiti/.pyenv/shims/python",
+	=======
+bb653866fd72c258f02553c23d399120|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|580|1|V|json
+	<<<<<<< HEAD
+	        "sysPrefix": "/Users/Kouiti/.pyenv/versions/3.7.0",
+	        "fileHash": "ce05b198d0136074a8c526062dfd26943fc3c9ceb711d35c5cf4b9c5dc4e7e6c912ea8b09babdf4dcb43e9ac1c2d58d8d5c9ae3c7f9a7e1067114b66f92fb031",
+	=======
+f71165a48c9512d0794925ee0ac7ccf9|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|586|1|V|json
+	<<<<<<< HEAD
+	        "path": "/Users/Kouiti/.pyenv/shims/python3",
+	=======
+b4340723c9e32cd1e456a5313abd1db3|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|603|1|V|json
+	<<<<<<< HEAD
+	        "sysPrefix": "/Users/Kouiti/.pyenv/versions/3.7.0",
+	        "fileHash": "61bef363f47aca0c56a7f22e3a04e2c0205776d791b5c373777a00da4c9f6b74558a4bd4412a7c9882699dffbf7b8416938b286ddbc96904474580246560a053",
+	=======
+69c4608a842dd605b9c5d75d6a931efb|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|609|1|V|json
+	<<<<<<< HEAD
+	        "path": "/Users/Kouiti/.pyenv/shims/python3.7",
+	=======
+fe4cc772ccfeab20436ad60c8d79457d|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|626|1|V|json
+	<<<<<<< HEAD
+	        "sysPrefix": "/Users/Kouiti/.pyenv/versions/3.7.0",
+	        "fileHash": "558f0e712a76e1faa9ef9dc8a3f34ddcbd9fe1cb99d34f52a5460ca6b552658a9fbb1f757a52f4a310c3b204ae5610bbd2ec14ade75ff0d6326eeb531bbac7c9",
+	=======
+2e8dcf7866611744304f5a198b6d1365|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|708|9|V|json
+	<<<<<<< HEAD
+	          "raw": "3.9.9-final",
+	          "major": 3,
+	          "minor": 9,
+	          "patch": 9,
+	=======
+5a12afeff3ea1e7c9c06cfd5433735f8|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|716|1|V|json
+	<<<<<<< HEAD
+	          "version": "3.9.9-final"
+	        },
+	        "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+	        "fileHash": "b9cb52302f29f6368dc618b027a63d7cd35a89daaad075384f266f378ad9d74b180bcc81f6d38175e2f530cb85d4a5545db3886ca9b7d2001e6b155bc74ed098",
+	=======
+38afadac2f559d6b697c9e94773a5e41|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|724|1|V|json
+	<<<<<<< HEAD
+	        "path": "/usr/local/bin/python3.9",
+	=======
+e05fd2589cb642acff22aca162930ad2|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|739|1|V|json
+	<<<<<<< HEAD
+	          "version": "3.9.9-final"
+	        },
+	        "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+	        "fileHash": "704f14416d48df2b523ed9206d13a4e23acd65ca46cbe02b8100349743b9e3f49332f80075db3afd97b64054b16c2671e5ab821249a6f2f6cadd0a65d5780c9a",
+	=======
+fb6ae2070e781100f5a9e0466e90ffb2|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|1289|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795750
+	=======
+659dd5c8d8aedead64ce20d49b58d1b5|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|1303|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795929
+	=======
+9241c2556844947f6f8397b428642851|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|1310|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795935
+	=======
+1759029cfc9d6db508d139c3c43cdb90|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|1317|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795752
+	=======
+5771e2d19164fa11a13f880f5fa35649|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|1409|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795795
+	=======
+e7bc3f543a3ab9cfbfc9c33652032baa|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|1469|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795817
+	=======
+bb4af30c393b73e0451563472fc577e7|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|1499|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795981
+	=======
+1c3121929500d40b6ae647cb99324538|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|1529|1|V|json
+	<<<<<<< HEAD
+	      "expiry": 1638692795800
+	=======
+db3392ccfd32d414a09c67a15fad2865|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|1880|1|V|json
+	<<<<<<< HEAD
+	        "patch": 9,
+	        "prerelease": [
+	          "final"
+	        ],
+	        "build": [],
+	        "version": "3.9.9-final"
+	      },
+	      "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+	      "fileHash": "b9cb52302f29f6368dc618b027a63d7cd35a89daaad075384f266f378ad9d74b180bcc81f6d38175e2f530cb85d4a5545db3886ca9b7d2001e6b155bc74ed098",
+	      "type": "Unknown",
+	      "displayName": "Python 3.9.9 64-bit"
+	    },
+	    "InterpreterAutoSeletionRule-currentPath": {
+	      "architecture": 3,
+	      "path": "/Users/Kouiti/.pyenv/versions/3.7.0/bin/python",
+	      "version": {
+	        "options": {
+	          "loose": false,
+	          "includePrerelease": false
+	        },
+	        "loose": false,
+	        "raw": "3.7.0-final",
+	        "major": 3,
+	        "minor": 7,
+	=======
+	>>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+adb7aa4b684b132ccac159a05bc56000|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|2355|1|V|json
+	<<<<<<< HEAD
+	  "coc-python|/Users/Kouiti/local_file/glycovid/get_uri": {
+	    "INTERPRETERS_CACHE_v3_PipEnvService:d1bd5f5ed6f37bbc3e1feaa3fc383b3c": [],
+	    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:d1bd5f5ed6f37bbc3e1feaa3fc383b3c": [],
+	    "autoSelectedWorkspacePythonInterpreter-/Users/Kouiti/local_file/glycovid/get_uri": {
+	=======
+d8cfff22a69349d8be9aef784f3e6186|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|2388|1|V|json
+	<<<<<<< HEAD
+	      "displayName": "Python 3.9.9 64-bit"
+	    },
+	    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+	    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+	  },
+	  "coc-python|/Users/Kouiti/local_file/glycovid/glycovid_PACDB": {
+	    "INTERPRETERS_CACHE_v3_PipEnvService:4b2c8d5724bb5f9be130b821f5d2754b": [],
+	    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:4b2c8d5724bb5f9be130b821f5d2754b": [],
+	    "autoSelectedWorkspacePythonInterpreter-/Users/Kouiti/local_file/glycovid/glycovid_PACDB": {
+	=======
+56c6cc0ff7df7def5ae26ab3a2649da7|file:///Users/kouiti/dotfiles/dotfiles/coc/memos.json|2419|9|V|json
+	<<<<<<< HEAD
+	      "displayName": "Python 3.9.9 64-bit"
+	    },
+	    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+	    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+	=======
+770c5359f01aa51781663e9eabb5d57c|file:///Users/kouiti/dotfiles/dotfiles/nvim/dein.toml|119|1|V|toml
+	[[plugins]]
+	repo = 'maxmellon/vim-jsx-pretty'
+046f49fc63c7402b6742588735c8f5c0|file:///Users/kouiti/dotfiles/dotfiles/nvim/dein.toml|123|9|v|toml
+	maxmellon/vim-jsx-pretty
+b816a1f83f9c3c361b8fe787ccbea068|file:///Users/kouiti/dotfiles/dotfiles/nvim/dein.toml|122|1|V|toml
+	[[plugins]]
+	repo = 'elzr/vim-json'
+c2a086c9bd8aee87f173362e76026ae6|file:///Users/kouiti/dotfiles/dotfiles/nvim/init.vim|16|1|V|vim
+	let g:vim_json_syntax_conceal = 0      "jsonファイルで"を非表示にしない設定
+17f8080e0d6b0217b0ae3e8b8e01c198|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|42|1|V|vim
+	" recache dein
+f9cdc1e8152ff9b19a0fa137c861b37e|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|42|1|V|vim
+	" call dein#recache_runtimepath()
+92ac721ae8217a5de753b9afe28a3e3b|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|33|1|V|vim
+	" call dein#recache_runtimepath()
+	" noremap <silent>:oq<CR> :only | close!
+b47c942a7f5bc83be7c3f87fd63a8139|file:///Users/kouiti/dotfiles/dotfiles/nvim/dein.toml|126|9|v|toml
+	elzr/vim-json
+a90f5d9045e0f24da34116816a926d59|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|37|18|V|vim
+	" noremap <silent>:e<CR> :edit<CR>
+b200fedc7a649293d7297cdfd775c71a|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|41|1|V|vim
+	" noremap <silent>:oq<CR> :only | close!
+ec23c33171d104e1c14396b5786d0bf0|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|41|32|v|vim
+	:only | close!
+6dee88596240726fb8a73c7a2662a9f1|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|40|3|v|vim
+	call dein#recache_runtimepath()
+609795e1ea50eead26dea248867feabc|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|30|1|V|vim
+	noremap <silent>:< diwi<><Esc>P
+495b77ee7eb62511ad8366b53f568a50|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|41|14|V|vim
+	    echo "jio"
+fe966a4d2fb78bb8e2280a6bb5036293|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|41|1|V|vim
+	function TT()
+	    echo "tt"
+	    return ':echo "tt"'
+	endfunction
+ff3f4a018367430441081c0d71dff756|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|41|1|V|vim
+	command! Greet call s:greet()
+2425c908c000d7ca6302e68768983c59|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|39|1|V|vim
+	noremap! <silent>:t call TT()
+66630aeea3bc5563cb0ba0ad1f2d903f|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|52|1|V|vim
+	noremap <silent>:sc<CR> :tabnew<CR>:source ~/.config/nvim/shortcuts.vim<CR>
+ff20607fae152b8a301dec95ac1355e4|file:///Users/kouiti/dotfiles/dotfiles/nvim/init.vim|82|1|V|vim
+	map :init<CR> :tabnew<CR>:source ~/.config/nvim/init.vim<CR>
+531ca928337d6a47ddd2e88b59f0dfe4|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/ale.vim|20|1|V|vim
+	map :ale<CR> :source ~/.config/nvim/plugins/ale.vim<CR>
+43b906c5ada909be771e714b01f1a2f1|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|22|1|V|vim
+	
+	map :neo<CR> :tabnew<CR>:source ~/.config/nvim/plugins/neoterm.vim<CR>
+3895012e3d4c4025319e81952c942a6b|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/easymotion.vim|3|1|V|vim
+	map :easymotion<CR> :source ~/.config/nvim/plugins/easymotion.vim<CR>
+1c2e82a854ea4f887b8026afa0db4a5a|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|20|10|v|vim
+	<silent>
+fee2d67ff0f857fc29e8a4504ab16d21|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|42|23|V|vim
+	    return ':echo "tt"'
+74fdcdedec3329f3d13fa55928c204bd|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|37|25|v|vim
+	source ~/.config/nvim/plugins/ale.vim<CR>:source ~/.config/nvim/init.vim<CR>:source ~/.config/nvim/init.vim
+309384f0882692b6c4c5d2bc7fa620e0|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|41|13|V|vim
+	    echo "tt"
+f1c2f14fb6f872de848407a37be2c503|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|42|5|V|vim
+	    source ~/.config/nvim/init.vim
+	    source ~/.config/nvim/init.vim
+fc9e5fad4baf6ef7c4149d37384df17b|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|44|8|V|vim
+	    echo
+e37f0136aa3ffaf149b351f6a4c948e9|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|43|27|v|vim
+	init
+200ebadb7b439dcb5f53a6a7a4e258fd|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|37|1|V|vim
+	noremap <silent>:e<CR> :call ReadMySources()<CR>:w<CR>:edit<CR>:echo "reload success!"<CR>
+464d72021fbc707d5428b535c81c519f|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|42|29|V|vim
+	    source ~/.config/nvim/shortcuts.vim
+55db609b965aac33ffa9db292cbaa0ba|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|40|1|V|vim
+	function TT()
+	    echo "tt"
+	    return ':echo "tt"'
+	endfunction
+	
+	noremap <silent>:t :call TT()
+	
+24f446c2365f803ca0c2d5a2d698f522|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|37|109|V|vim
+	noremap <silent>:e<CR> :source ~/.config/nvim/plugins/ale.vim<CR>:source ~/.config/nvim/init.vim<CR>:source ~/.config/nvim/init.vim<CR>:w<CR>:edit<CR>:echo "reload success!"<CR>
+95a2fcb8347113a1e22e46e027307992|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|46|1|V|vim
+	noremap <silent>:t :call TT()
+ea3235a4661f6a58c804ef672271efea|file:///Users/kouiti/dotfiles/dotfiles/nvim/init.vim|7|1|V|vim
+	set shiftwidth=4       "自動インデント時に入力する空白の数
+6276e91e8f63c365fa68cc8098797748|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|41|1|V|vim
+	    set shiftwidth=4       "自動インデント時に入力する空白の数
+2ce7a7c16785061b22b621dd7e0a8f84|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|45|1|V|vim
+	noremap <silent>:e<CR> :source ~/.config/nvim/plugins/ale.vim<CR>:source ~/.config/nvim/init.vim<CR>:source ~/.config/nvim/init.vim<CR>:call SetTabIndent()<CR>:w<CR>:edit<CR>:echo "reload success"<CR>
+d4984775735df6140560ee032c6f96b9|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|47|136|v|vim
+	:call SetTabIndent()<CR>
+d93f91179d8748c21ccf9610cb7dc6a0|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|43|1|V|vim
+	    echo expand("%:p")
+ca5cc055286a2f811ad962a1a438abb0|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|44|10|v|vim
+	expand("%:p")
+351dfee7e64ed7ae8d9091c5be652e78|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|43|10|v|vim
+	expand("%:p")
+	
+f44cea4ac6502386f146f3be10e899d4|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|45|15|V|vim
+	    echo "jojo"
+898644c0b0944380a5e2e66f42fcae82|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|46|9|V|vim
+	    if ex
+ee943172a9748155e757620e2392c886|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|47|7|V|vim
+	  endif
+a56212205e7740d6bc6b2a930d8463e7|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|43|14|v|vim
+	split(expand("%:p"), '\.')
+	
+896521c0a45aff08e242d51eb57864f8|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|43|35|V|vim
+	  let exts = split(expand("%:p"), '\.')
+9408305f418ee27392d11cb7da7dac70|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|41|4|V|vim
+	  set shiftwidth=2       "自動インデント時に入力する空白の数
+171354c0740bffa3ca3dbda1c21c4fa2|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|47|1|V|vim
+	    set shiftwidth=2       "自動インデント時に入力する空白の数
+442afe7155b0bd725064aeb466fdaae1|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|48|21|v|vim
+	       "自動インデント時に入力する空白の数
+b10c6574f2c961b06e8abec7446f8f3c|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|48|1|V|vim
+	    set shiftwidth=2
+043531070a4de07a90e1b8d9556db26c|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|52|7|V|vim
+	  echo exts
+91a77a824d26c1724a338389b68c9eb0|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|47|1|V|vim
+	  if ext == "vim"
+	    set shiftwidth=2
+99118e8863046ee7fb31c8de8d2ad339|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|49|1|V|vim
+	  elseif ext == "html"
+	    set shiftwidth=2
+02df95502afb2900f1901931a6c5b79c|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|47|1|V|vim
+	  if ext == "vim" || ext == "html" || ext == "tsx" ||
+	    set shiftwidth=2
+	  elseif ext == "html"
+	    set shiftwidth=2
+f34eb24a0a4e4209a148e137589e5518|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|53|24|v|vim
+	:source ~/.config/nvim/plugins/ale.vim<CR>
+c96d1ee8445f44c9877c7b07694aa306|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|41|1|V|vim
+	  set shiftwidth=2
+	  echo expand("%:p")
+	  if len(split(expand("%:p"), '\.')) == 0
+	    return
+	  endif
+	  let ext = split(expand("%:p"), '\.')[-1]
+	  if ext == "py"
+ef8062dcf3d7c97cd78810bc257e10fc|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|30|45|v|vim
+	term python %
+1f3601063b29dec22367473d11bf9827|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|27|5|v|vim
+	 ext == "py"
+	    term python %
+	  end
+b2314fed08b20e779b53fca2b8b87461|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|27|1|V|vim
+	  if ext == "py"
+	    term python %
+	  endif
+86af61317bc4f5c013a7193347ba6d74|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|30|1|V|vim
+	  elseif ext == "rs"
+	    term  %
+	  endif
+	
+00376477ba7f7632b337d48fc543986a|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|27|6|V|vim
+	  sjio
+beb3a7fb629a22475c534fb3f4e8ac5a|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|28|13|V|vim
+	  <C-w><Down>
+e5f2426c010a13ed5a5423037a14399c|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|28|6|V|vim
+	  term
+52ebbf2cee1dedff507854f1016c96b5|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|27|5|V|vim
+	  split
+19515895aabd15bafd2b7a138a6b11b8|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|28|5|V|vim
+	  new
+633f2c46f10c50492a06bf754a3bac11|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|20|1|V|vim
+	function RunCurrentFile()
+a3e3577c41eec6134a487c46a15462d6|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|20|10|v|vim
+	RunCurrentFile
+371c88deeaff1e4da4fc46fcadad0346|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|29|1|V|vim
+	  write
+	  split
+	  winc j
+0be1394b740969da702715614ca4f298|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|38|1|V|vim
+	endfunction
+b0fc306a6188713ffc5803dc381f821f|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|27|9|V|vim
+	  echo expand("%:p")
+febda1e3dcf797746b86b01f933e2d6b|file:///Users/kouiti/dotfiles/dotfiles/nvim/init.vim|5|13|V|vim
+	set hlsearch!
+39b9de89f70ec34de0f858dcb532b62a|file:///Users/kouiti/dotfiles/dotfiles/nvim/init.vim|14|4|V|vim
+	set noh
+8c0c2e3d9a27439390e4d310c0b8fbb7|file:///Users/kouiti/dotfiles/dotfiles/nvim/init.vim|13|1|V|vim
+	set hls                "検索した文字をハイライトする
+ee4a87cd36a16b1730fc011a869d4065|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|34|16|V|vim
+	    echo "python"

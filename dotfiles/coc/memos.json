@@ -12,24 +12,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "2.7.16-final",
+          "raw": "2.7.18-final",
           "major": 2,
           "minor": 7,
-          "patch": 16,
+          "patch": 18,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "2.7.16-final"
+          "version": "2.7.18-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234"
       },
-<<<<<<< HEAD
-      "expiry": 1638692795446
-=======
-      "expiry": 1638690333796
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+      "expiry": 1644457071473
     },
     "/usr/bin/python2.v3": {
       "data": {
@@ -41,24 +37,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "2.7.16-final",
+          "raw": "2.7.18-final",
           "major": 2,
           "minor": 7,
-          "patch": 16,
+          "patch": 18,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "2.7.16-final"
+          "version": "2.7.18-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234"
       },
-<<<<<<< HEAD
-      "expiry": 1638692795447
-=======
-      "expiry": 1638690333798
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+      "expiry": 1644457071422
     },
     "/usr/bin/python.v3": {
       "data": {
@@ -70,24 +62,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "2.7.16-final",
+          "raw": "2.7.18-final",
           "major": 2,
           "minor": 7,
-          "patch": 16,
+          "patch": 18,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "2.7.16-final"
+          "version": "2.7.18-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234"
       },
-<<<<<<< HEAD
-      "expiry": 1638692795448
-=======
-      "expiry": 1638690333799
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+      "expiry": 1644457071422
     },
     "/usr/local/bin/python3.7.v3": {
       "data": {
@@ -99,20 +87,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 0,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.7.9-final"
         },
         "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
-        "fileHash": "c7b05fa9a34bd3360e1a95fa519c80dca1f6df5907ecc8a91fea8b872c931beb4dd88e64d07267ad3308ab79849975d0fd98b5db9b2da6d050704dbb0493193e"
+        "fileHash": "11a1800892aadb9881c9b8cf4a2f3c281eb93c7f088e7108e538880473f2b256cdcc90c0dfafcf4c97b908d02be9490519ec28961bbe3839d2989c249a43c46d"
       },
-      "expiry": 1638690333821
+      "expiry": 1644457071464
     },
     "/usr/local/bin/python3.v3": {
       "data": {
@@ -124,24 +112,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 0,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.7.9-final"
         },
         "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
-        "fileHash": "a54f25c31bcbed7a78232ecd678467d828e967d97a95544788bf79b7c4c9b174b2d36dfe51c51fdffd28b02ba3c391ba4ec0d13f3bbda3d34f3072fdf0d0e349"
+        "fileHash": "aa5d0f4339100cb0159fc0a44efe953733818a93885b516f774e0311a1f35cf5964fd3323e05551ac4613970b42d45239149eb7f1888853aa2c25ba8f573f610"
       },
-<<<<<<< HEAD
-      "expiry": 1638682654194
-=======
-      "expiry": 1638680411930
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+      "expiry": 1644457071467
     },
     "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python3.7.v3": {
       "data": {
@@ -353,70 +337,66 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "2.7.16-final",
+          "raw": "2.7.18-final",
           "major": 2,
           "minor": 7,
-          "patch": 16,
+          "patch": 18,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "2.7.16-final"
+          "version": "2.7.18-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234"
       },
-<<<<<<< HEAD
-      "expiry": 1638692795781
-=======
-      "expiry": 1638690333850
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+      "expiry": 1644457071644
     },
     "INTERPRETERS_CACHE_v3_CurrentPathService": [
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python3.7",
+        "path": "/opt/homebrew/bin/python3.7",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 0,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.7.9-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "b9c19efc8ef542c04ecbc61cdc406972341c07ab4542876f841f590ba1560588bb437e1e2c4204257956820d7ee2cdbe59195ad66c952ed89a8cab2c0535e7e8",
+        "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
+        "fileHash": "11a1800892aadb9881c9b8cf4a2f3c281eb93c7f088e7108e538880473f2b256cdcc90c0dfafcf4c97b908d02be9490519ec28961bbe3839d2989c249a43c46d",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python3",
+        "path": "/Users/kouiti/.pyenv/versions/3.10.1/bin/python3",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.10.1-final",
           "major": 3,
-          "minor": 7,
-          "patch": 0,
+          "minor": 10,
+          "patch": 1,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.10.1-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "b5da42cf89d47c52e54dcf56652480fc9ae19158b7de3e364fb0525dc60a648ac217c98309b9258a268f2eb5ccac1a20da67b732d9ec6a175a28c0edca5be450",
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "f70d49875bc40e4f020a9dcd14be61a2047ce01365447d6425d6325cb979ff991c9daed37ce38cb0a9fab1df072d7eedc6288912980b1f5d5ea6821758895ae5",
         "type": "Unknown"
       },
       {
@@ -428,64 +408,64 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "2.7.16-final",
+          "raw": "2.7.18-final",
           "major": 2,
           "minor": 7,
-          "patch": 16,
+          "patch": 18,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "2.7.16-final"
+          "version": "2.7.18-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python",
+        "path": "/Users/kouiti/.pyenv/versions/3.10.1/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.10.1-final",
           "major": 3,
-          "minor": 7,
-          "patch": 0,
+          "minor": 10,
+          "patch": 1,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.10.1-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef",
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "2ed32334dc521c7cf4eae84e512bd5c0d2ddf4e45205efc8b216aa3e716ff6010a59654745358bb221db264b2f07849610980fe0429cd272c81faf4ce9fd8e82",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python",
+        "path": "/Users/kouiti/.pyenv/versions/3.10.1/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.10.1-final",
           "major": 3,
-          "minor": 7,
-          "patch": 0,
+          "minor": 10,
+          "patch": 1,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.10.1-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef",
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "2ed32334dc521c7cf4eae84e512bd5c0d2ddf4e45205efc8b216aa3e716ff6010a59654745358bb221db264b2f07849610980fe0429cd272c81faf4ce9fd8e82",
         "type": "Unknown"
       }
     ],
@@ -562,189 +542,158 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.8.2-final",
+          "raw": "3.8.9-final",
           "major": 3,
           "minor": 8,
-          "patch": 2,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.8.2-final"
+          "version": "3.8.9-final"
         },
-        "sysPrefix": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
+        "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8",
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234"
       },
-<<<<<<< HEAD
-      "expiry": 1638692795445
-=======
-      "expiry": 1638690333819
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+      "expiry": 1644457071470
     },
     "INTERPRETERS_CACHE_v3_KnownPathsService": [
       {
         "architecture": 3,
-<<<<<<< HEAD
-        "path": "/Users/Kouiti/.pyenv/shims/python",
-=======
-        "path": "/Users/arakawakouichi/.pyenv/shims/python",
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+        "path": "/Users/kouiti/.pyenv/shims/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.10.1-final",
           "major": 3,
-          "minor": 7,
-          "patch": 0,
+          "minor": 10,
+          "patch": 1,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.10.1-final"
         },
-<<<<<<< HEAD
-        "sysPrefix": "/Users/Kouiti/.pyenv/versions/3.7.0",
-        "fileHash": "ce05b198d0136074a8c526062dfd26943fc3c9ceb711d35c5cf4b9c5dc4e7e6c912ea8b09babdf4dcb43e9ac1c2d58d8d5c9ae3c7f9a7e1067114b66f92fb031",
-=======
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "4add0a1c835401c52e02c14b1bc38574d584f2b214910afdc23e812e060a103d6e59d57e72b6f71703eb770ca9c2b62893c9772e173588f674b3af804ec26226",
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "0070b92d507e01a68b6303798e921259ef4b8abecfc75ce99ec6fa5618fe7656ef3e79706e9728c3e9ce35cba6fe423074dd4659e7bec4eec436547c71cde875",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-<<<<<<< HEAD
-        "path": "/Users/Kouiti/.pyenv/shims/python3",
-=======
-        "path": "/Users/arakawakouichi/.pyenv/shims/python3",
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+        "path": "/Users/kouiti/.pyenv/shims/python3",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.10.1-final",
           "major": 3,
-          "minor": 7,
-          "patch": 0,
+          "minor": 10,
+          "patch": 1,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.10.1-final"
         },
-<<<<<<< HEAD
-        "sysPrefix": "/Users/Kouiti/.pyenv/versions/3.7.0",
-        "fileHash": "61bef363f47aca0c56a7f22e3a04e2c0205776d791b5c373777a00da4c9f6b74558a4bd4412a7c9882699dffbf7b8416938b286ddbc96904474580246560a053",
-=======
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "a852c950b74b137dc6cdb938fba7a6d4f98a52f99cbd5dc173642f80f3a881403ab8f5dd493e09d4b33c03911f70b6557beb5df050ab6ea88a969b63143a1d59",
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "e7acd1ff794cd8a6e5898a4ce0384e9151bb496cfac4786a9e37d83c47fa8db0818ba990c5b64c8e265144915555bddb8e0223a86f3944d52f878723f2712eac",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-<<<<<<< HEAD
-        "path": "/Users/Kouiti/.pyenv/shims/python3.7",
-=======
-        "path": "/Users/arakawakouichi/.pyenv/shims/python3.7",
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+        "path": "/Users/kouiti/.pyenv/shims/python3.10",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.10.1-final",
           "major": 3,
-          "minor": 7,
-          "patch": 0,
+          "minor": 10,
+          "patch": 1,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.10.1-final"
         },
-<<<<<<< HEAD
-        "sysPrefix": "/Users/Kouiti/.pyenv/versions/3.7.0",
-        "fileHash": "558f0e712a76e1faa9ef9dc8a3f34ddcbd9fe1cb99d34f52a5460ca6b552658a9fbb1f757a52f4a310c3b204ae5610bbd2ec14ade75ff0d6326eeb531bbac7c9",
-=======
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "0a45c7f3424e6c089bfd01c16abb3bf71e1c40c7cd3d37be5f01548e217ec9db3344d1ac97a4a2a849e9a133250c8d10e04fb3d3574abe83d50b3ee234b1779a",
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "b9df819672503af7276f6e5eb35ac279f20ac8b2e1667b693f5cc3b95af489f38cb3ce928cc1f4ed75ca256f5e101dd9284ea78149a01ae7546a2747a1de21ff",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/shims/python",
+        "path": "/opt/homebrew/bin/python3",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 0,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.7.9-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "4add0a1c835401c52e02c14b1bc38574d584f2b214910afdc23e812e060a103d6e59d57e72b6f71703eb770ca9c2b62893c9772e173588f674b3af804ec26226",
+        "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
+        "fileHash": "aa5d0f4339100cb0159fc0a44efe953733818a93885b516f774e0311a1f35cf5964fd3323e05551ac4613970b42d45239149eb7f1888853aa2c25ba8f573f610",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/shims/python3",
+        "path": "/opt/homebrew/bin/python3.7",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 0,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.7.9-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "a852c950b74b137dc6cdb938fba7a6d4f98a52f99cbd5dc173642f80f3a881403ab8f5dd493e09d4b33c03911f70b6557beb5df050ab6ea88a969b63143a1d59",
+        "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
+        "fileHash": "11a1800892aadb9881c9b8cf4a2f3c281eb93c7f088e7108e538880473f2b256cdcc90c0dfafcf4c97b908d02be9490519ec28961bbe3839d2989c249a43c46d",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/shims/python3.7",
+        "path": "/opt/homebrew/bin/python3.9",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.9.10-final",
           "major": 3,
-          "minor": 7,
-          "patch": 0,
+          "minor": 9,
+          "patch": 10,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.9.10-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "0a45c7f3424e6c089bfd01c16abb3bf71e1c40c7cd3d37be5f01548e217ec9db3344d1ac97a4a2a849e9a133250c8d10e04fb3d3574abe83d50b3ee234b1779a",
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+        "sysPrefix": "/opt/homebrew/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+        "fileHash": "c3870359020e667758e844acd66546615ec70365ac0c78d46b34d961da631e293a2f284df0e8047a08164367de1a86e31cfcae6207e9653cf08eb04cd7b371ba",
         "type": "Unknown"
       },
       {
@@ -756,73 +705,64 @@
             "includePrerelease": false
           },
           "loose": false,
-<<<<<<< HEAD
-          "raw": "3.9.9-final",
-          "major": 3,
-          "minor": 9,
-          "patch": 9,
-=======
-          "raw": "3.7.0-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 0,
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-<<<<<<< HEAD
-          "version": "3.9.9-final"
-        },
-        "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
-        "fileHash": "b9cb52302f29f6368dc618b027a63d7cd35a89daaad075384f266f378ad9d74b180bcc81f6d38175e2f530cb85d4a5545db3886ca9b7d2001e6b155bc74ed098",
-=======
-          "version": "3.7.0-final"
+          "version": "3.7.9-final"
         },
         "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
-        "fileHash": "a54f25c31bcbed7a78232ecd678467d828e967d97a95544788bf79b7c4c9b174b2d36dfe51c51fdffd28b02ba3c391ba4ec0d13f3bbda3d34f3072fdf0d0e349",
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+        "fileHash": "aa5d0f4339100cb0159fc0a44efe953733818a93885b516f774e0311a1f35cf5964fd3323e05551ac4613970b42d45239149eb7f1888853aa2c25ba8f573f610",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-<<<<<<< HEAD
+        "path": "/usr/local/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.9-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.9-final"
+        },
+        "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
+        "fileHash": "11a1800892aadb9881c9b8cf4a2f3c281eb93c7f088e7108e538880473f2b256cdcc90c0dfafcf4c97b908d02be9490519ec28961bbe3839d2989c249a43c46d",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
         "path": "/usr/local/bin/python3.9",
-=======
-        "path": "/usr/local/bin/python3.7",
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-<<<<<<< HEAD
-          "raw": "3.9.9-final",
+          "raw": "3.9.10-final",
           "major": 3,
           "minor": 9,
-          "patch": 9,
-=======
-          "raw": "3.7.0-final",
-          "major": 3,
-          "minor": 7,
-          "patch": 0,
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+          "patch": 10,
           "prerelease": [
             "final"
           ],
           "build": [],
-<<<<<<< HEAD
-          "version": "3.9.9-final"
+          "version": "3.9.10-final"
         },
-        "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
-        "fileHash": "704f14416d48df2b523ed9206d13a4e23acd65ca46cbe02b8100349743b9e3f49332f80075db3afd97b64054b16c2671e5ab821249a6f2f6cadd0a65d5780c9a",
-=======
-          "version": "3.7.0-final"
-        },
-        "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
-        "fileHash": "c7b05fa9a34bd3360e1a95fa519c80dca1f6df5907ecc8a91fea8b872c931beb4dd88e64d07267ad3308ab79849975d0fd98b5db9b2da6d050704dbb0493193e",
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+        "sysPrefix": "/opt/homebrew/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+        "fileHash": "c3870359020e667758e844acd66546615ec70365ac0c78d46b34d961da631e293a2f284df0e8047a08164367de1a86e31cfcae6207e9653cf08eb04cd7b371ba",
         "type": "Unknown"
       },
       {
@@ -834,18 +774,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "2.7.16-final",
+          "raw": "2.7.18-final",
           "major": 2,
           "minor": 7,
-          "patch": 16,
+          "patch": 18,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "2.7.16-final"
+          "version": "2.7.18-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
         "type": "Unknown"
       },
       {
@@ -857,18 +797,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "2.7.16-final",
+          "raw": "2.7.18-final",
           "major": 2,
           "minor": 7,
-          "patch": 16,
+          "patch": 18,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "2.7.16-final"
+          "version": "2.7.18-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
         "type": "Unknown"
       },
       {
@@ -880,18 +820,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "2.7.16-final",
+          "raw": "2.7.18-final",
           "major": 2,
           "minor": 7,
-          "patch": 16,
+          "patch": 18,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "2.7.16-final"
+          "version": "2.7.18-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
         "type": "Unknown"
       },
       {
@@ -903,18 +843,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.8.2-final",
+          "raw": "3.8.9-final",
           "major": 3,
           "minor": 8,
-          "patch": 2,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.8.2-final"
+          "version": "3.8.9-final"
         },
-        "sysPrefix": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8",
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
         "type": "Unknown"
       },
       {
@@ -926,18 +866,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 0,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.7.9-final"
         },
         "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
-        "fileHash": "a54f25c31bcbed7a78232ecd678467d828e967d97a95544788bf79b7c4c9b174b2d36dfe51c51fdffd28b02ba3c391ba4ec0d13f3bbda3d34f3072fdf0d0e349",
+        "fileHash": "aa5d0f4339100cb0159fc0a44efe953733818a93885b516f774e0311a1f35cf5964fd3323e05551ac4613970b42d45239149eb7f1888853aa2c25ba8f573f610",
         "type": "Unknown"
       },
       {
@@ -949,18 +889,41 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 0,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.7.9-final"
         },
         "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
-        "fileHash": "c7b05fa9a34bd3360e1a95fa519c80dca1f6df5907ecc8a91fea8b872c931beb4dd88e64d07267ad3308ab79849975d0fd98b5db9b2da6d050704dbb0493193e",
+        "fileHash": "11a1800892aadb9881c9b8cf4a2f3c281eb93c7f088e7108e538880473f2b256cdcc90c0dfafcf4c97b908d02be9490519ec28961bbe3839d2989c249a43c46d",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/local/bin/python3.9",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.9.10-final",
+          "major": 3,
+          "minor": 9,
+          "patch": 10,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.9.10-final"
+        },
+        "sysPrefix": "/opt/homebrew/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+        "fileHash": "c3870359020e667758e844acd66546615ec70365ac0c78d46b34d961da631e293a2f284df0e8047a08164367de1a86e31cfcae6207e9653cf08eb04cd7b371ba",
         "type": "Unknown"
       },
       {
@@ -972,18 +935,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "2.7.16-final",
+          "raw": "2.7.18-final",
           "major": 2,
           "minor": 7,
-          "patch": 16,
+          "patch": 18,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "2.7.16-final"
+          "version": "2.7.18-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
         "type": "Unknown"
       },
       {
@@ -995,18 +958,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "2.7.16-final",
+          "raw": "2.7.18-final",
           "major": 2,
           "minor": 7,
-          "patch": 16,
+          "patch": 18,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "2.7.16-final"
+          "version": "2.7.18-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
         "type": "Unknown"
       },
       {
@@ -1018,18 +981,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "2.7.16-final",
+          "raw": "2.7.18-final",
           "major": 2,
           "minor": 7,
-          "patch": 16,
+          "patch": 18,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "2.7.16-final"
+          "version": "2.7.18-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
         "type": "Unknown"
       },
       {
@@ -1041,18 +1004,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.8.2-final",
+          "raw": "3.8.9-final",
           "major": 3,
           "minor": 8,
-          "patch": 2,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.8.2-final"
+          "version": "3.8.9-final"
         },
-        "sysPrefix": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8",
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8",
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
         "type": "Unknown"
       }
     ],
@@ -1134,79 +1097,79 @@
     "INTERPRETERS_CACHE_v3_VirtualEnvService": [
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python",
+        "path": "/Users/kouiti/.pyenv/versions/3.10.1/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.10.1-final",
           "major": 3,
-          "minor": 7,
-          "patch": 0,
+          "minor": 10,
+          "patch": 1,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.10.1-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef",
-        "envName": "3.7.0",
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "2ed32334dc521c7cf4eae84e512bd5c0d2ddf4e45205efc8b216aa3e716ff6010a59654745358bb221db264b2f07849610980fe0429cd272c81faf4ce9fd8e82",
+        "envName": "3.10.1",
         "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python3",
+        "path": "/Users/kouiti/.pyenv/versions/3.10.1/bin/python3",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.10.1-final",
           "major": 3,
-          "minor": 7,
-          "patch": 0,
+          "minor": 10,
+          "patch": 1,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.10.1-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "b5da42cf89d47c52e54dcf56652480fc9ae19158b7de3e364fb0525dc60a648ac217c98309b9258a268f2eb5ccac1a20da67b732d9ec6a175a28c0edca5be450",
-        "envName": "3.7.0",
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "f70d49875bc40e4f020a9dcd14be61a2047ce01365447d6425d6325cb979ff991c9daed37ce38cb0a9fab1df072d7eedc6288912980b1f5d5ea6821758895ae5",
+        "envName": "3.10.1",
         "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python3.7",
+        "path": "/Users/kouiti/.pyenv/versions/3.10.1/bin/python3.10",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.0-final",
+          "raw": "3.10.1-final",
           "major": 3,
-          "minor": 7,
-          "patch": 0,
+          "minor": 10,
+          "patch": 1,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.0-final"
+          "version": "3.10.1-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
-        "fileHash": "b9c19efc8ef542c04ecbc61cdc406972341c07ab4542876f841f590ba1560588bb437e1e2c4204257956820d7ee2cdbe59195ad66c952ed89a8cab2c0535e7e8",
-        "envName": "3.7.0",
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "032382e7d9ecb1d6bf8024bcab92ed4bf30926e93b2b2c4e777690f6d6849c1c7b6057a197b482dfabcc154abd5a72062fa6b0f26e1bf6259102f6cff0e37609",
+        "envName": "3.10.1",
         "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.8.0/bin/python",
+        "path": "/Users/kouiti/.pyenv/versions/3.8.0/bin/python",
         "version": {
           "options": {
             "loose": false,
@@ -1223,14 +1186,14 @@
           "build": [],
           "version": "3.8.0-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.8.0",
-        "fileHash": "c285b6b380e2ff6674eb449604910c0ba1bc7251f6dc6701846d1155d7460de2f0372f8afe9ec0f1e65bb04d431cf6b874f6696254843ae080381f6d8ae0fb63",
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.8.0",
+        "fileHash": "bc147e0f86c80970a7b5085e1f53f1270b32329252225c3df600dc7ae6b4b5cb9a336977da3d896ccd56d05e41f941a6d1719f9c6fd5b6ec8cb67a1ac954394e",
         "envName": "3.8.0",
         "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.8.0/bin/python3",
+        "path": "/Users/kouiti/.pyenv/versions/3.8.0/bin/python3",
         "version": {
           "options": {
             "loose": false,
@@ -1247,14 +1210,14 @@
           "build": [],
           "version": "3.8.0-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.8.0",
-        "fileHash": "408ce0e51faa95461f2e5c088b950ea03056f5c3758e6efee09da4cb187709d70ec98fc60a8f54d2711f3ca386cb1ef604c02d99ec5aa456e4eee018b8399544",
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.8.0",
+        "fileHash": "3a2439184a32b394157b628f19b3bd68d376bc0e42b0cd8947d463bd169fb1cadec6635ab3dd1665bee3f113998691e790fc8871fd9e11fd2f7230ae702ec6de",
         "envName": "3.8.0",
         "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.8.0/bin/python3.8",
+        "path": "/Users/kouiti/.pyenv/versions/3.8.0/bin/python3.8",
         "version": {
           "options": {
             "loose": false,
@@ -1271,81 +1234,9 @@
           "build": [],
           "version": "3.8.0-final"
         },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.8.0",
-        "fileHash": "43ae281c914c98144dedbb221f737cd9a2ea4057d0326bd6875880570e0498993d0a7d98bf662a152bd75b80fc7aa4761fe5faf0ab0aa06537bd91da84004155",
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.8.0",
+        "fileHash": "330f5563d19693c6d126524b690e12daed80f38abd19a86d7b99909ea2bf080abfa27ead06b51f6f1ad12f76f81a30d7f530c5da4be8e8e168adbf21b6d86faa",
         "envName": "3.8.0",
-        "type": "Pyenv"
-      },
-      {
-        "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python",
-        "version": {
-          "options": {
-            "loose": false,
-            "includePrerelease": false
-          },
-          "loose": false,
-          "raw": "3.9.0-final",
-          "major": 3,
-          "minor": 9,
-          "patch": 0,
-          "prerelease": [
-            "final"
-          ],
-          "build": [],
-          "version": "3.9.0-final"
-        },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
-        "fileHash": "006cee6ed037ef5e92c2b367f4c072a835e99d67f4405cceb483ad6323b9e1134796efafc393d2a92a18688366e0c1c1666e3a8bef5832a35a055e21317295c7",
-        "envName": "3.9.0",
-        "type": "Pyenv"
-      },
-      {
-        "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python3",
-        "version": {
-          "options": {
-            "loose": false,
-            "includePrerelease": false
-          },
-          "loose": false,
-          "raw": "3.9.0-final",
-          "major": 3,
-          "minor": 9,
-          "patch": 0,
-          "prerelease": [
-            "final"
-          ],
-          "build": [],
-          "version": "3.9.0-final"
-        },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
-        "fileHash": "47fd9344ed0f7cb118978482d55a685a2ada3637fecff4cdba215843dcd04317ef7691d550cee0583325cbb0319c0132d6029dfbd07372c0aabaf107e20fbbf3",
-        "envName": "3.9.0",
-        "type": "Pyenv"
-      },
-      {
-        "architecture": 3,
-        "path": "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python3.9",
-        "version": {
-          "options": {
-            "loose": false,
-            "includePrerelease": false
-          },
-          "loose": false,
-          "raw": "3.9.0-final",
-          "major": 3,
-          "minor": 9,
-          "patch": 0,
-          "prerelease": [
-            "final"
-          ],
-          "build": [],
-          "version": "3.9.0-final"
-        },
-        "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
-        "fileHash": "ef997aac2bc5a8de927228f3a5cf6614bf76a1545005dcc4c6640012ec97f9e17a2f01cf7812759112631eddd1b8f78a136f3a41897da84acd9e7003247a5c72",
-        "envName": "3.9.0",
         "type": "Pyenv"
       }
     ],
@@ -1366,14 +1257,10 @@
     },
     "/usr/bin/python.interpreter.displayName.v7": {
       "data": {
-        "displayName": "Python 2.7.16 64-bit",
-        "hash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2-f5b651b9c4b75532b11ae83303c43d14"
+        "displayName": "Python 2.7.18 64-bit",
+        "hash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234-cfaba57628b2ec2ec746c04283b5d862"
       },
-<<<<<<< HEAD
-      "expiry": 1638692795750
-=======
-      "expiry": 1638690333861
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+      "expiry": 1644457071507
     },
     "/Users/arakawakouichi/.pyenv/shims/python.interpreter.displayName.v7": {
       "data": {
@@ -1384,36 +1271,24 @@
     },
     "/usr/local/bin/python3.interpreter.displayName.v7": {
       "data": {
-        "displayName": "Python 3.7.0 64-bit",
-        "hash": "a54f25c31bcbed7a78232ecd678467d828e967d97a95544788bf79b7c4c9b174b2d36dfe51c51fdffd28b02ba3c391ba4ec0d13f3bbda3d34f3072fdf0d0e349-33f0e9c216c4f897ad86f633b8b42e4f"
+        "displayName": "Python 3.7.9 64-bit",
+        "hash": "aa5d0f4339100cb0159fc0a44efe953733818a93885b516f774e0311a1f35cf5964fd3323e05551ac4613970b42d45239149eb7f1888853aa2c25ba8f573f610-75853772481b01ad80c5a911d23540b2"
       },
-<<<<<<< HEAD
-      "expiry": 1638692795929
-=======
-      "expiry": 1638690333864
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+      "expiry": 1644457071653
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.16 64-bit",
         "hash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2-a9fb100b1ab04c53a774363838d4885e"
       },
-<<<<<<< HEAD
-      "expiry": 1638692795935
-=======
       "expiry": 1638679783049
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
     },
     "/usr/bin/python3.interpreter.displayName.v7": {
       "data": {
-        "displayName": "Python 3.8.2 64-bit",
-        "hash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2-4bc3c9f5346452a4fe404c621ebcd443"
+        "displayName": "Python 3.8.9 64-bit",
+        "hash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234-31b3529226bed4b763559d2d64aaf91a"
       },
-<<<<<<< HEAD
-      "expiry": 1638692795752
-=======
-      "expiry": 1638690333862
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+      "expiry": 1644457071510
     },
     "/Users/arakawakouichi/.pyenv/versions/3.8.0/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1479,7 +1354,7 @@
     },
     "/usr/bin/python.interpreter.Details.v7": {
       "data": {
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
         "info": {
           "architecture": 3,
           "path": "/usr/bin/python",
@@ -1489,27 +1364,23 @@
               "includePrerelease": false
             },
             "loose": false,
-            "raw": "2.7.16-final",
+            "raw": "2.7.18-final",
             "major": 2,
             "minor": 7,
-            "patch": 16,
+            "patch": 18,
             "prerelease": [
               "final"
             ],
             "build": [],
-            "version": "2.7.16-final"
+            "version": "2.7.18-final"
           },
           "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-          "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+          "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
           "type": "Unknown",
-          "displayName": "Python 2.7.16 64-bit"
+          "displayName": "Python 2.7.18 64-bit"
         }
       },
-<<<<<<< HEAD
-      "expiry": 1638692795795
-=======
-      "expiry": 1638690333916
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+      "expiry": 1644457071591
     },
     "/Users/arakawakouichi/.pyenv/shims/python.interpreter.Details.v7": {
       "data": {
@@ -1543,7 +1414,7 @@
     },
     "/usr/local/bin/python3.interpreter.Details.v7": {
       "data": {
-        "fileHash": "a54f25c31bcbed7a78232ecd678467d828e967d97a95544788bf79b7c4c9b174b2d36dfe51c51fdffd28b02ba3c391ba4ec0d13f3bbda3d34f3072fdf0d0e349",
+        "fileHash": "aa5d0f4339100cb0159fc0a44efe953733818a93885b516f774e0311a1f35cf5964fd3323e05551ac4613970b42d45239149eb7f1888853aa2c25ba8f573f610",
         "info": {
           "architecture": 3,
           "path": "/usr/local/bin/python3",
@@ -1553,27 +1424,24 @@
               "includePrerelease": false
             },
             "loose": false,
-            "raw": "3.7.0-final",
+            "raw": "3.7.9-final",
             "major": 3,
             "minor": 7,
-            "patch": 0,
+            "patch": 9,
             "prerelease": [
               "final"
             ],
             "build": [],
-            "version": "3.7.0-final"
+            "version": "3.7.9-final"
           },
           "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
-          "fileHash": "a54f25c31bcbed7a78232ecd678467d828e967d97a95544788bf79b7c4c9b174b2d36dfe51c51fdffd28b02ba3c391ba4ec0d13f3bbda3d34f3072fdf0d0e349",
+          "fileHash": "aa5d0f4339100cb0159fc0a44efe953733818a93885b516f774e0311a1f35cf5964fd3323e05551ac4613970b42d45239149eb7f1888853aa2c25ba8f573f610",
           "type": "Unknown",
-          "displayName": "Python 3.7.0 64-bit"
+          "displayName": "Python 3.7.9 64-bit",
+          "__store": true
         }
       },
-<<<<<<< HEAD
-      "expiry": 1638692795817
-=======
-      "expiry": 1638690333921
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+      "expiry": 1644457071630
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.interpreter.Details.v7": {
       "data": {
@@ -1603,15 +1471,11 @@
           "displayName": "Python 2.7.16 64-bit"
         }
       },
-<<<<<<< HEAD
-      "expiry": 1638692795981
-=======
       "expiry": 1638690333971
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
     },
     "/usr/bin/python3.interpreter.Details.v7": {
       "data": {
-        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
         "info": {
           "architecture": 3,
           "path": "/usr/bin/python3",
@@ -1621,27 +1485,23 @@
               "includePrerelease": false
             },
             "loose": false,
-            "raw": "3.8.2-final",
+            "raw": "3.8.9-final",
             "major": 3,
             "minor": 8,
-            "patch": 2,
+            "patch": 9,
             "prerelease": [
               "final"
             ],
             "build": [],
-            "version": "3.8.2-final"
+            "version": "3.8.9-final"
           },
-          "sysPrefix": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8",
-          "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+          "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8",
+          "fileHash": "e3699d3435e3894a1a6a38f014f74b7816cd7e90f90e654ddb9b1c268772b5baa0076a582dfbcceaeac348150784dbb76a08e17e6913347a68dbddd923154234",
           "type": "Unknown",
-          "displayName": "Python 3.8.2 64-bit"
+          "displayName": "Python 3.8.9 64-bit"
         }
       },
-<<<<<<< HEAD
-      "expiry": 1638692795800
-=======
-      "expiry": 1638690333919
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+      "expiry": 1644457071597
     },
     "ProposeLSBanner": false,
     "/usr/local/bin/python3.9.v3": {
@@ -1654,20 +1514,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.9.9-final",
+          "raw": "3.9.10-final",
           "major": 3,
           "minor": 9,
-          "patch": 9,
+          "patch": 10,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.9.9-final"
+          "version": "3.9.10-final"
         },
-        "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
-        "fileHash": "704f14416d48df2b523ed9206d13a4e23acd65ca46cbe02b8100349743b9e3f49332f80075db3afd97b64054b16c2671e5ab821249a6f2f6cadd0a65d5780c9a"
+        "sysPrefix": "/opt/homebrew/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+        "fileHash": "c3870359020e667758e844acd66546615ec70365ac0c78d46b34d961da631e293a2f284df0e8047a08164367de1a86e31cfcae6207e9653cf08eb04cd7b371ba"
       },
-      "expiry": 1638692795438
+      "expiry": 1644457071472
     },
     "/Users/Kouiti/.pyenv/shims/python.v3": {
       "data": {
@@ -1821,27 +1681,27 @@
     },
     "preferredGlobalPyInterpreter": {
       "architecture": 3,
-      "path": "/usr/local/bin/python3",
+      "path": "/Users/kouiti/.pyenv/shims/python",
       "version": {
         "options": {
           "loose": false,
           "includePrerelease": false
         },
         "loose": false,
-        "raw": "3.9.9-final",
+        "raw": "3.10.1-final",
         "major": 3,
-        "minor": 9,
-        "patch": 9,
+        "minor": 10,
+        "patch": 1,
         "prerelease": [
           "final"
         ],
         "build": [],
-        "version": "3.9.9-final"
+        "version": "3.10.1-final"
       },
-      "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
-      "fileHash": "b9cb52302f29f6368dc618b027a63d7cd35a89daaad075384f266f378ad9d74b180bcc81f6d38175e2f530cb85d4a5545db3886ca9b7d2001e6b155bc74ed098",
+      "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+      "fileHash": "0070b92d507e01a68b6303798e921259ef4b8abecfc75ce99ec6fa5618fe7656ef3e79706e9728c3e9ce35cba6fe423074dd4659e7bec4eec436547c71cde875",
       "type": "Unknown",
-      "displayName": "Python 3.9.9 64-bit"
+      "displayName": "Python 3.10.1 64-bit"
     },
     "/Users/Kouiti/.pyenv/shims/python.interpreter.displayName.v7": {
       "data": {
@@ -1849,31 +1709,6 @@
         "hash": "ce05b198d0136074a8c526062dfd26943fc3c9ceb711d35c5cf4b9c5dc4e7e6c912ea8b09babdf4dcb43e9ac1c2d58d8d5c9ae3c7f9a7e1067114b66f92fb031-53f7d62aaec827469e3821b14e507f4a"
       },
       "expiry": 1638692795746
-    },
-    "InterpreterAutoSeletionRule-system": {
-      "architecture": 3,
-      "path": "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python",
-      "version": {
-        "options": {
-          "loose": false,
-          "includePrerelease": false
-        },
-        "loose": false,
-        "raw": "3.9.0-final",
-        "major": 3,
-        "minor": 9,
-        "patch": 0,
-        "prerelease": [
-          "final"
-        ],
-        "build": [],
-        "version": "3.9.0-final"
-      },
-      "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
-      "fileHash": "006cee6ed037ef5e92c2b367f4c072a835e99d67f4405cceb483ad6323b9e1134796efafc393d2a92a18688366e0c1c1666e3a8bef5832a35a055e21317295c7",
-      "envName": "3.9.0",
-      "type": "Pyenv",
-      "displayName": "Python 3.9.0 64-bit ('3.9.0': pyenv)"
     },
     "/Users/Kouiti/.pyenv/versions/3.8.0/bin/python.v3": {
       "data": {
@@ -1979,58 +1814,6 @@
         }
       },
       "expiry": 1638692795786
-    },
-    "InterpreterAutoSeletionRule-cachedInterpreters": {
-      "architecture": 3,
-      "path": "/Users/arakawakouichi/.pyenv/versions/3.9.0/bin/python",
-      "version": {
-        "options": {
-          "loose": false,
-          "includePrerelease": false
-        },
-        "loose": false,
-        "raw": "3.9.0-final",
-        "major": 3,
-        "minor": 9,
-<<<<<<< HEAD
-        "patch": 9,
-        "prerelease": [
-          "final"
-        ],
-        "build": [],
-        "version": "3.9.9-final"
-      },
-      "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
-      "fileHash": "b9cb52302f29f6368dc618b027a63d7cd35a89daaad075384f266f378ad9d74b180bcc81f6d38175e2f530cb85d4a5545db3886ca9b7d2001e6b155bc74ed098",
-      "type": "Unknown",
-      "displayName": "Python 3.9.9 64-bit"
-    },
-    "InterpreterAutoSeletionRule-currentPath": {
-      "architecture": 3,
-      "path": "/Users/Kouiti/.pyenv/versions/3.7.0/bin/python",
-      "version": {
-        "options": {
-          "loose": false,
-          "includePrerelease": false
-        },
-        "loose": false,
-        "raw": "3.7.0-final",
-        "major": 3,
-        "minor": 7,
-=======
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
-        "patch": 0,
-        "prerelease": [
-          "final"
-        ],
-        "build": [],
-        "version": "3.9.0-final"
-      },
-      "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.9.0",
-      "fileHash": "006cee6ed037ef5e92c2b367f4c072a835e99d67f4405cceb483ad6323b9e1134796efafc393d2a92a18688366e0c1c1666e3a8bef5832a35a055e21317295c7",
-      "envName": "3.9.0",
-      "type": "Pyenv",
-      "displayName": "Python 3.9.0 64-bit ('3.9.0': pyenv)"
     },
     "/Users/Kouiti/.pyenv/versions/3.7.0/bin/python.interpreter.displayName.v7": {
       "data": {
@@ -2170,6 +1953,409 @@
       },
       "expiry": 1637122228488
     },
+    "/Users/kouiti/.pyenv/versions/3.10.1/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "2ed32334dc521c7cf4eae84e512bd5c0d2ddf4e45205efc8b216aa3e716ff6010a59654745358bb221db264b2f07849610980fe0429cd272c81faf4ce9fd8e82"
+      },
+      "expiry": 1644456721225
+    },
+    "/Users/kouiti/.pyenv/versions/3.10.1/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kouiti/.pyenv/versions/3.10.1/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.1-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 1,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.1-final"
+        },
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "2ed32334dc521c7cf4eae84e512bd5c0d2ddf4e45205efc8b216aa3e716ff6010a59654745358bb221db264b2f07849610980fe0429cd272c81faf4ce9fd8e82"
+      },
+      "expiry": 1644456721265
+    },
+    "/Users/kouiti/.pyenv/shims/python3.10.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kouiti/.pyenv/shims/python3.10",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.1-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 1,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.1-final"
+        },
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "b9df819672503af7276f6e5eb35ac279f20ac8b2e1667b693f5cc3b95af489f38cb3ce928cc1f4ed75ca256f5e101dd9284ea78149a01ae7546a2747a1de21ff"
+      },
+      "expiry": 1644457071401
+    },
+    "/Users/kouiti/.pyenv/shims/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kouiti/.pyenv/shims/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.1-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 1,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.1-final"
+        },
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "e7acd1ff794cd8a6e5898a4ce0384e9151bb496cfac4786a9e37d83c47fa8db0818ba990c5b64c8e265144915555bddb8e0223a86f3944d52f878723f2712eac"
+      },
+      "expiry": 1644457071402
+    },
+    "/Users/kouiti/.pyenv/shims/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kouiti/.pyenv/shims/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.1-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 1,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.1-final"
+        },
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "0070b92d507e01a68b6303798e921259ef4b8abecfc75ce99ec6fa5618fe7656ef3e79706e9728c3e9ce35cba6fe423074dd4659e7bec4eec436547c71cde875"
+      },
+      "expiry": 1644457071403
+    },
+    "/opt/homebrew/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/opt/homebrew/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.9-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.9-final"
+        },
+        "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
+        "fileHash": "aa5d0f4339100cb0159fc0a44efe953733818a93885b516f774e0311a1f35cf5964fd3323e05551ac4613970b42d45239149eb7f1888853aa2c25ba8f573f610"
+      },
+      "expiry": 1644457071465
+    },
+    "/opt/homebrew/bin/python3.7.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/opt/homebrew/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.9-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.9-final"
+        },
+        "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
+        "fileHash": "11a1800892aadb9881c9b8cf4a2f3c281eb93c7f088e7108e538880473f2b256cdcc90c0dfafcf4c97b908d02be9490519ec28961bbe3839d2989c249a43c46d"
+      },
+      "expiry": 1644457071468
+    },
+    "/opt/homebrew/bin/python3.9.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/opt/homebrew/bin/python3.9",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.9.10-final",
+          "major": 3,
+          "minor": 9,
+          "patch": 10,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.9.10-final"
+        },
+        "sysPrefix": "/opt/homebrew/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+        "fileHash": "c3870359020e667758e844acd66546615ec70365ac0c78d46b34d961da631e293a2f284df0e8047a08164367de1a86e31cfcae6207e9653cf08eb04cd7b371ba"
+      },
+      "expiry": 1644457071470
+    },
+    "/Users/kouiti/.pyenv/shims/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.10.1 64-bit",
+        "hash": "0070b92d507e01a68b6303798e921259ef4b8abecfc75ce99ec6fa5618fe7656ef3e79706e9728c3e9ce35cba6fe423074dd4659e7bec4eec436547c71cde875-0ed9036218bd2e22df44b82a45ee4754"
+      },
+      "expiry": 1644457071504
+    },
+    "/opt/homebrew/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.9 64-bit",
+        "hash": "aa5d0f4339100cb0159fc0a44efe953733818a93885b516f774e0311a1f35cf5964fd3323e05551ac4613970b42d45239149eb7f1888853aa2c25ba8f573f610-7d4292f1277d379f76865f79f70b64e3"
+      },
+      "expiry": 1644457071505
+    },
+    "/usr/local/bin/python3.9.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.9.10 64-bit",
+        "hash": "c3870359020e667758e844acd66546615ec70365ac0c78d46b34d961da631e293a2f284df0e8047a08164367de1a86e31cfcae6207e9653cf08eb04cd7b371ba-198fa70b132fb6ca8cdeb5e693feef26"
+      },
+      "expiry": 1644457071508
+    },
+    "/opt/homebrew/bin/python3.9.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.9.10 64-bit",
+        "hash": "c3870359020e667758e844acd66546615ec70365ac0c78d46b34d961da631e293a2f284df0e8047a08164367de1a86e31cfcae6207e9653cf08eb04cd7b371ba-10184c23463fe48320989f64516358ef"
+      },
+      "expiry": 1644457071512
+    },
+    "InterpreterAutoSeletionRule-system": {
+      "architecture": 3,
+      "path": "/Users/kouiti/.pyenv/shims/python",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.10.1-final",
+        "major": 3,
+        "minor": 10,
+        "patch": 1,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.10.1-final"
+      },
+      "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+      "fileHash": "0070b92d507e01a68b6303798e921259ef4b8abecfc75ce99ec6fa5618fe7656ef3e79706e9728c3e9ce35cba6fe423074dd4659e7bec4eec436547c71cde875",
+      "type": "Unknown",
+      "displayName": "Python 3.10.1 64-bit"
+    },
+    "/Users/kouiti/.pyenv/versions/3.10.1/bin/python3.10.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kouiti/.pyenv/versions/3.10.1/bin/python3.10",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.1-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 1,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.1-final"
+        },
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "032382e7d9ecb1d6bf8024bcab92ed4bf30926e93b2b2c4e777690f6d6849c1c7b6057a197b482dfabcc154abd5a72062fa6b0f26e1bf6259102f6cff0e37609"
+      },
+      "expiry": 1644457071582
+    },
+    "/Users/kouiti/.pyenv/versions/3.10.1/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kouiti/.pyenv/versions/3.10.1/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.1-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 1,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.1-final"
+        },
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+        "fileHash": "f70d49875bc40e4f020a9dcd14be61a2047ce01365447d6425d6325cb979ff991c9daed37ce38cb0a9fab1df072d7eedc6288912980b1f5d5ea6821758895ae5"
+      },
+      "expiry": 1644457071645
+    },
+    "/Users/kouiti/.pyenv/shims/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "0070b92d507e01a68b6303798e921259ef4b8abecfc75ce99ec6fa5618fe7656ef3e79706e9728c3e9ce35cba6fe423074dd4659e7bec4eec436547c71cde875",
+        "info": {
+          "architecture": 3,
+          "path": "/Users/kouiti/.pyenv/shims/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.10.1-final",
+            "major": 3,
+            "minor": 10,
+            "patch": 1,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.10.1-final"
+          },
+          "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+          "fileHash": "0070b92d507e01a68b6303798e921259ef4b8abecfc75ce99ec6fa5618fe7656ef3e79706e9728c3e9ce35cba6fe423074dd4659e7bec4eec436547c71cde875",
+          "type": "Unknown",
+          "displayName": "Python 3.10.1 64-bit"
+        }
+      },
+      "expiry": 1644457071586
+    },
+    "/opt/homebrew/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "aa5d0f4339100cb0159fc0a44efe953733818a93885b516f774e0311a1f35cf5964fd3323e05551ac4613970b42d45239149eb7f1888853aa2c25ba8f573f610",
+        "info": {
+          "architecture": 3,
+          "path": "/opt/homebrew/bin/python3",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.7.9-final",
+            "major": 3,
+            "minor": 7,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.7.9-final"
+          },
+          "sysPrefix": "/Library/Frameworks/Python.framework/Versions/3.7",
+          "fileHash": "aa5d0f4339100cb0159fc0a44efe953733818a93885b516f774e0311a1f35cf5964fd3323e05551ac4613970b42d45239149eb7f1888853aa2c25ba8f573f610",
+          "type": "Unknown",
+          "displayName": "Python 3.7.9 64-bit"
+        }
+      },
+      "expiry": 1644457071589
+    },
+    "/usr/local/bin/python3.9.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "c3870359020e667758e844acd66546615ec70365ac0c78d46b34d961da631e293a2f284df0e8047a08164367de1a86e31cfcae6207e9653cf08eb04cd7b371ba",
+        "info": {
+          "architecture": 3,
+          "path": "/usr/local/bin/python3.9",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.9.10-final",
+            "major": 3,
+            "minor": 9,
+            "patch": 10,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.9.10-final"
+          },
+          "sysPrefix": "/opt/homebrew/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+          "fileHash": "c3870359020e667758e844acd66546615ec70365ac0c78d46b34d961da631e293a2f284df0e8047a08164367de1a86e31cfcae6207e9653cf08eb04cd7b371ba",
+          "type": "Unknown",
+          "displayName": "Python 3.9.10 64-bit"
+        }
+      },
+      "expiry": 1644457071594
+    },
+    "/opt/homebrew/bin/python3.9.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "c3870359020e667758e844acd66546615ec70365ac0c78d46b34d961da631e293a2f284df0e8047a08164367de1a86e31cfcae6207e9653cf08eb04cd7b371ba",
+        "info": {
+          "architecture": 3,
+          "path": "/opt/homebrew/bin/python3.9",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.9.10-final",
+            "major": 3,
+            "minor": 9,
+            "patch": 10,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.9.10-final"
+          },
+          "sysPrefix": "/opt/homebrew/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+          "fileHash": "c3870359020e667758e844acd66546615ec70365ac0c78d46b34d961da631e293a2f284df0e8047a08164367de1a86e31cfcae6207e9653cf08eb04cd7b371ba",
+          "type": "Unknown",
+          "displayName": "Python 3.9.10 64-bit"
+        }
+      },
+      "expiry": 1644457071599
+    },
     "InterpreterAutoSeletionRule-currentPath": {
       "architecture": 3,
       "path": "/Users/arakawakouichi/.pyenv/versions/3.7.0/bin/python",
@@ -2191,7 +2377,107 @@
       },
       "sysPrefix": "/Users/arakawakouichi/.pyenv/versions/3.7.0",
       "fileHash": "55a3a6975c54a2c47288a047883a8ba960d43e73892e6f85978f587f7837b19c8e83736821e1a0703a5fbd436c7b56b21634a8bfe5e616ebdbbf7f2c9416a1ef",
-      "type": "Unknown"
+      "type": "Unknown",
+      "cachedEntry": true
+    },
+    "InterpreterAutoSeletionRule-cachedInterpreters": {
+      "architecture": 3,
+      "path": "/Users/kouiti/.pyenv/shims/python",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.10.1-final",
+        "major": 3,
+        "minor": 10,
+        "patch": 1,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.10.1-final"
+      },
+      "sysPrefix": "/Users/kouiti/.pyenv/versions/3.10.1",
+      "fileHash": "0070b92d507e01a68b6303798e921259ef4b8abecfc75ce99ec6fa5618fe7656ef3e79706e9728c3e9ce35cba6fe423074dd4659e7bec4eec436547c71cde875",
+      "type": "Unknown",
+      "displayName": "Python 3.10.1 64-bit"
+    },
+    "/Users/kouiti/.pyenv/versions/3.8.0/bin/python3.8.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kouiti/.pyenv/versions/3.8.0/bin/python3.8",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.0-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 0,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.0-final"
+        },
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.8.0",
+        "fileHash": "330f5563d19693c6d126524b690e12daed80f38abd19a86d7b99909ea2bf080abfa27ead06b51f6f1ad12f76f81a30d7f530c5da4be8e8e168adbf21b6d86faa"
+      },
+      "expiry": 1644457071641
+    },
+    "/Users/kouiti/.pyenv/versions/3.8.0/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kouiti/.pyenv/versions/3.8.0/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.0-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 0,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.0-final"
+        },
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.8.0",
+        "fileHash": "3a2439184a32b394157b628f19b3bd68d376bc0e42b0cd8947d463bd169fb1cadec6635ab3dd1665bee3f113998691e790fc8871fd9e11fd2f7230ae702ec6de"
+      },
+      "expiry": 1644457071641
+    },
+    "/Users/kouiti/.pyenv/versions/3.8.0/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kouiti/.pyenv/versions/3.8.0/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.0-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 0,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.0-final"
+        },
+        "sysPrefix": "/Users/kouiti/.pyenv/versions/3.8.0",
+        "fileHash": "bc147e0f86c80970a7b5085e1f53f1270b32329252225c3df600dc7ae6b4b5cb9a336977da3d896ccd56d05e41f941a6d1719f9c6fd5b6ec8cb67a1ac954394e"
+      },
+      "expiry": 1644457071642
     }
   },
   "coc-python|/Users/arakawakouichi/local_file/dev-GlycoSim/dev-glycosim": {
@@ -2494,12 +2780,6 @@
     "INTERPRETERS_CACHE_v3_PipEnvService": [],
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
   },
-<<<<<<< HEAD
-  "coc-python|/Users/Kouiti/local_file/glycovid/get_uri": {
-    "INTERPRETERS_CACHE_v3_PipEnvService:d1bd5f5ed6f37bbc3e1feaa3fc383b3c": [],
-    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:d1bd5f5ed6f37bbc3e1feaa3fc383b3c": [],
-    "autoSelectedWorkspacePythonInterpreter-/Users/Kouiti/local_file/glycovid/get_uri": {
-=======
   "coc-python|/Users/arakawakouichi/local_file/maman-homepage/webapp/react-app/react-app": {
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
     "INTERPRETERS_CACHE_v3_PipEnvService": [],
@@ -2512,7 +2792,6 @@
     "INTERPRETERS_CACHE_v3_PipEnvService": [],
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
     "autoSelectedWorkspacePythonInterpreter-/Users/arakawakouichi/Desktop": {
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
       "architecture": 3,
       "path": "/usr/local/bin/python3",
       "version": {
@@ -2534,17 +2813,6 @@
       "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
       "fileHash": "b9cb52302f29f6368dc618b027a63d7cd35a89daaad075384f266f378ad9d74b180bcc81f6d38175e2f530cb85d4a5545db3886ca9b7d2001e6b155bc74ed098",
       "type": "Unknown",
-<<<<<<< HEAD
-      "displayName": "Python 3.9.9 64-bit"
-    },
-    "INTERPRETERS_CACHE_v3_PipEnvService": [],
-    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
-  },
-  "coc-python|/Users/Kouiti/local_file/glycovid/glycovid_PACDB": {
-    "INTERPRETERS_CACHE_v3_PipEnvService:4b2c8d5724bb5f9be130b821f5d2754b": [],
-    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:4b2c8d5724bb5f9be130b821f5d2754b": [],
-    "autoSelectedWorkspacePythonInterpreter-/Users/Kouiti/local_file/glycovid/glycovid_PACDB": {
-=======
       "cachedEntry": true,
       "displayName": "Python 3.9.9 64-bit"
     }
@@ -2555,7 +2823,6 @@
     "INTERPRETERS_CACHE_v3_PipEnvService": [],
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
     "autoSelectedWorkspacePythonInterpreter-/Users/arakawakouichi/local_file/glycovid/glycovid_PSIQUIC": {
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
       "architecture": 3,
       "path": "/usr/local/bin/python3",
       "version": {
@@ -2577,15 +2844,14 @@
       "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
       "fileHash": "b9cb52302f29f6368dc618b027a63d7cd35a89daaad075384f266f378ad9d74b180bcc81f6d38175e2f530cb85d4a5545db3886ca9b7d2001e6b155bc74ed098",
       "type": "Unknown",
-<<<<<<< HEAD
-      "displayName": "Python 3.9.9 64-bit"
-    },
-    "INTERPRETERS_CACHE_v3_PipEnvService": [],
-    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
-=======
       "cachedEntry": true,
       "displayName": "Python 3.9.9 64-bit"
     }
->>>>>>> 5a140328ff47a1840291b361d515158f2daffcc1
+  },
+  "coc-python|/Users/kouiti/dotfiles": {
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService:be74d23f87932518414548b799d33af5": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:be74d23f87932518414548b799d33af5": []
   }
 }

@@ -118,3 +118,9 @@ repo = 'Xuyuanp/scrollbar.nvim'
 
 [[plugins]]
 repo = 'maxmellon/vim-jsx-pretty'
+
+[[plugins]]
+repo = 'elzr/vim-json'
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'

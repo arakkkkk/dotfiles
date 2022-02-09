@@ -17,7 +17,25 @@ noremap <C-q> a<C-c>
 :tnoremap <C-q> <C-c>
 
 " run python file
-nnoremap :r<CR> :w<CR>:split<CR><C-w><C-w> :term python %<CR>
-nnoremap :g<CR> :w<CR>:split<CR><C-w><C-w> :term sh ~/dotfiles/dotfiles/nvim/run.sh %<CR>
+function SplitWindow()
+  write
+  split
+  winc j
+endfunction
+function RunCurrentFile()
+  set shiftwidth=2
+  if len(split(expand("%:p"), '\.')) == 0
+    return
+  endif
+  let ext = split(expand("%:p"), '\.')[-1]
+  if ext == "py"
+    call SplitWindow()
+    term python %
+  else
+    echo "fiailed."
+  endif
+endfunction
 
-map :neo<CR> :tabnew<CR>:source ~/.config/nvim/plugins/neoterm.vim<CR>
+
+nnoremap :r<CR> :call RunCurrentFile()<CR>
+nnoremap :g<CR> :w<CR>:split<CR><C-w><C-w> :term sh ~/dotfiles/dotfiles/nvim/run.sh %<CR>

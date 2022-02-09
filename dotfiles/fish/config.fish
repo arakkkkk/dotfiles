@@ -5,10 +5,16 @@ end
 
 eval (direnv hook fish)
 
-
+# pyenv path
 status is-interactive; and pyenv init --path | source
 pyenv init - | source
 
+# rust path
+set -U fish_user_paths $fish_user_paths $HOME/.cargo/bin
+
+#rbenv path
+set -x PATH $HOME/rbenv init.rbenv/bin $PATH
+eval (rbenv init - | source)
 
 # goenv path
 set -x GOENV_ROOT $HOME/.goenv

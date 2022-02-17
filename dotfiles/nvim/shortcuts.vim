@@ -46,11 +46,13 @@ function SetTabIndent()
   let ext = split(expand("%:p"), '\.')[-1]
   if ext == "py"
     set shiftwidth=4
+  elseif ext == "md"
+    set shiftwidth=4
   endif
 endfunction
 
 " noremap <silent>:e<CR> :source ~/.config/nvim/plugins/ale.vim<CR>:source ~/.config/nvim/init.vim<CR>:source ~/.config/nvim/init.vim<CR>:call SetTabIndent()<CR>:w<CR>:edit<CR>:echo "reload success"<CR>
-noremap <silent>:e<CR> :source ~/.config/nvim/plugins/neoterm.vim<CR>:source ~/.config/nvim/plugins/ale.vim<CR>:source ~/.config/nvim/init.vim<CR>:source ~/.config/nvim/init.vim<CR>:w<CR>:edit<CR>:call SetTabIndent()<CR>
+noremap <silent>:e<CR> :source ~/.config/nvim/plugins/ale.vim<CR>:source ~/.config/nvim/init.vim<CR>:source ~/.config/nvim/shortcuts.vim<CR>:w<CR>:edit<CR>:call SetTabIndent()<CR>
 
 
 noremap <silent>:recache<CR> :call dein#recache_runtimepath()

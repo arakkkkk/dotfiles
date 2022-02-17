@@ -3,7 +3,7 @@ let g:coc_global_extensions = [
       \, 'coc-tsserver'
       \, 'coc-snippets'
       \, 'coc-pairs'
-      \, 'coc-python'
+      \, 'coc-jedi'
       \, 'coc-html'
       \, 'coc-json'
       \, 'coc-css'

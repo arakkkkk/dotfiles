@@ -42,6 +42,8 @@ ln -fsn ${HOME}/dotfiles/dotfiles/Vivaldi/Default/Sessions ${HOME}/Library/Appli
 # brew install direnv
 # brew install pyenv
 # brew install ag
+## for markdown preview
+# brew install mdr
 
 ######### for fish shell
 # source ~/.config/fish/config.fish

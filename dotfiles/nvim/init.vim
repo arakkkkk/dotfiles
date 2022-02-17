@@ -12,9 +12,6 @@ set splitright         "画面を縦分割する際に右に開く
 set clipboard=unnamed  "yank した文字列をクリップボードにコピー
 set sh=fish             "shellをfishに変換
 set conceallevel=0                       "jsonファイルで"を非表示にしない設定
-let g:vim_json_syntax_conceal = 0      "jsonファイルで"を非表示にしない設定
-let g:vim_markdown_conceal = 0
-let g:vim_markdown_conceal_code_blocks = 0
 
 " 日本語を使用可能に
 set encoding=utf-8
@@ -78,4 +75,5 @@ colorscheme night-owl
 source ~/.config/nvim/colors/colorscheme.vim
 
 runtime shortcuts.vim
-noremap <silent>:sc<CR> :tabnew<CR>:source ~/.config/nvim/init.vim<CR>
+runtime profile.vim
+noremap <silent>:init<CR> :tabnew<CR>:source ~/.config/nvim/init.vim<CR>

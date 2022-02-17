@@ -121,6 +121,18 @@ repo = 'maxmellon/vim-jsx-pretty'
 
 [[plugins]]
 repo = 'elzr/vim-json'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-json.vim
+'''
 
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-markdown.vim
+'''
+
+[[plugins]]
+repo = 'skanehira/preview-markdown.vim'
+hook_add = '''
+  source ~/.config/nvim/plugins/preview-markdown.vim
+'''

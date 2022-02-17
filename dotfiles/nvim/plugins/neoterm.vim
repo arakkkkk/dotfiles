@@ -23,7 +23,6 @@ function SplitWindow()
   winc j
 endfunction
 function RunCurrentFile()
-  set shiftwidth=2
   if len(split(expand("%:p"), '\.')) == 0
     return
   endif
@@ -31,6 +30,8 @@ function RunCurrentFile()
   if ext == "py"
     call SplitWindow()
     term python %
+  elseif ext == "md"
+    PreviewMarkdown bottom
   else
     echo "fiailed."
   endif

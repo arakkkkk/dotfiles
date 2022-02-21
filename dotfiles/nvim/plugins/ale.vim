@@ -1,5 +1,5 @@
 let g:ale_linters = {
-    \ 'javascript': ['eslint'],
+    \ 'javascript': ['eslint', 'tsserver', 'jshint'],
     \ 'python': ["pyright"],
     \ 'rust': ['analyzer', 'cargo', 'cspell', 'rls', 'rustc']
     \ }

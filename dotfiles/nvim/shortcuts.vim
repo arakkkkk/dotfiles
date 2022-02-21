@@ -50,8 +50,6 @@ function SetTabIndent()
     set shiftwidth=4
   elseif ext == "json"
     set shiftwidth=4
-  elseif ext == "html"
-    set shiftwidth=4
   endif
 endfunction
 

@@ -34,16 +34,22 @@ ln -fsn ${HOME}/dotfiles/dotfiles/Vivaldi/Default/Sessions ${HOME}/Library/Appli
 ####### homebrew
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # brew update
+# brew upgrade
 # brew install fish
 # brew install nodejs
 # brew install yarn
 # brew install zsh
-# brew upgrade
 # brew install direnv
 # brew install pyenv
 # brew install ag
 ## for markdown preview
 # brew install mdr
+# linter, fixer
+brew install black
+brew install isort
+brew install prettier
+brew install autopep8
+brew install jq
 
 ######### for fish shell
 # source ~/.config/fish/config.fish

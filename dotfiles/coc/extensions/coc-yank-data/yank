@@ -1,1278 +1,3 @@
-e3a5175946657d9f76a28e3b4a1f0546|file:///Users/kouiti/localfile/glycovid_PSIQUIC/sparql/query.py|19|1|V|python
-	            f.write("## SPARQL query")
-2cf246ec64f202736c40162a0e39d100|file:///Users/kouiti/localfile/glycovid_PSIQUIC/sparql/query.py|19|22|v|python
-	## SPARQL query
-703b2aae82aa61c0915b377ddee81332|file:///Users/kouiti/localfile/glycovid_PSIQUIC/sparql/query.py|19|1|V|python
-	            f.write("```")
-d4438ff633b4848e91bdfbb893cebbbd|file:///Users/kouiti/localfile/glycovid_PSIQUIC/sparql/query.py|13|15|v|python
-	str(len(dir_list)+1)
-c886b99b32fd054447c569b37afadb33|file:///Users/kouiti/localfile/glycovid_PSIQUIC/README.md|11|1|V|markdown
-	# create owl file from ttl
-76ea0bebb3c22822b4f0dd9c9fd021c5|file:///Users/kouiti/localfile/glycovid_PSIQUIC/README.md|13|3|v|markdown
-	create
-2366a9cd3fa8a7bc3d62e12d371afc8f|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|188|33|V|python
-	                    print(row[9])
-0000be4a08ecc0507a63163c12f11e28|file:///Users/kouiti/localfile/lets/README.md|5|1|v|markdown
-	https://test.gpu.glycosim.rings.glycoinfo.org/account/users/login
-d3eb12cf6899c92e3103e246d121d0a7|file:///Users/kouiti/localfile/lets/README.md|4|1|V|markdown
-	[テスト環境](https://test.gpu.glycosim.rings.glycoinfo.org/account/users/login)<br>
-614e64ddc146378f4dc3612bc8d902c3|file:///Users/kouiti/localfile/lets/README.md|16|1|V|markdown
-	[Q and A](https://gitlab.com/aoki-kinoshita-lab/lets/-/blob/main/share/questions.md)
-0945359809dad1fbf3dea1c95a0da951|file:///Users/kouiti/localfile/lets/README.md|7|2|v|markdown
-	Document
-e2580a6c75bf313e5d2f8b0737396944|file:///Users/kouiti/localfile/lets/README.md|7|5|V|markdown
-	[Wiki](https://gitlab.com/aoki-kinoshita-lab/lets/-/wikis/home)<br>
-45944b4ad68eed0e04e6c019bb7cfa44|file:///Users/kouiti/localfile/lets/share/questions.md|4|1|V|markdown
-	:::note warn
-b1d80fe3d437224b9b1a6c4a481aa696|file:///Users/kouiti/localfile/lets/README.md|22|1|V|markdown
-	## 開発の進め方
-	https://drive.google.com/file/d/1HuJ9O3kAd5g34wrh_CuEQKjgvB04yqhF/view?usp=sharing
-	1. 対象のissueのページを開く
-	or issueを作成 (asign labelも忘れないように)
-	2. issuerのasignee を自分に設定
-	3. create merge requestをクリック
-	(ダブリ内容に気をつけて！)
-	4. git checkout main
-	5. git pull origin main
-	6. git checkout -b "create merge requestで出てきた文字"
-	7. 作業を行う
-	8. git add , git commit -m"..." , git push origin HEAD
-	9. gitLabページの右上merge requests　　> assigned to youをクリック
-	10. 対象のissueのページヲ開いて右上のMark as readyをクリック
-	11. 荒川まで連絡
-	12. 新しいissueについて1から同じ手順で行う。
-	わからなかったら聞いてね
-c8ccc1b0f719f69b9496b5d3145f57c4|file:///Users/kouiti/localfile/lets/README.md|6|1|V|markdown
-	[Q and A](https://gitlab.com/aoki-kinoshita-lab/lets/-/blob/main/share/questions.md)<br>
-9fc2345497b6490a2134b3aa68091592|file:///Users/kouiti/localfile/lets/README.md|11|13|V|markdown
-	## テスト環境
-2668f4bda8920ff1c8d25b28e094ed81|file:///Users/kouiti/localfile/lets/README.md|8|8|V|markdown
-	[開発の進め方]()<br>
-1ab108f9a129d3cc76c454f066e9595f|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/ale.vim|9|1|V|vim
-	    \ 'python': ['autopep8', 'black', 'isort', "prettier"],
-bc4e6acc155b4c131ff6ade50257f87b|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/ale.vim|3|49|v|vim
-	prettier
-3433c0aaa1325cc46a805b76ff76d51c|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/coc.vim|6|1|V|vim
-	      \, 'coc-python'
-44dbf35fa24111ee7cd925239503d25d|file:///Users/kouiti/dotfiles/dotfiles/nvim/coc-settings.json|12|1|V|json
-	
-	  "python.jediEnabled":false
-9577fb3cc280124089872c36b6d368e2|file:///Users/kouiti/dotfiles/dotfiles/nvim/coc-settings.json|13|3|V|json
-	  //python
-01e09c5c2f6652a128a7023a61303c57|file:///Users/kouiti/localfile/lets/lets_proj/movie/ja/views.py|7|9|V|python
-	    print
-26e93bf5bb69731da010058bf156116b|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/ale.vim|3|24|V|vim
-	    \ 'python': ["pyright"],
-7779d3255954c53c11cbfc3fd7c8fadc|file:///Users/kouiti/.ssh/config|5|25|v|sshconfig
-	id_rsa_glycosi
-53fa8cec090c7d98ce65aab53772908b|file:///Users/kouiti/.ssh/config|7|1|V|sshconfig
-	Host lets
-	    HostName 150.37.132.95
-	    User arakkk
-21927851c1be56cb95b9baa4abcb023c|file:///Users/kouiti/.ssh/config|12|6|v|sshconfig
-	lets
-399246ab43a3f733c771f6602a54b564|file:///Users/kouiti/.ssh/config|7|1|V|sshconfig
-	Host lets
-	    HostName 150.37.132.95
-	    User arakkk
-	    ProxyCommand ssh -W %h:%p fumidai
-4385e7deb095fe5aaf8f4e5cae52baad|file:///Users/kouiti/.ssh/config|12|1|V|sshconfig
-	Host rings
-	    HostName 150.37.132.75
-	    User arakkk
-	
-99759dd89bf19ca86d501411747f08c0|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program1.html|158|1|V|html
-	                    ホテイアオイの圧搾液を、紅色光合成細菌を用いて省エネルギーで処理し、 <br>
-	                    有用物質を生産することを目的とした研究としてホテイアオイの圧搾液に牛の尿(疑似尿)を加えて成分調整を行い、<br>
-	                    紅色光合成細菌がどの程度処理をすることが可能かどうか実験を行ってきました。</p>
-7d77cf1f50af89c8bfbe85e224a9c5dc|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program1.html|180|1|V|html
-	                    <li></li>
-d1ffa23ef1b90608f7c93e73488cf582|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program1.html|177|1|V|html
-	                    <li>炭化処理したホテイアオイの土壌改良材利用の可能性を調査</li>
-	                    <li>陸棲ホテイアオイと水棲ホテイアオイの違いによる土壌改良剤としての効果</li>
-	                    <li>黒ボク土とエチオピア土壌の違いによる植物への影響調査</li>
-a5007a35d80a126b55013b0be3ea9b7d|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program1.html|181|1|V|html
-	                <p>を挙げ、異なる条件下で炭化処理したホテイアオイを加えたエチオピア土壌に、<br>
-	                    小松菜を植えて生育状況を調査する実験を行っています。</p>
-8708c3a5b9aa9ad663bda7789ae0ff60|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program1.html|125|63|V|html
-	                <p class="mt-3">を行ってきました。</p>
-567ca232e169db177402417796b624ce|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program1.html|122|134|V|html
-	                    <li>紅色光合成細菌によるホテイアオイ圧搾液有効利用法の開発を目的とした実験</li>
-754f0ccf47813bae8bd7ef4c441fee89|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program1.html|124|128|V|html
-	                    <li>炭化処理したホテイアオイを土壌改良材としての利用可能性を調べる実験</li>
-696e9add2dd06a2914256517a785ea06|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program2.html|153|1|V|html
-	                <p>スピルリナの形状に着目し、導電性ポリマーの微細コイル生産の実験を行いました。</p>
-	                <p>水中で錆びないコイルが従来よりも低コストで生産できることが見込め、様々な産業への応用が考えられます。</p>
-21bf0532538c30b04b8a573a92add4eb|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program2.html|168|1|V|html
-	                <p>PLANE3T学生プログラム2サーバーチームでは、</p>
-	                <p>OSSアプリケーションを用いたサーバー運用を行いました。</p>
-fc5364bf9dbfa34954526becad136d4b|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program2.html|176|47|v|html
-	control
-e4ae48a1c5ed2a893a508607cb3c925a|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program2.html|185|38|v|html
-	PLANE3T学生プログラム2では、PLANE3T学生プログラム最終年の活動を残すこと、また、知名度向上を目指してホームページを製作しています。
-c729785ea1b6aa1b125f65dde0d0b417|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program3.html|53|1|V|html
-	                        PLANE3Tでは蛋白質やビタミン・必須脂肪酸などの栄養価が高く、途上国での生産が容
-	                        易な微細藻類「スピルリナ」に着目し、現地の人々の栄養改善に貢献することを目指しています。
-2f38d75ce0d85f9010d69dd3d0f649a8|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program3.html|62|1|V|html
-	                        また、商品として販売するために
-	                        は現地の経済状況に応じた価格設定やブランド化が必要となります。そこで本学生プログラム
-	                        では、アディスアベバの著名なパン製造会社「MulmulBakery」と協働し、現地の経済状況や食
-	                        文化にもとづいたスピルリナ商品の開発を目指します。具体的には文献調査から最新のアディ
-	                        スアベバの経済状況や食文化について調査した上で商品のアイデアを作成し、Mulmul
-	                        Bakery との協議を通して製品化を目指します。
-d9c2e2267b3a02b0fae87d040e837589|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program3.html|63|25|V|html
-	                    </p>
-	                        2022 年 3
-	                        月の最終シンポジウムでは成果発表と試作品
-	                        の提供を目指します。
-965a48f3240cb7c09f17490bef2923af|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program4.html|34|1|V|html
-	                        プログラム４では、エチオピアの大学教員、研究者、技術者、及び起業家を目指す青年
-	                        等を対象に、環境教育を実施するとともに、環境に優しい事業を起業し、促進していく
-	                        起業家を育成することを目標に、人材育成の現状について調査をしてきました。2020
-	                        年 3
-	                        月には、バハダール大学に於いて、パートナー大学、国連機関と創価大学との共催で、
-	                        「持続可能な開発のための環境教育」シンポジウムを開催し、エチオピアで実施されて
-	                        きた環境教育や政策、日本の環境教育を促進する法律や実施状況などを共有し、パネル
-	                        討議なども行いました。活動最終年度となる今年度は、以下の活動を予定していますが、
-	                        今後、集い合う学生の要望等も踏まえ、最終的に確定していきます。
-3c1c80334f16602802329ff8d24f10ce|file:///Users/kouiti/localfile/plane3t/PLANE3T_SITE/program4.html|36|1|V|html
-	
-	Translated with www.DeepL.com/Translator (free version)
-62819127d673e125533e2ffc03fb01ce|file:///Users/kouiti/localfile/glycovid_PSIQUIC/owl/2_8/psicquic_temp_2_8.owl|172|1|V|
-	###  http://purl.obolibrary.org/obo/MI_0914
-	obo:MI_0914 rdf:type owl:NamedIndividual .
-	
-	
-	###  http://rdf.glycoinfo.org/dbid/ensembl/ENSG00000023445
-	<http://rdf.glycoinfo.org/dbid/ensembl/ENSG00000023445> rdf:type owl:NamedIndividual ,
-	                                                                 <http://biomodels.net/SBO/SBO_0000241> .
-	
-	
-	###  http://rdf.glycoinfo.org/dbid/imex/IM-23322
-	<http://rdf.glycoinfo.org/dbid/imex/IM-23322> rdf:type owl:NamedIndividual ,
-	                                                       obo:NCIT_C93638 .
-	
-	
-	###  http://rdf.glycoinfo.org/dbid/imex/IM-23322-1
-	<http://rdf.glycoinfo.org/dbid/imex/IM-23322-1> rdf:type owl:NamedIndividual ,
-	                                                         <http://rdf.glycoinfo.org/PSICQUIC/Ontology#InteractionId> .
-	
-	
-	###  http://rdf.glycoinfo.org/dbid/taxonomy/9606
-	<http://rdf.glycoinfo.org/dbid/taxonomy/9606> rdf:type owl:NamedIndividual ,
-	                                                       obo:EUPATH_0000591 .
-	
-	
-	###  http://rdf.glycoinfo.org/dbid/uniprot/Q04206
-	<http://rdf.glycoinfo.org/dbid/uniprot/Q04206> rdf:type owl:NamedIndividual ,
-	                                                        <http://biomodels.net/SBO/SBO_0000241> .
-	
-	
-	###  https://identifiers.org/matrixdb.association:ensembl_ENSG00000023445__uniprotkb_Q04206
-	<https://identifiers.org/matrixdb.association:ensembl_ENSG00000023445__uniprotkb_Q04206> rdf:type owl:NamedIndividual ,
-	                                                                                                  bpo:MolecularInteraction ;
-	                                                                                         obo:IAO_0000119 <http://rdf.glycoinfo.org/dbid/imex/IM-23322> ;
-	                                                                                         obo:INO_0000154 obo:MI_0914 ;
-	                                                                                         <http://rdf.glycoinfo.org/PSICQUIC/Ontology#has_interactor_A> <http://rdf.glycoinfo.org/dbid/uniprot/Q04206> ;
-	                                                                                         <http://semanticscience.org/resource/SIO_000253> <http://rdf.glycoinfo.org/dbid/taxonomy/9606> ;
-	                                                                                         bpo:interactionType obo:MI_0914 ;
-	                                                                                         dc:identifier <http://rdf.glycoinfo.org/dbid/imex/IM-23322-1> ;
-	                                                                                         dc:source obo:MI_0469 ;
-	                                                                                         bao:BAO_0002875 obo:MI_0402 .
-	
-	
-	###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
-f1e2d206e16448c042352f2a2a60f16a|file:///Users/kouiti/localfile/glycovid_PSIQUIC/create_ttl.py|234|1|V|python
-	    dir_list = glob.glob("turtle/**/*.ttl", recursive=True)
-	    for i in range(len(dir_list)):
-	        bef_dir = dir_list[i]
-	        if "all" in bef_dir:
-	            continue
-	        aft_dir = re.sub(r"turtle/[^/]+", "turtle/all", dir_list[i])
-	        print("copy", bef_dir, "to", aft_dir)
-	        shutil.copy(bef_dir, aft_dir)
-2c6cf412127e68247baa136ba1f07d97|file:///Users/kouiti/localfile/glycovid_PSIQUIC/sparql/out/out.md|1|1|V|markdown
-	
-	--- 
-	## SPARQL query
-	```
-	prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-	prefix owl: <http://www.w3.org/2002/07/owl#>
-	
-	SELECT DISTINCT ?predicate
-	WHERE {
-	  ?subject ?predicate ?object
-	}
-	```
-	## RESULTS
-	```
-	{"head": {"vars": ["predicate"]}, "results": {"bindings": [{"predicate": {"type": "uri", "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}}, {"predicate": {"type": "uri", "value": "http://purl.obolibrary.org/obo/IAO_0000119"}}, {"predicate": {"type": "uri", "value": "http://purl.obolibrary.org/obo/INO_0000154"}}, {"predicate": {"type": "uri", "value": "http://purl.org/dc/elements/1.1/identifier"}}, {"predicate": {"type": "uri", "value": "http://purl.org/dc/elements/1.1/source"}}, {"predicate": {"type": "uri", "value": "http://rdf.glycoinfo.org/PSICQUIC/Ontology#has_interactor_A"}}, {"predicate": {"type": "uri", "value": "http://rdf.glycoinfo.org/PSICQUIC/Ontology#has_interactor_B"}}, {"predicate": {"type": "uri", "value": "http://semanticscience.org/resource/SIO_000253"}}, {"predicate": {"type": "uri", "value": "http://www.bioassayontology.org/bao#BAO_0002875"}}, {"predicate": {"type": "uri", "value": "http://www.biopax.org/release/biopax-level3.owl#interactionType"}}]}}
-	```
-	
-	--- 
-	## SPARQL query
-	```
-	prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-	prefix owl: <http://www.w3.org/2002/07/owl#>
-	
-	SELECT ?p ?o
-	WHERE {
-	  <http://rdf.glycoinfo.org/matrixdb.association:chebi_241349__uniprotkb_P02649> ?p ?o
-	}
-	```
-	## RESULTS
-	```
-	{"head": {"vars": ["p", "o"]}, "results": {"bindings": [{"p": {"type": "uri", "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, "o": {"type": "uri", "value": "http://biomodels.net/SBO/SBO_0000344"}}, {"p": {"type": "uri", "value": "http://purl.obolibrary.org/obo/IAO_0000119"}, "o": {"type": "uri", "value": "http://rdf.glycoinfo.org/dbid/pubmed/12950167"}}, {"p": {"type": "uri", "value": "http://purl.obolibrary.org/obo/IAO_0000119"}, "o": {"type": "uri", "value": "http://rdf.glycoinfo.org/dbid/imex/IM-27037"}}, {"p": {"type": "uri", "value": "http://purl.obolibrary.org/obo/INO_0000154"}, "o": {"type": "uri", "value": "http://purl.obolibrary.org/obo/MI_0407"}}, {"p": {"type": "uri", "value": "http://purl.obolibrary.org/obo/INO_0000154"}, "o": {"type": "uri", "value": "http://purl.obolibrary.org/obo/MI_0914"}}, {"p": {"type": "uri", "value": "http://purl.org/dc/elements/1.1/identifier"}, "o": {"type": "uri", "value": "http://rdf.glycoinfo.org/dbid/imex/IM-22103-3"}}, {"p": {"type": "uri", "value": "http://purl.org/dc/elements/1.1/identifier"}, "o": {"type": "uri", "value": "http://rdf.glycoinfo.org/dbid/imex/IM-27037-11"}}, {"p": {"type": "uri", "value": "http://purl.org/dc/elements/1.1/identifier"}, "o": {"type": "uri", "value": "http://rdf.glycoinfo.org/dbid/imex/IM-27037-15"}}, {"p": {"type": "uri", "value": "http://purl.org/dc/elements/1.1/source"}, "o": {"type": "uri", "value": "http://purl.obolibrary.org/obo/MI_1332"}}, {"p": {"type": "uri", "value": "http://purl.org/dc/elements/1.1/source"}, "o": {"type": "uri", "value": "http://purl.obolibrary.org/obo/MI_0486"}}, {"p": {"type": "uri", "value": "http://rdf.glycoinfo.org/PSICQUIC/Ontology#has_interactor_A"}, "o": {"type": "uri", "value": "http://rdf.glycoinfo.org/dbid/CHEBI/241349"}}, {"p": {"type": "uri", "value": "http://rdf.glycoinfo.org/PSICQUIC/Ontology#has_interactor_B"}, "o": {"type": "uri", "value": "http://rdf.glycoinfo.org/dbid/uniprot/P02649"}}, {"p": {"type": "uri", "value": "http://semanticscience.org/resource/SIO_000253"}, "o": {"type": "uri", "value": "http://semanticscience.org/resource/SIO_000559"}}, {"p": {"type": "uri", "value": "http://www.bioassayontology.org/bao#BAO_0002875"}, "o": {"type": "uri", "value": "http://purl.obolibrary.org/obo/MI_0400"}}, {"p": {"type": "uri", "value": "http://www.bioassayontology.org/bao#BAO_0002875"}, "o": {"type": "uri", "value": "http://purl.obolibrary.org/obo/MI_0096"}}, {"p": {"type": "uri", "value": "http://www.biopax.org/release/biopax-level3.owl#interactionType"}, "o": {"type": "uri", "value": "http://purl.obolibrary.org/obo/MI_0407"}}, {"p": {"type": "uri", "value": "http://www.biopax.org/release/biopax-level3.owl#interactionType"}, "o": {"type": "uri", "value": "http://purl.obolibrary.org/obo/MI_0914"}}]}}
-	```
-	
-	--- 
-	## SPARQL query
-	```
-	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-	SELECT (COUNT(?s) AS ?count)
-	WHERE {
-	  ?s ?p ?o
-	}
-	```
-	## RESULTS
-	```
-	{"head": {"vars": ["count"]}, "results": {"bindings": [{"count": {"type": "literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "23071846"}}]}}
-	```
-	
-	--- 
-	## SPARQL query
-	```
-	prefix owl: <http://www.w3.org/2002/07/owl#>
-	
-	SELECT DISTINCT ?class
-	WHERE {
-	  ?subject a ?class
-	}
-	```
-	## RESULTS
-	```
-	{"head": {"vars": ["class"]}, "results": {"bindings": [{"class": {"type": "uri", "value": "http://purl.obolibrary.org/obo/EUPATH_0000591"}}, {"class": {"type": "uri", "value": "http://biomodels.net/SBO/SBO_0000344"}}, {"class": {"type": "uri", "value": "http://biomodels.net/SBO/SBO_0000241"}}, {"class": {"type": "uri", "value": "http://purl.obolibrary.org/obo/NCIT_C93638"}}, {"class": {"type": "uri", "value": "http://rdf.glycoinfo.org/PSICQUIC/Ontology#InteractionId"}}]}}
-	```
-92bb3821e6464b005643263a1c2d3580|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|1|1|V|markdown
-	# LM-GlycomeAtlas
-	## Build手順
-	```
-	git clone 
-	cd
-	npm install express
-	node app.js
-	```
-	## リンク
-	[議事録](https://docs.google.com/document/d/1r_ixMrGHaRjhRpfICX215QiNWY_XWNHzmuwUJBKzFYs/edit)<br>
-	
-ed3544184f23478f1da5c4f098052b10|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|10|1|V|markdown
-	[議事録](https://docs.google.com/document/d/1r_ixMrGHaRjhRpfICX215QiNWY_XWNHzmuwUJBKzFYs/edit)<br>
-f8161147d62e004a8bc9b7162a567815|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|34|1|V|javascript
-	$.get("./data/RickDrakeFormula.json", function(data)
-	{
-	    sessionStorage.setItem("RickDrakeFormula", JSON.stringify(data)); //WholeTissueListを保存
-	    // console.log("WholeTissueList data; "+JSON.stringify(data));
-	});
-376ee11f94abcb24fe7758a544d799f7|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|245|1|V|html
-	<script type="text/javascript" src="LectinAtlas.js"></script>
-4dfb02a35b2344c893bb3f8101e8f9a8|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|246|37|v|html
-	LectinAtlas
-9de4da142f81ebe00824aeff9aad1cad|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|243|1|V|javascript
-	              // +'<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">'
-	              // +'<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>'
-	              // +'<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>'
-	              // +'</svg>'
-d6c860d51348fd2ef9002ca97d1e8690|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|311|1|V|javascript
-	  //    make_table += embed;
-	  /*
-	    var lastEventListener = function(){
-	        svgPanZoom(embed, {
-	            zoomEnabled: true,
-	            controlIconsEnabled: true
-	        });
-	    }
-	    embed.addEventListener('load', lastEventListener);
-	*/
-	
-	  // console.log("Done3");
-319893b56cfcc49465a66c3ec8c516d4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|304|1|V|javascript
-	
-	  //$("#Detailed_table").prepend(embed);
-	  //var row = dtable.insertRow(0);
-	  //var row = viewing.getElementById("Sample_tr");
-	  //var x = row.insertCell(0);
-29c9b738d78660d86f87bc66ec02f042|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|294|1|V|javascript
-	
-	  //var $sampleobjstr = "<object id=\"sampleimage\" data='" + samplefile + "' type=\"image/svg+xml\" width='400'></object>";
-	  //make_table += $sampleobjstr;
-6ffb8c44879259c83164e2d386cbbc84|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|327|1|V|javascript
-	$(document).on("click", (".list_tr, .list_tr_clone"), (function ()
-	{
-	
-	    var tableID = $(this).closest('tr').index();    //表のID(Number:0-15)を取得
-	
-	    //組織表に属性data-selectを追加し、IDを付加する（現在選択している組織のID）
-	    document.getElementById("list_table").childNodes[3].setAttribute("data-select",tableID);
-	
-	    var get_Tissue_name_index = 1;
-	    var tissue_name = this.childNodes[get_Tissue_name_index].innerHTML;     //クリックした表のTissueNameを取得
-	    var subtissue_name = ""; //SubTissueNameも（Profile Viewerのときだけ）取得
-	
-	    console.log("Got tissue name " + tissue_name);
-	    display_whole(tissue_name);
-	
-	}));
-	*/
-6080d56e1c3670215981239b680d9d66|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|326|1|V|javascript
-	/*
-	$(document).on("click", (".list_tr, .list_tr_clone"), (function ()
-	{
-	
-	    var tableID = $(this).closest('tr').index();    //表のID(Number:0-15)を取得
-	
-	    //組織表に属性data-selectを追加し、IDを付加する（現在選択している組織のID）
-	    document.getElementById("list_table").childNodes[3].setAttribute("data-select",tableID);
-	
-	    var get_Tissue_name_index = 1;
-	    var tissue_name = this.childNodes[get_Tissue_name_index].innerHTML;     //クリックした表のTissueNameを取得
-	    var subtissue_name = ""; //SubTissueNameも（Profile Viewerのときだけ）取得
-	
-	    console.log("Got tissue name " + tissue_name);
-	    display_whole(tissue_name);
-	
-	}));
-	*/
-f87bae216a7d9a261e67a04da398f994|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|686|1|V|javascript
-	  /*
-	    var user_tissue_list = Get_TissueList();
-	    var file_name = [];
-	
-	    //ユーザプロファイルから作成されたLCListの消去
-	    //生物種の数ループ
-	    for( var i=0 ; i<user_tissue_list["result"]["species"].length ; i++ )
-	    {
-	        //生物種の名前を代入
-	        file_name[0] = user_tissue_list["result"]["species"][i]["$"]["species_name"]+"-";
-	
-	        //その生物種の持つ組織の数ループ
-	        for( var j=0 ; j<user_tissue_list["result"]["species"][i]["tissue"].length ; j++ )
-	        {
-	            //組織の名前を代入
-	            file_name[1] = user_tissue_list["result"]["species"][i]["tissue"][j]["$"]["tissue_name"];
-	
-	            //その生物種の組織が持つサブ組織の数ループ
-	            for( var k=0 ; k<user_tissue_list["result"]["species"][i]["tissue"][j]["subtissue"].length ; k++ )
-	            {
-	                //もし、サブ組織が見つかったら（1つ目が "" じゃなかったら）副組織の名前を代入
-	                file_name[2] = (user_tissue_list["result"]["species"][i]["tissue"][j]["subtissue"][k]["$"]["subtissue_name"] === "") ? "" : "-"+user_tissue_list["result"]["species"][i]["tissue"][j]["subtissue"][k]["$"]["subtissue_name"];
-	
-	                sessionStorage.removeItem("UserProfile_"+file_name[0]+file_name[1]+file_name[2]);
-	            }
-	        }
-	    }
-	*/
-	  //TissueListの消去
-90cf20b7368058bfdfee5a076bb7d1f6|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|151|1|V|javascript
-	function selecttissue(tissue_name) {
-	  console.log("Got tissue name " + tissue_name);
-	  // display_whole(tissue_name);
-	  rdfjson = JSON.parse(sessionStorage.getItem("RickDrakeFormula"));
-	  wholetissuelist = JSON.parse(sessionStorage.getItem("WholeTissueList"));
-	
-	  // H&Eimageの表示
-	  HEimage = document.getElementById("HEimage").innerHTML = "";
-	  HEimage.innerHTML = "";
-	  var viewer = OpenSeadragon({
-	    id: "HEimage",
-	    prefixUrl: "./data/images/png/",
-	    tileSources: "./data/images/" + wholetissuelist[tissue_name] + "/dzi/H&E_Annotated.dzi"
-	  });
-	
-	  // 糖鎖構造一覧のtableの作成
-	  document.getElementById("selectimage").innerHTML = "";
-	  // table要素を生成
-	  var table = document.createElement("table");
-	  table.id = "list_rdf";
-	  table.className = "list_rdf";
-	  // tr部分のループ
-	  for (var i = 0; i < rdfjson["N-Glycan Master List"].length; i++) {
-	    // tr要素を生成
-	    var tr = document.createElement("tr");
-	    // th・td部分のループ
-	    for (var j = 0; j < 5; j++) {
-	      if (i === 0) {
-	        // th要素を生成
-	        var th = document.createElement("th");
-	        // th要素内にテキストを追加
-	        if (j === 0) {
-	          th.textContent = "Name";
-	          tr.appendChild(th);
-	        } else if (j === 1) {
-	          th.textContent = "GlyTouCanID";
-	          tr.appendChild(th);
-	        } else if (j === 2) {
-	          th.textContent = "m/z";
-	          tr.appendChild(th);
-	        } else if (j === 3) {
-	          th.textContent = "MainPositiveAdduct";
-	          // tr.appendChild(th);
-	        } else if (j === 4) {
-	          th.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-	          tr.appendChild(th);
-	        }
-	      } else {
-	        if (
-	          wholetissuelist[tissue_name + "-data"].includes(
-	            rdfjson["N-Glycan Master List"][i]["m/z"].split(".")[0] + ".tiff"
-	          )
-	        ) {
-	          // td要素を生成
-	          var td = document.createElement("td");
-	          // td要素内にテキストを追加
-	          if (j === 0) {
-	            td.innerHTML = rdfjson["N-Glycan Master List"][i]["Name"];
-	            tr.appendChild(td);
-	          } else if (j === 1) {
-	            GID = rdfjson["N-Glycan Master List"][i]["GlyTouCanID"];
-	            if (GID == "not found") {
-	              td.innerHTML = "not found";
-	            } else {
-	              td.innerHTML =
-	                '<a href="https://glycosmos.org/glycans/show?gtc_id=' +
-	                GID +
-	                '" style="font-size:14px;" target="_brank">' +
-	                GID +
-	                "</a>";
-	            }
-	            tr.appendChild(td);
-	          } else if (j === 2) {
-	            td.textContent = rdfjson["N-Glycan Master List"][i]["m/z"];
-	            tr.appendChild(td);
-	          } else if (j === 3) {
-	            td.textContent = rdfjson["N-Glycan Master List"][i]["MainPositiveAdduct"];
-	            // tr.appendChild(td);
-	          } else if (j === 4) {
-	            td.innerHTML = "";
-	            mz = rdfjson["N-Glycan Master List"][i]["m/z"].split(".")[0];
-	            td.innerHTML =
-	              '<a href="javascript:openimage(' +
-	              "'" +
-	              wholetissuelist[tissue_name] +
-	              "'" +
-	              "," +
-	              "'" +
-	              mz +
-	              "'" +
-	              ");" +
-	              '">' +
-	              '<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">' +
-	              '<path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>' +
-	              '<path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>' +
-	              "</svg>" +
-	              "</a>";
-	            tr.appendChild(td);
-	          }
-	        }
-	      }
-	    }
-	    // tr要素をtable要素の子要素に追加
-	    if (tr.textContent != "") {
-	      table.appendChild(tr);
-	    }
-	  }
-	  // 生成したtable要素を追加する
-	  document.getElementById("selectimage").appendChild(table);
-	  // window.location.hash = "selectimage"
-	}
-2eb84cfb6e501cf14144d3b34ad4f65a|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|140|1|V|javascript
-	/* ---------------- create table --------------------*/
-	function openimage(tissue_name, mz) {
-	  stainid = document.getElementById("seadragon-viewer");
-	  stainid.innerHTML = "";
-	  var viewer = OpenSeadragon({
-	    id: "seadragon-viewer",
-	    prefixUrl: "./data/images/png/",
-	    tileSources: "./data/images/" + tissue_name + "/dzi/" + mz + "..dzi"
-	  });
-	}
-	
-97f8aefd1affddca31b0368ebe536a28|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|246|1|V|html
-	<script type="text/javascript" src="js/tissuetable.js"></script>
-36939196f9fe9f7dd3dee120f947ab08|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|247|40|v|html
-	tissuetable
-5d547890c04917d3d5370a3c1e937d6f|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|249|53|V|html
-	<script src="//openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
-3838e7d57b695a7d16fc4947169c5053|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|248|1|V|html
-	<script src="./js/openseadragon.js"></script>
-526ab8faf7e2f54beb85ffbb207ffe38|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|16|48|V|html
-	    <script src="./js/svg-pan-zoom.js"></script>
-4e065ce19d9ea912c8034947904fd929|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|248|1|V|html
-	<script src="./js/openseadragon.js"></script>
-	<script src="//openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
-00cd9c6af74f7a3cf129acb4e8a65a2b|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/tissuetable.js|1|15|v|javascript
-	RickDrakeFormula
-f61a4119d1cb062764cb26a30ed19fa2|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/tissuetable.js|7|32|V|javascript
-	  // display_whole(tissue_name);
-8bc665169448cef8b7ea95a86d27ec9d|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/tissuetable.js|7|23|V|javascript
-	  glycansjson = JSON.parse(sessionStorage.getItem("RickDrakeFormula"));
-214c7db7a6480891e4414bc29433f692|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/ale.vim|2|45|v|vim
-	jshint
-efaf3ee74d9d15052bbaf99b77226dec|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/tissuetable.js|19|1|V|javascript
-	
-	  // 糖鎖構造一覧のtableの作成
-	  document.getElementById("selectimage").innerHTML = "";
-	  // table要素を生成
-	  var table = document.createElement("table");
-	  table.id = "list_rdf";
-	  table.className = "list_rdf";
-	  // tr部分のループ
-	  for (var i = 0; i < glycansjson["N-Glycan Master List"].length; i++) {
-	    // tr要素を生成
-	    var tr = document.createElement("tr");
-	    // th・td部分のループ
-	    for (var j = 0; j < 5; j++) {
-	      if (i === 0) {
-	        // th要素を生成
-	        var th = document.createElement("th");
-	        // th要素内にテキストを追加
-	        if (j === 0) {
-	          th.textContent = "Name";
-	          tr.appendChild(th);
-	        } else if (j === 1) {
-	          th.textContent = "GlyTouCanID";
-	          tr.appendChild(th);
-	        } else if (j === 2) {
-	          th.textContent = "m/z";
-	          tr.appendChild(th);
-	        } else if (j === 3) {
-	          th.textContent = "MainPositiveAdduct";
-	          // tr.appendChild(th);
-	        } else if (j === 4) {
-	          th.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-	          tr.appendChild(th);
-	        }
-	      } else {
-	        if (
-	          wholetissuelist[tissue_name + "-data"].includes(
-	            glycansjson["N-Glycan Master List"][i]["m/z"].split(".")[0] + ".tiff"
-	          )
-	        ) {
-	          // td要素を生成
-	          var td = document.createElement("td");
-	          // td要素内にテキストを追加
-	          if (j === 0) {
-	            td.innerHTML = glycansjson["N-Glycan Master List"][i]["Name"];
-	            tr.appendChild(td);
-	          } else if (j === 1) {
-	            GID = glycansjson["N-Glycan Master List"][i]["GlyTouCanID"];
-	            if (GID == "not found") {
-	              td.innerHTML = "not found";
-	            } else {
-	              td.innerHTML =
-	                '<a href="https://glycosmos.org/glycans/show?gtc_id=' +
-	                GID +
-	                '" style="font-size:14px;" target="_brank">' +
-	                GID +
-	                "</a>";
-	            }
-	            tr.appendChild(td);
-	          } else if (j === 2) {
-	            td.textContent = glycansjson["N-Glycan Master List"][i]["m/z"];
-	            tr.appendChild(td);
-	          } else if (j === 3) {
-	            td.textContent = glycansjson["N-Glycan Master List"][i]["MainPositiveAdduct"];
-	            // tr.appendChild(td);
-	          } else if (j === 4) {
-	            td.innerHTML = "";
-	            mz = glycansjson["N-Glycan Master List"][i]["m/z"].split(".")[0];
-	            td.innerHTML =
-	              '<a href="javascript:openimage(' +
-	              "'" +
-	              wholetissuelist[tissue_name] +
-	              "'" +
-	              "," +
-	              "'" +
-	              mz +
-	              "'" +
-	              ");" +
-	              '">' +
-	              '<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">' +
-	              '<path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>' +
-	              '<path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>' +
-	              "</svg>" +
-	              "</a>";
-	            tr.appendChild(td);
-	          }
-	        }
-	      }
-	    }
-	    // tr要素をtable要素の子要素に追加
-	    if (tr.textContent != "") {
-	      table.appendChild(tr);
-	    }
-	  }
-	  // 生成したtable要素を追加する
-	  document.getElementById("selectimage").appendChild(table);
-	  // window.location.hash = "selectimage"
-c11b925fcb075ed455dd6493af4037dc|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|326|3|V|javascript
-	  console.log();
-15276a9e1af250cc4ae29931823a125e|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|18|1|V|html
-	        var picture = 'Human_SVG.html';
-	        $(document).ready(function () {
-	            $('#wholeimage').attr('src', picture);
-	        });
-bee5ffea4b2d380e89e56035521f6224|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|17|1|V|html
-	    <script type="text/javascript">
-	    </script>
-	
-9b4130171bececeedc9396b1b917376c|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|323|1|V|javascript
-	/*------------------------------SVGのクリックでクリックした組織画像の色を固定、LCListを取得し、糖鎖構造一覧を書き換える関数------------------------------*/
-	function click(obj) {
-	  // console.log("click object", obj);
-	
-	  // クリックした時表示する
-	  const $dis = $("#wrapper_click_staining_info");
-	  const $organ_info = $("#click_organelles_events");
-	
-	  const btn = $("#staining_button");
-	  //クリックしたSVG画像のIDを取得
-	  var svgID = Number(obj.id);
-	  var svgFile = obj.getAttribute("data-svgfile");
-	  // console.log("click object id filename ");
-	  // console.log(svgFile);
-	
-	  // クリックオブジェクトに title タグがある場合
-	  if (obj.tagName === "g") {
-	    if (obj.children[0].tagName === "title") {
-	      const sList = "stainingList" + removeSpecialLetter(obj.children[0].textContent);
-	      const $cs = $("#compareStaining");
-	      const $sList = $("#" + sList);
-	      const $all = $(".staining_list");
-	      if (document.getElementById(sList)) btn.show();
-	      else btn.hide();
-	      $cs.prop("data-display-id", "#" + sList);
-	
-	      // display staining list.
-	      $all.hide();
-	      $sList.show();
-	      $dis.html("Region: " + obj.children[0].textContent.split(":")[0] + "");
-	    }
-	  } else {
-	    $dis.html("");
-	  }
-	
-	  // 図をクリックしている場合
-	  if (!isNaN(svgID)) {
-	    // hideMouseCharts();
-	    // tissue clicked
-	    // console.log("SVG ID: "+svgID);
-	    //SVGのIDから選択した組織と同じ組織の行を選び出し、TissueNameを取得する
-	    const tissue_name = document.getElementById("list_tr" + svgID).childNodes[3].innerHTML;
-	    const refCol = Number(document.getElementById("main").getAttribute("data-ref-col"));
-	    const $main_info = $("#main_info");
-	
-	    //組織表のtbodyに属性data-selectを追加し、IDを付加する（現在選択している組織のID）
-	    document.getElementById("list_table").childNodes[2].setAttribute("data-select", svgID);
-	
-	    query_function();
-	
-	    $main_info.html("Tissue: " + tissue_name);
-	    selecttissue(tissue_name);
-	
-	    var tissuefile = sessionStorage.getItem(tissue_name + refCol);
-	    // check tissuefile is not null
-	    if (tissuefile === null) return;
-	    $organ_info.html("Tissue: " + tissue_name);
-	    selecttissue(tissue_name + refCol);
-	  } else {
-	    // whole image clicked
-	    // console.log(obj);
-	    //Create_Sample_View("./lectinarray_data/"+svgFile);
-	    Create_Sample_View("../" + svgFile);
-	    //console.log("Drawing graph with "+obj);
-	    draw_graph(obj);
-	  }
-	}
-	
-	/*------------------------------click関数ここまで------------------------------*/
-6cd7a4657ab94474b0a272336c771502|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|397|19|V|javascript
-	  console.log(table);
-f28b5d5f3d05ef36f459625777cf0e63|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|395|1|V|javascript
-	/*------------------------------組織画像、組織表、グラフなどの色を変更する関数------------------------------*/
-	function change_color(svg, table, color) {
-	  //もし、svgがundefinedだったら、エラーの原因になるのでこの後の処理を無視する
-	  if (svg === undefined || svg == null) {
-	  } else {
-	    switch (color) {
-	      case "pink":
-	        {
-	          svg.style.opacity = 0.7;
-	          svg.style.fill = "rgb(200,0,200)";
-	          svg.style.stroke = "rgb(130,0,130)";
-	          table.style.backgroundColor = "rgb(250,170,250)";
-	        }
-	        break;
-	
-	      case "yellow":
-	        {
-	          svg.style.opacity = 0.7;
-	          svg.style.fill = "rgb(255,215,0)";
-	          svg.style.stroke = "rgb(200,115,0)";
-	          table.style.backgroundColor = "rgb(255,215,0)";
-	        }
-	        break;
-	
-	      default:
-	        //"white":
-	        {
-	          svg.style.opacity = 0.6;
-	          svg.style.fill = "";
-	          svg.style.stroke = "";
-	          table.style.backgroundColor = "";
-	          //値を指定しない＝最初の状態に戻す
-	        }
-	        break;
-	    }
-	  }
-	}
-	/*------------------------------change_color関数ここまで------------------------------*/
-	
-	/*------------------------------全てのTissueをLinearCodeで横断検索をかけて組織を色付けする------------------------------*/
-	function query_function() {
-	  //その生物種が持つ組織数を数える
-	  var tissue = document.getElementById("list_table").childNodes[2].childElementCount;
-	  for (var i = 0; i < 18; i++) {
-	    //TissueListを取得する
-	    var cnt = Get_TissueList();
-	    //組織表からi行目のIDを取得するために、まずは行のIDの一部を取得
-	    var selecting_tr_id = "list_tr";
-	    //クリックした行番号（から1引いたIDの持つ行）の要素を取得する
-	    var table = document.getElementById(selecting_tr_id + String(i));
-	    var tissue_name = table.childNodes[1].innerHTML; //組織名を取得
-	    //組織名、副組織名（なし）、その組織に存在する糖鎖数、現在のループ値を関数の引数にする
-	    coloring(tissue_name, "", cnt, i);
-	  }
-	  function coloring(tissue_name, subtissue_name, cnt, i) {
-	    //i番目のSVG画像のIDを取得（Profile Viewerの場合はnullを代入）
-	    var svg = document.getElementById(Number(i));
-	    //もし、選択した組織と同じ組織なら、その組織を黄色に色付けする（現在のループ値と、クリックした行のID値（をtbodyタグに埋め込んだ数値）が一緒なら選択された組織とみなす）
-	    //さらに、選択した糖鎖構造の背景色を桃色にする
-	    if (i == document.getElementById("list_table").childNodes[2].getAttribute("data-select")) {
-	      //組織表と組織画像の色を変更
-	      change_color(svg, table, "yellow");
-	    }
-	    //見つからなければ組織を白色にする
-	    else {
-	      change_color(svg, table, "white");
-	    }
-	  }
-	}
-368f5fd6349f19d43cc6ac9dd049fbb7|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|395|1|V|javascript
-	/*------------------------------組織画像、組織表、グラフなどの色を変更する関数------------------------------*/
-	function change_color(svg, table, color) {
-	  //もし、svgがundefinedだったら、エラーの原因になるのでこの後の処理を無視する
-	  if (svg === undefined || svg == null) {
-	  } else {
-	    switch (color) {
-	      case "pink":
-	        {
-	          svg.style.opacity = 0.7;
-	          svg.style.fill = "rgb(200,0,200)";
-	          svg.style.stroke = "rgb(130,0,130)";
-	          table.style.backgroundColor = "rgb(250,170,250)";
-	        }
-	        break;
-	
-	      case "yellow":
-	        {
-	          svg.style.opacity = 0.7;
-	          svg.style.fill = "rgb(255,215,0)";
-	          svg.style.stroke = "rgb(200,115,0)";
-	          table.style.backgroundColor = "rgb(255,215,0)";
-	        }
-	        break;
-	
-	      default:
-	        //"white":
-	        {
-	          svg.style.opacity = 0.6;
-	          svg.style.fill = "";
-	          svg.style.stroke = "";
-	          table.style.backgroundColor = "";
-	          //値を指定しない＝最初の状態に戻す
-	        }
-	        break;
-	    }
-	  }
-	}
-	/*------------------------------change_color関数ここまで------------------------------*/
-	
-	/*------------------------------全てのTissueをLinearCodeで横断検索をかけて組織を色付けする------------------------------*/
-	function query_function() {
-	  //その生物種が持つ組織数を数える
-	  var tissue = document.getElementById("list_table").childNodes[2].childElementCount;
-	  for (var i = 0; i < 18; i++) {
-	    //TissueListを取得する
-	    var cnt = Get_TissueList();
-	    //組織表からi行目のIDを取得するために、まずは行のIDの一部を取得
-	    var selecting_tr_id = "list_tr";
-	    //クリックした行番号（から1引いたIDの持つ行）の要素を取得する
-	    var table = document.getElementById(selecting_tr_id + String(i));
-	    var tissue_name = table.childNodes[1].innerHTML; //組織名を取得
-	    //組織名、副組織名（なし）、その組織に存在する糖鎖数、現在のループ値を関数の引数にする
-	    coloring(tissue_name, "", cnt, i);
-	  }
-	  function coloring(tissue_name, subtissue_name, cnt, i) {
-	    //i番目のSVG画像のIDを取得（Profile Viewerの場合はnullを代入）
-	    var svg = document.getElementById(Number(i));
-	    //もし、選択した組織と同じ組織なら、その組織を黄色に色付けする（現在のループ値と、クリックした行のID値（をtbodyタグに埋め込んだ数値）が一緒なら選択された組織とみなす）
-	    //さらに、選択した糖鎖構造の背景色を桃色にする
-	    if (i == document.getElementById("list_table").childNodes[2].getAttribute("data-select")) {
-	      //組織表と組織画像の色を変更
-	      change_color(svg, table, "yellow");
-	    }
-	    //見つからなければ組織を白色にする
-	    else {
-	      change_color(svg, table, "white");
-	    }
-	  }
-	}
-	/*------------------------------query_functionここまで------------------------------*/
-1a3ff1b03e971b5b806729208e88ec8e|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|2|29|v|javascript
-	"Pancreas"
-6ecf25968f89188e22867d34c0795797|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|3|52|v|javascript
-	normal_glycans
-c9df09b4610bb43e290507a37c658ae8|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|237|53|v|html
-	defer
-50b14cc05b4fa59d8f96f42340a95a56|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|205|1|V|javascript
-	$(document).on("click", ".tissue_name", function () {
-	  var tableID = $(this).closest("tr").index(); //表のID(Number:0-15)を取得
-	  var table_subID = $(this).closest("td").index(); //表のID(Number:0-15)を取得
-	  // tableIDからtissue_nameを取得
-	  var tblTbody = document.getElementById("list_table");
-	  var tissue_name = tblTbody.rows[tableID + 1].cells[1].innerHTML + table_subID;
-	  // tableIDからtissue_nameを取得ここまで
-	
-	  // tissue id diff from top (count from 1)
-	  const tissueIdDiff = 4;
-	  // row name
-	  const tname = tblTbody.rows[tableID + 1].cells[1].innerHTML;
-	  // dol name
-	  const colName = tblTbody.rows[tissueIdDiff].cells[table_subID].innerHTML;
-	
-	  {
-	    const $sCls = $(".staining_list");
-	    const $wbtn = $("#staining_button");
-	    const $cs = $("#compareStaining");
-	    const id = "stainingList" + removeSpecialLetter(tname) + removeSpecialLetter(colName);
-	    const sId = "#" + id;
-	    const $sId = $(sId);
-	    const $click_info = $("#click_organelles_events");
-	    const $stain_info = $("#wrapper_click_staining_info");
-	    const $main_info = $("#main_info");
-	
-	    // register data-display-id
-	    $cs.prop("data-display-id", sId);
-	
-	    // show staining button
-	    if (document.getElementById(id)) $wbtn.show();
-	    else $wbtn.hide();
-	
-	    $sCls.hide();
-	    $sId.show();
-	
-	    // Click Event
-	
-	    $main_info.html("Tissue: " + tname);
-	    $click_info.html("Tissue: " + tname);
-	    $stain_info.html("");
-	  }
-	
-	  // console.log("Got table id "+tableID);
-	
-	  //組織表に属性data-selectを追加し、IDを付加する（現在選択している組織のID）
-	  document.getElementById("list_table").childNodes[2].setAttribute("data-select", tableID);
-	
-	  var get_Tissue_name_index = 1;
-	  // var tissue_name = this.childNodes[get_Tissue_name_index].innerHTML;
-	  // var tissue_name = this.innerHTML; //クリックした表のTissueNameを取得
-	  var subtissue_name = ""; //SubTissueNameも（Profile Viewerのときだけ）取得
-	
-	  selecttissue(tissue_name);
-	});
-44123cc4143cb95e7c03ef3ff8f7baab|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|205|1|V|javascript
-	$(document).on("click", ".tissue_name", function () {
-	  var tableID = $(this).closest("tr").index(); //表のID(Number:0-15)を取得
-	  var table_subID = $(this).closest("td").index(); //表のID(Number:0-15)を取得
-	  // tableIDからtissue_nameを取得
-	  var tblTbody = document.getElementById("list_table");
-	  var tissue_name = tblTbody.rows[tableID + 1].cells[1].innerHTML + table_subID;
-	  // tableIDからtissue_nameを取得ここまで
-	
-	  // tissue id diff from top (count from 1)
-	  const tissueIdDiff = 4;
-	  // row name
-	  const tname = tblTbody.rows[tableID + 1].cells[1].innerHTML;
-	  // dol name
-	  const colName = tblTbody.rows[tissueIdDiff].cells[table_subID].innerHTML;
-	
-	  {
-	    const $sCls = $(".staining_list");
-	    const $wbtn = $("#staining_button");
-	    const $cs = $("#compareStaining");
-	    const id = "stainingList" + removeSpecialLetter(tname) + removeSpecialLetter(colName);
-	    const sId = "#" + id;
-	    const $sId = $(sId);
-	    const $click_info = $("#click_organelles_events");
-	    const $stain_info = $("#wrapper_click_staining_info");
-	    const $main_info = $("#main_info");
-	
-	    // register data-display-id
-	    $cs.prop("data-display-id", sId);
-	
-	    // show staining button
-	    if (document.getElementById(id)) $wbtn.show();
-	    else $wbtn.hide();
-	
-	    $sCls.hide();
-	    $sId.show();
-	
-	    // Click Event
-	
-	    $main_info.html("Tissue: " + tname);
-	    $click_info.html("Tissue: " + tname);
-	    $stain_info.html("");
-	  }
-	
-	  // console.log("Got table id "+tableID);
-	
-	  //組織表に属性data-selectを追加し、IDを付加する（現在選択している組織のID）
-	  document.getElementById("list_table").childNodes[2].setAttribute("data-select", tableID);
-	
-	  var get_Tissue_name_index = 1;
-	  // var tissue_name = this.childNodes[get_Tissue_name_index].innerHTML;
-	  // var tissue_name = this.innerHTML; //クリックした表のTissueNameを取得
-	  var subtissue_name = ""; //SubTissueNameも（Profile Viewerのときだけ）取得
-	
-	  selecttissue(tissue_name);
-	});
-	/*------------------------------LCListを書き換えるon("click")イベントここまで------------------------------*/
-11b1fd23a368ad5ca5cecfd006fc1b6e|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/svgtissuehandle.js|1|1|V|javascript
-	var picture = "Human_SVG.html";
-	$(document).ready(function () {
-	  $("#wholeimage").attr("src", picture);
-	});
-fe364450e1391215f596d043488f989f|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|1|15|V|html
-	<!DOCTYPE html>
-748e001f1608f4327cab78f3d49e067c|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|8|1|V|html
-	    <!--script type="text/javascript" src="jquery.min.js"></script>
-	    <script type="text/javascript" src="glycanimage.js"></script-->
-1bfe08dfe3bdec071c5c55bcd90df995|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|30|5|V|html
-	            <!-- <p>This work was supported by a project for utilizing glycans in the development of innovative drug discovery technologies in the project focused on developing key technology for discovering and manufacturing drugs for next-generation treatment and diagnosis from the Japan Agency for Medical Research and Development (AMED).</p> -->
-691d8bc21b9f8d715f207763ec4ef5e7|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|45|1|V|html
-	            <!-- <a href="./about.html">More details</a> -->
-	            <!-- <br><a href="./index.html">Top page</a> -->
-cdb8f464a21514b81ccc7b23831ca6aa|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|204|1|V|html
-	            <!-- <!-1- <td style="padding: 0 10px; margin: 0px;"> -->
-	            <!--     <div id="wrapper_organelles" class="tissueimage"> -->
-	            <!--         <div class="buttons" id="zoomConfig"></div> -->
-	            <!--         <table id="Detailed_table" style="border-style: none;overflow-y:auto; width:auto; height:500px;"></table> -->
-	            <!--         <div class="clickEvents" id="click_organelles_events"></div> -->
-	            <!--     </div> -->
-	            <!-- </td> -1-> -->
-86851ab53526ba570c25f0356c3747f4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|16|1|V|html
-	    <script>
-	        var picture = "Human_SVG.html";
-	        $(document).ready(function () {
-	          $("#wholeimage").attr("src", picture);
-	        });
-	    </script>
-ee10a0a18740714b0a24f30840a9b583|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|18|1|V|html
-	    <script type="text/javascript">
-	        var picture = 'Human_SVG.html';
-	        $(document).ready(function () {
-	            $('#wholeimage').attr('src', picture);
-	        });
-	    </script>
-39e1001dad80bd4f10f7718193f19945|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|19|5|V|html
-	    <script>
-	        var picture = "html/Human_SVG.html";
-	        $(document).ready(function () {
-	          $("#wholeimage").attr("src", picture);
-	        });
-	    </script>
-dcaa05c86da449affe58d1448d02f738|file:///Users/kouiti/localfile/lets/lets/lets_proj/app/templates/app/index.html|5|1|V|html
-	<!--<!DOCTYPE html>-->
-	<!--<html lang="en">-->
-294d871720271c6bd69a966ba566f800|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|3|1|V|html
-	<html lang="ja">
-350a7201a99d8b7ae7672a1f233f16a9|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/index.html|17|1|V|html
-	    <script type="text/javascript">
-	    </script>
-8d777f385d3dfec8815d20f7496026dc|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/tissuetable.js|14|19|v|javascript
-	data
-7cef8a734855777c2a9d0caf42666e69|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/tissuetable.js|14|33|v|javascript
-	open
-23f4df592deb974ec7cbb519bb76aa93|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/svgtissuehandle.js|43|27|V|javascript
-	    console.log(tissue_name);
-bc03ddce411b259598d0068e1f1cd33b|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/svgtissuehandle.js|53|15|V|javascript
-	    console.log
-8c45f4291736af126fa72e4213f5dd7f|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|12|8|V|javascript
-	  // ddd
-198e68201ab9f644d64a13be7998540b|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|12|15|v|javascript
-	glycanjson
-93e2db0b04987e22af27fec12a89d010|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|2|29|v|javascript
-	tissuetype
-475e55617f2730f84a101dabbaa62c11|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|40|4|V|javascript
-		  console.log)
-877d3ca206ae242db12914677fb2e636|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|41|26|v|javascript
-	N-Glycan Master List
-6a8bd6549111b4d916d5bfbfe5fa08b4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/tissuetable.js|18|36|v|javascript
-	Pancreas
-b2ac5d0c9c0a7893ef49b6fed4f7380b|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|39|1|V|javascript
-	        if (wholetissuelist[tissue_name + "-data"].includes(glycansjson[""][i]["m/z"].split(".")[0] + ".tiff")) {
-	          // td要素を生成
-	          var td = document.createElement("td");
-	          // td要素内にテキストを追加
-	          if (j === 0) {
-	            td.innerHTML = glycansjson["N-Glycan Master List"][i]["Name"];
-	            tr.appendChild(td);
-	          } else if (j === 1) {
-	            GID = glycansjson["N-Glycan Master List"][i]["GlyTouCanID"];
-	            if (GID == "not found") {
-	              td.innerHTML = "not found";
-	            } else {
-	              td.innerHTML =
-	                '<a href="https://glycosmos.org/glycans/show?gtc_id=' +
-	                GID +
-	                '" style="font-size:14px;" target="_brank">' +
-	                GID +
-	                "</a>";
-	            }
-	            tr.appendChild(td);
-	          } else if (j === 2) {
-	            td.textContent = glycansjson["N-Glycan Master List"][i]["m/z"];
-	            tr.appendChild(td);
-	          } else if (j === 3) {
-	            td.textContent = glycansjson["N-Glycan Master List"][i]["MainPositiveAdduct"];
-	            // tr.appendChild(td);
-	          } else if (j === 4) {
-	            td.innerHTML = "";
-	            mz = glycansjson["N-Glycan Master List"][i]["m/z"].split(".")[0];
-	            td.innerHTML =
-	              '<a href="javascript:openimage(' +
-	              "'" +
-	              wholetissuelist[tissue_name] +
-	              "'" +
-	              "," +
-	              "'" +
-	              mz +
-	              "'" +
-	              ");" +
-	              '">' +
-	              '<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">' +
-	              '<path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>' +
-	              '<path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>' +
-	              "</svg>" +
-	              "</a>";
-	            tr.appendChild(td);
-	          }
-4e1ddba1c31545ee09fb38ae1fd79346|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|39|3|V|javascript
-	        }
-c4e3ec3fff77328c29f7ade948330b9c|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|2|42|v|javascript
-	tissue_name
-88779bffad3f297ea5679c8aef7c38a4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/svgtissuehandle.js|60|1|V|javascript
-	    // whole image clicked
-	    // console.log(obj);
-	    //Create_Sample_View("./lectinarray_data/"+svgFile);
-77ad334a4ada7318763aa271485e9acd|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/svgtissuehandle.js|61|5|V|javascript
-	    //console.log("Drawing graph with "+obj);
-4747aa0180f80a068d04c125efb829a4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/svgtissuehandle.js|54|1|V|javascript
-	    var tissuefile = sessionStorage.getItem(tissue_name + refCol);
-	    // check tissuefile is not null
-	    if (tissuefile === null) return;
-b8f8344b781c588d38eacbd9ae34efe5|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/svgtissuehandle.js|57|1|V|javascript
-	    Create_Sample_View("../" + svgFile);
-	    draw_graph(obj);
-17b58c344e83183b8a338d2e72450b30|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/svgtissuehandle.js|56|3|V|javascript
-	  } else {
-95ae2f206294f4e0acac83b7cccd3683|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/svgtissuehandle.js|38|1|V|javascript
-	    // hideMouseCharts();
-	    // tissue clicked
-4ee29ca12c7d126654bd0e5275de6135|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|49|48|v|javascript
-	List
-27bca3badde6bf50c5fc62e99845b2f4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|49|32|v|javascript
-	N-Glycan Master
-32dd6f81cc528ee8680f9d875fd7871a|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|62|42|v|javascript
-	"N-Glycan Master List"
-b978fcb97db0f4a742d44d1f1eb7c382|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|216|1|V|javascript
-	/* ---------- Define Staining Compare Button function --------- */
-	function submitStainingButton(e) {
-	  const id = $("#compareStaining").prop("data-display-id");
-	  const $form = $(id);
-	  const input = $form.find("input:checked");
-	  const sw = screen.width;
-	  const sh = screen.height;
-	  let j = 10;
-	  let h = window.innerHeight;
-	  let w = window.innerWidth;
-	
-	  for (i = 0; i < input.length; i++) {
-	    let values = input[i].value.split(",");
-	    const ratio = parseFloat(input[i].getAttribute("data-ratio"));
-	
-	    for (const val of values) {
-	      const url = local + "/staining_pages/" + val + ".html";
-	
-	      // rearange width or height
-	      if (ratio > 1) {
-	        h = w / ratio;
-	        // if h is wider than screen.width
-	        if (h > sh) {
-	          w = w / 2;
-	          h = w / ratio;
-	        }
-	      } else {
-	        w = h * ratio;
-	        if (w > sw) {
-	          h = h / 2;
-	          w = h * ratio;
-	        }
-	      }
-	      window.open(
-	        url,
-	        val,
-	        "left=" +
-	          j +
-	          "toolbar=yes,menubar=yes,scrollbars=yes,width=" +
-	          w.toString() +
-	          "px,height=" +
-	          h.toString() +
-	          "px,top=100,left=100"
-	      );
-	    }
-	
-	    j += 10;
-	  }
-	}
-5d058fa37e97b3a15e6484ff7b930435|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/LectinAtlas.js|210|1|V|javascript
-	/* ---------- Define Staining Click function ---------- */
-	function clickStainingButton(e) {
-	  const $form = $("#wrapper_staining form");
-	  $form.toggle();
-	}
-17b8ba87c78034a0f66cfc26800b4dd5|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/tissuetable.js|61|10|v|javascript
-	query_function
-59b514174bffe4ae402b3d63aad79fe0|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|108|28|v|javascript
-	images
-44895c120eb01460e76868b310616f9d|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/tissuetable.js|15|18|v|javascript
-	"./source/images/" + wholetissuelist[tissue_name] + "/dzi/H&E_Annotated.dzi"
-	
-514560958d09b883fd072137a8de8e99|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/js/glycantable.js|12|28|V|javascript
-	  console.log(glycansjson, tissue_name);
-6dd9948765d90b794a372a72fc0815d4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|19|1|V|markdown
-	    - ./source/{tissue_type (normal)}/{tissue_name (pancreas)}
-cd315365fc9e9028b7a41ca42e69d1e2|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|18|1|V|markdown
-	- directory
-	    - ./source/{tissue_type (normal)}/{tissue_name (pancreas)}
-3e7ea6a86117122b7b47cab77b3f9e47|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|21|53|v|markdown
-	pancreas
-4f8b9a84e97181ab459d74e6d94b83b2|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/source/normal/glycans.json|1|1|V|json
-	{
-	    "Pancreas3": [
-	        {
-	            "Name": "Hex2HexNAc2",
-	            "Formula": " (C6H10O5)2(C8H13NO5)2(H2O)",
-	            "m/z": "771.2822",
-	            "MainPositiveAdduct": "[M+Na]+",
-	            "undefined": "Unknown Prostate"
-	        },
-9d99092214dc9f4475cb7ea002a0e587|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/WholeTissueList.json|1|1|V|json
-	{
-	    "Pancreas3":"normal/pancreas",
-	    "Pancreas3-data":["1866.tiff",
-	        "2067.tiff",
-	        "H&E_Annotated.tif",
-91e4f23b4af5edb2a42a9995c57c1dd1|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|24|17|v|markdown
-	// list of image's m/s
-4bda90f5226551727383c406bdeeee76|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|31|1|V|markdown
-	- tiff2dzi.py
-00745a24d782167f007621a0ebd9151e|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|53|1|V|markdown
-	
-	![Build Status](https://gitlab.com/pages/plain-html/badges/master/build.svg)
-	
-	---
-	
-	Example plain HTML site using GitLab Pages.
-	
-	Learn more about GitLab Pages at https://pages.gitlab.io and the official
-	documentation https://docs.gitlab.com/ce/user/project/pages/.
-	
-	---
-	
-	<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-	<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-	**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-	
-	- [GitLab CI](#gitlab-ci)
-	- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
-	- [Did you fork this project?](#did-you-fork-this-project)
-	- [Troubleshooting](#troubleshooting)
-	
-	<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-	
-	## GitLab CI
-	
-	This project's static Pages are built by [GitLab CI][ci], following the steps
-	defined in [`.gitlab-ci.yml`](.gitlab-ci.yml):
-	
-	```
-	image: alpine:latest
-	
-	pages:
-	  stage: deploy
-	  script:
-	  - echo 'Nothing to do...'
-	  artifacts:
-	    paths:
-	    - public
-	  only:
-	  - master
-	```
-	
-	The above example expects to put all your HTML files in the `public/` directory.
-	
-	## GitLab User or Group Pages
-	
-	To use this project as your user/group website, you will need one additional
-	step: just rename your project to `namespace.gitlab.io`, where `namespace` is
-	your `username` or `groupname`. This can be done by navigating to your
-	project's **Settings**.
-	
-	Read more about [user/group Pages][userpages] and [project Pages][projpages].
-	
-	## Did you fork this project?
-	
-	If you forked this project for your own use, please go to your project's
-	**Settings** and remove the forking relationship, which won't be necessary
-	unless you want to contribute back to the upstream project.
-	
-	## Troubleshooting
-	
-	1. CSS is missing! That means that you have wrongly set up the CSS URL in your
-	   HTML files. Have a look at the [index.html] for an example.
-	
-	[ci]: https://about.gitlab.com/gitlab-ci/
-	[index.html]: https://gitlab.com/pages/plain-html/blob/master/public/index.html
-	[userpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#user-or-group-pages
-	[projpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#project-pages
-ba75e603168423a985abe2d8c2e3c4d5|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/tiff2dzi.py|13|77|v|python
-	tiff
-bb8a95fed61728d441fd718fbb1ec973|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/tiff2dzi.py|28|40|v|python
-	tif_names
-bb2b672696c906e028428281e00e77af|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/tiff2dzi.py|14|46|v|python
-	path + "*." + file_type
 9fa31f7862adca07665405ee8ea861ea|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/tiff2dzi.py|17|33|v|python
 	path + "/*." + file_type
 5ae9231bdcb1b853cd7f2122b78f1bfb|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/tiff2dzi.py|4|1|V|python
@@ -2071,3 +796,538 @@ aeab4ed69367f2aeef3fb1fa4cef938d|file:///Users/kouiti/localfile/lets/lets/lets_p
 	            "height": "150%",
 b435e227d5dd201e1768b2bcb2e0aa81|file:///Users/kouiti/localfile/lets/lets/lets_proj/mocks/comment_map.json|7|14|v|json
 	height
+f11b0f2efaad5c2ed1ce4de358c32168|file:///Users/kouiti/dotfiles/script/init.sh|32|1|V|sh
+	ln -fsn ${HOME}/dotfiles/dotfiles/Vivaldi/Default/Sessions ${HOME}/Library/Application\ Support/Vivaldi/Default/Sessions
+59918a909c3f3829a118dbbfff645392|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|44|1|V|python
+	    # file_type = "png"
+a62e5a668d43bd39fe0efbca83efe36c|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|35|21|V|python
+	        print(img_path)
+f387b501ce7d8ed283a5173ca223d049|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|35|5|V|python
+	    return
+6bc76ba650210c85ce9e00601e5fa8c9|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|5|1|V|python
+	sys.path.append("/Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/")
+3a2dac563a65c2ba0d2f4815748fd4f1|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|6|18|v|python
+	/Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/
+b9b0f5892d3bb943daece5e682a03514|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|44|1|V|python
+	    print(sys.path)
+94533b6dd04893e5bcd09a1a2ce6b053|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|24|1|V|python
+	    print(path_regexp)
+	    print(images)
+0ca89560f88df3ea562cca048687f821|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|24|1|V|python
+	    print(path_regexp)
+	    print(images)
+	    return
+7c159716477e4bee56e2812485f010fc|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|42|1|V|python
+	    path = "public/source/normal/pancreas/"
+	    file_type = "tiff"
+980bf69cc86bc72f28d603f410027080|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|22|1|V|python
+	    path_regexp = "*"
+0a7fe64421bfdd2a8947f89f30e7a640|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|21|1|V|python
+	    path_regexp = path + file_type + "/*." + file_type
+	    images = [str(p) for p in Path(".").glob(path_regexp)]
+3dd7aa0eaaf86ce7edebc38ddfeffb92|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|43|5|V|python
+	    pass
+6db8764fadcd09efaa69e1803386c141|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|55|1|V|python
+	    file_type = "tif"
+b740431700fa9aca4c47f10cf59502aa|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|44|35|V|python
+	        if img_path[-4:] == ".tif":
+29dadc9d846eac8a1c507dd0b9204db5|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|55|5|v|python
+	tif2jpg
+60439e0694db39be5de42907c54defca|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|41|1|V|python
+	    path_regexp = path + "jpg/*.tif"
+	    images = [str(p) for p in Path(".").glob(path_regexp)]
+	    for img_path in images:
+	        os.rename(img_path, img_path+".jpg")
+66e7d779431af3dd19fb0e0f08810b8d|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|60|1|V|python
+	    main(path, "tiff")
+46c18034d40bf55fe8b651b210cdee0b|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|57|1|V|python
+	    # file_type = "png"
+	    # file_type = "jpg"
+d37d0c8f0dc7d5efc97e1cb225338665|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|54|1|V|python
+	    # file_type = "tiff"
+	    # file_type = "png"
+ee45523cdb15b01a69799091bc5e4c23|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|44|1|V|python
+	    count += len(images)
+45b963397aa40d4a0063e0d85e4fe7a1|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/convert2dzi.py|52|32|v|python
+	files
+23a7ac7b3503248bf228200cb5a53f98|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|6|27|v|python
+	json_open
+aa4ba1dab8d1448bcbe7872af73a3e75|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|5|15|v|python
+	qitta_json
+a90cb43a2a7e614c9626f7f814cd7416|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|6|5|v|python
+	json_load
+febb87e8c2e89a709c78a924d81c0f35|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|6|5|v|python
+	json_data
+8ca5a8a4e31a833527294613a611cb79|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|11|13|V|python
+	            p
+df455973889039e1253c3fd114e347bf|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/create_ttl.py|229|1|V|python
+	        dir_list = glob.glob(dir_name + service + "/*.tsv", recursive=True)
+	        for i in range(len(dir_list)):
+5b3b52096a61138827c6c240b22e3478|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|19|9|V|python
+	    path 
+d6fe1d0be6347b8ef2427fa629c04485|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|16|23|v|python
+	path
+fea087517c26fadd409bd4b9dc642555|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|13|42|v|python
+	normal
+111efceb321ab7a2c6c9339dcb8d48c0|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|12|22|V|python
+	            print(key)
+a93d0e397c59c5eb9f69f9a41cc22980|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|16|23|v|python
+	dir_path
+24252c1714c29e2e6e86337b89929c44|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|10|1|V|python
+	            pass
+	        else:
+92f489259df78bd4cda9cba2a8f4e144|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|17|13|V|python
+	                print(file_name)
+590dfce98eeef07c160b3b970e2d3144|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|18|24|V|python
+	                data[key]
+2263016e04aadc2b5a8f50a0b88847f1|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|11|1|V|python
+	            data[key+"-data"] = []
+f69ee69078365e2071564f0a3feb4a34|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|6|1|V|python
+	    j = open(path + 'public/WholeTissueList.json', 'r')
+	    data = json.load(j)
+d1263fce58ab0b484d0b9e4313990ce5|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/WholeTissueList.json|1|1|V|json
+	{
+	    "Kidney3": "normal/kidney",
+	    "Kidney3-data": [
+	        "1581",
+	        "2158",
+	        "2289",
+	        "2467",
+	        "2540",
+	        "2670"
+	    ],
+	    "Pancreas3":"normal/pancreas",
+	    "Pancreas3-data":["1866",
+	        "2067",
+	        "H&E_Annotated.tif",
+	        "1688",
+	        "1734",
+	        "H&E.tif",
+	        "1981",
+	        "1606",
+	        "1743",
+	        "1485",
+	        "1647",
+	        "1581",
+	        "3197",
+	        "3343",
+	        "2417",
+	        "1542",
+	        "2905",
+	        "1850",
+	        "3181",
+	        "2816",
+	        "1955",
+	        "1282",
+	        "1996",
+	        "1095",
+	        "2247",
+	        "2302",
+	        "1257",
+	        "3051",
+	        "2139",
+	        "1298",
+	        "2158",
+	        "2174",
+	        "Man8_Panc.tif",
+	        "2978",
+	        "2539",
+	        "1704",
+	        "2446",
+	        "1905",
+	        "1952",
+	        "2391",
+	        "1339",
+	        "2450",
+	        "1460",
+	        "2889",
+	        "2466",
+	        "2523",
+	        "2299",
+	        "3124",
+	        "Segment_8_Tree",
+	        "3489",
+	        "Segment_7",
+	        "2099",
+	        "2685",
+	        "2056",
+	        "2742",
+	        "2754",
+	        "2304",
+	        "2492",
+	        "2095",
+	        "2393",
+	        "2669",
+	        "2346",
+	        "1993",
+	        "2612",
+	        "2242",
+	        "2215",
+	        "Segment_8",
+	        "1419",
+	        "1663",
+	        "2389",
+	        "3035",
+	        "1136",
+	        "2464",
+	        "3019",
+	        "Segment_4",
+	        "2832",
+	        "3327",
+	        "2873",
+	        "2127",
+	        "2330",
+	        "2756",
+	        "2347",
+	        "2445",
+	        "1793",
+	        "1809",
+	        "2419",
+	        "2858",
+	        "1825",
+	        "1444",
+	        "2012",
+	        "2507",
+	        "1891",
+	        "2028",
+	        "2785",
+	        "2101",
+	        "2273",
+	        "2377",
+	        "2320"]
+	}
+ec4d1eb36b22d19728e9d1d23ca84d1c|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|20|17|v|python
+	load
+2ee80db41f0bb24525d0d4761ff30799|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|20|23|V|python
+	    data = json.dums(j)
+f06aa50e862db5b69e7c2090f9c952c1|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|19|51|V|python
+	    j = open(path + 'public/WholeTissueList.json', 'r')
+08bede1e38712f3200a3a8ca38f3124f|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|20|16|v|python
+	mydata.json
+5f0da2b54374ef79d137f98561d7caea|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|19|14|v|python
+	path + 'public/WholeTissueList.json'
+6f653763d274b9c1c01cbede28513524|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|19|19|V|python
+	    j = open(, 'r')
+ffc6ff691eb67e811a592eb38f124905|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|19|1|V|markdown
+	    - ./source/normal/pancreas/tiff/*.tiff
+4bbcc9febf719d3ccdd7906ba382cc0e|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|19|1|V|markdown
+	    - ./source/normal/pancreas/tiff/*.tiff
+	    - `pip -r install data/pyfile/requirements.txt`を実行
+8da28ab6cb2bfb13ee47ca726b3cdfc7|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|18|65|v|markdown
+	file_tyle
+b4b6437275ceab8c3ee0aba7124a40e8|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|21|7|v|markdown
+	data/pyfile/convert2dzi.py
+0eb67b18f7c4dcfd1b9aed2432074c20|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|37|1|V|markdown
+	python
+	```
+004a2c86413bc0da054127a4a010c9ff|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/README.md|36|1|V|markdown
+	`data/pyfile/convert2dzi.py`
+2b0befd6e280c549ad7d761835e4f47b|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|24|1|V|python
+	if __name__ == "__main__":
+	    path = "/Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/"
+	    main(path)
+a2b570a68a7fea62df7f6609d40fb589|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|80|1|V|python
+	
+	
+	
+	# text = readfile()
+	# text = "["+'"'+",".join(text)+'"'+"]"
+	# text = text.replace("\n","").replace(",",'"'+","+'"')
+	# print(text)
+	
+	# text = convertjson()
+	text = createglytoucanid()
+	
+	print(text)
+	printfile(text)
+	
+	
+	
+	
+	# for(i of document.querySelectorAll('#compotable td a')){
+	#     console.log(i.innerText)
+	# }
+609244ba9fecd6f04608ee593dab31be|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|25|1|V|python
+	    path = "/Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/"
+23fe57ed5bdbab810b9bb14de6145492|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|81|1|V|python
+	
+	
+	# text = readfile()
+	# text = "["+'"'+",".join(text)+'"'+"]"
+	# text = text.replace("\n","").replace(",",'"'+","+'"')
+	# print(text)
+	
+	# text = convertjson()
+	text = createglytoucanid()
+	
+	print(text)
+	printfile(text)
+	
+	
+	
+	
+	# for(i of document.querySelectorAll('#compotable td a')){
+	#     console.log(i.innerText)
+	# }
+c5054d771009c6e1b0d73f5171998343|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|24|1|V|python
+	if __name__ == "__main__":
+837e914288416de325dd8ff21a2832c7|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|43|1|V|python
+	    
+	
+	def printfile(text):
+	    f = open('./outfile2.csv', 'w')
+	    f.write(text)
+	    f.close()
+	
+	def readfile():
+	    f = open('./outfile.csv', 'r')
+	    datalist = f.readlines()
+	    f.close()
+	    return datalist
+	
+	def createglytoucanid():
+	    datalist = readfile()
+	    for i in range(len(datalist)):
+	        datalist[i] = datalist[i].replace("\n","")
+	    
+	    text = ""
+	    json_open = open('../../WholeTissueList.json', 'r')
+	    json_load = json.load(json_open)  
+	    imagelist = json_load["Pancreas3-data"]
+	
+	    json_open = open('../RickDrakeFormula.json', 'r')
+	    json_load = json.load(json_open)    
+	    datanum = 0
+	    for i in range(len(json_load["N-Glycan Master List"])):
+	        if json_load["N-Glycan Master List"][i]["m/z"].split(".")[0]+".tiff" in imagelist:
+	            # text += str(datanum)+"\n"
+	            text += datalist[datanum]
+	            datanum += 1
+	        text += "\n"
+	    return text
+	
+	
+f907220bb7a943d6c4dc57be6d280480|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|5|5|V|python
+	    json_open = open('../../WholeTissueList.json', 'r')
+	    json_load = json.load(json_open)  
+	    imagelist = json_load["Pancreas3-data"]
+03709e84efe76418fa1874b9483fc348|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|8|11|V|python
+	    json_open = open('../RickDrakeFormula.json', 'r')
+	    json_load = json.load(json_open)    
+8a4f67f9162ace6fc6767fe4c3b1e0ec|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|8|36|v|python
+	RinfockDrakeFormula
+9240d48be9beb3f1e939c1564e029ed4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|12|24|v|python
+	rick_json
+5f1fcd82755db28714238da650f7ebb9|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|4|40|v|python
+	listlstr
+1b70ff2782018c0241beac48156e5a31|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|8|9|v|python
+	tissuelist
+d09f4b02b8c4cb5353599b5debec05be|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|15|1|V|python
+	    ''
+90b5605101a04faa50571e69b823cb77|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|5|1|V|python
+	    # j = open(path + 'public/WholeTissueList.json', 'r')
+	    # tissuelist_json = json.load(j)
+	    # tissuelist = []
+	    # for key in tissuelist_json:
+	    #     if "-data" in key:
+	    #         tissuelist.extend(tissuelist_json[key])
+	
+e50e85e2c336b431870ad4586e552501|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|10|19|V|python
+	        if glycans_json["data"][i]["m/z"].split(".")[0]+".tiff" in imagelist:
+0291625ee209df226e512b0730e12030|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|11|44|V|python
+	        name = ["N-Glycan Master List"][i]["Name"]
+6f7b81041a9de43ff21544b72d120077|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|11|35|V|python
+	        subname = name.split(" + ")
+45262e004bd5e97e99df2b7b52de7f61|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|11|1|V|python
+	        name = ["N-Glycan Master List"][i]["Name"]
+	        subname = name.split(" + ")
+b3b47460b2754779d820f6467aa1ed67|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|11|9|v|python
+	subsubname
+280beae96a43d63047886bca2e601622|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|11|57|v|python
+	subname
+0eba775b8eee792f3e2a632518223156|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|13|1|V|python
+	        for composition in composition_list:
+	            comps[re.search("[a-zA-Z]+",subsubname[j]).group()] = re.search("[0-9]+",subsubname[j]).group() 
+	        for j in range(1, len(subname)):
+	            if "SO4" in subname[j]:
+	                comp["SO4"] = subname[j].split("SO4")[0]
+	            elif "Na" in subname[j]:
+	                comp["Na"] = subname[j].split("Na")[0]
+	            else:
+	                print("not added ",subname[j])
+	                exit()
+	        complist.append(comp)
+	
+	    print(len(complist),"of data is found.")
+	    text = ""
+	    for comp in complist:
+	        for key in comp:
+	            if key != "NeuAc":
+	                text += comp[key]+" "+key+", "
+	            else:
+	                text += comp[key]+" Neu5Ac, "
+	        text = text[:-2]
+	        text += "\n"
+	    return text
+2616bb4363527416e440a50e1acbe700|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|22|1|V|python
+	            "Hex": "",
+6a490bf254708578fd878d16fe782967|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|23|1|V|python
+	            "": "",
+	            "Hex": "",
+7dc0aad5eff8e97647a4b7b9ed6d7855|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|24|1|V|python
+	            "Hex": "",
+	            "Hex": "",
+	            "Hex": "",
+	            "Hex": "",
+	            "Hex": "",
+	            "Hex": "",
+62ea560dd99d9dfa0374dad6f5cb32f4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|23|1|V|python
+	            "": "",
+8754d184eeed9cc37c335e94ac59ce92|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|28|1|V|python
+	            "": "P",
+818c972cbbaa7804d93ca4e7984353c4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|30|14|v|python
+	2 hex, 1 hexnac, 1 dhex, 2 neu5ac, 1 neu5gc, 0 P, 0 S, 1 Ac
+b93799f570dcfd907334d15d906668ab|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|14|35|v|python
+	findall
+af818decab3987d50595128c61322397|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|15|22|V|python
+	            comps = {}
+dbdc01c4ea26c5d5de6b8d5a05f055fe|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/create_ttl.py|24|1|V|python
+	    column_data = re.sub(r"ensembl:(?P<id>(.+?))\.", r"ensembl:\g<id>", column_data)
+06609a923e57445080746263bc2f0376|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|25|36|v|python
+	(?P<count>(\d))
+78d86c4968113f4b7d7e23f1e4cf00b5|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|25|13|V|python
+	    column_data = re.sub(r"ensembl:\.", r"ensembl:\g<id>", column_data)
+e2942a04780e223b215eb8b663cf5353|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|15|31|v|python
+	count
+5cb6b3cc46251e268b1edae77b9b2b57|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|8|1|V|python
+	    complist = []
+43325c6569f52439c8e4bb4a40c82461|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|9|1|V|python
+	        # if True:
+46a9ed96b191e0cb521d5189139a3472|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|12|27|v|python
+	re.search(cor_regexp ,glycan_data["Name"])
+06a943c59f33a34bb5924aaf72cd2995|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|13|24|v|python
+	search
+0ec209f25c521b8959fe2965d9a3d2ac|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|14|35|V|python
+	            print(dir(composition))
+ca4fbb3e83e45eed92223320a6536f75|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|14|17|v|python
+	coutinue
+418952d1ab72d71450cf56a43a4028c4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|16|19|v|python
+	cor_dict
+59ee037486717ebd78ccbade657b83d4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|12|69|v|python
+	.group()
+d94dde3ea5784a253d1ff49ce9588822|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|16|28|v|python
+	cor_regexp
+ace5e422f87f7d42a43404bfb0e6f4a6|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|18|33|V|python
+	        # print(composition_list)
+9646b6fea9df1878fde42b2ce9d17498|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|16|1|V|python
+	            count = re.sub(cor_regexp, r"\g<count>", composition)
+ee05e1dadf1b7f7e166ce182e1d39f86|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|18|61|v|python
+	composition
+bab11e74ec30a449da9d4404bd4c0986|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|18|1|V|python
+	            glycan_data["Name"] = re.sub(cor_regexp, "", glycan_data["Name"])
+4c3cc45d780da88931e636ec4244b1ca|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|20|13|V|python
+	        glycan_data = 
+c8e8655285889f0841252d8240a32ad1|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|17|1|V|python
+	            # for test
+0261c8edec78d6089e2419d81be3acc2|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|17|1|V|python
+	            # for test
+	            glycan_data["Name"] = re.sub(cor_regexp, "", glycan_data["Name"])
+44ee31e6408cc53d247fa1c6af848e5a|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|34|39|V|python
+	            r"Hex(?P<count>(\d))": "hex",
+3bf2d36029ad02c9844069ddae0d2883|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|23|1|V|python
+	       glycan_data["Name"] = re.sub(r"\s", "", glycan_data["Name"])
+2955c6c52a4c646678ddc84789639d3e|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|11|1|V|python
+	        # if "+" in glycan_data["Name"]:
+	        #     continue
+9330076206f4bdb96216c5443f5e54b1|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|9|8|V|python
+	        print("bef:", glycan_data["Name"])
+98b2e6ff4c7c75955894a24d72af4728|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|20|8|V|python
+	        glycan_data["Name"] = re.sub(r"\s", "", glycan_data["Name"])
+4cf0590399be521c8e9000cb9b243c55|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|15|29|V|python
+	            print(composition)
+f42e2efa8e325b339d9e321014f56758|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|9|1|V|python
+	        glycan_data["Name"] = re.sub(r"\+\d+Na", "", glycan_data["Name"])
+0ff0f31a104417e8569bdbbf828f4566|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|9|1|V|python
+	        glycan_data["Name"] = re.sub(r"\+\d+Na", "", glycan_data["Name"])
+	        for cor_regexp in cor_dict:
+71fa914cb3e4d6fcbc0c786a6a3de439|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|22|25|V|python
+	        for cor_regexp in cor_dict:
+be14dc38cde7c50657ebf43253e90b48|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|2|1|v|python
+	import re
+	
+	def get_unregistered_compositions(path, cor_dict) -> str:
+	    j = open(path + 'public/source/info_glycans.json', 'r')
+	    glycans_json = json.load(j)
+	    for glycan_data in glycans_json["data"]:
+	        glycan_data["Name"] = re.sub(r"\s", "", glycan_data["Name"])
+	        glycan_data["Name"] = re.sub(r"\+\d+Na", "", glycan_data["Name"])
+	        for cor_regexp in cor_dict:
+	            re_composition = re.search(cor_regexp ,glycan_data["Name"])
+	            if re_composition is None:
+	                continue
+	            composition = re_composition.group()
+	            count = re.sub(cor_regexp, r"\g<count>", composition)
+	            # for test
+	            glycan_data["Name"] = re.sub(cor_regexp, "", glycan_data["Name"])
+	            
+b4f9d012e2a315b557d0eb9af2d96829|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|20|24|v|python
+	, ","
+6bb099355dae20c0b7f200763544aee2|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|15|1|V|python
+	            composition = re_composition.group()
+	            count = re.sub(cor_regexp, r"\g<count>", composition)
+70f729e87988423fb3f10fe15b68c825|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|15|1|V|python
+	            composition = re_composition.group()
+c05a409af175cd080d69257322604fb4|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|17|57|V|python
+	            composition = re.sub(cor_regexp, r"\g<count>", composition)
+ef1701a2951019855eb7b3c105b79a32|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|19|44|V|python
+	            # print("composition:", composition, "\t", "count: ", count)
+1ca8e9bc1f643d4427a85beda20236eb|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|11|16|V|python
+	        print(glycan_data)
+4e58a981abce6f92506ffee5c57bd01c|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|22|1|V|python
+	            # print(count, cor_dict[cor_regexp], ",", end="")
+	        # print()
+9c0e04c5d3ccb9f00a3efe21b62deabf|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|23|1|V|python
+	        # print()
+decd9e5cb09785ac39efab57c7652df7|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|28|1|V|python
+	        else:
+	
+caeec39f94b292cfc623df8931b6e98e|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|24|16|V|python
+	        glycan_data["Name"] = re.sub(r"\+", "", glycan_data["Name"])
+af3fc9d4835bfe5bb312bf6e0713da30|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|28|9|V|python
+	            sys.exit()
+a7b84d6354b9ad7f50b580037fe70ae2|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/name2compforsearch.py|2|8|V|python
+	import re
+bc4e6acc155b4c131ff6ade50257f87b|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/ale.vim|10|49|v|vim
+	prettier
+c5bfbc02ea526bf4c5c6e847fa6788ea|file:///Users/kouiti/dotfiles/script/init.sh|41|1|V|sh
+	# brew upgrade
+34b4fb7fdee8080b96340c6b8e12160f|file:///Users/kouiti/dotfiles/script/init.sh|48|1|V|sh
+	brew install black
+1ffd9e753c8054cc61456ac7fac1ac89|file:///Users/kouiti/dotfiles/script/init.sh|49|14|v|sh
+	black
+4ced73089c32620b63c7306f8193346c|file:///Users/kouiti/dotfiles/script/init.sh|49|1|V|sh
+	brew install isort
+31b3f02049bf7ea75b2b11408170e644|file:///Users/kouiti/dotfiles/script/init.sh|50|14|v|sh
+	isort
+da515fa03d2af339affdaebe2dc78761|file:///Users/kouiti/dotfiles/script/init.sh|50|1|V|sh
+	brew install prettier
+442788b3d4700b05531d2f70ce2a2a92|file:///Users/kouiti/dotfiles/script/init.sh|51|1|V|sh
+	brew install autopep8
+1cec08f1f4c996df44e0628b7ddff331|file:///Users/kouiti/dotfiles/script/init.sh|52|14|v|sh
+	autopep8
+af501edb7383ba9d55b47df1b71f449e|file:///Users/kouiti/dotfiles/script/init.sh|52|14|v|sh
+	fixjson
+203335bfff36d69589433ee1751340ac|file:///Users/kouiti/dotfiles/dotfiles/.prettierrc|2|1|V|json
+	    "printWidth": 120,
+	    "singleQuote": false,
+	    "trailingComma": "none",
+	    "semi": true,
+	    "parser": "typescript",
+	
+dfdc35d2d32d6f7372dcc23456743d46|file:///Users/kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|53|1|V|vim
+	  elseif ext == "html"
+	    set shiftwidth=4
+762df3b482a74eb1de7411cc838681b9|file:///Users/kouiti/dotfiles/dotfiles/.prettierrc|6|1|V|json
+	    "parser": "typescript",
+b7c2cb7a4faaa56bc18c6ea74144b435|file:///Users/kouiti/dotfiles/dotfiles/nvim/plugins/ale.vim|13|28|v|vim
+	beautify

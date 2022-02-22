@@ -30,7 +30,7 @@ noremap <silent>:{ diwi{}<Esc>P
 noremap <silent>:< diwi<><Esc>P
 
 
-noremap <silent>:v<CR> :! osascript -e 'tell application "Vivaldi" to reload active tab of window 1'<CR><CR>
+noremap <silent>:v<CR> :w<CR>:! osascript -e 'tell application "Vivaldi" to reload active tab of window 1'<CR><CR>
 
 " others
 noremap <silent>R *:%s//

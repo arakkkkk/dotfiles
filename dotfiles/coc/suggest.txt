@@ -1,3 +1,31 @@
+sy|style|html
+map|map_vector|yank
+console.log(map|console.log(map_vector);|yank
+map_|map_vector|yank
+map|map_json|yank
+conti|continue|around
+try|try|snippets
+cat|catch|yank
+pro|processes|yank
+pro|processes[processes.lehgth - 1].y;|yank
+process|processes|around
+map_|map_vector|around
+pre|prev_x|around
+pre|prev|snippets
+map|map_vector|around
+nex|next|snippets
+is|isHead|around
+isH|isHead|around
+tar|target|around
+sour|source|buffer
+map|map_json|around
+hei|height|html
+style|style|snippets
+layout|layout_map_json|around
+ne|next_comments|pyright
+gly|glycovid/|jedi
+gl|glycovid|file
+gly|glycovid|file
 is|isort|buffer
 re_|re_texts|jedi
 re_te|re_text|pyright
@@ -429,7 +457,6 @@ model_|model_session|tsserver-typescript
 edi|editCount|tsserver-typescript
 edit|editCount|tsserver-typescript
 setEs|setEstimationRunnig|around
-tar|target|around
 lib|libgssparam: LibGssParam;|yank
 se|setEstimationRunnig|tsserver-typescript
 setes|setEstimationRunnig|around

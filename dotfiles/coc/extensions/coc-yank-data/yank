@@ -1,5 +1,3 @@
-aa4ba1dab8d1448bcbe7872af73a3e75|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|5|15|v|python
-	qitta_json
 a90cb43a2a7e614c9626f7f814cd7416|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|6|5|v|python
 	json_load
 febb87e8c2e89a709c78a924d81c0f35|file:///Users/kouiti/localfile/glycomeatlas/ims-glycomeatlas/public/data/pyfile/update_WholeTssueList.py|6|5|v|python
@@ -1527,3 +1525,5 @@ db6ec7c8c13519432a806e2c766a2409|file:///Users/kouiti/localfile/glycovid/glycovi
 8c585395b2c7c8002ade7e0efcdfcf0f|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/owl/create_owl.py|9|1|V|python
 	# Ignore artifacts:
 	sys.path.append("/Users/kouiti/localfile/glycovid/glycovid_PSIQUIC")
+75cdfc6de93599c0e40a227668378722|file:///Users/kouiti/.ssh/id_rsa.pub|1|1|V|
+	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJYfP27O8xI3h2HLR+kbQi7McGVvVmZ6al3k9pB5ijaU964dbi1kFuhqTR0masDTLzaq8uXqOQ36EXTjhTx5Y07k8NtX/FnZqE49N5bc0B9QtFvFXwHRKfJgD4NjHMMdij38eJmk9CuOr3mFAqAgQeyhtYLzA6l82Vor4hP2O1qKmrgdViQp3nvLomSO6s5E3MgmZwrBpCMMsTrsE4iLV1audAGOeJevwWtihZMCWH8jagyJJ7GQVg1aqv1uU5bA/B9EB8enNLq00UqxQtGi8sTBao2sow9/Iw1N57YOkPfr3o/VrglDm0Kj/F0//Z0ib7x5JarQoKIXYbKEcu2j00IPGp6znytQsYW6muo8iulXP08/D25FknHBm+LAtOvOTKuEBmqQFIIuDTYPcuWN872ZJqKW3+ZeQHDH5CEsAa+nEwpjYitWqqW15bPReDocM3qTEC4gD5PtLwDMQVGOwxKPCddWXHAsZleZ0Sh2PxTlM1Knw6mY5mZzApieF8QhM= kouiti@kinoshitalabs-iMac.local

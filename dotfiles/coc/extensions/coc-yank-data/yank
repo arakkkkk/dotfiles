@@ -1,49 +1,3 @@
-2ab3aadf909cb39d45bf739bc47c6857|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|20|9|V|python
-	        contents = GssParam.list(gssmodel_id)
-8f02495f1444628d7ead48e786de11bb|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|31|1|V|typescriptreact
-	      console.log(err);
-	      console.log(err.response);
-f47c522820d44bfbc597f90b4e3aef7c|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|32|1|V|typescriptreact
-	      console.log(err.response);
-0b5a00ba4dc254dafb5f39ff45157540|file:///Users/kouiti/localfile/dev-glycosim/models/GssModel/repository.py|49|1|V|python
-	    for i in range(len(contents)):
-	        contents[i] = dict(contents[i])
-a752a3dc2ca7aa2e99e4b93c47f6f6db|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|22|23|V|python
-	        return contents
-a0ce87f6ba8697f27163aea6e957528a|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|39|18|V|python
-	    print(contents)
-b1545ef309c4ee317e87bd1ddf7ad922|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|21|9|V|python
-	        c
-dcc3c819049ddd95e5c33b0882e69442|file:///Users/kouiti/localfile/dev-glycosim/module/model/gssparams.py|21|22|V|python
-	        print(contents)
-3af891dbdda88b4f5d16336c354de156|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|28|30|V|typescriptreact
-	      console.log(gssmodels.da)
-04f0630174711c860bb74b1112333b30|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|28|17|V|typescriptreact
-	      console.log(gssparams.data.gssparams);
-383e01c7ec4444f3d803fc658817714a|file:///Users/kouiti/localfile/web-glycosim/next/api/GssParam.tsx|24|13|v|typescriptreact
-	gssparams
-8d777f385d3dfec8815d20f7496026dc|file:///Users/kouiti/localfile/web-glycosim/next/pages/models/gssparam.tsx|35|34|v|typescriptreact
-	data
-e8626b3e6442689d91382e48fa2d27a8|file:///Users/kouiti/localfile/web-glycosim/next/pages/models/gssparam.tsx|45|11|V|typescriptreact
-	    // cons
-80b6a00e37c554ad337a41a12a191337|file:///Users/kouiti/localfile/dev-glycosim/models/GssModel/repository.py|21|1|V|python
-	            "date": model.date.strftime("%Y/%m/%d %H:%M"),
-5fc732311905cb27e82d67f4f6511f7f|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|28|14|v|python
-	date
-f43f1cf6ba1f85c4bfda2e13e235dd97|file:///Users/kouiti/localfile/dev-glycosim/models/GssParam/repository.py|28|1|V|python
-	            "created": model.date.strftime("%Y/%m/%d %H:%M"),
-37ecd8dd4c5db59949934691f86d0e86|file:///Users/kouiti/localfile/web-glycosim/next/pages/models/gssparam.tsx|42|1|V|typescriptreact
-	    if (gssparam_id === null) {
-	      alert("error");
-	      return;
-	    }
-4df1cc9fd2cbf862af6e1fa27129fc60|file:///Users/kouiti/localfile/web-glycosim/next/pages/models/gssparam.tsx|46|1|V|typescriptreact
-	    setLoading(true);
-	    (async () => {
-	      const res = GssParam.get(gssparam_id);
-	      const res_gssparam = ApiHandler(res, setError);
-	      // router.push("/signaling");
-	    })();
 3a08fdd61ed3460664a41a1ac7232df4|file:///Users/kouiti/localfile/web-glycosim/next/components/layouts/HeaderPE.tsx|43|31|V|typescriptreact
 	  console.log(props.libgssparam);
 faff2d947841163b0cede83f1aba9bb1|file:///Users/kouiti/localfile/web-glycosim/next/components/layouts/HeaderPE.tsx|20|6|V|typescriptreact
@@ -1310,3 +1264,223 @@ f1e2d206e16448c042352f2a2a60f16a|file:///Users/kouiti/localfile/glycovid_PSIQUIC
 	```
 	{"head": {"vars": ["class"]}, "results": {"bindings": [{"class": {"type": "uri", "value": "http://purl.obolibrary.org/obo/EUPATH_0000591"}}, {"class": {"type": "uri", "value": "http://biomodels.net/SBO/SBO_0000344"}}, {"class": {"type": "uri", "value": "http://biomodels.net/SBO/SBO_0000241"}}, {"class": {"type": "uri", "value": "http://purl.obolibrary.org/obo/NCIT_C93638"}}, {"class": {"type": "uri", "value": "http://rdf.glycoinfo.org/PSICQUIC/Ontology#InteractionId"}}]}}
 	```
+f11b0f2efaad5c2ed1ce4de358c32168|file:///Users/Kouiti/dotfiles/script/init.sh|32|1|V|sh
+	ln -fsn ${HOME}/dotfiles/dotfiles/Vivaldi/Default/Sessions ${HOME}/Library/Application\ Support/Vivaldi/Default/Sessions
+a9c4b6c9fbd990849d1f128dfc4ed3e7|file:///Users/Kouiti/dotfiles/script/init.sh|33|113|v|sh
+	Sessions
+c3ae06f70363066574dc6f52338df7f5|file:///Users/Kouiti/dotfiles/script/init.sh|34|26|v|sh
+	dotfiles
+9e81e7b963c71363e2fb3eefcfecfc0e|file:///Users/Kouiti/dotfiles/script/init.sh|34|44|v|sh
+	shared
+ce208567fc8dc085fac5997e4d0b86bd|file:///Users/Kouiti/dotfiles/script/init.sh|34|1|V|sh
+	ln -fsn ${HOME}/dotfiles ${HOME}/Documents/dotfiles
+ca3c99e0ccda07407c08cb88968b3dc6|file:///Users/Kouiti/dotfiles/script/init.sh|29|1|V|sh
+	ln -fsn ${HOME}/dotfiles/dotfiles/Fonts/Source\ Code\ Pro for Powerline.otf ${HOME}/Library/Fonts/Source\ Code\ Pro\ for\ Powerline.otf
+	ln -fsn ${HOME}/dotfiles/dotfiles/vscode/settings.json ${HOME}/Library/Application\ Support/Code/User/settings.json
+	ln -fsn ${HOME}/dotfiles/dotfiles/vscode/keybindings.json ${HOME}/Library/Application\ Support/Code/User/keybindings.json
+	ln -fsn ${HOME}/dotfiles/dotfiles/Vivaldi/Default/Sessions ${HOME}/Library/Application\ Support/Vivaldi/Default/Sessions
+	
+	ln -fsn ${HOME}/dotfiles ${HOME}/Documents/dotfiles
+	
+c28aeff94fb07021fd20d9509ca200b4|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|230|1|V|json
+	        {
+	            "description": "support control+h",
+	            "manipulators": [
+	                {
+	                    "from": {
+	                        "key_code": "h",
+	                        "modifiers": {
+	                            "mandatory": [
+	                                "left_control"
+	                            ],
+	                            "optional": [
+	                                "any"
+	                            ]
+	                        }
+	                    },
+	                    "to": [
+	                        {
+	                            "key_code": "delete_or_backspace"
+	                        }
+	                    ],
+	                    "type": "basic",
+	                    "conditions": [
+	                        {
+	                            "type": "frontmost_application_unless",
+	                            "bundle_identifiers": [
+	                                "com.googlecode.iterm2",
+	                                "com.microsoft.VSCode",
+	                                "com.vivaldi.Vivaldi",
+	                                "com.google.Chrome"
+	                            ]
+	                        }
+	                    ]
+	                }
+	            ]
+	        },
+21e4adb93c781ca547915a9a33f786b4|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|294|1|V|json
+	                                "com.microsoft.VSCode"
+a619931f7a45af51b117acd7fe7b2992|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|299|1|V|json
+	                {
+	                    "from": {
+	                        "key_code": "e",
+	                        "modifiers": {
+	                            "mandatory": [
+	                                "left_control"
+	                            ],
+	                            "optional": [
+	                                "any"
+	                            ]
+	                        }
+	                    },
+	                    "to": [
+	                        {
+	                            "key_code": "right_arrow",
+	                            "modifiers": [
+	                                "left_command"
+	                            ]
+	                        }
+	                    ],
+	                    "type": "basic",
+	                    "conditions": [
+	                        {
+	                            "type": "frontmost_application_unless",
+	                            "bundle_identifiers": [
+	                                "com.googlecode.iterm2",
+	                                "com.microsoft.VSCode"
+	                            ]
+	                        }
+	                    ]
+	                }
+1de9740b7bad2d4acd242977cdd43b17|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|247|42|v|json
+	delete_or_backspace
+b7998d306e8946d16a01c906b778473a|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|330|1|V|json
+	                {
+	                    "from": {
+	                        "key_code": "u",
+	                        "modifiers": {
+	                            "mandatory": [
+	                                "left_control"
+	                            ],
+	                            "optional": [
+	                                "any"
+	                            ]
+	                        }
+	                    },
+	                    "to": [
+	                        {
+	                            "key_code": "delete_or_backspace",
+	                            "modifiers": [
+	                                "left_command"
+	                            ]
+	                        }
+	                    ],
+	                    "type": "basic",
+	                    "conditions": [
+	                        {
+	                            "type": "frontmost_application_unless",
+	                            "bundle_identifiers": [
+	                                "com.googlecode.iterm2",
+	                                "com.microsoft.VSCode"
+	                            ]
+	                        }
+	                    ]
+	                }
+70f0d0081eb7dc4c8093f252cb7cf503|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|361|1|V|json
+	                {
+	                    "from": {
+	                        "key_code": "u",
+	                        "modifiers": {
+	                            "mandatory": [
+	                                "left_control"
+	                            ],
+	                            "optional": [
+	                                "any"
+	                            ]
+	                        }
+	                    },
+	                    "to": [
+	                        {
+	                            "key_code": "delete_or_backspace",
+	                            "modifiers": [
+	                                "left_command"
+	                            ]
+	                        }
+	                    ],
+	                    "type": "basic",
+	                    "conditions": [
+	                        {
+	                            "type": "frontmost_application_unless",
+	                            "bundle_identifiers": [
+	                                "com.googlecode.iterm2",
+	                                "com.microsoft.VSCode"
+	                            ]
+	                        }
+	                    ]
+	                },
+a5152794e9c4bd4571b68dc8df1ac2f7|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|377|34|v|json
+	left_command
+5dccf6522f71b1bbe5b0037e36b14dad|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|407|1|V|json
+	                            "modifiers": [
+	                                "left_command"
+	                            ]
+ff108c2820a5bc8b7d437836e3242dfe|file:///Users/Kouiti/.ssh/fumidai|50|1|V|
+	---------------------------------------------------
+	創価大学理工学研究科　生命理学専攻
+	荒川康一
+	Soka University
+	Koichi Arakawa
+3b40416793db96ca1ecd0e5757d3faf0|file:///Users/Kouiti/.ssh/fumidai|1|1|V|
+	-----BEGIN OPENSSH PRIVATE KEY-----
+	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
+	-----END OPENSSH PRIVATE KEY-----
+1465bac1da2e5615d06ace0c0197d46f|file:///Users/Kouiti/.ssh/id_rsa.pub|1|1|V|
+	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFDcLjJw4gGbgpBUigdFdg0E+FVaF65rt/Dtnwi9R9XSevG/Aa0YaoMz80AX/5ZAWdehukUsQmYbgw9jGYrGhHpsVJ9XJRdoW7p1/c/Vm/bBMlskT7IhRtrZvtyeBqP4iNVSwDqeIX0jFUaxMHxCQQG2X3Y4MqobedDNEB3mfr+do6ivhzvrQAU2jO0olCjmuywBY1QVPFzaEjNqTNmvMw3cbr2KKsczOBDzR+QgdyZ7imXu/kyMi+GTwfogHxBnZxbFo8YK+xfxCSUSEZJMYavGez0FRgtkqlp2+uxrFxMQQgXud+gJFrENpuJOv2L8Ta5ONAt8/eyFFetQ95gEViGfNTFWPDk843bN7fPBGiixxyYFCyQYzfl2nD0LeiCXYCkLGK3dHd9N0n0ykCRHTzNzXmPrWNxNNj1vfpx9VEzDn80HXr5CiLjUNwIOwzfo1Sez90u67RPYy54WASoabhLrtiIPQGVIm4967iz0DxDSCyTQtuvPFDG1OT7dFLK7E= Kouiti@KinoshitaLabnoMacBook-Pro.local
+75cdfc6de93599c0e40a227668378722|file:///Users/Kouiti/.ssh/id_rsa.pub|1|584|V|
+	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJYfP27O8xI3h2HLR+kbQi7McGVvVmZ6al3k9pB5ijaU964dbi1kFuhqTR0masDTLzaq8uXqOQ36EXTjhTx5Y07k8NtX/FnZqE49N5bc0B9QtFvFXwHRKfJgD4NjHMMdij38eJmk9CuOr3mFAqAgQeyhtYLzA6l82Vor4hP2O1qKmrgdViQp3nvLomSO6s5E3MgmZwrBpCMMsTrsE4iLV1audAGOeJevwWtihZMCWH8jagyJJ7GQVg1aqv1uU5bA/B9EB8enNLq00UqxQtGi8sTBao2sow9/Iw1N57YOkPfr3o/VrglDm0Kj/F0//Z0ib7x5JarQoKIXYbKEcu2j00IPGp6znytQsYW6muo8iulXP08/D25FknHBm+LAtOvOTKuEBmqQFIIuDTYPcuWN872ZJqKW3+ZeQHDH5CEsAa+nEwpjYitWqqW15bPReDocM3qTEC4gD5PtLwDMQVGOwxKPCddWXHAsZleZ0Sh2PxTlM1Knw6mY5mZzApieF8QhM= kouiti@kinoshitalabs-iMac.local

@@ -31,6 +31,8 @@ ln -fsn ${HOME}/dotfiles/dotfiles/vscode/settings.json ${HOME}/Library/Applicati
 ln -fsn ${HOME}/dotfiles/dotfiles/vscode/keybindings.json ${HOME}/Library/Application\ Support/Code/User/keybindings.json
 ln -fsn ${HOME}/dotfiles/dotfiles/Vivaldi/Default/Sessions ${HOME}/Library/Application\ Support/Vivaldi/Default/Sessions
 
+ln -fsn ${HOME}/dotfiles ${HOME}/Documents/dotfiles
+
 ####### homebrew
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # brew update

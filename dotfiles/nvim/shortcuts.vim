@@ -46,10 +46,6 @@ function SetTabIndent()
   let ext = split(expand("%:p"), '\.')[-1]
   if ext == "py"
     set shiftwidth=4
-  elseif ext == "md"
-    set shiftwidth=4
-  elseif ext == "json"
-    set shiftwidth=4
   endif
 endfunction
 

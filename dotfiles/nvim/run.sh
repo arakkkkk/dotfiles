@@ -1,39 +1,26 @@
-EXTENTION=${1##*.}
 cd &(pwd)
-echo run $1
 echo ----------------------------------------
 echo
 
-# if [ "$1" == "Dockerfile" ]; then
-#   docker-compose build
-#   docker-compose up
-# elif [ "$1" == "docker-compose.yml" ]; then
-#   docker-compose up
-# elif [ ${EXTENTION} == "py" ]; then
-#   python $1
-# else
+if [[ $1 =~ .*/?([^\.]+)\.([^\.]+) ]]
+then
+  FILEPATH="${BASH_REMATCH[0]}"
+  FILENAME="${BASH_REMATCH[1]}"
+  EXTENSION="${BASH_REMATCH[2]}"
+
   if [ -e $(pwd)/run.sh ]; then
-    sh $(pwd)/run.sh
+    sh $(pwd)/run.sh $FILEPATH $FILENAME $EXTENSION
   elif [ -e $(pwd)/../run.sh ]; then
-    sh $(pwd)/../run.sh
+    sh $(pwd)/../run.sh $FILEPATH $FILENAME $EXTENSION
   elif [ -e $(pwd)/../../run.sh ]; then
-    sh $(pwd)/../../run.sh
+    sh $(pwd)/../../run.sh $FILEPATH $FILENAME $EXTENSION
   elif [ -e $(pwd)/../../../run.sh ]; then
-    sh $(pwd)/../../../run.sh
+    sh $(pwd)/../../../run.sh $FILEPATH $FILENAME $EXTENSION
   elif [ -e $(pwd)/../../../../run.sh ]; then
-    sh $(pwd)/../../../../run.sh
+    sh $(pwd)/../../../../run.sh $FILEPATH $FILENAME $EXTENSION
   elif [ -e $(pwd)/../../../../../run.sh ]; then
-    sh $(pwd)/../../../../../run.sh
-  elif [ -e $(pwd)/../../../../../../run.sh ]; then
-    sh $(pwd)/../../../../../../run.sh
+    sh $(pwd)/../../../../../run.sh $FILEPATH $FILENAME $EXTENSION
   else
     echo setting didnt detected
   fi
-# fi
-
-# python $(pwd)$1
-# docker-compose build
-# docker-compose up
-# docker-compose restart
-
-# exit 0
+fi

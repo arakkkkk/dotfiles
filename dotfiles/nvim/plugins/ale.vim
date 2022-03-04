@@ -1,7 +1,8 @@
 let g:ale_linters = {
     \ 'javascript': ['eslint', 'tsserver', 'jshint'],
     \ 'python': ["pyright"],
-    \ 'rust': ['analyzer', 'cargo', 'cspell', 'rls', 'rustc']
+    \ 'rust': ['analyzer', 'cargo', 'cspell', 'rls', 'rustc'],
+    \ 'go': ['bingo', 'gobuild', 'gofmt', 'golangci-lint', 'golint']
     \ }
 
 " 各ツールをFixerとして登録

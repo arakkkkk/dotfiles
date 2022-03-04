@@ -1,1063 +1,1805 @@
-cd79fb1ec1cdfc3a85c26edb800b1063|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|58|1|V|python
-	            modelsession_id=request.json["modelsession_id"]
-	            if "modelsession_id" in request.json.keys()
-	            else None,
-1b8d32cbc9085dd010537c8c70dc4956|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|53|13|v|python
-	request.json["modelsession_id"]
-83c7f3cf0ccabcdc0645107764ee13fd|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|51|1|V|python
-	        print("--------------------------")
-	        print(request.json["modelsession_id"])
-	        print(
-	            request.json["modelsession_id"]
-	            if "modelsession_id" in request.json.keys()
-	            else None,
-	        )
-b361ecb46d8db0afa5aef08893530177|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/models.py|52|9|v|python
-	gssmodel_id
-6dbb96beb6807e7fba9544bdd560839e|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/parameterestimation.tsx|72|35|V|typescriptreact
-	        const res_gssparam = await ApiHandler(res1);
-91e7e433e34c3b8843334c1467001cb7|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/parameterestimation.tsx|71|15|v|typescriptreact
-	res1
-3528579414912ea7816656ea7b96b29e|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/parameterestimation.tsx|80|15|v|typescriptreact
-	res2
-b817b2fedd9ed306555a6bfa61aa67a5|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/parameterestimation.tsx|82|15|v|typescriptreact
-	res_pe
-20939bea98cc0956ba8de3e0eac46978|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|22|1|V|python
-	        "id": model.id,
-698718fe2e44738b4c222aa3f90078f7|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/ApiHandler.tsx|4|22|V|typescriptreact
-	  if (response === null) {
-99d6c52e61f31fa2ebe9939e07a698f8|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/parameterestimation.tsx|83|11|V|typescriptreact
-	        con
-e8db2b86cbebdb1925c78bda33e95a27|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/parameterestimation.tsx|82|1|V|typescriptreact
-	        console.log(res_pe);
-7d10e297da63543ca76751207a77265e|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/parameterestimation.tsx|72|21|v|typescriptreact
-	rewe_pe
-822d4e7d54b6246026b98c9cd7059c7e|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|20|51|v|python
-	modelsession_id
-cb0dc4d33678afd2818d3b59d6a3c063|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|21|43|v|python
-	gssmoden_id
-a6abad5c0ff1faee62388fe9c3bf20bb|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|22|1|V|python
-	            contents = GssParam.list(gssmodel_id)
-5dd7a8390d2a7ecffb8b3b8acf2a5f7e|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|18|30|V|python
-	        modelsession_id = None
-1a53950607428a33bf16fc0ad5d16216|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|43|1|V|python
-	        contents = (
-	            model.query.filter_by(modelsession_id=modelsession_id)
-	            .order_by(desc(model.date))
-	            .all()
-	        )
-efdba9d12f3433066bf3713391969d07|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|47|9|V|python
-	    else:
-956b4543f077c3c979296f88a0fd8cb2|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|36|15|v|typescriptreact
-	gssparam_list
-1102d55f5c49a3ee375272e9865a1cc1|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|37|1|V|typescriptreact
-	        if (res !== null) {
-	          setError(res);
-	          return;
-	        }
-16ede54707e95bc3acd25ca90f7d16ee|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|58|1|V|typescriptreact
-	      if (res !== null) {
-	        setError(res);
-	        return;
-	      }
-<<<<<<< HEAD|undefined|undefined|undefined|undefined|undefined
-557572722b2352c6ef246ff8ea6a038d|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|41|1|V|typescriptreact
-	        setLoading(false);
-5239b34f62038b9277300ba02d587da3|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|41|37|v|python
-	.order_by(desc(model.date)).all()
-d642cd6afc40ce63ca754b89b4a750f3|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|84|30|V|typescriptreact
-	      console.log(res_gssparam);
-377ae3fd500fc74d4356fcf4d9d92e2e|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|37|35|V|typescriptreact
-	        console.log(gssparam_list);
-cf60103c0bc133b51acd96e46a47bd61|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|45|27|V|typescriptreact
-	        // console.log(gssparam_list.gssparams);
-6486dcc971bea8ccca684d38eb8b802f|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|45|13|v|python
-	.order_by(desc(model.date))
-1b1cc7f086b3f074da452bc3129981eb|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|41|53|v|python
-	query
-38808e26e8f697cec6749412593af8dc|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|43|1|V|python
-	        contents = (
-	            model.query.filter_by(gssmodel_id=gssmodel_id)
-	            .order_by(desc(model.date))
-	            .all()
-	        )
-96d27477c8dc759cc9bcdd5bcc8facbd|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|41|9|V|python
-	        contents = model.order_by(desc(model.date)).all()
-8c30fe584c8902767dee3be7c7d8157f|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|42|9|V|python
-	            model.query.filter_by(gssmodel_id=gssmodel_id)
-b68c44b125f3bdc62545b96057ec05fd|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/components/layouts/HeaderPE.tsx|31|14|V|typescriptreact
-	            }>
-dcc3c819049ddd95e5c33b0882e69442|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|48|22|V|python
-	        print(contents)
-1b1193dfb2050a279940f4d0308eb793|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/parameterestimation.tsx|55|32|V|typescriptreact
-	        if ("model_session" in query) {
-	          var model_session = await ModelSession.get(String(query.model_session));
-4650838d55038f54821bc36d091015eb|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/parameterestimation.tsx|55|14|v|typescriptreact
-	model_session
-7281a3b3e952b0e126c6c3d03f821779|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|20|43|V|python
-	            gssmodelsession = GssModelSession.get(request.json["modelsession_id"])
-edae4d1d05b322f3fd53933bda28e47c|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|21|29|V|python
-	            print(gssmodel_id)
-62e19b85b4d180d8d46b7ad2f2eb8b99|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|45|24|V|python
-	                =gssmodel_id)
-54b08ada3ef29b4dcf8a043ea85ebbcc|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|20|31|v|python
-	gssmodelsession
-4bc9e9e127ceb56672d32480d6cccc8b|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|18|42|V|python
-	        print(request.json["modelsession_id"])
-53e61336bb49ec978968786b07dea50b|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|122|56|v|typescriptreact
-	results
-a748cf78be67604e642e88afeaa60e9e|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|96|19|v|python
-	result_json
-8e325d3e64bf613d4adeef3ee366b645|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|96|23|V|python
-	    print(content.title)
-73c8d2ba59c96c5b1950c2e8d12ef39c|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|121|1|V|python
-	        result_json = {
-	            "condition": condition,
-	            "expdata": expdata,
-	            "results": result_liststr,
-	        }
-313be571fde57a8d3b16e88626f7cfac|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|112|1|V|python
-	        GssParam.update(request.json["gssparam_id"], {"result_json": "[]"})
-b4471dab15e797b88ee3a76113e717be|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|112|9|V|python
-	        result_liststr = route_geneticalgorithm(request, tool)
-c530bcdd63db8fec69401004b6d2ae4a|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|122|9|V|python
-	            "results": result_liststr,
-54e8103766b1d8df2b6476f0f832be0f|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|125|9|v|python
-	result_liststr
-6b1d44b481d739c28629dd7efa18243a|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|126|1|V|python
-	        GssParam.update(
-	            request.json["gssparam_id"], {"result_json": json.dumps(result_json)}
-	        )
-f8b134fa03e1a476eb4398bc49952927|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|134|13|V|python
-	        GssParam.update(request.json["gssparam_id"], {"result_json": None})
-02c230dd4f403306207db28f08402cb8|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|122|54|V|typescriptreact
-	                      console.log(gssparam.result_json);
-5c103c8d7bfbeff23414a79dc81ceb63|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|43|1|V|typescriptreact
-	      gssparams.data.gssparams = JSON.parse(gssparams.data.gssparams);
-04f0630174711c860bb74b1112333b30|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|44|44|V|typescriptreact
-	      console.log(gssparams.data.gssparams);
-e2b9bfeac18752b300e8b8589e03dbba|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|44|15|v|typescriptreact
-	gssparam
-1cb251ec0d568de6a929b520c4aed8d1|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|45|50|v|typescriptreact
-	text
-b61612f8f828344fb57e8b7f8f9f2c25|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|48|11|V|typescriptreact
-	        gssparams.data.gssparams[i] = JSON.parse(gssparams.data.gssparams[i]);
-24402a7bbb09bf1ac5ae6b71d06dee90|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|48|1|V|typescriptreact
-	        }
-	        catch{
+b18f2b44b7aa478e8471f45ca51e876e|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|174|11|V|css
+	  /* width: 100%; */
+95883c6bda8c4af661b2ec3a739ae8c1|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|175|11|V|css
+	  background-size: cover;
+ed2f1f1ecb0188d67ad4bc922122a9c7|file:///Users/Kouiti/local_file/lets/lets_proj/static/css/index.css|175|11|V|css
+	  box-sizing: border-box;
+602bd8ca8797372b4304037977845974|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/index.js|6|1|V|javascript
+	  window.location.href = "/movie/ja/comment/commentator?=interactiontask=" + e.id;
+d74a4531948f2d290a20f686248e043f|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/index.js|5|1|V|javascript
+	const navigate = (e) => {
+	  window.location.href = "/movie/ja/comment/commentator?=interactiontask=" + e.id;
+	};
+97ed270510b458e458eb9daa0f22cf03|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/topic.html|36|1|V|htmldjango
+	<script charset="utf-8">
+	  const navigate = (e) => {
+	    window.location.href = "/movie/ja/comment/commentator?=interactiontask=" + e.id;
+	  };
+	</script>
+a65280767c0e48ade55b98ec44b1c79a|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/commentator.html|12|1|V|htmldjango
+	<div class="container">
+0a3a0b592b9c285e050805307cee87c2|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/commentator.html|46|1|V|htmldjango
+	</div>
+13eb03d158f17194708d38acbc659fda|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/commentator.html|42|47|v|htmldjango
+	commentator
+075d8185706c41d8ee411321dc261254|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|69|1|V|python
+	    movierecord_id = request.GET.get("interactiontask")
+299e01a54801e5aa96ca9c5178ecf56e|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|69|5|v|python
+	movierecord_id
+d27bf58dd6322de8d6ffc0b0cf4a9cb8|file:///Users/Kouiti/local_file/lets/share/memo.md|10|85|V|markdown
+	[slide](https://docs.google.com/presentation/d/1wFon98JaJKBlMeEhboiI7OYBj4y92z08NG7nCoua-Eg/edit#slide=id.p49)<br>
+7e090e1477f3912e752f51d58c0d566d|file:///Users/Kouiti/local_file/lets/share/memo.md|3|1|V|markdown
+	# 3/3/22
 	
-	        }
-b9436c63f3a8624449de3a75f8a78d47|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|45|1|V|typescriptreact
-	        try{
+	## 概要
 	
-3653b8d2cb3f1f8dc4a41aeac0e56984|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|45|28|V|typescriptreact
-	        console.log(typeof gssparams.data.gssparams[i]);
-54f1277a59a481eceb44c48751837c55|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|45|53|V|typescriptreact
-	        if (typeof gssparams.data.gssparams[i] == "string") {
-53e94951e32af18646a6d444c92c568b|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|48|11|V|typescriptreact
-	          gssparams.data.gssparams[i] = JSON.parse(gssparams.data.gssparams[i]);
-4e1ddba1c31545ee09fb38ae1fd79346|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|49|9|V|typescriptreact
-	        }
-6ce07cc433aa6c695f89651322cde594|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|49|32|V|typescriptreact
-	      gssparams.data.gssparams[0] = JSON.parse(gssparams.data.gssparams[0]);
-70a6b333da0def1694bec0f978bb5f34|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|46|1|V|typescriptreact
-	          gssparams.data.gssparams[i].results = JSON.parse(gssparams.data.gssparams[i].results);
-83037ef8c5a5fb00058845cfb2494085|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|50|11|v|typescriptreact
-	gssparams.data.gssparams[0].results
-febc8a976c19f7231b0bae692c096576|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|49|1|V|typescriptreact
-	      console.log(gssparams.data.gssparams[0].result_json);
-	      gssparams.data.gssparams[0].result_json = JSON.parse(gssparams.data.gssparams[0].result_json);
-a89795ded3d3ad386d7e0e76325ec8a5|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/api/GssParam.tsx|46|13|v|typescriptreact
-	typeof gssparams.data.gssparams[i] == "string"
-cfd46dd709cbd6e467e76bfc02d6c9a2|file:///Users/kouiti/localfile/glycosim/dev-glycosim/models/GssParam/repository.py|111|41|V|python
-	        print("00000000000000000000000000")
-384e03ef189071589b9ae4bd4fa2ba35|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|119|23|v|python
-	GssParam
-f1819e7a442172a359f16d9a807322ac|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|120|1|V|python
-	        result_json["condition"] =  condition
-cd34f19e67aa3584ead280e169fa948f|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|122|1|V|python
-	            "expdata": expdata,
-	        }
-3f9178c25b78ed8bed19091bcb62e266|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|121|22|v|python
-	condition
-dd459a7b20004fe933bd503e2cb82cc1|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|120|1|V|python
-	        result_json["condition"] = condition
-	        result_json["exp_data"] = expdata
-a3a50555ba674f76feb30a702abd2341|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|112|1|V|python
-	        condition = {
-	            "tool": tool,
-	            "method": "geneticalgorithm",
-	            "max_iteration": request.json["max_iteration"],
-	            "estimation_times": request.json["estimation_times"],
-	        }
-	        expdata = (request.json["exp_data"],)
-8dfd5d2140cbe4b6560ed05f9bbcd50c|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|127|1|V|python
-	        result_json["results"] = route_geneticalgorithm(request, tool)
-5e5106d05b6120d4cdc051a7ab9aadff|file:///Users/kouiti/localfile/glycosim/dev-glycosim/module/model/gssparams.py|122|34|v|python
-	route_geneticalgorithm(request, tool)
-9e925e9341b490bfd3b4c4ca3b0c1ef2|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|126|30|v|typescriptreact
-	this
-a8cfde6331bd59eb2ac96f8911c4b666|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|126|30|v|typescriptreact
-	object
-10ae9fc7d453b0dd525d0edf2ede7961|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|126|38|v|typescriptreact
-	list
-f0cd7098ba6191cd5e3f9064d4772678|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|124|31|v|typescriptreact
-	gssparam.result_json.results
-65406e84e90e2858aec6517d2e0b1c26|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|128|25|V|typescriptreact
-	                          return <>filed</>;
-d2bb39ca67192ea16f1424a2cae257f0|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|124|27|V|typescriptreact
-	                        return <>filed</>;
-	                      }
-fa6b6ece1c829305f6b945e0dcaf179a|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|123|26|v|typescriptreact
-	gssparam.result_json.results === null
-82ffbf429485836b4a396e0402269bb2|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|125|1|V|typescriptreact
-	                      }else if(gssparam.result_json.results.length == 0){
-b1419b563986ee2ecde7f88043e2f4db|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|127|23|V|typescriptreact
-	                      }
-2dc5ca5b845eacf1615d44d9f5488679|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|132|23|V|typescriptreact
-	                          return <>running</>;
-172778adcac3e069c83f81f4ddc29ccb|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|134|27|V|typescriptreact
-	                          return <>ok</>;
-35f08a558bfb5e64a51fe9e7d746633a|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|131|27|V|typescriptreact
-	                      switch (gssparam.result_json.results) {
-	                        case null:
-	                        case typeof(list):
-	                        default:
-	                      }
-=======|undefined|undefined|undefined|undefined|undefined
-b7532d953f6621ccaf4af2a7db044aa1|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|45|1|V|javascript
-	      if (x < processes[processes.length - 1].x) {
-	        y += 1;
-	      }
-67a9999e5d28478dfcb9596bcce718ac|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|51|1|V|javascript
-	      x += 1;
-4668e2378d7ff3a6fafc2cd49a9d24f1|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|55|15|V|javascript
-	      y = 1000;
-d20f256e51c4d7d29a4ece5d6599b036|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|35|1|V|javascript
-	    console.log(x, y);
-	    console.log(map_vector[y][x].data.id);
-33b465eeff068b15082454e853a7bc27|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|41|54|V|javascript
-	      console.log("added:", next.data.id, "\tin", x, y);
-e24f9b4fb10216d245e466ef2f4dff1b|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|36|1|V|javascript
-	    console.log(map_vector[y][x].data.id);
-984b8640c93ba015e3e08873e6c63ddf|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|38|1|V|javascript
-	      processes.pop();
-e65fa06de49c941deb47a6733b937c4a|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|50|19|V|javascript
-	      processes.push({ x: x, y: y });
-2dda4de77406adcaf36cf9a84161a46f|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|36|7|V|javascript
-	    processes.push({ x: x, y: y });
-7272a0b51212ba175169e2d0341b756b|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|42|1|V|javascript
-	      x = processes[processes.length - 1].x;
-	      y = processes[processes.length - 1].y;
-397896d4da97b296c94d1ea4b7f11f4b|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|31|1|V|javascript
-	  let processes = [{ x: 0, y: 0 }];
-99b2069cfdc9fcc7e3f6ef206184dd8a|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|31|3|V|javascript
-	  let processes = [];
-826b1530321793928d56c8e45f5415b5|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|49|4|V|javascript
-		for
-b61c02ef30349770ad10b41bdc13db26|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|36|17|v|javascript
-	map_json
-408fd49be7ad48ef904f774431432792|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|55|26|V|javascript
-	      map_vector[y].push(next);
-8d2b1ea217bc465e22cfa0526b00bee6|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|53|21|v|javascript
-	[map_vector.length - 1]
-76720807401a50e06d5f14b1c73ba83c|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|40|7|V|javascript
-	    let next = next_node(nodes, edges, map_vector[y][x]);
-a8982eb2a988054aa4d8d792dd074cca|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|39|7|v|javascript
-	catch
-d1cc652b86b9858fe78058511716e92f|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|39|7|v|javascript
-	except
-0fa679fe863e8403039ca067881f253c|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|39|11|V|javascript
-	    } catch {
-68539f982bd3d912b765c4948dc25df1|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|38|14|V|javascript
-	      let next = next_node(nodes, edges, map_vector[y][x]);
-b747a02870a45acf1757b700c8a17e34|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|39|1|V|javascript
-	      processes.pop();
-	      continue;
-559b1aa230bc81bf56b99f2ec8e5ff56|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|44|5|V|javascript
-	    	/* handle error */
-d19907f82b0aadcbb015b24f52e2977e|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|41|5|V|javascript
-	    	
-f14022100e11db783adcf50f40383824|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|37|7|V|javascript
-	    try {
-	    } catch {
-	    }
-2973c6368e54293e40b4e7a829f182bb|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|35|1|V|javascript
-	    console.log(x, y);
-	    console.log(map_vector);
-e2459eb1c6c2f961b95a30e9bceaa7ec|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|78|7|V|javascript
-	    console.log(r.data.id);
-40db1127c0845bf97b03545a3ff1f3b2|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|75|1|V|javascript
-	    for (let c of r) {
-	      console.log(c.data.id);
-	    }
-8b7a7802aef700011620000358c479f0|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|36|7|V|javascript
-	    console.log(map_vector);
-ae6071197c6582fdcd168473af2eb0ec|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|69|1|V|javascript
-	  // console.log("map_json:", map_json);
-	  // console.log("nodes:", nodes);
-	  // console.log("edges:", edges);
-	  // console.log("map_vector:", map_vector);
-f24dc4b2d1438cd1f5c62e37e6ed3af8|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|35|22|V|javascript
-	    console.log(x, y);
-8fae843ede805405f34f5fcc014faa3e|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|4|1|V|javascript
-	      // console.log(edges[j].data.source, node.data.id);
-	      // console.log(edges[j].data.target, nodes[i].data.id);
-90919ecace03f8b85d6b75f213aac61c|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|71|19|V|javascript
-	    console.log(row);
-ca15fd43dfaeb80eb8c125735e0479b0|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|69|32|v|javascript
-	nodes
-6395420daaa356fb478d6ae3ff4938e5|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|69|26|V|javascript
-	  console.log(map_vector);
-1ad1356895d55f9a2c0c920ce5440742|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/create_ttl.py|198|21|V|python
-	                print
-5080104f40fe302b4651f45ea3f4bfe9|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/create_ttl.py|226|27|V|python
-	                print(row[13])
-d59fa100fd37c091378da231fb1737e8|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/create_ttl.py|181|18|V|python
-	                if
-652ea86c8ae25e62bab978c4484b60fd|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/create_ttl.py|171|1|V|python
-	            if (
-	                row[0] == "-"
-	                or row[1] == "-"
-	                or row[0] == ""
-	                or row[1] == ""
-	                or "Missing" in row[0]
-	                or "Missing" in row[1]
-	                or "unassigned" in row[8]
-	                or "REACT_" in row[13]
-	            ):
-	                continue
-9e5fd33b7643181cfaa0e4d39692a9db|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/create_ttl.py|184|1|V|python
-	                or row[1] == "-"
-	                or row[0] == ""
-	                or row[1] == ""
-	                or "Missing" in row[0]
-	                or "Missing" in row[1]
-	                or "unassigned" in row[8]
-	                or "REACT_" in row[13]
-ebe179ab73d1ba6a4e0542a4c8968157|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/create_ttl.py|183|14|V|python
-	                row[0] == "-"
-	            ):
-987322b8f8348356c196942178b24406|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/create_ttl.py|230|1|V|python
-	                if "MI" in row[13] and "MINT" not in row[13]:
-	                    print(row[13])
-9267ed535712103f19a606b366cedf53|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/create_ttl.py|183|1|V|python
-	                "psi-mi" in row[]
-86473fd1cd06935c2120c90d797594a0|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/create_ttl.py|185|17|V|python
-	                or 
-327ce95ded6f7aaa5f03b9c8311a3438|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/query_all.py|125|1|V|python
-	            return
-faa9789019a4c0253e8c7cbb5e700b2b|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|76|24|V|javascript
-	        console.log(col.data.id, node.data.id);
-d15dd3b3bc5b883535d4d8177b178de8|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|136|14|v|javascript
-	preset
-ed394abb5c29e38923dd3feda5787308|file:///Users/kouiti/localfile/lets/lets/lets_proj/movie/ja/templates/comment/map.html|28|1|V|htmldjango
-	<style type="text/css" media="screen">
-	  #cy {
-	    height: 500px;
-	  }
-	</style>
-4e8b699bfad9128f12b446732745f0c6|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|147|1|V|javascript
-	  cy.center();
-993c59ac30abd7639933a2759403b1a2|file:///Users/kouiti/localfile/lets/lets/lets_proj/movie/ja/templates/comment/map.html|26|17|V|htmldjango
-	  console.log(map_json)
-688821bb305433462b22fe3eaab7d273|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|135|1|V|javascript
-	    layout: {
-	      name: "preset"
-	      // name: "breadthfirst"
-	      // name: "grid"
-	      // name: "circle"
-	      // name: "concentric"
-	      // cose: "cose"
-	      // cose: layout
-	    },
-a6d55efe3155b89da26025af97e162a0|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|147|1|V|javascript
-	  cy.fit();
-	  cy.pan(100, 100);
-0c1a1f22dc419f5f015dc3683d990f97|file:///Users/kouiti/localfile/lets/lets/lets_proj/movie/ja/templates/comment/map.html|29|1|V|htmldjango
-	#cy{
-	    height: 500px
-	}
-<<<<<<< HEAD|undefined|undefined|undefined|undefined|undefined
-	```
-	## RESULTS
-	```
-	{"head": {"vars": ["class"]}, "results": {"bindings": [{"class": {"type": "uri", "value": "http://purl.obolibrary.org/obo/EUPATH_0000591"}}, {"class": {"type": "uri", "value": "http://biomodels.net/SBO/SBO_0000344"}}, {"class": {"type": "uri", "value": "http://biomodels.net/SBO/SBO_0000241"}}, {"class": {"type": "uri", "value": "http://purl.obolibrary.org/obo/NCIT_C93638"}}, {"class": {"type": "uri", "value": "http://rdf.glycoinfo.org/PSICQUIC/Ontology#InteractionId"}}]}}
-	```
-f11b0f2efaad5c2ed1ce4de358c32168|file:///Users/Kouiti/dotfiles/script/init.sh|32|1|V|sh
-	ln -fsn ${HOME}/dotfiles/dotfiles/Vivaldi/Default/Sessions ${HOME}/Library/Application\ Support/Vivaldi/Default/Sessions
-a9c4b6c9fbd990849d1f128dfc4ed3e7|file:///Users/Kouiti/dotfiles/script/init.sh|33|113|v|sh
-	Sessions
-c3ae06f70363066574dc6f52338df7f5|file:///Users/Kouiti/dotfiles/script/init.sh|34|26|v|sh
-	dotfiles
-9e81e7b963c71363e2fb3eefcfecfc0e|file:///Users/Kouiti/dotfiles/script/init.sh|34|44|v|sh
-	shared
-ce208567fc8dc085fac5997e4d0b86bd|file:///Users/Kouiti/dotfiles/script/init.sh|34|1|V|sh
-	ln -fsn ${HOME}/dotfiles ${HOME}/Documents/dotfiles
-ca3c99e0ccda07407c08cb88968b3dc6|file:///Users/Kouiti/dotfiles/script/init.sh|29|1|V|sh
-	ln -fsn ${HOME}/dotfiles/dotfiles/Fonts/Source\ Code\ Pro for Powerline.otf ${HOME}/Library/Fonts/Source\ Code\ Pro\ for\ Powerline.otf
-	ln -fsn ${HOME}/dotfiles/dotfiles/vscode/settings.json ${HOME}/Library/Application\ Support/Code/User/settings.json
-	ln -fsn ${HOME}/dotfiles/dotfiles/vscode/keybindings.json ${HOME}/Library/Application\ Support/Code/User/keybindings.json
-	ln -fsn ${HOME}/dotfiles/dotfiles/Vivaldi/Default/Sessions ${HOME}/Library/Application\ Support/Vivaldi/Default/Sessions
+	## 資料
 	
-	ln -fsn ${HOME}/dotfiles ${HOME}/Documents/dotfiles
+	[slide](https://drive.google.com/file/d/1DM8W7x_wtBUOOWYF3hvfEP6usNcQpBOC/view?usp=sharing)<br>
 	
-c28aeff94fb07021fd20d9509ca200b4|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|230|1|V|json
-	        {
-	            "description": "support control+h",
-	            "manipulators": [
-	                {
-	                    "from": {
-	                        "key_code": "h",
-	                        "modifiers": {
-	                            "mandatory": [
-	                                "left_control"
-	                            ],
-	                            "optional": [
-	                                "any"
-	                            ]
-	                        }
-	                    },
-	                    "to": [
-	                        {
-	                            "key_code": "delete_or_backspace"
-	                        }
-	                    ],
-	                    "type": "basic",
-	                    "conditions": [
-	                        {
-	                            "type": "frontmost_application_unless",
-	                            "bundle_identifiers": [
-	                                "com.googlecode.iterm2",
-	                                "com.microsoft.VSCode",
-	                                "com.vivaldi.Vivaldi",
-	                                "com.google.Chrome"
-	                            ]
-	                        }
-	                    ]
-	                }
-	            ]
-	        },
-21e4adb93c781ca547915a9a33f786b4|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|294|1|V|json
-	                                "com.microsoft.VSCode"
-a619931f7a45af51b117acd7fe7b2992|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|299|1|V|json
-	                {
-	                    "from": {
-	                        "key_code": "e",
-	                        "modifiers": {
-	                            "mandatory": [
-	                                "left_control"
-	                            ],
-	                            "optional": [
-	                                "any"
-	                            ]
-	                        }
-	                    },
-	                    "to": [
-	                        {
-	                            "key_code": "right_arrow",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        }
-	                    ],
-	                    "type": "basic",
-	                    "conditions": [
-	                        {
-	                            "type": "frontmost_application_unless",
-	                            "bundle_identifiers": [
-	                                "com.googlecode.iterm2",
-	                                "com.microsoft.VSCode"
-	                            ]
-	                        }
-	                    ]
-	                }
-1de9740b7bad2d4acd242977cdd43b17|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|247|42|v|json
-	delete_or_backspace
-b7998d306e8946d16a01c906b778473a|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|330|1|V|json
-	                {
-	                    "from": {
-	                        "key_code": "u",
-	                        "modifiers": {
-	                            "mandatory": [
-	                                "left_control"
-	                            ],
-	                            "optional": [
-	                                "any"
-	                            ]
-	                        }
-	                    },
-	                    "to": [
-	                        {
-	                            "key_code": "delete_or_backspace",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        }
-	                    ],
-	                    "type": "basic",
-	                    "conditions": [
-	                        {
-	                            "type": "frontmost_application_unless",
-	                            "bundle_identifiers": [
-	                                "com.googlecode.iterm2",
-	                                "com.microsoft.VSCode"
-	                            ]
-	                        }
-	                    ]
-	                }
-70f0d0081eb7dc4c8093f252cb7cf503|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|361|1|V|json
-	                {
-	                    "from": {
-	                        "key_code": "u",
-	                        "modifiers": {
-	                            "mandatory": [
-	                                "left_control"
-	                            ],
-	                            "optional": [
-	                                "any"
-	                            ]
-	                        }
-	                    },
-	                    "to": [
-	                        {
-	                            "key_code": "delete_or_backspace",
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-	                        }
-	                    ],
-	                    "type": "basic",
-	                    "conditions": [
-	                        {
-	                            "type": "frontmost_application_unless",
-	                            "bundle_identifiers": [
-	                                "com.googlecode.iterm2",
-	                                "com.microsoft.VSCode"
-	                            ]
-	                        }
-	                    ]
-	                },
-a5152794e9c4bd4571b68dc8df1ac2f7|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|377|34|v|json
-	left_command
-5dccf6522f71b1bbe5b0037e36b14dad|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|407|1|V|json
-	                            "modifiers": [
-	                                "left_command"
-	                            ]
-ff108c2820a5bc8b7d437836e3242dfe|file:///Users/Kouiti/.ssh/fumidai|50|1|V|
-	---------------------------------------------------
-	創価大学理工学研究科　生命理学専攻
-	荒川康一
-	Soka University
-	Koichi Arakawa
-3b40416793db96ca1ecd0e5757d3faf0|file:///Users/Kouiti/.ssh/fumidai|1|1|V|
-	-----BEGIN OPENSSH PRIVATE KEY-----
-	b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAACFwAAAAdzc2gtcn
-	NhAAAAAwEAAQAAAgEA7W2SmBeme9yI3xz7BO5b2wGFTKbYJxYgm8QJast6IOidtI7NrnbU
-	zK1erSEIJJrtVEhsUnJcozEOw2/W9l/dmvSxbCgjamTDtY5BdE61+ajaPgQhSs2yL2wMa0
-	N9dLC7rYzk+VRIJuWYqB/f/Ngwp3QiaJsvYZ9xJorHaSyYwIudAu1dXeT+rXnUhFWkqRQx
-	LN2W7ikWq/HGy9jCEXCTqtCQ9+kFs78MvXS7qHlbxw7F4EAdRJITV8wvurGmOpHCTHakHX
-	vxL5a8lr1PWvIotCGVZolPojNsyz3a49+57wl3R+1G+T91L424P2xVxTJivOQQu5GIUmWa
-	FGtwhhrv+1n2ZK6NAi3p9QLvxfePcunR8qe8xK8lAa/BWrJour1is+jrMgZeoKwPMHojF9
-	0PO3MZf12iqAKF3/msJTsH63m6k83Udi3UoAafECRBRimrvuU6HphR474MqP2iPbRuSKsf
-	Fb8ple6GIYtBz7O4iK8UX/WpkQZ1YD353Tdk3IaDSkxZQMS4/r+wjjA6pM//ZRp2O8t7aJ
-	bffWL+Kq46FDcMWgpFN3LuZzpyMa7+rcnFfqqPvZWCkMwbbWCkJoelm5TxAz0AZQpZrMlW
-	a/QlCmx4PdmwDoD9zMCyuGCA2EydMHzz1dYWXlTSAropZjVxwyZJVVdSZimZN4toQHLpbK
-	cAAAdY7Y6W0+2OltMAAAAHc3NoLXJzYQAAAgEA7W2SmBeme9yI3xz7BO5b2wGFTKbYJxYg
-	m8QJast6IOidtI7NrnbUzK1erSEIJJrtVEhsUnJcozEOw2/W9l/dmvSxbCgjamTDtY5BdE
-	61+ajaPgQhSs2yL2wMa0N9dLC7rYzk+VRIJuWYqB/f/Ngwp3QiaJsvYZ9xJorHaSyYwIud
-	Au1dXeT+rXnUhFWkqRQxLN2W7ikWq/HGy9jCEXCTqtCQ9+kFs78MvXS7qHlbxw7F4EAdRJ
-	ITV8wvurGmOpHCTHakHXvxL5a8lr1PWvIotCGVZolPojNsyz3a49+57wl3R+1G+T91L424
-	P2xVxTJivOQQu5GIUmWaFGtwhhrv+1n2ZK6NAi3p9QLvxfePcunR8qe8xK8lAa/BWrJour
-	1is+jrMgZeoKwPMHojF90PO3MZf12iqAKF3/msJTsH63m6k83Udi3UoAafECRBRimrvuU6
-	HphR474MqP2iPbRuSKsfFb8ple6GIYtBz7O4iK8UX/WpkQZ1YD353Tdk3IaDSkxZQMS4/r
-	+wjjA6pM//ZRp2O8t7aJbffWL+Kq46FDcMWgpFN3LuZzpyMa7+rcnFfqqPvZWCkMwbbWCk
-	Joelm5TxAz0AZQpZrMlWa/QlCmx4PdmwDoD9zMCyuGCA2EydMHzz1dYWXlTSAropZjVxwy
-	ZJVVdSZimZN4toQHLpbKcAAAADAQABAAACACtblymvJ/f2jggwgqaj4KJd5Lnavh5lLA9F
-	/XJDNkpMMICIk4cIrFO0VVXIcnQ81ppNn3pu5/vlOYz3H4ped1mU1dGqgs0rGZJOKCXVOe
-	Ydr70jg/DlH2UJljsAWCi3HY7T6/ycJ5Dy3K3XJFBIKppp2t6/eCebtk4TidbrDfobhNDE
-	CAjdiKSlWunPugImbdSDosxbNIix3lvbeZU1ucG31MFxDFmGygzPBHX/s4Lmb7xD+RRMmL
-	uvzgeJ6ZFIjPLpt46q06CdJlNgvt0c29IJT/8plCFKwtNauF5kvM+qKt43tn5N2FiWyM7M
-	Od2JFf7opyWZrgteAoU4GZRj1u71slmgoyEgDOzMP7Ka51M970aIoPLtC1SHn1IE01xoBZ
-	xCQWJFzjdEYFs/+HvjBfp+6doRtx7n1UdHXp6jlK5y1lJfRPkU/Cx4jnevlHOKJK6CQVC0
-	8mZyQ7msBGc0NF/rqpM9KlZNU3vmCagAUiXlBDgk81tAJCHudK61cK8SWLAJ7LHIh7AVnX
-	WPsDG4aWzLa0+sSs/lt2ci8dwQDEXsS9d+Aa7yQYGSugB7tSc1OKXzGg+BEPcfoHaO7YWh
-	XZiADITsGVDB85g3UsEJ0POm3hGasPzvxGixqEan701PkjuLmmUmJ96f9FOKVW1biXtLc2
-	zcGKOFxWDsc4X2g8QBAAABAQDGWWaXmoGq+urUl40/L9zpuZ726Ekbf/yjeLoF8u3BvzJG
-	K+4j+5SFha4yDa8j6jsjxyvF43gdlSEIkJe9LZx7rc+pkvdQWXDcyFElRZJgMWd0DRYUif
-	GtTuU7z3fMbV6LMLRMUmGcf9ZWvTIAotSmO+QF/LdN0/myIbxvapSpMW5PMxAsK5n9Bk8F
-	a04pQ4oHtwAwQraoFJOTyJvc2YSdoS319F5MsFTyI503t1Q3zNG70s+6DGLHpwkLH+X4OX
-	wdwgs7LRZwk1BXitclvQuQ6VlS+djtIb5zTdrdzgqYB6VwcoE9Cw2KwXZ/LGDo3Z1HXmmh
-	N9TvTob0waoc1Xm4AAABAQD43v2OXm0OzbshF1+NX5j/4yS10dSrxt/Bd3TIoA5kU0olpa
-	zLq4tjrADoQ64QMnZiP9b4l/FfhMvpDjaKoazjaOMYP7SPlKEeV8kBvp137CzHOEOHe7Ee
-	Ea4rgWywO4fri/5dePcUG3oemK14mEnpY2mD09zk/UFa0/5eNyg5pkclz0Ita5PSNyfmES
-	7mfhkPvghCsn2iHbsLonMosYFsEXECWvQ7xzTmtk61DsGjbmfPGW0dG4ImPFAqdHgrZI/n
-	zWmGPpEH4wuamQm4qNI6Sh7eyohs9JFqE6/5ma8JTzST9BYFHLbbW8mHUZ7pcJsGg1Al/z
-	u+0gXBxsRJEEYpAAABAQD0OqsrNAVPaJ1HkTzGuSGsRlLo2/lL9g5cETil53LzBxuP/C7U
-	W4fhNVU1uooRRYzVNNhnaYCVkS7U8KCcIsdTIwiMAx+F1o2F0eHfK6lorI/qVPVI5goj3q
-	kHj0sDm7v0vY2iFYJIaRZzYwPmX8UfJLPaUOhraFU/wU+SsFiDdOsjL7u9xgvXR+CIU950
-	j49cV8r8lPpYiVsalpq7bhe+R34KHVKIQXe2ZTrPuGqPEg8Tlx0813sgk1hu6WxUp9nCQD
-	4mXfWmpfv8iYaVdA9NLkg0VqTdP3fJQLzC1vaidXJfoZ2UdiEljGUI5aVk15lNUdI1UG+V
-	tfBhJpErAlZPAAAAH2tvdWl0aUBraW5vc2hpdGFsYWJzLWlNYWMubG9jYWwBAgM=
-	-----END OPENSSH PRIVATE KEY-----
-1465bac1da2e5615d06ace0c0197d46f|file:///Users/Kouiti/.ssh/id_rsa.pub|1|1|V|
-	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFDcLjJw4gGbgpBUigdFdg0E+FVaF65rt/Dtnwi9R9XSevG/Aa0YaoMz80AX/5ZAWdehukUsQmYbgw9jGYrGhHpsVJ9XJRdoW7p1/c/Vm/bBMlskT7IhRtrZvtyeBqP4iNVSwDqeIX0jFUaxMHxCQQG2X3Y4MqobedDNEB3mfr+do6ivhzvrQAU2jO0olCjmuywBY1QVPFzaEjNqTNmvMw3cbr2KKsczOBDzR+QgdyZ7imXu/kyMi+GTwfogHxBnZxbFo8YK+xfxCSUSEZJMYavGez0FRgtkqlp2+uxrFxMQQgXud+gJFrENpuJOv2L8Ta5ONAt8/eyFFetQ95gEViGfNTFWPDk843bN7fPBGiixxyYFCyQYzfl2nD0LeiCXYCkLGK3dHd9N0n0ykCRHTzNzXmPrWNxNNj1vfpx9VEzDn80HXr5CiLjUNwIOwzfo1Sez90u67RPYy54WASoabhLrtiIPQGVIm4967iz0DxDSCyTQtuvPFDG1OT7dFLK7E= Kouiti@KinoshitaLabnoMacBook-Pro.local
-75cdfc6de93599c0e40a227668378722|file:///Users/Kouiti/.ssh/id_rsa.pub|1|584|V|
-=======|undefined|undefined|undefined|undefined|undefined
-7afc1b4dbbb6afb4eade033ad51ee162|file:///Users/kouiti/localfile/lets/lets/lets_proj/movie/ja/templates/comment/map.html|31|10|V|htmldjango
-	  width: 500px;
-bf18e2f234e87c8984db05aa8b8ef69a|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|101|11|V|javascript
-	    style: cytoscape
-	      .stylesheet()
-	      .selector("node")
-	      .css({
-	        height: 80,
-	        width: 80,
-	        "background-fit": "cover",
-	        "background-color": "#fff",
-	        "border-color": "#000",
-	        "border-width": 2,
-	        "border-opacity": 0.5,
-	        "text-valign": "bottom",
-	        "font-size": "10px",
-	        "text-halign": "center",
-	        "text-wrap": "wrap",
-	        shape: "roundrectangle"
-	      })
-	      .selector(".eating")
-	      .css({
-	        "border-color": "red"
-	      })
-	      .selector(".eater")
-	      .css({
-	        "border-width": 9
-	      })
-	      .selector("edge")
-	      .css({
-	        "curve-style": "bezier",
-	        width: 9,
-	        "target-arrow-shape": "triangle",
-	        "line-color": "#ffaaaa",
-	        "target-arrow-color": "#ffaaaa"
-	      }),
-	
-	    layout: {
-	      // name: "preset"
-	      // name: "breadthfirst"
-	      name: "grid"
-	      // name: "circle"
-	      // name: "concentric"
-	      // cose: "cose"
-	      // cose: layout
-	    },
-28dd20e8b7d42e2cd457f6c70b76ba05|file:///Users/kouiti/localfile/lets/lets/lets_proj/movie/ja/templates/comment/map.html|28|1|V|htmldjango
-	<style>
-	#cy{
-	  height: 500px;
-	}
-	<.style>
-27ac2b919c49d52e28d172971be237ee|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|142|7|V|javascript
-	      cose: layout
-59e6c336208f91d1a9596c287fa454f0|file:///Users/kouiti/localfile/lets/lets/lets_proj/movie/ja/templates/comment/map.html|18|21|v|htmldjango
-	 style="height=500px;"
-d53ca117c024d7d1571a07aed7e40aa1|file:///Users/kouiti/localfile/lets/lets/lets_proj/movie/ja/templates/comment/map.html|29|1|V|htmldjango
-	.cy{
-	  height: 500px !important;
-	}
-0c3ff9a4f7380a48a21bad9b82ec843a|file:///Users/kouiti/localfile/lets/lets/lets_proj/movie/ja/templates/comment/map.html|28|1|V|htmldjango
-	<style>
-	<.style>
-b326b5062b2f0e69046810717534cb09|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|135|21|v|javascript
-	true
-68934a3e9455fa72420237eb05902327|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|140|15|v|javascript
-	false
-46ac8f309fb0ea60f03bb34b157d6feb|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|98|5|V|javascript
-	    boxSelectionEnabled: false,
-2774b320020b9686c5e3ad4d6120bc15|file:///Users/kouiti/localfile/lets/lets/lets_proj/static/js/movie/map.js|98|5|V|javascript
-	    autounselectify: true,
-db6ec7c8c13519432a806e2c766a2409|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/owl/create_owl.py|9|23|V|python
-	sys.path.append("/Users/kouiti/localfile/glycovid/glycovid_PSIQUIC")
-29c4e52b07ca1f66c445c38da00bd2b7|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/owl/create_owl.py|9|1|V|python
-	# p prettier ignored
-	sys.path.append("/Users/kouiti/localfile/glycovid/glycovid_PSIQUIC")
-6a504d6818ef005624dec392ab0b5f03|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/owl/create_owl.py|9|17|V|python
-	# prettier ignore
-8c585395b2c7c8002ade7e0efcdfcf0f|file:///Users/kouiti/localfile/glycovid/glycovid_PSIQUIC/owl/create_owl.py|9|1|V|python
-	# Ignore artifacts:
-	sys.path.append("/Users/kouiti/localfile/glycovid/glycovid_PSIQUIC")
-75cdfc6de93599c0e40a227668378722|file:///Users/kouiti/.ssh/id_rsa.pub|1|1|V|
->>>>>>> 8ec72eccdea4392a9e628ed4c2769017d5be5d5b|undefined|undefined|undefined|undefined|undefined
-	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJYfP27O8xI3h2HLR+kbQi7McGVvVmZ6al3k9pB5ijaU964dbi1kFuhqTR0masDTLzaq8uXqOQ36EXTjhTx5Y07k8NtX/FnZqE49N5bc0B9QtFvFXwHRKfJgD4NjHMMdij38eJmk9CuOr3mFAqAgQeyhtYLzA6l82Vor4hP2O1qKmrgdViQp3nvLomSO6s5E3MgmZwrBpCMMsTrsE4iLV1audAGOeJevwWtihZMCWH8jagyJJ7GQVg1aqv1uU5bA/B9EB8enNLq00UqxQtGi8sTBao2sow9/Iw1N57YOkPfr3o/VrglDm0Kj/F0//Z0ib7x5JarQoKIXYbKEcu2j00IPGp6znytQsYW6muo8iulXP08/D25FknHBm+LAtOvOTKuEBmqQFIIuDTYPcuWN872ZJqKW3+ZeQHDH5CEsAa+nEwpjYitWqqW15bPReDocM3qTEC4gD5PtLwDMQVGOwxKPCddWXHAsZleZ0Sh2PxTlM1Knw6mY5mZzApieF8QhM= kouiti@kinoshitalabs-iMac.local
-<<<<<<< HEAD|undefined|undefined|undefined|undefined|undefined
-e961af2170255838257898cf7cd40928|file:///Users/Kouiti/.ssh/config|19|1|V|sshconfig
-	# gpu-glycosim
-	Host gpu-glycosim
-	  # HostName 172.23.142.199
-	  HostName 150.37.132.24
-	  User kinoshita
-	  Port 22
-	
-8128fcc068140decac5fc6100793df0d|file:///Users/Kouiti/.ssh/authorized_keys|1|573|V|
-	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCnWuFhZg/m9ZktafwcmcfYFEAlBFIpxp9W+zv1a+B1OJ2FpLtl6QrAfJsRfyJunTCiyG6EvkeGKJoT4Hqfhh1Ey5lC84fBzlzGDU1rcuIv1AUf7o1XxoAOJ4tWZzpCdH+CdQRwRvGBhmiPD2ToKL82KLS0jg2/MbxJVBeoYPfUxQBzytE1aQ3MZfM9XYmvIg6oKZwSA8zWDIFaeCnSBdHQYCg73S/8ccns4SeF+I8ImGfy9iaj4kZkwEfdUHv++nuixhogY6AZljwloLrOJC52iyPyXpTrOQ2vmpfaJI3OEC5IPrKv6Nlgw3+OgWdsVOnS43Q/btparrrbKAXjK1ontESbcOcpt8drx9l0hZLkMVdoaR+YecQDQ9JI/stUOAhCEQ4QKohODJEJmXWbFfAJ54oTToAZmFJ/ZCsC24C48PEqalr+lHPpBd4Q/5V8B5GSq2pRA344unBNjRz9OtzM5xLVCSf0Lo24s0c0Rlj3uUjE7tkmrG3gRaPQaHwVdRU= ubuntu@ik1-409-36910
-a27e814e511d4a4f2d69f03c5570e3a8|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|21|1|V|yaml
-	
-	      # - VIRTUAL_HOST=maman2030-himeji.com,www.maman2030-himeji.com # nginx-proxyのホスト設定 ※本番ではlocalhost部分を「example.com,www.example.com」等にする
-	      # - LETSENCRYPT_HOST=maman2030-himeji.com,www.maman2030-himeji.com # Let's Encryptのホスト設定 ※本番ではlocalhost部分を「example.com,www.example.com」等にする
-	      # - LETSENCRYPT_EMAIL=bdkouiti5013@gmail.com # Let's Encryptのメール設定
-	      # - LETSENCRYPT_TEST=false # Let's Encryptのテストかどうかのフラグ 本番ではfalseにする (指定しないとテスト扱いになる)
-199b7847b38e82a05545daf62f3319ab|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.prod.yml|15|1|V|yaml
-	      # - VIRTUAL_HOST=localhost
-	      # - LETSENCRYPT_HOST=localhost
-74018e3eabc3d46b4d24c9ab74f0d46c|file:///Users/Kouiti/local_file/maman-homepage/Makefile|1|1|V|make
-	ba:
-		sudo docker-compose -f ./webapp/docker-compose.yml build
-fc866f03cf4008751c8fbcd15d257889|file:///Users/Kouiti/local_file/maman-homepage/Makefile|2|1|V|make
-		sudo docker-compose -f ./webapp/docker-compose.yml build
-b6920d9083c8e76685bcc8db34b8c9bb|file:///Users/Kouiti/local_file/maman-homepage/Makefile|3|27|v|make
-	webapp
-f8d60b565219c59f713d42ee656e4839|file:///Users/Kouiti/local_file/maman-homepage/.gitignore|3|1|V|
-	proxy/certs/*
-5c99e9c56c11bc780a27097694149cba|file:///Users/Kouiti/local_file/maman-homepage/.gitignore|3|7|v|
-	certs
-c8cb30201d45b1a5a05b0b61d177ea03|file:///Users/Kouiti/local_file/maman-homepage/Makefile|1|1|V|make
-	ss:
-		sudo docker-compose -f ./webapp/docker-compose.yml build
-		sudo docker-compose -f ./proxy/docker-compose.yml build
-b0da275520918e23dd615e2a747528f1|file:///Users/Kouiti/local_file/maman-homepage/Makefile|12|53|v|make
-	build
-11615f1f0f7f22b06165cee4cb684aa3|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.yml|9|1|V|yaml
-	    # ports:
-	    #   - 80:80
-bd6917de5627a4247881929344771f61|file:///Users/Kouiti/local_file/maman-homepage/webapp/docker-compose.prod.yml|9|1|V|yaml
-	    ports:
-	      - 80:80
-c1ca6cdbe560eaa5f36b91283bd7fcc1|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|14|7|v|javascript
-	useNavigate();
-=======|undefined|undefined|undefined|undefined|undefined
->>>>>>> 22d475b8d7802fbee47d2346ecc7952ce8a9211f|undefined|undefined|undefined|undefined|undefined
->>>>>>> c9dc6afb142c16ed7e9ddeecccf18ed24a73a568|undefined|undefined|undefined|undefined|undefined
-cad5147ef2dd58a439b7a1860b396212|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|62|52|v|javascript
-	onFocusOut
-ad5893fd571f310bb6f941af65fb4f9d|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|65|25|v|javascript
-	closeNavCollapse
-91e5e4ce452ef09920f19a319f4db0a4|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|66|40|V|javascript
-	      onClick={() => console.log("jioj")}
-15746d63cab6485401bbefeea76affcc|file:///Users/Kouiti/local_file/maman-homepage/webapp/react-app/react-app/src/views/layouts/Navbar.js|18|23|V|javascript
-	    console.log("out");
-4c8cb4b3f765ecd5b3afc3dd1f885613|file:///Users/Kouiti/local_file/lets/lets_proj/lets_proj/settings.py|43|1|V|python
-	LETS_APP_HOST = os.environ["LETS_APP_HOST"]
-dbfafa19cb2c9da67c57d71f9831950e|file:///Users/Kouiti/local_file/lets/lets_proj/lets_proj/settings.py|44|35|V|python
-	os.environ.get(“LETS_APP_HOST”)
-24a42f75253573283e57835740b3af65|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|8|31|v|json
-	https://live.staticflickr.com/7272/7633179468_3e19e45a0c_b.jpg
-3c8c82ec5f9faea0b9444ad9299462ab|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|26|95|V|json
-	        "background-image": ["https://live.staticflickr.com/7272/7633179468_3e19e45a0c_b.jpg"],
-37dd4cfbb7c137354b31b6593050da64|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|8|1|V|json
+	## メモ
+e1277529e4d4aa7301b8107ce9734668|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|6|1|V|json
+	        "movie_url": "uploads/movie_records/2022/03/02/test1.mp4"
+5a105e8b9d40e1329780d62ea2265d8a|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|18|56|v|json
+	test1
+5ff4ff759fc788e4fd30422b7ff5d46c|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|18|1|V|json
+	        "movie_url": "uploads/movie_records/2022/03/02/comment1-1.mp4"
+6706232879c0c87990e797b5bab67f75|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|30|1|V|json
+	        "movie_url": "uploads/movie_records/2022/03/02/comment1-2.mp4"
+d63e2f743695ffc8d5c21961cbeb301c|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|40|1|V|json
+	        "movie_url": "uploads/movie_records/2022/03/02/comment2-1.mp4"
+6633c13fc83a2f5fc82fcaea7c826857|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|21|9|V|json
 	        "background-image": [
-	          "https://3.bp.blogspot.com/-jtvaRX9n8OU/VaMOHGaVeRI/AAAAAAAAviQ/D9omX3FtbPw/s170/boy_05.png"
+	          "https://1.bp.blogspot.com/-3Z5HanrdGAc/VaMOJb0ay-I/AAAAAAAAvik/Ex7UNgK4gY8/s170/boy_09.png"
 	        ],
-0e374c1c963dae7350d513a50115421b|file:///Users/Kouiti/local_file/glycovid/glycovid_PSIQUIC/sparql/sparqlist/list_propaties.txt|1|1|V|text
-	prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-	prefix owl: <http://www.w3.org/2002/07/owl#>
+115d642bd452158ed3ae4e729348461f|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|21|1|V|json
+	        "background-image": ["../../../media/images/users/comment1.png"],
+2fae838f74184bd717147099ead9c63c|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|41|9|V|json
+	        "background-image": [
+	          "https://3.bp.blogspot.com/-dhPzya34598/VaMNgGC4GoI/AAAAAAAAvYo/5mJ1qjkt480/s170/girl_21.png"
+	        ],
+c2c383f5df9053928cdbe0af4b056113|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|14|28|v|python
+	"../../../media/" + url
+5fd73bbc43316b517a827f872b1c661c|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|15|5|v|python
+	consoleilog
+282efa5bab621de35a7a1d051e8e79d9|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|15|21|V|python
+	    print("../../../media/" + url)
+00899c9c95a8da6a845201b8ba976a57|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/videoplayer.html|10|56|v|html
+	 <!-- mp4 -->
+ae88d3b408504df01330ceaacb92dcd6|file:///Users/Kouiti/local_file/lets/.gitignore|10|1|V|
+	lets_proj/media/uploads/model_voices
+b47618ebc46042969d58687291a3b404|file:///Users/Kouiti/local_file/lets/.gitignore|11|25|v|
+	model_voices
+374eee50da8a8c6cc676fd19e42b589a|file:///Users/Kouiti/local_file/lets/.gitignore|11|1|V|
+	lets_proj/media/uploads/quastion_voices/
+d85479dbae36c8f786692713eaaee91b|file:///Users/Kouiti/local_file/lets/.gitignore|12|25|v|
+	quastion_voices
+af9ada9a7ee946649ae67cf675b2a99c|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|55|1|V|htmldjango
+	<div class="col-md btn-group" role="group" aria-label="Basic">
+	  <button class="btn btn-border-shadow btn-border-shadow--color next" id="next-btn" hidden> Next ⇨ </button>
+	</div>
+70421402a77f3d4823fb959919985bdb|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/commentator.html|41|77|v|htmldjango
+	next-btn
+d0cab90d8d20d57e2f2b9be52f7dd25d|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/commentator.html|41|67|v|htmldjango
+	next
+919add832274cfb1859167a6c0f5d3c7|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/settings.html|106|1|V|htmldjango
+	<div class="col-md btn-group" role="group" aria-label="Basic">
+	    <button class="btn btn-border-shadow btn-border-shadow--color next" id="next-btn"
+	            onclick="window.location.href='/app/{{task.id}}/1'">
+	        Start ⇨
+	    </button>
+	  </div>
+04a2688ea119fd7582b59f9cd5b3288a|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/commentator.html|40|1|V|htmldjango
+	<div class="col-md btn-group" role="group" aria-label="Basic">
+	    <button class="btn btn-border-shadow btn-border-shadow--color next" id="next-btn" hidden><<></button>
+	</div>
+63d9c00fd2739ab9871cecccc6e6f8f8|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/commentator.html|43|11|V|htmldjango
+	    id="next-btn"
+035141f5a26587fbe6ed5d56e1b0d83d|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/commentator.html|40|54|V|htmldjango
+	<div class="col-md btn-group" role="group" aria-label="Basic">
+a782e55e06a91cf8cf8d85018e511fa5|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/commentator.html|42|11|v|htmldjango
+	Go back topic page
+d330fe37965509c0dcb1a70f958265b1|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/commentator.html|40|1|V|htmldjango
+	<div class="col-md btn-group" role="group" aria-label="Basic">
+	  <button class="btn btn-border-shadow btn-border-shadow--color" onclick="window.location.href='/movie/comment/topic'">
+	    Go back
+	  </button>
+	</div>
+7589684642453e1f8bf98f9a4b7eb881|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|74|112|v|htmldjango
+	topicc
+57d3034f1d7d1247d1e835d1c1b3ebec|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/commentator.html|19|81|v|htmldjango
+	style="cursor: pointer"
+322990c9e0c69c3139159257304d21df|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|106|1|V|html
+	                                    <td width="60"><input type="checkbox" name="column" value="4"></td>
+387d7c1b166972efbfdb2886b1d034d3|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|121|1|V|html
+	                                <td style="font-size: 10px">3</td>
+f149970b4e229006b22284dcf18e8804|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|122|1|V|html
+	                                <td style="font-size: 10px">4</td>
+22611816851289d808c80b7a79ad22ee|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|147|1|V|html
+	                                <td style="font-size: 10px"></td>
+ea691b38b1654798407ea7d51bb54af0|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|169|1|V|html
+	                                <td bgcolor="#00FF00" width="60" style="text-align:center;font-size: 10px;"
+	                                    class="ex_border_a">Disease (DCM)</td>
+1063f09b539abeb4b1cd790405119fc1|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|171|1|V|html
+	                                <td bgcolor="#00FF00" width="60" style="text-align:center;font-size: 10px;"
+	                                    class="ex_border_a">Disease (DCM)</td>
+	                                <td bgcolor="#00FF00" width="60" style="text-align:center;font-size: 10px;"
+	                                    class="ex_border_a">Disease (DCM)</td>
+	                                <td bgcolor="#00FF00" width="60" style="text-align:center;font-size: 10px;"
+	                                    class="ex_border_a">Disease (DCM)</td>
+cf29b59d47f3d7d36ad6acf4990fbf70|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|169|1|V|html
+	                                <td bgcolor="#00FF00" width="60" style="text-align:center;font-size: 10px;"
+	                                                                 class="ex_border_a"></td>
+f11f9ba2584e636b1b6de434fc8bf33a|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|167|1|V|html
+	                                <td bgcolor="#00FF00" width="60" style="text-align:center;font-size: 10px;"
+	                                    class="ex_border_a">Normal</td>
+0b939a13027708f85a5fcef54f36899b|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|171|1|V|html
+	                                <td bgcolor="#00FF00" width="60" style="text-align:center;font-size: 10px;"
+	                                                                 class="ex_border_a">Normal<br>(2 m)</td>
+1ffdf27bddfe945813b17771092bf3dd|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|187|1|V|html
+	                                <td></td>
+9ef6d39d20b4807c0614235581969d9b|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|211|1|V|html
+	                                <td class="tissue_name">15</td>
+05fa8bd65b2eea1142adc018a4afe807|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|212|1|V|html
+	                                <td class="tissue_name">24</td>
+28b7b79b723d939dd1d42904860b0787|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|403|1|V|html
+	                                <td>15</td>
+c4e3ff957daaaa0fe4527a9d6d780aaf|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|404|1|V|html
+	                                <td>24</td>
+e26c05e22643bfbbdfebd9fb311cb1d1|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|398|1|V|json
+	    {
+	      "description": "cange contrl+enter to 。",
+	      "manipulators": [
+	        {
+	          "from": {
+	            "key_code": "return_or_enter",
+	            "modifiers": {
+	              "mandatory": ["left_control"]
+	            }
+	          },
+	          "to": [
+	            {
+	              "key_code": "period"
+	            },
+	            {
+	              "key_code": "return_or_enter"
+	            }
+	          ],
+	          "type": "basic"
+	        }
+	      ]
+	    },
+9f2f1aadac4b5872308d56a5fc935d31|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|503|23|v|json
+	cange contrl+enter to 。
+078e302ca7ddc1c8a64527b51dae5227|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|23|1|V|json
+	          "from": {
+	            "key_code": "j",
+	            "modifiers": {
+	              "mandatory": ["left_command", "left_control"],
+	              "optional": ["any"]
+	            }
+5476362224b7868b33c9d0ac3a9b80d2|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|506|11|V|json
+	          "from": {
+	            "key_code": "return_or_enter",
+	            "modifiers": {
+	              "mandatory": ["left_control"]
+	            }
+ebe9230b6b38cc960cdcc753241fdf1d|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|515|34|V|json
+	              "key_code": "period"
+ddb2417d3a73bec44bac881157a80974|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|517|1|V|json
+	            {
+	              "key_code": "return_or_enter"
+	            }
+0651ef43a60da0712e3c77d7b295cba5|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|502|1|V|json
+	    {
+	      "description": "active change",
+	      "manipulators": [
+	        {
+	          "from": {
+	            "key_code": "v",
+	            "modifiers": {
+	              "mandatory": ["left_command", "left_control"],
+	              "optional": ["any"]
+	            }
+	          },
+	          "to": [
+	            {
+	              "shell_command": "open -a 'Vivaldi'"
+	            }
+	          ],
+	          "type": "basic"
+	        }
+	      ]
+	    }
+c279ae262299e16b30be54bcbde62d1e|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|505|1|V|json
+	        {
+	          "from": {
+	            "key_code": "v",
+	            "modifiers": {
+	              "mandatory": ["left_command", "left_control"],
+	              "optional": ["any"]
+	            }
+	          },
+	          "to": [
+	            {
+	              "shell_command": "open -a 'Vivaldi'"
+	            }
+	          ],
+	          "type": "basic"
+	        }
+38228d8549cbbc747592a34e58fb2ac2|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|530|42|v|json
+	Vivaldi
+a5ce4ec2ccec40101e97c5e211f4680d|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/css/index.css|601|14|V|css
+	  min-width: 300px;
+fd14455208a53d987763a274f35d7995|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|85|21|v|html
+	tabl
+79068998db0b733cc44d3b0b18b9af40|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/css/index.css|594|1|V|css
 	
-	SELECT DISTINCT ?predicate
-	WHERE {
-	  ?subject ?predicate ?object
+	/*# sourceMappingURL=index.css.map */
+	.table-wrap {
+	  overflow-x: scroll;
 	}
-5e1797231f38e34eafba4a742cabfe55|file:///Users/Kouiti/local_file/lets/README.md|12|1|V|markdown
-	[]()<br>
-	[]()<br>
-	[]()<br>
-21c5660eb95ed0b8910919d00e42a2c5|file:///Users/Kouiti/local_file/lets/README.md|33|1|V|markdown
-	3. [Django とは]()<br>
-2a375acdd9f0c704b2b53e28febdb7b7|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|150|10|v|javascript
-	cxttap
-858af1e18997c6083d553c41766d4069|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|151|22|V|javascript
-	    console.log(this);
-a88f05b6c963e145a45b58c47cd42a41|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|153|25|v|javascript
-	hide
-5bc7b7a0e682d13e65e638585b6dd622|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/sidebar.js|21|1|V|javascript
-	  document.getElementById("close-sidebar").click();
-8d777f385d3dfec8815d20f7496026dc|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|153|17|v|javascript
-	data
-db74f367353e5d6873176371a59c30a5|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|153|25|V|javascript
-	    console.log($(".modal"));
-01174a6d19929960c5302115fb650705|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|153|16|V|javascript
-	    $("#modal").modal();
-2a98615805a557ee7a3b85f370d8aaa6|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|153|1|V|javascript
-	    document.querySelector(".modal").classList.add("show");
-cee960fe6e54215fae2e956aa82e871f|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|154|1|V|javascript
-	    document.querySelector(".modal").style.display = "block";
-309e9a4b69938a9b212ecdee7c430869|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|155|62|V|javascript
-	    document.querySelector(".modal").setAttribute("aria-hidden", "true");
-456fda08d649cffc9571f8747433328a|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|26|1|V|htmldjango
-	<div class="modal" id="modal" tabindex="-1" role="dialog">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title">Modal title</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-	        <p>Modal body text goes here.</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
-	      </div>
+	.table {
+	  width: 100%;
+	  border-collapse: collapse;
+	  min-width: 300px;
+	  white-space: nowrap;
+	}
+	.table th,
+	.table td {
+	  border: 2px solid #eee;
+	  padding: 4px 8px;
+	}
+48223d9bcc55148004d3b4c6ffac81ed|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|80|1|V|html
+	    <div class="table-wrap">
+c0888098af7199230929ec83da339685|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|80|21|v|html
+	mice_table
+666ddb16f6079ad2c9ba6d7a91657064|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|471|10|v|html
+	 -->
+b082895fab4c56c1aba17dcc672fca3a|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index.html|474|9|V|html
 	    </div>
-	  </div>
-d25c8a029a77a3742dbdab06512f3c58|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|26|1|V|htmldjango
-	<div
-	  class="modal fade"
-f3c52360a67614134a0a90af82374db9|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|28|7|v|htmldjango
-	exampleModal
-4205490e77354a49f915b0456d37f58f|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|153|1|V|javascript
-	    document.querySelector(".modal").classList.add("show");
-	    document.querySelector(".modal").style.display = "block";
-	    document.querySelector(".modal").setAttribute("aria-modal", true);
-93da65a9fd0004d9477aeac024e08e15|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|153|25|v|javascript
-	options
-481ad4fe192aaf3566023ac6e3fa4e09|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|26|81|v|htmldjango
-	exampleModalLabel
-02b3b97acd04d1f4caceb0cfc3645c84|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|28|7|v|htmldjango
-	OptionModal
-40fe1d9d615dee31028e7b89b3bdc20e|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|26|5|V|htmldjango
-	<div
-	  class="modal fade"
-	  id="option_modal"
-	  tabindex="-1"
-	  role="dialog"
-	  aria-labelledby="exampleModalLabel"
-	  aria-hidden="true"
-	>
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">...</div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-fb3ca004925dfdca5380da7c27f1831a|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|50|1|V|htmldjango
-	  $('#icesword').modal();
-70ff9809992e71dd8ead413717f09255|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|46|8|V|htmldjango
-	  return
-608ece0872fafd7131f310d6e77e9817|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|153|9|v|javascript
-	modal
-08dbad98d78daa7dbee0043cbd0cec6f|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|153|15|V|javascript
-	    $("#iceword").modal("show");
-2fdc5d404aca89e396d302a98666a22b|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|50|1|V|htmldjango
-	  console.log()
-14ed81a723b3e27c68c915a98abaf04a|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|52|3|v|htmldjango
-	$('#icesword')
-9770d9b644d80cfec3b64642293d22a0|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/static/js/gss/main/gss_cy_event.js|46|1|V|javascript
-	  jQuery(document).ready(function () {
-	    jQuery("#cy_modal").modal("show");
-	  });
-7ccbc066f23bfde3516e16e7aec1d9e8|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|152|3|V|javascript
-	    console.log(data);
-5f2d7923a912e3d429a3e82a1ec434fa|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|28|7|V|htmldjango
-	  id="option_modal"
-cee1b0de662bebd827c70d44202bdc23|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|155|7|v|javascript
-	jQuery("#action_modal").modal
-bb76927004aa5cafef0f830cd4fb4bee|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|154|47|V|javascript
-	      console.log(jQuery("#action_modal").modal);
-6fee32734e7480fd659ac2bfabf54fe0|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/templates/gss/layouts_main/_headtag.html|2|1|V|html
-	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-263d8753d51d3482713d83ea1a4a7c2a|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/templates/gss/layouts_main/_headtag.html|2|1|V|html
-	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	  <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
-	  <script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
-e29eb4b75941cacc38f53ca0aa0158e0|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|154|19|V|javascript
-	      console.log()
-59ef94415ae017f30c0944e7ace72398|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|26|1|V|htmldjango
-																		             <div class="modal-header">
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Launch demo modal</button>
+051cbc84d3acfad2c9f0b6400eebfe9c|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|32|1|V|json
+	  "Heart6": "lectinarray_data/Heart_4C30_WT/Heart_DCM_before.svg",
+	  "Heart6-data": "Mouse1_4C30-1_Sample1;Mouse1_4C30-1_Sample2;Mouse1_4C30-1_Sample3;Mouse1_4C30-1_Sample4;Mouse1_4C30-1_Sample5;Mouse2_4C30-2_Sample6;Mouse2_4C30-2_Sample7;Mouse2_4C30-2_Sample8;Mouse2_4C30-2_Sample9;Mouse2_4C30-2_Sample10;Mouse3_4C30-3_Sample11;Mouse3_4C30-3_Sample12;Mouse3_4C30-3_Sample13;Mouse3_4C30-3_Sample14;Mouse3_4C30-3_Sample15"
+92560b7599cb8ef30e9a0a842d2f9b4d|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|34|31|v|json
+	Heart_4C30_WT
+647f6bc9c7d4c8bba80c0e96dea04a48|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|34|41|v|json
+	Heart_DCM_before
+b148c82ceff04b70443e05efc4a89319|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/LectinAtlas.js|1469|1|V|javascript
+	  if (column[3].checked) {
+	    let child_win = window.open(local + "/index_sub4.html", "_blank", "toolbar=yes,menubar=yes,scrollbars=yes");
+	  }
+cfb0b5f8ccae71824d6eaeed9d5efb2c|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub1.html|335|68|v|html
+	</a>
+f32899fb9c1b91aa7e7792ca338427ab|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|208|48|v|html
+	Data_Heart_DCM
+84ae8a8250134e159559d0b2a6a09a37|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|208|1|V|html
+	                    <a href="lectinarray_data/Normal_2m/Data_Heart_Normal_2m.xlsx">
+ceb730ce26ab9bf6726a5e38675e5697|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|228|21|V|html
+	                    <a href="lectinarray_data/Heart_4C30_WT/Data_Heart_DCM.xlsx">
+a6df7ec6df22ebc95abf9c8e0c6b4236|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|34|1|V|json
+	  "Heart7": "lectinarray_data/Normal_2m/Heart_TMI2_before_s.svg",
+62bd107917001f4b68e68f3bd9822149|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|35|3|V|json
+	  "Heart7-data": "Mouse1_4C30-1_Sample1;Mouse1_4C30-1_Sample2;Mouse1_4C30-1_Sample3;Mouse1_4C30-1_Sample4;Mouse1_4C30-1_Sample5;Mouse2_4C30-2_Sample6;Mouse2_4C30-2_Sample7;Mouse2_4C30-2_Sample8;Mouse2_4C30-2_Sample9;Mouse2_4C30-2_Sample10;Mouse3_4C30-3_Sample11;Mouse3_4C30-3_Sample12;Mouse3_4C30-3_Sample13;Mouse3_4C30-3_Sample14;Mouse3_4C30-3_Sample15"
+5f3ce2859c54e169f1d77b648bd5f017|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|204|1|V|html
+	                  <td class="tissue_name">
+	                    <font color="matblue">24</font>
+	                  </td>
+5217e6389d477ea5f0c970e75edb766c|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|196|1|V|html
+	                  <td>69</td>
+1d9a22c900594ff980534c6c25d53857|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|198|1|V|html
+	                  <td></td>
+cbcc747ada63a8d7d20578bca06fadd6|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/LectinAtlas.js|564|18|V|javascript
+	  console.log(this);
+3229b37cbf0b5c9e2939e42cdecc4421|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/LectinAtlas.js|559|1|V|javascript
+	  // var tissue_name = this.childNodes[get_Tissue_name_index].innerHTML;
+	  // var tissue_name = this.innerHTML; //クリックした表のTissueNameを取得
+183685494374c0d80a1d08772450399d|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/LectinAtlas.js|564|5|V|javascript
+	  console.log(this.id);
+8aaf566b5d772e3dffb89cfa337a1afe|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/LectinAtlas.js|562|7|V|javascript
+	    console.log(this.id);
+05db5aea74104ed61cb0233c844e95bf|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|636|6|V|html
+	    <script type="text/javascript">
+	      function hide_table1() {
+	        var id = "column1";
+	        var CELL = document.getElementById(id);
+	        var TABLE = CELL.parentNode.parentNode.parentNode;
+	        for (var i = 0; TABLE.rows[i]; i++) {
+	          TABLE.rows[i].cells[CELL.cellIndex].style.display = "none";
+	        }
+	      }
+	      function hide_table2() {
+	        var id = "column2";
+	        var CELL = document.getElementById(id);
+	        var TABLE = CELL.parentNode.parentNode.parentNode;
+	        for (var i = 0; TABLE.rows[i]; i++) {
+	          TABLE.rows[i].cells[CELL.cellIndex].style.display = "none";
+	        }
+	      }
+	      function hide_table3() {
+	        var id = "column3";
+	        var CELL = document.getElementById(id);
+	        var TABLE = CELL.parentNode.parentNode.parentNode;
+	        for (var i = 0; TABLE.rows[i]; i++) {
+	          TABLE.rows[i].cells[CELL.cellIndex].style.display = "none";
+	        }
+	      }
+	      function hide_firsttable() {
+	        var id = "none";
+	        var CELL = document.getElementById(id);
+	        var TABLE = CELL.parentNode;
+	        TABLE.rows[0].cells[0].style.display = "none";
+	        TABLE.rows[0].cells[1].style.display = "none";
+	        TABLE.rows[0].cells[2].style.display = "none";
+	        TABLE.rows[0].cells[3].style.display = "none";
+	        TABLE.rows[0].cells[4].style.display = "none";
+	        TABLE.rows[0].cells[5].style.display = "none";
+	        TABLE.rows[0].cells[6].style.display = "none";
+	        TABLE.rows[0].cells[7].style.display = "none";
+	      }
 	
-	<div
-	  class="modal fade"
-	  id="action_modal"
-	  tabindex="-1"
-	  role="dialog"
-	  aria-labelledby="exampleModalLabel"
-	  aria-hidden="true"
-	>
-	  <div class="modal-dialog" id="modal" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">...</div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-86b81b79b1d9c6b89530a6b58530182c|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|154|16|v|javascript
-	action_modal
-3c1e179a13498cd8b2817367297a6e12|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|153|1|V|javascript
-	    jQuery(document).ready(function () {
-	      jQuery("#exampleModal").modal("show");
-	    });
-7286971728c7a5bdb5deb4ae42f8c55c|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|30|7|v|htmldjango
-	btn_modalopen
-ee02902d24e8af9cfbcaf63f23f67dcd|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|58|3|V|htmldjango
-	        <button type="button" class="btn btn-primary">Save changes</button>
-4a53665f1233a840a8305b6e01392949|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|51|1|V|htmldjango
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-f319bb8487b30983b53b487132325f9a|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|57|1|V|htmldjango
-	          <a href="/movie/ja/videoplayer"></a>
-590096e9c0922001e606adee84ad101c|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|56|1|V|htmldjango
-	        <p>
-	          <a href="/movie/ja/videoplayer"></a>
-	        </p>
-54c0a5cf414c9dcdbc086f5ac47f4f64|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|56|1|V|htmldjango
-	        <p>
-	          <a href="/movie/ja/videoplayer">Play from thebeginning</a>
-	        </p>
-ad7fb8fd4f62847b587302883d5fae38|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|60|53|v|htmldjango
-	thebeginning
-46c9f6f746eaf249e575fc7d87095e1f|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/videoplayer.html|9|1|V|html
-	        poster="//vjs.zencdn.net/v/oceans.png">
-	            <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"> <!-- mp4 -->
-c6e94768b3fa784b93e173b7d4f17f17|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/videoplayer.html|10|26|v|html
-	//vjs.zencdn.net/v/oceans.mp4
-b555e17e360b0f550efc86cbf9898b18|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/videoplayer.html|9|17|v|html
-	//vjs.zencdn.net/v/oceans.png
-ddcabadb41056eb67041d342ccbc368b|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|154|1|V|javascript
-	    document.querySelector(".modal-body").querySelectorAll("a")[0];
-facd6f6cc90912754bc9054c1c90816d|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|57|20|v|htmldjango
-	/movie/ja/videoplayer
-c94c56c64d599ede0f8d9d1d8595bf75|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|60|13|v|htmldjango
-	 href="/movie/ja/videoplayer" 
-4dca23e27e38622653896b0e78aeb3e5|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/comment/map.html|63|13|v|htmldjango
-	 href="/movie/ja/videoplayer"
-a6696435b73976a7c8cdde5482249a1c|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|155|1|V|javascript
-	    document.querySelector(".modal-body").querySelectorAll("a")[1].href = ;
-	    document.querySelector(".modal-body").querySelectorAll("a")[2].href = ;
-1106dacde80855734f8a1958aef59598|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|154|1|V|javascript
-	    document.querySelector(".modal-body").querySelectorAll("a")[0].href = "/movie/ja/videoplayer?url=" + data.data.url;
-94dd1e8d3462f84461c0ec08fe667c61|file:///Users/Kouiti/local_file/lets/lets_proj/app/templates/app/shadowing.html|87|20|v|htmldjango
-	../../../media/
-a9bf1c8edc071166de28e5f7365b6ac2|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|155|1|V|javascript
-	    document.querySelector(".modal-body").querySelectorAll("a")[1].href = "/movie/ja/videoplayer/" + data.data.url;
-	    document.querySelector(".modal-body").querySelectorAll("a")[2].href = "/movie/ja/videoplayer/" + data.data.url;
-726befce6b635597a753439eeeeee86b|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|7|23|V|python
-	    content["url"] = url
-01e09c5c2f6652a128a7023a61303c57|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|6|9|V|python
-	    print
-eca07335a33c5aeb5e1bc7c98b4b9d80|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|7|5|v|python
-	param
-2e714b048ea8cd9c9093b6538b25d636|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|8|27|V|python
-	    print(param.get("url"))
-f0eed20ad0c1a24ad3d2a1651bbfa58d|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|10|13|V|python
-	    url = request.GET.get("url")
-e967c7af03a547312e05ff6ddf430c91|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|6|1|V|python
-	    content = dict(user=get_learner(request))
-3a0019991a365d6077e3c5494737a525|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/templates/videoplayer.html|10|25|v|html
-	"../../../media/"+
-19f1f87ed449438bc26bebab132ecf81|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|154|1|V|javascript
-	    document.querySelector(".modal-body").querySelectorAll("a")[0].href =
-	      "/movie/ja/videoplayer?url=" + encodeURIComponent(data.data.url);
-cc43ab9dff513fcd2c91093761a09a4e|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|154|1|V|javascript
-	    // document.querySelector(".modal-body").querySelectorAll("a")[0].href =
-	    //   "/movie/ja/videoplayer?url=" + encodeURIComponent(data.data.url);
-37a6259cc0c1dae299a7866489dff0bd|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|157|9|v|javascript
-	null
-66f5e9823eb88729506657f42934c80b|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|154|1|V|javascript
-	    document.querySelector(".modal-body").querySelectorAll("a")[0].onclick = () =>
-	      window.open(
-	        "/movie/ja/videoplayer?url=" + encodeURIComponent(data.data.url),
-	        "videoplayer",
-	        "width=500,toolbar=yes,menubar=yes,scrollbars=yes"
-	      );
-db3f2c16f2c4589e9b4a9d83a63ef72e|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|12|12|v|json
-	https://3.bp.blogspot.com/-jtvaRX9n8OU/VaMOHGaVeRI/AAAAAAAAviQ/D9omX3FtbPw/s170/boy_05.png
-3fd3e809c4f8323e01acb2358791eeb1|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|6|1|V|json
-	        "movie_url": "uploads/movie_records/2022/03/02/test.mp4"
-25eac4a98c75585e530d25218b49c4e2|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|8|9|V|json
-	        "icon_url"; 
-edcd69f4c3829c5e3b9b45aeb294e76c|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|7|10|v|json
-	movie_url
-e36fc54f4f1e8c8bb3d13b4065016cc3|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|7|30|v|json
-	movie_records
-d090938dba04c87ce95b0c8cf16b0c03|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|11|1|V|python
-	    content["url"] = "../../../media/" + url
-2c339f8d8d0166304e0820672ad1f5ad|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|7|1|V|python
-	    try:
-	        url = request.GET.get("url")
-	    except:
-	        url = "None'"
-479a7c247aff146f810e20fbbe957909|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|15|5|V|python
-	    content["media_url"] = "../../../media/" + url
-cd2bba93eae16075b881cafd547e0d3e|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|162|46|v|javascript
-	encodeURIComponent(data.data.url)
-6449633467d529d6ae6a96750c7545e5|file:///Users/Kouiti/local_file/lets/lets_proj/static/js/movie/map.js|158|1|V|javascript
-	          "&icon_url=" +
-	          encodeURIComponent(data.data.icon_url),
-afc5458b6ce7f78f896475a7ac1943d4|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|12|1|V|python
-	    try:
-	        url = request.GET.get("icon_url")
-	    except:
-	        url = "None'"
-	    content["icon_url"] = "../../../media/" + url
-85c12471cd9419d0d9fca81572b63fb0|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|7|22|v|json
-	uploads/images/users/test1.mp4
-4004f91adc62523d2d80b358ac74d0d2|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|7|26|V|json
-	        "icon_url": "jjjj"
-5128f35c9b4be13788ba41bdb6d1fc1f|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|11|46|v|json
-	uploads
-6227f5fa8dae8e1fd9e1c7c1292c2ad4|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|11|1|V|json
-	        "background-image": ["../../../media/images/users/test1.png"],
-d6e4a7247b3d734724e71cb5b490f0d5|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|35|1|V|json
-	    {
-	      "data": {
-	        "id": "1-2-1"
-	      },
-	      "style": {
-	        "background-image": ["../../../media/images/users/test1.png"],
-	        "label": "name: kouichi\ncountry: japan"
-	      }
-	    },
-9e1cba47e62c276cae83baef959bfd94|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|82|1|V|json
-	    {
-	      "data": {
-	        "source": "1-1",
-	        "target": "1-2-1",
-	        "id": "rt3"
-	      }
-	    },
-33c59e890f1aecb928f2f1ea64842afb|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|98|1|V|json
-	/Applications/AnyDesk.app/Contents/MacOS/AnyDesk
-96ffb4f9b7bec22c84a5781773768f04|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|97|1|V|json
-	                                "com.philandro.anydesk"
-697dfb9b235783676b63d2f1ed07cad5|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|53|12|V|json
-	<<<<<<< HEAD
-b8b22deb1f424d77dea898a825d1f483|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|66|7|V|json
-	=======
-9ea20092f98aa31905c092aafc8895b0|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|226|19|V|json
-	>>>>>>> 22d475b8d7802fbee47d2346ecc7952ce8a9211f
-938729fc343fac2013e04d28ab59b88c|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|337|1|V|json
-	              "bundle_identifiers": ["com.googlecode.iterm2", "com.philandro.anydesk", "com.microsoft.VSCode"]
-71a95c0d765ded072cebf419a3020fb7|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|359|15|V|json
-	              "bundle_identifiers": ["com.googlecode.iterm2"]
-0928da420d4ae9c0be93cfcae9e819ad|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|439|15|V|json
-	              "bundle_identifiers": ["com.googlecode.iterm2", "com.microsoft.VSCode"]
+	      hide_firsttable();
+	      hide_table1();
+	      hide_table2();
+	      hide_table3();
+	    </script>
+bbd5ef5adfea3789f27f0f9ca2eb6aca|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|636|6|V|html
+	    <script type="text/javascript" src="LectinAtlas.js"></script>
+cb1bce1f1985ff0cbff3a5f9c6400f98|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|636|6|V|html
+	    <style></style>
+97f0bc430b3ca329ff7cda3ba2fdec08|file:///Users/Kouiti/local_file/lm-glycomeatlas/run.sh|1|59|V|sh
+	tell application "Vivaldi" to reload active tab of window 1
+9fd7b9184ba77e32314bd439cf4adfa2|file:///Users/Kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|33|1|V|vim
+	noremap <silent>:v<CR> :w<CR>:! osascript -e 'tell application "Vivaldi" to reload active tab of window 1'<CR><CR>
+ba9f22ddf1a395483b300069b047c20f|file:///Users/Kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|34|18|V|vim
+	noremap <silent>:g<CR> :w<CR>:! osascript -e 'tell application "Vivaldi" to reload active tab of window 1'<CR><CR>
+50b97d0d941f0fe45b3fc92ca257cd01|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|680|1|V|html
+	    <script type="text/javascript" src="LectinAtlas.js"></script>
+	    <style></style>
+8eea3a8c5ba940ed643db6132698428a|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|101|1|V|html
+	                <tr id="none">
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+	                </tr>
+9791708dbac7597709e503d78dea9d44|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|115|1|V|html
+	                  <td style="font-size: 10px"></td>
+	                  <td style="font-size: 10px"></td>
+	                  <td style="font-size: 10px" id="column1">1</td>
+	                  <td style="font-size: 10px" id="column2">2</td>
+	                  <td style="font-size: 10px" id="column3">3</td>
+7cb03de2eb426846abccee607479fdf4|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|121|1|V|html
+	                  <td style="font-size: 10px"></td>
+	                  <td style="font-size: 10px"></td>
+	                  <td style="font-size: 10px" id="column1">2</td>
+	                  <td style="font-size: 10px" id="column2">2</td>
+	                  <td style="font-size: 10px" id="column3">3</td>
+6ad0af6d26363a644113b2deee86e319|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|127|1|V|html
+	                  <td style="font-size: 10px"></td>
+	                  <td style="font-size: 10px"></td>
+	                  <td style="font-size: 10px" id="column1"></td>
+	                  <td style="font-size: 10px" id="column2"></td>
+	                  <td style="font-size: 10px" id="column3">21</td>
+2fe0a643964e7f670c9c6ebf99d0b403|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|132|1|V|html
+	                  <td bgcolor="#FFCC00" width="80" style="text-align: center; font-size: 11px" class="ex_border_a">
+	                    TissueID
+	                  </td>
+	                  <td bgcolor="#FFCC00" width="100" style="text-align: center; font-size: 11px" class="ex_border_a">
+	                    TissueName
+	                  </td>
+	                  <td bgcolor="#FFCC00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    No. of Data (Total)
+	                  </td>
+	                  <td bgcolor="#00FF00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    Normal C57BL/6J
+	                  </td>
+	                  <td bgcolor="#00FF00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    Normal C57BL/6J
+	                  </td>
+	                  <td bgcolor="#00FF00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    Normal
+	                  </td>
+39e8e59a3576ff8442dbadfcdf30f21e|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|133|25|V|html
+	                    Disease (DCM)
+caf797560decb7d980bbb5c646af9ce9|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|133|1|V|html
+	                    Normal<br />(2 m)
+e2cc27354eba1fe6d1aa7e4d0fdb649a|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|132|1|V|html
+	                  <td bgcolor="#00FF00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    Normal<br />(2 m)
+	                  </td>
+ac1b38285d31e672fb70f368dab82920|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|135|19|V|html
+	                  <td bgcolor="#FFCC00" width="100" style="text-align: center; font-size: 11px" class="ex_border_a">
+	                    TissueName
+	                  </td>
+	                  <td bgcolor="#FFCC00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    No. of Data (Total)
+	                  </td>
+	                  <td bgcolor="#00FF00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    Normal C57BL/6J
+	                  </td>
+	                  <td bgcolor="#00FF00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    Normal C57BL/6J
+	                  </td>
+	                  <td bgcolor="#00FF00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    Normal
+	                  </td>
+	                  <td bgcolor="#00FF00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    Disease (DCM)
+	                  </td>
+0f10c3a9ff467da085f0ec004dadc4cf|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|141|1|V|html
+	                  <td bgcolor="#00FF00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    Normal C57BL/6J
+	                  </td>
+	                  <td bgcolor="#00FF00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    Normal C57BL/6J
+	                  </td>
+	                  <td bgcolor="#00FF00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    Normal
+	                  </td>
+	                  <td bgcolor="#00FF00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    Disease (DCM)
+	                  </td>
+a6c3e3e7330d745e815eb0562e5b2586|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|127|1|V|html
+	                  <td style="font-size: 10px">21</td>
+6c314aae8f0f9d7eee9ea6d02034454a|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|121|1|V|html
+	                  <td style="font-size: 10px"></td>
+ea429dabe6cd914fb8ae911357b5410c|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|157|1|V|html
+	                  <td></td>
+	                  <td class="tissue_name">
+	                    <font color="matblue">78</font>
+	                  </td>
+	                  <td></td>
+	                  <td></td>
+fb0c053148416655b2debaac30820e0c|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|162|1|V|html
+	                  <td>0</td>
+	                  <td></td>
+	                  <td></td>
+	                  <td></td>
+	                  <td></td>
+3040f8173fa5a3d50f1e7bc83a5a9a84|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|162|1|V|html
+	                  <td>0</td>
+	                  <td></td>
+	                  <td></td>
+	                  <td></td>
+d0eac879e6526431904c3dc8f190b3aa|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|144|1|V|html
+	                  <td bgcolor="#FFCC00" width="60" style="text-align: center; font-size: 10px" class="ex_border_a">
+	                    No. of Data (Total)
+	                  </td>
+f2b41b484dbf5f9e8a9627ce0d57740d|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|153|11|V|html
+	                  <td>78</td>
+21f23864ea6207dde1939557710168cc|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|104|1|V|html
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+e25e942552ea220a45485bc020b41553|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|156|1|V|html
+	                  <td class="tissue_name">
+	                    <font color="matblue">42</font>
+	                  </td>
+	                  <td></td>
+	                  <td class="tissue_name">
+	                    <font color="matblue">12</font>
+	                  </td>
+0d5fa2d8661960de934eae6b6fc62dc1|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|188|1|V|html
+	                  <td>48</td>
+	                  <td></td>
+	                  <td class="tissue_name">
+	                    <font color="matblue">48</font>
+	                  </td>
+	                  <td></td>
+	                  <td></td>
+4143630e1e8c28eb3c5a0272f18c9d16|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|192|1|V|html
+	                  <td>24</td>
+	                  <td class="tissue_name">
+	                    <font color="matblue">24</font>
+0c64c946dc3ac5ab59559e0047fe9356|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|192|1|V|html
+	                  </td>
+	                  <td></td>
+	                  <td></td>
+	                  <td></td>
+be535f9dfcfd1e30ffefac75c0509a3c|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|198|1|V|html
+	                  <td></td>
+	                  <td class="tissue_name">
+	                    <font color="matblue">24</font>
+	                  </td>
+	                  <td></td>
+443b68e0731218262ffb606aef17342f|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|197|11|V|html
+	                  <td>24</td>
+6b975afa6fe8df51f8f1d57b100c48ba|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|203|1|V|html
+	                  <td class="tissue_name">
+	                    <font color="matblue">18</font>
+	                  </td>
+	                  <td></td>
+	                  <td></td>
+	                  <td></td>
+6dfd8a37cddee4551b6b7d43b770f166|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|208|11|v|html
+	        <td>0</td>
+	                  <td></td>
+	                  <td></td>
+	                  <td></td>
+	           
+ab1e533e61534c445610fc7e70280d11|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|208|19|V|html
+	                 <td></td>
+47cdbb2afbe8130a0caa6cdbac2b4499|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|218|1|V|html
+	                  <td>30</td>
+	                  <td class="tissue_name">
+	                    <font color="matblue">30</font>
+	                  </td>
+	                  <td></td>
+	                  <td></td>
+	                  <td></td>
+7cd4a8fd9dcb1443712e364b86c7cdf3|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|202|1|V|html
+	                  <td>18</td>
+2c42ada7808f3cd9a8243e512216fe3d|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|228|1|V|html
+	                  <td class="tissue_name">
+	                    <font color="matblue">60</font>
+	                  </td>
+	                  <td></td>
+	                  <td></td>
+eb4c4f39c587d58a8274efded865eb4f|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|227|21|V|html
+	                  <td>60</td>
+fea0261b4f005b3fdd04b1c9733c74a5|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|232|1|V|html
+	                  <td>16</td>
+	                  <td></td>
+	                  <td class="tissue_name">
+	                    <font color="matblue">16</font>
+	                  </td>
+	                  <td></td>
+	                  <td></td>
+480e6ee67ba94fec3407798c012d35f6|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|237|1|V|html
+	                  <td>24</td>
+	                  <td></td>
+	                  <td class="tissue_name">
+	                    <font color="matblue">24</font>
+	                  </td>
+	                  <td></td>
+	                  <td></td>
+36f08627a29c5b71a299e413e385436e|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|242|1|V|html
+	                  <td>12</td>
+	                  <td class="tissue_name">
+	                    <font color="matblue">12</font>
+	                  </td>
+	                  <td></td>
+	                  <td></td>
+	                  <td></td>
+e300939ce0164e0c9deee85c6cca3266|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|252|1|V|html
+	                  <td>24</td>
+	                  <td class="tissue_name">
+	                    <font color="matblue">24</font>
+	                  </td>
+	                  <td></td>
+	                  <td></td>
+	                  <td></td>
+081724725a5c5be9f64f7e529d3aae9d|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|257|1|V|html
+	                  <td>6</td>
+	                  <td class="tissue_name">
+	                    <font color="matblue">6</font>
+	                  </td>
+	                  <td></td>
+	                  <td></td>
+	                  <td></td>
+5970877f2fa0477b45257f56f27e1032|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|262|21|V|html
+	                  <td>451</td>
+34cf1cad845698c93e5d608c4415e205|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|262|21|V|html
+	                  <td>234</td>
+d35720ff61bddbcb9bc3d6e3c582bdfa|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|262|21|V|html
+	                  <td>190</td>
+f7e0d10152fa231ce285145a49cbe516|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|262|21|V|html
+	                  <td>12</td>
+dbe8cc1656c279e6d9505a68e00467ac|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|262|21|V|html
+	                  <td>15</td>
+2292a6a46c5b7ea30b4023d4570d77ce|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|263|19|V|html
+	                  o
+3a8e4c06e471595f6eb262bb9b5582d9|file:///Users/Kouiti/local_file/lm-glycomeatlas/nodemon.json|3|6|v|json
+	conf
+5cc6b38561040195940afd2394589b89|file:///Users/Kouiti/local_file/lm-glycomeatlas/nodemon.json|3|1|V|json
+	    "conf"
+	  ]
+78c5a3d499710c6a9d17c1fc9876cf2f|file:///Users/Kouiti/local_file/lm-glycomeatlas/README.md|9|40|V|markdown
+	開発の最新状況(v1.1)をみるには
+	git, node をインストールする。
+	ディレクトリを作り、以下のコマンドを打つ
+	
+	```
+	git clone https://gitlab.com/glycosmos/lm-glycomeatlas.git
+	git checkout DEV_V1.1
+	
+	```
+	
+	マスターブランチ(v1.0)に戻るには：
+	```
+	git checkout master
+	```
+	
+	** 上書きなど変更部分がある場合はオプションを設定しないとチェックアウトできません。
+5c0a4d3a33d161859bdbababca0f0d0b|file:///Users/Kouiti/local_file/lm-glycomeatlas/README.md|125|3|V|markdown
+	### やること
+d012f9ad1b053809002ea7eddff46afb|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/LectinAtlas.js|1461|12|V|javascript
+	  var a = 0;
+1fdb5e20e4a2a6af3654e71ac3ff355c|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/LectinAtlas.js|1462|4|V|javascript
+	  //
+c82cc7f1f05fe6a512cbd77e2a76339e|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/LectinAtlas.js|1460|5|V|javascript
+	  console.log(column);
+3339a74ae00c908ebf93f2eb74729437|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/LectinAtlas.js|1464|1|V|javascript
+	  if (column[0].checked) {
+	    let child_win = window.open(local + "/index_sub1.html", "_blank", "toolbar=yes,menubar=yes,scrollbars=yes");
+	  }
+149841fc7d09022f23ab2efadbf3643f|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/LectinAtlas.js|1466|1|V|javascript
+	  if (column[1].checked) {
+	    let child_win = window.open(local + "/index_sub2.html", "_blank", "toolbar=yes,menubar=yes,scrollbars=yes");
+	  }
+	  if (column[2].checked) {
+	    let child_win = window.open(local + "/index_sub3.html", "_blank", "toolbar=yes,menubar=yes,scrollbars=yes");
+	  }
+	  if (column[3].checked) {
+	    let child_win = window.open(local + "/index_sub4.html", "_blank", "toolbar=yes,menubar=yes,scrollbars=yes");
+	  }
+	  if (column[4].checked) {
+	    let child_win = window.open(local + "/index_sub5.html", "_blank", "toolbar=yes,menubar=yes,scrollbars=yes");
+	  }
+	  if (column[5].checked) {
+	    let child_win = window.open(local + "/index_sub6.html", "_blank", "toolbar=yes,menubar=yes,scrollbars=yes");
+	  }
+	  if (column[6].checked) {
+	    let child_win = window.open(local + "/index_sub7.html", "_blank", "toolbar=yes,menubar=yes,scrollbars=yes");
+	  }
+237aa5d05d54e109b0f4fe00415dd3eb|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|101|1|V|html
+	                <tr id="none">
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+	                  <td class="ex_border_none"></td>
+	                </tr>
+c87eeaaa8187c18b83a924b6c3e4a799|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/index_sub5.html|100|1|V|html
+	              <thead>
+	              </thead>
+56d797aa3d6e8305372e52ce9d4746de|file:///Users/Kouiti/local_file/lm-glycomeatlas/README.md|122|41|v|markdown
+	{臓器名}{テーブルの列番号}
+a9e70f6574c8794e5e8364394b145d3c|file:///Users/Kouiti/local_file/lm-glycomeatlas/README.md|124|1|V|markdown
+	   - `"{臓器名}{テーブルの列番号}": "{inkscapeで加工したsvgファイルのpath}"`
+6bcea72bb8cb8d49688e062c6110178d|file:///Users/Kouiti/local_file/lm-glycomeatlas/README.md|125|55|v|markdown
+	inkscapeで加工ファイルのpath
+bb083f956547ce689ffd5a7619c89a15|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/lectinarray_data/Normal_2m/Heart_TMI2_before_s.svg|1|1|v|svg
+	Normal_2m/
+0fdf2779d04ddbb7a550637738a2d151|untitled:217|1|1|V|
+	"SNA"	1.548,
+	"SSA"	1.31,
+	"TJA-I"	1.665,
+	"PHA-L"	0.06,
+	"ECA"	0.033,
+	"RCA120"	0.675,
+	"PHA-E"	0.848,
+	"DSA"	2.077,
+	"GSL-II"	0.004,
+	"NPA"	2.208,
+	"ConA"	3.203,
+	"GNA"	0.901,
+	"HHL"	0.332,
+	"ACG"	3.823,
+	"TxLC-I"	0.175,
+	"BPL"	0.06,
+	"TJA-II"	0.472,
+	"EEL"	0.004,
+	"ABA"	1.041,
+	"LEL"	2.87,
+	"STL"	2.947,
+	"UDA"	1.328,
+	"PWM"	0.034,
+	"Jacalin"	1.696,
+	"PNA"	0,
+	"WFA"	0.038,
+	"ACA"	0.685,
+	"MPA"	0.21,
+	"HPA"	2.685,
+	"VVA"	0.012,
+	"DBA"	0.021,
+	"SBA"	0.01,
+	"Calsepa"	6.244,
+	"PTL-I"	0.005,
+	"MAH"	0.257,
+	"WGA"	1.035,
+	"GSL-IA4"	0.073,
+	"GSL-IB4"	0.069,
+	"LTL"	0.141,
+	"PSA"	1.007,
+	"LCA"	1.25,
+	"UEA-I"	0.004,
+	"AOL"	0.68,
+	"AAL"	1.363,
+	"MAL"	0.419,
+	"SNA"	2.159,
+	"SSA"	1.64,
+	"TJA-I"	2.57,
+	"PHA-L"	0.034,
+	"ECA"	0.023,
+	"RCA120"	0.555,
+	"PHA-E"	1.147,
+	"DSA"	2.64,
+	"GSL-II"	0.002,
+	"NPA"	1.196,
+	"ConA"	2.51,
+	"GNA"	0.401,
+	"HHL"	0.16,
+	"ACG"	3.66,
+	"TxLC-I"	0.195,
+	"BPL"	0.027,
+	"TJA-II"	0.383,
+	"EEL"	0,
+	"ABA"	0.794,
+	"LEL"	2.528,
+	"STL"	3.479,
+	"UDA"	1.378,
+	"PWM"	0.014,
+	"Jacalin"	1.329,
+	"PNA"	0,
+	"WFA"	0.011,
+	"ACA"	0.582,
+	"MPA"	0.2,
+	"HPA"	2.567,
+	"VVA"	0.017,
+	"DBA"	0.024,
+	"SBA"	0.015,
+	"Calsepa"	6.154,
+	"PTL-I"	0.025,
+	"MAH"	0.35,
+	"WGA"	1.299,
+	"GSL-IA4"	0.064,
+	"GSL-IB4"	0.003,
+	"LTL"	0.151,
+	"PSA"	0.744,
+	"LCA"	1.088,
+	"UEA-I"	0.027,
+	"AOL"	0.848,
+	"AAL"	1.494,
+	"MAL"	0.32,
+	"SNA"	1.537,
+	"SSA"	1.364,
+	"TJA-I"	1.683,
+	"PHA-L"	0.009,
+	"ECA"	0.014,
+	"RCA120"	0.595,
+	"PHA-E"	1.039,
+	"DSA"	2.358,
+	"GSL-II"	0,
+	"NPA"	0.917,
+	"ConA"	3.369,
+	"GNA"	0.335,
+	"HHL"	0.115,
+	"ACG"	4.552,
+	"TxLC-I"	0.14,
+	"BPL"	0.04,
+	"TJA-II"	0.379,
+	"EEL"	0,
+	"ABA"	0.919,
+	"LEL"	2.733,
+	"STL"	2.862,
+	"UDA"	1.283,
+	"PWM"	0,
+	"Jacalin"	1.74,
+	"PNA"	0,
+	"WFA"	0.005,
+	"ACA"	0.692,
+	"MPA"	0.202,
+	"HPA"	3.342,
+	"VVA"	0,
+	"DBA"	0.004,
+	"SBA"	0,
+	"Calsepa"	6.696,
+	"PTL-I"	0.009,
+	"MAH"	0.262,
+	"WGA"	1.091,
+	"GSL-IA4"	0.041,
+	"GSL-IB4"	0,
+	"LTL"	0.099,
+	"PSA"	0.969,
+	"LCA"	1.21,
+	"UEA-I"	0.005,
+	"AOL"	0.472,
+	"AAL"	0.976,
+	"MAL"	0.407,
+	"SNA"	1.708,
+	"SSA"	1.278,
+	"TJA-I"	2.021,
+	"PHA-L"	0.032,
+	"ECA"	0.039,
+	"RCA120"	0.514,
+	"PHA-E"	1.229,
+	"DSA"	1.96,
+	"GSL-II"	0,
+	"NPA"	1.232,
+	"ConA"	2.924,
+	"GNA"	0.451,
+	"HHL"	0.231,
+	"ACG"	5.736,
+	"TxLC-I"	0.213,
+	"BPL"	0.022,
+	"TJA-II"	0.38,
+	"EEL"	0.002,
+	"ABA"	0.743,
+	"LEL"	2.931,
+	"STL"	2.734,
+	"UDA"	1.38,
+	"PWM"	0.003,
+	"Jacalin"	1.442,
+	"PNA"	0.011,
+	"WFA"	0.018,
+	"ACA"	0.416,
+	"MPA"	0.198,
+	"HPA"	2.719,
+	"VVA"	0.029,
+	"DBA"	0.048,
+	"SBA"	0.028,
+	"Calsepa"	6.646,
+	"PTL-I"	0.042,
+	"MAH"	0.234,
+	"WGA"	1.195,
+	"GSL-IA4"	0.062,
+	"GSL-IB4"	0.011,
+	"LTL"	0.14,
+	"PSA"	1.017,
+	"LCA"	1.187,
+	"UEA-I"	0.004,
+	"AOL"	0.544,
+	"AAL"	1.049,
+	"MAL"	0.331,
+	"SNA"	1.546,
+	"SSA"	1.409,
+	"TJA-I"	2.026,
+	"PHA-L"	0.034,
+	"ECA"	0.018,
+	"RCA120"	0.412,
+	"PHA-E"	1.145,
+	"DSA"	2.078,
+	"GSL-II"	0,
+	"NPA"	1.497,
+	"ConA"	3.003,
+	"GNA"	0.505,
+	"HHL"	0.225,
+	"ACG"	4.383,
+	"TxLC-I"	0.261,
+	"BPL"	0.045,
+	"TJA-II"	0.309,
+	"EEL"	0,
+	"ABA"	0.863,
+	"LEL"	3.344,
+	"STL"	2.82,
+	"UDA"	1.468,
+	"PWM"	0.003,
+	"Jacalin"	1.522,
+	"PNA"	0.003,
+	"WFA"	0.045,
+	"ACA"	0.519,
+	"MPA"	0.185,
+	"HPA"	2.922,
+	"VVA"	0.015,
+	"DBA"	0.025,
+	"SBA"	0.031,
+	"Calsepa"	6.605,
+	"PTL-I"	0.014,
+	"MAH"	0.242,
+	"WGA"	1.118,
+	"GSL-IA4"	0.06,
+	"GSL-IB4"	0.03,
+	"LTL"	0.206,
+	"PSA"	0.463,
+	"LCA"	0.778,
+	"UEA-I"	0.02,
+	"AOL"	0.914,
+	"AAL"	1.74,
+	"MAL"	0.005,
+	"SNA"	0.865,
+	"SSA"	0.846,
+	"TJA-I"	0.905,
+	"PHA-L"	0.02,
+	"ECA"	0.018,
+	"RCA120"	0.942,
+	"PHA-E"	0.423,
+	"DSA"	2.021,
+	"GSL-II"	0,
+	"NPA"	0.929,
+	"ConA"	2.781,
+	"GNA"	0.665,
+	"HHL"	0.568,
+	"ACG"	2.978,
+	"TxLC-I"	0.032,
+	"BPL"	0.066,
+	"TJA-II"	0.71,
+	"EEL"	0,
+	"ABA"	1.613,
+	"LEL"	3.762,
+	"STL"	4.182,
+	"UDA"	1.916,
+	"PWM"	0.085,
+	"Jacalin"	2.334,
+	"PNA"	0,
+	"WFA"	0.049,
+	"ACA"	0.795,
+	"MPA"	0.244,
+	"HPA"	1.614,
+	"VVA"	0.313,
+	"DBA"	0.282,
+	"SBA"	0.233,
+	"Calsepa"	6.985,
+	"PTL-I"	0.116,
+	"MAH"	0.367,
+	"WGA"	0.954,
+	"GSL-IA4"	0.18,
+	"GSL-IB4"	0.081,
+	"LTL"	0.119,
+	"PSA"	0.878,
+	"LCA"	1.073,
+	"UEA-I"	0.016,
+	"AOL"	0.794,
+	"AAL"	1.364,
+	"MAL"	0.319,
+	"SNA"	1.09,
+	"SSA"	1.048,
+	"TJA-I"	1.277,
+	"PHA-L"	0,
+	"ECA"	0,
+	"RCA120"	0.546,
+	"PHA-E"	0.982,
+	"DSA"	2.02,
+	"GSL-II"	0,
+	"NPA"	1.659,
+	"ConA"	3.803,
+	"GNA"	0.515,
+	"HHL"	0.169,
+	"ACG"	4.899,
+	"TxLC-I"	0.084,
+	"BPL"	0,
+	"TJA-II"	0.352,
+	"EEL"	0,
+	"ABA"	0.831,
+	"LEL"	3.752,
+	"STL"	2.621,
+	"UDA"	1.287,
+	"PWM"	0,
+	"Jacalin"	1.663,
+	"PNA"	0,
+	"WFA"	0,
+	"ACA"	0.488,
+	"MPA"	0.109,
+	"HPA"	4.034,
+	"VVA"	0,
+	"DBA"	0.003,
+	"SBA"	0,
+	"Calsepa"	6.337,
+	"PTL-I"	0,
+	"MAH"	0.079,
+	"WGA"	0.787,
+	"GSL-IA4"	0,
+	"GSL-IB4"	0,
+	"LTL"	0.63,
+	"PSA"	0.951,
+	"LCA"	1.262,
+	"UEA-I"	0.194,
+	"AOL"	1.252,
+	"AAL"	1.529,
+	"MAL"	0.444,
+	"SNA"	0.989,
+	"SSA"	0.898,
+	"TJA-I"	1.272,
+	"PHA-L"	0.19,
+	"ECA"	0.391,
+	"RCA120"	0.645,
+	"PHA-E"	1.183,
+	"DSA"	1.941,
+	"GSL-II"	0.153,
+	"NPA"	1.928,
+	"ConA"	2.748,
+	"GNA"	0.402,
+	"HHL"	0.404,
+	"ACG"	1.828,
+	"TxLC-I"	0.407,
+	"BPL"	0.523,
+	"TJA-II"	0.797,
+	"EEL"	0.099,
+	"ABA"	1.529,
+	"LEL"	2.242,
+	"STL"	3.309,
+	"UDA"	0.977,
+	"PWM"	0.188,
+	"Jacalin"	1.365,
+	"PNA"	0.093,
+	"WFA"	0.369,
+	"ACA"	1.431,
+	"MPA"	0.465,
+	"HPA"	2.724,
+	"VVA"	0.176,
+	"DBA"	0.218,
+	"SBA"	0.244,
+	"Calsepa"	4.094,
+	"PTL-I"	0.13,
+	"MAH"	0.368,
+	"WGA"	1.003,
+	"GSL-IA4"	0.816,
+	"GSL-IB4"	0.201,
+	"LTL"	0.744,
+	"PSA"	0.783,
+	"LCA"	1.042,
+	"UEA-I"	0.175,
+	"AOL"	0.967,
+	"AAL"	1.076,
+	"MAL"	0.398,
+	"SNA"	0.903,
+	"SSA"	0.907,
+	"TJA-I"	1.457,
+	"PHA-L"	0.163,
+	"ECA"	0.351,
+	"RCA120"	0.559,
+	"PHA-E"	1.198,
+	"DSA"	1.888,
+	"GSL-II"	0.136,
+	"NPA"	1.56,
+	"ConA"	3.251,
+	"GNA"	0.33,
+	"HHL"	0.323,
+	"ACG"	2.048,
+	"TxLC-I"	0.414,
+	"BPL"	0.582,
+	"TJA-II"	0.932,
+	"EEL"	0.076,
+	"ABA"	1.35,
+	"LEL"	2.61,
+	"STL"	3.486,
+	"UDA"	0.689,
+	"PWM"	0.153,
+	"Jacalin"	1.525,
+	"PNA"	0.099,
+	"WFA"	0.414,
+	"ACA"	1.378,
+	"MPA"	0.451,
+	"HPA"	3.291,
+	"VVA"	0.219,
+	"DBA"	0.213,
+	"SBA"	0.219,
+	"Calsepa"	4.051,
+	"PTL-I"	0.122,
+	"MAH"	0.447,
+	"WGA"	0.863,
+	"GSL-IA4"	0.954,
+	"GSL-IB4"	0.202,
+	"LTL"	1.162,
+	"PSA"	0.874,
+	"LCA"	1.378,
+	"UEA-I"	0.173,
+	"AOL"	0.762,
+	"AAL"	0.54,
+	"MAL"	0.5,
+	"SNA"	1.061,
+	"SSA"	0.822,
+	"TJA-I"	1.748,
+	"PHA-L"	0.273,
+	"ECA"	0.629,
+	"RCA120"	0.715,
+	"PHA-E"	1.311,
+	"DSA"	1.819,
+	"GSL-II"	0.218,
+	"NPA"	1.382,
+	"ConA"	3.951,
+	"GNA"	0.319,
+	"HHL"	0.508,
+	"ACG"	1.223,
+	"TxLC-I"	0.462,
+	"BPL"	0.731,
+	"TJA-II"	0.753,
+	"EEL"	0.095,
+	"ABA"	1.512,
+	"LEL"	2.7,
+	"STL"	3.136,
+	"UDA"	0.683,
+	"PWM"	0.271,
+	"Jacalin"	1.31,
+	"PNA"	0.063,
+	"WFA"	0.503,
+	"ACA"	1.581,
+	"MPA"	0.424,
+	"HPA"	2.885,
+	"VVA"	0.225,
+	"DBA"	0.285,
+	"SBA"	0.34,
+	"Calsepa"	3.023,
+	"PTL-I"	0.057,
+	"MAH"	0.363,
+	"WGA"	0.818,
+	"GSL-IA4"	1.259,
+	"GSL-IB4"	0.152,
+	"LTL"	0.759,
+	"PSA"	0.767,
+	"LCA"	1.019,
+	"UEA-I"	0.15,
+	"AOL"	0.904,
+	"AAL"	0.844,
+	"MAL"	0.403,
+	"SNA"	0.723,
+	"SSA"	0.721,
+	"TJA-I"	1.263,
+	"PHA-L"	0.168,
+	"ECA"	0.362,
+	"RCA120"	0.564,
+	"PHA-E"	1.232,
+	"DSA"	2.095,
+	"GSL-II"	0.115,
+	"NPA"	1.84,
+	"ConA"	3.672,
+	"GNA"	0.38,
+	"HHL"	0.342,
+	"ACG"	2.254,
+	"TxLC-I"	0.353,
+	"BPL"	0.503,
+	"TJA-II"	0.622,
+	"EEL"	0.017,
+	"ABA"	1.246,
+	"LEL"	2.83,
+	"STL"	3.581,
+	"UDA"	0.896,
+	"PWM"	0.138,
+	"Jacalin"	1.452,
+	"PNA"	0.072,
+	"WFA"	0.353,
+	"ACA"	1.319,
+	"MPA"	0.321,
+	"HPA"	3.266,
+	"VVA"	0.141,
+	"DBA"	0.158,
+	"SBA"	0.156,
+	"Calsepa"	4.474,
+	"PTL-I"	0.131,
+	"MAH"	0.418,
+	"WGA"	0.996,
+	"GSL-IA4"	0.808,
+	"GSL-IB4"	0.17,
+	"LTL"	0.067,
+	"PSA"	0.636,
+	"LCA"	1.035,
+	"UEA-I"	0,
+	"AOL"	0.612,
+	"AAL"	1.147,
+	"MAL"	0.307,
+	"SNA"	1.21,
+	"SSA"	0.979,
+	"TJA-I"	2.042,
+	"PHA-L"	0.017,
+	"ECA"	0.023,
+	"RCA120"	0.609,
+	"PHA-E"	1.066,
+	"DSA"	2.059,
+	"GSL-II"	0,
+	"NPA"	1.735,
+	"ConA"	2.731,
+	"GNA"	0.34,
+	"HHL"	0.22,
+	"ACG"	5.623,
+	"TxLC-I"	0.161,
+	"BPL"	0.023,
+	"TJA-II"	0.277,
+	"EEL"	0,
+	"ABA"	0.823,
+	"LEL"	3.143,
+	"STL"	4.33,
+	"UDA"	1.025,
+	"PWM"	0,
+	"Jacalin"	0.962,
+	"PNA"	0,
+	"WFA"	0.009,
+	"ACA"	0.466,
+	"MPA"	0.128,
+	"HPA"	3.044,
+	"VVA"	0,
+	"DBA"	0.003,
+	"SBA"	0.006,
+	"Calsepa"	7.073,
+	"PTL-I"	0,
+	"MAH"	0.178,
+	"WGA"	0.857,
+	"GSL-IA4"	0.036,
+	"GSL-IB4"	0,
+	"LTL"	0.01,
+	"PSA"	0.515,
+	"LCA"	0.685,
+	"UEA-I"	0,
+	"AOL"	0.61,
+	"AAL"	0.981,
+	"MAL"	0.094,
+	"SNA"	2.68,
+	"SSA"	2.395,
+	"TJA-I"	3.908,
+	"PHA-L"	0,
+	"ECA"	0,
+	"RCA120"	0.422,
+	"PHA-E"	0.688,
+	"DSA"	1.906,
+	"GSL-II"	0,
+	"NPA"	1.348,
+	"ConA"	2.671,
+	"GNA"	0.309,
+	"HHL"	0.131,
+	"ACG"	4.631,
+	"TxLC-I"	0.041,
+	"BPL"	0,
+	"TJA-II"	0.297,
+	"EEL"	0,
+	"ABA"	1.084,
+	"LEL"	3.432,
+	"STL"	4.248,
+	"UDA"	1.025,
+	"PWM"	0,
+	"Jacalin"	1.109,
+	"PNA"	0,
+	"WFA"	0,
+	"ACA"	0.526,
+	"MPA"	0.093,
+	"HPA"	3.075,
+	"VVA"	0,
+	"DBA"	0,
+	"SBA"	0,
+	"Calsepa"	5.528,
+	"PTL-I"	0,
+	"MAH"	0.094,
+	"WGA"	0.464,
+	"GSL-IA4"	0,
+	"GSL-IB4"	0,
+	"LTL"	0.088,
+	"PSA"	1.018,
+	"LCA"	1.111,
+	"UEA-I"	0.138,
+	"AOL"	1.482,
+	"AAL"	2.471,
+	"MAL"	0.329,
+	"SNA"	1.257,
+	"SSA"	1.098,
+	"TJA-I"	1.182,
+	"PHA-L"	0.028,
+	"ECA"	0.051,
+	"RCA120"	0.55,
+	"PHA-E"	0.967,
+	"DSA"	2.198,
+	"GSL-II"	0,
+	"NPA"	1.966,
+	"ConA"	2.448,
+	"GNA"	0.363,
+	"HHL"	0.245,
+	"ACG"	3.43,
+	"TxLC-I"	0.272,
+	"BPL"	0.035,
+	"TJA-II"	0.502,
+	"EEL"	0,
+	"ABA"	1.51,
+	"LEL"	2.749,
+	"STL"	3.65,
+	"UDA"	1.171,
+	"PWM"	0.004,
+	"Jacalin"	1.34,
+	"PNA"	0,
+	"WFA"	0.026,
+	"ACA"	1.006,
+	"MPA"	0.345,
+	"HPA"	1.898,
+	"VVA"	0.006,
+	"DBA"	0.03,
+	"SBA"	0.012,
+	"Calsepa"	6.138,
+	"PTL-I"	0.023,
+	"MAH"	0.242,
+	"WGA"	1.564,
+	"GSL-IA4"	0.05,
+	"GSL-IB4"	0.005,
+	"LTL"	0.043,
+	"PSA"	0.153,
+	"LCA"	0.517,
+	"UEA-I"	0,
+	"AOL"	0.543,
+	"AAL"	1.106,
+	"MAL"	0.027,
+	"SNA"	5.071,
+	"SSA"	4.133,
+	"TJA-I"	6.569,
+	"PHA-L"	0,
+	"ECA"	0,
+	"RCA120"	1.13,
+	"PHA-E"	0.57,
+	"DSA"	1.881,
+	"GSL-II"	0,
+	"NPA"	0.571,
+	"ConA"	1.844,
+	"GNA"	0,
+	"HHL"	0,
+	"ACG"	2.714,
+	"TxLC-I"	0.126,
+	"BPL"	0,
+	"TJA-II"	0.563,
+	"EEL"	0,
+	"ABA"	1.293,
+	"LEL"	2.983,
+	"STL"	3.816,
+	"UDA"	1.194,
+	"PWM"	0,
+	"Jacalin"	1.378,
+	"PNA"	0,
+	"WFA"	0,
+	"ACA"	0.302,
+	"MPA"	0.035,
+	"HPA"	0.766,
+	"VVA"	0,
+	"DBA"	0,
+	"SBA"	0,
+	"Calsepa"	5.123,
+	"PTL-I"	0,
+	"MAH"	0,
+	"WGA"	0.549,
+	"GSL-IA4"	0,
+	"GSL-IB4"	0,
+a9f5ed75a84101a40ae2b587cd7eb084|file:///Users/Kouiti/local_file/lm-glycomeatlas/README.md|129|6|v|markdown
+	pythonmodule/createtsv.py
+0c43985f9b093ebf275c7dcef9275ea8|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|11|21|V|python
+	# /path/to/directory/
+ea703e7aa1efda0064eaa507d9e8ab7e|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|10|27|v|python
+	hoge
+4267452369fc9cd2d714555aecdf7ced|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|10|30|V|python
+	file = os.path.join(path,".py")
+a2f94fa547a2dc0df977a7103a8044ab|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|12|13|V|python
+	print(os.path)
+04b7e86e32c852493397ace38954dab1|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|11|38|V|python
+	file = os.path.join(path, "tsvdata.tsv")
+758fe3210a1641cc1d8aaa07db3cede0|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|11|10|V|python
+	print(path)
+fad58de7366495db4650cfefac2fcd61|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|10|4|V|python
+	main
+e5df0595bf7afc1580cecf787e86d12d|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|17|9|V|python
+	            print(cols)
+aba95ed8eb85fd9cdc5db13cde6d85a2|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|17|1|V|python
+	            if cols[0] not in results_json.keys():
+	                results_json[cols[0]] = {}
+7bb0edd98f22430a03b67f853e83c2ca|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|16|8|V|python
+	        
+6466dec1d1a5d4fffd81749b55338ed5|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|15|11|V|python
+	    header 
+98d49ead37b788139d3b5dfec41568fe|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsvdata.tsv|1|1|V|
+	Sample Name	Lectin Name	Value (Mean Normalized)
+ef61011158cdab9e42215c28c68821bd|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|21|1|V|python
+	    print(results_json)
+ef334e4535bf76e6cc10434ee4ff8466|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|22|16|V|python
+	    json.dump(o)
+2d3bb9c53c0b21de5624dbea71db9ebd|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|25|14|V|python
+	    t = dict()
+99c22b7c9b0446d9c9273846dec81d22|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|26|13|V|python
+	        print
+6ac03e935b5890233f16a16ba7d5411f|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|35|19|v|json
+	Mouse1_4C30-1_Sample1;Mouse1_4C30-1_Sample2;Mouse1_4C30-1_Sample3;Mouse1_4C30-1_Sample4;Mouse1_4C30-1_Sample5;Mouse2_4C30-2_Sample6;Mouse2_4C30-2_Sample7;Mouse2_4C30-2_Sample8;Mouse2_4C30-2_Sample9;Mouse2_4C30-2_Sample10;Mouse3_4C30-3_Sample11;Mouse3_4C30-3_Sample12;Mouse3_4C30-3_Sample13;Mouse3_4C30-3_Sample14;Mouse3_4C30-3_Sample15
+e91ac5e9ca0998c22166b44456a69a87|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|26|18|v|python
+	.replace(" ", "_")
+6096f219284971ad0279900d0ff817a6|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|34|1|V|json
+	  "Heart7": "lectinarray_data/Normal_2m/Heart_TMI2_before_s.svg",
+	  "Heart7-data": "Mouse1_TMI1_Sample1;Mouse1_TMI1_Sample2;Mouse1_TMI1_Sample3;Mouse1_TMI1_Sample4;Mouse1_TMI1_Sample5;Mouse1_TMI1_Sample6;Mouse1_TMI1_Sample7;Mouse1_TMI1_Sample8;Mouse2_TMI2_Sample9;Mouse2_TMI2_Sample10;Mouse2_TMI2_Sample11;Mouse2_TMI2_Sample12;Mouse2_TMI2_Sample13;Mouse2_TMI2_Sample14;Mouse2_TMI2_Sample15;Mouse2_TMI2_Sample16;Mouse3_TMI3_Sample17;Mouse3_TMI3_Sample18;Mouse3_TMI3_Sample19;Mouse3_TMI3_Sample20;Mouse3_TMI3_Sample21;Mouse3_TMI3_Sample22;Mouse3_TMI3_Sample23;Mouse3_TMI3_Sample24;"
+d18457c07eb22db5cb13864c39162050|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|37|19|v|json
+	Mouse1_TMI1_Sample1;Mouse1_TMI1_Sample2;Mouse1_TMI1_Sample3;Mouse1_TMI1_Sample4;Mouse1_TMI1_Sample5;Mouse1_TMI1_Sample6;Mouse1_TMI1_Sample7;Mouse1_TMI1_Sample8;Mouse2_TMI2_Sample9;Mouse2_TMI2_Sample10;Mouse2_TMI2_Sample11;Mouse2_TMI2_Sample12;Mouse2_TMI2_Sample13;Mouse2_TMI2_Sample14;Mouse2_TMI2_Sample15;Mouse2_TMI2_Sample16;Mouse3_TMI3_Sample17;Mouse3_TMI3_Sample18;Mouse3_TMI3_Sample19;Mouse3_TMI3_Sample20;Mouse3_TMI3_Sample21;Mouse3_TMI3_Sample22;Mouse3_TMI3_Sample23;Mouse3_TMI3_Sample24;
+4baf07cbc70e7730c656593d9738cf5b|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|36|1|V|json
+	  "Heart7": "lectinarray_data/Normal_2m/Heart_TMI2_before_s.svg",
+	  "Heart7-data": ""
+21daf6871aad424b6a6addaff21dd0a5|file:///Users/Kouiti/local_file/lm-glycomeatlas/README.md|142|3|V|markdown
+	>>>>>>> 25a4a504e6dcca4aa0c00a21fa2111c2e7743275
+9ccd000ae4249fd614f46ccf1374f167|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|30|1|V|vim
+	  if ext == "py"
+	    call SplitWindow()
+	    term python %
+ad022e4398f6d097a6821f1ca08456d4|file:///Users/Kouiti/local_file/practice-rust/main.ru|2|5|V|ruby
+	    // 世界よ、こんにちは
+23eeeb4347bdd26bfc6b7ee9a3b755dd|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|35|10|v|vim
+	python
+be1caea42c3ea2b772125199b17d8bff|file:///Users/Kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|47|1|V|vim
+	  if ext == "py"
+	    set shiftwidth=4
+c5de366859b37996ca1ac63e6ce51761|file:///Users/Kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|43|38|v|vim
+	== 0
+	    return
+	  endif
+	  let ext = split(expand("%:p"), '\.')[-1]
+	  if ext == "py"
+	    set shiftwidth=4
+	  elseif ext == "py"
+	    set shiftwidth=4
+	  endif
+	endfunction
+a22c6e98e730df7d6ac19b44bb806f1a|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|36|3|V|vim
+	    ./%
+7195f56d982f3cd8e3008474dbbb6fcb|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|35|9|v|vim
+	 rustc %
+6594e056e0dc9630461314f88b7f68c0|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|36|1|V|vim
+	    rustc %
+	    ./%
+09d5b90eeb5b02264b2c2908b03f52d3|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/src/main.rs|1|1|V|rust
+	fn main() {
+	    println!("Hello, world!");
+	}
+77bcfd11af8c44fd54553d67c09db460|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/src/readfile.rs|1|1|V|rust
+	fn readfile() {
+3f294832050ffa06064d14a1d5cfb1a8|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/src/readfile.rs|7|1|V|rust
+	fn main() {
+f80259647dec070acae74295befc0e6e|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/src/readfile.rs|1|1|V|rust
+	    println!("Hello, world!");
+	}
+aad78e67f876a337c488f884bc941894|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/Cargo.toml|14|13|v|toml
+	main_2
+e7aaf619fe441e03e2b938eedf984a1f|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/Cargo.toml|7|1|V|toml
+	
+	[[bin]]
+	name = "main.rs"
+	path = "src/main.rs"
+	
+	[[bin]]
+	name = "readfile.rs"
+	path = "src/readfile.rs"
+270de259dae0039eda66a24c523ace42|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|29|1|V|vim
+	  let ext = split(expand("%:p"), '\.')[-1]
+47e8a272d1f824ef3d23fd97a041445a|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|35|1|V|vim
+	    call SplitWindow()
+	    term rustc %  & ./{file}
+6a5ecca00d90bf9ec6279ca30808b514|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|40|5|V|vim
+	    echo ext + "fiailed."
+9f162555961c398249cd9ca2e26844e1|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|41|5|V|vim
+	    term rustc %  & ./{file}
+	    echo ext + "fiailed."
+44e22a8494d687d53e6f639ef8a8d95c|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|40|5|V|vim
+	    call SplitWindow()
+	    term echo file
+37e14e1fa18fd67b4cdd9c84d76b6e7a|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|1|1|V|sh
+	EXTENTION=${1##*.}
+	cd &(pwd)
+	echo run $1
+	echo ----------------------------------------
+	echo
+5dcf0e631f754965b95bfb77a96cccd6|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|37|18|V|vim
+	    " term rustc %  & ./{file}
+e11a395c650834cc512a39dbd5a1d284|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|4|1|V|sh
+	echo ----------------------------------------
+	echo
+bd32ab53cba5170a4af67ef8df0197cf|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|1|1|V|sh
+	EXTENTION=${1##*.}
+bfd2e733b861484763d0877f1d32c6c6|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|5|5|V|sh
+	echo ${1##*.}
+5a938070091f1f71597777d876a5993d|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|4|1|V|sh
+	rustc $1
+	# echo ${1##*.}
+2a39e4d517b43e1b8962aa0dc6c8ac8b|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|3|1|V|sh
+	echo run $1
+	echo ----------------------------------------
+	echo
+d8f8604f080b409c8a0feb9c99c22164|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|4|6|v|sh
+	${1##*.}
+1bd14f4c51af4f86959a6c1cdc0dab8f|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|4|1|V|sh
+	FULLFILENAME = ${1#*/}
+4ef8186dbe5412981a3bc55102c40268|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|5|1|V|sh
+	echo FULLFILENAME
+17b8ef2c330f1430e00c9de5469fc7e7|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|10|8|v|sh
+	LINE
+883fe996f57bc5ccec45930fa493468e|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|12|1|V|sh
+	    echo "${BASH_REMATCH[0]}"
+d930740a7c0205e7c83baa3e71824b70|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|5|20|V|sh
+	# FULLFILENAME=${1}
+	# echo $FULLFILENAME
+	# FILENAME=${FULLFILENAME#*un}
+	# echo $FILENAME
+	
+18c0fc677f294e50e1894a79643f467d|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|5|13|v|sh
+	[^\.]
+1884ef3485e9a87fe5d86b24be68a665|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|5|13|v|sh
+	([^\.]+)
+470854625c6d9b50d5ea773ddd393c69|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|8|1|V|sh
+	    echo "${BASH_REMATCH[1]}"
+cbb11ed87dc8a95d81400c7f33c7c171|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|7|5|v|sh
+	echo
+79a9ec6271044ed2f978e96d34e03837|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|7|15|V|sh
+	# if [ "$1" == "Dockerfile" ]; then
+	#   docker-compose build
+	#   docker-compose up
+	# elif [ "$1" == "docker-compose.yml" ]; then
+	#   docker-compose up
+	# elif [ ${EXTENTION} == "py" ]; then
+	#   python $1
+	# else
+9f0af9ca1449d9f661dbf8c36eeba365|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|24|1|V|sh
+	# fi
+	
+	# python $(pwd)$1
+	# docker-compose build
+	# docker-compose up
+	# docker-compose restart
+	
+	# exit 0
+2c3dfe33bbe1cb4ff5d1d1393842a6fb|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|5|1|V|sh
+	if [[ $1 =~ ([^\.]+)\.([^\.]+) ]]
+	then
+	  EXTENSION="${BASH_REMATCH[1]}"
+	  echo "${BASH_REMATCH[2]}"
+	fi
+cda3f8d9523d88f3d4afc9becd8e52fb|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|12|1|V|sh
+	if [ -e $(pwd)/run.sh ]; then
+	  sh $(pwd)/run.sh $1
+	elif [ -e $(pwd)/../run.sh ]; then
+	  sh $(pwd)/../run.sh $1
+	elif [ -e $(pwd)/../../run.sh ]; then
+	  sh $(pwd)/../../run.sh $1
+	elif [ -e $(pwd)/../../../run.sh ]; then
+	  sh $(pwd)/../../../run.sh $1
+	elif [ -e $(pwd)/../../../../run.sh ]; then
+	  sh $(pwd)/../../../../run.sh $1
+	elif [ -e $(pwd)/../../../../../run.sh ]; then
+	  sh $(pwd)/../../../../../run.sh $1
+	elif [ -e $(pwd)/../../../../../../run.sh ]; then
+	  sh $(pwd)/../../../../../../run.sh $1
+	else
+	  echo setting didnt detected
+	fi
+174cf57a8ede72850a98fb4aa0dd2779|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|1|1|V|sh
+	cd &(pwd)
+40a4954ef2e70d3992f31a758d27b073|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|2|1|V|sh
+	echo $1
+2f337218618cceb534ae578205b05610|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|9|13|v|sh
+	"${BASH_REMATCH[1]}"
+1d1cd00b7cd275ef0629c38d0eb70b4d|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|9|3|v|sh
+	EXTENSION
+496475a066afb2d2e50a4133b9822497|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|10|3|v|sh
+	FILENAME
+ee1c7a1636a6b3bfa542728a4cc27d8a|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|2|1|V|sh
+	echo $1
+	echo $2
+	echo $3
+51902fde3f96fc1cf858458f6fb18c6f|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|2|1|V|sh
+	# cd &(pwd)
+b65fa9abece058f45306fcf787b8470d|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|1|1|V|sh
+	cd pwd
+3d12cdb2fd9ff35e752f93e361fda8e8|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|4|1|V|sh
+	echo "-----------"
+4a060c92318e64f190c392f6e97a9acb|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|8|1|V|sh
+	  FILEPATH="${BASH_REMATCH[0]}"
+	  FILENAME="${BASH_REMATCH[1]}"
+	  EXTENSION="${BASH_REMATCH[2]}"
+ea29f7de5ff1bbc4de839ed3607d5dd4|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|1|10|v|sh
+	"${BASH_REMATCH[0]}"
+307e7da1a024a7d00c500f844c2b146d|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|3|11|v|sh
+	"${BASH_REMATCH[2]}"
+a96489dcd046cdedd1b3aa94fcf5d3ec|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/run.sh|5|1|V|sh
+	echo "-----------"
+	echo run $FILEPATH
+	echo "-----------"
+69fe61410abbed6d0bf2371e8a95aede|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/src/readfile.rs|5|4|v|rust
+	readfile
+aeae00c17480e2734db07010c518d054|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/src/lib.rs|1|5|v|rust
+	new_module
+ad5d6576f452d1cec66f7b7c3dcd6487|file:///Users/Kouiti/local_file/practice-rust/replace_filestr/src/readfile.rs|5|4|v|rust
+	maie
+4a7039a607922da1d7306d3bb1a49031|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|1|1|V|go
+	package main
+	
+	import(
+	    "fmt"
+	    "os"
+	)
+	
+	func main(){
+	    fmt.Println("ファイル読み取り処理を開始します")
+	    // ファイルをOpenする
+	    f, err := os.Open("test.txt")
+	    // 読み取り時の例外処理
+	    if err != nil{
+	        fmt.Println("error")
+	    }
+	    // 関数が終了した際に確実に閉じるようにする
+	    defer f.Close()
+	
+	    // バイト型スライスの作成
+	    buf := make([]byte, 1024)
+	    for {
+	        // nはバイト数を示す
+	        n, err := f.Read(buf)
+	        // バイト数が0になることは、読み取り終了を示す
+	        if n == 0{
+	            break
+	        }
+	        if err != nil{
+	            break
+	        }
+	        // バイト型スライスを文字列型に変換してファイルの内容を出力
+	        fmt.Println(string(buf[:n]))
+	    }
+	}
+726bcb3a4ab9fd3bc7b9f4ffe5c01975|file:///Users/Kouiti/dotfiles/dotfiles/nvim/shortcuts.vim|49|1|V|vim
+	  elseif ext == "rs"
+	    set shiftwidth=4
+705b5d4df8dabab33f2650a460c07a7b|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|34|1|V|vim
+	  elseif ext == "rs"
+	    call SplitWindow()
+	    term cargo run
+3c2acd0b3a97144745ca52037ce22938|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|39|10|v|vim
+	cargo run
+3ab430be714c8afcceb37bf9a6d1439d|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|9|1|V|go
+	func main(){
+57c18388ae259bb395784bb2834f6260|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|9|1|V|go
+	func main(){
+	    fmt.Println("ファイル読み取り処理を開始します")
+	    // ファイルをOpenする
+	    f, err := os.Open("test.txt")
+	    if err != nil{
+	        fmt.Println("error")
+	    }
+	    defer f.Close()
+	
+	    // 一気に全部読み取り
+	    b, err := ioutil.ReadAll(f)
+	    // 出力
+	    fmt.Println(string(b))
+	}
+06d4cd63bde972fc66a0aed41d2f5c51|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|7|3|v|go
+	comment
+51f1d6047d2aad7a1f1c56c34ebc12fc|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|7|5|v|go
+	mymodulw
+1307e256c34b4681509d87493d592321|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|3|1|V|go
+	import (
+		"fmt"
+		"io/ioutil"
+		"os"
+		// selfmodule
+		"./readfile"
+	)
+a8ddf89a0334c47025fcd9d28ce7df52|file:///Users/Kouiti/local_file/go-module/replace_file_string/readfile/readfile.go|7|1|V|go
+		// selfmodule
+		"./readfile"
+8463c0fa94e7406035c1c0efce3254c9|file:///Users/Kouiti/local_file/go-module/replace_file_string/readfile/readfile.go|9|1|V|go
+	func main() {
+		ReadFile()
+	}
+	
+ee599071ce11bf80ca5197bd9488ad3e|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|12|1|V|go
+		fmt.Println("ファイル読み取り処理を開始します")
+		// ファイルをOpenする
+		f, err := os.Open("test.txt")
+		if err != nil {
+			fmt.Println("error")
+		}
+		defer f.Close()
+	
+		// 一気に全部読み取り
+		b, err := ioutil.ReadAll(f)
+		// 出力
+		fmt.Println(string(b))
+12e9c6f572aa98b5645fd532296f0a15|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|4|1|V|go
+		"fmt"
+		"io/ioutil"
+		"os"
+7d04f58988250015023a5827c4cd5409|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|4|1|V|go
+		// selfmodule
+11f8db2d349ae853f4c3ddbadf4997f6|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|4|1|V|go
+	// "replace_file_string/readfile"
+793cc5c8e1163c0910ef32187e18149d|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|5|5|v|go
+	replace_file_string
+8684147451a6cc3b92142c6f4b78e61c|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|5|5|v|go
+	glob
+8c7dd922ad47494fc02c388e12c00eac|file:///Users/Kouiti/local_file/go-module/replace_file_string/glob/glob.go|23|9|v|go
+	file
+b45cffe084dd3d20d928bee85e7b0f21|file:///Users/Kouiti/local_file/go-module/replace_file_string/glob/glob.go|9|33|v|go
+	string
+9826d6636027e3c656f3395f6ab716a1|file:///Users/Kouiti/local_file/go-module/replace_file_string/glob/glob.go|23|1|V|go
+		var results []string = ["IJoj"]
+	
+f5ad595fdb86983a9cd3e644408f6252|file:///Users/Kouiti/local_file/go-module/replace_file_string/glob/glob.go|23|15|V|go
+		return results
+1baf8770b1d8a6e742d5e7d6d241e5d2|file:///Users/Kouiti/local_file/go-module/replace_file_string/glob/glob.go|14|14|v|go
+	targetDir
+7a2d155cea7e198e1e130ee3da50804a|file:///Users/Kouiti/local_file/go-module/replace_file_string/glob/glob.go|10|1|V|go
+		targetDir := "."
+		if len(os.Args) == 2 {
+			targetDir = os.Args[1]
+		}
+		fmt.Println(os.Args[0])
+ac6ed5f8e3197f0fada95870b4aab3d3|file:///Users/Kouiti/local_file/go-module/replace_file_string/glob/glob.go|10|12|V|go
+		pattern := "/*.txt"
+240bf022e685b0ee30ad9fe9e1fb5d5b|file:///Users/Kouiti/local_file/go-module/replace_file_string/glob/glob.go|10|30|v|go
+	pattern
+d49a7c19d08262a38483c6dde627b9ea|file:///Users/Kouiti/local_file/go-module/replace_file_string/glob/glob.go|5|2|V|go
+		"os"
+a6c7573b1af0b0430fa76c3cc39349bd|file:///Users/Kouiti/local_file/go-module/replace_file_string/glob/glob.go|4|1|V|go
+		"fmt"
+b4780eddd3f3cfbaef9490a0874b00c7|file:///Users/Kouiti/local_file/go-module/replace_file_string/glob/glob.go|13|1|V|go
+		for _, file := range files {
+			fmt.Println(file)
+		}
+bdcd1f079dccc65ca0b7242ac769cff8|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|2|11|V|sh
+	echo run $1
+c22068b13fb4f2f451d6d32e9e33704a|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|13|1|V|sh
+	    echo $(pwd)/run.sh
+801577ee0eb37b6a8eb24f523cc47fa2|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|16|1|V|sh
+	    echo $(pwd)/../run.sh
+df2abf88deb169c66f76ada5354cd021|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|19|1|V|sh
+	    echo $(pwd)/../../run.sh
+0aa0ab92770e0df39c601759b8acb490|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|22|1|V|sh
+	    echo $(pwd)/../../../run.sh
+8b0f42c0eea69c0b091417542f3dfae5|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|25|1|V|sh
+	    echo $(pwd)/../../../../run.sh
+4aa25065ab3da0bbcc236b9b5374962c|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|28|1|V|sh
+	    echo $(pwd)/../../../../../run.sh
+	  elif [ -e $(pwd)/../../../../../../run.sh ]; then
+114019aa50172c6941ef0a2325c71e82|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|29|1|V|sh
+	  elif [ -e $(pwd)/../../../../../../run.sh ]; then
+	    sh $(pwd)/../../../../../../run.sh $FILEPATH $FILENAME $EXTENSION
+ee5268aa379c19418a99ef24b79025b5|file:///Users/Kouiti/dotfiles/dotfiles/nvim/run.sh|28|6|V|sh
+	    echo $(pwd)/../../../../../run.sh
+1b30fcb2fa2557d7b8606703f65cb060|file:///Users/Kouiti/local_file/go-module/replace_file_string/run.sh|2|1|V|sh
+	go run main.go
+6844fbef236c5281451a5150ac9f57d7|file:///Users/Kouiti/local_file/go-module/replace_file_string/readfile/readfile.go|24|1|V|go
+	// for _, file := range files {
+	// 	fmt.Println(file)
+	// }
+75951d7ef89cc120751dc8a2d9e3c50c|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|14|1|V|go
+		fmt.Println(files)
+dbf323035334abcb7e3ba8ccf7e5e8ca|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|11|13|V|go
+		// readfile.ReadFile()
+34c56c1b0c3535c04e5850511f13c262|file:///Users/Kouiti/local_file/go-module/replace_file_string/readfile/readfile.go|10|7|V|go
+		fmt.Println("ファイル読み取り処理を開始します")
+098f6bcd4621d373cade4e832627b4f6|file:///Users/Kouiti/local_file/go-module/replace_file_string/readfile/readfile.go|11|21|v|go
+	test
+8d6f5d5a1e547b33f28baa3f84490f70|file:///Users/Kouiti/local_file/go-module/replace_file_string/readfile/readfile.go|20|17|V|go
+		fmt.Println(string(b))
+093abf6302ee0e1814081e5459ccdabf|file:///Users/Kouiti/local_file/go-module/replace_file_string/readfile/readfile.go|20|2|v|go
+	retrurn
+e64e7818703e8c200fe5856fc1857083|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|18|20|V|go
+		readfile.ReadFile()
+f903899e976c2ddf4007a5ef308fd68a|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|21|15|v|go
+	file_string
+01f70ea7f2adb0f89210adc904e32645|file:///Users/Kouiti/local_file/go-module/replace_file_string/mocks/test1.txt|1|1|V|text
+	これはファイル読み取り処理用に作られたファイルです
+cc188ef6aa826b407645b99520efaca2|file:///Users/Kouiti/local_file/go-module/replace_file_string/mocks/test1.txt|1|1|V|text
+	テスト用
+c2e2674e3d72303850db2268d7013497|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|14|21|v|go
+	Regexp
+9d24b413c90d3adf75fffe082469c951|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|22|14|V|go
+				replace_regrep,
+19bd1e93e3d5e92d31e38b0d8748d1fc|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|6|10|V|go
+		"strings"
+8bcf6629759bd278a5c6266bd9c054f8|file:///Users/Kouiti/local_file/go-module/replace_file_string/main.go|19|37|v|go
+	strings
+ff7fba0b01bceb6c578e8d23980af782|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|1|1|V|python
+	fjioasjgioajfdgi
+	fjdioasgj
+	g
+	gsjiadgjdisjf
+2c300743b25b0cd8bc19653ab1b2b5c1|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|7|1|V|python
+	    replace_before_rexexp = ".*"
+e7aae27c0b56d8aa3b9f90ccbf87e36a|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|6|1|V|python
+	    # with open('data/src/test_error.txt') as f:
+	#     print(type(f))
+01d06c2f958e3b3eefceb3480bb0d8ea|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|6|16|v|python
+	data/test_error.txt
+507469f6781faffc7eafe1e0ca3352ec|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|8|26|V|python
+	            print(type(f))
+3dd7aa0eaaf86ce7edebc38ddfeffb92|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|9|8|V|python
+	    pass
+a4ffa5576a871aaefa612a2965416801|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|11|27|v|python
+	file_string.replace()
+96a5841b7257a9c9d1a9ac7c1caa7530|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|9|1|V|python
+	        with open(file_path) as f:
+	            file_string = f.read()
+e7e34719ef211f19813ddd55a235c6dd|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|13|29|v|python
+	read()
+ae07455ea8256f749e86e5eca3c625a9|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|7|8|V|python
+	    len_
+804f6e089cc00c941f5c5261ae972f38|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|9|40|v|python
+	str(index)
+14eb2a4823217a5bea2f56695c165296|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|9|15|v|python
+	str(len(file_paths))
+5b29d211793678b4be06448671589926|file:///Users/Kouiti/local_file/python-module/replace_file_string/mocks/test2.txt|1|1|V|text
+	----------------
+	---------
+	-
+	-tt------------
+97a4e3b581ea70dc86102502736955e7|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|10|14|V|python
+	        return
+327a6c4304ad5938eaf0efb6cc3e53dc|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|22|37|v|python
+	flag
+ba7763a35bcd1d2d0b2e3741c8ac1ead|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|22|37|v|python
+	(?P<flag>(\d+))

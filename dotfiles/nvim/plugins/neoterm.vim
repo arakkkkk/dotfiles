@@ -26,10 +26,17 @@ function RunCurrentFile()
   if len(split(expand("%:p"), '\.')) == 0
     return
   endif
-  let ext = split(expand("%:p"), '\.')[-1]
+  let ext = split(expand("%:p"), '\.')[1]
+  let file = split(expand("%:p"), '\.')[0]
   if ext == "py"
     call SplitWindow()
     term python %
+  elseif ext == "rs"
+    call SplitWindow()
+    term cargo run
+  elseif ext == "go"
+    call SplitWindow()
+    term go run %
   elseif ext == "md"
     PreviewMarkdown bottom
   else

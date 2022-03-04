@@ -46,6 +46,10 @@ function SetTabIndent()
   let ext = split(expand("%:p"), '\.')[-1]
   if ext == "py"
     set shiftwidth=4
+  elseif ext == "rs"
+    set shiftwidth=4
+  elseif ext == "go"
+    set shiftwidth=8
   endif
 endfunction
 

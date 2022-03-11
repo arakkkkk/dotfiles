@@ -1,27 +1,3 @@
-6466dec1d1a5d4fffd81749b55338ed5|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|15|11|V|python
-	    header 
-98d49ead37b788139d3b5dfec41568fe|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsvdata.tsv|1|1|V|
-	Sample Name	Lectin Name	Value (Mean Normalized)
-ef61011158cdab9e42215c28c68821bd|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|21|1|V|python
-	    print(results_json)
-ef334e4535bf76e6cc10434ee4ff8466|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|22|16|V|python
-	    json.dump(o)
-2d3bb9c53c0b21de5624dbea71db9ebd|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|25|14|V|python
-	    t = dict()
-99c22b7c9b0446d9c9273846dec81d22|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|26|13|V|python
-	        print
-6ac03e935b5890233f16a16ba7d5411f|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|35|19|v|json
-	Mouse1_4C30-1_Sample1;Mouse1_4C30-1_Sample2;Mouse1_4C30-1_Sample3;Mouse1_4C30-1_Sample4;Mouse1_4C30-1_Sample5;Mouse2_4C30-2_Sample6;Mouse2_4C30-2_Sample7;Mouse2_4C30-2_Sample8;Mouse2_4C30-2_Sample9;Mouse2_4C30-2_Sample10;Mouse3_4C30-3_Sample11;Mouse3_4C30-3_Sample12;Mouse3_4C30-3_Sample13;Mouse3_4C30-3_Sample14;Mouse3_4C30-3_Sample15
-e91ac5e9ca0998c22166b44456a69a87|file:///Users/Kouiti/local_file/lm-glycomeatlas/pythonmodules/create_lectionarraydatajson/tsv2json.py|26|18|v|python
-	.replace(" ", "_")
-6096f219284971ad0279900d0ff817a6|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|34|1|V|json
-	  "Heart7": "lectinarray_data/Normal_2m/Heart_TMI2_before_s.svg",
-	  "Heart7-data": "Mouse1_TMI1_Sample1;Mouse1_TMI1_Sample2;Mouse1_TMI1_Sample3;Mouse1_TMI1_Sample4;Mouse1_TMI1_Sample5;Mouse1_TMI1_Sample6;Mouse1_TMI1_Sample7;Mouse1_TMI1_Sample8;Mouse2_TMI2_Sample9;Mouse2_TMI2_Sample10;Mouse2_TMI2_Sample11;Mouse2_TMI2_Sample12;Mouse2_TMI2_Sample13;Mouse2_TMI2_Sample14;Mouse2_TMI2_Sample15;Mouse2_TMI2_Sample16;Mouse3_TMI3_Sample17;Mouse3_TMI3_Sample18;Mouse3_TMI3_Sample19;Mouse3_TMI3_Sample20;Mouse3_TMI3_Sample21;Mouse3_TMI3_Sample22;Mouse3_TMI3_Sample23;Mouse3_TMI3_Sample24;"
-d18457c07eb22db5cb13864c39162050|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|37|19|v|json
-	Mouse1_TMI1_Sample1;Mouse1_TMI1_Sample2;Mouse1_TMI1_Sample3;Mouse1_TMI1_Sample4;Mouse1_TMI1_Sample5;Mouse1_TMI1_Sample6;Mouse1_TMI1_Sample7;Mouse1_TMI1_Sample8;Mouse2_TMI2_Sample9;Mouse2_TMI2_Sample10;Mouse2_TMI2_Sample11;Mouse2_TMI2_Sample12;Mouse2_TMI2_Sample13;Mouse2_TMI2_Sample14;Mouse2_TMI2_Sample15;Mouse2_TMI2_Sample16;Mouse3_TMI3_Sample17;Mouse3_TMI3_Sample18;Mouse3_TMI3_Sample19;Mouse3_TMI3_Sample20;Mouse3_TMI3_Sample21;Mouse3_TMI3_Sample22;Mouse3_TMI3_Sample23;Mouse3_TMI3_Sample24;
-4baf07cbc70e7730c656593d9738cf5b|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|36|1|V|json
-	  "Heart7": "lectinarray_data/Normal_2m/Heart_TMI2_before_s.svg",
-	  "Heart7-data": ""
 21daf6871aad424b6a6addaff21dd0a5|file:///Users/Kouiti/local_file/lm-glycomeatlas/README.md|142|3|V|markdown
 	>>>>>>> 25a4a504e6dcca4aa0c00a21fa2111c2e7743275
 9ccd000ae4249fd614f46ccf1374f167|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|30|1|V|vim
@@ -981,3 +957,40 @@ e4e77fefe39b007f5d19f876843a71de|file:///Users/Kouiti/local_file/glycosim/web-gl
 	.extend(
 415ece355bdeb6b5dc29971def54613c|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|123|9|V|python
 	        )
+eeb68ef4403979e323e5fa22ff13013c|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/static/js/gpp.js|398|1|V|javascript
+	    const species = gpp.querySelector("#glystrTable").bootstrapTable("getData");
+	    const reactions = gpp.querySelector("#glytreeTable").bootstrapTable("getData");
+8098493577839315df7e662dd03f0ac8|untitled:17|1526|1|V|
+	    [
+	        "O1",
+	        ";S/T",
+	        0,
+	        "O"
+	    ],
+	    [
+	        "L1",
+	        ":C",
+	        0,
+	        "L"
+	    ]
+6b3c75df8a65413ee7b6c8b82da48af5|untitled:17|1525|5|V|
+	    ]
+de69a6887140af6c1788e7249d4b76de|file:///Users/Kouiti/Desktop/species.csv|256|1|V|
+	"O1", ";S/T", 0, "O"],
+	"L1", ":C", 0, "L"]
+	]
+c1ebf2ef6fccb579ae20ae9a55b9b81a|file:///Users/Kouiti/Desktop/species.csv|1|30|V|
+	Index, Structure, Monosaccharide size, Glycan type
+	N1, Ma2Ma2Ma3(Ma3(Ma2Ma6)Ma6)Mb4GNb4GNb;N, 10, N
+6227f5fa8dae8e1fd9e1c7c1292c2ad4|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|11|1|V|json
+	        "background-image": ["../../../media/images/users/test1.png"],
+c9f3d41111e1eb4575a7a236cdb6de9c|file:///Users/Kouiti/local_file/lets/lets_proj/movie/models.py|1|1|v|python
+	from django.db import models
+dad189c4474a2be1cb733ce8cdab0e01|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|56|5|v|python
+	comment_topic
+4de6cc57ce271a9ce5ec579b9809840b|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/.gitignore|18|1|V|conf
+	models/GssModelSession/sbml/*
+31e7be6fef6970e83b215d3e7dad1190|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/.gitignore|19|8|v|conf
+	GssModelSession
+bcb2c71294445bd3781b2c77bbd3c160|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/.gitignore|19|17|v|conf
+	sbml

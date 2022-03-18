@@ -30,6 +30,7 @@ alias gh="git push"
 alias gd="git diff"
 alias gb="git branch"
 alias gl="git log"
+alias dc="docker-compose"
 
 alias code="code ."
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 78c5a3d499710c6a9d17c1fc9876cf2f|file:///Users/Kouiti/local_file/lm-glycomeatlas/README.md|9|40|V|markdown
 	開発の最新状況(v1.1)をみるには
 	git, node をインストールする。
@@ -779,6 +780,8 @@ d18457c07eb22db5cb13864c39162050|file:///Users/Kouiti/local_file/lm-glycomeatlas
 4baf07cbc70e7730c656593d9738cf5b|file:///Users/Kouiti/local_file/lm-glycomeatlas/public/WholeTissueList.json|36|1|V|json
 	  "Heart7": "lectinarray_data/Normal_2m/Heart_TMI2_before_s.svg",
 	  "Heart7-data": ""
+=======
+>>>>>>> 90f9dbfa131bc7cf61d19b331e19444fdbe315a9
 21daf6871aad424b6a6addaff21dd0a5|file:///Users/Kouiti/local_file/lm-glycomeatlas/README.md|142|3|V|markdown
 	>>>>>>> 25a4a504e6dcca4aa0c00a21fa2111c2e7743275
 9ccd000ae4249fd614f46ccf1374f167|file:///Users/Kouiti/dotfiles/dotfiles/nvim/plugins/neoterm.vim|30|1|V|vim
@@ -1200,6 +1203,7 @@ ae07455ea8256f749e86e5eca3c625a9|file:///Users/Kouiti/local_file/python-module/r
 	flag
 ba7763a35bcd1d2d0b2e3741c8ac1ead|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|22|37|v|python
 	(?P<flag>(\d+))
+<<<<<<< HEAD
 67ee58d3f349e06cbba1174dc0ddeb2f|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|34|22|V|typescriptreact
 	      console.log("jio");
 4650838d55038f54821bc36d091015eb|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/pages/models/gssparam.tsx|35|24|v|typescriptreact
@@ -1692,3 +1696,580 @@ dc39a4b17a5f9336879cf47f585242a3|file:///Users/kouiti/localfile/glycosim/web-gly
 	    // out:
 558d8942e5c5708b1b4b5def885fddaf|file:///Users/kouiti/localfile/glycosim/web-glycosim/next/functions/libgssparams/LibGssParamExpData.tsx|1|1|V|typescriptreact
 	import { ExpData } from "./GssParam";
+=======
+ccac8a66d468e2522611be86933cc0d9|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|126|31|v|typescriptreact
+	pointer
+22706b58c7ee2dd9f9debdd3222617da|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|122|122|v|typescriptreact
+	cursole
+d9c4fd81e333ae80cbb48e6bf9a24c35|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|125|1|V|typescriptreact
+	              style={{ cursor: "pointer" }}
+50a32fccddae31a89de4c4c70ec944f0|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|1|1|V|typescriptreact
+	import { Species, Reaction, Parameter } from "./Sbml";
+fa9fdf433d0521bd61da273ba0dbe2da|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|1|39|v|typescriptreact
+	NavDropdown
+f3b283c316e773200e9cbb9b7715cedc|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|9|55|V|typescriptreact
+	import { Species, Reaction, Parameter } from "functions/Sbml";
+a87198fb6a6b4fe0b70c03fc2a43a8f4|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|4|19|v|typescriptreact
+	Reaction
+4e2bdf954a66b136a919b9d489d6416e|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|4|19|V|typescriptreact
+	import { Species, Parameter } from "functions/libsbmljs/Sbml";
+934961df60fef375a0a9ae5dc4e7492b|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/api/ModelSession.tsx|83|20|v|typescriptreact
+	 name: string; value: number 
+91e7e433e34c3b8843334c1467001cb7|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|41|11|v|typescriptreact
+	res1
+3528579414912ea7816656ea7b96b29e|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|42|11|v|typescriptreact
+	res2
+6680dba00f3a88f66f8029a93d71d93c|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|41|5|v|typescriptreact
+	const
+bc03ddce411b259598d0068e1f1cd33b|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|43|15|V|typescriptreact
+	    console.log
+b326b5062b2f0e69046810717534cb09|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|112|14|v|typescriptreact
+	true
+7a11687e0a2f4405605f91ded07f2ef5|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|112|15|v|typescriptreact
+	alse
+eca10580cff3f4c4744bbd8e2349a5b2|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|66|3|v|typescriptreact
+	LibGssSession
+b361ecb46d8db0afa5aef08893530177|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|66|28|v|typescriptreact
+	gssmodel_id
+b9851e9af20d6cd40e17dc9dbc09e430|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|69|5|V|typescriptreact
+	  console.log(props.model.id);
+66c1f96e84505095750127e1400226c8|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|66|1|V|typescriptreact
+	  try {
+	    console.log(props.model.id);
+	  } catch {}
+d3638a016e9fbbaafce7c3528c4b3f18|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssmodelsessions.py|16|19|V|python
+	        print(model)
+74ef7fdc6d8fda7a4985007c4d9556b2|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssModelSession/repository.py|16|21|V|python
+	    print(dir(model))
+fd62c7f8436d94847d54133aa9e5c586|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssmodelsessions.py|111|24|V|python
+	        content_modelsession
+93da6ea26f4cfbcf3448e4540836615d|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssmodelsessions.py|111|16|v|python
+	went_gssmodel
+9a0364b9e99bb480dd25e1f0284c8555|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssmodelsessions.py|111|16|v|python
+	content
+d7e5327e09085f82ff44697ce7e99d8f|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssmodelsessions.py|104|9|v|python
+	gssmodel
+4a8a91fe256253a9afb6866112874ab6|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssModel/repository.py|75|1|V|python
+	def update(id: int, data):
+	    content = model.query.filter_by(id=id).first()
+	    if "sbml_text" in data:
+	        sbml_dir = "./models/GssModel/sbml/" + str(uuid.uuid4()) + ".xml"
+	        sbml_doc = readSBMLFromString(data["sbml_text"])
+	        writeSBML(sbml_doc, sbml_dir)
+	        data.pop("sbml_text")
+	        data.sbml_dir = sbml_dir
+	    for key in data:
+	        try:
+	            eval("content." + key + "= data.key")
+	            print("update gssmodel ->")
+	            print(key, "->", data.key)
+	        except:
+	            print(key, "passed")
+	            pass
+	    db_session.commit()
+	    return dict(content)
+7ad422fa27a31ce3a37441bc05a3c5ad|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssModelSession/repository.py|18|1|V|python
+	        "gssmodel_id": model.gssmodel_id,
+	        "sbml_dir": model.sbml_dir,
+	        "sbml_text": writeSBMLToString(readSBML(model.sbml_dir)),
+	        "session_id": model.session_id,
+	        "gssmodel_id": model.gssmodel_id,
+	        "date": model.date.strftime("%Y/%m/%d %H:%M"),
+fd0c052f789611df273dc52d7aa016f9|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssModelSession/repository.py|67|1|V|python
+	            eval("content." + key + "= data." + key)
+06d765406a61381b741b30444b784f86|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssModel/repository.py|85|13|V|python
+	            eval("content." + key + "= data.key")
+dffa020c2fd092bda5df154e6778dd62|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssmodelsessions.py|111|69|v|python
+	"gssmodel_id": content.id
+8d777f385d3dfec8815d20f7496026dc|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssModelSession/repository.py|57|21|v|python
+	data
+fe2340b1daebc00c7e3c9b9bb8452f03|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssModelSession/repository.py|63|14|V|python
+	        data.pop("sbml_text")
+247568fc1932475ea75622f833cd37e0|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssModelSession/repository.py|64|1|V|python
+	    for key in data:
+	        try:
+	            eval("content." + key + "= data['" + key + "']")
+	            print("update modelsession ->")
+	            print(key, "->", data.key)
+	        except:
+	            print(key, "passed")
+	            pass
+8507993ea6c4268b5b94f42f2a886d42|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssModelSession/repository.py|61|39|v|python
+	data["sbml_text"]
+9d5f681aaef2d6ea0670929e8669af9e|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/app.py|1577|1|V|python
+	            db_session.add(content)
+8f9a7882d0f1de9dedcea70a0a210f2a|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssModelSession/repository.py|59|1|V|python
+	    if "sbml_text" is not None:
+	        sbml_dir = "./models/GssModel/sbml/" + str(uuid.uuid4()) + ".xml"
+	        sbml_doc = readSBMLFromString(sbml_text)
+	        writeSBML(sbml_doc, sbml_dir)
+	        content.sbml_dir = sbml_dir
+b4e4fdfc2867172a9adf1bc662718f34|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssmodelsessions.py|117|1|V|python
+	# @app_gsssessions.route("/session/update/gssmodel", methods=["POST"])
+	# def session_update_gssmodel():
+	#     if (
+	#         request.method == "POST"
+	#         and request.headers["Content-Type"] != "application/json"
+	#     ):
+	#         abort(400)
+	#     try:
+	#         data = request.json
+	#         session_id = data["session_id"]
+	#         set_species_dic = data["set_species_dic"]
+	#         set_parameter_dic = data["set_parameter_dic"]
+	#         gssmodel_id = data["gssmodel_id"]
+	#         signaling_sbase = readSBMLFromString(
+	#             GssModel.query.filter_by(id=gssmodel_id).first().sbml_text
+	#         )
+	#         signaling_model = setParamsFromGss(
+	#             signaling_sbase.getModel(), set_species_dic, set_parameter_dic
+	#         )
+	#         signaling_sbase.setModel(signaling_model)
+	#         gss_session = gsssession.GssSession(session_id)
+	#         gss_session.update(sbml_doc=signaling_sbase)
+	#         return json.dumps(
+	#             dict(
+	#                 id="id",
+	#             )
+	#         )
+	#     except:
+	#         print("error /session/create/simdata")
+	#         import traceback
+	
+	#         traceback.print_exc()
+	#         abort(400)
+	
+	
+	# @app_gsssessions.route("/session/create/simdata", methods=["POST"])
+	# def session_create_simdata():
+	#     if (
+	#         request.method == "POST"
+	#         and request.headers["Content-Type"] != "application/json"
+	#     ):
+	#         abort(400)
+	#     try:
+	#         data = request.json
+	#         sim_json = {"exp_csv": data["exp_csv"], "sbml_params": data["sbml_params"]}
+	#         gss_session = gsssession.GssSession()
+	#         session_id = gss_session.create(sim_json=sim_json)
+	#         return json.dumps(
+	#             dict(
+	#                 session_sim=session_id,
+	#             )
+	#         )
+	#     except:
+	#         print("error /session/create/simdata")
+	#         import traceback
+	
+	#         traceback.print_exc()
+	#         abort(400)
+	
+	
+	# @app_gsssessions.route("/session/get/sim_json", methods=["POST"])
+	# def session_get_simjson():
+	#     try:
+	#         gss_session = gsssession.GssSession(request.json["session_sim"])
+	#         result = json.dumps(gss_session.get_simjson())
+	#         return result
+	#     except:
+	#         print("error /session/get/sim_json")
+	#         import traceback
+	
+	#         traceback.print_exc()
+	#         abort(400)
+512f594ee952a34f7f526abfbb1c775d|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssModelSession/repository.py|60|13|V|python
+	        peinr
+dbec79681c087997a0938425a7df54a5|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|66|3|V|typescriptreact
+	  console.log(props.model);
+0d3b1ef5f2787933cbf61c628b158195|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/signaling.tsx|60|33|V|typescriptreact
+	        console.log(model_session);
+cabe722eba47c05c268244c75cad4c7f|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/signaling.tsx|59|51|v|typescriptreact
+	sbml_text
+7fc8ef54a8154c28341bf9a47443a5ce|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|31|10|v|typescriptreact
+	session_id
+e3b2d57a4a813c86da03c7c421eaaf9c|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|112|41|v|typescriptreact
+	LibSbml
+a030e9ec421946cd5ea5950ebddc55c7|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|112|108|v|typescriptreact
+	: null}
+519950391b81d9359c7f623f6b8c39b0|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|112|1|V|typescriptreact
+	            {props.userName !== null && props.model !== null && props.model.gssmodel_id !== null ? <>ii</> : null}
+123e175f8881d17ffbbce1a74e0f7760|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|112|1|V|typescriptreact
+	            {props.userName !== null && props.model !== null && props.model.gssmodel_id !== null ? <>ii</> : null}
+	            {props.userName !== null && props.model !== null && props.model.gssmodel_id !== null ? <>ii</> : null}
+9c884c338b9144fce4702b38c4a0ed6f|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|120|1|V|typescriptreact
+	            <a
+	              className="mx-1"
+	              onClick={() => createModel(props.model, props.setModel, props.setModelLoading, props.userName)}
+	              style={{ cursor: "pointer" }}
+	            >
+	              <BsFillCloudArrowDownFill style={{ height: "25px", width: "25px", color: "black" }} />
+	            </a>
+da6987cd8e050639fc597be5b20bc94d|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|129|1|V|typescriptreact
+	            <a
+	              className="mx-1"
+	              onClick={() => updateModel(props.model, props.setModel, props.setModelLoading)}
+	              style={{ cursor: "pointer" }}
+	            >
+	              <BsFillCloudCheckFill style={{ height: "25px", width: "25px", color: "black" }} />
+26479d5e25baa66aea683690bc32e91c|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderMain.tsx|129|1|V|typescriptreact
+	            <a
+	              className="mx-1"
+	              onClick={() => updateModel(props.model, props.setModel, props.setModelLoading)}
+	              style={{ cursor: "pointer" }}
+	            >
+	              <BsFillCloudCheckFill style={{ height: "25px", width: "25px", color: "black" }} />
+	            </a>
+841a2d689ad86bd1611447453c22c6fc|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|38|18|v|typescriptreact
+	body
+7552cd149af7495ee7d8225974e50f80|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|23|29|v|typescriptreact
+	elementId
+f05895bf67338cbffb72150b28c0cc22|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|23|18|V|typescriptreact
+	    document.getElementById("content") = content;
+fc20158fd707fa0c9627187a13bea50b|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|23|1|V|typescriptreact
+	    document.getElementById("content").innerHTML = content;
+1664ba7f774cc2c85570138f87813510|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|21|41|v|typescriptreact
+	match_content[1]
+49c27ffb28ec19a0725179d1e0ccc55a|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|21|10|V|typescriptreact
+	    match_
+d5936f7527fdc09c570983ce2e15f8a6|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|22|1|V|typescriptreact
+	    match_content !== null ? setContent(_content) : null;
+9811b06773922a141ef05e4e8ccecc9d|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|21|33|v|typescriptreact
+	? setContent(_content) : null;
+5d33c637a080480ed23ccb7196492b40|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|25|7|V|typescriptreact
+	    const _content 
+418c768a1e29f7e2f692969a34a08b90|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|22|13|v|typescriptreact
+	_content
+c05a6518ac9d6f4db656650398dd5947|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|28|30|v|typescriptreact
+	setContent(conetnt_elem)
+176445d0845b7d2031069492deff9f2c|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|29|24|V|typescriptreact
+	    match_content !== null ?  : null;
+899d704c95a08df1209d8d62c664d81c|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|27|13|V|typescriptreact
+	    setContent(content_elem)
+e82f3e56d2a6718da3f068e5e6f91343|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|26|7|V|typescriptreact
+	      }
+9e925e9341b490bfd3b4c4ca3b0c1ef2|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|41|26|v|typescriptreact
+	this
+74515e7b69f86bc8cefdd656480c8619|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|23|1|V|typescriptreact
+	    let a = document.getElementById("content");
+	    console.log(a);
+29080517e05860518a078afcbcf82a3e|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|39|13|V|typescriptreact
+	            {(document.getElementById("content").innerHTML = content)}
+b8ec18a9e638b3b7c4e36bb300792867|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|39|38|V|typescriptreact
+	            {document.getElementById("content")}
+651cb62a16b05972baf047c8a9e11e0a|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|13|1|V|typescriptreact
+	  const element_title = useRef("element_title")
+de1fb0e2c36ce64c318a1d010e9557cb|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|13|33|v|typescriptreact
+	element_title
+90aa843b01abf5b47c768121282ae52e|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|14|35|v|typescriptreact
+	element_content
+fe3ffb2594a261730f407586def538f7|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|25|39|V|typescriptreact
+	    console.log(element_content.current);
+43b5c9175984c071f30b873fdce0a000|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|24|33|v|typescriptreact
+	current
+71ff329337663ab91eca03efae02df05|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/ErrorModal.tsx|38|49|v|typescriptreact
+	stringElement
+d685e8e2290b746edfd051a2437a41a8|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssModelSession/repository.py|66|8|V|python
+	    db_session.add(content)
+50413dac0016be2dd3958ba98c0516f3|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssParam/repository.py|71|1|V|python
+	    print("000000000000000000000")
+7eddda57e673aa0d6f7dadc72638bb3f|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|51|29|V|python
+	    print(request.json.keys())
+c302ec33b8b3bb499bfeb7e70f8b5cc5|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|72|34|V|typescriptreact
+	        console.log(res_gssparam);
+de3fdaa681d7d96ba76781e22f1ff490|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|61|29|V|typescriptreact
+	          console.log(libsbml);
+37a6259cc0c1dae299a7866489dff0bd|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/functions/libgssparams/LibGssParam.tsx|63|11|v|typescriptreact
+	null
+12f0cbca34753b4380b983c5fbf40f2d|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|30|1|V|typescriptreact
+	    this.id = modelsession.id;
+d89468d2cc2e8b06291e5f7dc89e6265|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|62|22|V|typescriptreact
+	          libgssparam.
+f5b338d6bca36d47ee04d93d08c57861|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/functions/libsbmljs/LibSbml.tsx|31|36|v|typescriptreact
+	sess
+b33388391ecd6307fa948d054f535fa6|file:///Users/Kouiti/dotfiles/dotfiles/fish/config.fish|32|1|V|fish
+	alias gl="git log"
+1f5854245f077526131c569624600965|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssParam/repository.py|23|15|V|python
+	        "gssparam_id": model.id,
+557572722b2352c6ef246ff8ea6a038d|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/models/gssparam.tsx|60|11|V|typescriptreact
+	        setLoading(false);
+0b4a4ed806b277707e1fcf1c5812071f|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/api/ApiHandler.tsx|3|54|v|typescriptreact
+	AxiosError
+493768a949b995ed058ae6e74726d520|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/api/ApiHandler.tsx|3|38|v|typescriptreact
+	AxiosResponse
+a1653dbb6c3b37d9469831109df7d4cf|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/models/gssparam.tsx|33|11|V|typescriptreact
+	      if (query.modelsession_id)
+27118326006d3829667a400ad23d5d98|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/models/gssparam.tsx|34|45|v|typescriptreact
+	String
+9d44bee4fccc00cf807b1ecb141e7fe5|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/models/gssparam.tsx|47|14|v|typescriptreact
+	isReady
+a0faef0851b4294c06f2b94bb1cb2044|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/models.py|43|29|v|python
+	Integer
+54b08ada3ef29b4dcf8a043ea85ebbcc|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/models.py|43|5|v|python
+	gssmodelsession
+822d4e7d54b6246026b98c9cd7059c7e|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/models.py|59|30|v|python
+	modelsession_id
+1ba9517c23dd0bafc61c4237babc51c2|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssParam/repository.py|28|37|v|python
+	elsession_id
+63ed113cf70beee93bc21da60d8b2715|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/GssParam/repository.py|70|1|V|python
+	    print("000000000000000000000")
+	    print(title)
+	    print(body)
+	    print(result_dir)
+	    print(user_name)
+	    print(model_session)
+2997e5b14271ba2c7f18cced672f2dfb|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/models/models.py|45|18|V|python
+	    modelsession_id
+22cb2772e8323b2bda01ce3a3c96e73d|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|26|8|V|python
+	    file
+9a34c80971bf7ece664e925e37f48b7f|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|19|1|V|python
+	    # file_regexp = (
+	    #     "/Users/Kouiti/local_file/lm-glycomeatlas/public/lectinarray_data/**/*_s.svg"
+	    # )
+	    # replace_before_rexexp = r"Mouse_TMI(?P<flag>(\d+))"
+	    # replace_after_rexexp = r"Mouse\g<flag>_TMI\g<flag>"
+ee6451ffe4d5792bdf2ddb1c854d30ae|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|27|1|V|python
+	        "/Users/Kouiti/local_file/lm-glycomeatlas/public/lectinarray_data/**/*_s.svg"
+	    )
+2ae4fbd5f8abd13ed4af61eac32f8c28|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|27|29|v|python
+	r"Mouse_TMI(?P<flag>(\d+))"
+bac5f378cf5dafaffda493d54a429ddb|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|28|28|v|python
+	r"Mouse\g<flag>_TMI\g<flag>"
+75b2a591e9092a892e4334dad5c8c3c4|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|27|29|v|python
+	input("relace before regexp")
+2af074ad9ba8aa8b7c9798c6e13e7fae|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|28|42|v|python
+	befor
+a579fc48422579c5d7cf16243227dcb8|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|29|21|V|python
+	    print(file_regexp)
+7d15f7634d67f335a71ae61e9992adf7|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|26|1|V|python
+	    file_regexp = input("file regexp:")
+	    replace_before_regexp = input("relace before regexp:")
+	    replace_after_regexp = input("relace after regexp:")
+8827dca8a8d8a14b620397e4c0d0beab|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|8|12|v|python
+	foune
+b3f5c872b4bb03f367c52e484d607d04|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|10|45|V|python
+	        print(str(index) + "/" + str(len(file_paths)), ">\t", file_path)
+6a992d5529f459a44fee58c733255e86|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|9|9|v|python
+	index
+a02e7e7a06ccc8697e4de22d52631e83|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|10|10|V|python
+	        arg = input("Replace" + file_path + "? (y/n)")
+	        if
+a09768f03b1670f9a468b8ccfd363d8c|file:///Users/Kouiti/local_file/python-module/replace_file_string/main.py|12|21|V|python
+	            if arg in ["","y","n"]:
+	
+812b8bec263320a31a01852d8dd36c92|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/api/ApiHandler.tsx|4|22|V|typescriptreact
+	  console.log(response);
+bc2ee41ec7d8d86747fddeaccaf1875c|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|34|21|V|python
+	        print(content)
+5073246fce8f50fb29120125420c9632|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/api/GssParam.tsx|14|1|V|typescriptreact
+	        res.data.result_json = JSON.parse(res.data.result_json);
+d9a334c96c5de2852201c37821fba4d8|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/api/GssParam.tsx|14|1|V|typescriptreact
+	        res.data.result_json = JSON.parse(res.data.result_json);
+	        res.data.result_json.results = JSON.parse(res.data.result_json.results);
+a127fd1f86e4ab650f2216f09992afa4|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/api/GssParam.tsx|14|6|V|typescriptreact
+	      
+59691002de66ff9cf74170c3dc6e8684|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/api/GssParam.tsx|7|37|v|typescriptreact
+	TypeOfLibGssParam
+4fa624680592f67c0c5bc963317497a4|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/api/GssParam.tsx|14|22|V|typescriptreact
+	      const gssparam: TypeOfLibGssParam = res.data;
+e2b9bfeac18752b300e8b8589e03dbba|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/api/GssParam.tsx|14|14|v|typescriptreact
+	gssparam
+02c3c4452d3239edc552c024ebbadf64|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|64|11|V|typescriptreact
+	          i
+6d120093a8bf6d5b99ce86a6fae773ab|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/models/gssparam.tsx|89|1|V|typescriptreact
+	  if (loading) {
+	    return <LoadingSpinner />;
+	  } else {
+1c1b9ad6a0673ba84af8f8a19d3cd9f0|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/models/gssparam.tsx|11|1|V|typescriptreact
+	import { LoadingSpinner } from "components/layouts/LoadingSpinner";
+5b3921b5e00e10d2bbe234fb39e4f28b|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|102|1|V|typescriptreact
+	          {if (loading) {
+	        return <LoadingSpinner />;
+	      } else {
+	        }
+522900aab2fc69610bd31fd44d031c6c|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|102|11|V|typescriptreact
+	          }
+21b83d83c6488d0689e50c2cd9445ea5|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/components/layouts/HeaderPE.tsx|43|33|V|typescriptreact
+	  setGssParamLoading: SetStateAction<any>;
+fd5b050ffc2d2765973eca15f1531c11|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/models/gssparam.tsx|56|1|V|typescriptreact
+	      const res_gssparam = await GssParam.get(gssparam_id);
+	      const res = ApiHandler(res_gssparam);
+	      if (res !== null) {
+	        setError(res);
+	        setLoading(false);
+	        return;
+	      }
+57ad2fa5728416a6d4e7b903f0c43fd2|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|68|16|V|typescriptreact
+	            setLoading(false);
+b4affa54abe0c6c97fd09ca85cdb93c4|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|65|16|v|typescriptreact
+	 res = ApiHandler(res_gssparam);
+	          if (res !== null) {
+	            setError(res);
+	            return;
+	          }
+1c49b5405a43dcd44033b5495467b951|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|64|51|v|typescriptreact
+	gssparam_id
+6632993e1e0d844f67c34fb90e0367d8|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|64|17|V|typescriptreact
+	          // cons
+42b12d886b40b5c190f9cdfbd19e720d|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|64|19|V|typescriptreact
+	          console.log(query.gssparam_id);
+a4e0ea46271a12a7a1ba7e21b566c326|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|65|23|v|typescriptreact
+	query.gssparam_id
+35df30e3baf3b654d8932ad6e9ef75a2|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|65|46|V|typescriptreact
+	          console.log(Number(query.gssparam_id));
+3e932f6e627b3e6a3f7d022a4935df9d|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|502|1|V|json
+	    {
+	      "description": "active change",
+	      "manipulators": [
+	        {
+	          "from": {
+	            "key_code": "v",
+	            "modifiers": {
+	              "mandatory": ["left_command", "left_control"],
+	              "optional": ["any"]
+	            }
+	          },
+	          "to": [
+	            {
+	              "shell_command": "open -a 'Vivaldi'"
+	            }
+	          ],
+	          "type": "basic"
+	        },
+	        {
+	          "from": {
+	            "key_code": "t",
+	            "modifiers": {
+	              "mandatory": ["left_command", "left_control"],
+	              "optional": ["any"]
+	            }
+	          },
+	          "to": [
+	            {
+	              "shell_command": "open -a 'iterm'"
+	            }
+	          ],
+	          "type": "basic"
+	        }
+	      ]
+	    }
+1002529dd3a64a1247d5d52fc9e51472|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|538|23|v|json
+	active change
+97b52fea7f4a416821378746d7514632|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|545|1|V|json
+	              "optional": ["any"]
+bd62e5bfab5dc5b2e7b51535d8be4cbc|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|544|47|v|json
+	eft_control
+fa27f0efe1d32116d5a8f35556f01941|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|549|42|V|json
+	              "shell_command": "open -a 'Vivaldi'"
+8ae7da63bd9d51fce0946bd2d0548f33|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|493|1|V|json
+	          "conditions": [
+	            {
+	              "type": "frontmost_application_if",
+	              "bundle_identifiers": ["com.googlecode.iterm2", "com.philandro.anydesk", "com.microsoft.VSCode"]
+	            }
+	          ]
+06993d59dd2250b8a5b0ed647d20c91a|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|556|1|V|json
+	        {
+	          "from": {
+	            "key_code": "t",
+	            "modifiers": {
+	              "mandatory": ["left_command", "left_control"],
+	              "optional": ["any"]
+	            }
+	          },
+	          "to": [
+	            {
+	              "shell_command": "open -a 'iterm'"
+	            }
+	          ],
+	          "type": "basic"
+	        }
+b31a77355ce3289d1aefe809be0927b8|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|87|1|V|json
+	                  "type": "frontmost_application_unless",
+d1b5948466e14470df3f304b0e369e31|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|551|19|V|json
+	              "type": "frontmost_application_if",
+d3ec00d12fc8e67d802263dc9e85639a|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|552|78|v|json
+	anydesk
+7b515f704ff3a0bdc0da7ad9b433273c|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|471|1|V|json
+	            {
+	              "key_code": "right_arrow",
+	              "modifiers": ["left_control"]
+	            }
+68fda9f27930dd03d1cf71b4de311126|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|491|1|V|json
+	          "to": [{ "shell_command": "sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh" }],
+0add2fe63ff4ac3b80a51e1c27cd25ab|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|547|11|V|json
+	          "to": [{}],
+4f264eae076fb832846d4093158e34a0|file:///Users/Kouiti/dotfiles/dotfiles/karabiner/assets/complex_modifications/arakkk_pack.json|551|15|V|json
+	              "type": "frontmost_application_unless",
+b9560fa71fbc6eaa69cad78ab5695c87|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/models/gssparam.tsx|122|1|V|typescriptreact
+	                      console.log(gssparam.result_json.results);
+c9cde5da021d24951bc3b5c8fbb0c996|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|118|20|v|python
+	request.json["exp_data"]
+91bb343faff0fd8374147f12c45dd42a|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|118|19|V|python
+	        exp_data = 
+7ccbc066f23bfde3516e16e7aec1d9e8|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/api/GssParam.tsx|53|20|V|typescriptreact
+	    console.log(data);
+bfb5101b804d6e0c679d050d81a2d999|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|90|10|V|typescriptreact
+	        //
+36b597a30cd8bc9e2fb5f9f27ebbdf52|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/api/parameterestimation/GeneticAlgorithm.tsx|25|14|V|typescriptreact
+	      console.log(data);
+c6ddc4e95020700314ce0877808ceb2c|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|120|1|V|python
+	        result_json["exp_data"] = request.json["exp_data"]
+7eb76cdfbff1d3b65e6f15080a2d7417|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|121|22|v|python
+	exp_data
+9dd6643f73415f5ea6b3b1d64b553e34|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|121|1|V|python
+	        result_json["species_list"] = request.json["species_list"]
+425252429b1df10ef892aa964ec1c8af|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|122|22|v|python
+	species_list
+5e52b899c813402fbf1668dbbd8b72df|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssmodels.py|45|11|V|python
+	    exp_data
+e004db2fa5336d3b002d16bd7f817bf5|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/source/PE/BioMASS/run.py|22|1|V|python
+	expdata
+	
+e4e77fefe39b007f5d19f876843a71de|file:///Users/Kouiti/local_file/glycosim/web-glycosim/next/pages/parameterestimation.tsx|70|29|V|typescriptreact
+	          console.log(res_gssparam.data);
+4a699135bce5b3cdca77ec1cc4c92540|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|122|64|V|python
+	        result_json["params_list"] = request.json["params_list"]
+4b86e9c2232dbd08344f9f75b479da54|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|121|62|V|python
+	        result_json["settings"] = request.json["params_list"](
+81a8c1e40e5ea3d4847381e5485bf307|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|121|62|v|python
+	.extend(
+415ece355bdeb6b5dc29971def54613c|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/module/model/gssparams.py|123|9|V|python
+	        )
+eeb68ef4403979e323e5fa22ff13013c|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/static/js/gpp.js|398|1|V|javascript
+	    const species = gpp.querySelector("#glystrTable").bootstrapTable("getData");
+	    const reactions = gpp.querySelector("#glytreeTable").bootstrapTable("getData");
+8098493577839315df7e662dd03f0ac8|untitled:17|1526|1|V|
+	    [
+	        "O1",
+	        ";S/T",
+	        0,
+	        "O"
+	    ],
+	    [
+	        "L1",
+	        ":C",
+	        0,
+	        "L"
+	    ]
+6b3c75df8a65413ee7b6c8b82da48af5|untitled:17|1525|5|V|
+	    ]
+de69a6887140af6c1788e7249d4b76de|file:///Users/Kouiti/Desktop/species.csv|256|1|V|
+	"O1", ";S/T", 0, "O"],
+	"L1", ":C", 0, "L"]
+	]
+c1ebf2ef6fccb579ae20ae9a55b9b81a|file:///Users/Kouiti/Desktop/species.csv|1|30|V|
+	Index, Structure, Monosaccharide size, Glycan type
+	N1, Ma2Ma2Ma3(Ma3(Ma2Ma6)Ma6)Mb4GNb4GNb;N, 10, N
+6227f5fa8dae8e1fd9e1c7c1292c2ad4|file:///Users/Kouiti/local_file/lets/lets_proj/mocks/comment_map.json|11|1|V|json
+	        "background-image": ["../../../media/images/users/test1.png"],
+c9f3d41111e1eb4575a7a236cdb6de9c|file:///Users/Kouiti/local_file/lets/lets_proj/movie/models.py|1|1|v|python
+	from django.db import models
+dad189c4474a2be1cb733ce8cdab0e01|file:///Users/Kouiti/local_file/lets/lets_proj/movie/ja/views.py|56|5|v|python
+	comment_topic
+4de6cc57ce271a9ce5ec579b9809840b|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/.gitignore|18|1|V|conf
+	models/GssModelSession/sbml/*
+31e7be6fef6970e83b215d3e7dad1190|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/.gitignore|19|8|v|conf
+	GssModelSession
+bcb2c71294445bd3781b2c77bbd3c160|file:///Users/Kouiti/local_file/glycosim/dev-glycosim/.gitignore|19|17|v|conf
+	sbml
+>>>>>>> 90f9dbfa131bc7cf61d19b331e19444fdbe315a9

@@ -1,5 +1,5 @@
 {
-  "title": "Comfortable text navigation (Vim)",
+  "title": "arakkk: Comfortable text navigation (Vim)",
   "rules": [
     {
       "description": "Change left_command+left_control+,hjkl, o in arrow keys",
@@ -478,28 +478,6 @@
       ]
     },
     {
-      "description": "iterm short cut",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "r",
-            "modifiers": {
-              "mandatory": ["left_command", "left_control"],
-              "optional": ["any"]
-            }
-          },
-          "to": [{ "shell_command": "sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh" }],
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": ["com.googlecode.iterm2", "com.philandro.anydesk", "com.microsoft.VSCode"]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "active change",
       "manipulators": [
         {
@@ -535,7 +513,7 @@
       ]
     },
     {
-      "description": "item unused",
+      "description": "iterm unused",
       "manipulators": [
         {
           "from": {
@@ -544,7 +522,40 @@
               "mandatory": ["left_command"]
             }
           },
-          "to": [{ "shell_command": "sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh" }],
+          "to": [
+            {
+              "shell_command": "sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["com.googlecode.iterm2", "com.microsoft.VSCode"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "iterm shortcut",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": ["left_control"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "c",
+              "modifiers": ["left_control"]
+            }
+          ],
           "type": "basic",
           "conditions": [
             {

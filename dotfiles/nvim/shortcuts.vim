@@ -30,10 +30,10 @@ noremap <silent>:{ diwi{}<Esc>P
 noremap <silent>:< diwi<><Esc>P
 
 
-noremap <silent>:v<CR> :w<CR>:! osascript -e 'tell application "Vivaldi" to reload active tab of window 1'<CR><CR>
 
 " others
 noremap <silent>R *:%s//
+noremap <silent>:v<CR> :w<CR>:! osascript -e 'tell application "Vivaldi" to reload active tab of window 1'<CR><CR>
 
 
 
@@ -55,7 +55,6 @@ endfunction
 
 " noremap <silent>:e<CR> :source ~/.config/nvim/plugins/ale.vim<CR>:source ~/.config/nvim/init.vim<CR>:source ~/.config/nvim/init.vim<CR>:call SetTabIndent()<CR>:w<CR>:edit<CR>:echo "reload success"<CR>
 noremap <silent>:e<CR> :source ~/.config/nvim/plugins/ale.vim<CR>:source ~/.config/nvim/init.vim<CR>:source ~/.config/nvim/shortcuts.vim<CR>:w<CR>:edit<CR>:call SetTabIndent()<CR>
-
 
 noremap <silent>:recache<CR> :call dein#recache_runtimepath()
 " noremap <silent>:oq<CR> :only | close!

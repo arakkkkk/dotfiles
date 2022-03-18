@@ -99,6 +99,168 @@
                                 "type": "basic"
                             },
                             {
+                                "description": "support control+a/e",
+                                "manipulators": [
+                                    {
+                                        "conditions": [
+                                            {
+                                                "bundle_identifiers": [
+                                                    "com.googlecode.iterm2",
+                                                    "com.microsoft.VSCode",
+                                                    "com.philandro.anydesk"
+                                                ],
+                                                "type": "frontmost_application_unless"
+                                            }
+                                        ],
+                                        "from": {
+                                            "key_code": "a",
+                                            "modifiers": {
+                                                "mandatory": [
+                                                    "left_control"
+                                                ],
+                                                "optional": [
+                                                    "any"
+                                                ]
+                                            }
+                                        },
+                                        "to": [
+                                            {
+                                                "key_code": "left_arrow",
+                                                "modifiers": [
+                                                    "left_command"
+                                                ]
+                                            }
+                                        ],
+                                        "type": "basic"
+                                    },
+                                    {
+                                        "conditions": [
+                                            {
+                                                "bundle_identifiers": [
+                                                    "com.googlecode.iterm2",
+                                                    "com.microsoft.VSCode",
+                                                    "com.philandro.anydesk"
+                                                ],
+                                                "type": "frontmost_application_unless"
+                                            }
+                                        ],
+                                        "from": {
+                                            "key_code": "e",
+                                            "modifiers": {
+                                                "mandatory": [
+                                                    "left_control"
+                                                ],
+                                                "optional": [
+                                                    "any"
+                                                ]
+                                            }
+                                        },
+                                        "to": [
+                                            {
+                                                "key_code": "right_arrow",
+                                                "modifiers": [
+                                                    "left_command"
+                                                ]
+                                            }
+                                        ],
+                                        "type": "basic"
+                                    },
+                                    {
+                                        "conditions": [
+                                            {
+                                                "bundle_identifiers": [
+                                                    "com.googlecode.iterm2",
+                                                    "com.microsoft.VSCode",
+                                                    "com.philandro.anydesk"
+                                                ],
+                                                "type": "frontmost_application_unless"
+                                            }
+                                        ],
+                                        "from": {
+                                            "key_code": "u",
+                                            "modifiers": {
+                                                "mandatory": [
+                                                    "left_control"
+                                                ],
+                                                "optional": [
+                                                    "any"
+                                                ]
+                                            }
+                                        },
+                                        "to": [
+                                            {
+                                                "key_code": "delete_or_backspace",
+                                                "modifiers": [
+                                                    "left_command"
+                                                ]
+                                            }
+                                        ],
+                                        "type": "basic"
+                                    },
+                                    {
+                                        "conditions": [
+                                            {
+                                                "bundle_identifiers": [
+                                                    "com.googlecode.iterm2",
+                                                    "com.microsoft.VSCode",
+                                                    "com.philandro.anydesk"
+                                                ],
+                                                "type": "frontmost_application_unless"
+                                            }
+                                        ],
+                                        "from": {
+                                            "key_code": "d",
+                                            "modifiers": {
+                                                "mandatory": [
+                                                    "left_control"
+                                                ],
+                                                "optional": [
+                                                    "any"
+                                                ]
+                                            }
+                                        },
+                                        "to": [
+                                            {
+                                                "key_code": "tab",
+                                                "modifiers": [
+                                                    "left_shift"
+                                                ]
+                                            }
+                                        ],
+                                        "type": "basic"
+                                    },
+                                    {
+                                        "conditions": [
+                                            {
+                                                "bundle_identifiers": [
+                                                    "com.googlecode.iterm2",
+                                                    "com.microsoft.VSCode",
+                                                    "com.philandro.anydesk"
+                                                ],
+                                                "type": "frontmost_application_unless"
+                                            }
+                                        ],
+                                        "from": {
+                                            "key_code": "t",
+                                            "modifiers": {
+                                                "mandatory": [
+                                                    "left_control"
+                                                ],
+                                                "optional": [
+                                                    "any"
+                                                ]
+                                            }
+                                        },
+                                        "to": [
+                                            {
+                                                "key_code": "tab"
+                                            }
+                                        ],
+                                        "type": "basic"
+                                    }
+                                ]
+                            },
+                            {
                                 "from": {
                                     "key_code": "o",
                                     "modifiers": {
@@ -199,13 +361,64 @@
                                     }
                                 ],
                                 "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "y",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "v",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "support control+h control+a/e",
+                        "description": "support control+h",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.googlecode.iterm2",
+                                            "com.philandro.anydesk",
+                                            "com.microsoft.VSCode",
+                                            "com.vivaldi.Vivaldi",
+                                            "com.google.Chrome"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
@@ -223,8 +436,23 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "support control+a/e",
+                        "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.googlecode.iterm2",
+                                            "com.philandro.anydesk",
+                                            "com.microsoft.VSCode"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "a",
                                     "modifiers": {
@@ -247,6 +475,16 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.googlecode.iterm2",
+                                            "com.philandro.anydesk",
+                                            "com.microsoft.VSCode"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "e",
                                     "modifiers": {
@@ -325,6 +563,190 @@
                                     },
                                     {
                                         "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "<C-c> to <Esc>",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.googlecode.iterm2",
+                                            "com.philandro.anydesk",
+                                            "com.microsoft.VSCode"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "move-space",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "left_control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "right_command",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "left_control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "iterm short cut",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.googlecode.iterm2",
+                                            "com.philandro.anydesk",
+                                            "com.microsoft.VSCode"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "active change",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "v",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Vivaldi'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'iterm'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "item unused",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.googlecode.iterm2",
+                                            "com.microsoft.VSCode"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh"
                                     }
                                 ],
                                 "type": "basic"
@@ -483,7 +905,7 @@
                     ]
                 }
             ],
-            "name": "vim mode",
+            "name": "normal",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
@@ -629,7 +1051,7 @@
                     ]
                 }
             ],
-            "name": "normal mode",
+            "name": "vim",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },

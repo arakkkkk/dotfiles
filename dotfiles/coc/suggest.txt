@@ -1,3 +1,4 @@
+"left|"left_control"|json
 Type|TypeGlycoSimExpData|tsserver-typescript
 num|Number|tsserver-typescript
 name_|name_species|tsserver-typescript
@@ -996,4 +997,3 @@ setPara|setParameterSettings|around
 |web-glycosim|file
 loca|localfile|file
 docker|docker-compose up|yank
-parameter|parameterestimation|around

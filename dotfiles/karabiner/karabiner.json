@@ -644,41 +644,6 @@
                         ]
                     },
                     {
-                        "description": "iterm short cut",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com.googlecode.iterm2",
-                                            "com.philandro.anydesk",
-                                            "com.microsoft.VSCode"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "r",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command",
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "active change",
                         "manipulators": [
                             {
@@ -724,7 +689,7 @@
                         ]
                     },
                     {
-                        "description": "item unused",
+                        "description": "iterm unused",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -747,6 +712,42 @@
                                 "to": [
                                     {
                                         "shell_command": "sh ~/dotfiles/dotfiles/shellscripts/reloadVivaldi.sh"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "iterm shortcut",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.googlecode.iterm2",
+                                            "com.microsoft.VSCode"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "japanese_eisuu"
+                                    },
+                                    {
+                                        "key_code": "c",
+                                        "modifiers": [
+                                            "left_control"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"

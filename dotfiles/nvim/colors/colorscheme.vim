@@ -13,7 +13,7 @@ hi Visual ctermfg=0 ctermbg=222
 hi SpellCap guibg=None ctermbg=None cterm=underline gui=underline
 
 " back ground color
-hi Normal ctermbg=0 guibg=#16191e
+hi Normal ctermbg=0 guibg=#11111e
 hi EndOfBuffer ctermbg=0
 
 " comment

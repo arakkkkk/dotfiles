@@ -1,6 +1,7 @@
 version: '3'
 services:
   dotos:
-    image: centos:latest
+    build: .
     # volumes:
     tty: true
+    platform: linux/x86_64

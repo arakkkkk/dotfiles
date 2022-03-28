@@ -5,3 +5,4 @@ installer.sh
 script/installer.sh
 __pycache__/
 dotfiles/nvim/undo
+dotfiles/nvim_back/undo

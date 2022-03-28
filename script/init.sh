@@ -47,11 +47,11 @@ ln -fsn ${HOME}/dotfiles ${HOME}/Documents/dotfiles
 ## for markdown preview
 # brew install mdr
 # linter, fixer
-brew install black
-brew install isort
-brew install prettier
-brew install autopep8
-brew install jq
+# brew install black
+# brew install isort
+# brew install prettier
+# brew install autopep8
+# brew install jq
 
 ######### for fish shell
 # source ~/.config/fish/config.fish

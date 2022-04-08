@@ -27,16 +27,47 @@ local astro_plugins = {
   {
     "nathom/filetype.nvim",
     config = function()
-      vim.g.did_load_filetypes = 1
+      require("configs.filetype").config()
     end,
+  },
+  -- Indent detection
+  {
+    "Darazaki/indent-o-matic",
+    event = "BufRead",
+    config = function()
+      require("configs.indent-o-matic").config()
+    end,
+  },
+
+  -- Notification Enhancer
+  {
+    "rcarriga/nvim-notify",
+    config = function()
+      require("configs.notify").config()
+    end,
+  },
+
+  -- Neovim UI Enhancer
+  {
+    "MunifTanjim/nui.nvim",
+    module = "nui",
   },
 
   -- Cursorhold fix
   {
     "antoinemadec/FixCursorHold.nvim",
-    event = "BufRead",
+    event = { "BufRead", "BufNewFile" },
     config = function()
       vim.g.cursorhold_updatetime = 100
+    end,
+  },
+
+  -- Smarter Splits
+  {
+    "mrjones2014/smart-splits.nvim",
+    module = "smart-splits",
+    config = function()
+      require("configs.smart-splits").config()
     end,
   },
 
@@ -65,18 +96,19 @@ local astro_plugins = {
 
   -- File explorer
   {
-    "kyazdani42/nvim-tree.lua",
-    cmd = { "NvimTreeToggle", "NvimTreeFocus" },
+    "nvim-neo-tree/neo-tree.nvim",
+    module = "neo-tree",
+    cmd = "Neotree",
+    requires = "MunifTanjim/nui.nvim",
     config = function()
-      require("configs.nvim-tree").config()
+      require("configs.neo-tree").config()
     end,
-    disable = not config.enabled.nvim_tree,
+    disable = not config.enabled.neo_tree,
   },
 
   -- Statusline
   {
     "nvim-lualine/lualine.nvim",
-    commit = "6a3d367",
     config = function()
       require("configs.lualine").config()
     end,
@@ -107,7 +139,7 @@ local astro_plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
-    event = "BufRead",
+    event = { "BufRead", "BufNewFile" },
     cmd = {
       "TSInstall",
       "TSInstallInfo",
@@ -126,24 +158,22 @@ local astro_plugins = {
   -- Snippet collection
   {
     "rafamadriz/friendly-snippets",
+    after = "nvim-cmp",
   },
 
   -- Snippet engine
   {
     "L3MON4D3/LuaSnip",
+    after = "friendly-snippets",
     config = function()
-      local paths = require("core.utils").user_plugin_opts("luasnip.vscode_snippet_paths", {})
-      local loader = require "luasnip/loaders/from_vscode"
-      loader.lazy_load { paths = paths }
-      loader.lazy_load()
+      require("configs.luasnip").config()
     end,
-    wants = "friendly-snippets",
   },
 
   -- Completion engine
   {
     "hrsh7th/nvim-cmp",
-    event = "BufRead",
+    event = "InsertEnter",
     config = function()
       require("configs.cmp").config()
     end,
@@ -153,38 +183,30 @@ local astro_plugins = {
   {
     "saadparwaiz1/cmp_luasnip",
     after = "nvim-cmp",
-    config = function()
-      require("core.utils").add_cmp_source "luasnip"
-    end,
   },
 
   -- Buffer completion source
   {
     "hrsh7th/cmp-buffer",
     after = "nvim-cmp",
-    config = function()
-      require("core.utils").add_cmp_source "buffer"
-    end,
   },
 
   -- Path completion source
   {
     "hrsh7th/cmp-path",
     after = "nvim-cmp",
-    config = function()
-      require("core.utils").add_cmp_source "path"
-    end,
   },
 
   -- LSP completion source
   {
     "hrsh7th/cmp-nvim-lsp",
+    after = "nvim-cmp",
   },
 
   -- LSP manager
   {
     "williamboman/nvim-lsp-installer",
-    event = "BufRead",
+    event = { "BufRead", "BufNewFile" },
     cmd = {
       "LspInstall",
       "LspInstallInfo",
@@ -200,20 +222,10 @@ local astro_plugins = {
   -- Built-in LSP
   {
     "neovim/nvim-lspconfig",
-    event = "BufRead",
+    event = "BufWinEnter",
     config = function()
       require "configs.lsp"
     end,
-  },
-
-  -- LSP enhancer
-  {
-    "tami5/lspsaga.nvim",
-    event = "BufRead",
-    config = function()
-      require("configs.lsp.lspsaga").config()
-    end,
-    disable = not config.enabled.lspsaga,
   },
 
   -- LSP symbols
@@ -229,7 +241,7 @@ local astro_plugins = {
   -- Formatting and linting
   {
     "jose-elias-alvarez/null-ls.nvim",
-    event = "BufRead",
+    event = { "BufRead", "BufNewFile" },
     config = function()
       local null_ls = require("core.utils").user_plugin_opts "null-ls"
       if type(null_ls) == "function" then
@@ -242,6 +254,7 @@ local astro_plugins = {
   {
     "nvim-telescope/telescope.nvim",
     cmd = "Telescope",
+    module = "telescope",
     config = function()
       require("configs.telescope").config()
     end,
@@ -260,7 +273,7 @@ local astro_plugins = {
   -- Git integration
   {
     "lewis6991/gitsigns.nvim",
-    event = "BufRead",
+    event = { "BufRead", "BufNewFile" },
     config = function()
       require("configs.gitsigns").config()
     end,
@@ -279,7 +292,7 @@ local astro_plugins = {
   -- Color highlighting
   {
     "norcalli/nvim-colorizer.lua",
-    event = "BufRead",
+    event = { "BufRead", "BufNewFile" },
     config = function()
       require("configs.colorizer").config()
     end,
@@ -299,6 +312,7 @@ local astro_plugins = {
   {
     "akinsho/nvim-toggleterm.lua",
     cmd = "ToggleTerm",
+    module = { "toggleterm", "toggleterm.terminal" },
     config = function()
       require("configs.toggleterm").config()
     end,
@@ -308,7 +322,7 @@ local astro_plugins = {
   -- Commenting
   {
     "numToStr/Comment.nvim",
-    event = "BufRead",
+    event = { "BufRead", "BufNewFile" },
     config = function()
       require("configs.comment").config()
     end,
@@ -336,7 +350,7 @@ local astro_plugins = {
   -- Smooth scrolling
   {
     "karb94/neoscroll.nvim",
-    event = "BufRead",
+    event = { "BufRead", "BufNewFile" },
     config = function()
       require("configs.neoscroll").config()
     end,
@@ -378,6 +392,9 @@ packer.startup {
     },
     git = {
       clone_timeout = 300,
+      subcommands = {
+        update = "pull --ff-only --progress --rebase=true",
+      },
     },
     auto_clean = true,
     compile_on_sync = true,

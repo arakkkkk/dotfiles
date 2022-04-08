@@ -18,9 +18,8 @@ local config = {
 
   enabled = {
     bufferline = true,
-    nvim_tree = true,
+    neo_tree = true,
     lualine = true,
-    lspsaga = true,
     gitsigns = true,
     colorizer = true,
     toggle_term = true,
@@ -32,6 +31,11 @@ local config = {
     neoscroll = true,
     ts_rainbow = true,
     ts_autotag = true,
+  },
+
+  ui = {
+    nui_input = true,
+    telescope_select = true,
   },
 }
 

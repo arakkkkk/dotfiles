@@ -33,5 +33,3 @@ alias gl="git log"
 alias dc="docker-compose"
 
 alias code="code ."
-
-alias cb="cd .."

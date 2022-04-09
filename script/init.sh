@@ -57,3 +57,4 @@ done
 # fisher install jethrokuan/z
 # fisher install jethrokuan/fzf
 # fisher install oh-my-fish/theme-bobthefish
+

@@ -156,7 +156,8 @@ local config = {
     set.relativenumber = true
 
     -- Set key bindings
-    map("n", "<C-s>", ":w!<CR>", opts)
+    map("n", "<S-Left>", "<cmd>lua require'smart-splits'.resize_left(2)<cr>", opts)
+    map("n", "<S-Right>", "<cmd>lua require'smart-splits'.resize_right(2)<cr>", opts)
 
     -- Set autocommands
     vim.cmd [[

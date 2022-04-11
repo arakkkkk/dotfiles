@@ -12,7 +12,7 @@ function M.config()
   vim.fn.sign_define("DiagnosticSignInfo", { text = "", texthl = "DiagnosticSignInfo" })
   vim.fn.sign_define("DiagnosticSignHint", { text = "", texthl = "DiagnosticSignHint" })
 
-  neotree.setup(require("core.utils").user_plugin_opts("plugins.neo-tree", {
+  neotree.setup(require("core.utils").user_plugin_opts("plugins.neo_tree", {
     close_if_last_window = true,
     popup_border_style = "rounded",
     enable_git_status = true,

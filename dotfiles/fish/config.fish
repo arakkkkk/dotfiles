@@ -1,3 +1,6 @@
+set -x fish_user_paths ''
+z -c
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -10,7 +13,7 @@ status is-interactive; and pyenv init --path | source
 pyenv init - | source
 
 # rust path
-set -U fish_user_paths $fish_user_paths $HOME/.cargo/bin
+set -x fish_user_paths $fish_user_paths $HOME/.cargo/bin
 
 #rbenv path
 set -x PATH $HOME/rbenv init.rbenv/bin $PATH
@@ -33,3 +36,5 @@ alias gl="git log"
 alias dc="docker-compose"
 
 alias code="code ."
+
+alias cb="cd .."

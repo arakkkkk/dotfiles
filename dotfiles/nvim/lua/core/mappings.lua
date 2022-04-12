@@ -63,7 +63,6 @@ map("n", "<C-q>", "<cmd>q!<CR>", opts)
 
 -- Terminal
 if utils.is_available "nvim-toggleterm.lua" then
-<<<<<<< HEAD
   map("n", "<C-\\>", "<cmd>ToggleTerm<CR>fish<CR>", opts)
   map("n", "<leader>gg", "<cmd>lua require('core.utils').toggle_term_cmd('lazygit')<CR>", opts)
   map("n", "<leader>tn", "<cmd>lua require('core.utils').toggle_term_cmd('node')<CR>", opts)
@@ -74,9 +73,6 @@ if utils.is_available "nvim-toggleterm.lua" then
   map("n", "<leader>tf", "<cmd>ToggleTerm direction=float<cr>", opts)
   map("n", "<leader>th", "<cmd>ToggleTerm size=10 direction=horizontal<cr>fish<CR>", opts)
   map("n", "<leader>tv", "<cmd>ToggleTerm size=80 direction=vertical<cr>fish<CR>", opts)
-=======
-  map("n", "<C-\\>", "<cmd>ToggleTerm<CR>", opts)
->>>>>>> 3a9691af91a67a438dbf0495bad2c6826592596f
 end
 
 -- Normal Leader Mappings --

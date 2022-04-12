@@ -11,7 +11,6 @@ function M.config()
       offsets = {
         { filetype = "NvimTree", text = "", padding = 1 },
         { filetype = "neo-tree", text = "", padding = 1 },
-        { filetype = "neo-tree filesystem", text = "", padding = 1 },
         { filetype = "Outline", text = "", padding = 1 },
       },
       buffer_close_icon = "",

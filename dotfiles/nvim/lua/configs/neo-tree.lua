@@ -8,7 +8,7 @@ function M.config()
 
   vim.g.neo_tree_remove_legacy_commands = true
 
-  neotree.setup(require("core.utils").user_plugin_opts("plugins.neo_tree", {
+  neotree.setup(require("core.utils").user_plugin_opts("plugins.neo-tree", {
     close_if_last_window = true,
     popup_border_style = "rounded",
     enable_git_status = true,

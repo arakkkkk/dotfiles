@@ -1,3 +1,5 @@
+vim.opt.rtp:append(vim.fn.stdpath "config" .. "/../astrovim")
+
 local impatient_ok, impatient = pcall(require, "impatient")
 if impatient_ok then
   impatient.enable_profile()
@@ -14,6 +16,7 @@ local sources = {
   "core.plugins",
   "core.autocmds",
   "core.mappings",
+  "configs.which-key-register",
 }
 
 for _, source in ipairs(sources) do

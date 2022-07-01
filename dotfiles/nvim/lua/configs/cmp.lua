@@ -4,6 +4,7 @@ function M.config()
   local cmp_status_ok, cmp = pcall(require, "cmp")
   local snip_status_ok, luasnip = pcall(require, "luasnip")
   if cmp_status_ok and snip_status_ok then
+    local setup = cmp.setup
     local kind_icons = {
       Text = "",
       Method = "",
@@ -32,7 +33,12 @@ function M.config()
       TypeParameter = "",
     }
 
-    cmp.setup(require("core.utils").user_plugin_opts("plugins.cmp", {
+    local function has_words_before()
+      local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+      return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match "%s" == nil
+    end
+
+    setup(astronvim.user_plugin_opts("plugins.cmp", {
       preselect = cmp.PreselectMode.None,
       formatting = {
         fields = { "kind", "abbr", "menu" },
@@ -62,10 +68,6 @@ function M.config()
           border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
         },
       },
-      experimental = {
-        ghost_text = false,
-        native_menu = false,
-      },
       mapping = {
         ["<Up>"] = cmp.mapping.select_prev_item(),
         ["<Down>"] = cmp.mapping.select_next_item(),
@@ -89,6 +91,8 @@ function M.config()
             luasnip.expand()
           elseif luasnip.expand_or_jumpable() then
             luasnip.expand_or_jump()
+          elseif has_words_before() then
+            cmp.complete()
           else
             fallback()
           end
@@ -110,6 +114,11 @@ function M.config()
         }),
       },
     }))
+    for setup_opt, setup_table in pairs(astronvim.user_plugin_opts("cmp.setup", {})) do
+      for pattern, options in pairs(setup_table) do
+        setup[setup_opt](pattern, options)
+      end
+    end
   end
 end
 

@@ -101,8 +101,8 @@ end
 
 -- Session Manager
 if is_available "neovim-session-manager" then
-  map("n", "<leader>Sl", "<cmd>SessionManager! load_last_session<cr>", { desc = "Load last session" })
-  map("n", "<leader>Ss", "<cmd>SessionManager! save_current_session<cr>", { desc = "Save this session" })
+  map("n", "<leader>sl", "<cmd>SessionManager! load_last_session<cr>", { desc = "Load last session" })
+  map("n", "<leader>ss", "<cmd>SessionManager! save_current_session<cr>", { desc = "Save this session" })
   map("n", "<leader>Sd", "<cmd>SessionManager! delete_session<cr>", { desc = "Delete session" })
   map("n", "<leader>Sf", "<cmd>SessionManager! load_session<cr>", { desc = "Search sessions" })
   map(

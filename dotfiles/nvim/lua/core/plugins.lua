@@ -66,17 +66,24 @@ local astro_plugins = {
   ["famiu/bufdelete.nvim"] = { cmd = { "Bdelete", "Bwipeout" } },
 
   -- File explorer
-  ["nvim-neo-tree/neo-tree.nvim"] = {
-    branch = "v2.x",
-    module = "neo-tree",
-    cmd = "Neotree",
-    requires = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
-    setup = function()
-      vim.g.neo_tree_remove_legacy_commands = true
-    end,
+  ['kyazdani42/nvim-tree.lua'] = {
+    after = "nvim-web-devicons",
+    config = function() require'nvim-tree'.setup {
+      view = {
+        width = 35,
+      },
+      filters = {
+        dotfiles = true,
+      },
+    } end
+  },
+
+  -- easy jump
+  ['phaazon/hop.nvim'] = {
+    branch = 'v1', -- optional but strongly recommended
     config = function()
-      require("configs.neo-tree").config()
-    end,
+      require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+    end
   },
 
   -- Statusline

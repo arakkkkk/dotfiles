@@ -4,7 +4,7 @@ function M.config()
   local status_ok, treesitter = pcall(require, "nvim-treesitter.configs")
   if status_ok then
     treesitter.setup(astronvim.user_plugin_opts("plugins.treesitter", {
-      ensure_installed = {},
+      ensure_installed = {"lua"},
       sync_install = false,
       ignore_install = {},
       highlight = {

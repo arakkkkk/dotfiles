@@ -28,7 +28,6 @@ for plugin, enabled in
     hop = false,
     indent_blankline = true,
     lightspeed = false,
-    ["neo-tree"] = true,
     notify = true,
     ["nvim-tree"] = false,
     ["nvim-web-devicons"] = true,

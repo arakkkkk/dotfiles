@@ -10,5 +10,8 @@
 # python ~/localfile/practice/score_ipynb/score.py
 # python ~/localfile/practice/mathviwer/app.py
 # python ~/localfile/practice/journal_scraping/main.py
-python ~/Desktop/audiochanger.py
+# python ~/Desktop/audiochanger.py
+# python ~/Desktop/audiochanger.py
+# python /Users/Kouiti/My\ Drive/大学院/class/動的構造生物学/sequense/util.py
+python /Users/Kouiti/My\ Drive/大学院/class/動的構造生物学/sequense/default.py
 

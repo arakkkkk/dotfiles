@@ -1,12 +1,13 @@
 # dotfiles
 ## Content
 - [neovim](./dotfiles/nvim/)
+- [fish](./dotfiles/fish/)
+- [karabiner](./dotfiles/karabiner/)
+- [tmux](./dotfiles/tmux/)
+- [vscode](./dotfiles/vscode/)
 - pyenv
-- fish
 - eslintrc
 - prettierrc
-- karabiner
-- tmux
 
 ## Quick start
 ```

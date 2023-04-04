@@ -1,0 +1,49 @@
+{
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true
+  },
+
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2017
+  },
+
+  "rules": {
+    "no-undef": "warn",
+    "no-useless-escape": "off",
+    "no-empty": "warn",
+    "no-unused-vars": "off"
+  },
+
+  "globals": {
+    "apiUrl": true,
+    "species_dic": true,
+    "parameter_dic": true,
+    "reaction_dic": true,
+    "compartment_dic": true,
+    "cyjson": true,
+    "model_dic": true,
+    "session": true,
+    "signalingcyjson": true,
+    "glycosylationcyjson": true,
+    "wholepathwaycyjson": true,
+    "global": true,
+    "cy": true,
+
+    "open_errormodal": true,
+    "set_session_id": true,
+    "get_session_id": true,
+    "getUrlQueries": true,
+    "sbgnstylejs": true,
+    "setviewer": true,
+    "set_alert": true,
+
+    "typeOf": true,
+    "aa": true
+  }
+}

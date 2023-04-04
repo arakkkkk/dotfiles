@@ -1,0 +1,32 @@
+# CLI
+fish
+zsh
+ripgrep
+
+# Language
+nodejs
+yarn
+pyenv
+stack
+
+# Linter
+autopep8
+fixer
+black
+isort
+prettier
+
+# Integration
+gh
+ghq
+dash
+lazygit
+lazydocker
+
+# Others
+## window manager
+koekeishiya/formulae/yabai
+koekeishiya/formulae/skhd
+## task manager
+taskwarrior-tui
+

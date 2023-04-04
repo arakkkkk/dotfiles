@@ -1,0 +1,37 @@
+prSections:
+  - title: My Pull Requests
+    filters: is:open author:@me
+  - title: Needs My Review
+    filters: is:open review-requested:@me
+  - title: Subscribed
+    filters: is:open -author:@me repo:dlvhdr/gh-dash
+    limit: 50 # optional limit per section
+issuesSections:
+  - title: Created
+    filters: is:open author:@me
+  - title: Assigned
+    filters: is:open assignee:@me
+defaults:
+  prsLimit: 20 # global limit
+  issuesLimit: 20 # global limit
+  preview:
+    open: true
+    width: 60
+keybindings: # optional
+pager:
+  diff: less # or delta for example
+theme:
+  colors:
+    text:
+      primary: "#E2E1ED"
+      secondary: "#a5d8ff"
+      inverted: "#1e222a"
+      faint: "#3E4057"
+      warning: "#F23D5C"
+      success: "#3DF294"
+    background:
+      selected: "#303742"
+    border:
+      primary: "#8094B4"
+      secondary: "#61afef"
+      faint: "#252931"

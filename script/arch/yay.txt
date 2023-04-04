@@ -1,0 +1,7 @@
+
+
+
+
+# For develp web applycation with python
+python-mysqlclient
+python-selenium

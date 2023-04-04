@@ -1,0 +1,15 @@
+## home file
+.prettierrc         ${HOME}/.prettierrc
+.eslintrc.json      ${HOME}/.eslintrc.json
+.taskrc             ${HOME}/.taskrc
+
+# under .config
+starship.toml      ${HOME}/.config/starship.toml
+nvim                ${HOME}/.config/nvim
+coc                 ${HOME}/.config/coc
+fish                ${HOME}/.config/fish
+karabiner           ${HOME}/.config/karabiner
+fzf                 ${HOME}/.config/fzf
+tmux                ${HOME}/.config/tmux
+gh-dash             ${HOME}/.config/gh-dash
+yabai               ${HOME}/.config/yabai

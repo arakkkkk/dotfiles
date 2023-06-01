@@ -4,11 +4,6 @@ if vim.fn.getcwd():match("Note$") then
 		view = {
 			width = 30,
 			adaptive_size = false,
-			mappings = {
-				list = {
-					{ key = "u", action = "dir_up" },
-				},
-			},
 		},
 		renderer = {
 			group_empty = true,
@@ -25,11 +20,6 @@ else
 		view = {
 			width = 30,
 			adaptive_size = true,
-			mappings = {
-				list = {
-					{ key = "u", action = "dir_up" },
-				},
-			},
 		},
 		renderer = {
 			group_empty = true,

@@ -1,6 +1,6 @@
 require("kanban").setup({
 	markdown = {
-		title_style = "[[<title>]]",
+		title_style = "<title>",
 		hl = {
 			{
 				name = "KanbanFloat",

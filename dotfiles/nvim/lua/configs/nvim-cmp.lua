@@ -81,7 +81,7 @@ cmp.setup({
 		-- { name = "neoclip", keyword_length = 5 },
 		-- { name = "tex_ref" },
 		-- { name = "tex_cite" },
-		{ name = "marktodo" },
+		-- { name = "marktodo" },
 	},
 	sorting = sorting,
 	mapping = cmp.mapping.preset.insert({

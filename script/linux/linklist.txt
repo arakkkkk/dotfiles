@@ -5,7 +5,6 @@
 .eslintrc.json      ${HOME}/.eslintrc.json
 
 # under .config
-nvim                ${HOME}/.config/nvim
 fish                ${HOME}/.config/fish
 fzf                 ${HOME}/.config/fzf
 tmux                ${HOME}/.config/tmux

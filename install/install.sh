@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/bash
+
 dotfiles_root=$(cd $(dirname $0)/.. && pwd)
 
 if [ $(uname) == "Darwin" ]; then brew update

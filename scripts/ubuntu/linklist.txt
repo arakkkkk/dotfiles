@@ -1,0 +1,6 @@
+# home file
+zshrc               ${HOME}/.zshrc
+
+# under .config
+nvim                ${HOME}/.config/nvim
+tmux                ${HOME}/.config/tmux

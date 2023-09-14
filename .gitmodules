@@ -1,0 +1,6 @@
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:arakkkkk/nvim.git
+[submodule "tmux"]
+	path = tmux
+	url = git@github.com:arakkkkk/tmux.git

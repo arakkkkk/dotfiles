@@ -5,12 +5,13 @@ if [ !"$(which nvim)" ] ; then
   ./nvim.appimage
   ./nvim.appimage --appimage-extract
   ./squashfs-root/AppRun --version
-  ## Optional: exposing nvim globally.
   sudo mv squashfs-root /
   sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 fi
 
 # Docker Engine
+if [ !"$(which docker)" ] ; then
+fi
 
 # ghq
 if [ !"$(which ghq)" ] ; then
@@ -33,11 +34,13 @@ fi
 
 # ghq
 if [ !"$(which ghq)" ] ; then
-  curl -s https://api.github.com/repos/protocolbuffers/protobuf/releases/latest \
+  mkdir .trash
+  curl -s https://api.github.com/repos/x-motemen/ghq/releases/latest \
           | grep "browser_download_url" \
-          | grep -E "protoc-[0-9.]+-linux-x86_64.zip" \
+          | grep -E "ghq_linux_amd64.zip" \
           | cut -f 4 -d '"' \
-          | xargs -n1 curl -L -sS > protoc.zip && \
-      unzip protoc.zip && \
-      mv bin/protoc /usr/local/bin
+          | xargs -n1 curl -L -sS > trash/ghq.zip && \
+      unzip -d trash trash/ghq.zip && \
+      mv trash/ghq_linux_amd64/ghq /usr/bin/ghq
+  rm -r .trash
 fi

@@ -1,7 +1,5 @@
 #!/usr/bin/bash
-
 dotfiles_root=$(cd $(dirname $0)/ && pwd)
-echo $(uname -a | grep MANJARO)
 
 if [ $(uname) = "Darwin" ]; then
     brew upgrade
@@ -10,7 +8,7 @@ elif [ $(uname) = "Linux" ]; then
     if [ "$(uname -a | grep Ubuntu)" ]; then
         apt update
         apt upgrade
-        OS="linux"
+        OS="ubuntu"
     elif [ "$(uname -a | grep MANJARO)" ]; then
         echo "Manjaro not support"
         exit
@@ -24,19 +22,22 @@ else
 fi
 
 source ${dotfiles_root}/scripts/utils.sh
+
+<< COMMENTOUT
 ######################
 ## packages
 ######################
-packagelist="${dotfiles_root}/script/${OS}_packages.txt"
+packagelist="${dotfiles_root}/scripts/${OS}/packagelist.txt"
 [ ! -r "$packagelist" ] && return
 __parse_packagelist "$packagelist" | while read package; do
-    brew install ${package}
+    apt install -y ${package}
 done
+COMMENTOUT
 
 ######################
 ## symbolic
 ######################
-linklist="${dotfiles_root}/script/${OS}/linklist.txt"
+linklist="${dotfiles_root}/scripts/${OS}/linklist.txt"
 cd ${dotfiles_root}
 [ ! -r "$linklist" ] && return
 __parse_linklist "$linklist" | while read target link; do

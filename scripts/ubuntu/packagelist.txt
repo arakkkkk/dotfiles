@@ -7,7 +7,7 @@ nodejs
 yarn
 pyenv
 stack
-sudo apt install -y golang-go
+golang-go
 
 # Linter
 autopep8

@@ -1,6 +1,12 @@
 # CLI
 zsh
 ripgrep
+fzf
+rg
+jq
+unzip
+make
+
 
 # Language
 nodejs
@@ -8,6 +14,7 @@ yarn
 pyenv
 stack
 golang-go
+python3
 
 # Linter
 autopep8

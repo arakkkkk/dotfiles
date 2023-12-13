@@ -1,6 +1,5 @@
 # CLI
 zsh
-ripgrep
 fzf
 rg
 jq
@@ -26,4 +25,5 @@ prettier
 # Integration
 
 # Others
+ansible
 

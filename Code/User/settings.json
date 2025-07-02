@@ -1,6 +1,6 @@
 {
   // カラーテーマをNeovimに近いものに設定
-  "workbench.colorTheme": "Gruvbox Dark (Community)",
+  "workbench.colorTheme": "GitHub Dark Dimmed", // GitHub Themeが必要
   // フォント設定（Neovimでよく使われるJetBrains Monoなどを推奨）
   "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', 'Courier New'",
   "editor.fontLigatures": true,
@@ -8,16 +8,7 @@
   // Vimプラグインの有効化
   "vim.enableNeovim": true,
   "vim.useSystemClipboard": true, // システムクリップボードと連携
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "jk"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
+  "vim.insertModeKeyBindings": [],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [

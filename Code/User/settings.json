@@ -59,6 +59,14 @@
     },
     {
       "before": [
+        "<C-h>",
+      ], // space+Eでエクスプローラーを開く
+      "commands": [
+        "workbench.view.explorer"
+      ]
+    },
+    {
+      "before": [
         "<leader>",
         "f",
         "f"

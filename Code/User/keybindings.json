@@ -1,4 +1,7 @@
 [
+  ////////////////////
+  // Explorer
+  ///////////////////
   // qでエクスプローラーを閉じる
   {
     "key": "q",
@@ -29,10 +32,40 @@
     "command": "list.select",
     "when": "explorerViewletVisible && !inputFocus"
   },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && !inputFocus"
+  },
+  ///////////////////////
   // terminal
+  ///////////////////////
   {
     "key": "ctrl+[BracketLeft]",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.chat.openEditSession",
+    "when": "chatEditingParticipantRegistered && view != 'workbench.panel.chat.view.edits'"
+  },
+  {
+    "key": "ctrl+shift+alt+i",
+    "command": "-workbench.action.chat.openEditSession",
+    "when": "chatEditingParticipantRegistered && view != 'workbench.panel.chat.view.edits'"
+  },
+  ///////////////////////
+  // Copilot Chat
+  ///////////////////////
+  {
+    "key": "ctrl+l",
+    "command": "workbench.panel.chatEditing",
+    "when": "workbench.panel.chat.view.edits.active"
+  },
+  {
+    "key": "ctrl+shift+alt+i",
+    "command": "-workbench.panel.chatEditing",
+    "when": "workbench.panel.chat.view.edits.active"
   },
 ]

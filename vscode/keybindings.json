@@ -1,71 +1,153 @@
 [
-  ////////////////////
-  // Explorer
-  ///////////////////
-  // qでエクスプローラーを閉じる
-  {
-    "key": "q",
-    "command": "workbench.action.closeSidebar",
-    "when": "explorerViewletVisible && !inputFocus"
-  },
-  // Ctrl+Lでエディターに戻る
-  {
-    "key": "ctrl+l",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "explorerViewletVisible && !inputFocus"
-  },
-  // jkでファイル移動（j: 下に移動）
-  {
-    "key": "j",
-    "command": "list.focusDown",
-    "when": "explorerViewletVisible && !inputFocus"
-  },
-  // jkでファイル移動（k: 上に移動）
-  {
-    "key": "k",
-    "command": "list.focusUp",
-    "when": "explorerViewletVisible && !inputFocus"
-  },
-  // Enterでファイルを開く
-  {
-    "key": "enter",
-    "command": "list.select",
-    "when": "explorerViewletVisible && !inputFocus"
-  },
-  {
-    "key": "a",
-    "command": "explorer.newFile",
-    "when": "explorerViewletVisible && !inputFocus"
-  },
-  ///////////////////////
-  // terminal
-  ///////////////////////
-  {
-    "key": "ctrl+[BracketLeft]",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
-  },
-  {
-    "key": "ctrl+l",
-    "command": "workbench.action.chat.openEditSession",
-    "when": "chatEditingParticipantRegistered && view != 'workbench.panel.chat.view.edits'"
-  },
-  {
-    "key": "ctrl+shift+alt+i",
-    "command": "-workbench.action.chat.openEditSession",
-    "when": "chatEditingParticipantRegistered && view != 'workbench.panel.chat.view.edits'"
-  },
-  ///////////////////////
-  // Copilot Chat
-  ///////////////////////
-  {
-    "key": "ctrl+l",
-    "command": "workbench.panel.chatEditing",
-    "when": "workbench.panel.chat.view.edits.active"
-  },
-  {
-    "key": "ctrl+shift+alt+i",
-    "command": "-workbench.panel.chatEditing",
-    "when": "workbench.panel.chat.view.edits.active"
-  }
+    ///////////////////////
+    // Emacs-style keybindings
+    ///////////////////////
+    // Ctrl+A: 行の始まりに移動
+    {
+        "key": "ctrl+a",
+        "command": "cursorHome",
+        "when": "textInputFocus && !editorTextFocus"
+    },
+    // Ctrl+E: 行の終わりに移動
+    {
+        "key": "ctrl+e",
+        "command": "cursorEnd",
+        "when": "textInputFocus && !editorTextFocus"
+    },
+    // Ctrl+N: 次の行に移動
+    {
+        "key": "ctrl+n",
+        "command": "cursorDown",
+        "when": "textInputFocus && !editorTextFocus"
+    },
+    // Ctrl+P: 前の行に移動
+    {
+        "key": "ctrl+p",
+        "command": "cursorUp",
+        "when": "textInputFocus && !editorTextFocus"
+    },
+    // Ctrl+U: カーソル位置から行の始まりまで削除
+    {
+        "key": "ctrl+u",
+        "command": "deleteAllLeft",
+        "when": "textInputFocus && !editorTextFocus"
+    },
+    // Ctrl+W: 前の単語を削除
+    {
+        "key": "ctrl+w",
+        "command": "deleteWordLeft",
+        "when": "textInputFocus && !editorTextFocus"
+    },
+    // Ctrl+H: 一文字削除（バックスペース）
+    {
+        "key": "ctrl+h",
+        "command": "deleteLeft",
+        "when": "textInputFocus && !editorTextFocus"
+    },
+    ////////////////////
+    // Explorer
+    ///////////////////
+    // qでエクスプローラーを閉じる
+    {
+        "key": "q",
+        "command": "workbench.action.closeSidebar",
+        "when": "explorerViewletVisible && !inputFocus"
+    },
+    // Ctrl+Lでエディターに戻る
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "explorerViewletVisible && !inputFocus"
+    },
+    // jkでファイル移動（j: 下に移動）
+    {
+        "key": "j",
+        "command": "list.focusDown",
+        "when": "explorerViewletVisible && !inputFocus"
+    },
+    // jkでファイル移動（k: 上に移動）
+    {
+        "key": "k",
+        "command": "list.focusUp",
+        "when": "explorerViewletVisible && !inputFocus"
+    },
+    // Enterでファイルを開く
+    {
+        "key": "enter",
+        "command": "list.select",
+        "when": "explorerViewletVisible && !inputFocus"
+    },
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && !inputFocus"
+    },
+    // Shift+Ctrl+Rでウィンドウをリロード
+    {
+        "key": "shift+ctrl+r",
+        "command": "workbench.action.reloadWindow"
+    },
+    ///////////////////////
+    // terminal
+    ///////////////////////
+    {
+        "key": "ctrl+[BracketLeft]",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.chat.openEditSession",
+        "when": "chatEditingParticipantRegistered && view != 'workbench.panel.chat.view.edits'"
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "-workbench.action.chat.openEditSession",
+        "when": "chatEditingParticipantRegistered && view != 'workbench.panel.chat.view.edits'"
+    },
+    ///////////////////////
+    // Copilot Chat
+    ///////////////////////
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "-workbench.panel.chatEditing",
+        "when": "workbench.panel.chat.view.edits.active"
+    },
+    ///////////////////////
+    // Navigation between panels
+    ///////////////////////
+    // Editor focus時の移動
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.chat.openn",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.view.explorer",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    },
+    // Copilot chat focus時の移動
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "inChat"
+    },
+    // Terminal focus時の移動
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    // Explorer focus時の移動
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    }
 ]

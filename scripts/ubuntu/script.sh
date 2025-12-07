@@ -33,7 +33,7 @@ fi
 if [ !"$(which ghq)" ] ; then
   curl -L -o ghq.zip https://github.com/x-motemen/ghq/releases/download/v1.4.2/ghq_linux_amd64.zip
   unzip ghq.zip
-  mv ghq_linux_amd64/ghq /usr/bin/ghq
+  sudo mv ghq_linux_amd64/ghq /usr/bin/ghq
 fi
 
 # lazygit
